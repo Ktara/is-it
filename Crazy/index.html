@@ -10,7 +10,7 @@
     <!-- Bootstrap -->
     <link rel="stylesheet" href="css/reset.css">
     <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="css/slick.css"/>
     <link rel="stylesheet" href="css/style.css">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -21,23 +21,23 @@
     <![endif]-->
   
   </head>
-  <body>
+  <body data-spy="scroll" data-target="#nav_wrapper">
     <div class="wrapper">
-      <header class="nav">
+      <header class="nav-header">
         <div class="container">
           <div class="row">
             <div class="col-md-5">
-              <a href="#" class="nav-logo">
+              <a href="#" class="nav-header-logo">
                 <img src="img/svg/logo.svg" alt="Crazy-Professor">
               </a>
             </div>
-            <div class="col-md-7">
-              <ul class="nav-menu">
-                <li><a href="">Про лабораторію</a></li>
-                <li><a href="">Свята</a></li>
-                <li><a href="">Калькулятор</a></li>
-                <li><a href="">Шоу</a></li>
-                <li><a href="">Контакти</a></li>
+            <div id="nav_wrapper" class="col-md-7">
+              <ul role="navigation" class="nav nav-header-menu">
+                <li role="presentation"><a href="#about">Про&nbsp;лабораторію</a></li>
+                <li role="presentation"><a href="#holliday">Свята</a></li>
+                <li role="presentation"><a href="#calculate">Калькулятор</a></li>
+                <li role="presentation"><a href="#show">Шоу</a></li>
+                <li role="presentation"><a href="#contacts">Контакти</a></li>
               </ul>
             </div>
           </div>
@@ -58,9 +58,8 @@
             </div>
             <div class="col-md-4">
               <div class="main-box main-decor-2">
-                <h5 class="name-header">Безкоштовне розважальне шоу по&nbsp;вихідних днях                
-                </h5>
-                <p class="main-box-text">щовихідних шоу входить у вартість вхідного квитка</p>
+                <h5 class="name-header">Кожні вихідні проходить шоу, яке входить у вартість вхідного квитка                
+                </h5>                
               </div>
             </div>
             <div class="col-md-4">
@@ -74,7 +73,7 @@
         </div>
       </section>
 
-      <section class="about">
+      <section id="about"  class="about">
         <div class="container">
           <h2 class="section-header">Про лабораторію</h2>
           <div class="row">
@@ -100,7 +99,7 @@
               <div class="slider-img"><img src="img/photoes/3.jpg" alt=""></div>
               <div class="slider-img"><img src="img/photoes/4.jpg" alt=""></div>
               <div class="slider-img"><img src="img/photoes/5.jpg" alt=""></div>
-              <div class="slider-img"><img src="img/photoes/6.jpg" alt=""></div>       
+              <div class="slider-img"><img src="img/photoes/6.jpg" alt=""></div> 
             </div>          
             <div class="row slider-nav">
               <div class="col-md-2 slider-nav-img"><img src="img/photoes/1.jpg" alt=""></div>
@@ -156,7 +155,7 @@
       </section>
 
 
-        <section class="holliday">
+        <section id="holliday" class="holliday">
           <div class="container">
             <h3 class="section-header">
               Оберіть своє свято в лабораторії
@@ -209,12 +208,12 @@
           </div><!-- container -->
         </section>
 
-        <section class="calculate">
+        <section id="calculate" class="calculate">
           <div class="container calculate-slide">
             <h3 class="section-header">
              Розрахуйте свято за 5 кроків
              </h3>            
-            <div class="event">              
+            <div class="calculate-slide-block-event">              
               <h6 class="block-header">
               Оберіть подію, яку хочете провести в Лабораторії
               </h6>
@@ -259,7 +258,41 @@
                 </form>
               </div><!-- row -->
             </div><!-- event -->
-            <div class="animator">
+            <div class="calculate-slide-block-guests">              
+              <h6 class="block-header">
+              Оберіть кількість гостей
+              </h6>
+              <p class="block-sub-header">
+              що більше людей, то нижча ціна
+              </p>
+              <div class="row calculate-slide-content">
+                <form action="">
+                  <div class="col-md-4">
+                    <label>
+                      <input type="radio" name="guests">
+                      <p class="calculate-slide-content-title">
+                      Діти
+                      </p>
+                      <p class="block-sub-header">
+                      від 145 грн <br>до 14 років
+                      </p>
+                    </label>                  
+                  </div>
+                  <div class="col-md-4">
+                    <label>
+                      <input type="radio" name="guests">
+                      <p class="calculate-slide-content-title">
+                      Дорослі
+                      </p>
+                      <p class="block-sub-header">
+                      від 145 грн
+                      </p>
+                    </label>                  
+                  </div>                  
+                </form>
+              </div><!-- row -->
+            </div><!-- guests -->
+            <div class="calculate-slide-block-animator">
               <h6 class="block-header">
               Ваш аніматор
               </h6>
@@ -301,7 +334,7 @@
                 </form>
               </div><!-- row -->
             </div><!-- animator -->
-            <div class="excursion">              
+            <div class="calculate-slide-block-excursion">              
               <h6 class="block-header">
               Ваша екскурсія
               </h6>
@@ -346,7 +379,7 @@
                 </form>
               </div><!-- row -->
             </div><!-- excursion -->
-            <div class="showing">              
+            <div class="calculate-slide-block-showing">              
               <h6 class="block-header">
               Шоу-програма
               </h6>
@@ -402,13 +435,14 @@
                 </form>
               </div><!-- row -->
             </div><!-- showing -->
-            <div class="ready">                            
+            <div class="calculate-slide-block-ready">                            
               <div class="row">
                 <div class="col-md-8">
-                  <p><span>Сімейний день:</span> знижки для родини до 160 грн</p>
+                  <p><span>Подія:</span> знижки для родини до 160 грн</p>
                   <p><span>Кількість гостей:</span> 7 дитячих, 7 дорослих</p>
                   <p><span>Аниматор:</span> 1 година: від 500 грн</p>
                   <p><span>Екскурсія:</span> undefined</p>
+                  <p><span>Шоу-програма:</span> undefined</p>
                 </div>
                 <div class="col-md-4">
                   <form class="footer-form" action="">
@@ -424,7 +458,7 @@
         </section>
 
 
-        <section class="show">
+        <section id="show" class="show">
           <div class="container">
             <h3 class="section-header">Шоу лабораторії</h3>
             <div class="row show-info">              
@@ -459,13 +493,13 @@
                </div>               
              </div><!-- col-md-8 -->
              <div class="col-md-3 col-md-offset-1 show-info-calendar">
-                <img  src="img/calendar.png" alt="">
+                <iframe src="https://calendar.google.com/calendar/embed?showTitle=0&amp;showPrint=0&amp;showTabs=0&amp;showCalendars=0&amp;showTz=0&amp;height=400&amp;wkst=2&amp;hl=uk&amp;bgcolor=%23FFFFFF&amp;src=bcq4orm0gaaatnr19l7qqh7l7g%40group.calendar.google.com&amp;color=%235F6B02&amp;ctz=Europe%2FKiev" style="border-width:0" width="100%" height="400px" frameborder="0" scrolling="no"></iframe>
               </div>
             </div><!-- row -->
           </div>
         </section>
 
-        <footer class="footer">
+        <footer id="contacts" class="footer">
           <div class="container">
             <h3 class="section-header">Зв’яжіться з нами</h3>
             <div class="row">
@@ -480,11 +514,30 @@
               <div class="col-md-4 col-md-offset-1">
                 <h6 class="block-header">Контакти</h6>
                 <p>
-                  Київ, станції метро &laquo;Мінська&raquo; та&nbsp;&laquo;Героїв Дніпра&raquo; Оболонський&nbsp;проспект, 21б ТРЦ&nbsp;DreamTown&nbsp;2&raquo;, атріум Італія, 2-й поверх
+                  ТРЦ DreamTown 2, атріум Італія, 2-&nbsp;й&nbsp;поверх Київ,&nbsp;станції&nbsp;метро&nbsp;&laquo;Мінська&raquo; та&nbsp;&laquo;Героїв Дніпра&raquo; Оболонський&nbsp;проспект, 21б +380&nbsp;99&nbsp;289 14 14, +380&nbsp;93&nbsp;006&nbsp;60&nbsp;13 
                 </p>
               </div>
               <div class="col-md-2">
                 <img src="img/svg/contact-us.svg" alt="">
+              </div>
+            </div>
+          </div>
+          <div class="sub-footer">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-4 copyright">2017 &copy; Всі права захищені</div>
+                <div class="col-md-4 networks">
+                  <a target="_blank" href="https://www.instagram.com/_crazyprofessor_/">
+                    <img src="img/soc/soc-b1.png" alt="">
+                  </a>
+                  <a target="_blank" href="https://www.facebook.com/laboratoriacrazyprofessor/">
+                    <img src="img/soc/soc-b2.png" alt="">
+                  </a>
+                  <a target="_blank" href="https://www.youtube.com/channel/UCjsLvbLA0BZ03pHrPQgk8Aw?app=desktop">
+                    <img src="img/soc/soc-b4.png" alt="">
+                  </a>
+                </div>
+                <div class="col-md-4 develop">Development by <a target="_blank" href="">IS.Agency</a></div>
               </div>
             </div>
           </div>
@@ -496,6 +549,7 @@
 
 <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
 <script type="text/javascript" src="js/slick.min.js"></script>
+<script type="text/javascript" src="js/scrollspy.js"></script>
 <script type="text/javascript" src="js/script.js"></script>
 
 

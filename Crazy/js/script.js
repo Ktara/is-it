@@ -16,3 +16,12 @@ $('.slider-nav').slick({
   infinite: true,
   focusOnSelect: true
 });
+$('body').scrollspy({ target: '#nav_wrapper', offset: 120 })
+$(document).ready(function(){
+    $(".nav-header-menu").on("click","a", function (event) {
+        event.preventDefault();
+        var id  = $(this).attr('href'),
+            top = $(id).offset().top;
+        $('body,html').animate({scrollTop: top}, 1200);
+    });
+});

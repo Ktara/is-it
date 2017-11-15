@@ -58,17 +58,7 @@
   font-weight: 600;
   font-style: italic;
 }
-@font-face {
-  font-family: "Gunny Rewritten";
-  src: url('../fonts/gnyrwn971.ttf') format('truetype');
-  font-weight: normal;
-  font-style: normal;
-}
 /* Fonts files */
-.gunny {
-  font-family: 'Gunny Rewritten';
-  font-weight: normal;
-}
 .opn-reg {
   font-family: 'Open Sans', sans-serif;
   font-weight: 400;
@@ -125,8 +115,6 @@ textarea:focus {
 }
 .section-header {
   color: #8f028f;
-  font-family: 'Gunny Rewritten';
-  font-weight: normal;
   font-size: 48px;
   line-height: 48px;
 }
@@ -142,36 +130,43 @@ textarea:focus {
   font-weight: 300;
 }
 /* Header */
-.nav {
+.nav-header {
+  z-index: 1002;
   line-height: 60px;
-  position: absolute;
+  position: fixed;
   top: 0;
   width: 100%;
   height: 60px;
   background-color: #8f028f;
 }
-.nav-logo {
+.nav-header-logo {
   display: inline-block;
   width: 26px;
   height: 37px;
 }
-.nav-logo img {
+.nav-header-logo img {
   width: 100%;
   height: 100%;
 }
-.nav-menu {
+.nav-header-menu {
   display: inline-flex;
   width: 100%;
   justify-content: space-between;
 }
-.nav-menu a {
+.nav-header-menu a {
+  font-family: 'OpenSans', sans-serif;
+  font-weight: 700;
   text-decoration: none;
   color: #ffffff;
   line-height: 60px;
   padding: 0 15px;
   display: inline-block;
 }
-.nav-menu a:hover {
+.nav-header-menu a:hover {
+  box-shadow: 2px 4px 6px 1px rgba(0, 0, 0, 0.3);
+  background-image: linear-gradient(to top, #8f028f 0%, #00fef0 100%);
+}
+.nav-header-menu .active {
   box-shadow: 2px 4px 6px 1px rgba(0, 0, 0, 0.3);
   background-image: linear-gradient(to top, #8f028f 0%, #00fef0 100%);
 }
@@ -218,9 +213,7 @@ textarea:focus {
   margin: 22vh 0 0 0;
   position: relative;
   z-index: 1;
-  font-family: 'Gunny Rewritten';
-  font-weight: normal;
-  font-size: 72px;
+  font-size: 65px;
   color: #8f028f;
 }
 .main-sub-header {
@@ -230,6 +223,7 @@ textarea:focus {
   font-family: 'OpenSans', sans-serif;
   font-weight: 700;
   font-size: 18px;
+  color: #8f028f;
 }
 .main-box {
   text-align: left;
@@ -270,7 +264,7 @@ textarea:focus {
 /* About section */
 .about {
   position: relative;
-  margin-top: 100px;
+  padding-top: 100px;
 }
 .about-text {
   color: #010001;
@@ -324,12 +318,14 @@ textarea:focus {
   position: relative;
 }
 /* Option-list section */
+.options {
+  padding-top: 100px;
+}
 .options-with img {
   width: 110px;
   margin-top: 90px;
 }
 .options-with .section-header {
-  margin-top: 100px;
   margin-bottom: 18px;
 }
 .options li {
@@ -379,6 +375,9 @@ textarea:focus {
 .block-sub-header {
   margin-bottom: 15px;
 }
+.holliday {
+  padding-top: 100px;
+}
 .holliday img {
   width: 100%;
 }
@@ -421,11 +420,14 @@ textarea:focus {
   text-decoration: none;
 }
 /* Calculate section */
-.calculate-slide {
-  margin-top: 170px;
+.calculate {
+  padding-top: 100px;
 }
 .calculate-slide .section-header {
   margin-bottom: 40px;
+}
+.calculate-slide-block {
+  height: 190px;
 }
 .calculate-slide-content .block-sub-header {
   width: 70%;
@@ -463,7 +465,7 @@ input:checked + .calculate-slide-content-title:before {
 }
 /* Show section */
 .show {
-  margin-top: 160px;
+  padding-top: 100px;
 }
 .show .section-header {
   margin-bottom: 40px;
@@ -493,7 +495,9 @@ input:checked + .calculate-slide-content-title:before {
 }
 /* Footer */
 .footer {
-  padding-bottom: 80px;
+  position: relative;
+  padding-top: 100px;
+  padding-bottom: 130px;
 }
 .footer img {
   width: 95px;
@@ -558,4 +562,39 @@ input:checked + .calculate-slide-content-title:before {
 .footer-form input:focus {
   color: #000000;
   background-image: linear-gradient(#ffffff, #ffffff), linear-gradient(#8f028f, #00fef0);
+}
+.sub-footer {
+  position: absolute;
+  bottom: 0;
+  background-color: #8f028f;
+  width: 100%;
+  height: 50px;
+  line-height: 50px;
+  color: #ffffff;
+  text-align: center;
+}
+.sub-footer .copyright {
+  text-align: left;
+}
+.sub-footer .networks {
+  text-align: center;
+}
+.sub-footer .networks a {
+  margin: 0 5px;
+}
+.sub-footer .develop {
+  text-align: right;
+}
+.sub-footer .develop a {
+  width: auto;
+}
+.sub-footer a {
+  color: #00fef0;
+  display: inline-block;
+  width: 22px;
+  height: 22px;
+}
+.sub-footer a img {
+  width: auto;
+  height: 100%;
 }

@@ -58,18 +58,9 @@
 	font-weight: 600;
 	font-style: italic;
 }
-@font-face {
-	font-family: "Gunny Rewritten";
-	src: url('../fonts/gnyrwn971.ttf') format('truetype');
-	font-weight: normal;
-	font-style: normal;
-}
+
 
 /* Fonts files */
-.gunny {
-	font-family: 'Gunny Rewritten';
-	font-weight: normal;
-}
 .opn-reg {
 	font-family: 'Open Sans', sans-serif;
 	font-weight: 400;	
@@ -131,8 +122,7 @@ input, button, textarea {
 }
 .section{
 	&-header {	
-		color: @main-purple;
-		.gunny;
+		color: @main-purple;		
 		font-size: 48px;		
 		line-height: 48px;		
 	}	
@@ -148,9 +138,10 @@ input, button, textarea {
 }
 
 /* Header */
-.nav {
+.nav-header {
+	z-index: 1002;
 	line-height: 60px;
-	position: absolute;
+	position: fixed;
 	top: 0;
 	width: 100%;
 	height: 60px;
@@ -167,17 +158,22 @@ input, button, textarea {
 	&-menu {
 		display: inline-flex;
 		width: 100%;
-		justify-content: space-between;
-		a {			
+		justify-content: space-between;		
+		a {	
+			.opn-bold;
 			text-decoration: none;
 			color: @white;
 			line-height: 60px;
 			padding: 0 15px;
 			display: inline-block;
 			&:hover {
+				box-shadow: 2px 4px 6px 1px rgba(0, 0, 0, 0.3);
+				background-image: linear-gradient(to top, @main-purple 0%, @main-blue 100%);
+				}
+		}
+		.active {
 			box-shadow: 2px 4px 6px 1px rgba(0, 0, 0, 0.3);
 			background-image: linear-gradient(to top, @main-purple 0%, @main-blue 100%);
-			}
 		}		
 			
 	}
@@ -224,9 +220,8 @@ input, button, textarea {
 	&-header {
 		margin: 22vh 0 0 0;
 		position: relative;
-		z-index: 1;
-		.gunny;
-		font-size: 72px;
+		z-index: 1;		
+		font-size: 65px;
 		color: @main-purple;
 	}
 	&-sub-header {
@@ -235,6 +230,7 @@ input, button, textarea {
 		z-index: 1;
 		.opn-bold;
 		font-size: 18px;
+		color: @main-purple;
 	}
 	&-box {
 		text-align: left;
@@ -279,7 +275,7 @@ input, button, textarea {
 /* About section */
 .about {	
 	position: relative;
-	margin-top: 100px;
+	padding-top: 100px;
 	&-text {
 		color: @sub-black;
 		line-height: 20px;
@@ -336,13 +332,13 @@ input, button, textarea {
 
 /* Option-list section */
 .options {
+	padding-top: 100px;
 	&-with {		
 		img {
 			width: 110px;			
 			margin-top: 90px;
 		}
-		.section-header {
-			margin-top: 100px;
+		.section-header {			
 			margin-bottom: 18px;
 		}
 	}
@@ -396,11 +392,12 @@ input, button, textarea {
 	margin-bottom: 15px;
 }
 .holliday {
+	padding-top: 100px;
 	img {
 		width: 100%;
 	}
 	.section-header{
-		margin-bottom: 40px;
+		margin-bottom: 40px;		
 	}
 	.block-header {
 		margin-top: 20px;
@@ -440,56 +437,59 @@ input, button, textarea {
 }
 
 /* Calculate section */
-.calculate-slide {
-	margin-top: 170px;
-	// p {
-	// 	margin-bottom: 40px;
-	// }
-	.section-header {
-		margin-bottom: 40px;
-	}
-	&-content {
-		.block-sub-header {
+.calculate {
+	padding-top: 100px;
+	&-slide {		
+		.section-header {
+			margin-bottom: 40px;
+		}
+		&-block {
+			height: 190px;
+		}
+		&-content {		
+			.block-sub-header {
 				width: 70%;
-		}
-		label {
-			position: relative;
-			input {
-			position: absolute;
-			left: -22px;
-			top: 3px;
-			visibility: hidden;
+
 			}
-		}
-		&-title {
-			margin-top: 25px;
-			margin-bottom: 10px;				
-			&:before{
-				content: '';
+			label {
+				position: relative;
+				input {
 				position: absolute;
-				display: block;
-				width: 18px;
-				height: 18px;
-				border: 1px solid @main-purple;
-				border-radius: 18px;
-				left: -25px;
-				background-color: @white;			
-			}						
-		}
-		input:checked + &-title:before {
-			content: url(../img/svg/li-marker.svg);
-			border: none;
-			width: 21px;
-			height: 21px;
-			left: -27px;
-		}			
-	}		
+				left: -22px;
+				top: 3px;
+				visibility: hidden;
+				}
+			}
+			&-title {
+				margin-top: 25px;
+				margin-bottom: 10px;				
+				&:before{
+					content: '';
+					position: absolute;
+					display: block;
+					width: 18px;
+					height: 18px;
+					border: 1px solid @main-purple;
+					border-radius: 18px;
+					left: -25px;
+					background-color: @white;			
+				}						
+			}
+			input:checked + &-title:before {
+				content: url(../img/svg/li-marker.svg);
+				border: none;
+				width: 21px;
+				height: 21px;
+				left: -27px;
+			}			
+		}		
+	}
 }
 
 
 /* Show section */
 .show {	
-	margin-top: 160px;
+	padding-top: 100px;
 	.section-header {
 		margin-bottom: 40px;
 	}
@@ -520,7 +520,9 @@ input, button, textarea {
 
 /* Footer */
 .footer {
-	padding-bottom: 80px;	
+	position: relative;
+	padding-top: 100px;
+	padding-bottom: 130px;	
 	img {
 		width: 95px;
 	}
@@ -583,3 +585,38 @@ input, button, textarea {
 		
 	}
 }	
+.sub-footer {
+	position: absolute;
+	bottom: 0;
+	background-color: @main-purple;
+	width: 100%;
+	height: 50px;
+	line-height: 50px;
+	color: @white;
+	text-align: center;
+	.copyright {
+		text-align: left;
+	}
+	.networks {
+		text-align: center;
+		a {
+			margin: 0 5px;
+		}
+	}
+	.develop {
+		text-align: right;
+		a {
+			width: auto; 
+		}
+	}
+	a {	
+		color: @main-blue;	
+		display: inline-block;
+		width: 22px;
+		height: 22px;		
+		img {
+			width: auto;
+			height: 100%;
+		}
+	}
+}
