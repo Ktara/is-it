@@ -91,6 +91,7 @@ textarea:focus {
   overflow: hidden;
 }
 .btn {
+  cursor: pointer;
   width: auto;
   height: 40px;
   box-shadow: 2px 4px 6px 1px rgba(0, 0, 0, 0.3);
@@ -421,29 +422,44 @@ textarea:focus {
 }
 /* Calculate section */
 .calculate {
+  width: 100%;
   padding-top: 100px;
 }
-.calculate-slide .section-header {
+.calculate .section-header {
   margin-bottom: 40px;
+}
+.calculate-slide {
+  position: relative;
+  height: 190px;
+  overflow: hidden;
 }
 .calculate-slide-block {
   height: 190px;
+  position: absolute;
+  width: calc(100% - 20px);
+  opacity: 0;
+  display: none;
+}
+.calculate-slide-block:first-child {
+  opacity: 1;
+  display: block;
 }
 .calculate-slide-content .block-sub-header {
   width: 70%;
+  margin-top: 10px;
 }
 .calculate-slide-content label {
+  width: 100%;
+  display: inline-block;
+  margin-left: 25px;
+  margin-top: 25px;
   position: relative;
 }
 .calculate-slide-content label input {
   position: absolute;
   left: -22px;
-  top: 3px;
+  top: 6px;
   visibility: hidden;
-}
-.calculate-slide-content-title {
-  margin-top: 25px;
-  margin-bottom: 10px;
 }
 .calculate-slide-content-title:before {
   content: '';
@@ -453,6 +469,7 @@ textarea:focus {
   height: 18px;
   border: 1px solid #8f028f;
   border-radius: 18px;
+  top: 2px;
   left: -25px;
   background-color: #ffffff;
 }
@@ -462,6 +479,54 @@ input:checked + .calculate-slide-content-title:before {
   width: 21px;
   height: 21px;
   left: -27px;
+}
+.calculate-btn-container {
+  text-align: right;
+  padding-right: 10px;
+  margin-top: 30px;
+}
+.calculate .btn-calculate {
+  margin-left: 20px;
+}
+.calculate .btn-cal-prev {
+  display: none;
+}
+.calculate-progress {
+  width: 100%;
+  height: 6px;
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
+  border-radius: 2px;
+  border: 1px solid #8f028f;
+  margin-top: 30px;
+}
+.calculate-progress-line {
+  display: block;
+  height: 100%;
+  width: 8.5%;
+  position: relative;
+  background-image: linear-gradient(-257deg, #8f028f 0%, #00fef0 100%);
+}
+.calculate-progress-line:after {
+  content: "";
+  right: -5px;
+  top: -8px;
+  position: absolute;
+  display: inline-block;
+  width: 10px;
+  height: 20px;
+  box-shadow: 1px 2px 3px 1px rgba(0, 0, 0, 0.3);
+  border-radius: 2px;
+  background-color: #8f028f;
+}
+.calculate-stage {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+.calculate-stage li {
+  width: 17%;
+  text-align: center;
 }
 /* Show section */
 .show {
