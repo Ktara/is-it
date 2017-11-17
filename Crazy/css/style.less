@@ -87,6 +87,9 @@ body {
 	font-size: 16px;
 	.opn-reg;
 	color: @black;
+	@media screen and (max-width: 992px) {
+		font-size: 15px;
+	}
 }
 input, button, textarea {
 		&:focus {
@@ -111,6 +114,7 @@ input, button, textarea {
 	line-height: 40px;
 	padding: 0 30px;
 	display: inline-block;
+	text-align: center;
 	&:hover {		
 		box-shadow: 0 4px 6px 1px rgba(0, 0, 0, 0.3);
 		border-radius: 8px;
@@ -120,18 +124,24 @@ input, button, textarea {
 .name-header {
 	font-size: 18px;
 	.opn-bold;
+	@media screen and (max-width: 992px) {
+		font-size: 16px;
+	}
 }
-.section{
-	&-header {	
-		color: @main-purple;		
-		font-size: 48px;		
-		line-height: 48px;		
-	}	
-}
+.section-header {	
+	color: @main-purple;		
+	font-size: 48px;		
+	line-height: 48px;
+	@media screen and (max-width: 992px) {
+		font-size: 36px;
+		line-height: 40px;
+	}
+
+}	
 .block-header {
 	color: @main-purple;
 	font-size: 18px;
-	.opn-bold;	
+	.opn-bold;		
 }
 .block-sub-header {
 	font-size: 14px;
@@ -244,6 +254,9 @@ input, button, textarea {
 		width: 100%;
 		height: 200px;
 		background-color: @main-purple;
+		@media screen and (max-width: 992px) {
+			height: 220px;
+		}
 		&-text {
 			line-height: 18px;
 			font-size: 14px;
@@ -280,15 +293,24 @@ input, button, textarea {
 .about {	
 	position: relative;
 	padding-top: 100px;
+	@media screen and (max-width: 992px) {
+		padding-top: 80px;
+	}
 	&-text {
 		color: @sub-black;
 		line-height: 20px;
 		padding-top: 30px;
+		@media screen and (max-width: 992px) {
+		padding-top: 10px;
+	}
 	}	
 }
 .slider {
 	width: 100%;
 	margin-top: 40px;
+	@media screen and (max-width: 992px) {
+		margin-top: 10px;
+	}
 	&-img {
 		width: 100%;
 		display: inline-block;
@@ -337,10 +359,16 @@ input, button, textarea {
 /* Option-list section */
 .options {
 	padding-top: 100px;
+	@media screen and (max-width: 992px) {
+		padding-top: 80px;
+	}
 	&-with {		
 		img {
-			width: 110px;			
-			margin-top: 90px;
+			width: 62%;			
+			// margin-top: 90px;
+			// @media (max-width: 992px) {
+			// margin-top: 0;
+			// }
 		}
 		.section-header {			
 			margin-bottom: 18px;
@@ -366,7 +394,7 @@ input, button, textarea {
 			margin-bottom: 65px;
 		}
 		&-boy {
-			width: 110px;
+			width: 62%;
 		}
 		&-todo {
 			margin-bottom: 50px;
@@ -397,6 +425,9 @@ input, button, textarea {
 }
 .holliday {
 	padding-top: 100px;
+	@media screen and (max-width: 992px) {
+		padding-top: 80px;
+	}
 	img {
 		width: 100%;
 	}
@@ -447,6 +478,9 @@ input, button, textarea {
 .calculate {
 	width: 100%;
 	padding-top: 100px;
+	@media screen and (max-width: 992px) {
+		padding-top: 80px;
+	}
 	.section-header {
 			margin-bottom: 40px;
 		}
@@ -630,6 +664,9 @@ input, button, textarea {
 /* Show section */
 .show {	
 	padding-top: 100px;
+	@media screen and (max-width: 992px) {
+		padding-top: 80px;
+	}
 	.section-header {
 		margin-bottom: 40px;
 	}
@@ -648,7 +685,11 @@ input, button, textarea {
 		margin-top: 20px;
 		font-size: 16px;
 		width: 65%;
-	}	
+		@media screen and (max-width: 992px) {
+		font-size: 14px;
+		width: 100%;
+		}
+	}
 	&-info {		
 		height: 100%;		
 		&-calendar {		
@@ -662,7 +703,10 @@ input, button, textarea {
 .footer {
 	position: relative;
 	padding-top: 100px;
-	padding-bottom: 130px;	
+	padding-bottom: 130px;
+	@media screen and (max-width: 992px) {
+		padding-top: 80px;
+	}	
 	img {
 		width: 95px;
 	}
@@ -672,6 +716,9 @@ input, button, textarea {
 	}
 	p {
 		width: 73%;
+		@media screen and (max-width: 992px) {
+		width: 90%;
+		}
 	}
 	.block-header {
 		margin-bottom: 20px;

@@ -79,6 +79,11 @@ body {
   font-weight: 400;
   color: #000000;
 }
+@media screen and (max-width: 992px) {
+  body {
+    font-size: 15px;
+  }
+}
 input:focus,
 button:focus,
 textarea:focus {
@@ -103,6 +108,7 @@ textarea:focus {
   line-height: 40px;
   padding: 0 30px;
   display: inline-block;
+  text-align: center;
 }
 .btn:hover {
   box-shadow: 0 4px 6px 1px rgba(0, 0, 0, 0.3);
@@ -114,10 +120,21 @@ textarea:focus {
   font-family: 'OpenSans', sans-serif;
   font-weight: 700;
 }
+@media screen and (max-width: 992px) {
+  .name-header {
+    font-size: 16px;
+  }
+}
 .section-header {
   color: #8f028f;
   font-size: 48px;
   line-height: 48px;
+}
+@media screen and (max-width: 992px) {
+  .section-header {
+    font-size: 36px;
+    line-height: 40px;
+  }
 }
 .block-header {
   color: #8f028f;
@@ -238,6 +255,11 @@ textarea:focus {
   height: 200px;
   background-color: #8f028f;
 }
+@media screen and (max-width: 992px) {
+  .main-box {
+    height: 220px;
+  }
+}
 .main-box-text {
   line-height: 18px;
   font-size: 14px;
@@ -270,14 +292,29 @@ textarea:focus {
   position: relative;
   padding-top: 100px;
 }
+@media screen and (max-width: 992px) {
+  .about {
+    padding-top: 80px;
+  }
+}
 .about-text {
   color: #010001;
   line-height: 20px;
   padding-top: 30px;
 }
+@media screen and (max-width: 992px) {
+  .about-text {
+    padding-top: 10px;
+  }
+}
 .slider {
   width: 100%;
   margin-top: 40px;
+}
+@media screen and (max-width: 992px) {
+  .slider {
+    margin-top: 10px;
+  }
 }
 .slider-img {
   width: 100%;
@@ -325,9 +362,13 @@ textarea:focus {
 .options {
   padding-top: 100px;
 }
+@media screen and (max-width: 992px) {
+  .options {
+    padding-top: 80px;
+  }
+}
 .options-with img {
-  width: 110px;
-  margin-top: 90px;
+  width: 62%;
 }
 .options-with .section-header {
   margin-bottom: 18px;
@@ -353,7 +394,7 @@ textarea:focus {
   margin-bottom: 65px;
 }
 .options-what-boy {
-  width: 110px;
+  width: 62%;
 }
 .options-what-todo {
   margin-bottom: 50px;
@@ -381,6 +422,11 @@ textarea:focus {
 }
 .holliday {
   padding-top: 100px;
+}
+@media screen and (max-width: 992px) {
+  .holliday {
+    padding-top: 80px;
+  }
 }
 .holliday img {
   width: 100%;
@@ -430,6 +476,11 @@ textarea:focus {
 .calculate {
   width: 100%;
   padding-top: 100px;
+}
+@media screen and (max-width: 992px) {
+  .calculate {
+    padding-top: 80px;
+  }
 }
 .calculate .section-header {
   margin-bottom: 40px;
@@ -599,6 +650,11 @@ input:checked + .calculate-slide-content-title:before {
 .show {
   padding-top: 100px;
 }
+@media screen and (max-width: 992px) {
+  .show {
+    padding-top: 80px;
+  }
+}
 .show .section-header {
   margin-bottom: 40px;
 }
@@ -618,6 +674,12 @@ input:checked + .calculate-slide-content-title:before {
   font-size: 16px;
   width: 65%;
 }
+@media screen and (max-width: 992px) {
+  .show .block-header {
+    font-size: 14px;
+    width: 100%;
+  }
+}
 .show-info {
   height: 100%;
 }
@@ -631,6 +693,11 @@ input:checked + .calculate-slide-content-title:before {
   padding-top: 100px;
   padding-bottom: 130px;
 }
+@media screen and (max-width: 992px) {
+  .footer {
+    padding-top: 80px;
+  }
+}
 .footer img {
   width: 95px;
 }
@@ -640,6 +707,11 @@ input:checked + .calculate-slide-content-title:before {
 }
 .footer p {
   width: 73%;
+}
+@media screen and (max-width: 992px) {
+  .footer p {
+    width: 90%;
+  }
 }
 .footer .block-header {
   margin-bottom: 20px;
