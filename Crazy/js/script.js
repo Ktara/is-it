@@ -1,3 +1,53 @@
+ (function() {
+  var calculator = new Vue({
+    el: '#calculator',
+    data: {
+      holidayType : 'Невизначений',
+      guestAdult : "0",
+      guestChild : "0",
+      animator : 'Невизначений',
+      excursion : 'Невизначений',
+      showing : [],
+     },
+    computed: {
+      guests: function() {
+        var res1;
+        var res2;
+        if(this.guestAdult == 1) {
+          res1 = "1 дорослий";
+        }
+        if(this.guestChild == 1) {
+          res2 = "1 дитина";
+        }
+        if(this.guestAdult > 1) {
+          res1 = this.guestAdult + " дорослих";
+        }
+        if(this.guestChild > 1) {
+          res2 = this.guestChild + " дітей";
+        }
+        if(this.guestAdult == 0 && this.guestChild>0) {
+          res1 = "";
+        };
+        if(this.guestAdult > 0 && this.guestChild==0) {
+          res2 = "";
+        };
+        if(this.guestAdult == 0 && this.guestChild==0) {
+          return "Невідомо";
+        } else {
+          return res1 + " та " + res2;
+        }
+      },
+      shows: function() {
+        var result = "";
+        for(show in this.showing) {
+          result = result + "<p>" + this.showing[show]+ "</p>";
+        };
+        return result;
+    }
+    }
+});
+})();
+
  $('.slider').slick({
   slidesToShow: 1,
   slidesToScroll: 1,
@@ -36,7 +86,7 @@ $(document).ready(function(){
     var oldPosition = 8.5 + 16.6*($slides.length - 2);
 
     function nextSlide() {
-      
+
       $($slides[counter]).animate({opacity:0}, 600);
 
       if(counter === $slides.length-2)  {
@@ -91,4 +141,9 @@ $(document).ready(function(){
 
 
 })();
+
+$( function() {
+    $( "#datepicker" ).datepicker();
+  } );
+
 

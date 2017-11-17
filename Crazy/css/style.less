@@ -159,7 +159,10 @@ input, button, textarea {
 	&-menu {
 		display: inline-flex;
 		width: 100%;
-		justify-content: space-between;		
+		justify-content: space-between;
+		li {
+			box-sizing: border-box;
+		}
 		a {	
 			.opn-bold;
 			text-decoration: none;
@@ -438,6 +441,9 @@ input, button, textarea {
 }
 
 /* Calculate section */
+.purple-color {
+	color: @main-purple;
+}
 .calculate {
 	width: 100%;
 	padding-top: 100px;
@@ -446,10 +452,10 @@ input, button, textarea {
 		}
 	&-slide {	
 		position: relative;
-		height: 190px;
+		height: 210px;
 		overflow: hidden;	
 		&-block {
-			height: 190px;
+			height: 210px;
 			position: absolute;
 			width: ~"calc(100% - 20px)";
 			opacity: 0;
@@ -466,7 +472,11 @@ input, button, textarea {
 				margin-top: 10px;
 			}
 			label {
-				width: 100%;
+				cursor: pointer;
+			}
+			label,
+			.calc-serv-block {
+				width: auto;
 				display: inline-block;
 				margin-left: 25px;
 				margin-top: 25px;
@@ -499,7 +509,67 @@ input, button, textarea {
 				height: 21px;
 				left: -27px;
 			}			
-		}		
+		}
+		 .guests-block {
+		 	input {
+		 		display: inline-block;
+		 		visibility: visible;
+		 		width: 30px;
+		 		position: relative;
+		 		font-size: 20px;
+		 		top: -1px;
+		 		bottom: 0;
+		 		left: 0;
+		 		right: 0;
+		 		text-align: center;
+		 		border: none;
+		 		outline: none;
+		 	}
+		 	.calc-serv-block {
+		 		line-height: 20px;
+		 		vertical-align: middle;
+		 		.calculate-slide-content-title {
+		 			margin-bottom: 5px;
+		 		}
+		 		.block-sub-header {
+		 			margin-top: 5px;
+		 		}
+		 	}
+		 	.calc-l-btn,
+		 	.calc-r-btn {
+		 		cursor: pointer;
+		 		position: relative;
+		 		text-align:center;
+		 		line-height: 20px;
+		 		display: inline-block;
+		 		width: 20px;
+		 		height: 20px;
+		 		color: @main-purple;
+		 		font-weight: 700;
+		 		border: 2px solid @main-purple;
+		 		border-radius: 20px;
+		 		vertical-align: top;
+		 	}
+	 		.calc-r-btn:after {
+	 			content: "+";
+	 			display: block;
+	 			position: absolute;
+	 			left: 3.5px;
+	 			top: -1px;
+	 		}
+	 		.calc-l-btn:after {
+	 			content: "-";
+	 			display: block;
+	 			position: absolute;
+	 			left: 5px;
+	 			top: -2.5px;
+	 		}
+		 	.calculate-slide-content-title {
+				&:before{
+					content: none;
+				}						
+			}
+		 }		
 	}
 	&-btn-container {
 		text-align: right;
@@ -654,14 +724,18 @@ input, button, textarea {
 		}
 		
 	}
+	.map {
+		display: block;
+		margin: 100px auto 0 auto;		
+	}
 }	
 .sub-footer {
 	position: absolute;
 	bottom: 0;
 	background-color: @main-purple;
 	width: 100%;
-	height: 50px;
-	line-height: 50px;
+	height: 40px;
+	line-height: 40px;
 	color: @white;
 	text-align: center;
 	.copyright {
@@ -682,8 +756,8 @@ input, button, textarea {
 	a {	
 		color: @main-blue;	
 		display: inline-block;
-		width: 22px;
-		height: 22px;		
+		width: 20px;
+		height: 20px;		
 		img {
 			width: auto;
 			height: 100%;

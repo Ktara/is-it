@@ -11,6 +11,8 @@
     <link rel="stylesheet" href="css/reset.css">
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/slick.css"/>
+    <link rel="stylesheet" href="css/jquery-ui.structure.min.css">
+    <link rel="stylesheet" href="css/jquery-ui.theme.min.css">
     <link rel="stylesheet" href="css/style.css">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -210,11 +212,11 @@
 
         <section id="calculate" class="calculate">
           <div class="container">
-             <h3 class="section-header">
-                      Розрахуйте свято за 5 кроків
-             </h3>   
+            <h3 class="section-header">
+              Розрахуйте свято за 5 кроків
+            </h3>   
           </div>
-          <div class="container calculate-slide">
+          <div class="container calculate-slide" id="calculator">
            <div class="calculate-slide-block">              
               <h6 class="block-header">
               Оберіть подію, яку хочете провести в Лабораторії
@@ -226,34 +228,34 @@
                 <form action="">
                   <div class="col-md-4">
                     <label>
-                      <input type="radio" name="event">
+                      <input v-model="holidayType" type="radio" name="event" value="День народження, іменинникам вхід безкоштовний">
                       <p class="calculate-slide-content-title">
-                      День народження
+                      День&nbsp;народження
                       </p>
                       <p class="block-sub-header">
-                      іменинникам вхід безкоштовний
+                      іменинникам вхід&nbsp;безкоштовний
                       </p>
                     </label>                  
                   </div>
                   <div class="col-md-4">
                     <label>
-                      <input type="radio" name="event">
+                      <input  v-model="holidayType" type="radio" name="event" value="Сімейний день, знижки для родини до 160 грн">
                       <p class="calculate-slide-content-title">
-                      Сімейний день
+                      Сімейний&nbsp;день
                       </p>
                       <p class="block-sub-header">
-                      знижки для родини до 160 грн
+                      знижки для&nbsp;родини до&nbsp;160&nbsp;грн
                       </p>
                     </label>                  
                   </div>
                   <div class="col-md-4">
                     <label> 
-                      <input type="radio" name="event">
-                      <p class="calculate-slide-content-title">
-                      День для компанії
+                      <input  v-model="holidayType" type="radio" name="event">
+                      <p class="calculate-slide-content-title" value="День для компанії - шкільний клас, старша група садочку">
+                      День для&nbsp;компанії
                       </p>
                       <p class="block-sub-header">
-                      шкільний клас, старша група садочку
+                      шкільний&nbsp;клас, старша&nbsp;група&nbsp;садочку
                       </p>                    
                     </label>                 
                   </div>
@@ -267,29 +269,33 @@
               <p class="block-sub-header">
               що більше людей, то нижча ціна
               </p>
-              <div class="row calculate-slide-content">
+              <div class="row calculate-slide-content guests-block">
                 <form action="">
                   <div class="col-md-4">
-                    <label>
-                      <input type="radio" name="guests">
+                    <div class="calc-serv-block">
                       <p class="calculate-slide-content-title">
                       Діти
                       </p>
+                      <div  @click="guestChild > 0 ? guestChild-- : guestChild=0"  class="calc-l-btn"></div>
+                      <input type="text" name="guests" v-model="guestChild">
+                      <div @click="guestChild++" class="calc-r-btn"></div>
                       <p class="block-sub-header">
-                      від 145 грн <br>до 14 років
+                      від&nbsp;145&nbsp;грн до&nbsp;14&nbsp;років
                       </p>
-                    </label>                  
+                    </div>                  
                   </div>
                   <div class="col-md-4">
-                    <label>
-                      <input type="radio" name="guests">
+                    <div class="calc-serv-block">
                       <p class="calculate-slide-content-title">
                       Дорослі
                       </p>
+                      <div @click="guestAdult > 0 ? guestAdult-- : guestAdult=0" class="calc-l-btn"></div>
+                      <input type="text" name="guests" v-model="guestAdult">
+                      <div @click="guestAdult++"  class="calc-r-btn"></div>
                       <p class="block-sub-header">
-                      від 145 грн
+                      від&nbsp;145&nbsp;грн
                       </p>
-                    </label>                  
+                    </div>                  
                   </div>                  
                 </form>
               </div><!-- row -->
@@ -305,31 +311,31 @@
                 <form action="">
                   <div class="col-md-4">
                     <label>
-                      <input type="radio" name="animator">
+                      <input type="radio" name="animator" value="від 500 грн, 1 година" v-model="animator">
                       <p class="calculate-slide-content-title">
-                      1 година
+                      1&nbsp;година
                       </p>
                       <p class="block-sub-header">
-                      від 500 грн
+                      від&nbsp;500&nbsp;грн
                       </p>
                     </label>                  
                   </div>
                   <div class="col-md-4">
                     <label>
-                      <input type="radio" name="animator">
+                      <input type="radio" name="animator" value="від 700 грн, 1,5 години" v-model="animator">
                       <p class="calculate-slide-content-title">
-                      1,5 години
+                      1,5&nbsp;години
                       </p>
                       <p class="block-sub-header">
-                      від 700 грн
+                      від&nbsp;700&nbsp;грн
                       </p>
                     </label>                  
                   </div>
                   <div class="col-md-4">
                     <label> 
-                      <input type="radio" name="animator">
+                      <input type="radio" name="animator" value="не потрібен" v-model="animator">
                       <p class="calculate-slide-content-title">
-                      не потрібен
+                      не&nbsp;потрібен
                       </p>           
                     </label>                 
                   </div>
@@ -338,43 +344,43 @@
             </div><!-- animator -->
             <div class="calculate-slide-block">              
               <h6 class="block-header">
-              Ваша екскурсія
+              Ваша&nbsp;екскурсія
               </h6>
               <p class="block-sub-header">
-              вартість за екскурсію (не с людини), що більше людей, то нижча ціна
+              вартість за&nbsp;екскурсію (не&nbsp;с&nbsp;людини), що&nbsp;більше людей, то&nbsp;нижча&nbsp;ціна
               </p>
               <div class="row calculate-slide-content">
                 <form action="">
                   <div class="col-md-4">
                     <label>
-                      <input type="radio" name="excursion">
+                      <input type="radio" name="excursion" v-model="excursion" value="Ознайомча, проводить співробітник лабораторії (від 250 грн)">
                       <p class="calculate-slide-content-title">
                       Ознайомча
                       </p>
                       <p class="block-sub-header">
-                      проводить співробітник лабораторії (від 250 грн)
+                      проводить співробітник лабораторії (від&nbsp;250&nbsp;грн)
                       </p>
                     </label>                  
                   </div>
                   <div class="col-md-4">
                     <label>
-                      <input type="radio" name="excursion">
+                      <input type="radio" name="excursion" v-model="excursion" value="Із професором, проводить аніматор у костюмі професора (від 250 грн)">
                       <p class="calculate-slide-content-title">
                       Із професором
                       </p>
                       <p class="block-sub-header">
-                      проводить аніматор у костюмі професора (від 250 грн)
+                      проводить аніматор у костюмі професора (від&nbsp;250&nbsp;грн)
                       </p>
                     </label>                  
                   </div>
                   <div class="col-md-4">
                     <label> 
-                      <input type="radio" name="excursion">
+                      <input type="radio" name="excursion" v-model="excursion" value="Без екскурсії, діти самостійно оглядають лабораторію">
                       <p class="calculate-slide-content-title">
-                      Без екскурсіЇ
+                      Без&nbsp;екскурсіЇ
                       </p>
                       <p class="block-sub-header">
-                      діти самостійно оглядають лабораторію
+                      діти&nbsp;самостійно&nbsp;оглядають&nbsp;лабораторію
                       </p>                    
                     </label>                 
                   </div>
@@ -392,65 +398,70 @@
                 <form action="">
                   <div class="col-md-3">
                     <label>
-                      <input type="radio" name="showing">
+                      <input type="checkbox" name="showing" v-model="showing" value="Набір експериментів, 1000&nbsp;грн">
                       <p class="calculate-slide-content-title">
                       Набір експериментів
                       </p>
                       <p class="block-sub-header">
-                      1000 грн
+                      1000&nbsp;грн
                       </p>
                     </label>                  
                   </div>
                   <div class="col-md-3">
                     <label>
-                      <input type="radio" name="showing">
+                      <input type="checkbox" name="showing"  v-model="showing" value="Сухий лід, 1000&nbsp;грн">
                       <p class="calculate-slide-content-title">
                       Сухий лід
                       </p>
                       <p class="block-sub-header">
-                      1000 грн
+                      1000&nbsp;грн
                       </p>
                     </label>                  
                   </div>
                   <div class="col-md-3">
                     <label> 
-                      <input type="radio" name="showing">
+                      <input type="checkbox" name="showing"  v-model="showing" value="Експерименти з рідким азотом, 2500&nbsp;грн">
                       <p class="calculate-slide-content-title">
                       Експерименти з рідким азотом
                       </p>
                       <p class="block-sub-header">
-                      2500грн
+                      2500&nbsp;грн
                       </p>                    
                     </label>                 
                   </div>
                   <div class="col-md-3">
                     <label> 
-                      <input type="radio" name="showing">
+                      <input type="checkbox" name="showing"  v-model="showing" value="Мильні бульбашки, 1000&nbsp;грн">
                       <p class="calculate-slide-content-title">
                       Мильні бульбашки
                       </p>
                       <p class="block-sub-header">
-                      1000 грн
+                      1000&nbsp;грн
                       </p>                    
                     </label>                 
                   </div>
                 </form>
               </div><!-- row -->
             </div><!-- showing -->
-            <div class="calculate-slide-block">                            
+            <div class="calculate-slide-block">                           
               <div class="row">
                 <div class="col-md-8">
-                  <p><span>Подія:</span> знижки для родини до 160 грн</p>
-                  <p><span>Кількість гостей:</span> 7 дитячих, 7 дорослих</p>
-                  <p><span>Аниматор:</span> 1 година: від 500 грн</p>
-                  <p><span>Екскурсія:</span> undefined</p>
-                  <p><span>Шоу-програма:</span> undefined</p>
+                  <p><span class="purple-color">Подія: </span>{{ holidayType }}</p>
+                  <p><span class="purple-color">Кількість гостей: </span>{{ guests }}</p>
+                  <p><span class="purple-color">Аніматор: </span> {{ animator }} </p>
+                  <p><span class="purple-color">Екскурсія: </span>{{ excursion }}</p>
+                  <p><span class="purple-color">Шоу-програма: </span> <div v-html="shows"></div></p>
                 </div>
                 <div class="col-md-4">
                   <form class="footer-form" action="">
+                    <input type="hidden" value="{{ holidayType }}">
+                    <input type="hidden" value="{{ guests }}">
+                    <input type="hidden" value="{{ animator }}">
+                    <input type="hidden" value="{{ excursion }}">
+                    <input type="hidden" value="{{ showing }}">
                     <input type="name" placeholder="Імя">
                     <input type="tel" placeholder="Телефон">
-                    <input type="data" placeholder="Дата">
+                    <input type="data" id="datepicker" placeholder="Дата">
                     <a href="" class="btn">Замовити</a>
                 </form>
                 </div>
@@ -544,6 +555,11 @@
                 <img src="img/svg/contact-us.svg" alt="">
               </div>
             </div>
+            <div class="row">
+              <div class="map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2536.9355287589387!2d30.49645936607599!3d50.51676639046472!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4d26aba9b1cf7%3A0xc22cd2ec211a9b40!2z0KLQoNCmIERyZWFtIFRvd24gMiDRh9Cw0YHRgtGMLCDQntCx0L7Qu9C-0L3RgdGM0LrQuNC5INC_0YDQvtGB0L_QtdC60YIsIDIx0JEsINCa0LjRl9CyLCAwNDIwNQ!5e0!3m2!1sru!2sua!4v1510816761755" width="100%" height="400" frameborder="0" style="border:0" allowfullscreen></iframe>
+              </div>
+            </div>
           </div>
           <div class="sub-footer">
             <div class="container">
@@ -573,6 +589,8 @@
 <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
 <script type="text/javascript" src="js/slick.min.js"></script>
 <script type="text/javascript" src="js/scrollspy.js"></script>
+<script type="text/javascript" src="js/jquery-ui.min.js"></script>
+<script type="text/javascript" src="js/vue.min.js"></script>
 <script type="text/javascript" src="js/script.js"></script>
 
 
