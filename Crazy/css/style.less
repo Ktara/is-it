@@ -136,6 +136,10 @@ input, button, textarea {
 		font-size: 36px;
 		line-height: 40px;
 	}
+	@media screen and (max-width: 768px) {
+		font-size: 36px;
+		line-height: 40px;
+	}
 
 }	
 .block-header {
@@ -157,10 +161,18 @@ input, button, textarea {
 	width: 100%;
 	height: 60px;
 	background-color: @main-purple;
+	@media screen and (max-width: 768px) {
+		line-height: 50px;
+		height: 50px;
+		}
 	&-logo {
 		display: inline-block;
 		width: 26px;
 		height: 37px;
+		@media screen and (max-width: 768px) {
+			width: 20px;
+			height: 29px;
+		}
 		img {
 			width: 100%;
 			height: 100%;
@@ -170,6 +182,33 @@ input, button, textarea {
 		display: inline-flex;
 		width: 100%;
 		justify-content: space-between;
+		@media screen and (max-width: 768px) {			
+			width: 30px;
+			height: 2px;
+			background-color: @white;			
+			position: relative;
+			li {
+				display: none;
+			}
+			&:before {
+				content: '';
+				width: 30px;
+				height: 2px;
+				display: block;
+				position: absolute;
+				background-color: @white;
+				top: -6px;
+			}
+			&:after {
+				content: '';
+				width: 30px;
+				height: 2px;
+				display: block;
+				position: absolute;
+				background-color: @white;
+				bottom: -6px;
+			}
+		}
 		li {
 			box-sizing: border-box;
 		}
@@ -191,6 +230,44 @@ input, button, textarea {
 		}		
 			
 	}
+	.nav-active {
+		position: fixed;
+		top: 0;
+		left: 0;
+		margin-left: 0;
+		width: 100%;
+		height: 100vh;
+		background-color: @main-purple;
+		li {
+			display: inline-block;
+		}
+		.nav-header-menu {
+			flex-direction: column;
+			text-align: center;
+			width: 100%;
+			height: 100%;
+			background-color: rgba(0,0,0,0);
+			justify-content: center;
+			a {
+				width: 100%;
+			}
+			&:before {
+				top: 30px;
+				right: 30px;
+				width: 20px;
+				height: 3px;
+				transform: rotate(-45deg);
+			}
+			&:after {
+				bottom: 0;
+				top: 30px;
+				right: 30px;
+				width: 20px;
+				height: 3px;
+				transform: rotate(45deg);
+			}
+		}
+	}
 }
 
 /* Main section */
@@ -204,6 +281,10 @@ input, button, textarea {
 	height: ~"calc(100vh - 60px)";
 	text-align: center;
 	position: relative;
+	@media screen and (max-width: 768px) {
+			margin-top: 50px;
+			height: ~"calc(100vh - 50px)";
+		}
 	&:after {
 		background-color: hsla( 0, 0%, 100%, 0.6);
 		content: ''	;
@@ -229,7 +310,10 @@ input, button, textarea {
 		margin: 20px 0 0 0;
 		position: relative;
 		z-index: 1;
-		text-decoration: none;		
+		text-decoration: none;
+		@media screen and (max-width: 768px) {
+			margin: 35px 0 0 0;
+		}		
 	}
 	&-header {
 		margin: 22vh 0 0 0;
@@ -237,6 +321,10 @@ input, button, textarea {
 		z-index: 1;		
 		font-size: 65px;
 		color: @main-purple;
+		@media screen and (max-width: 768px) {
+			font-size: 45px;
+			margin: 60px 15px 0 15px;
+		}
 	}
 	&-sub-header {
 		margin: 10px 0 0 0;
@@ -245,6 +333,10 @@ input, button, textarea {
 		.opn-bold;
 		font-size: 18px;
 		color: @main-purple;
+		@media screen and (max-width: 768px) {
+			font-size: 16px;
+			margin: 35px 0 0 0;
+		}
 	}
 	&-box {
 		text-align: left;
@@ -285,9 +377,10 @@ input, button, textarea {
 	.name-header {
 		line-height: 20px;
 		color: @sub-white;
-	}
-		
+	}		
 }
+
+
 
 /* About section */
 .about {	
@@ -296,13 +389,59 @@ input, button, textarea {
 	@media screen and (max-width: 992px) {
 		padding-top: 80px;
 	}
+	.main-row-slider {
+		height: 230px;
+		margin: 0 auto 0 auto;
+		}
+	.main-slider-wrapper {
+		margin-bottom: 60px;
+		position: relative;
+		.main-box .name-header {
+				color: @sub-white;
+				font-size: 18px;
+		}
+		.main-slider-counter {
+			.opn-reg;
+			color: @main-purple;
+			font-size: 18px;
+			display: block;
+			text-align: center;
+		}
+		.main-prevarrow {
+			@media screen and (max-width: 768px) {
+			top: 33%;
+			width: 27px;
+			height: 54px;	
+			position: absolute;
+			background-image: url(../img/svg/prevarrow.svg);
+			background-size: cover;	
+			left: -15px;
+			z-index: 1000;	
+			cursor: pointer;			
+			}
+		}
+		.main-nextarrow {
+			@media screen and (max-width: 768px) {
+			top: 33%;
+			width: 27px;
+			height: 54px;
+			right: -12px;
+			position: absolute;
+			background-image: url(../img/svg/nextarrow.svg);
+			background-size: cover;			
+			z-index: 1000;		
+			cursor: pointer;			
+			}		
+		}
+	}	
+	
 	&-text {
 		color: @sub-black;
 		line-height: 20px;
 		padding-top: 30px;
 		@media screen and (max-width: 992px) {
 		padding-top: 10px;
-	}
+		}
 	}	
 }
 .slider {
@@ -329,29 +468,44 @@ input, button, textarea {
 	img {
 		width: 100%;		
 	}
+	@media screen and (max-width: 768px) {
+		display: none;
+	}
 }
-.prevarrow {
-	display: none;
+.prevarrow {	
 	position: absolute;
-	content: url(../img/svg/prevarrow.svg);
+	background-image: url(../img/svg/prevarrow.svg);
+	background-size: cover;
 	width: 36px;
 	height: 72px;
 	left: 0;
 	z-index: 1000;
 	top: 40%;
 	cursor: pointer;
+	@media screen and (max-width: 768px) {
+		top: 33%;
+		width: 30px;
+		height: 60px;
+	}
 }
-.nextarrow {
-	display: none;
+.nextarrow {	
 	position: absolute;
-	content: url(../img/svg/nextarrow.svg);	
+	background-image: url(../img/svg/nextarrow.svg);
+	background-size: cover;	
 	width: 36px;
 	height: 72px;
 	right: 0;
 	z-index: 1000;
 	top: 40%;
 	cursor: pointer;
+	@media screen and (max-width: 768px) {
+		top: 33%;
+		width: 30px;
+		height: 60px;
+		right: 5px;
+	}
 }
+
 .slider-wrapper {
 	position: relative;
 }
@@ -369,6 +523,9 @@ input, button, textarea {
 			// @media (max-width: 992px) {
 			// margin-top: 0;
 			// }
+			@media screen and (max-width: 768px) {
+			display: none;
+			}
 		}
 		.section-header {			
 			margin-bottom: 18px;
@@ -392,12 +549,21 @@ input, button, textarea {
 		margin-top: 100px;		
 		.section-header {
 			margin-bottom: 65px;
-		}
+			@media screen and (max-width: 768px) {
+			margin-bottom: 15px;
+			}
+		}		
 		&-boy {
 			width: 62%;
+			@media screen and (max-width: 768px) {
+			display: none;
+		}
 		}
 		&-todo {
 			margin-bottom: 50px;
+			@media screen and (max-width: 768px) {
+				margin-bottom: 25px;
+			}
 			&-decor-1, &-decor-2 {
 				float: left;
 				width: 35px;
@@ -469,8 +635,37 @@ input, button, textarea {
 		position: relative;
 		text-decoration: none;	
 	}
+	.holliday-slider-wrapper {
+		height: 600px;
+		position: relative;
+		.holliday-prevarrow {
+			@media screen and (max-width: 768px) {
+			top: 20%;
+			width: 27px;
+			height: 54px;	
+			position: absolute;
+			background-image: url(../img/svg/prevarrow.svg);
+			background-size: cover;	
+			left: -15px;
+			z-index: 1000;	
+			cursor: pointer;			
+			}
+		}
+		.holliday-nextarrow {
+			@media screen and (max-width: 768px) {
+			top: 20%;
+			width: 27px;
+			height: 54px;
+			right: -12px;
+			position: absolute;
+			background-image: url(../img/svg/nextarrow.svg);
+			background-size: cover;			
+			z-index: 1000;		
+			cursor: pointer;						
+			}		
+		}
+	}
 }
-
 /* Calculate section */
 .purple-color {
 	color: @main-purple;
@@ -483,11 +678,17 @@ input, button, textarea {
 	}
 	.section-header {
 			margin-bottom: 40px;
+			@media screen and (max-width: 768px) {
+				margin-bottom: 20px;
+			}
 		}
 	&-slide {	
 		position: relative;
 		height: 210px;
-		overflow: hidden;	
+		overflow: hidden;
+		@media screen and (max-width: 768px) {
+			height: 390px;
+		}			
 		&-block {
 			height: 210px;
 			position: absolute;
@@ -498,12 +699,23 @@ input, button, textarea {
 				opacity: 1;
 				display: block;
 			}
+			.slide-list{
+				.event-1 {
+					// @media screen and (max-width: 768px) {
+					// display: none;
+					// }
+				}
+			}
+			
 		}
 
 		&-content {		
 			.block-sub-header {
 				width: 70%;
 				margin-top: 10px;
+				@media screen and (max-width: 768px) {
+					margin-top: 3px;
+				}							
 			}
 			label {
 				cursor: pointer;
@@ -515,11 +727,15 @@ input, button, textarea {
 				margin-left: 25px;
 				margin-top: 25px;
 				position: relative;
+				@media screen and (max-width: 768px) {					
+					flex-direction: column;
+					margin-top: 10px;
+				}
 				input {
 				position: absolute;
 				left: -22px;
 				top: 6px;
-				visibility: hidden;
+				visibility: hidden;				
 				}
 			}
 			&-title {
@@ -648,14 +864,24 @@ input, button, textarea {
 		display: flex;
 		justify-content: space-between;
 		margin-top: 20px;
+		@media screen and (max-width: 768px) {
+			flex-direction: row;
+			font-size: 0;
+		}
 		li {
+			display: inline-block;
 			width: 17%;
 			text-align: center;
-		}
-		// li {
-		// 	width: 12%;
-		// 	text-align: right;
-		// }
+			@media screen and (max-width: 768px) {					
+				font-size: 14px;
+				width: 16.5%;
+				box-sizing: border-box;
+				padding-left: 1px;
+				&:first-child {
+					width: 16.4%;
+				}
+			}
+		}		
 	}
 
 }
@@ -667,11 +893,28 @@ input, button, textarea {
 	@media screen and (max-width: 992px) {
 		padding-top: 80px;
 	}
+	.btn-calendar {
+		width: 240px;		
+	}
 	.section-header {
-		margin-bottom: 40px;
+		margin-bottom: 40px;		
+		@media screen and (max-width: 768px) {
+			margin-bottom: 20px;
+		}			
 	}
 	.btn {
 		text-decoration: none;
+		@media screen and (max-width: 768px) {
+			margin: 20px 0 25px 0;
+			width: 100%;
+		}
+	}
+	.btn-calendar {
+		max-width: 320px;
+		background-color: @main-purple;
+		margin: 0 auto 20px auto;
+		display: block;
+		background-image: none;		
 	}
 	a {
 		color: @white;
@@ -684,7 +927,7 @@ input, button, textarea {
 	.block-header {
 		margin-top: 20px;
 		font-size: 16px;
-		width: 65%;
+		width: 75%;
 		@media screen and (max-width: 992px) {
 		font-size: 14px;
 		width: 100%;
@@ -694,7 +937,14 @@ input, button, textarea {
 		height: 100%;		
 		&-calendar {		
 		height: 100%;
-		display: inline-block;		
+		display: inline-block;
+		@media screen and (max-width: 768px) {
+			display: none;
+		}		
+		}
+		.fixed {
+			padding-left: 0;
+			padding-right: 0;
 		}
 	}
 }
@@ -706,13 +956,22 @@ input, button, textarea {
 	padding-bottom: 130px;
 	@media screen and (max-width: 992px) {
 		padding-top: 80px;
+	@media screen and (max-width: 768px) {
+		padding-top: 35px;
+	}
 	}	
 	img {
 		width: 95px;
+		@media screen and (max-width: 768px) {
+			display: none;
+		}
 	}
 	.section-header {
 		margin-top: 40px;
 		margin-bottom: 40px;
+		@media screen and (max-width: 768px) {
+			margin-top: 0;
+		}
 	}
 	p {
 		width: 73%;
@@ -722,6 +981,9 @@ input, button, textarea {
 	}
 	.block-header {
 		margin-bottom: 20px;
+		@media screen and (max-width: 768px) {
+			margin-top: 60px;
+		}
 	}
 
 	&-form {
@@ -773,7 +1035,10 @@ input, button, textarea {
 	}
 	.map {
 		display: block;
-		margin: 100px auto 0 auto;		
+		margin: 100px auto 0 auto;
+		@media screen and (max-width: 768px) {
+			display: none;
+		}		
 	}
 }	
 .sub-footer {
@@ -785,6 +1050,9 @@ input, button, textarea {
 	line-height: 40px;
 	color: @white;
 	text-align: center;
+	@media screen and (max-width: 768px) {
+		display: none;
+	}
 	.copyright {
 		text-align: left;
 	}
@@ -810,4 +1078,7 @@ input, button, textarea {
 			height: 100%;
 		}
 	}
+}
+.clearfix {
+	clear: both;
 }

@@ -28,12 +28,12 @@
       <header class="nav-header">
         <div class="container">
           <div class="row">
-            <div class="col-md-5 col-sm-2">
+            <div class="col-md-5 col-sm-2 col-xs-10">
               <a href="#" class="nav-header-logo">
                 <img src="img/svg/logo.svg" alt="Crazy-Professor">
               </a>
             </div>
-            <div id="nav_wrapper" class="col-md-7 col-sm-10">
+            <div id="nav_wrapper" class="col-md-7 col-sm-10 col-xs-2">
               <ul role="navigation" class="nav nav-header-menu">
                 <li role="presentation"><a href="#about">Про&nbsp;лабораторію</a></li>
                 <li role="presentation"><a href="#holliday">Свята</a></li>
@@ -50,8 +50,8 @@
         <div class="container main-container">
           <h1 class="main-header">Лабораторія Чокнутого Професора</h1>
           <p class="main-sub-header">веселі та пізнавальні ігри для дітей</p>
-          <a href="#" class="btn">Дізнатися більше</a>
-          <div class="row col-xs-12 main-row">
+          <a href="#contacts" class="btn link-btn">Дізнатися більше</a>
+          <div class="row col-xs-12 main-row hidden-xs">
             <div class="col-md-4 col-sm-4">
               <div class="main-box main-decor-1">
                 <h5 class="name-header">Безкоштовний вхід у&nbsp;лабораторію в&nbsp;День народження</h5>
@@ -77,8 +77,34 @@
 
       <section id="about"  class="about">
         <div class="container">
-          <h2 class="section-header">Про лабораторію</h2>
-          <div class="row">
+          <div class="main-slider-wrapper">
+            <div class="row col-xs-12 main-row-slider visible-xs-block">
+              <div class="col-md-4 col-sm-4 col-xs-12">
+                <div class="main-box main-decor-1">
+                  <h5 class="name-header">Безкоштовний вхід у&nbsp;лабораторію в&nbsp;День народження</h5>
+                  <p class="main-box-text">для іменинника</p>
+                </div>
+              </div>
+              <div class="col-md-4 col-sm-4 col-xs-12">
+                <div class="main-box main-decor-2">
+                  <h5 class="name-header">Кожні вихідні проходить шоу, яке входить у вартість вхідного квитка                
+                  </h5>                
+                </div>
+              </div>
+              <div class="col-md-4 col-sm-4 col-xs-12">
+                <div class="main-box main-decor-3">
+                  <h5 class="name-header">Безкоштовний вхід для маленьких                
+                  </h5>
+                  <p class="main-box-text">Для дітей зростом до 1 метра у супроводі дорослого.<br> Квиток для дорослого коштує 155 гривень</p>
+                </div>
+              </div>            
+            </div>
+            <div class="main-prevarrow"></div>
+            <div class="main-nextarrow"></div>
+            <div class="main-slider-counter visible-xs-block"></div>
+          </div>
+          <h2 class="section-header clearfix">Про лабораторію</h2>
+          <div class="row hidden-xs">
             <div class="col-md-4">
               <p class="about-text">
                 Це&nbsp;комплекс атракціонів у&nbsp;Києві для всієї родини. Наш принип&nbsp;&mdash; &laquo;Розважайся і&nbsp;пізнавай&raquo;.
@@ -110,6 +136,22 @@
               <div class="col-md-2 slider-nav-img"><img src="img/photoes/4.jpg" alt=""></div>
               <div class="col-md-2 slider-nav-img"><img src="img/photoes/5.jpg" alt=""></div>
               <div class="col-md-2 slider-nav-img"><img src="img/photoes/6.jpg" alt=""></div>          
+            </div>
+          </div>
+          <div class="row visible-xs-block">
+            <div class="col-md-4">
+              <p class="about-text">
+                Це&nbsp;комплекс атракціонів у&nbsp;Києві для всієї родини. Наш принип&nbsp;&mdash; &laquo;Розважайся і&nbsp;пізнавай&raquo;.
+              </p>
+            </div>
+            <div class="col-md-4">
+              <p class="about-text">
+                Ігрові експонати, комплекс захоплюючих головоломок, оптичних ілюзій, природних явищ в&nbsp;мініатюрі.
+              </p>             
+            </div>
+            <div class="col-md-4">
+              <p class="about-text">Можна торкатися усіх експонатів, самостійно пізнавати світ науки.
+              </p>              
             </div>
           </div>
         </div><!-- container -->
@@ -164,7 +206,7 @@
             <h3 class="section-header">
               Оберіть своє свято в лабораторії
             </h3>
-            <div class="col-md-4 col-sm-4">
+            <div class="col-md-4 col-sm-4 hidden-xs">
               <img src="img/photoes/holliday/1.jpg" alt="">
               <h6 class="block-header">Свято для компанії</h6>
               <p class="block-sub-header">шкільний клас, група садочку</p>
@@ -175,11 +217,11 @@
                 <li>екскурсія</li>
                 <li>шоу програма</li>
               </ol>
-              <a href="" class="btn">
+              <a href="#calculate" class="btn link-btn">
                 Розрахувати вартість
               </a>
             </div>
-            <div class="col-md-4 col-sm-4">
+            <div class="col-md-4 col-sm-4 hidden-xs">
               <img src="img/photoes/holliday/2.jpg" alt="">
               <h6 class="block-header">День народження</h6>
               <p class="block-sub-header">імениннику вхід безкоштовний</p>
@@ -190,11 +232,11 @@
                 <li>екскурсія</li>
                 <li>шоу програма</li>
               </ol>
-              <a href="" class="btn">
+              <a href="#calculate" class="btn link-btn">
                 Розрахувати вартість
               </a>
             </div>
-            <div class="col-md-4 col-sm-4">
+            <div class="col-md-4 col-sm-4 hidden-xs">
               <img src="img/photoes/holliday/3.jpg" alt="">
               <h6 class="block-header">Сімейний день</h6>
               <p class="block-sub-header">знижки на квитки для родини</p>
@@ -205,10 +247,61 @@
                 <li>екскурсія</li>
                 <li>шоу програма</li>
               </ol>
-              <a href="" class="btn">
+              <a href="#calculate" class="btn link-btn">
                 Розрахувати вартість
               </a>
-            </div>
+            </div><!-- hidden-xs -->
+            <div class="holliday-slider-wrapper visible-xs-block">
+              <div class="holliday-slider-viewer">
+                <div class="col-md-4 col-sm-4">
+                  <img src="img/photoes/holliday/1.jpg" alt="">
+                  <h6 class="block-header">Свято для компанії</h6>
+                  <p class="block-sub-header">шкільний клас, група садочку</p>
+                  <ol class="holliday-list">
+                    <li>вхід у ігрову зону</li>
+                    <li>необмежений час перебування</li>
+                    <li>необмежений доступ до ігрової зони</li>
+                    <li>екскурсія</li>
+                    <li>шоу програма</li>
+                  </ol>
+                  <a href="" class="btn">
+                    Розрахувати вартість
+                  </a>
+                </div>
+                <div class="col-md-4 col-sm-4">
+                  <img src="img/photoes/holliday/2.jpg" alt="">
+                  <h6 class="block-header">День народження</h6>
+                  <p class="block-sub-header">імениннику вхід безкоштовний</p>
+                  <ol class="holliday-list">
+                    <li>вхід у ігрову зону</li>
+                    <li>необмежений час перебування</li>
+                    <li>необмежений доступ до ігрової зони</li>
+                    <li>екскурсія</li>
+                    <li>шоу програма</li>
+                  </ol>
+                  <a href="" class="btn">
+                    Розрахувати вартість
+                  </a>
+                </div>
+                <div class="col-md-4 col-sm-4">
+                  <img src="img/photoes/holliday/3.jpg" alt="">
+                  <h6 class="block-header">Сімейний день</h6>
+                  <p class="block-sub-header">знижки на квитки для родини</p>
+                  <ol class="holliday-list">
+                    <li>вхід у ігрову зону</li>
+                    <li>необмежений час перебування</li>
+                    <li>необмежений доступ до ігрової зони</li>
+                    <li>екскурсія</li>
+                    <li>шоу програма</li>
+                  </ol>
+                  <a href="" class="btn">
+                    Розрахувати вартість
+                  </a>
+                </div><!-- holliday-slider-viewer -->
+              </div>
+              <div class="holliday-prevarrow"></div>
+              <div class="holliday-nextarrow"></div>              
+            </div><!-- holliday-slider-wrapper -->
           </div><!-- container -->
         </section>
 
@@ -446,13 +539,13 @@
               </div><!-- row -->
             </div><!-- showing -->
             <div class="calculate-slide-block">                           
-              <div class="row">
+              <div class="row slide-list">
                 <div class="col-md-8 col-sm-8">
-                  <p><span class="purple-color">Подія: </span>{{ holidayType }}</p>
-                  <p><span class="purple-color">Кількість гостей: </span>{{ guests }}</p>
-                  <p><span class="purple-color">Аніматор: </span> {{ animator }} </p>
-                  <p><span class="purple-color">Екскурсія: </span>{{ excursion }}</p>
-                  <p><span class="purple-color">Шоу-програма: </span> <div v-html="shows"></div></p>
+                  <p class="event-1"><span class="purple-color">Подія: </span>{{ holidayType }}</p>
+                  <p class="guests-2"><span class="purple-color">Кількість гостей: </span>{{ guests }}</p>
+                  <p class="animator-3"><span class="purple-color">Аніматор: </span> {{ animator }} </p>
+                  <p class="excursion-4"><span class="purple-color">Екскурсія: </span>{{ excursion }}</p>
+                  <p class="show-5"><span class="purple-color">Шоу-програма: </span> <div v-html="shows"></div></p>
                 </div>
                 <div class="col-md-4 col-sm-4">
                   <form class="footer-form" action="">
@@ -481,12 +574,20 @@
                   
                 </div>
               </div>
-              <ul class="calculate-stage">
+              <ul class="calculate-stage hidden-xs">
                 <li>Подія</li>
                 <li>Кількість гостей</li>
                 <li>Аніматор</li>
                 <li>Екскурсія</li>
                 <li>Шоу</li>
+                <li>Готово</li>
+              </ul>
+              <ul class="calculate-stage visible-xs">
+                <li>1</li>
+                <li>2</li>
+                <li>3</li>
+                <li>4</li>
+                <li>5</li>
                 <li>Готово</li>
               </ul>
             </div>
@@ -497,8 +598,13 @@
         <section id="show" class="show">
           <div class="container">
             <h3 class="section-header">Шоу лабораторії</h3>
+            <div class="row visible-xs-block">
+              <div class="col-xs-12">
+                <div class="btn btn-calendar">Календар</div>
+              </div>
+            </div>
             <div class="row show-info">              
-             <div class="col-md-8 col-sm-8">
+             <div class="col-md-8 col-sm-8 fixed">
                 <div class="col-md-6  col-sm-6 show-info-list">
                  <img src="img/photoes/1.jpg" alt="">
                  <h6 class="block-header">
@@ -532,6 +638,7 @@
                 <img src="img/calendar.png" alt="">
               </div>
             </div><!-- row -->
+            
           </div>
         </section>
 
