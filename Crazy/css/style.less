@@ -904,6 +904,9 @@ input, button, textarea {
 	}
 	.btn {
 		text-decoration: none;
+		color: @white;
+		margin-top: 20px;
+		margin-bottom: 60px;	
 		@media screen and (max-width: 768px) {
 			margin: 20px 0 25px 0;
 			width: 100%;
@@ -915,11 +918,6 @@ input, button, textarea {
 		margin: 0 auto 20px auto;
 		display: block;
 		background-image: none;		
-	}
-	a {
-		color: @white;
-		margin-top: 20px;
-		margin-bottom: 60px;				
 	}
 	img {
 		width: 100%;
@@ -1036,6 +1034,7 @@ input, button, textarea {
 	.map {
 		display: block;
 		margin: 100px auto 0 auto;
+		height: 400px;
 		@media screen and (max-width: 768px) {
 			display: none;
 		}		
@@ -1081,4 +1080,38 @@ input, button, textarea {
 }
 .clearfix {
 	clear: both;
+}
+.contacts-popup {
+	display: none;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 1000;
+	background-color: rgba( 0, 0, 0, 0.5);
+	.footer-form {
+		position: relative;
+		width: 500px;
+		height: 320px;
+		background-color: white;
+		border-box: box-sizing;
+		padding: 20px 50px;
+		margin: 30vh auto 0 auto;
+		display: block;
+	}
+	.section-header {
+		margin-bottom: 30px;
+		font-size: 40px;
+	}
+	.popup-close {
+		cursor: pointer;
+		position: absolute;
+		top: 20px;
+		right: 30px;
+		color: @main-purple;
+	}
+}
+.popup-active {
+	display: block;
 }

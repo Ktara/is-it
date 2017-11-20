@@ -83,7 +83,21 @@
 
   };
 })(jQuery);
+(function(){
+    $(".show .btn").click(function(e){
+        var text = $(this).prev().text();
+        $("#showType").val(text);
+        $(".contacts-popup").addClass("popup-active");
 
+    });
+    $(".popup-close").click(function(e){
+       $(".contacts-popup").removeClass("popup-active");
+    })
+     $(".contacts-popup").click(function(e){
+      if(this != e.target) return;
+        $(".contacts-popup").removeClass("popup-active");
+     })
+})();
 
  (function() {
   var calculator = new Vue({
