@@ -71,6 +71,10 @@
   font-family: 'OpenSans', sans-serif;
   font-weight: 300;
 }
+.opn-thin {
+  font-family: 'OpenSans', sans-serif;
+  font-weight: 200;
+}
 /* Base colors */
 /* Base setting */
 body {
@@ -116,7 +120,7 @@ textarea:focus {
   background-image: linear-gradient(-257deg, #00fef0 0%, #8f028f 100%);
 }
 .name-header {
-  font-size: 18px;
+  font-size: 20px;
   font-family: 'OpenSans', sans-serif;
   font-weight: 700;
 }
@@ -127,8 +131,8 @@ textarea:focus {
 }
 .section-header {
   color: #8f028f;
-  font-size: 48px;
-  line-height: 48px;
+  font-size: 32px;
+  line-height: 40px;
 }
 @media screen and (max-width: 992px) {
   .section-header {
@@ -144,14 +148,16 @@ textarea:focus {
 }
 .block-header {
   color: #8f028f;
-  font-size: 18px;
+  font-size: 19px;
   font-family: 'OpenSans', sans-serif;
   font-weight: 700;
+  line-height: 24px;
 }
 .block-sub-header {
-  font-size: 14px;
+  font-size: 15px;
   font-family: 'OpenSans', sans-serif;
   font-weight: 300;
+  line-height: 19px;
 }
 /* Header */
 .nav-header {
@@ -332,6 +338,8 @@ textarea:focus {
   z-index: 1;
   font-size: 65px;
   color: #8f028f;
+  font-family: 'OpenSans', sans-serif;
+  font-weight: 300;
 }
 @media screen and (max-width: 768px) {
   .main-header {
@@ -392,7 +400,7 @@ textarea:focus {
   width: 40px;
 }
 .main .name-header {
-  line-height: 20px;
+  line-height: 26px;
   color: #fefefe;
 }
 /* About section */
@@ -613,6 +621,7 @@ textarea:focus {
 /* Holliday section */
 .block-sub-header {
   margin-bottom: 15px;
+  line-height: 19px;
 }
 .holliday {
   padding-top: 100px;
@@ -734,6 +743,10 @@ textarea:focus {
 .calculate-slide-block:first-child {
   opacity: 1;
   display: block;
+}
+.calculate-slide-block .block-header {
+  font-size: 18px;
+  line-height: 26px;
 }
 .calculate-slide-content .block-sub-header {
   width: 70%;
