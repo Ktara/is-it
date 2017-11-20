@@ -366,6 +366,8 @@
               </p>
               <div class="row calculate-slide-content guests-block">
                 <form action="">
+                  <input id="childPrice" type="hidden" value="145">
+                  <input id="adultPrice" type="hidden" value="145">
                   <div class="col-md-4 col-sm-4">
                     <div class="calc-serv-block">
                       <p class="calculate-slide-content-title">
@@ -406,7 +408,7 @@
                 <form action="">
                   <div class="col-md-4 col-sm-4">
                     <label>
-                      <input type="radio" name="animator" value="від 500 грн, 1 година" v-model="animator">
+                      <input @click="getPrice" type="radio" name="animator" value="від 500 грн, 1 година" v-model="animator">
                       <p class="calculate-slide-content-title">
                       1&nbsp;година
                       </p>
@@ -417,7 +419,8 @@
                   </div>
                   <div class="col-md-4 col-sm-4">
                     <label>
-                      <input type="radio" name="animator" value="від 700 грн, 1,5 години" v-model="animator">
+                      <input  @click="getPrice" type="radio" name="animator" value="від 700 грн, 1,5 години" v-model="animator"
+                      >
                       <p class="calculate-slide-content-title">
                       1,5&nbsp;години
                       </p>
@@ -428,7 +431,7 @@
                   </div>
                   <div class="col-md-4 col-sm-4">
                     <label> 
-                      <input type="radio" name="animator" value="не потрібен" v-model="animator">
+                      <input @click="getPrice" type="radio" name="animator" value="не потрібен" v-model="animator">
                       <p class="calculate-slide-content-title">
                       не&nbsp;потрібен
                       </p>           
@@ -448,7 +451,7 @@
                 <form action="">
                   <div class="col-md-4 col-sm-4">
                     <label>
-                      <input type="radio" name="excursion" v-model="excursion" value="Ознайомча, проводить співробітник лабораторії (від 250 грн)">
+                      <input @click="getExcPrice" type="radio" name="excursion" v-model="excursion" value="Ознайомча, проводить співробітник лабораторії (від 250 грн)">
                       <p class="calculate-slide-content-title">
                       Ознайомча
                       </p>
@@ -459,7 +462,7 @@
                   </div>
                   <div class="col-md-4 col-sm-4">
                     <label>
-                      <input type="radio" name="excursion" v-model="excursion" value="Із професором, проводить аніматор у костюмі професора (від 250 грн)">
+                      <input @click="getExcPrice"  type="radio" name="excursion" v-model="excursion" value="Із професором, проводить аніматор у костюмі професора (від 250 грн)">
                       <p class="calculate-slide-content-title">
                       Із професором
                       </p>
@@ -470,7 +473,7 @@
                   </div>
                   <div class="col-md-4 col-sm-4">
                     <label> 
-                      <input type="radio" name="excursion" v-model="excursion" value="Без екскурсії, діти самостійно оглядають лабораторію">
+                      <input @click="getExcPrice" type="radio" name="excursion" v-model="excursion" value="Без екскурсії, діти самостійно оглядають лабораторію">
                       <p class="calculate-slide-content-title">
                       Без&nbsp;екскурсіЇ
                       </p>
@@ -493,7 +496,7 @@
                 <form action="">
                   <div class="col-md-3 col-sm-3">
                     <label>
-                      <input type="checkbox" name="showing" v-model="showing" value="Набір експериментів, 1000&nbsp;грн">
+                      <input @click="getShowPrice" type="checkbox" name="showing" v-model="showing" value="Набір експериментів, 1000&nbsp;грн">
                       <p class="calculate-slide-content-title">
                       Набір експериментів
                       </p>
@@ -504,7 +507,7 @@
                   </div>
                   <div class="col-md-3 col-sm-3">
                     <label>
-                      <input type="checkbox" name="showing"  v-model="showing" value="Сухий лід, 1000&nbsp;грн">
+                      <input @click="getShowPrice"  type="checkbox" name="showing"  v-model="showing" value="Сухий лід, 1000&nbsp;грн">
                       <p class="calculate-slide-content-title">
                       Сухий лід
                       </p>
@@ -515,7 +518,7 @@
                   </div>
                   <div class="col-md-3 col-sm-3">
                     <label> 
-                      <input type="checkbox" name="showing"  v-model="showing" value="Експерименти з рідким азотом, 2500&nbsp;грн">
+                      <input @click="getShowPrice" type="checkbox" name="showing"  v-model="showing" value="Експерименти з рідким азотом, 2500&nbsp;грн">
                       <p class="calculate-slide-content-title">
                       Експерименти з рідким азотом
                       </p>
@@ -526,7 +529,7 @@
                   </div>
                   <div class="col-md-3 col-sm-3">
                     <label> 
-                      <input type="checkbox" name="showing"  v-model="showing" value="Мильні бульбашки, 1000&nbsp;грн">
+                      <input @click="getShowPrice" type="checkbox" name="showing"  v-model="showing" value="Мильні бульбашки, 1000&nbsp;грн">
                       <p class="calculate-slide-content-title">
                       Мильні бульбашки
                       </p>
@@ -565,8 +568,9 @@
           </div><!-- container -->
           <div class="container">
             <div class="row calculate-btn-container">
+              <div class="full-price"><span>Орієнтовна сума складає:</span> {{ fullPrice }} грн</div>
               <div class="btn btn-calculate btn-cal-prev">Назад</div>
-              <div class="btn btn-calculate btn-cal-next">Далі</div>
+              <div @click="getFullPrice" class="btn btn-calculate btn-cal-next">Далі</div>
             </div>
             <div class="row">
               <div class="calculate-progress">

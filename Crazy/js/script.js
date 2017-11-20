@@ -101,14 +101,18 @@
 
  (function() {
   var calculator = new Vue({
-    el: '#calculator',
+    el: '#calculate',
     data: {
       holidayType : 'Невизначений',
-      guestAdult : "0",
-      guestChild : "0",
+      guestAdult : 0,
+      guestChild : 0,
       animator : 'Невизначений',
+      animatorPrice : 0,
       excursion : 'Невизначений',
+      excursionPrice : 0,
       showing : [],
+      showingPrice : 0,
+      fullPrice: 0
      },
     computed: {
       guests: function() {
@@ -144,7 +148,55 @@
           result = result + "<p>" + this.showing[show]+ "</p>";
         };
         return result;
-    }
+    },
+      getPrice: function() {
+          var pattern = /[0-9]+/g;
+          var text = this.animator;
+          var matches = text.match(pattern);
+          if(matches != null) {
+            this.animatorPrice = parseInt(matches[0], 10);
+          } else {
+            this.animatorPrice = 0;
+          }
+          
+      },
+      getExcPrice : function(){
+          var pattern = /[0-9]+/g;
+          var text = this.excursion;
+          var matches = text.match(pattern);
+          if(matches != null) {
+            this.excursionPrice = parseInt(matches[0], 10);
+          } else {
+            this.excursionPrice = 0;
+          }
+      },
+      getShowPrice : function(){
+          var pattern = /[0-9]+/g;
+          // for(show as this.showing)
+          this.showingPrice = 0;
+          for(var i = 0; i < this.showing.length; i++) {
+              var text = this.showing[i];
+              var matches = text.match(pattern);
+              if(matches != null) {
+                  var result = matches[0];
+                  result = parseInt(result, 10);
+                  this.showingPrice +=result;
+                } else {
+                  this.excursionPrice = 0;
+                };
+          };
+
+      },
+      getFullPrice : function(){
+        var adultPrice = document.querySelector("#adultPrice").value;
+        var childPrice = document.querySelector("#childPrice").value;
+        var guestPrice = this.guestAdult*adultPrice + this.guestChild * childPrice;
+        var result = this.showingPrice + this.excursionPrice + this.animatorPrice + guestPrice;
+        this.fullPrice = result;
+      }
+    },
+    methods: {
+
     }
 });
 })();
@@ -188,6 +240,7 @@ $(document).ready(function(){
     var $line = $(".calculate-progress-line");
     var $btnPrev = $(".btn-cal-prev");
     var $btnNext = $(".btn-cal-next");
+    var $fullPrice = $(".full-price");
     var counter = 0;
     var linePosition = 8.5;
     var oldPosition = 8.5 + 16.6*($slides.length - 2);
@@ -198,9 +251,12 @@ $(document).ready(function(){
 
       if(counter === $slides.length-2)  {
       $btnNext.css("display" , "none");
+      $fullPrice.css("display" , "inline-block");
       linePosition = 100;
+
       } else {
         linePosition = linePosition + 16.6;
+        $fullPrice.css("display" , "none");
       }
 
       $line.animate({
