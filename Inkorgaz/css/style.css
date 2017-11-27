@@ -1,0 +1,241 @@
+@font-face {
+  font-family: 'OpenSans';
+  src: url('../fonts/OpenSans-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'OpenSans';
+  src: url('../fonts/OpenSans-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'OpenSans';
+  src: url('../fonts/OpenSans-BoldItalic.ttf') format('truetype');
+  font-weight: 700;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'OpenSans';
+  src: url('../fonts/OpenSans-ExtraBold.ttf') format('truetype');
+  font-weight: 900;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'OpenSans';
+  src: url('../fonts/OpenSans-ExtraBoldItalic.ttf') format('truetype');
+  font-weight: 900;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'OpenSans';
+  src: url('../fonts/OpenSans-Italic.ttf') format('truetype');
+  font-weight: 400;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'OpenSans';
+  src: url('../fonts/OpenSans-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'OpenSans';
+  src: url('../fonts/OpenSans-LightItalic.ttf') format('truetype');
+  font-weight: 300;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'OpenSans';
+  src: url('../fonts/OpenSans-SemiBold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'OpenSans';
+  src: url('../fonts/OpenSans-SemiBoldItalic.ttf') format('truetype');
+  font-weight: 600;
+  font-style: italic;
+}
+/* Fonts files */
+.opn-reg {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+}
+.opn-bold {
+  font-family: 'OpenSans', sans-serif;
+  font-weight: 700;
+}
+.opn-light {
+  font-family: 'OpenSans', sans-serif;
+  font-weight: 300;
+}
+/* Base colors */
+/* Base setting */
+body {
+  font-size: 16px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  color: #000000;
+}
+/* Header */
+.nav-header {
+  width: 100%;
+  height: 80px;
+  position: relative;
+  color: #003f6f;
+}
+.nav-header-logo {
+  display: inline-block;
+  line-height: 80px;
+}
+.nav-header-menu {
+  width: 100%;
+  display: inline-flex;
+  justify-content: space-between;
+  flex-direction: row;
+  padding-right: 20px;
+}
+.nav-header-menu a {
+  text-decoration: none;
+  line-height: 80px;
+  padding: 0 15px;
+  display: inline-block;
+}
+.nav-header-menu li {
+  list-style-type: none;
+}
+.nav-header-form {
+  display: inline-block;
+  line-height: 80px;
+}
+.nav-header-form input {
+  width: 100%;
+  text-indent: 10px;
+  line-height: 40px;
+  opacity: 0.6;
+  border: 1px solid rgba(0, 64, 112, 0.6);
+}
+/* Main section */
+.main-section {
+  width: 100%;
+  height: 640px;
+  background-image: url(../img/inkorgas-about-us/1.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+.main-section:before {
+  background-color: rgba(0, 64, 112, 0.6);
+  content: '';
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.main-section-container {
+  position: relative;
+  z-index: 100;
+  color: white;
+  height: 100%;
+}
+.main-section-text {
+  font-family: 'OpenSans', sans-serif;
+  font-weight: 300;
+  display: inline-block;
+  font-size: 48px;
+  color: #ffffff;
+  margin-top: 165px;
+}
+/* Main-info section */
+.main-info {
+  position: relative;
+  margin-top: 60px;
+}
+.main-info p {
+  font-family: 'OpenSans', sans-serif;
+  font-weight: 300;
+}
+/* Main-map section */
+.main-map h2 {
+  font-size: 30px;
+  font-family: 'OpenSans', sans-serif;
+  font-weight: 300;
+  margin-top: 110px;
+  letter-spacing: 0.3px;
+}
+.main-map .map {
+  height: 440px;
+  margin-top: 15px;
+}
+.main-map .map span {
+  color: #003f6f;
+  position: relative;
+}
+.main-map .map span:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  display: block;
+  background-color: #003f6f;
+  left: 0;
+  bottom: 0;
+}
+/* About section */
+.about {
+  position: relative;
+  margin-top: 140px;
+}
+.about-info img {
+  margin-top: 70px;
+  width: 80px;
+  height: 70px;
+}
+.about-info-icon-text {
+  margin-top: 90px;
+  font-size: 36px;
+  letter-spacing: 0.72px;
+  color: #003f6f;
+  font-family: 'OpenSans', sans-serif;
+  font-weight: 300;
+}
+/* Cooperation section */
+.cooperation {
+  margin-top: 110px;
+  position: relative;
+}
+.cooperation h2 {
+  font-size: 30px;
+  font-family: 'OpenSans', sans-serif;
+  font-weight: 300;
+  letter-spacing: 0.3px;
+}
+.cooperation .btn {
+  padding: 0 60px;
+  margin: 130px auto 0 auto;
+  cursor: pointer;
+  width: 240px;
+  height: 50px;
+  border: 1px solid #003f6f;
+  color: #003f6f;
+  line-height: 50px;
+  display: block;
+  text-align: center;
+}
+/* Footer */
+footer {
+  margin-top: 110px;
+  margin-bottom: 130px;
+}
+footer a {
+  color: #003f6f;
+  text-decoration: none;
+}
+footer a:hover {
+  text-decoration: none;
+}
