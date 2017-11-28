@@ -229,6 +229,128 @@ body {
   color: #003f6f;
   text-decoration: none;
 }
+/* Main-clients section */
+.main-clients h2 {
+  font-size: 30px;
+  font-family: 'OpenSans', sans-serif;
+  font-weight: 300;
+  letter-spacing: 0.3px;
+  color: #ffffff;
+}
+.main-clients p {
+  margin-top: 30px;
+  color: #ffffff;
+}
+/* Conditions section */
+.conditions h2 {
+  font-size: 30px;
+  font-family: 'OpenSans', sans-serif;
+  font-weight: 300;
+  letter-spacing: 0.3px;
+}
+.conditions .row {
+  margin-top: 40px;
+}
+.conditions img {
+  width: 50px;
+  height: 55px;
+  float: left;
+}
+.conditions p {
+  letter-spacing: 0.16px;
+  margin-left: 65px;
+}
+.conditions span {
+  color: #003f6f;
+  letter-spacing: 0.16px;
+}
+/* Main-cooperation section */
+.main-cooperation {
+  margin-top: 155px;
+  position: relative;
+}
+.main-cooperation h2 {
+  font-size: 30px;
+  font-family: 'OpenSans', sans-serif;
+  font-weight: 300;
+  letter-spacing: 0.3px;
+}
+.main-cooperation img {
+  width: 100%;
+  height: auto;
+}
+.main-cooperation span {
+  color: #003f6f;
+}
+/* Contacts section */
+.contacts {
+  width: 100%;
+  height: 510px;
+  background-image: url(../img/inkorgas-layout/5.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  margin-top: 135px;
+}
+.contacts .container {
+  position: relative;
+  z-index: 100;
+  color: #ffffff;
+  height: 100%;
+}
+.contacts:before {
+  background-color: rgba(0, 64, 112, 0.6);
+  content: '';
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.contacts h2 {
+  font-size: 30px;
+  font-family: 'OpenSans', sans-serif;
+  font-weight: 300;
+  letter-spacing: 0.3px;
+  color: #ffffff;
+  margin-top: 55px;
+}
+.contacts-form {
+  display: inline-block;
+  line-height: 50px;
+  margin-top: 45px;
+}
+.contacts-form input {
+  margin-bottom: 20px;
+  color: #ffffff;
+  width: 100%;
+  text-indent: 10px;
+  line-height: 40px;
+  background-color: rgba(255, 255, 255, 0);
+  border: 1px solid #ffffff;
+}
+.contacts .btn {
+  cursor: pointer;
+  width: 100%;
+  height: 50px;
+  border: 1px solid #ffffff;
+  line-height: 50px;
+  display: block;
+  text-align: center;
+  color: #ffffff;
+  text-decoration: none;
+  transition: box-shadow 0.6s;
+}
+.contacts .btn:hover {
+  box-shadow: 0px 0px 0px 3px #ffffff;
+}
+.contacts p {
+  color: #ffffff;
+  letter-spacing: 0.16px;
+  margin-top: 45px;
+}
 /* ABOUT PAGE */
 /* Header */
 .nav-header {
@@ -386,6 +508,10 @@ body {
   font-weight: 300;
   letter-spacing: 0.3px;
 }
+.cooperation img {
+  width: 100%;
+  height: auto;
+}
 .cooperation .btn {
   padding: 0 60px;
   margin: 130px auto 0 auto;
@@ -419,10 +545,14 @@ footer a:hover {
   font-family: 'OpenSans', sans-serif;
   font-weight: 300;
 }
-.clients img {
-  width: auto;
-  height: auto;
-  max-width: 100%;
-  max-height: 85px;
-  margin-top: 80px;
+.clients-logo {
+  width: 100%;
+  height: 85px;
+  display: inline-block;
+  line-height: 85px;
+}
+.clients-logo img {
+  max-width: 75%;
+  max-height: 100%;
+  height: 65%;
 }
