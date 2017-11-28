@@ -92,18 +92,36 @@ body {
 }
 .nav-header-menu {
   width: 100%;
+  height: 80px;
+  align-items: center;
   display: inline-flex;
   justify-content: space-between;
   flex-direction: row;
   padding-right: 20px;
 }
 .nav-header-menu a {
-  text-decoration: none;
-  line-height: 80px;
-  padding: 0 15px;
+  position: relative;
   display: inline-block;
+  text-decoration: none;
+  color: #003f6f;
+}
+.nav-header-menu a:hover {
+  color: #003f6f;
+}
+.nav-header-menu a:hover:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  display: block;
+  background-color: #003f6f;
+  left: 0;
+  bottom: 0;
 }
 .nav-header-menu li {
+  display: inline-block;
+  height: 20px;
+  line-height: 20px;
   list-style-type: none;
 }
 .nav-header-form {
