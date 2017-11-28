@@ -553,11 +553,11 @@
                 </div>
                 <div class="col-md-4 col-sm-4">
                   <form class="footer-form" action="">
-                    <input type="hidden" value="{{ holidayType }}">
-                    <input type="hidden" value="{{ guests }}">
-                    <input type="hidden" value="{{ animator }}">
-                    <input type="hidden" value="{{ excursion }}">
-                    <input type="hidden" value="{{ showing }}">
+                    <input type="hidden" v-model="holidayType" value="">
+                    <input type="hidden" v-model="guests" >
+                    <input type="hidden" v-model="animator">
+                    <input type="hidden" v-model="excursion">
+                    <input type="hidden" v-model="showing">
                     <input type="name" placeholder="Імя">
                     <input type="tel" placeholder="Телефон">
                     <input type="data" id="datepicker" placeholder="Дата">

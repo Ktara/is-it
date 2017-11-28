@@ -100,6 +100,7 @@
 })();
 
  (function() {
+  
   var calculator = new Vue({
     el: '#calculate',
     data: {

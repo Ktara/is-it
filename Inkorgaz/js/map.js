@@ -1,5 +1,5 @@
 function initMap() {
-    var uluru = {lat: 49.018308, lng: 31.597471};
+    var uluru = {lat: 49.790377, lng: 31.136046};
     var map = new google.maps.Map(document.getElementById('map'), {
       zoom: 6,
       center: uluru,
@@ -52,7 +52,7 @@ function initMap() {
         maxWidth: 200
     });
         infowindow[3] = new google.maps.InfoWindow({
-        content: "Литвишко Сергій Юрійович Регіональний менеджер (Київська обл.) <br> (050)-486-37-46 (068) 984 45 77 <span>s.litvishko@inkorgas.com</span>",
+        content: "Адаменко Констянтин Михайлович Регіональний менеджер (Харківська обл.) <br> (050)-486-37-68 (050)-964-89-64 <span>k.adamenko@inkorgas.com</span>",
         maxWidth: 200
     });
         infowindow[4] = new google.maps.InfoWindow({
