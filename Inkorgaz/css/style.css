@@ -601,3 +601,109 @@ footer a:hover {
   color: #003f6f;
   letter-spacing: 0.16px;
 }
+/* CUSTOMER PAGE */
+/* Customer-change section */
+.customer-change h2 {
+  font-size: 30px;
+  font-family: 'OpenSans', sans-serif;
+  font-weight: 300;
+  letter-spacing: 0.3px;
+  margin-top: 80px;
+}
+.customer-change .row {
+  margin-top: 50px;
+}
+.customer-change img {
+  width: 55px;
+  height: 55px;
+  float: left;
+}
+.customer-change p {
+  margin-left: 60px;
+  letter-spacing: 0.16px;
+}
+/* Customer-conditions section */
+.customer-conditions h2 {
+  font-size: 30px;
+  font-family: 'OpenSans', sans-serif;
+  font-weight: 300;
+  letter-spacing: 0.3px;
+  margin-top: 80px;
+}
+.customer-conditions .row {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.customer-conditions-element {
+  width: 17%;
+}
+.customer-conditions-element:nth-child(3) {
+  text-align: center;
+}
+.customer-conditions img {
+  width: 50px;
+  height: 55px;
+}
+.customer-conditions p {
+  letter-spacing: 0.16px;
+}
+.customer-conditions-link {
+  margin-top: 55px;
+}
+.customer-conditions-link a {
+  letter-spacing: 0.16px;
+  color: #003f6f;
+  text-decoration: none;
+}
+.customer-conditions .btn {
+  cursor: pointer;
+  width: 240px;
+  height: 50px;
+  border: 1px solid #003f6f;
+  line-height: 50px;
+  display: block;
+  text-align: center;
+  color: #003f6f;
+  text-decoration: none;
+  margin: 50px auto 0 auto;
+  transition: box-shadow 0.6s;
+}
+.customer-conditions .btn:hover {
+  box-shadow: 0px 0px 0px 3px #003f6f;
+}
+/* Customer-legal section */
+.customer-legal h2 {
+  font-size: 30px;
+  font-family: 'OpenSans', sans-serif;
+  font-weight: 300;
+  letter-spacing: 0.3px;
+  margin-top: 80px;
+}
+/* Customer-map section */
+.customer-map h2 {
+  font-size: 30px;
+  font-family: 'OpenSans', sans-serif;
+  font-weight: 300;
+  margin-top: 145px;
+  letter-spacing: 0.3px;
+}
+.customer-map .map {
+  height: 440px;
+  margin-top: 15px;
+}
+.customer-map .map span {
+  color: #003f6f;
+  position: relative;
+}
+.customer-map .map span:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  display: block;
+  background-color: #003f6f;
+  left: 0;
+  bottom: 0;
+}
