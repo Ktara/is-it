@@ -681,6 +681,23 @@ footer a:hover {
   letter-spacing: 0.3px;
   margin-top: 80px;
 }
+.customer-legal a {
+  color: #003f6f;
+}
+.customer-legal span {
+  color: #003f6f;
+}
+.customer-legal-item {
+  margin-top: 55px;
+}
+.customer-legal-item-decor {
+  margin-left: 55px;
+}
+.customer-legal img {
+  width: 50px;
+  height: 55px;
+  float: left;
+}
 /* Customer-map section */
 .customer-map h2 {
   font-size: 30px;

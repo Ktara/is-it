@@ -1,4 +1,5 @@
-function initMap() {
+(function(){
+    function initMap() {
     var uluru = {lat: 49.790377, lng: 31.136046};
     var map = new google.maps.Map(document.getElementById('map'), {
       zoom: 6,
@@ -144,65 +145,10 @@ function initMap() {
             }
     });  
     }
-    // marker[0].addListener('mouseover', function() {
-    //     infowindow[0].open(map, marker[0]);
-    // });  
-    // var kiev = new google.maps.Marker({
-    //   position: {lat: 50.466489, lng: 30.520811},
-    //   map: map,
-    //   icon: image
-    // });
-    // var poltava = new google.maps.Marker({
-    //   position: {lat: 49.591376, lng: 34.541807},
-    //   map: map,
-    //   icon: image
-    // });
-    // var gitomir = new google.maps.Marker({
-    //   position: {lat: 50.270276, lng: 28.653136},
-    //   map: map,
-    //   icon: image
-    // });
-    // var harkov = new google.maps.Marker({
-    //   position: {lat: 50.002688, lng: 36.211729},
-    //   map: map,
-    //   icon: image
-    // });
-    // var viтnitsa = new google.maps.Marker({
-    //   position: {lat: 49.262677, lng: 28.455382},
-    //   map: map,
-    //   icon: image
-    // });
-    // var ivanoF = new google.maps.Marker({
-    //   position: {lat: 48.931773, lng: 24.720030},
-    //   map: map,
-    //   icon: image
-    // });
-    // var lviv = new google.maps.Marker({
-    //   position: {lat: 49.832914, lng: 24.016905},
-    //   map: map,
-    //   icon: image
-    // });
-    // var ternopil = new google.maps.Marker({
-    //   position: {lat: 49.577131, lng: 25.598937},
-    //   map: map,
-    //   icon: image
-    // });
-    // var chernovci = new google.maps.Marker({
-    //   position: {lat: 48.307201, lng: 25.906554},
-    //   map: map,
-    //   icon: image
-    // });
-    // var zakarpatska = new google.maps.Marker({
-    //   position: {lat: 48.429324, lng: 22.921363},
-    //   map: map,
-    //   icon: image
-    // });
-    // kiev.addListener('mouseover', function() {
-    //     infowindow[0].open(map, kiev);
-    // });  
-
   }
-  function initMap() {
+})();
+(function(){
+      function initMap() {
     var uluru = {lat: 50.448524, lng: 30.506453};
     var map = new google.maps.Map(document.getElementById('contacts-map'), {
       zoom: 17,
@@ -248,3 +194,4 @@ function initMap() {
       icon: image
     });
   }
+})();
