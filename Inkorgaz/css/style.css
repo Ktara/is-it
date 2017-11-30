@@ -230,6 +230,31 @@ body {
   text-decoration: none;
 }
 /* Main-clients section */
+.main-clients {
+  width: 100%;
+  height: 360px;
+  background-image: url(../img/inkorgas-layout/2.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+.main-clients:before {
+  background-color: rgba(0, 64, 112, 0.6);
+  content: '';
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.main-clients .container {
+  position: relative;
+  z-index: 100;
+  color: #ffffff;
+  height: 100%;
+}
 .main-clients h2 {
   font-size: 30px;
   font-family: 'OpenSans', sans-serif;
@@ -240,6 +265,37 @@ body {
 .main-clients p {
   margin-top: 30px;
   color: #ffffff;
+}
+.main-clients .slider-logo {
+  margin: 65px auto 0 auto;
+  width: 90%;
+}
+.main-clients .slider-logo-img {
+  max-width: 230px;
+  min-height: 30px;
+  color: #ffffff;
+}
+.prevarrow {
+  position: absolute;
+  background-image: url(../img/inkorgas-layout/prevarrow.svg);
+  background-size: cover;
+  width: 20px;
+  height: 40px;
+  left: -5%;
+  z-index: 1000;
+  top: 2%;
+  cursor: pointer;
+}
+.nextarrow {
+  position: absolute;
+  background-image: url(../img/inkorgas-layout/nextarrow.svg);
+  background-size: cover;
+  width: 22px;
+  height: 40px;
+  right: -5%;
+  z-index: 1000;
+  top: 2%;
+  cursor: pointer;
 }
 /* Conditions section */
 .conditions h2 {
