@@ -538,23 +538,24 @@ footer a:hover {
 }
 /* CLIENTS PAGE */
 /* Clients section */
-.clients {
+.clients h2 {
   font-size: 30px;
   color: #000000;
   letter-spacing: 0.3px;
   font-family: 'OpenSans', sans-serif;
   font-weight: 300;
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
 .clients-logo {
-  width: 100%;
-  height: 85px;
-  display: inline-block;
-  line-height: 85px;
+  height: 120px;
+  display: block;
+  line-height: 120px;
+  box-sizing: border-box;
 }
 .clients-logo img {
-  max-width: 75%;
-  max-height: 100%;
-  height: 65%;
+  max-width: 40%;
+  max-height: 60%;
 }
 /* CONTACTS PAGE */
 /* Contacts section */
