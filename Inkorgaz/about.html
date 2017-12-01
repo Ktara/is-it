@@ -23,16 +23,16 @@
     <header class="nav-header">
       <div class="container">
         <div class="row">
-          <div class="col-md-3 nav-header-logo">ІНКОРГАЗ</div>
-          <div class="col-md-6">
+          <div class="col-md-3 col-sm-3 nav-header-logo">ІНКОРГАЗ</div>
+          <div class="col-md-6 col-sm-6">
             <ul role="navigation" class="nav-header-menu">
-              <li role="presentation"><a href="">Про нас</a></li>
+              <li class="active" role="presentation"><a href="">Про нас</a></li>
               <li role="presentation"><a href="">Споживачам</a></li>
               <li role="presentation"><a href="">Клієнти</a></li>
               <li role="presentation"><a href="">Контакти</a></li>
             </ul>
           </div>
-          <div class="col-md-3 nav-header-form">
+          <div class="col-md-3 col-sm-3 nav-header-form">
             <form action="#">
               <input type="search" placeholder="Що ви шукаєте?">
             </form>
@@ -46,16 +46,19 @@
         <p class="main-about-text">
           &laquo;ІНКОРГАЗ&raquo;&nbsp;&mdash; постачаємо природній газ кінцевим споживачам та&nbsp;газовим трейдерам, входимо у&nbsp;десятку найбільших українських імпортерів газу з&nbsp;Європи.
         </p>
+        <div class="popup-button">Дізнатися більше</div>
       </div>
     </section>
 
     <section class="about-text">
       <div class="container">
-        <p>
-          Ми&nbsp;закуповуємо природний газ безпосередньо у&nbsp;видобувних підприємств України та&nbsp;імпортуємо газ з&nbsp;Європи і&nbsp;реалізуємо його промисловим підприємствам з&nbsp;усіх областей нашої країни. <br><br><br>
-
-Наша команда фахівців, з&nbsp;багаторічним досвідом роботи в&nbsp;нафтогазовій галузі, зробить все від нас залежне аби забезпечити Вас сервісом найвищього рівня, а&nbsp;Ваше підприємство природним газом у&nbsp;необхідному обсязі.
-        </p>               
+        <div class="about-text-block">
+          <p>
+            Ми&nbsp;закуповуємо природний газ безпосередньо у&nbsp;видобувних підприємств України та&nbsp;імпортуємо газ з&nbsp;Європи і&nbsp;реалізуємо його промисловим підприємствам з&nbsp;усіх областей нашої країни. <br><br><br></p>
+          
+          <p>Наша команда фахівців, з&nbsp;багаторічним досвідом роботи в&nbsp;нафтогазовій галузі, зробить все від нас залежне аби забезпечити Вас сервісом найвищього рівня, а&nbsp;Ваше підприємство природним газом у&nbsp;необхідному обсязі.</p>   
+        </div>
+        <div class="btn">Читати більше</div>
       </div>      
     </section>
 
@@ -117,26 +120,41 @@
           Ми&nbsp;співпрацюємо з&nbsp;найбільшими європейськими трейдерами  та&nbsp;приватними вітчизняними видобувними підприємствами
         </h2>
         <img src="img/inkorgas-about-us/Vector Smart Object51.svg" alt="">
-        <div class="btn">
-          Співпрацювати          
-        </div>
+        <div class="popup-button">Співпрацювати</div>
       </div>
     </section>
 
     <footer>
       <div class="container">
         <div class="row">
-          <div class="col-md-2">2017©Inkorgas</div>
-          <div class="col-md-4 col-md-offset-6">
-            Design&Development by <a target="_blank" href="">IS.Agency</a>
+          <div class="col-md-2 col-sm-2 col-xs-7">2017©Inkorgas</div>
+          <div class="col-md-4 col-md-offset-6 col-sm-5 col-sm-offset-5 col-xs-5">
+            <p>Design&Development by</p> <a target="_blank" href="">IS.Agency</a>
           </div>
         </div>
       </div>
     </footer>
 
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDlz1gozgsvPS259RrE2I7HkbwEsK3f9HY&callback=initMap" async defer></script>
-    <script src="js/jquery-3.2.1.min.js"></script>
-    <script src="js/map.js"></script>
+    <div class="customer-about-popup">
+      <div class="customer-about-popup-wraper">
+        <form class="customer-about-form" action="">
+          <h2>Замовити шоу</h2>
+          <div class="popup-close">X</div>
+          <input type="name" placeholder="Ім’я">
+          <input type="tel" placeholder="Номер телефону">
+          <input type="text" placeholder="Ваша компанія">
+          <input type="text" placeholder="Ваше повідомлення">
+          <a href="" class="btn">Відправити</a>
+        </form>
+      </div>
+    </div>
+
+
+<!--     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDlz1gozgsvPS259RrE2I7HkbwEsK3f9HY&callback=initMap" async defer></script> -->
+    <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="js/slick.min.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+    <!-- <script type="text/javascript" src="js/map.js"></script> -->
 
   </body>
 </html>

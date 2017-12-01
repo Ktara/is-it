@@ -23,16 +23,16 @@
     <header class="nav-header">
       <div class="container">
         <div class="row">
-          <div class="col-md-3 nav-header-logo">ІНКОРГАЗ</div>
-          <div class="col-md-6">
+          <div class="col-md-3 col-sm-3 nav-header-logo">ІНКОРГАЗ</div>
+          <div class="col-md-6 col-sm-6">
             <ul role="navigation" class="nav-header-menu">
               <li role="presentation"><a href="">Про нас</a></li>
-              <li role="presentation"><a href="">Споживачам</a></li>
+              <li class="active" role="presentation"><a href="">Споживачам</a></li>
               <li role="presentation"><a href="">Клієнти</a></li>
               <li role="presentation"><a href="">Контакти</a></li>
             </ul>
           </div>
-          <div class="col-md-3 nav-header-form">
+          <div class="col-md-3 col-sm-3 nav-header-form">
             <form action="#">
               <input type="search" placeholder="Що ви шукаєте?">
             </form>
@@ -86,7 +86,7 @@
             <a href="">Тарифи на&nbsp;розподіл природного газу</a>
           </div>
         </div>
-        <div class="btn">Дізнатися свою ціну</div>
+        <div class="popup-button">Дізнатися свою ціну</div>
       </div>
     </section>
 
@@ -158,9 +158,23 @@
       </div>
     </footer>
 
+    <div class="customer-about-popup">
+      <div class="customer-about-popup-wraper">
+        <form class="customer-about-form" action="">
+          <h2>Замовити шоу</h2>
+          <div class="popup-close">X</div>
+          <input type="name" placeholder="Ім’я">
+          <input type="tel" placeholder="Номер телефону">
+          <input type="text" placeholder="Ваша компанія">
+          <input type="text" placeholder="Ваше повідомлення">
+          <a href="" class="btn">Відправити</a>
+        </form>
+      </div>
+    </div>
+
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDlz1gozgsvPS259RrE2I7HkbwEsK3f9HY&callback=initMap" async defer></script>
     <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
-    <script type="text/javascript" src="js/map.js"></script>
+    <!-- <script type="text/javascript" src="js/map.js"></script> -->
 
   </body>
 </html>
