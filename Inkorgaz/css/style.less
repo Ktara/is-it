@@ -681,6 +681,9 @@ body {
 			height: 20px;
 			line-height: 20px;
 			list-style-type: none;
+			@media screen and (max-width: 768px) {			
+				display: none;	
+			}
 		}
 	}
 	&-form {		
@@ -925,7 +928,7 @@ footer {
 	}
 	a {
 		color: @main-blue;
-		text-decoration: none;
+		text-decoration: none;		
 		&:hover {
 			text-decoration: none;
 		}
@@ -950,6 +953,10 @@ footer {
 		.opn-light;
 		margin-top: 50px;
 		margin-bottom: 50px;
+		@media screen and (max-width: 768px) {
+			font-size: 24px;
+			margin-bottom: 30px;
+		}
 	}
 	&-logo {		
 		height: 120px;
@@ -958,7 +965,11 @@ footer {
 		box-sizing: border-box;
 		img {
 			max-width: 40%;
-			max-height: 60%;								
+			max-height: 60%;
+			@media screen and (max-width: 768px) {
+				max-width: 70%;
+				max-height: 80%;
+			}								
 		}				
 	}
 	.popup-button {
@@ -968,16 +979,16 @@ footer {
 			cursor: pointer;
 			width: 100%;
 			height: 50px;
-			border: 1px solid @white;			
+			border: 1px solid @main-blue;			
 			line-height: 50px;		
 			display: block;
 			text-align: center;
-			color: @white;
+			color: @main-blue;
 			text-decoration: none;
 			transition: box-shadow 0.6s;
 			margin-top: 40px;			
 			&:hover {
-				box-shadow: 0px 0px 0px 3px @white;
+				box-shadow: 0px 0px 0px 3px @main-blue;
 			}	
 		}
 	}
@@ -998,11 +1009,18 @@ footer {
 		.opn-light;
 		letter-spacing: 0.3px;
 		margin-top: 50px;
+		@media screen and (max-width: 768px) {
+			margin-top: 20px;
+			font-size: 24px;
+		}
 	}
 	&-map {
 		height: 280px;
 		margin-top: 35px;
-		margin-bottom: 70px;		
+		margin-bottom: 70px;
+		@media screen and (max-width: 768px) {
+			height: 165px;
+		}		
 	}
 	&-form {		
 		display: inline-block;
@@ -1033,7 +1051,15 @@ footer {
 	}
 	p {
 		color: @main-blue;
-		letter-spacing: 0.16px;		
+		letter-spacing: 0.16px;
+		@media screen and (max-width: 768px) {
+			margin-top: 20px;
+		}		
+	}
+	.text-clock {
+		@media screen and (max-width: 768px) {
+			display: none;
+		}
 	}
 }
 
@@ -1053,35 +1079,67 @@ footer {
 		.opn-light;
 		letter-spacing: 0.3px;
 		margin-top: 80px;
+		@media screen and (max-width: 992px) {
+			font-size: 26px;	
+		}
+		@media screen and (max-width: 768px) {
+			margin-top: 20px;
+			font-size: 24px;
+		}
 	}
 	.row {
 		margin-top: 50px;
+		@media screen and (max-width: 992px) {
+			margin-top: 0;	
+		}
 	}
 	img {
 		width: 55px;
 		height: 55px;
 		float: left;
+		@media screen and (max-width: 768px) {
+			float: none;
+			margin-top: 30px;
+		}
 	}
 	p {
 		margin-left: 60px;
 		letter-spacing: 0.16px;
+		@media screen and (max-width: 768px) {
+			margin-left: 0;
+		}
 	}
 }
 
 
 /* Customer-conditions section */
 .customer-conditions {
+	position: relative;
 	h2 {
 		font-size: 30px;
 		.opn-light;
 		letter-spacing: 0.3px;
 		margin-top: 80px;
+		@media screen and (max-width: 992px) {
+			margin-top: 60px;
+			font-size: 26px;	
+		}
+		@media screen and (max-width: 768px) {
+			margin-top: 45px;
+			font-size: 24px;
+		}
 	}
 	.row {
 		margin-top: 50px;
 		display: flex;
 		flex-direction: row;
-		justify-content: space-between;		
+		justify-content: space-between;
+		@media screen and (max-width: 768px) {
+			margin-top: 0;
+			display: block;
+			margin-left: 5px;
+			width: 100%;
+		}		
 	}
 	&-element {
 		width: 17%;
@@ -1092,9 +1150,15 @@ footer {
 	img {
 		width: 50px;
 		height: 55px;
+		@media screen and (max-width: 768px) {
+			
+		}
 	}
 	p {
 		letter-spacing: 0.16px;
+		@media screen and (max-width: 768px) {
+			width: 100%;
+		}
 	}
 	&-link {
 		margin-top: 55px;
@@ -1131,6 +1195,9 @@ footer {
 		.opn-light;
 		letter-spacing: 0.3px;
 		margin-top: 80px;
+		@media screen and (max-width: 992px) {
+			font-size: 26px;	
+		}
 	}
 	a {
 		color: @main-blue;
@@ -1140,6 +1207,9 @@ footer {
 	}
 	&-item {
 		margin-top: 55px;
+		@media screen and (max-width: 768px) {
+			margin-top: 30px;
+		}
 		&-decor {
 			margin-left: 55px;
 		}
@@ -1159,13 +1229,23 @@ footer {
 		.opn-light;
 		margin-top: 145px;
 		letter-spacing: 0.3px;
+		@media screen and (max-width: 992px) {
+			font-size: 26px;
+			margin-top: 80px;	
+		}
 	}
 	.map {
 		height: 440px;
 		margin-top: 15px;
+		@media screen and (max-width: 768px) {
+			height: 225px;
+		}
 		span {
 			color: @main-blue;
 			position: relative;
+			@media screen and (max-width: 768px) {
+				display: none;
+			}
 			&:after {
 				content: '';
 				position: absolute;
@@ -1218,7 +1298,10 @@ footer {
 	h2 {
 		font-size: 30px;
 		.opn-light;		
-		letter-spacing: 0.3px;		
+		letter-spacing: 0.3px;
+		@media screen and (max-width: 992px) {
+			font-size: 26px;	
+		}		
 	}	
 	.popup-close {
 		cursor: pointer;

@@ -747,6 +747,11 @@ body {
   line-height: 20px;
   list-style-type: none;
 }
+@media screen and (max-width: 768px) {
+  .nav-header-menu li {
+    display: none;
+  }
+}
 .nav-header-form {
   display: inline-block;
   line-height: 80px;
@@ -1034,6 +1039,12 @@ footer a:hover {
   margin-top: 50px;
   margin-bottom: 50px;
 }
+@media screen and (max-width: 768px) {
+  .clients h2 {
+    font-size: 24px;
+    margin-bottom: 30px;
+  }
+}
 .clients-logo {
   height: 120px;
   display: block;
@@ -1044,6 +1055,12 @@ footer a:hover {
   max-width: 40%;
   max-height: 60%;
 }
+@media screen and (max-width: 768px) {
+  .clients-logo img {
+    max-width: 70%;
+    max-height: 80%;
+  }
+}
 .clients .popup-button {
   display: none;
 }
@@ -1052,17 +1069,17 @@ footer a:hover {
     cursor: pointer;
     width: 100%;
     height: 50px;
-    border: 1px solid #ffffff;
+    border: 1px solid #003f6f;
     line-height: 50px;
     display: block;
     text-align: center;
-    color: #ffffff;
+    color: #003f6f;
     text-decoration: none;
     transition: box-shadow 0.6s;
     margin-top: 40px;
   }
   .clients .popup-button:hover {
-    box-shadow: 0px 0px 0px 3px #ffffff;
+    box-shadow: 0px 0px 0px 3px #003f6f;
   }
 }
 /* CONTACTS PAGE */
@@ -1074,10 +1091,21 @@ footer a:hover {
   letter-spacing: 0.3px;
   margin-top: 50px;
 }
+@media screen and (max-width: 768px) {
+  .contacts h2 {
+    margin-top: 20px;
+    font-size: 24px;
+  }
+}
 .contacts-map {
   height: 280px;
   margin-top: 35px;
   margin-bottom: 70px;
+}
+@media screen and (max-width: 768px) {
+  .contacts-map {
+    height: 165px;
+  }
 }
 .contacts-form {
   display: inline-block;
@@ -1110,6 +1138,16 @@ footer a:hover {
   color: #003f6f;
   letter-spacing: 0.16px;
 }
+@media screen and (max-width: 768px) {
+  .contacts p {
+    margin-top: 20px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .contacts .text-clock {
+    display: none;
+  }
+}
 /* CUSTOMER PAGE */
 /* Customer-change section */
 .customer-change h2 {
@@ -1119,19 +1157,49 @@ footer a:hover {
   letter-spacing: 0.3px;
   margin-top: 80px;
 }
+@media screen and (max-width: 992px) {
+  .customer-change h2 {
+    font-size: 26px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .customer-change h2 {
+    margin-top: 20px;
+    font-size: 24px;
+  }
+}
 .customer-change .row {
   margin-top: 50px;
+}
+@media screen and (max-width: 992px) {
+  .customer-change .row {
+    margin-top: 0;
+  }
 }
 .customer-change img {
   width: 55px;
   height: 55px;
   float: left;
 }
+@media screen and (max-width: 768px) {
+  .customer-change img {
+    float: none;
+    margin-top: 30px;
+  }
+}
 .customer-change p {
   margin-left: 60px;
   letter-spacing: 0.16px;
 }
+@media screen and (max-width: 768px) {
+  .customer-change p {
+    margin-left: 0;
+  }
+}
 /* Customer-conditions section */
+.customer-conditions {
+  position: relative;
+}
 .customer-conditions h2 {
   font-size: 30px;
   font-family: 'OpenSans', sans-serif;
@@ -1139,11 +1207,31 @@ footer a:hover {
   letter-spacing: 0.3px;
   margin-top: 80px;
 }
+@media screen and (max-width: 992px) {
+  .customer-conditions h2 {
+    margin-top: 60px;
+    font-size: 26px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .customer-conditions h2 {
+    margin-top: 45px;
+    font-size: 24px;
+  }
+}
 .customer-conditions .row {
   margin-top: 50px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+}
+@media screen and (max-width: 768px) {
+  .customer-conditions .row {
+    margin-top: 0;
+    display: block;
+    margin-left: 5px;
+    width: 100%;
+  }
 }
 .customer-conditions-element {
   width: 17%;
@@ -1157,6 +1245,11 @@ footer a:hover {
 }
 .customer-conditions p {
   letter-spacing: 0.16px;
+}
+@media screen and (max-width: 768px) {
+  .customer-conditions p {
+    width: 100%;
+  }
 }
 .customer-conditions-link {
   margin-top: 55px;
@@ -1190,6 +1283,11 @@ footer a:hover {
   letter-spacing: 0.3px;
   margin-top: 80px;
 }
+@media screen and (max-width: 992px) {
+  .customer-legal h2 {
+    font-size: 26px;
+  }
+}
 .customer-legal a {
   color: #003f6f;
 }
@@ -1198,6 +1296,11 @@ footer a:hover {
 }
 .customer-legal-item {
   margin-top: 55px;
+}
+@media screen and (max-width: 768px) {
+  .customer-legal-item {
+    margin-top: 30px;
+  }
 }
 .customer-legal-item-decor {
   margin-left: 55px;
@@ -1215,13 +1318,29 @@ footer a:hover {
   margin-top: 145px;
   letter-spacing: 0.3px;
 }
+@media screen and (max-width: 992px) {
+  .customer-map h2 {
+    font-size: 26px;
+    margin-top: 80px;
+  }
+}
 .customer-map .map {
   height: 440px;
   margin-top: 15px;
 }
+@media screen and (max-width: 768px) {
+  .customer-map .map {
+    height: 225px;
+  }
+}
 .customer-map .map span {
   color: #003f6f;
   position: relative;
+}
+@media screen and (max-width: 768px) {
+  .customer-map .map span {
+    display: none;
+  }
 }
 .customer-map .map span:after {
   content: '';
@@ -1274,6 +1393,11 @@ footer a:hover {
   font-family: 'OpenSans', sans-serif;
   font-weight: 300;
   letter-spacing: 0.3px;
+}
+@media screen and (max-width: 992px) {
+  .customer-about-popup h2 {
+    font-size: 26px;
+  }
 }
 .customer-about-popup .popup-close {
   cursor: pointer;
