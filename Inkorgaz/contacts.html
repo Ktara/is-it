@@ -25,18 +25,28 @@
       <div class="container">
         <div class="row">
           <div class="col-md-3 col-sm-3 col-xs-8 nav-header-logo">ІНКОРГАЗ</div>
-          <div class="col-md-6 col-sm-6 col-xs-2">
+          <div class="col-md-6 col-sm-6 col-xs-2 hidden-xs">
             <ul role="navigation" class="nav-header-menu">
-              <li role="presentation"><a href="">Про нас</a></li>
+              <li class="active" role="presentation"><a href="">Про нас</a></li>
               <li role="presentation"><a href="">Споживачам</a></li>
               <li role="presentation"><a href="">Клієнти</a></li>
-              <li class="active" role="presentation"><a href="">Контакти</a></li>
+              <li role="presentation"><a href="">Контакти</a></li>
             </ul>
           </div>
           <div class="col-md-3 col-sm-3 col-xs-2 nav-header-form">
             <form action="#">
-              <input type="search" placeholder="Що ви шукаєте?">
+              <img class="show_search" src="img/search.svg" alt="">
+              <input class="search_tr" type="search" placeholder="Що ви шукаєте?">
+              <input type="submit" style="display: none">
             </form>
+          </div>
+          <div class="col-md-6 col-sm-6 col-xs-2 visible-xs nav-passive" id="nav_wrapper">
+              <ul role="navigation" class="nav-header-menu">
+                <li class="active" role="presentation"><a href="">Про нас</a></li>
+                <li role="presentation"><a href="">Споживачам</a></li>
+                <li role="presentation"><a href="">Клієнти</a></li>
+                <li role="presentation"><a href="">Контакти</a></li>
+              </ul>
           </div>
         </div>
       </div>
@@ -58,12 +68,12 @@
           </div>
           <div class="col-md-5 col-md-offset-1 col-sm-5 col-sm-offset-1 col-xs-12">
             <p>
-              Для отримання інформації звертайтесь&nbsp;за&nbsp;адресою: 01030,&nbsp;Україна,&nbsp;м.&nbsp;Київ вул. Богдана Хмельницького&nbsp;52, Бізнес&nbsp;Центр&nbsp;&laquo;Вектор&raquo;,&nbsp;офіс 505. info@incorgas.com.ua  
+              <span>Для отримання інформації звертайтесь&nbsp;за&nbsp;адресою:</span> 01030,&nbsp;Україна,&nbsp;м.&nbsp;Київ вул. Богдана Хмельницького&nbsp;52, Бізнес&nbsp;Центр&nbsp;&laquo;Вектор&raquo;,&nbsp;офіс 505. info@incorgas.com.ua  
             </p>
           </div>
           <div class="col-md-3 col-md-offset-1 col-sm-3 col-sm-offset-1 col-xs-12">
             <p>
-              <br>Контактні номери: тел:&nbsp;+380&nbsp;(44)&nbsp;222&nbsp;76&nbsp;16 факс:&nbsp;+380&nbsp;(44)&nbsp;227&nbsp;14&nbsp;36 <br><br><p class="text-clock">Час роботи: пн&nbsp;-пт&nbsp;з&nbsp;09:00&nbsp;до&nbsp;18:00.</p>
+              <span>Контактні номери:</span> тел:&nbsp;+380&nbsp;(44)&nbsp;222&nbsp;76&nbsp;16 факс:&nbsp;+380&nbsp;(44)&nbsp;227&nbsp;14&nbsp;36 <br><br><p class="text-clock"><span>Час роботи:</span> пн&nbsp;-пт&nbsp;з&nbsp;09:00&nbsp;до&nbsp;18:00.</p>
             </p>
           </div>
         </div>

@@ -58,4 +58,11 @@ $('.slider-logo').slick({
        
   })
 })();
+(function(){
+  $(".show_text").click(function(e){
+    $(e.target).css("display" , "none");
+    var trHeight = $(e.target).prev().children().css("height");
+    $(e.target).prev().animate({"height" : trHeight}, 600);
+  });
+})();
 	

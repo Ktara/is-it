@@ -24,18 +24,28 @@
       <div class="container">
         <div class="row">
           <div class="col-md-3 col-sm-3 col-xs-8 nav-header-logo">ІНКОРГАЗ</div>
-          <div class="col-md-6 col-sm-6 col-xs-2">
+          <div class="col-md-6 col-sm-6 col-xs-2 hidden-xs">
             <ul role="navigation" class="nav-header-menu">
-              <li role="presentation"><a href="">Про нас</a></li>
-              <li class="active" role="presentation"><a href="">Споживачам</a></li>
+              <li class="active" role="presentation"><a href="">Про нас</a></li>
+              <li role="presentation"><a href="">Споживачам</a></li>
               <li role="presentation"><a href="">Клієнти</a></li>
               <li role="presentation"><a href="">Контакти</a></li>
             </ul>
           </div>
           <div class="col-md-3 col-sm-3 col-xs-2 nav-header-form">
             <form action="#">
-              <input type="search" placeholder="Що ви шукаєте?">
+              <img class="show_search" src="img/search.svg" alt="">
+              <input class="search_tr" type="search" placeholder="Що ви шукаєте?">
+              <input type="submit" style="display: none">
             </form>
+          </div>
+          <div class="col-md-6 col-sm-6 col-xs-2 visible-xs nav-passive" id="nav_wrapper">
+              <ul role="navigation" class="nav-header-menu">
+                <li class="active" role="presentation"><a href="">Про нас</a></li>
+                <li role="presentation"><a href="">Споживачам</a></li>
+                <li role="presentation"><a href="">Клієнти</a></li>
+                <li role="presentation"><a href="">Контакти</a></li>
+              </ul>
           </div>
         </div>
       </div>
@@ -93,41 +103,44 @@
     <section class="customer-legal">
       <div class="container">
         <h2>Законодавство з питань постачання природного газу</h2>
-        <div class="row">
-          <div class="col-md-4 col-sm-4 col-xs-12 customer-legal-item">
-            <p><a href="">Закон України</a> &laquo;Про&nbsp;ринок&nbsp;природного&nbsp;газу&raquo;</p>
+        <div class="customer-legal-mob-container">
+          <div class="row">
+            <div class="col-md-4 col-sm-4 col-xs-12 customer-legal-item">
+              <p><a href="">Закон України</a> &laquo;Про&nbsp;ринок&nbsp;природного&nbsp;газу&raquo;</p>
+            </div>
+            <div class="col-md-4 col-sm-4 col-xs-12 customer-legal-item">
+              <a href="">Правила постачання природного газу</a>
+            </div>
+            <div class="col-md-4 col-sm-4 col-xs-12 customer-legal-item">
+              <a href="">Кодекс газотранспортної системи</a>
+            </div>
           </div>
-          <div class="col-md-4 col-sm-4 col-xs-12 customer-legal-item">
-            <a href="">Правила постачання природного газу</a>
+          <div class="row">
+            <div class="col-md-4 col-sm-4 col-xs-12 customer-legal-item">
+              <p><a href="">Кодекс газосховищ та&nbsp;критеріїв,</a> згідно з&nbsp;якими до&nbsp;певного газосховища застосовується режим договірного доступу або режим регульованого</p>
+            </div>
+            <div class="col-md-4 col-sm-4 col-xs-12 customer-legal-item">
+              <p><a href="">Закон України</a> &laquo;Про Національну комісію, що&nbsp;здійснює державне регулювання у&nbsp;сферах енергетики та&nbsp;комунальних послуг&raquo;</p>
+            </div>
+            <div class="col-md-4 col-sm-4 col-xs-12 customer-legal-item">
+              <a href="">Кодекс газорозподільних систем</a>
+            </div>
           </div>
-          <div class="col-md-4 col-sm-4 col-xs-12 customer-legal-item">
-            <a href="">Кодекс газотранспортної системи</a>
+          <div class="row">
+            <div class="col-md-4 col-sm-4 col-xs-12 customer-legal-item">
+              <a href="">Ліцензія на&nbsp;постачання природного газу</a>
+            </div>
+            <div class="col-md-4 col-sm-4 col-xs-12 customer-legal-item">
+              <img src="img/inkorgas-customer/Копия Vector Smart Object41.svg" alt="">
+              <p class="customer-legal-item-decor">Договір постачання природного газу непобутовим споживачам</p>
+            </div>
+            <div class="col-md-4 col-sm-4 col-xs-12 customer-legal-item">
+              <img src="img/inkorgas-customer/Копия Vector Smart Object41.svg" alt="">
+              <p class="customer-legal-item-decor">Договір постачання природного газу <span>для оптового покупця</span></p>
+            </div>
           </div>
         </div>
-        <div class="row">
-          <div class="col-md-4 col-sm-4 col-xs-12 customer-legal-item">
-            <p><a href="">Кодекс газосховищ та&nbsp;критеріїв,</a> згідно з&nbsp;якими до&nbsp;певного газосховища застосовується режим договірного доступу або режим регульованого</p>
-          </div>
-          <div class="col-md-4 col-sm-4 col-xs-12 customer-legal-item">
-            <p><a href="">Закон України</a> &laquo;Про Національну комісію, що&nbsp;здійснює державне регулювання у&nbsp;сферах енергетики та&nbsp;комунальних послуг&raquo;</p>
-          </div>
-          <div class="col-md-4 col-sm-4 col-xs-12 customer-legal-item">
-            <a href="">Кодекс газорозподільних систем</a>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-4 col-sm-4 col-xs-12 customer-legal-item">
-            <a href="">Ліцензія на&nbsp;постачання природного газу</a>
-          </div>
-          <div class="col-md-4 col-sm-4 col-xs-12 customer-legal-item">
-            <img src="img/inkorgas-customer/Копия Vector Smart Object41.svg" alt="">
-            <p class="customer-legal-item-decor">Договір постачання природного газу непобутовим споживачам</p>
-          </div>
-          <div class="col-md-4 col-sm-4 col-xs-12 customer-legal-item">
-            <img src="img/inkorgas-customer/Копия Vector Smart Object41.svg" alt="">
-            <p class="customer-legal-item-decor">Договір постачання природного газу <span>для оптового покупця</span></p>
-          </div>
-        </div>        
+        <div class="btn show_text">Дивитися більше</div>
       </div>
     </section>
 
@@ -142,6 +155,61 @@
             <div class="map" id="map"></div>
           </div>
         </div>
+      </div>
+    </section>
+
+    <section class="customer-contacts visible-xs">
+      <div class="container">
+        <h2>Контакти співробітників</h2>
+        <div class="customer-contacts-mob-container">
+          <p>
+          Литвишко&nbsp;Сергій&nbsp;Юрійович Регіональний&nbsp;менеджер (Київська&nbsp;обл.)<br>(050) 486-37-46 <br>(068) 984 45 77 <span>s.litvishko@inkorgas.com</span>
+          </p>
+          <p>
+            Зданевич&nbsp;Микола&nbsp;Олександрович
+            Регіональний&nbsp;менеджер
+            (Житомирська, Хмельницька обл.)
+            (050)-486-37-51<br>
+            (067)-412-82-42
+          <span>n.zdanevich@inkorgas.com</span>
+          </p>
+          <p>
+            Шувальський&nbsp;Андрій&nbsp;Володимирович
+            Регіональний менеджер (Івано-Франківська, Закарпатська, Чернівецька обл.)<br>
+            (050)-486-37-59<br>
+            (067)-344-78-77
+          <span>a.shuvalsky@inkorgas.com</span>
+          </p>
+          <p>
+            Карманський&nbsp;Олег&nbsp;Володимирович
+            Регіональний менеджер (Львівська&nbsp;обл.)<br>
+            (050)-486-37-69<br>
+            (067)-949-59-91
+          <span>o.karmansky@inkorgas.com</span>
+          </p>
+          <p>
+            Соколов&nbsp;Юрій&nbsp;Романович
+            Регіональний менеджер (Вінницька&nbsp;обл.)<br>
+            (050)-486-37-58<br>
+            (067)-432-87-97
+          <span>y.sokolov@inkorgas.com</span>
+          </p>
+          <p>
+            Мосейчук&nbsp;Василь&nbsp;Анатолійович
+            Регіональний менеджер (Полтавська&nbsp;обл.)<br>
+            (050)-346-11-13<br>
+            (050)-346-40-55
+<span>v.moseychuk@inkorgas.com</span>
+          </p>
+          <p>
+            Адаменко&nbsp;Костянтин&nbsp;Михайлович
+            Регіональний менеджер (Харківська&nbsp;обл.)<br>
+            (050)-486-37-68<br>
+            (050)-964-89-64
+<span>k.adamenko@inkorgas.com</span>
+          </p>
+        </div>
+        <div class="btn show_text">Дивитися більше</div>
       </div>
     </section>
 
