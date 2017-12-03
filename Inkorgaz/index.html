@@ -20,32 +20,48 @@
     <![endif]-->
   </head>
   <body>
-    
-    <header class="main-section">
+
+
+    <header class="nav-header main-page-nav">
       <div class="container">
-        <div class="row main-section-nav">
-          <a href="https://ktara.github.io/is-it/Inkorgaz/index.html" class="col-md-3 col-sm-3 col-xs-8 main-section-nav-logo">ІНКОРГАЗ</a>
-          <div class="col-md-6 col-sm-6 col-xs-2">
-            <ul role="navigation" class="main-section-nav-menu">
+        <div class="row nav-header-wraper">
+          <a href="https://ktara.github.io/is-it/Inkorgaz/index.html" class="col-md-3 col-sm-3 col-xs-8 nav-header-logo">ІНКОРГАЗ</a>
+          <div class="col-md-6 col-sm-6 col-xs-2 hidden-xs">
+            <ul role="navigation" class="nav-header-menu">
               <li role="presentation"><a href="https://ktara.github.io/is-it/Inkorgaz/about.html">Про нас</a></li>
               <li role="presentation"><a href="https://ktara.github.io/is-it/Inkorgaz/customers.html">Споживачам</a></li>
               <li role="presentation"><a href="https://ktara.github.io/is-it/Inkorgaz/clients.html">Клієнти</a></li>
               <li role="presentation"><a href="https://ktara.github.io/is-it/Inkorgaz/contacts.html">Контакти</a></li>
             </ul>
           </div>
-          <div class="col-md-3 col-sm-3 col-xs-2 main-section-nav-form">
+          <div class="col-md-3 col-sm-3 col-xs-2 nav-header-form">
             <form action="#">
-              <input type="search" placeholder="Що ви шукаєте?">
+              <img class="show_search" src="img/search.svg" alt="">
+              <input class="search_tr" type="search" placeholder="Що ви шукаєте?">
               <input type="submit" style="display: none">
             </form>
           </div>
+          <div class="col-md-6 col-sm-6 col-xs-2 visible-xs nav-passive" id="nav_wrapper">
+              <ul role="navigation" class="nav-header-menu">
+                <li class="active" role="presentation"><a href="">Про нас</a></li>
+                <li role="presentation"><a href="">Споживачам</a></li>
+                <li role="presentation"><a href="">Клієнти</a></li>
+                <li role="presentation"><a href="">Контакти</a></li>
+              </ul>
+          </div>
         </div>
+      </div>
+    </header>
+    
+    <section class="main-section">
+      <div class="container">        
         <p class="main-section-text">
           &laquo;ІНКОРГАЗ&raquo;&nbsp;&mdash; постачаємо природній газ кінцевим споживачам та&nbsp;газовим трейдерам, входимо у&nbsp;десятку найбільших українських імпортерів газу з&nbsp;Європи.
         </p>
         <div class="main-section-btn"><p>Дізнатися більше</p></div>
       </div>
-    </header>
+    </section>
+
 
     <section class="main-info scrollflow -slide-top">
       <div class="container">
