@@ -7,6 +7,15 @@ $('.slider-logo').slick({
   nextArrow: '<div class="nextarrow"></div>'
 });
 
+$('.slider-logo-mobile').slick({
+  infinite: true,
+  slidesToShow: 2,
+  slidesToScroll: 1,
+  arrows: true,
+  prevArrow: '<div class="prevarrow"></div>',
+  nextArrow: '<div class="nextarrow"></div>'
+});
+
 
 (function(){
     $(".popup-button").click(function(e){     

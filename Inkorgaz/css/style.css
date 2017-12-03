@@ -319,7 +319,7 @@ body {
 @media screen and (max-width: 768px) {
   .main-clients .btn {
     width: 100%;
-    margin-top: 40px;
+    margin-top: 20px;
     margin-bottom: 100px;
   }
 }
@@ -339,10 +339,25 @@ body {
   width: 30%;
   height: 50px;
 }
+@media screen and (max-width: 768px) {
+  .main-clients .slider-logo-img {
+    width: 45%;
+    height: 120px;
+    display: flex;
+    flex-direction: column;
+  }
+}
 .main-clients .slider-logo-img img {
   max-width: 200px;
   max-height: 50px;
   margin: auto;
+}
+@media screen and (max-width: 768px) {
+  .main-clients .slider-logo-img img {
+    max-width: 120px;
+    max-height: 35px;
+    margin: 17px auto;
+  }
 }
 .prevarrow {
   position: absolute;
@@ -355,6 +370,11 @@ body {
   top: 2%;
   cursor: pointer;
 }
+@media screen and (max-width: 768px) {
+  .prevarrow {
+    top: 35%;
+  }
+}
 .nextarrow {
   position: absolute;
   background-image: url(../img/inkorgas-layout/nextarrow.svg);
@@ -365,6 +385,11 @@ body {
   z-index: 1000;
   top: 2%;
   cursor: pointer;
+}
+@media screen and (max-width: 768px) {
+  .nextarrow {
+    top: 35%;
+  }
 }
 /* Conditions section */
 .conditions h2 {
