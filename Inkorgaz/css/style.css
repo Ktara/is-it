@@ -912,6 +912,9 @@ body {
   font-weight: 400;
   color: rgba(0, 64, 112, 0.6);
 }
+.nav-header-form input:focus {
+  outline: none;
+}
 /* Main-about section */
 .main-about {
   width: 100%;
