@@ -282,6 +282,9 @@ body {
   font-weight: 400;
   color: rgba(255, 255, 255, 0.6);
 }
+.main-section-nav-form input:focus {
+  outline: none;
+}
 .main-section-btn {
   padding: 0 50px;
   margin-top: 45px;
