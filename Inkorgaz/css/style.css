@@ -1152,23 +1152,21 @@ footer a:hover {
     max-height: 80%;
   }
 }
-@media screen and (max-width: 768px) {
-  .clients .popup-button {
-    cursor: pointer;
-    width: 100%;
-    height: 50px;
-    border: 1px solid #003f6f;
-    line-height: 50px;
-    display: block;
-    text-align: center;
-    color: #003f6f;
-    text-decoration: none;
-    transition: box-shadow 0.6s;
-    margin-top: 40px;
-  }
-  .clients .popup-button:hover {
-    box-shadow: 0px 0px 0px 3px #003f6f;
-  }
+.clients .popup-button {
+  cursor: pointer;
+  width: 240px;
+  height: 50px;
+  border: 1px solid #003f6f;
+  line-height: 50px;
+  display: block;
+  text-align: center;
+  color: #003f6f;
+  text-decoration: none;
+  transition: box-shadow 0.6s;
+  margin: 40px auto 0 auto;
+}
+.clients .popup-button:hover {
+  box-shadow: 0px 0px 0px 3px #003f6f;
 }
 /* CONTACTS PAGE */
 /* Contacts section */
@@ -1224,6 +1222,7 @@ footer a:hover {
 }
 .contacts p {
   letter-spacing: 0.16px;
+  margin-bottom: 20px;
 }
 @media screen and (max-width: 768px) {
   .contacts p {
@@ -1405,6 +1404,11 @@ footer a:hover {
     overflow: hidden;
   }
 }
+@media screen and (max-width: 768px) {
+  .customer-legal-wraper {
+    height: auto;
+  }
+}
 .customer-legal a {
   color: #003f6f;
 }
@@ -1529,6 +1533,11 @@ footer a:hover {
     overflow: hidden;
   }
 }
+@media screen and (max-width: 768px) {
+  .customer-contacts-wraper {
+    height: auto;
+  }
+}
 /* Customer-popup */
 .customer-about-popup {
   display: none;
@@ -1602,9 +1611,10 @@ footer a:hover {
 .customer-about-popup .popup-close {
   cursor: pointer;
   position: absolute;
-  top: 20px;
-  right: 30px;
+  top: 0;
+  left: 270px;
   color: #000000;
+  font-size: 22px;
 }
 .customer-about-popup .btn {
   cursor: pointer;

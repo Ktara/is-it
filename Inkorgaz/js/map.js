@@ -1,4 +1,6 @@
+// $(document).ready(function () {
 function initMap() {
+  if ($("#map").length > 0){
     var uluru = {lat: 49.790377, lng: 31.136046};
     var map = new google.maps.Map(document.getElementById('map'), {
       zoom: 6,
@@ -142,6 +144,8 @@ function initMap() {
             }
     });  
     }
+  }
+    if ($("#contacts-map").length > 0){
     var ulure = {lat: 50.448524, lng: 30.506453};
     var map2 = new google.maps.Map(document.getElementById('contacts-map'), {
       zoom: 17,
@@ -186,4 +190,6 @@ function initMap() {
       map: map2,
       icon: image2
     });
+}
   };
+  // });
