@@ -435,6 +435,7 @@ body {
   text-align: center;
   transition: box-shadow 0.6s;
   color: #ffffff;
+  text-decoration: none;
 }
 @media screen and (max-width: 768px) {
   .main-clients .btn {
@@ -456,8 +457,13 @@ body {
   }
 }
 .main-clients .slider-logo-img {
+  width: 30%;
+  height: 50px;
+}
+.main-clients .slider-logo-img img {
   max-width: 200px;
-  max-height: 40px;
+  max-height: 50px;
+  margin: auto;
 }
 .prevarrow {
   position: absolute;
@@ -752,6 +758,65 @@ body {
     display: none;
   }
 }
+.nav-header .nav-passive {
+  position: relative;
+  padding: 0;
+  width: 28px;
+  height: 3px;
+  background-color: #003f6f;
+  margin-top: 29px;
+}
+.nav-header .nav-passive:after,
+.nav-header .nav-passive:before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: -7px;
+  left: 0;
+  width: 28px;
+  height: 3px;
+  background-color: #003f6f;
+}
+.nav-header .nav-passive:after {
+  top: 7px;
+}
+.nav-header .nav-active {
+  position: fixed;
+  padding: 0;
+  width: 28px;
+  height: calc(100vh - 60px);
+  top: 60px;
+  left: 0;
+  margin-top: 0 !important;
+  width: 100%;
+  background-color: white;
+  margin-top: 29px;
+  z-index: 1000;
+}
+.nav-header .nav-active:after,
+.nav-header .nav-active:before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: -30px;
+  right: 20px;
+  left: auto;
+  width: 28px;
+  height: 3px;
+  background-color: #003f6f;
+  transform: rotate(45deg);
+}
+.nav-header .nav-active:after {
+  top: -30px;
+  transform: rotate(-45deg);
+}
+.nav-header .nav-active .nav-header-menu {
+  flex-direction: column;
+}
+.nav-header .nav-active li {
+  display: block;
+  margin-top: 10vh;
+}
 .nav-header-form {
   display: inline-block;
   line-height: 80px;
@@ -759,6 +824,17 @@ body {
 @media screen and (max-width: 768px) {
   .nav-header-form {
     height: 60px;
+    line-height: 60px;
+  }
+}
+.nav-header-form img {
+  width: 20px;
+  height: 20px;
+  display: none;
+}
+@media screen and (max-width: 768px) {
+  .nav-header-form img {
+    display: inline-block;
   }
 }
 .nav-header-form input {
@@ -767,10 +843,17 @@ body {
   line-height: 40px;
   opacity: 0.6;
   border: 1px solid rgba(0, 64, 112, 0.6);
+  transition: width 0.6s;
 }
 @media screen and (max-width: 768px) {
   .nav-header-form input {
+    position: absolute;
     line-height: 30px;
+    width: 0;
+    box-sizing: border-box;
+    visibility: hidden;
+    left: -110px;
+    top: 13px;
   }
 }
 /* Main-about section */

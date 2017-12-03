@@ -398,6 +398,7 @@ body {
 		text-align: center;
 		transition: box-shadow 0.6s;
 		color: @white;
+		text-decoration: none;
 		@media screen and (max-width: 768px) {
 			width: 100%;
 			margin-top: 40px;
@@ -414,8 +415,13 @@ body {
 			margin-top: 50px;
 		}		
 		&-img {
-			max-width: 200px;
-			max-height: 40px;			
+			width: 30%;
+			height: 50px;
+			img {
+				max-width: 200px;
+				max-height: 50px;
+				margin: auto;
+			}			
 		}
 	}	
 }
@@ -655,7 +661,7 @@ body {
 		flex-direction: row;
 		padding-right: 20px;
 		@media screen and (max-width: 768px) {			
-			height: 60px;	
+			height: 60px;				
 		}				
 		a {				
 			position: relative;					
@@ -686,11 +692,79 @@ body {
 			}
 		}
 	}
+	.nav-passive {
+		position: relative;
+		padding: 0;
+		width: 28px;
+		height: 3px;
+		background-color: @main-blue;
+		margin-top: 29px;
+		&:after,
+		&:before {
+			content: "";
+			display: block;
+			position: absolute;
+			top: -7px;
+			left: 0;
+			width: 28px;
+			height: 3px;
+			background-color: @main-blue;
+		}
+		&:after {
+			top: 7px;
+		}
+	}
+	.nav-active {
+		position: fixed;
+		padding: 0;
+		width: 28px;
+		height:~"calc(100vh - 60px)";
+		top: 60px;
+		left: 0;
+		margin-top: 0 !important;
+		width: 100%;
+		background-color: white;
+		margin-top: 29px;
+		z-index: 1000;
+		&:after,
+		&:before {
+			content: "";
+			display: block;
+			position: absolute;
+			top: -30px;
+			right: 20px;
+			left: auto;
+			width: 28px;
+			height: 3px;
+			background-color: @main-blue;
+			transform: rotate(45deg);
+		}
+		&:after {
+			top: -30px;
+			transform: rotate(-45deg);
+		}
+		.nav-header-menu {
+			flex-direction: column;
+		}
+		li {
+			display: block;
+			margin-top: 10vh;
+		}
+	}
 	&-form {		
 		display: inline-block;
 		line-height: 80px;
 		@media screen and (max-width: 768px) {			
-			height: 60px;	
+			height: 60px;
+			line-height: 60px;	
+		}
+		img {
+			width: 20px;
+			height: 20px;
+			display: none;
+			@media screen and (max-width: 768px) {			
+				display: inline-block;
+		}
 		}
 		input {
 			width: 100%;
@@ -698,8 +772,15 @@ body {
 			line-height: 40px;
 			opacity: 0.6;
 			border: 1px solid hsla(206, 100%, 22%, 0.6);
-			@media screen and (max-width: 768px) {			
-				line-height: 30px;	
+			transition: width 0.6s;
+			@media screen and (max-width: 768px) {
+				position: absolute;			
+				line-height: 30px;
+				width: 0;
+				box-sizing: border-box;
+				visibility: hidden;
+				left: -110px;
+				top: 13px;	
 			}
 		}
 	}
