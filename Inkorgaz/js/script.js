@@ -65,4 +65,7 @@ $('.slider-logo').slick({
     $(e.target).prev().animate({"height" : trHeight}, 600);
   });
 })();
-	
+	$( document ).ready( function( )
+{
+  new ScrollFlow(); 
+} );

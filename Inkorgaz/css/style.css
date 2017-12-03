@@ -1152,9 +1152,6 @@ footer a:hover {
     max-height: 80%;
   }
 }
-.clients .popup-button {
-  display: none;
-}
 @media screen and (max-width: 768px) {
   .clients .popup-button {
     cursor: pointer;
