@@ -345,6 +345,7 @@ body {
     height: 120px;
     display: flex;
     flex-direction: column;
+    align-items: center;
   }
 }
 .main-clients .slider-logo-img img {
@@ -354,9 +355,9 @@ body {
 }
 @media screen and (max-width: 768px) {
   .main-clients .slider-logo-img img {
-    max-width: 120px;
+    max-width: 110px;
     max-height: 35px;
-    margin: 17px auto;
+    margin: 17px 5px;
   }
 }
 .prevarrow {
