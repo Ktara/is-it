@@ -102,10 +102,7 @@ body {
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
-	position: relative;
-	// @media screen and (max-width: 768px) {		
-	// 	height: 510px;
-	// }	
+	position: relative;		
 	.container {
 		position: relative;
 		z-index: 100;
@@ -167,7 +164,7 @@ body {
 /* Main-info section */
 .main-info {
 	position: relative;
-	margin-top: 140px;
+	margin-top: 50px;
 	@media screen and (max-width: 992px) {
 		margin-top: 100px;
 	}
@@ -176,12 +173,11 @@ body {
 	}
 	&-icon {			
 		img {
-			margin-top: 70px;
+			margin-top: 50px;
 			margin-bottom: 20px;
 			width: 80px;
 			height: 70px;
-			@media screen and (max-width: 992px) {
-				margin-top: 50px;
+			@media screen and (max-width: 992px) {				
 				margin-bottom: 10px;
 				width: 60px;
 				height: 50px;
@@ -195,7 +191,7 @@ body {
 		
 	}
 	&-text {
-		margin-top: 90px;
+		margin-top: 70px;
 		margin-bottom: 20px;
 		font-size: 36px;
 		letter-spacing: 0.72px;
@@ -203,7 +199,7 @@ body {
 		.opn-light;
 		@media screen and (max-width: 992px) {
 			margin-top: 70px;
-			margin-bottom: 10px;
+			margin-bottom: 70px;
 			font-size: 30px;
 		}
 		@media screen and (max-width: 768px) {
@@ -213,7 +209,7 @@ body {
 	}
 	.btn {
 		padding: 0 50px;
-		margin: 130px auto;
+		margin: 120px auto 0 auto;
 		cursor: pointer;
 		width: 240px;
 		height: 50px;
@@ -241,7 +237,8 @@ body {
 /* Main-clients section */
 .main-clients {
 	width: 100%;
-	height: 360px;	
+	height: 360px;
+	margin-top: 140px;	
 	background-image: url(../img/inkorgas-layout/2.jpg);
 	background-repeat: no-repeat;
 	background-position: center;
@@ -594,8 +591,12 @@ body {
 	&-logo {
 		display: inline-block;
 		color: @main-blue;
+		margin-top: 30px;
 		&:hover {
 			text-decoration: none;
+		}
+		@media screen and (max-width: 768px) {			
+			margin-top: 20px;	
 		}		
 	}
 	&-menu {
@@ -973,7 +974,7 @@ body {
 /* About section */
 .about {
 	position: relative;
-	margin-top: 140px;
+	margin-top: 50px;
 	@media screen and (max-width: 992px) {
 		margin-top: 100px;		
 	}
@@ -982,12 +983,11 @@ body {
 	}
 	&-info {			
 		img {
-			margin-top: 70px;
+			margin-top: 50px;
 			margin-bottom: 20px;
 			width: 80px;
 			height: 70px;
-			@media screen and (max-width: 992px) {
-				margin-top: 50px;
+			@media screen and (max-width: 992px) {				
 				margin-bottom: 10px;
 			}
 			@media screen and (max-width: 768px) {			
@@ -995,7 +995,7 @@ body {
 			}
 		}
 		&-icon-text {
-			margin-top: 90px;
+			margin-top: 70px;
 			margin-bottom: 20px;
 			font-size: 36px;
 			letter-spacing: 0.72px;
@@ -1010,7 +1010,7 @@ body {
 
 /* Cooperation section */
 .cooperation {
-	margin-top: 110px;
+	margin-top: 100px;
 	position: relative;
 	h2 {
 		font-size: 30px;
@@ -1047,20 +1047,24 @@ body {
 
 /* Footer */
 footer {
-	margin-top: 110px;
-	margin-bottom: 130px;
+	margin-top: 60px;
+	padding-bottom: 60px;
+	position: relative;
 	@media screen and (max-width: 768px) {
-		margin-bottom: 60px;
+		padding-bottom: 30px;
 		clear: both;
-	}
+	}	
 	p {
+		display: inline-block;
 		@media screen and (max-width: 768px) {
 			display: none;
 		}
 	}
 	a {
 		color: @main-blue;
-		text-decoration: none;		
+		text-decoration: none;
+		display: inline-block;
+		padding-left: 5px;			
 		&:hover {
 			text-decoration: none;
 		}
@@ -1121,6 +1125,9 @@ footer {
 		&:hover {
 			box-shadow: 0px 0px 0px 3px @main-blue;
 		}		
+	}
+	.dsn-logo {
+		margin-left: 13%;
 	}
 }
 
@@ -1490,16 +1497,15 @@ footer {
 	width: 100%;
 	height: 100%;
 	z-index: 1000;
-	background-color: rgba( 0, 0, 0, 0.5);
+	background-color: rgba( 0, 0, 0, 0.7);
 	@media screen and (max-width: 768px) {
 		height: ~"calc(100vh - 60px)";
 		top: 60px;
 	}
 	&-wraper {
 		position: relative;
-		width: 100%;
-		height: 500px;
-		background-color: white;
+		width: auto;
+		height: 480px;
 		@media screen and (max-width: 768px) {
 			height: 100%;
 			margin-top: 0;
@@ -1508,7 +1514,7 @@ footer {
 	.customer-about-form {
 		position: relative;
 		width: 500px;
-		height: 500px;
+		height: 480px;
 		background-color: white;
 		border-box: box-sizing;
 		padding: 20px 50px;
@@ -1535,6 +1541,7 @@ footer {
 		font-size: 30px;
 		.opn-light;		
 		letter-spacing: 0.3px;
+		margin-bottom: 20px;
 		@media screen and (max-width: 992px) {
 			font-size: 26px;	
 		}		
@@ -1543,9 +1550,12 @@ footer {
 		cursor: pointer;
 		position: absolute;
 		top: 0;
-		left: 270px;
+		right: 20px;
 		color: @black;
-		font-size: 22px;	
+		font-size: 22px;
+		@media screen and (max-width: 768px) {
+			left: 275px;
+		}
 	}
 	.btn {
 		cursor: pointer;
