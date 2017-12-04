@@ -652,15 +652,9 @@ body {
 .nav-header-logo {
   display: inline-block;
   color: #003f6f;
-  margin-top: 30px;
 }
 .nav-header-logo:hover {
   text-decoration: none;
-}
-@media screen and (max-width: 768px) {
-  .nav-header-logo {
-    margin-top: 20px;
-  }
 }
 .nav-header-menu {
   width: 100%;
