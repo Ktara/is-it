@@ -150,6 +150,7 @@ body {
 		}
 		&:hover {
 			box-shadow: 0px 0px 0px 3px @white;
+			text-decoration: none;
 		}		
 		p {
 			color: @white;
@@ -225,6 +226,7 @@ body {
 		}
 		&:hover {
 			box-shadow: 0px 0px 0px 3px @main-blue;
+			text-decoration: none;
 		}		
 		p {
 			color: @main-blue;
@@ -590,14 +592,10 @@ body {
 	}	
 	&-logo {
 		display: inline-block;
-		color: @main-blue;
-		// margin-top: 30px;
+		color: @main-blue;		
 		&:hover {
 			text-decoration: none;
-		}
-		// @media screen and (max-width: 768px) {			
-		// 	margin-top: 20px;	
-		// }		
+		}				
 	}
 	&-menu {
 		width: 100%;		
@@ -1593,4 +1591,11 @@ footer {
 		left: 0;
 		bottom: 0;
 	}
+}
+
+
+/* Text justify */
+
+.text-justify {
+	text-align: justify !important;
 }

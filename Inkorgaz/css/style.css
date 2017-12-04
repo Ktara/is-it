@@ -155,6 +155,7 @@ body {
 }
 .main-section-btn:hover {
   box-shadow: 0px 0px 0px 3px #ffffff;
+  text-decoration: none;
 }
 .main-section-btn p {
   color: #ffffff;
@@ -243,6 +244,7 @@ body {
 }
 .main-info .btn:hover {
   box-shadow: 0px 0px 0px 3px #003f6f;
+  text-decoration: none;
 }
 .main-info .btn p {
   color: #003f6f;
@@ -1732,4 +1734,8 @@ footer a:hover {
   background-color: #003f6f;
   left: 0;
   bottom: 0;
+}
+/* Text justify */
+.text-justify {
+  text-align: justify !important;
 }
