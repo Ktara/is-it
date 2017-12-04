@@ -828,6 +828,13 @@ body {
 .nav-header-form input:focus {
   outline: none;
 }
+.nav-header-lang {
+  padding: 0 10px;
+  color: #003f6f;
+}
+.nav-header-lang a {
+  color: #003f6f;
+}
 /* Nav-header section */
 .main-page-nav {
   position: absolute;
@@ -928,6 +935,13 @@ body {
 }
 .main-page-nav input:focus {
   outline: none;
+}
+.main-page-nav .nav-header-lang {
+  padding: 0 10px;
+  color: #ffffff;
+}
+.main-page-nav .nav-header-lang a {
+  color: #ffffff;
 }
 /* Main-about section */
 .main-about {
@@ -1090,7 +1104,7 @@ body {
 }
 @media screen and (max-width: 768px) {
   .about {
-    margin-top: 100px;
+    margin-top: 60px;
   }
 }
 .about-info img {
@@ -1121,6 +1135,7 @@ body {
 @media screen and (max-width: 768px) {
   .about-info-icon-text {
     font-size: 20px;
+    margin-top: 0;
   }
 }
 /* Cooperation section */
