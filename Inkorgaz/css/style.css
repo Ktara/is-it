@@ -123,7 +123,7 @@ body {
 @media screen and (max-width: 768px) {
   .main-section-text {
     font-size: 18px;
-    margin-top: 100px;
+    margin-top: 150px;
   }
 }
 .main-section:before {
@@ -719,14 +719,14 @@ body {
   content: "";
   display: block;
   position: absolute;
-  top: -7px;
+  top: -10px;
   left: 0;
   width: 28px;
   height: 3px;
   background-color: #003f6f;
 }
 .nav-header .nav-passive:after {
-  top: 7px;
+  top: 10px;
 }
 .nav-header .nav-active {
   position: fixed;
