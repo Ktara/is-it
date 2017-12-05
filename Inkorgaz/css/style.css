@@ -213,7 +213,7 @@ body {
 @media screen and (max-width: 992px) {
   .main-info-text {
     margin-top: 70px;
-    margin-bottom: 70px;
+    margin-bottom: 10px;
     font-size: 30px;
   }
 }
@@ -239,7 +239,6 @@ body {
   .main-info .btn {
     width: 100%;
     margin-top: 40px;
-    margin-bottom: 100px;
   }
 }
 .main-info .btn:hover {
@@ -260,6 +259,11 @@ body {
   background-position: center;
   background-size: cover;
   position: relative;
+}
+@media screen and (max-width: 768px) {
+  .main-clients {
+    margin-top: 70px;
+  }
 }
 .main-clients:before {
   background-color: rgba(0, 64, 112, 0.6);
@@ -1716,6 +1720,7 @@ footer a:hover {
 @media screen and (max-width: 768px) {
   .customer-about-popup .popup-close {
     left: 275px;
+    top: 15px;
   }
 }
 .customer-about-popup .btn {

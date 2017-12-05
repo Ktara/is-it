@@ -55,8 +55,7 @@ $('.slider-logo-mobile').slick({
 (function(){
   var status = false;
   $("#nav_wrapper").click(function(){
-    if (parseInt($('body').css("width"), 10) > 768) return;
-        console.log('tets');
+    if (parseInt($('body').css("width"), 10) > 768) return;        
     if(status === false) {
        $(this).addClass("nav-active");
        status = true;

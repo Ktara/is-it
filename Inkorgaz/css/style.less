@@ -200,7 +200,7 @@ body {
 		.opn-light;
 		@media screen and (max-width: 992px) {
 			margin-top: 70px;
-			margin-bottom: 70px;
+			margin-bottom: 10px;				
 			font-size: 30px;
 		}
 		@media screen and (max-width: 768px) {
@@ -221,8 +221,7 @@ body {
 		transition: box-shadow 0.6s;
 		@media screen and (max-width: 768px) {
 			width: 100%;
-			margin-top: 40px;
-			margin-bottom: 100px;
+			margin-top: 40px;			
 		}
 		&:hover {
 			box-shadow: 0px 0px 0px 3px @main-blue;
@@ -246,6 +245,9 @@ body {
 	background-position: center;
 	background-size: cover;
 	position: relative;
+	@media screen and (max-width: 768px) {
+		margin-top: 70px;
+	}
 	&:before {
 		background-color: hsla( 206, 100%, 22%, 0.6);
 		content: '';
@@ -1505,7 +1507,6 @@ footer {
 .customer-about-popup {
 	display: none;
 	position: fixed;
-
 	top: 0;
 	left: 0;
 	width: 100%;
@@ -1573,6 +1574,7 @@ footer {
 		font-size: 22px;
 		@media screen and (max-width: 768px) {
 			left: 275px;
+			top: 15px;
 		}
 	}
 	.btn {
