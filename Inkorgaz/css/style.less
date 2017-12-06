@@ -1059,6 +1059,9 @@ body {
 		width: 100%;
 		height: auto;
 	}
+	svg {
+		display: inline-block;
+	}
 	.popup-button {		
 		padding: 0 60px;
 		margin: 130px auto 0 auto;
@@ -1115,17 +1118,20 @@ footer {
 /* Clients section */
 .clients {
 	h2 {
+		position: relative;
 		font-size: 30px;
 		color: @black;
 		letter-spacing: 0.3px;
 		.opn-light;
 		margin-top: 50px;
 		margin-bottom: 50px;
+		width: 100%;
+		height: 30px;
 		@media screen and (max-width: 768px) {
 			font-size: 24px;
 			margin-top: 100px;
 			margin-bottom: 0;
-		}
+		}				
 	}
 	&-logo {		
 		height: 120px;
@@ -1640,3 +1646,5 @@ footer {
 .text-justify {
 	text-align: justify !important;
 }
+
+
