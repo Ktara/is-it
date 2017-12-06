@@ -635,7 +635,7 @@ body {
 /* Header */
 .nav-header {
   width: 100%;
-  height: 80px;
+  height: 100px;
   position: relative;
   color: #003f6f;
 }
@@ -648,7 +648,7 @@ body {
   }
 }
 .nav-header-wraper {
-  line-height: 80px;
+  line-height: 100px;
 }
 @media screen and (max-width: 768px) {
   .nav-header-wraper {
@@ -656,15 +656,33 @@ body {
   }
 }
 .nav-header-logo {
-  display: inline-block;
+  display: block;
   color: #003f6f;
+  margin-top: 15px;
+  line-height: 50px;
+}
+@media screen and (max-width: 768px) {
+  .nav-header-logo {
+    line-height: 40px;
+    margin-top: 5px;
+  }
+}
+.nav-header-logo img {
+  width: 80px;
+  height: 50px;
+}
+@media screen and (max-width: 768px) {
+  .nav-header-logo img {
+    width: 60px;
+    height: 40px;
+  }
 }
 .nav-header-logo:hover {
   text-decoration: none;
 }
 .nav-header-menu {
   width: 100%;
-  height: 80px;
+  height: 100px;
   align-items: center;
   display: inline-flex;
   justify-content: space-between;
@@ -767,7 +785,7 @@ body {
 }
 .nav-header-form {
   display: inline-block;
-  line-height: 80px;
+  line-height: 100px;
 }
 @media screen and (max-width: 768px) {
   .nav-header-form {

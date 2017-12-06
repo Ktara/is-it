@@ -577,7 +577,7 @@ body {
 /* Header */
 .nav-header {
 	width: 100%;
-	height: 80px;
+	height: 100px;
 	position: relative;
 	color: @main-blue;
 	@media screen and (max-width: 768px) {			
@@ -587,21 +587,35 @@ body {
 		z-index: 2000;	
 	}
 	&-wraper {
-		line-height: 80px;		
+		line-height: 100px;		
 		@media screen and (max-width: 768px) {			
 			line-height: 60px;	
 		}
 	}	
 	&-logo {
-		display: inline-block;
-		color: @main-blue;		
+		display: block;
+		color: @main-blue;
+		margin-top: 15px;
+		line-height: 50px;
+		@media screen and (max-width: 768px) {			
+			line-height: 40px;
+			margin-top: 5px;	
+		}		
+		img {
+			width: 80px;
+			height: 50px;
+			@media screen and (max-width: 768px) {			
+				width: 60px;
+				height: 40px;	
+			}	
+		}		
 		&:hover {
 			text-decoration: none;
 		}				
 	}
 	&-menu {
 		width: 100%;		
-		height: 80px;
+		height: 100px;
 		align-items: center;
 		display: inline-flex;		
 		justify-content: space-between;
@@ -700,7 +714,7 @@ body {
 	}
 	&-form {		
 		display: inline-block;
-		line-height: 80px;
+		line-height: 100px;
 		@media screen and (max-width: 768px) {			
 			height: 60px;
 			line-height: 60px;	
