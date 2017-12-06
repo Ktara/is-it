@@ -811,6 +811,9 @@ body {
   border: 1px solid rgba(0, 64, 112, 0.6);
   transition: width 0.6s;
 }
+.nav-header-form input:focus {
+  border: 2px solid #004070;
+}
 @media screen and (max-width: 768px) {
   .nav-header-form input {
     position: absolute;
