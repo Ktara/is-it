@@ -287,6 +287,7 @@ body {
   font-weight: 300;
   letter-spacing: 0.3px;
   color: #ffffff;
+  margin-top: 35px;
 }
 @media screen and (max-width: 992px) {
   .main-clients h2 {
@@ -300,7 +301,7 @@ body {
   }
 }
 .main-clients p {
-  margin-top: 30px;
+  margin-top: 25px;
   color: #ffffff;
 }
 @media screen and (max-width: 768px) {
@@ -310,7 +311,7 @@ body {
 }
 .main-clients .btn {
   padding: 0 50px;
-  margin: 70px auto;
+  margin: 45px auto;
   cursor: pointer;
   width: 240px;
   height: 50px;
@@ -333,7 +334,7 @@ body {
   box-shadow: 0px 0px 0px 3px #ffffff;
 }
 .main-clients .slider-logo {
-  margin: 65px auto 0 auto;
+  margin: 55px auto 0 auto;
   width: 100%;
 }
 @media screen and (max-width: 768px) {
