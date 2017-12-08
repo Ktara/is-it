@@ -84,3 +84,35 @@ $('.slider-logo-mobile').slick({
         top = $(id).offset().top;
     $('body,html').animate({scrollTop: top}, 1000);
 });
+(function(){
+  function animateText(textClass, time) {
+    var $target = $(textClass);
+    var text = $target.text();
+    $target.html('');
+
+    var textArray = text.split('');
+    var textLength = textArray.length;
+    var i = 0;
+    function showSymbol() {
+      if(i < textLength) {
+      $target.append(textArray[i]);
+      i = i + 1;
+      setTimeout(showSymbol, time/textLength);        
+    } else {
+      return;
+    }
+
+    };
+    showSymbol();
+
+  }
+  animateText(".animate_text", 2000);
+  animateText(".animate_text_1", 1000);
+  animateText(".animate_text_2", 1000);
+  animateText(".animate_text_3", 2000);
+  animateText(".animate_text_4", 700);
+
+
+
+
+})();  
