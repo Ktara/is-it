@@ -41,56 +41,64 @@ function initMap() {
     });
     var image = 'img/map-marker.svg';
     var infowindow = [];
-    infowindow[0] = new google.maps.InfoWindow({
-        content: "Литвишко&nbsp;Сергій&nbsp;Юрійович Регіональний&nbsp;менеджер (Київська&nbsp;обл.) <br> (050)-486-37-46 (068)-984-45-77 <span>s.litvishko@inkorgas.com</span>",
-        maxWidth: 200
+        infowindow[0] = new google.maps.InfoWindow({
+        content: "Федоров Роман Васильович (Київ) Менеджер з питать регіонального розвитку <br> (050)-486-37-63 (098)-616-00-88 <span>r.fedorov@inkorgas.com </span>",
+        maxWidth: 250
     });
         infowindow[1] = new google.maps.InfoWindow({
-        content: "Мосейчук Василь Анатолійович Регіональний менеджер (Полтавська обл.) <br> (050) 346 -11-13 (050) 346-40-55 <span>v.moseychuk@inkorgas.com</span>",
+        content: "Мосейчук Василь Анатолійович Регіональний менеджер (Полтавська обл.) <br> (050)-346-11-13 (050)-346-40-55 <span>v.moseychuk@inkorgas.com</span>",
         maxWidth: 200
     });
         infowindow[2] = new google.maps.InfoWindow({
-        content: "Зданевич Микола Олександрович Регіональний менеджер (Житомирська, Хмельницька обл.) <br> (050)-486-37-51 (067) 412 82 42 <span>n.zdanevich@inkorgas.com</span>",
-        maxWidth: 200
+        content: "Зданевич Микола Олександрович Регіональний менеджер (Житомирська, Хмельницька обл.) <br> (050)-486-37-51 (067)-412-82-42 <span>n.zdanevich@inkorgas.com</span>",
+        maxWidth: 230
     });
         infowindow[3] = new google.maps.InfoWindow({
         content: "Адаменко Констянтин Михайлович Регіональний менеджер (Харківська обл.) <br> (050)-486-37-68 (050)-964-89-64 <span>k.adamenko@inkorgas.com</span>",
-        maxWidth: 200
+        maxWidth: 230
     });
         infowindow[4] = new google.maps.InfoWindow({
         content: "Соколов Юрій Романович Регіональний менеджер (Вінницька обл.) <br> (050)-486-37-58 (067)-432-87-97 <span>y.sokolov@inkorgas.com</span>",
         maxWidth: 200
     });
         infowindow[5] = new google.maps.InfoWindow({
-        content: "Шувальський Андрій Володимирович Регіональний менеджер (Івано-Франківська, Закарпатська, Чернівецька обл.) <br> (050)-486-37-59 (067) 344 78 77 <span>a.shuvalsky@inkorgas.com</span>",
-        maxWidth: 200
+        content: "Шувальський Андрій Володимирович Регіональний менеджер (Івано-Франківська, Закарпатська, Чернівецька обл.) <br> (050)-486-37-59 (067)-344-78-77 <span>a.shuvalsky@inkorgas.com</span>",
+        maxWidth: 230
     });
         infowindow[6] = new google.maps.InfoWindow({
         content: "Карманський Олег Володимирович Регіональний менеджер (Львівська обл.) <br> (050)-486-37-69 (067)-949-59-91 <span>o.karmansky@inkorgas.com</span>",
-        maxWidth: 200
+        maxWidth: 230
     });
         infowindow[7] = new google.maps.InfoWindow({
-        content: "Литвишко Сергій Юрійович Регіональний менеджер (Київська обл.) <br> (050)-486-37-46 (068) 984 45 77 <span>s.litvishko@inkorgas.com</span>",
+        content: "Крамар Юрій Миронович Регіональний менеджер (Тернопільська обл.) <br> (068)-652-76-31 <span>Ternopol@inkorgas.com</span>",
         maxWidth: 200
     });
         infowindow[8] = new google.maps.InfoWindow({
-        content: "Шувальський Андрій Володимирович Регіональний менеджер (Івано-Франківська, Закарпатська, Чернівецька обл.) <br> (050)-486-37-59 (067) 344 78 77 <span>a.shuvalsky@inkorgas.com</span>",
-        maxWidth: 200
+        content: "Шувальський Андрій Володимирович Регіональний менеджер (Івано-Франківська, Закарпатська, Чернівецька обл.) <br> (050)-486-37-59 (067)-344-78-77 <span>a.shuvalsky@inkorgas.com</span>",
+        maxWidth: 230
     });
         infowindow[9] = new google.maps.InfoWindow({
-        content: "Шувальський Андрій Володимирович Регіональний менеджер (Івано-Франківська, Закарпатська, Чернівецька обл.) <br> (050)-486-37-59 (067) 344 78 77 <span>a.shuvalsky@inkorgas.com</span>",
+        content: "Шувальський Андрій Володимирович Регіональний менеджер (Івано-Франківська, Закарпатська, Чернівецька обл.) <br> (050)-486-37-59 (067)-344-78-77 <span>a.shuvalsky@inkorgas.com</span>",
+        maxWidth: 230
+    });
+        infowindow[10] = new google.maps.InfoWindow({
+        content: "Литвишко&nbsp;Сергій&nbsp;Юрійович Регіональний&nbsp;менеджер (Київська&nbsp;обл.) <br> (050)-486-37-46 (068)-984-45-77 <span>s.litvishko@inkorgas.com</span>",
         maxWidth: 200
     });
+        infowindow[11] = new google.maps.InfoWindow({
+        content: "Зданевич Микола Олександрович Регіональний менеджер (Житомирська, Хмельницька обл.) <br> (050)-486-37-51 (067)-412-82-42 <span>n.zdanevich@inkorgas.com</span>",
+        maxWidth: 230
+    });     
     var marker = [];
     marker[0] =  new google.maps.Marker({
-          position: {lat: 50.466489, lng: 30.520811},
-          map: map,
-          icon: image
+      position: {lat: 50.466489, lng: 30.520811},
+      map: map,
+      icon: image
     }); 
     marker[1] = new google.maps.Marker({
-          position: {lat: 49.591376, lng: 34.541807},
-          map: map,
-          icon: image
+      position: {lat: 49.591376, lng: 34.541807},
+      map: map,
+      icon: image
     });
     marker[2] = new google.maps.Marker({
       position: {lat: 50.270276, lng: 28.653136},
@@ -129,6 +137,16 @@ function initMap() {
     });
     marker[9] = new google.maps.Marker({
       position: {lat: 48.429324, lng: 22.921363},
+      map: map,
+      icon: image
+    });
+    marker[10] = new google.maps.Marker({
+      position: {lat: 49.811650, lng: 30.125303},
+      map: map,
+      icon: image
+    });
+    marker[11] = new google.maps.Marker({
+      position: {lat: 49.430874, lng: 26.972227},
       map: map,
       icon: image
     });
@@ -279,8 +297,8 @@ function initMap() {
     var image = 'img/map-marker.svg';
     var infowindow = [];
     infowindow[0] = new google.maps.InfoWindow({
-        content: "Litvishko Sergiy Yuriyovych Regional Manager (Kyiv Oblast) <br> (050)-486-37-46 (068)-984-45-77 <span>s.litvishko@inkorgas.com</span>",
-        maxWidth: 200
+        content: "Roman Fedorov (Kiev) <br> Manager for Regional Development <br> (050)-486-37-63 (098)-616-00-88 <span>r.fedorov@inkorgas.com </span>",
+        maxWidth: 220
     });
         infowindow[1] = new google.maps.InfoWindow({
         content: "Moseychuk Vasyl Anatolievich Regional Manager (Poltava region) <br> (050) 346 -11-13 (050) 346-40-55 <span>v.moseychuk@inkorgas.com</span>",
@@ -318,6 +336,15 @@ function initMap() {
         content: "Shuvalsky Andriy Vladimirovich Regional Manager (Ivano-Frankivsk, Zakarpattia, Chernivtsi region.) <br> (050)-486-37-59 (067) 344 78 77 <span>a.shuvalsky@inkorgas.com</span>",
         maxWidth: 200
     });
+        infowindow[10] = new google.maps.InfoWindow({
+        content: "Litvishko Sergiy Yuriyovych Regional Manager (Kyiv Oblast) <br> (050)-486-37-46 (068)-984-45-77 <span>s.litvishko@inkorgas.com</span>",
+        maxWidth: 200
+    });
+        infowindow[11] = new google.maps.InfoWindow({
+        content: "Zdanevich Nikolay Aleksandrovich Regional Manager (Zhytomyr, Khmelnytsky region.) <br> (050)-486-37-51 (067) 412 82 42 <span>n.zdanevich@inkorgas.com</span>",
+        maxWidth: 200
+    });
+
     var marker = [];
     marker[0] =  new google.maps.Marker({
           position: {lat: 50.466489, lng: 30.520811},
@@ -366,6 +393,16 @@ function initMap() {
     });
     marker[9] = new google.maps.Marker({
       position: {lat: 48.429324, lng: 22.921363},
+      map: map,
+      icon: image
+    });
+    marker[10] = new google.maps.Marker({
+      position: {lat: 49.811650, lng: 30.125303},
+      map: map,
+      icon: image
+    });
+    marker[11] = new google.maps.Marker({
+      position: {lat: 49.430874, lng: 26.972227},
       map: map,
       icon: image
     });

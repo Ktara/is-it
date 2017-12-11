@@ -1825,10 +1825,6 @@ footer a:hover {
   left: 0;
   bottom: 0;
 }
-/* Text justify */
-.text-justify {
-  text-align: justify !important;
-}
 .animate_text,
 .animate_text_1,
 .animate_text_2,
