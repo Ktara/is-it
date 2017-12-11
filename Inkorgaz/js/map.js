@@ -297,7 +297,7 @@ function initMap() {
     var image = 'img/map-marker.svg';
     var infowindow = [];
     infowindow[0] = new google.maps.InfoWindow({
-        content: "Roman Fedorov (Kiev) <br> Manager for Regional Development <br> (050)-486-37-63 (098)-616-00-88 <span>r.fedorov@inkorgas.com </span>",
+        content: "Fedorov Roman Vasylovych (Kiev) <br> Manager for Regional Development <br> (050)-486-37-63 (098)-616-00-88 <span>r.fedorov@inkorgas.com </span>",
         maxWidth: 220
     });
         infowindow[1] = new google.maps.InfoWindow({
@@ -325,8 +325,8 @@ function initMap() {
         maxWidth: 200
     });
         infowindow[7] = new google.maps.InfoWindow({
-        content: "Litvishko Sergiy Yuriyovych Regional Manager (Kyiv Oblast) <br> (050)-486-37-46 (068) 984 45 77 <span>s.litvishko@inkorgas.com</span>",
-        maxWidth: 200
+        content: "Kramar Yuriy Mironovich Regional Manager (Ternopil region) <br> (068)-652-76-31 <span>Ternopol@inkorgas.com</span>",
+        maxWidth: 180
     });
         infowindow[8] = new google.maps.InfoWindow({
         content: "Shuvalsky Andriy Vladimirovich Regional Manager (Ivano-Frankivsk, Zakarpattia, Chernivtsi region.) <br> (050)-486-37-59 (067) 344 78 77 <span>a.shuvalsky@inkorgas.com</span>",
