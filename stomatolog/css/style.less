@@ -106,14 +106,17 @@ ol, ul {
 	.opn-bold;		
 	display: inline-block;
 	text-align: center;
-	margin-top: 40px;	
+	margin-top: 40px;
+	transition: border-radius 0.6s;	
 	&:hover {			
 		text-decoration: none;
+		border-radius: 25px;
 	}		
 }
-.section-header {	
+.section_header {	
 	color: @main-blue;		
-	font-size: 36px;		
+	font-size: 36px;
+	.opn-bold;		
 }
 .row_fix {
 	padding: 0;
@@ -165,7 +168,7 @@ ol, ul {
 	position: relative;
 	width: 100%;
 	height: 100vh;	
-	background-image: url(../img/1.jpg);
+	background-image: url(../img/main_picture.jpg);
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
@@ -204,8 +207,34 @@ ol, ul {
 		text-align: center;
 		margin-top: 40px;
 		margin-right: 20px;
+		transition: border-radius 0.6s;
 		&:hover {			
 			text-decoration: none;
+			border-radius: 25px;
 		}		
 	}	
+}
+
+
+/* About section */
+.about {
+	position: relative;
+	margin-top: 120px;
+	.about_text {
+		margin-top: 20px;
+	}
+	.certificate {
+		margin-top: 40px;
+		.opn-bold;
+	}
+	.certificate_img {
+		position: relative;
+		margin-top: 20px;
+	}
+	img {
+		width: 54px;
+		height: 54px;
+		display: inline-block;
+		margin-right: 20px;
+	}
 }
