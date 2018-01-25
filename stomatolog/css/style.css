@@ -1,0 +1,205 @@
+@font-face {
+  font-family: 'OpenSans';
+  src: url('../fonts/OpenSans-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'OpenSans';
+  src: url('../fonts/OpenSans-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'OpenSans';
+  src: url('../fonts/OpenSans-BoldItalic.ttf') format('truetype');
+  font-weight: 700;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'OpenSans';
+  src: url('../fonts/OpenSans-ExtraBold.ttf') format('truetype');
+  font-weight: 900;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'OpenSans';
+  src: url('../fonts/OpenSans-ExtraBoldItalic.ttf') format('truetype');
+  font-weight: 900;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'OpenSans';
+  src: url('../fonts/OpenSans-Italic.ttf') format('truetype');
+  font-weight: 400;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'OpenSans';
+  src: url('../fonts/OpenSans-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'OpenSans';
+  src: url('../fonts/OpenSans-LightItalic.ttf') format('truetype');
+  font-weight: 300;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'OpenSans';
+  src: url('../fonts/OpenSans-SemiBold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'OpenSans';
+  src: url('../fonts/OpenSans-SemiBoldItalic.ttf') format('truetype');
+  font-weight: 600;
+  font-style: italic;
+}
+/* Fonts files */
+.opn-reg {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+}
+.opn-bold {
+  font-family: 'OpenSans', sans-serif;
+  font-weight: 700;
+}
+.opn-extrabold {
+  font-family: 'OpenSans', sans-serif;
+  font-weight: 900;
+}
+/* Base colors */
+/* Base setting */
+body {
+  font-size: 16px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  color: #565656;
+}
+input:focus,
+button:focus,
+textarea:focus {
+  outline: none;
+}
+ol,
+ul {
+  list-style: none;
+}
+.btn {
+  cursor: pointer;
+  width: 230px;
+  height: 58px;
+  line-height: 50px;
+  border-radius: 10px;
+  border: 2px solid #14a3b8;
+  color: #14a3b8;
+  font-family: 'OpenSans', sans-serif;
+  font-weight: 700;
+  display: inline-block;
+  text-align: center;
+  margin-top: 40px;
+}
+.btn:hover {
+  text-decoration: none;
+}
+.section-header {
+  color: #14a3b8;
+  font-size: 36px;
+}
+.row_fix {
+  padding: 0;
+}
+/* Header */
+.nav_header {
+  line-height: 60px;
+  top: 0;
+  width: 100%;
+  height: 60px;
+  background-color: #ffffff;
+}
+.nav_header .main_tel {
+  font-family: 'OpenSans', sans-serif;
+  font-weight: 700;
+}
+.nav_header .nav_wrapper {
+  position: relative;
+}
+.nav_header .nav_wrapper .nav_header_menu {
+  position: absolute;
+  display: inline-flex;
+  width: 100%;
+  justify-content: flex-end;
+}
+.nav_header .nav_wrapper .nav_header_menu li {
+  box-sizing: border-box;
+}
+.nav_header .nav_wrapper .nav_header_menu a {
+  color: #565656;
+  line-height: 60px;
+  padding: 0 0 0 30px;
+  display: inline-block;
+  text-decoration: none;
+  font-family: 'OpenSans', sans-serif;
+  font-weight: 700;
+}
+.nav_header .nav_wrapper .nav_header_menu a:hover {
+  color: #14a3b8;
+  text-decoration: none;
+}
+.nav_header .nav_wrapper .nav_header_menu .active {
+  color: #14a3b8;
+}
+/* Main section */
+.main {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background-image: url(../img/1.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.main:before {
+  background-color: rgba(26, 123, 183, 0.62);
+  content: '';
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.main .main_header {
+  font-size: 60px;
+  color: #ffffff;
+  text-transform: uppercase;
+  font-family: 'OpenSans', sans-serif;
+  font-weight: 900;
+  margin: 0;
+  margin-top: 220px;
+}
+.main .main_sub_header {
+  color: #ffffff;
+  margin-top: 30px;
+}
+.main .btn {
+  cursor: pointer;
+  width: 230px;
+  height: 58px;
+  line-height: 50px;
+  border-radius: 10px;
+  border: 2px solid #ffffff;
+  color: #ffffff;
+  font-family: 'OpenSans', sans-serif;
+  font-weight: 700;
+  display: inline-block;
+  text-align: center;
+  margin-top: 40px;
+  margin-right: 20px;
+}
+.main .btn:hover {
+  text-decoration: none;
+}
