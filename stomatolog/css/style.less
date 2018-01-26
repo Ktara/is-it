@@ -118,7 +118,7 @@ ol, ul {
 	font-size: 36px;
 	.opn-bold;		
 }
-.row_fix {
+.fix {
 	padding: 0;
 }
 
@@ -218,28 +218,39 @@ ol, ul {
 
 /* About section */
 .about {
-	position: relative;
-	margin-top: 120px;
-	.about_text {
-		margin-top: 5px;
-		p {
-			margin: 15px 0;
+	position: relative;	
+	.img_dentist {
+		margin-top: 135px;		
+		img {
+			width: 560px;
 		}
 	}
-	.certificate {
-		margin-top: 25px;
-		.opn-bold;
+	.about_block {
+		.section_header {
+			margin-top: 120px;
+		}
+		.about_text {
+		margin-top: 10px;
+		p {
+			margin: 10px 0;
+		}
 	}
-	.certificate_img {
-		position: relative;
-		margin-top: 20px;
-	}
-	img {
-		width: 54px;
-		height: 54px;
-		display: inline-block;
-		margin-right: 20px;
-	}
+		.certificate {
+			margin-top: 30px;
+			.opn-bold;
+		}
+		.certificate_img {
+			position: relative;
+			margin-top: 15px;
+			padding: 0;
+			img {
+				width: 54px;
+				height: 54px;
+				display: inline-block;
+				margin-right: 20px;
+			}
+		}
+	}	
 }
 
 
@@ -275,4 +286,147 @@ ol, ul {
 		margin-left: 97px;
 		margin-top: 60px;
 	}
+}
+
+
+/* Services section */
+.services {
+	position: relative;
+	margin-top: 120px;
+	.section_header {
+		text-align: center;
+	}
+}
+
+
+/* Reviews section */
+.reviews {
+	position: relative;
+	margin-top: 120px;
+	.section_header {
+		text-align: center;
+	}
+}
+
+
+/* Contacts section */
+.contacts {
+	margin-top: 120px;
+	margin-bottom: 100px;
+	position: relative;
+	.section_header {
+		margin-bottom: 20px;
+	}
+	.contacts_form {		
+		width: 460px;		
+		background-color: @white;
+		border-box: box-sizing;				
+		display: block;
+		input {
+			width: 100%;
+			height: 46px;
+			text-indent: 30px;
+			color: hsla(0, 0%, 34%, 1);
+			background-color: @white;
+			opacity: 0.5;			
+			border-radius: 10px;
+			border: 2px solid hsla(188, 80%, 40%, 1);
+			transition: width 0.6s;			
+			margin-top: 20px;	
+		}
+		input:-moz-placeholder {
+		    .opn-reg;
+		    color: hsla(0, 0%, 34%, 0.5);		    
+		}
+		input:-webkit-input-placeholder {
+		    .opn-reg;
+		    color: hsla(0, 0%, 34%, 0.5);		    
+		}
+		input:-ms-input-placeholder {
+		    .opn-reg;
+		    color: hsla(0, 0%, 34%, 0.5);		    
+		}
+		input:-ms-input-placeholder {		    
+		    .opn-reg;
+		    color: hsla(0, 0%, 34%, 0.5);		    
+		}
+		input:placeholder { 
+		    .opn-reg;
+		    color: hsla(0, 0%, 34%, 0.5);		    
+		}
+		input:focus {
+			outline: none;
+			border: 2px solid hsla(188, 80%, 40%, 1);
+			opacity: 1;
+		}
+		input:focus {
+			outline: none;
+		}
+		textarea {
+			width: 100%;
+			height: 70px;
+			text-indent: 30px;
+			color: hsla(0, 0%, 34%, 1);
+			background-color: @white;
+			opacity: 0.5;			
+			border-radius: 10px;
+			border: 2px solid hsla(188, 80%, 40%, 1);
+			transition: width 0.6s;			
+			margin-top: 20px;
+			line-height: 55px;
+		}
+		textarea:-moz-placeholder {
+		    .opn-reg;
+		    color: hsla(0, 0%, 34%, 0.5);		    
+		}
+		textarea:-webkit-textarea-placeholder {
+		    .opn-reg;
+		    color: hsla(0, 0%, 34%, 0.5);		    
+		}
+		textarea:-ms-textarea-placeholder {
+		    .opn-reg;
+		    color: hsla(0, 0%, 34%, 0.5);		    
+		}
+		textarea:-ms-textarea-placeholder {		    
+		    .opn-reg;
+		    color: hsla(0, 0%, 34%, 0.5);		    
+		}
+		textarea:placeholder { 
+		    .opn-reg;
+		    color: hsla(0, 0%, 34%, 0.5);		    
+		}
+		textarea:focus {
+			outline: none;
+			border: 2px solid hsla(188, 80%, 40%, 1);
+			opacity: 1;
+		}
+		textarea:focus {
+			outline: none;
+		}
+		.contacts_btn {
+			width: 100%;
+			height: 50px;
+			margin-top: 20px;
+			background-color: @white;
+			color: @main-blue;
+		}
+	}
+	.contacts_adress {		
+		margin-top: 15px;
+	}
+	
+	.contacts_icons {
+		img {
+			width: 44px;
+			margin-top: 40px;
+			margin-right: 15px;
+		}
+	}
+	.contacts_copyright_1 {
+		margin-top: 105px;
+	}
+	.contacts_copyright_2 {
+		margin-top: 105px;		
+		text-align: right;
+	}	
 }

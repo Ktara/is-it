@@ -113,7 +113,7 @@ ul {
   font-family: 'OpenSans', sans-serif;
   font-weight: 700;
 }
-.row_fix {
+.fix {
   padding: 0;
 }
 /* Header */
@@ -212,24 +212,33 @@ ul {
 /* About section */
 .about {
   position: relative;
+}
+.about .img_dentist {
+  margin-top: 135px;
+}
+.about .img_dentist img {
+  width: 560px;
+}
+.about .about_block .section_header {
   margin-top: 120px;
 }
-.about .about_text {
-  margin-top: 5px;
+.about .about_block .about_text {
+  margin-top: 10px;
 }
-.about .about_text p {
-  margin: 15px 0;
+.about .about_block .about_text p {
+  margin: 10px 0;
 }
-.about .certificate {
-  margin-top: 25px;
+.about .about_block .certificate {
+  margin-top: 30px;
   font-family: 'OpenSans', sans-serif;
   font-weight: 700;
 }
-.about .certificate_img {
+.about .about_block .certificate_img {
   position: relative;
-  margin-top: 20px;
+  margin-top: 15px;
+  padding: 0;
 }
-.about img {
+.about .about_block .certificate_img img {
   width: 54px;
   height: 54px;
   display: inline-block;
@@ -268,4 +277,148 @@ ul {
 .advantage p {
   margin-left: 97px;
   margin-top: 60px;
+}
+/* Services section */
+.services {
+  position: relative;
+  margin-top: 120px;
+}
+.services .section_header {
+  text-align: center;
+}
+/* Reviews section */
+.reviews {
+  position: relative;
+  margin-top: 120px;
+}
+.reviews .section_header {
+  text-align: center;
+}
+/* Contacts section */
+.contacts {
+  margin-top: 120px;
+  margin-bottom: 100px;
+  position: relative;
+}
+.contacts .section_header {
+  margin-bottom: 20px;
+}
+.contacts .contacts_form {
+  width: 460px;
+  background-color: #ffffff;
+  border-box: box-sizing;
+  display: block;
+}
+.contacts .contacts_form input {
+  width: 100%;
+  height: 46px;
+  text-indent: 30px;
+  color: #575757;
+  background-color: #ffffff;
+  opacity: 0.5;
+  border-radius: 10px;
+  border: 2px solid #14a2b8;
+  transition: width 0.6s;
+  margin-top: 20px;
+}
+.contacts .contacts_form input:-moz-placeholder {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  color: rgba(87, 87, 87, 0.5);
+}
+.contacts .contacts_form input:-webkit-input-placeholder {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  color: rgba(87, 87, 87, 0.5);
+}
+.contacts .contacts_form input:-ms-input-placeholder {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  color: rgba(87, 87, 87, 0.5);
+}
+.contacts .contacts_form input:-ms-input-placeholder {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  color: rgba(87, 87, 87, 0.5);
+}
+.contacts .contacts_form input:placeholder {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  color: rgba(87, 87, 87, 0.5);
+}
+.contacts .contacts_form input:focus {
+  outline: none;
+  border: 2px solid #14a2b8;
+  opacity: 1;
+}
+.contacts .contacts_form input:focus {
+  outline: none;
+}
+.contacts .contacts_form textarea {
+  width: 100%;
+  height: 70px;
+  text-indent: 30px;
+  color: #575757;
+  background-color: #ffffff;
+  opacity: 0.5;
+  border-radius: 10px;
+  border: 2px solid #14a2b8;
+  transition: width 0.6s;
+  margin-top: 20px;
+  line-height: 55px;
+}
+.contacts .contacts_form textarea:-moz-placeholder {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  color: rgba(87, 87, 87, 0.5);
+}
+.contacts .contacts_form textarea:-webkit-textarea-placeholder {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  color: rgba(87, 87, 87, 0.5);
+}
+.contacts .contacts_form textarea:-ms-textarea-placeholder {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  color: rgba(87, 87, 87, 0.5);
+}
+.contacts .contacts_form textarea:-ms-textarea-placeholder {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  color: rgba(87, 87, 87, 0.5);
+}
+.contacts .contacts_form textarea:placeholder {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  color: rgba(87, 87, 87, 0.5);
+}
+.contacts .contacts_form textarea:focus {
+  outline: none;
+  border: 2px solid #14a2b8;
+  opacity: 1;
+}
+.contacts .contacts_form textarea:focus {
+  outline: none;
+}
+.contacts .contacts_form .contacts_btn {
+  width: 100%;
+  height: 50px;
+  margin-top: 20px;
+  background-color: #ffffff;
+  color: #14a3b8;
+}
+.contacts .contacts_adress {
+  margin-top: 15px;
+}
+.contacts .contacts_icons img {
+  width: 44px;
+  margin-top: 40px;
+  margin-right: 15px;
+}
+.contacts .contacts_copyright_1 {
+  margin-top: 105px;
+}
+.contacts .contacts_copyright_2 {
+  margin-top: 105px;
+  text-align: right;
 }
