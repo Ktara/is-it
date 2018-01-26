@@ -311,7 +311,7 @@ $( function() {
   } );
 (function(){
   var status = false;
-  $("#nav_wrapper").click(function(){Ppu    
+  $("#nav_wrapper").click(function(){    
     if (  parseInt($('body').css("width"), 10) > 768) return;
     if(status === false) {
        $(this).addClass("nav-active");

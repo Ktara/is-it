@@ -8,6 +8,7 @@
     <title>Стоматология</title>
 
     <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/slick.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
     
@@ -18,18 +19,18 @@
     <header class="nav_header">
       <div class="container">
         <div class="row">
-          <div class="col-md-5 row_fix">
+          <div class="col-md-5 fix">
             <p class="main_tel">+380 50 083 50 91</p>
           </div>
-          <div class="col-md-7 row_fix">
-            <div class="nav_wrapper">
+          <div class="col-md-7 fix">
+            <div id="nav_wrapper" class="nav_wrapper">
               <ul role="navigation" class="nav nav_header_menu">
                 <li role="presentation"><a href="#about">О&nbsp;враче</a></li>
-                <li role="presentation"><a href="">Преимущества</a></li>
-                <li role="presentation"><a href="">Услуги</a></li>
-                <li role="presentation"><a href="">Галерея</a></li>
-                <li role="presentation"><a href="">Отзывы</a></li>
-                <li role="presentation"><a href="">Контакты</a></li>
+                <li role="presentation"><a href="#advantage">Преимущества</a></li>
+                <li role="presentation"><a href="#services">Услуги</a></li>
+                <li role="presentation"><a href="#gallery">Галерея</a></li>
+                <li role="presentation"><a href="#reviews">Отзывы</a></li>
+                <li role="presentation"><a href="#contacts">Контакты</a></li>
               </ul>
             </div>
           </div>
@@ -44,7 +45,7 @@
             <h1 class="main_header">Антон Подорожный</h1>
             <p class="main_sub_header">Врач-стоматолог, художественная реставрация зубов а также диагностика и лечение заболеваний слизистой полости рта</p>     
             <a href="#about" class="btn">Узнать Больше</a>
-            <a href="" class="btn">Заказать консультацию</a>
+            <a href="#contacts" class="btn">Заказать консультацию</a>
           </div>
         </div>
       </div>
@@ -80,7 +81,7 @@
     </section>
 
 
-    <section class="advantage">
+    <section id="advantage" class="advantage">
       <div class="container">
         <h3 class="section_header">Преимущества</h3>
         <div class="row">
@@ -113,21 +114,177 @@
     </section>
 
 
-    <section class="services">
+    <section id="services" class="services">
       <div class="container">
         <h3 class="section_header">Услуги</h3>
       </div>
-    </section>
-
-
-    <section class="reviews">
-      <div class="container">
-        <h3 class="section_header">Отзывы клиентов</h3>
+      <div class="row">
+        <div class="col-md-8 col-md-offset-2">
+          <ul class="services_stage">
+            <li>Имплантация дентальная</li>
+            <li>Косметическая хирургия</li>
+            <li>Ортодонтическая хирургия</li>
+            <li>Костная пластика</li>          
+          </ul>
+          <div class="services_progress">
+            <div class="services_progress_line"></div>
+          </div>          
+        </div>
+      </div>
+      <div class="container services_slide">
+        <div class="services_slide_block">
+          <div class="row">
+            <div class="col-md-6 fix">
+              <img src="img/dental_implantation.jpg" alt="">
+            </div>
+            <div class="col-md-6 fix">
+              <div>
+                <p>
+                  Проблему отсутствующего зуба можно решить установкой имплантата, при этом не повреждаются соседние зубы. Процедура эта безболезненна, не занимает много времени, легко переносится. Имплантат по форме напоминает корень ранее удаленного зуба, вживляется под анестезией и находится под десной в течении 2-5 месяцев. Затем с помощью специальных переходников в имплантате фиксируется коронка и получается новый зуб. Этот зуб не отличается от своих зубов по виду и выполняемой функции. В ряде случаев возможна установка  имплантата сразу с коронкой.
+                </p>
+                <p>
+                  Доктор работает с продукцией ведущих мировых изготовителей имплантатов, производит индивидуальный подбор для каждого пациента. Так же занимается переделкой «неудачных» случаев имплантаций проведенных в других клиниках  для достижения нужного Вам результата.
+                </p>
+                <p>
+                  Так же занимается переделкой «неудачных» случаев имплантаций проведенных в других клиниках для достижения нужного Вам результата.
+                </p>
+              </div>
+              <a href="" class="btn">Узнать Больше</a>
+            </div>
+          </div>
+        </div>
+        <div class="services_slide_block">
+          <div class="row">
+            <div class="col-md-6 fix">
+              <img src="img/cosmetic_surgery.jpg" alt="">
+            </div>
+            <div class="col-md-6 fix">
+              <div>
+                <p>
+                  Направлена в основном на две цели - устранение возрастных изменений и коррекция врожденных особенностей для достижения эстетически гармоничного соотношения черт лица и тела.
+                </p>
+                <p>
+                  В зависимости от участка лица выделяется пластика век (блефаропластика), пластика носа (ринопластика), ушей (отопластика), губ(хейлопластика).
+                </p>
+                <p>
+                  Для устранения возрастных изменений чаще всего используется блефаропластика в сочетании с подтяжкой лица (ритидектомия). Подтяжка лица может быть круговая (полная) или частичная – верхняя, средняя, нижняя.
+                </p>
+                <p>
+                  Современное развитие медицинских технологий и анализ уже накопленного клинического опыта позволяет все чаще использовать малоинвазивные  методики. Это значит, что операции производятся через маленькие доступы (разрезы) или просто проколы кожи. При этом заживление и восстановление после операции проходит намного быстрее.
+                </p>
+              </div>
+              <a href="" class="btn">Узнать Больше</a>
+            </div>
+          </div>
+        </div>
+        <div class="services_slide_block">
+          <div class="row">
+            <div class="col-md-6 fix">
+              <img src="img/orthodontic_surgery.jpg" alt="">
+            </div>
+            <div class="col-md-6 fix">
+              <div>
+                <p>
+                  Это  группа оперативных вмешательств проводящихся вместе с ортодонтическим лечением. В значительном количестве клинических ситуаций без них невозможно результативное лечение неправильного положения зубов и непропорциональных форм челюстей.
+                </p>
+                <p>
+                  Кортикотомия- создание микроотверстий в наружном слое кости, под десной специальным инструментом. При этом активизируются процессы перестройки и снижается механическая сопротивляемость кости, что позволяет ускорить ортодонтическое лечение в 1,5-2 раза. Например с двух лет до одного года.
+                </p>
+                <p>
+                  Установка ортодонтических имплантатов- они служат дополнительной опорой для тяги направленной на перемещение зубов в правильное положение.
+                </p>
+                <p>
+                  Установка различных дистракторов- аппаратов для расширения, изменения формы и объема челюстей.
+                </p>
+                <p>
+                  Ортогнатическая хирургия- операции по разделению челюстей на несколько фрагментов и соединению их в нужной форме. При этом кардинально улучшаются эстетические параметры лица и зубные ряды становятся в правильный прикус. Эти операции показаны при так называемых скелетных деформациях, когда кроме неправильного расположения зубов отклонена от нормы сама форма челюсти. В таких случаях лечение только брекет-системами не даст полноценного результата.
+                </p>
+              </div>
+              <a href="" class="btn">Узнать Больше</a>
+            </div>
+          </div>
+        </div>
+        <div class="services_slide_block">
+          <div class="row">
+            <div class="col-md-6 fix">
+              <img src="img/bone_plastic.jpg" alt="">
+            </div>
+            <div class="col-md-6 fix">
+              <div>
+                <p>
+                  В местах отсутствующих зубов не всегда есть объем кости достаточный для установки имплантата. Это связано с локальным снижением кровоснабжения кости после удаления зуба и воспалительными процессами до удаления.
+                </p>
+                <p>
+                  Есть различные методики восстановления нужного объема с использованием собственных тканей пациента и искусственных материалов: синуслифтинг, сплит(расщепление) кости, пересадка костных блоков, латеральная аугментация и т. д.
+                </p>
+                <p>
+                  Методика подбирается индивидуально для каждого конкретного случая. Установка имплантатов проводится или через несколько месяцев, или одновременно с костной пластикой. Это зависит от ситуации.
+                </p>              
+              </div>
+              <a href="" class="btn">Узнать Больше</a>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
 
 
-    <footer class="contacts">
+    <section id="gallery" class="gallery">
+      <div class="container">
+        <div class="gallery_slide"></div>
+      </div>
+    </section>
+
+
+    <section id="reviews" class="reviews">
+      <div class="container">
+        <h3 class="section_header">Отзывы клиентов</h3>
+        <div class="reviews_slide">
+          <div class="reviews_slide_block">
+            <div class="row">
+              <div class="col-md-10 col-md-offset-1">
+                <img src="img/girl.png" alt="">
+                <p class="reviews_name">Антонова Юлия</p>
+                <p class="reviews_text">
+                Прошло уже больше месяца, как поставила импланты. Прооперировал очень быстро и безболезненно, уверенными движениями опытного специалиста. Я только приготовилась нервничать, как все уже закончилось.
+                </p>
+              </div>              
+            </div>
+            <!-- <div class="prevarrow"></div>
+            <div class="nextarrow"></div> -->
+          </div>
+          <div class="reviews_slide_block">
+            <div class="row">
+              <div class="col-md-10 col-md-offset-1">
+                <img src="img/girl.png" alt="">
+                <p class="reviews_name">Антонова Юлия</p>
+                <p class="reviews_text">
+                Прошло уже больше месяца, как поставила импланты. Прооперировал очень быстро и безболезненно, уверенными движениями опытного специалиста. Я только приготовилась нервничать, как все уже закончилось.
+                </p>
+              </div>              
+            </div>
+            <!-- <div class="prevarrow"></div>
+            <div class="nextarrow"></div> -->
+          </div>
+          <div class="reviews_slide_block">
+            <div class="row">
+              <div class="col-md-10 col-md-offset-1">
+                <img src="img/girl.png" alt="">
+                <p class="reviews_name">Антонова Юлия</p>
+                <p class="reviews_text">
+                Прошло уже больше месяца, как поставила импланты. Прооперировал очень быстро и безболезненно, уверенными движениями опытного специалиста. Я только приготовилась нервничать, как все уже закончилось.
+                </p>
+              </div>              
+            </div>
+            <!-- <div class="prevarrow"></div>
+            <div class="nextarrow"></div> -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <footer id="contacts" class="contacts">
       <div class="container">
         <h3 class="section_header">Бесплатная консультация</h3>
         <div class="row">
@@ -166,6 +323,7 @@
 
     
     <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/slick.min.js"></script>
     <script src="js/script.js"></script>
   </body>
 </html>
