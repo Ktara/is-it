@@ -15,14 +15,14 @@
   </head>
   
   <body>
-
+<div class="main_wrapper">
     <header class="nav_header">
       <div class="container">
         <div class="row">
-          <div class="col-md-5 fix">
+          <div class="col-md-5 col-sm-3 col-xs-10">
             <p class="main_tel">+380 50 083 50 91</p>
           </div>
-          <div class="col-md-7 fix">
+          <div id="nav_wrapper" class="col-md-7 col-sm-9 col-xs-2">
             <div id="nav_wrapper" class="nav_wrapper">
               <ul role="navigation" class="nav nav_header_menu">
                 <li role="presentation"><a href="#about">О&nbsp;враче</a></li>
@@ -33,7 +33,7 @@
                 <li role="presentation"><a href="#contacts">Контакты</a></li>
               </ul>
             </div>
-          </div>
+          </div>         
         </div>
       </div>
     </header>
@@ -41,9 +41,10 @@
     <section class="main">
       <div class="container">
         <div class="row">
-          <div class="col-md-8 fix">
+          <div class="col-md-8 col-sm-6">
             <h1 class="main_header">Антон Подорожный</h1>
-            <p class="main_sub_header">Врач-стоматолог, художественная реставрация зубов а также диагностика и лечение заболеваний слизистой полости рта</p>     
+            <p class="main_sub_header">Врач-стоматолог, художественная реставрация зубов, а также диагностика и лечение заболеваний слизистой полости рта</p>
+            <p class="main_sub_header_mob">Врач-стоматолог</p>  
             <a href="#about" class="btn">Узнать Больше</a>
             <a href="#contacts" class="btn">Заказать консультацию</a>
           </div>
@@ -54,8 +55,9 @@
 
     <section id="about" class="about">
       <div class="container">
+        <h3 class="section_header section_header_mob visible-xs">Антон Владимирович Подорожный</h3>
         <div class="row">
-          <div class="col-md-6 img_dentist">
+          <div class="col-md-6 col-sm-6 col-xs-12 img_dentist">
             <img src="img/dentist.jpg" alt="">
           </div>
           <div class="col-md-6 about_block">
@@ -66,7 +68,8 @@
               <p>Регулярное  участие в украинских и международных конференциях и конгрессах. Стажировки, учебные курсы по хирургии полости рта и ЧЛХ в Италии, Германии, США.</p>
               <p>Действительный член  Европейской ассоциации черепно-челюстно-лицевой хирургии (EACMFS). Врачебная категория – высшая.</p>
               <p>Знание иностранных языков - английский В1; немецкий А1. Сфера научно-практических интересов – дентальная имплантация, реконструктивная хирургия челюстно-лицевой области.</p>
-            </div>    
+            </div>
+           <div class="show_btn visible-xs">Читать больше</div>   
             <p class="certificate">Посмотреть сертификаты</p>
             <div class="container certificate_img">
               <a href=""><img src="img/pdf.svg" alt=""></a>
@@ -85,31 +88,32 @@
       <div class="container">
         <h3 class="section_header">Преимущества</h3>
         <div class="row">
-          <div class="col-md-4">
+          <div class="col-md-4 col-sm-4 col-xs-12">
             <img class="decor_1" src="img/tooth_comfort.svg" alt="">
             <p>Лечение без боли, комфортно</p>
           </div>
-          <div class="col-md-4">
+          <div class="col-md-4 col-sm-4 col-xs-12">
             <img class="decor_2" src="img/tooth_cog.svg" alt="">
             <p>Соблюдение классических принципов медицины</p>
           </div>
-          <div class="col-md-4">
+          <div class="col-md-4 col-sm-4 col-xs-12">
             <img class="decor_3" src="img/tooth_quality.svg" alt="">
             <p>Качество (опыт, высококачественное оснащение)</p>
           </div>
-          <div class="col-md-4">
+          <div class="col-md-4 col-sm-4 col-xs-12">
             <img class="decor_4" src="img/tooth_glasses.svg" alt="">
             <p>Индивидуальный подход</p>
           </div>
-          <div class="col-md-4">
+          <div class="col-md-4 col-sm-4 col-xs-12">
             <img class="decor_5" src="img/tooth_instrument.svg" alt="">
             <p>Использование современных методик</p>
           </div>
-          <div class="col-md-4">
+          <div class="col-md-4 col-sm-4 col-xs-12">
             <img class="decor_6" src="img/tooth_man.svg" alt="">
             <p>Обязательное достижение поставленной клинической цели</p>
-          </div>
+          </div>          
         </div>
+        <button class="btn visible-xs">Посмотреть еще</button>
       </div>
     </section>
 
@@ -119,28 +123,30 @@
         <h3 class="section_header">Услуги</h3>
       </div>
       <div class="row">
-        <div class="col-md-8 col-md-offset-2">
+        <div class="col-md-8 col-md-offset-2 col-sm-8 col-sm-offset-2 hidden-xs">
           <ul class="services_stage">
             <li>Имплантация дентальная</li>
             <li>Косметическая хирургия</li>
             <li>Ортодонтическая хирургия</li>
             <li>Костная пластика</li>          
-          </ul>
-          <div class="services_progress">
-            <div class="services_progress_line"></div>
-          </div>          
+          </ul>   
         </div>
+        <div class="services_progress col-md-8 col-md-offset-2 col-sm-8 col-sm-offset-2 hidden-xs">
+          <div class="services_progress_line">
+            <img src="img/tooth.svg" alt="">
+          </div>
+        </div> 
       </div>
       <div class="container services_slide">
-        <div class="services_slide_block">
+        <div class="services_slide_block hidden-xs">
           <div class="row">
-            <div class="col-md-6 fix">
+            <div class="col-md-6 col-sm-6">
               <img src="img/dental_implantation.jpg" alt="">
             </div>
-            <div class="col-md-6 fix">
+            <div class="col-md-6 col-sm-6">
               <div>
                 <p>
-                  Проблему отсутствующего зуба можно решить установкой имплантата, при этом не повреждаются соседние зубы. Процедура эта безболезненна, не занимает много времени, легко переносится. Имплантат по форме напоминает корень ранее удаленного зуба, вживляется под анестезией и находится под десной в течении 2-5 месяцев. Затем с помощью специальных переходников в имплантате фиксируется коронка и получается новый зуб. Этот зуб не отличается от своих зубов по виду и выполняемой функции. В ряде случаев возможна установка  имплантата сразу с коронкой.
+                   Проблему отсутствующего зуба можно решить установкой имплантата, при этом не повреждаются соседние зубы. Процедура эта безболезненна, не занимает много времени, легко переносится. Имплантат по форме напоминает корень ранее удаленного зуба, вживляется под анестезией и находится под десной в течении 2-5 месяцев. Затем с помощью специальных переходников в имплантате фиксируется коронка и получается новый зуб. Этот зуб не отличается от своих зубов по виду и выполняемой функции. В ряде случаев возможна установка  имплантата сразу с коронкой.
                 </p>
                 <p>
                   Доктор работает с продукцией ведущих мировых изготовителей имплантатов, производит индивидуальный подбор для каждого пациента. Так же занимается переделкой «неудачных» случаев имплантаций проведенных в других клиниках  для достижения нужного Вам результата.
@@ -148,17 +154,18 @@
                 <p>
                   Так же занимается переделкой «неудачных» случаев имплантаций проведенных в других клиниках для достижения нужного Вам результата.
                 </p>
+                <div class="show_btn visible-xs">Читать больше</div>
               </div>
-              <a href="" class="btn">Узнать Больше</a>
+              <a href="#contacts" class="btn">Узнать Больше</a>
             </div>
           </div>
         </div>
         <div class="services_slide_block">
           <div class="row">
-            <div class="col-md-6 fix">
+            <div class="col-md-6 col-sm-6">
               <img src="img/cosmetic_surgery.jpg" alt="">
             </div>
-            <div class="col-md-6 fix">
+            <div class="col-md-6 col-sm-6">
               <div>
                 <p>
                   Направлена в основном на две цели - устранение возрастных изменений и коррекция врожденных особенностей для достижения эстетически гармоничного соотношения черт лица и тела.
@@ -173,16 +180,16 @@
                   Современное развитие медицинских технологий и анализ уже накопленного клинического опыта позволяет все чаще использовать малоинвазивные  методики. Это значит, что операции производятся через маленькие доступы (разрезы) или просто проколы кожи. При этом заживление и восстановление после операции проходит намного быстрее.
                 </p>
               </div>
-              <a href="" class="btn">Узнать Больше</a>
+              <a href="#contacts" class="btn">Узнать Больше</a>
             </div>
           </div>
         </div>
         <div class="services_slide_block">
           <div class="row">
-            <div class="col-md-6 fix">
+            <div class="col-md-6 col-sm-6">
               <img src="img/orthodontic_surgery.jpg" alt="">
             </div>
-            <div class="col-md-6 fix">
+            <div class="col-md-6 col-sm-6">
               <div>
                 <p>
                   Это  группа оперативных вмешательств проводящихся вместе с ортодонтическим лечением. В значительном количестве клинических ситуаций без них невозможно результативное лечение неправильного положения зубов и непропорциональных форм челюстей.
@@ -200,16 +207,16 @@
                   Ортогнатическая хирургия- операции по разделению челюстей на несколько фрагментов и соединению их в нужной форме. При этом кардинально улучшаются эстетические параметры лица и зубные ряды становятся в правильный прикус. Эти операции показаны при так называемых скелетных деформациях, когда кроме неправильного расположения зубов отклонена от нормы сама форма челюсти. В таких случаях лечение только брекет-системами не даст полноценного результата.
                 </p>
               </div>
-              <a href="" class="btn">Узнать Больше</a>
+              <a href="#contacts" class="btn">Узнать Больше</a>
             </div>
           </div>
         </div>
         <div class="services_slide_block">
           <div class="row">
-            <div class="col-md-6 fix">
+            <div class="col-md-6 col-sm-6">
               <img src="img/bone_plastic.jpg" alt="">
             </div>
-            <div class="col-md-6 fix">
+            <div class="col-md-6 col-sm-6">
               <div>
                 <p>
                   В местах отсутствующих зубов не всегда есть объем кости достаточный для установки имплантата. Это связано с локальным снижением кровоснабжения кости после удаления зуба и воспалительными процессами до удаления.
@@ -221,8 +228,9 @@
                   Методика подбирается индивидуально для каждого конкретного случая. Установка имплантатов проводится или через несколько месяцев, или одновременно с костной пластикой. Это зависит от ситуации.
                 </p>              
               </div>
-              <a href="" class="btn">Узнать Больше</a>
+              <a href="#contacts" class="btn">Узнать Больше</a>
             </div>
+          </div>         
           </div>
         </div>
       </div>
@@ -231,53 +239,93 @@
 
     <section id="gallery" class="gallery">
       <div class="container">
-        <div class="gallery_slide"></div>
+        <div class="gallery_slide_wrapper hidden-xs">
+          <div class="row">
+            <div class="col-md-2 col-sm-2 gallery_slide_1 ">
+              <div class="gallery_slide_nav">
+                <div class="gallery_slide_nav_img">
+                  <img src="img/big_cabinet.jpg" alt="">
+                </div>
+                <div class="gallery_slide_nav_img">
+                  <img src="img/big_cabinet.jpg" alt="">
+                </div>
+                <div class="gallery_slide_nav_img">
+                  <img src="img/big_cabinet.jpg" alt="">
+                </div>
+              </div>
+            </div>
+            <div class="col-md-10 col-sm-10">
+              <div class="gallery_slider">
+                <div class="gallery_slider_img">
+                  <img src="img/big_cabinet.jpg" alt="">
+                </div>                
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="gallery_slide_wrapper_mob visible-xs">
+          <div class="row">
+            <div class="col-xs-12">
+              <div class="gallery_slider_nav_mob">
+                <div class="gallery_slider_nav_img_mob">
+                  <img src="img/big_cabinet.jpg" alt="">
+                </div>
+                <div class="gallery_slider_nav_img_mob">
+                  <img src="img/big_cabinet.jpg" alt="">
+                </div>
+                <div class="gallery_slider_nav_img_mob">
+                  <img src="img/big_cabinet.jpg" alt="">
+                </div>
+                <div class="gallery_slider_nav_img_mob">
+                  <img src="img/big_cabinet.jpg" alt="">
+                </div>
+                <div class="gallery_slider_nav_img_mob">
+                  <img src="img/big_cabinet.jpg" alt="">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
 
 
     <section id="reviews" class="reviews">
-      <div class="container">
+      <div class="container ">
         <h3 class="section_header">Отзывы клиентов</h3>
         <div class="reviews_slide">
           <div class="reviews_slide_block">
             <div class="row">
-              <div class="col-md-10 col-md-offset-1">
+              <div class="col-md-10 col-md-offset-1 col-sm-10 col-sm-offset-1">
                 <img src="img/girl.png" alt="">
                 <p class="reviews_name">Антонова Юлия</p>
                 <p class="reviews_text">
                 Прошло уже больше месяца, как поставила импланты. Прооперировал очень быстро и безболезненно, уверенными движениями опытного специалиста. Я только приготовилась нервничать, как все уже закончилось.
                 </p>
               </div>              
-            </div>
-            <!-- <div class="prevarrow"></div>
-            <div class="nextarrow"></div> -->
+            </div>            
           </div>
           <div class="reviews_slide_block">
             <div class="row">
-              <div class="col-md-10 col-md-offset-1">
+              <div class="col-md-10 col-md-offset-1 col-sm-10 col-sm-offset-1">
                 <img src="img/girl.png" alt="">
-                <p class="reviews_name">Антонова Юлия</p>
+                <p class="reviews_name">Юлия Антонова</p>
                 <p class="reviews_text">
                 Прошло уже больше месяца, как поставила импланты. Прооперировал очень быстро и безболезненно, уверенными движениями опытного специалиста. Я только приготовилась нервничать, как все уже закончилось.
                 </p>
               </div>              
-            </div>
-            <!-- <div class="prevarrow"></div>
-            <div class="nextarrow"></div> -->
+            </div>           
           </div>
           <div class="reviews_slide_block">
             <div class="row">
-              <div class="col-md-10 col-md-offset-1">
+              <div class="col-md-10 col-md-offset-1 col-sm-10 col-sm-offset-1">
                 <img src="img/girl.png" alt="">
-                <p class="reviews_name">Антонова Юлия</p>
+                <p class="reviews_name">Антонова Юлия Антонова</p>
                 <p class="reviews_text">
                 Прошло уже больше месяца, как поставила импланты. Прооперировал очень быстро и безболезненно, уверенными движениями опытного специалиста. Я только приготовилась нервничать, как все уже закончилось.
                 </p>
               </div>              
             </div>
-            <!-- <div class="prevarrow"></div>
-            <div class="nextarrow"></div> -->
           </div>
         </div>
       </div>
@@ -288,36 +336,36 @@
       <div class="container">
         <h3 class="section_header">Бесплатная консультация</h3>
         <div class="row">
-          <div class="col-md-5">
+          <div class="col-md-5 col-sm-6 col-xs-12">
             <form action="" class="contacts_form">
               <input type="name" placeholder="Ваше имя">
               <input type="tel" placeholder="Ваш телефон">
-              <textarea name="" id="" cols="30" rows="10">Сообщение</textarea>
+              <textarea name="" id="" cols="30" rows="10" placeholder="Сообщение"></textarea>
               <button class="btn contacts_btn">Отправить</button>
             </form>
           </div>
-          <div class="col-md-4 col-md-offset-1 contacts_adress fix">
-            ул. Евгения Сверстюка, 2а (ул. Марины Расковой),
-            тел.: +380 50 083 50 91 <br>
+          <div class="col-md-4 col-md-offset-1 col-sm-6 col-xs-12 contacts_adress">
+            ул. Евгения Сверстюка, 2а (ул.&nbsp;Марины&nbsp;Расковой),
+            тел.:&nbsp;+380&nbsp;50&nbsp;083&nbsp;50&nbsp;91 <br>
             email: antonmed@i.ua            
           </div> 
-          <div class="col-md-6 col-md-offset-1 fix">
+          <div class="col-md-6 col-md-offset-1 col-sm-6 col-xs-12">
               <div class="contacts_icons">
                 <a href=""><img src="img/facebook.svg" alt=""></a>
                 <a href=""><img src="img/instagram.svg" alt=""></a>
                 <a href=""><img src="img/telegram.svg" alt=""></a>
               </div>
           </div> 
-          <div class="col-md-2 col-md-offset-1 fix contacts_copyright_1">
+          <div class="col-md-3 col-md-offset-1 col-sm-6 col-xs-12 contacts_copyright_1">
           ©2018Anton Podorozhiy
         </div>
-          <div class="col-md-3 col-md-offset-1 fix contacts_copyright_2">
-          Design&Development by IS.Agency
+          <div class="col-md-3 col-sm-6 col-xs-12 contacts_copyright_2">
+          Design&Development by <a target="_blank" href="">IS.Agency</a>
         </div>
         </div>
       </div>
     </footer>
-
+</div>
     
     
 
