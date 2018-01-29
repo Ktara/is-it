@@ -90,3 +90,14 @@ $('.gallery_slider_nav_mob').slick({
        
   })
 })();
+
+
+$('.services_slide_mob').slick({  
+	infinite: true,
+	speed: 500,
+	fade: true,
+	adaptiveHeight: true,
+	cssEase: 'linear',
+	prevArrow: '<div class="services_prevarrow"></div>',
+	nextArrow: '<div class="services_nextarrow"></div>'
+});

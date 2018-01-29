@@ -551,26 +551,50 @@ ul {
   cursor: pointer;
   margin-top: 20px;
 }
+.services_slide_mob {
+  position: relative;
+  width: 100%;
+  margin-top: 40px;
+}
+.services_slide_mob_block img {
+  width: 240px;
+  margin: 0 auto;
+}
+.services_slide_mob_block .btn {
+  display: block;
+  margin: 60px auto 0 auto;
+}
+.services_slide_mob_text {
+  width: 240px;
+  display: block;
+  margin: 0 auto;
+}
+.services_slide_mob_text h4 {
+  font-size: 16px;
+  font-family: 'OpenSans', sans-serif;
+  font-weight: 700;
+  margin-top: 20px;
+}
 .services .services_prevarrow {
   position: absolute;
   background-image: url(../img/prew_arrow.svg);
   background-size: cover;
-  width: 30px;
-  height: 60px;
-  left: 5%;
+  width: 25px;
+  height: 50px;
+  left: 2%;
   z-index: 1000;
-  top: 85%;
+  top: 5%;
   cursor: pointer;
 }
 .services .services_nextarrow {
   position: absolute;
   background-image: url(../img/next_arrow.svg);
   background-size: cover;
-  width: 32px;
-  height: 60px;
-  right: 5%;
+  width: 27px;
+  height: 50px;
+  right: 2%;
   z-index: 1000;
-  top: 85%;
+  top: 5%;
   cursor: pointer;
 }
 /* Gallery section */
