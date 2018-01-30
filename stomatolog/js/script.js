@@ -143,10 +143,10 @@ var myVivus6 = new Vivus('box_anim6', {
 myVivus6.setFrameProgress(0).stop();
 
 
-var myVivusAnton = new Vivus('anton_anim', {
-	start: 'manual',
-});
-myVivusAnton.setFrameProgress(0).stop();
+// var myVivusAnton = new Vivus('anton_anim', {
+// 	start: 'manual',
+// });
+// myVivusAnton.setFrameProgress(0).stop();
 
   var startanim = $('.advantage').offset().top;
 var $status = false;
@@ -202,6 +202,6 @@ myVivus6.reset().play(1);
 
 
 
-myVivusAnton.reset().play(1);
+// myVivusAnton.reset().play(1);
   };
 } ; 
