@@ -325,6 +325,8 @@ ul {
   margin-top: 40px;
   margin-right: 20px;
   transition: border-radius 0.6s;
+  position: relative;
+  z-index: 10;
 }
 @media screen and (max-width: 768px) {
   .main .btn {
