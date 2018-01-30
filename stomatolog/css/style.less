@@ -80,7 +80,9 @@
 @main-grey: #565656;
 @white: #ffffff;
 
-
+// .path{
+// 	stroke-dasharray: 400;
+// }
 /* Base setting */
 body {
 	font-size: 16px;
@@ -254,6 +256,7 @@ ol, ul {
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
+	overflow: hidden;
 	@media screen and (max-width: 768px) {
 		text-align: center;			
 	}
@@ -321,6 +324,12 @@ ol, ul {
 			text-decoration: none;
 			border-radius: 25px;
 		}		
+	}
+	.main_anim {
+		position: absolute;
+		width: 100%;
+		left: 0;
+		bottom: 0;
 	}	
 }
 
@@ -399,35 +408,81 @@ ol, ul {
 	}
 	.section_header {
 		text-align: center;
-	}	
-	.decor_1, .decor_2, .decor_6 {
+	}
+	.box_wrapper {
+		position: relative;
+		display: inline-block;
 		float: left;
-		width: 51px;
+		line-height: 80px;
+		width: 80px;
+		height: 80px;
 		margin-top: 50px;
+		.box_anim {
+			stroke-dashoffset: 300;
+		}
+		.box_decor {
+			width: 100%;
+			height: 100%;
+		}
+	}
+	.decor_1 {
+		left: 15px;
+		top: 10px;
+	}
+	.decor_2 {
+		left: 13px;
+		top: 10px;
+	}
+	.decor_6 {
+		left: 13px;
+		top: 9px;
+	}
+	.decor_1, .decor_2, .decor_6 {
+		// float: left;
+		width: 51px;
+		// margin-top: 50px;
+		position: absolute;		
+		display: inline-block;
+		vertical-align: middle;
 		@media screen and (max-width: 768px) {
 			float: none;		
 		}		
 	}
 	.decor_3 {
-		float: left;
+		// float: left;
 		width: 54px;
-		margin-top: 50px;
+		// margin-top: 50px;
+		position: absolute;		
+		display: inline-block;
+		vertical-align: middle;
+		left: 12px;
+		top: 10px;
 		@media screen and (max-width: 768px) {
 			float: none;		
 		}
 	}
 	.decor_4 {
-		float: left;
+		// float: left;
 		width: 63px;
-		margin-top: 50px;
+		// margin-top: 50px;
+		position: absolute;
+		left: 7px;
+		top: 20px;
+		display: inline-block;
+		vertical-align: middle;
 		@media screen and (max-width: 768px) {
 			float: none;		
 		}
 	}
 	.decor_5 {
-		float: left;
+		// float: left;
 		width: 43px;
-		margin-top: 50px;
+		// margin-top: 50px;
+		position: absolute;
+		left: 17px;
+		top: 11px;
+		display: inline-block;
+		vertical-align: middle;
 		@media screen and (max-width: 768px) {
 			float: none;		
 		}

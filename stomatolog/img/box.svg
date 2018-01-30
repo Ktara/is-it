@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="77" height="82" viewBox="0 0 77 82">
+	<defs>
+		<path id="4mv5a" d="M70 1790a10 10 0 0 1 10-10h57a10 10 0 0 1 10 10v62a10 10 0 0 1-10 10H80a10 10 0 0 1-10-10z"/>
+		<clipPath id="4mv5b">
+			<use fill="#fff" xlink:href="#4mv5a"/>
+	</clipPath>
+</defs>
+<g>
+	<g transform="translate(-70 -1780)">
+		<use fill="#fff" fill-opacity="0" stroke="#14a3b8" stroke-miterlimit="50" stroke-width="4" clip-path="url(&quot;#4mv5b&quot;)" xlink:href="#4mv5a"/>
+	</g>
+</g>
+</svg>

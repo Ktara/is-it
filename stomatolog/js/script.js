@@ -101,3 +101,100 @@ $('.services_slide_mob').slick({
 	prevArrow: '<div class="services_prevarrow"></div>',
 	nextArrow: '<div class="services_nextarrow"></div>'
 });
+
+
+// var myVivus7 = new Vivus('box_anim7');
+// myVivus7
+//   .stop()
+//   .reset()
+//   .play(2);
+
+// var myVivusmain = new Vivus('main_anim');
+// myVivusmain
+//   .stop()
+//   .reset()
+//   .play(2);
+
+var myVivus = new Vivus('box_anim', {
+	start: 'manual',
+});
+myVivus.setFrameProgress(0).stop();
+
+var myVivus2 = new Vivus('box_anim2', {
+	start: 'manual',
+});
+myVivus2.setFrameProgress(0).stop();
+
+var myVivus3 = new Vivus('box_anim3', {
+	start: 'manual',
+});
+myVivus3.setFrameProgress(0).stop();
+
+var myVivus4 = new Vivus('box_anim4', {
+	start: 'manual',
+});
+myVivus4.setFrameProgress(0).stop();
+
+var myVivus5 = new Vivus('box_anim5', {
+	start: 'manual',
+});
+myVivus5.setFrameProgress(0).stop();
+
+var myVivus6 = new Vivus('box_anim6', {
+	start: 'manual',
+});
+myVivus6.setFrameProgress(0).stop();
+
+  var startanim = $('.advantage').offset().top;
+var $status = false;
+window.onscroll = function() {
+  var scrolled = window.pageYOffset || document.documentElement.scrollTop;
+
+
+
+
+
+  if (scrolled > startanim*0.8 && $status == false) {
+  	$status = true;
+
+
+// var myVivus2 = new Vivus('box_anim2');
+// myVivus2.stop();
+// var myVivus3= new Vivus('box_anim3');
+// myVivus3.stop();
+
+// var myVivus4 = new Vivus('box_anim4');
+// myVivus4.stop();
+// var myVivus5 = new Vivus('box_anim5');
+// myVivus5.stop();
+// var myVivus6 = new Vivus('box_anim6');
+// myVivus6.stop();
+
+
+
+// myVivus2.stop();
+
+// myVivus3.stop();
+
+// myVivus.stop();
+
+// myVivus4.stop();
+
+// myVivus5.stop();
+
+// myVivus6.stop();
+
+
+myVivus.reset().play(1);
+
+myVivus2.reset().play(1);
+
+myVivus3.reset().play(1);
+
+myVivus4.reset().play(1);
+
+myVivus5.reset().play(1);
+
+myVivus6.reset().play(1);
+  };
+} ; 

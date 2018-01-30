@@ -252,6 +252,7 @@ ul {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  overflow: hidden;
 }
 @media screen and (max-width: 768px) {
   .main {
@@ -334,6 +335,12 @@ ul {
 .main .btn:hover {
   text-decoration: none;
   border-radius: 25px;
+}
+.main .main_anim {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  bottom: 0;
 }
 /* About section */
 .about {
@@ -420,12 +427,41 @@ ul {
 .advantage .section_header {
   text-align: center;
 }
+.advantage .box_wrapper {
+  position: relative;
+  display: inline-block;
+  float: left;
+  line-height: 80px;
+  width: 80px;
+  height: 80px;
+  margin-top: 50px;
+}
+.advantage .box_wrapper .box_anim {
+  stroke-dashoffset: 300;
+}
+.advantage .box_wrapper .box_decor {
+  width: 100%;
+  height: 100%;
+}
+.advantage .decor_1 {
+  left: 15px;
+  top: 10px;
+}
+.advantage .decor_2 {
+  left: 13px;
+  top: 10px;
+}
+.advantage .decor_6 {
+  left: 13px;
+  top: 9px;
+}
 .advantage .decor_1,
 .advantage .decor_2,
 .advantage .decor_6 {
-  float: left;
   width: 51px;
-  margin-top: 50px;
+  position: absolute;
+  display: inline-block;
+  vertical-align: middle;
 }
 @media screen and (max-width: 768px) {
   .advantage .decor_1,
@@ -435,9 +471,12 @@ ul {
   }
 }
 .advantage .decor_3 {
-  float: left;
   width: 54px;
-  margin-top: 50px;
+  position: absolute;
+  display: inline-block;
+  vertical-align: middle;
+  left: 12px;
+  top: 10px;
 }
 @media screen and (max-width: 768px) {
   .advantage .decor_3 {
@@ -445,9 +484,12 @@ ul {
   }
 }
 .advantage .decor_4 {
-  float: left;
   width: 63px;
-  margin-top: 50px;
+  position: absolute;
+  left: 7px;
+  top: 20px;
+  display: inline-block;
+  vertical-align: middle;
 }
 @media screen and (max-width: 768px) {
   .advantage .decor_4 {
@@ -455,9 +497,12 @@ ul {
   }
 }
 .advantage .decor_5 {
-  float: left;
   width: 43px;
-  margin-top: 50px;
+  position: absolute;
+  left: 17px;
+  top: 11px;
+  display: inline-block;
+  vertical-align: middle;
 }
 @media screen and (max-width: 768px) {
   .advantage .decor_5 {
