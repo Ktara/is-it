@@ -103,11 +103,8 @@ $('.services_slide_mob').slick({
 });
 
 
-// var myVivus7 = new Vivus('box_anim7');
-// myVivus7
-//   .stop()
-//   .reset()
-//   .play(2);
+var myVivus7 = new Vivus('box_anim7');
+myVivus7.stop().reset().play(2);
 
 // var myVivusmain = new Vivus('main_anim');
 // myVivusmain
@@ -144,6 +141,12 @@ var myVivus6 = new Vivus('box_anim6', {
 	start: 'manual',
 });
 myVivus6.setFrameProgress(0).stop();
+
+
+var myVivusAnton = new Vivus('anton_anim', {
+	start: 'manual',
+});
+myVivusAnton.setFrameProgress(0).stop();
 
   var startanim = $('.advantage').offset().top;
 var $status = false;
@@ -196,5 +199,9 @@ myVivus4.reset().play(1);
 myVivus5.reset().play(1);
 
 myVivus6.reset().play(1);
+
+
+
+myVivusAnton.reset().play(1);
   };
 } ; 

@@ -107,6 +107,7 @@ ul {
   text-decoration: none;
   border-radius: 25px;
   color: #14a3b8;
+  background-color: #ffffff;
 }
 .section_header {
   color: #14a3b8;
@@ -312,7 +313,7 @@ ul {
 }
 .main .btn {
   cursor: pointer;
-  width: 230px;
+  width: 250px;
   height: 58px;
   line-height: 50px;
   border-radius: 10px;
@@ -337,6 +338,8 @@ ul {
 .main .btn:hover {
   text-decoration: none;
   border-radius: 25px;
+  background-color: #ffffff;
+  color: #14a3b8;
 }
 .main .main_anim {
   position: absolute;
@@ -902,6 +905,7 @@ ul {
 .contacts .contacts_form .contacts_btn {
   width: 100%;
   height: 50px;
+  line-height: 46px;
   margin-top: 20px;
   background-color: #ffffff;
   color: #14a3b8;
@@ -925,7 +929,7 @@ ul {
   }
 }
 .contacts .contacts_copyright_1 {
-  margin-top: 105px;
+  margin-top: 85px;
 }
 @media screen and (max-width: 992px) {
   .contacts .contacts_copyright_1 {
@@ -938,7 +942,7 @@ ul {
   }
 }
 .contacts .contacts_copyright_2 {
-  margin-top: 105px;
+  margin-top: 85px;
   text-align: right;
 }
 @media screen and (max-width: 992px) {
