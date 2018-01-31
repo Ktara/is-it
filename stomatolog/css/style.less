@@ -116,8 +116,7 @@ ol, ul {
 	&:hover {			
 		text-decoration: none;
 		border-radius: 25px;
-		color: @main-blue;
-		background-color: @white;
+		color: @main-blue;		
 	}		
 }
 .section_header {	
@@ -289,9 +288,10 @@ ol, ul {
 	}
 	.main_sub_header {
 		color: @white;
-		margin-top: 50px;
+		margin-top: 20px;
 		@media screen and (max-width: 768px) {
-			display: none;			
+			display: none;
+			margin-top: 30px;				
 		}
 	}
 	.main_sub_header_mob {
@@ -314,7 +314,7 @@ ol, ul {
 		.opn-bold;			
 		display: inline-block;
 		text-align: center;
-		margin-top: 40px;
+		margin-top: 50px;
 		margin-right: 20px;
 		transition: border-radius 0.6s;
 		position: relative;
@@ -325,10 +325,16 @@ ol, ul {
 		}
 		&:hover {			
 			text-decoration: none;
-			border-radius: 25px;
-			background-color: @white;
-			color: @main-blue;
+			border-radius: 25px;		
 		}		
+	}
+	.main_btn {
+		background-color: @white;
+		color: @main-blue;
+	}
+	.sub_main_btn {
+		background-color: none;
+		color: @white;
 	}
 	.main_anim {
 		position: absolute;
@@ -903,7 +909,7 @@ ol, ul {
 			border: 2px solid hsla(188, 80%, 40%, 1);
 			transition: width 0.6s;			
 			margin-top: 20px;
-			box-shadow: none;	
+			outline: none;	
 		}
 
 		input {
@@ -966,11 +972,8 @@ ol, ul {
 			outline: none;
 			border: 2px solid hsla(188, 80%, 40%, 1);
 			opacity: 1;
-		}
-		textarea:focus {
-			outline: none;
 			color: hsla(0, 0%, 34%, 1);
-		}
+		}		
 		.contacts_btn {
 			width: 100%;
 			height: 50px;
