@@ -385,7 +385,7 @@ ul {
 }
 @media screen and (max-width: 768px) {
   .about .about_block .about_text_wrapper {
-    height: 260px;
+    height: 255px;
     overflow: hidden;
   }
 }
@@ -651,9 +651,10 @@ ul {
 @media screen and (max-width: 768px) {
   .services .show_block {
     text-decoration: underline;
+    width: 80vw;
     cursor: pointer;
     display: block;
-    margin: 20px 0 0 40px;
+    margin: 20px auto 0 auto;
   }
 }
 .services_slide_mob {
@@ -670,7 +671,7 @@ ul {
   margin: 60px auto 0 auto;
 }
 .services_slide_mob_text {
-  width: 240px;
+  width: 80vw;
   display: block;
   margin: 0 auto;
 }

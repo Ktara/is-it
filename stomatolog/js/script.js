@@ -96,7 +96,7 @@ $('.services_slide_mob').slick({
 	infinite: true,
 	speed: 500,
 	fade: true,
-	adaptiveHeight: true,
+
 	cssEase: 'linear',
 	prevArrow: '<div class="services_prevarrow"></div>',
 	nextArrow: '<div class="services_nextarrow"></div>'
@@ -232,6 +232,7 @@ myVivus6.reset().play(1);
 (function(){
   $(".show_block").click(function(e){
     $(e.target).css("display" , "none");
+    console.log($(e.target).prev());
     console.log(e.target);
     var trHeight = $(e.target).prev().children().css("height");
     $(e.target).prev().animate({"height" : trHeight}, 600);
