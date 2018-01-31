@@ -996,6 +996,7 @@ ul {
   color: #575757;
   outline: none;
   box-shadow: none;
+  background-color: #ffffff;
 }
 .contacts .contacts_form input:-webkit-input-placeholder {
   font-family: 'Open Sans', sans-serif;
@@ -1003,6 +1004,7 @@ ul {
   color: #575757;
   outline: none;
   box-shadow: none;
+  background-color: #ffffff;
 }
 .contacts .contacts_form input:-ms-input-placeholder {
   font-family: 'Open Sans', sans-serif;
@@ -1010,6 +1012,7 @@ ul {
   color: #575757;
   outline: none;
   box-shadow: none;
+  background-color: #ffffff;
 }
 .contacts .contacts_form input:-ms-input-placeholder {
   font-family: 'Open Sans', sans-serif;
@@ -1017,6 +1020,7 @@ ul {
   color: #575757;
   outline: none;
   box-shadow: none;
+  background-color: #ffffff;
 }
 .contacts .contacts_form input:placeholder {
   font-family: 'Open Sans', sans-serif;
@@ -1024,12 +1028,14 @@ ul {
   color: #575757;
   outline: none;
   box-shadow: none;
+  background-color: #ffffff;
 }
 .contacts .contacts_form input:focus {
   outline: none;
   border: 2px solid #14a2b8;
   opacity: 1;
   box-shadow: none;
+  background-color: #ffffff;
 }
 .contacts .contacts_form textarea:-moz-placeholder {
   font-family: 'Open Sans', sans-serif;
@@ -1037,6 +1043,7 @@ ul {
   color: #575757;
   outline: none;
   box-shadow: none;
+  background-color: #ffffff;
 }
 .contacts .contacts_form textarea:-webkit-textarea-placeholder {
   font-family: 'Open Sans', sans-serif;
@@ -1044,6 +1051,7 @@ ul {
   color: #575757;
   outline: none;
   box-shadow: none;
+  background-color: #ffffff;
 }
 .contacts .contacts_form textarea:-ms-textarea-placeholder {
   font-family: 'Open Sans', sans-serif;
@@ -1051,6 +1059,7 @@ ul {
   color: #575757;
   outline: none;
   box-shadow: none;
+  background-color: #ffffff;
 }
 .contacts .contacts_form textarea:-ms-textarea-placeholder {
   font-family: 'Open Sans', sans-serif;
@@ -1058,6 +1067,7 @@ ul {
   color: #575757;
   outline: none;
   box-shadow: none;
+  background-color: #ffffff;
 }
 .contacts .contacts_form textarea:placeholder {
   font-family: 'Open Sans', sans-serif;
@@ -1065,6 +1075,7 @@ ul {
   color: #575757;
   outline: none;
   box-shadow: none;
+  background-color: #ffffff;
 }
 .contacts .contacts_form textarea:focus {
   outline: none;
@@ -1072,6 +1083,7 @@ ul {
   opacity: 1;
   color: #575757;
   box-shadow: none;
+  background-color: #ffffff;
 }
 .contacts .contacts_form .contacts_btn {
   width: 100%;
