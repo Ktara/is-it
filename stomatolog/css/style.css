@@ -867,6 +867,10 @@ ul {
 .reviews .section_header {
   text-align: center;
 }
+.reviews_slide {
+  width: 100%;
+  text-align: center;
+}
 .reviews img {
   display: block;
   margin: 0 auto;
@@ -878,7 +882,7 @@ ul {
   margin-top: 20px;
 }
 .reviews_text {
-  margin-top: 40px;
+  margin: 40px 20px 0 20px;
   text-align: center;
 }
 @media screen and (max-width: 768px) {
@@ -892,7 +896,7 @@ ul {
   background-size: cover;
   width: 30px;
   height: 60px;
-  left: 5%;
+  left: 0;
   z-index: 1000;
   top: 85%;
   cursor: pointer;
@@ -909,7 +913,7 @@ ul {
   background-size: cover;
   width: 32px;
   height: 60px;
-  right: 5%;
+  right: 0;
   z-index: 1000;
   top: 85%;
   cursor: pointer;

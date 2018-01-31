@@ -824,11 +824,15 @@ ol, ul {
 /* Reviews section */
 .reviews {
 	position: relative;
-	margin-top: 120px;
+	margin-top: 120px;	
 	@media screen and (max-width: 768px) {
 		margin-top: 100px;
 	}
 	.section_header {
+		text-align: center;
+	}
+	&_slide {
+		width: 100%;
 		text-align: center;
 	}
 	img {
@@ -842,7 +846,7 @@ ol, ul {
 		margin-top: 20px;
 	}
 	&_text {
-		margin-top: 40px;
+		margin: 40px 20px 0 20px;
 		text-align: center;
 		@media screen and (max-width: 768px) {
 			margin-top: 20px;
@@ -855,7 +859,7 @@ ol, ul {
 	background-size: cover;
 	width: 30px;
 	height: 60px;
-	left: 5%;
+	left: 0;
 	z-index: 1000;
 	top: 85%;
 	cursor: pointer;
@@ -870,7 +874,7 @@ ol, ul {
 	background-size: cover;	
 	width: 32px;
 	height: 60px;
-	right: 5%;
+	right: 0;
 	z-index: 1000;
 	top: 85%;
 	cursor: pointer;
