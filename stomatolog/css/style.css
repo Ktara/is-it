@@ -965,6 +965,7 @@ ul {
   background-color: #ffffff;
   border-box: box-sizing;
   display: block;
+  border: none;
 }
 .contacts .contacts_form input,
 .contacts .contacts_form textarea {
