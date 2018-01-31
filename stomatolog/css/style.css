@@ -131,7 +131,7 @@ ul {
 /* Header */
 .nav_header {
   position: fixed;
-  z-index: 1000;
+  z-index: 2000;
   line-height: 60px;
   top: 0;
   width: 100%;
@@ -183,7 +183,6 @@ ul {
 .nav_header .nav_wrapper .nav_header_menu a {
   color: #565656;
   line-height: 60px;
-  padding: 0 0 0 30px;
   display: inline-block;
   text-decoration: none;
   font-family: 'OpenSans', sans-serif;
@@ -420,7 +419,6 @@ ul {
 }
 @media screen and (max-width: 768px) {
   .about .about_block .certificate {
-    width: 280px;
     margin: 30px auto 0 auto;
   }
 }
@@ -957,6 +955,7 @@ ul {
   transition: width 0.6s;
   margin-top: 20px;
   outline: none;
+  box-shadow: none;
 }
 .contacts .contacts_form input {
   height: 46px;
@@ -972,62 +971,84 @@ ul {
   font-family: 'Open Sans', sans-serif;
   font-weight: 400;
   color: #575757;
+  outline: none;
+  box-shadow: none;
 }
 .contacts .contacts_form input:-webkit-input-placeholder {
   font-family: 'Open Sans', sans-serif;
   font-weight: 400;
   color: #575757;
+  outline: none;
+  box-shadow: none;
 }
 .contacts .contacts_form input:-ms-input-placeholder {
   font-family: 'Open Sans', sans-serif;
   font-weight: 400;
   color: #575757;
+  outline: none;
+  box-shadow: none;
 }
 .contacts .contacts_form input:-ms-input-placeholder {
   font-family: 'Open Sans', sans-serif;
   font-weight: 400;
   color: #575757;
+  outline: none;
+  box-shadow: none;
 }
 .contacts .contacts_form input:placeholder {
   font-family: 'Open Sans', sans-serif;
   font-weight: 400;
   color: #575757;
+  outline: none;
+  box-shadow: none;
 }
 .contacts .contacts_form input:focus {
+  outline: none;
   border: 2px solid #14a2b8;
   opacity: 1;
-  outline: none;
+  box-shadow: none;
 }
 .contacts .contacts_form textarea:-moz-placeholder {
   font-family: 'Open Sans', sans-serif;
   font-weight: 400;
   color: #575757;
+  outline: none;
+  box-shadow: none;
 }
 .contacts .contacts_form textarea:-webkit-textarea-placeholder {
   font-family: 'Open Sans', sans-serif;
   font-weight: 400;
   color: #575757;
+  outline: none;
+  box-shadow: none;
 }
 .contacts .contacts_form textarea:-ms-textarea-placeholder {
   font-family: 'Open Sans', sans-serif;
   font-weight: 400;
   color: #575757;
+  outline: none;
+  box-shadow: none;
 }
 .contacts .contacts_form textarea:-ms-textarea-placeholder {
   font-family: 'Open Sans', sans-serif;
   font-weight: 400;
   color: #575757;
+  outline: none;
+  box-shadow: none;
 }
 .contacts .contacts_form textarea:placeholder {
   font-family: 'Open Sans', sans-serif;
   font-weight: 400;
   color: #575757;
+  outline: none;
+  box-shadow: none;
 }
 .contacts .contacts_form textarea:focus {
   outline: none;
   border: 2px solid #14a2b8;
   opacity: 1;
   color: #575757;
+  box-shadow: none;
 }
 .contacts .contacts_form .contacts_btn {
   width: 100%;

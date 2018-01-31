@@ -138,7 +138,7 @@ ol, ul {
 /* Header */
 .nav_header {
 	position: fixed;
-	z-index: 1000;
+	z-index: 2000;
 	line-height: 60px;	
 	top: 0;
 	width: 100%;
@@ -183,8 +183,7 @@ ol, ul {
 			}
 			a {						
 				color: @main-grey;
-				line-height: 60px;
-				padding: 0 0 0 30px;
+				line-height: 60px;				
 				display: inline-block;
 				text-decoration: none;
 				.opn-bold;
@@ -399,7 +398,7 @@ ol, ul {
 			margin-top: 30px;
 			.opn-bold;
 			@media screen and (max-width: 768px) {				
-				width: 280px;
+				// width: 280px;
 				margin: 30px auto 0 auto;		
 			}
 		}
@@ -909,7 +908,8 @@ ol, ul {
 			border: 2px solid hsla(188, 80%, 40%, 1);
 			transition: width 0.6s;			
 			margin-top: 20px;
-			outline: none;	
+			outline: none;
+			box-shadow: none;	
 		}
 
 		input {
@@ -924,55 +924,76 @@ ol, ul {
 		}
 		input:-moz-placeholder {
 		    .opn-reg;
-		    color: hsla(0, 0%, 34%, 1);		    
+		    color: hsla(0, 0%, 34%, 1);
+		    outline: none;
+			box-shadow: none;		    
 		}
 		input:-webkit-input-placeholder {
 		    .opn-reg;
-		    color: hsla(0, 0%, 34%, 1);		    
+		    color: hsla(0, 0%, 34%, 1);
+		    outline: none;
+			box-shadow: none;		    
 		}
 		input:-ms-input-placeholder {
 		    .opn-reg;
-		    color: hsla(0, 0%, 34%, 1);		    
+		    color: hsla(0, 0%, 34%, 1);
+		    outline: none;
+			box-shadow: none;		    
 		}
 		input:-ms-input-placeholder {		    
 		    .opn-reg;
-		    color: hsla(0, 0%, 34%, 1);		    
+		    color: hsla(0, 0%, 34%, 1);
+		    outline: none;
+			box-shadow: none;		    
 		}
 		input:placeholder { 
 		    .opn-reg;
-		    color: hsla(0, 0%, 34%, 1);		    
+		    color: hsla(0, 0%, 34%, 1);	
+		    outline: none;
+			box-shadow: none;	    
 		}
 		input:focus {
 			outline: none;
 			border: 2px solid hsla(188, 80%, 40%, 1);
-			opacity: 1;
-			outline: none;
+			opacity: 1;			
+			box-shadow: none;
 		}		
 		textarea:-moz-placeholder {
 		    .opn-reg;
-		    color: hsla(0, 0%, 34%, 1);		    
+		    color: hsla(0, 0%, 34%, 1);
+		    outline: none;
+			box-shadow: none;		    
 		}
 		textarea:-webkit-textarea-placeholder {
 		    .opn-reg;
-		    color: hsla(0, 0%, 34%, 1);		    
+		    color: hsla(0, 0%, 34%, 1);
+		    outline: none;
+			box-shadow: none;		    
 		}
 		textarea:-ms-textarea-placeholder {
 		    .opn-reg;
-		    color: hsla(0, 0%, 34%, 1);		    
+		    color: hsla(0, 0%, 34%, 1);
+		    outline: none;
+			box-shadow: none;		    
 		}
 		textarea:-ms-textarea-placeholder {		    
 		    .opn-reg;
-		    color: hsla(0, 0%, 34%, 1);		    
+		    color: hsla(0, 0%, 34%, 1);
+		    outline: none;
+			box-shadow: none;		    
 		}
 		textarea:placeholder { 
 		    .opn-reg;
-		    color: hsla(0, 0%, 34%, 1);		    
+		    color: hsla(0, 0%, 34%, 1);
+		    outline: none;
+			box-shadow: none;		    
 		}
 		textarea:focus {
 			outline: none;
 			border: 2px solid hsla(188, 80%, 40%, 1);
 			opacity: 1;
-			color: hsla(0, 0%, 34%, 1);
+			color: hsla(0, 0%, 34%, 1);			
+			box-shadow: none;
 		}		
 		.contacts_btn {
 			width: 100%;
