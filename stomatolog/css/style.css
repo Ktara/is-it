@@ -978,6 +978,8 @@ ul {
   margin-top: 20px;
   outline: none;
   box-shadow: none;
+  -webkit-appearance: none;
+  appearance: none;
 }
 .contacts .contacts_form input {
   height: 46px;
