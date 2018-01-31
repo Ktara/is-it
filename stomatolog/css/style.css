@@ -138,10 +138,21 @@ ul {
   height: 60px;
   background-color: #ffffff;
 }
-.nav_header .main_tel {
-  font-family: 'OpenSans', sans-serif;
-  font-weight: 700;
-  color: #565656;
+@media screen and (max-width: 768px) {
+  .nav_header .main_tel {
+    display: none;
+  }
+}
+.nav_header .main_tel_mob {
+  display: none;
+}
+@media screen and (max-width: 768px) {
+  .nav_header .main_tel_mob {
+    display: inline-block;
+    font-family: 'OpenSans', sans-serif;
+    font-weight: 700;
+    color: #565656;
+  }
 }
 .nav_header .nav_wrapper {
   position: relative;
@@ -180,6 +191,12 @@ ul {
 }
 .nav_header .nav_wrapper .nav_header_menu li {
   box-sizing: border-box;
+  margin-left: 30px;
+}
+@media screen and (max-width: 768px) {
+  .nav_header .nav_wrapper .nav_header_menu li {
+    margin-left: 0;
+  }
 }
 .nav_header .nav_wrapper .nav_header_menu a {
   color: #565656;
@@ -221,14 +238,14 @@ ul {
   background-color: rgba(0, 0, 0, 0);
   justify-content: center;
   z-index: 1000;
+  margin-top: 10vh;
 }
 .nav_header .nav-active .nav_header_menu a {
   width: 100%;
   color: #14a3b8;
-  margin-top: 10%;
 }
 .nav_header .nav-active .nav_header_menu:before {
-  top: 30px;
+  top: 0;
   right: 30px;
   width: 20px;
   height: 3px;
@@ -236,7 +253,7 @@ ul {
 }
 .nav_header .nav-active .nav_header_menu:after {
   bottom: 0;
-  top: 30px;
+  top: 0;
   right: 30px;
   width: 20px;
   height: 3px;
