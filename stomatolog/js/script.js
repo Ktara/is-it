@@ -26,8 +26,12 @@ $('.gallery_slide_nav_img').click(function(){
 	}, 200);
 });
 
-var heightimg = $('.gallery_slider_img').css('height');
-$('.gallery_slide_nav').css('height', heightimg);
+
+$( document ).ready(function(){
+	var heightimg = $('.gallery_slider_img').css('height');
+	$('.gallery_slide_nav').css('height', heightimg);
+})
+
 
 
 $('.services_stage li').click(function(){
