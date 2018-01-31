@@ -205,3 +205,35 @@ myVivus6.reset().play(1);
 // myVivusAnton.reset().play(1);
   };
 } ; 
+
+
+
+(function(){
+  $(".show_btn").click(function(e){
+    $(e.target).css("display" , "none");
+    console.log(e.target);
+    var trHeight = $(e.target).prev().children().css("height");
+    $(e.target).prev().animate({"height" : trHeight}, 600);
+  });
+})();
+
+
+
+(function(){
+  $(".show_icon").click(function(e){
+    $(e.target).css("display" , "none");
+    console.log(e.target);
+    var trHeight = $(e.target).prev().children().css("height");
+    $(e.target).prev().animate({"height" : trHeight}, 600);
+  });
+})();
+
+
+(function(){
+  $(".show_block").click(function(e){
+    $(e.target).css("display" , "none");
+    console.log(e.target);
+    var trHeight = $(e.target).prev().children().css("height");
+    $(e.target).prev().animate({"height" : trHeight}, 600);
+  });
+})();

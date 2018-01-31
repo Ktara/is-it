@@ -352,26 +352,41 @@ ol, ul {
 	.img_dentist {
 		margin-top: 135px;
 		@media screen and (max-width: 768px) {
-			margin-top: 40px;			
+			margin-top: 40px;						
 		}		
 		img {
 			width: 100%;
 		}
 	}
-	.about_block {
+	.about_block {		
+		@media screen and (max-width: 768px) {
+			clear: both;
+			padding-top: 10px;		
+		}
 		.section_header {
-			margin-top: 120px;
+			margin-top: 120px;			
 			@media screen and (max-width: 768px) {
 				display: none;		
 			}			
 		}
+		.about_text_wrapper {
+			@media screen and (max-width: 768px) {				
+				height: 260px;
+				overflow: hidden;		
+			}
+		}
 		.about_text {
 		margin-top: 10px;
 		@media screen and (max-width: 768px) {
-			margin-top: 380px;		
+			margin-top: 0;
+			height: auto;		
 		}
 		p {
 			margin: 10px 0;
+			@media screen and (max-width: 768px) {
+				margin: 0;
+				padding-top: 10px;	
+			}
 		}
 	}
 		.certificate {
@@ -397,8 +412,13 @@ ol, ul {
 		}
 	}
 	.show_btn {
+		display: none;
 		text-decoration: underline;
 		cursor: pointer;
+		margin-top: 20px;
+		@media screen and (max-width: 768px) {
+			display: block;		
+		}
 	}	
 }
 
@@ -422,8 +442,12 @@ ol, ul {
 		width: 80px;
 		height: 80px;
 		margin-top: 50px;
+		@media screen and (max-width: 768px) {
+			float: none;		
+		}
 		.box_anim {
 			stroke-dashoffset: 300;
+			position: relative;
 		}
 		.box_decor {
 			width: 100%;
@@ -501,11 +525,26 @@ ol, ul {
 			margin-top: 20px;		
 		}
 	}
-	.btn {
-		display: inline-block;
-		background-color: @white;
-		margin: 60px auto 0 auto;
+	.box_wrapper_icon {
+		@media screen and (max-width: 768px) {				
+			height: 600px;
+			overflow: hidden;		
+		}
 	}
+	.box_icon {
+		@media screen and (max-width: 768px) {				
+			height: auto;
+			overflow: hidden;		
+		}
+	}
+	.show_icon {
+		display: none;
+		@media screen and (max-width: 768px) {
+			display: inline-block;		
+			margin: 60px auto 0 auto;
+			background-color: @white;	
+		}		
+	}	
 }
 
 
@@ -573,16 +612,20 @@ ol, ul {
 			display: block;
 		}
 	}
-	.show_btn {
-		text-decoration: underline;
-		cursor: pointer;
-		margin-top: 20px;
+	.show_block {
+		display: none;
+		@media screen and (max-width: 768px) {
+			text-decoration: underline;
+			cursor: pointer;			
+			display: block;
+			margin: 20px 0 0 40px;
+		}		
 	}
 	&_slide_mob {
 		position: relative;
 		width: 100%;		
 		margin-top: 40px;				
-		&_block {
+		&_block {			
 			img {
 			width: 240px;
 			margin: 0 auto;			
@@ -596,6 +639,9 @@ ol, ul {
 			width: 240px;
 			display: block;
 			margin: 0 auto;
+			@media screen and (max-width: 768px) {				
+				overflow: hidden;
+			}
 				h4 {
 					font-size: 16px;
 					.opn-bold;
@@ -624,6 +670,18 @@ ol, ul {
 		z-index: 1000;
 		top: 5%;
 		cursor: pointer;	
+	}
+	.services_box {
+		@media screen and (max-width: 768px) {
+			height: 500px;
+			overflow: hidden;
+		}
+	}
+	.services_box_wrapper {
+		@media screen and (max-width: 768px) {
+			height: auto;
+			overflow: hidden;			
+		}
 	}		
 }
 
