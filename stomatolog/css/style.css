@@ -293,7 +293,7 @@ ul {
 }
 .main .main_sub_header {
   color: #ffffff;
-  margin-top: 30px;
+  margin-top: 50px;
 }
 @media screen and (max-width: 768px) {
   .main .main_sub_header {
@@ -412,6 +412,12 @@ ul {
   font-family: 'OpenSans', sans-serif;
   font-weight: 700;
 }
+@media screen and (max-width: 768px) {
+  .about .about_block .certificate {
+    width: 280px;
+    margin: 30px auto 0 auto;
+  }
+}
 .about .about_block .certificate_img {
   position: relative;
   margin-top: 15px;
@@ -420,6 +426,7 @@ ul {
 @media screen and (max-width: 768px) {
   .about .about_block .certificate_img {
     margin-top: 20px;
+    width: 280px;
   }
 }
 .about .about_block .certificate_img img {
@@ -434,6 +441,24 @@ ul {
     margin-right: 30px;
   }
 }
+.about .about_block .certificate_slide {
+  position: relative;
+  width: 100%;
+  height: 160px;
+  display: flex;
+}
+.about .about_block .certificate_slide .certificate_slide_block {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.about .about_block .certificate_slide img {
+  width: 54px;
+  height: 54px;
+  margin: 20px 10px 0 10px;
+  display: inline-block;
+}
 .about .show_btn {
   display: none;
   text-decoration: underline;
@@ -444,6 +469,28 @@ ul {
   .about .show_btn {
     display: block;
   }
+}
+.certificate_prevarrow {
+  position: absolute;
+  background-image: url(../img/prew_arrow.svg);
+  background-size: cover;
+  width: 25px;
+  height: 50px;
+  left: -2%;
+  z-index: 1000;
+  top: 35%;
+  cursor: pointer;
+}
+.certificate_nextarrow {
+  position: absolute;
+  background-image: url(../img/next_arrow.svg);
+  background-size: cover;
+  width: 27px;
+  height: 50px;
+  right: -2%;
+  z-index: 1000;
+  top: 35%;
+  cursor: pointer;
 }
 /* Advantage section*/
 .advantage {
@@ -903,6 +950,7 @@ ul {
   border: 2px solid #14a2b8;
   transition: width 0.6s;
   margin-top: 20px;
+  box-shadow: none;
 }
 .contacts .contacts_form input {
   height: 46px;
@@ -912,6 +960,7 @@ ul {
   height: 70px;
   line-height: 55px;
   padding-left: 30px;
+  resize: none;
 }
 .contacts .contacts_form input:-moz-placeholder {
   font-family: 'Open Sans', sans-serif;

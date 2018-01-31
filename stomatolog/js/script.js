@@ -242,3 +242,13 @@ myVivus6.reset().play(1);
     $(e.target).prev().animate({"height" : trHeight}, 600);
   });
 })();
+
+
+$('.certificate_slide').slick({  
+	infinite: true,
+	slidesToShow: 3,
+	slidesToScroll: 1,
+	arrows: true,
+	prevArrow: '<div class="certificate_prevarrow"></div>',
+	nextArrow: '<div class="certificate_nextarrow"></div>'
+});
