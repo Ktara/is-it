@@ -288,7 +288,7 @@ ul {
   .main .main_header {
     font-size: 30px;
     text-align: center;
-    margin-top: 90px;
+    margin-top: calc(50vh - 130px);
   }
 }
 .main .main_sub_header {
@@ -427,6 +427,7 @@ ul {
   height: 54px;
   display: inline-block;
   margin-right: 20px;
+  margin-top: 20px;
 }
 @media screen and (max-width: 768px) {
   .about .about_block .certificate_img img {
@@ -663,7 +664,7 @@ ul {
   margin-top: 40px;
 }
 .services_slide_mob_block img {
-  width: 240px;
+  width: 80vw;
   margin: 0 auto;
 }
 .services_slide_mob_block .btn {
@@ -694,7 +695,7 @@ ul {
   height: 50px;
   left: 2%;
   z-index: 1000;
-  top: 5%;
+  top: 16%;
   cursor: pointer;
 }
 .services .services_nextarrow {
@@ -705,7 +706,7 @@ ul {
   height: 50px;
   right: 2%;
   z-index: 1000;
-  top: 5%;
+  top: 16%;
   cursor: pointer;
 }
 @media screen and (max-width: 768px) {
@@ -895,7 +896,6 @@ ul {
 .contacts .contacts_form input,
 .contacts .contacts_form textarea {
   width: 100%;
-  text-indent: 30px;
   color: #575757;
   background-color: #ffffff;
   opacity: 0.6;
@@ -906,10 +906,12 @@ ul {
 }
 .contacts .contacts_form input {
   height: 46px;
+  text-indent: 30px;
 }
 .contacts .contacts_form textarea {
   height: 70px;
   line-height: 55px;
+  padding-left: 30px;
 }
 .contacts .contacts_form input:-moz-placeholder {
   font-family: 'Open Sans', sans-serif;

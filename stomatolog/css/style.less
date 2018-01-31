@@ -284,7 +284,7 @@ ol, ul {
 		@media screen and (max-width: 768px) {
 			font-size: 30px;
 			text-align: center;
-			margin-top: 90px;			
+			margin-top: ~"calc(50vh - 130px)";			
 		}
 	}
 	.main_sub_header {
@@ -405,6 +405,7 @@ ol, ul {
 				height: 54px;
 				display: inline-block;
 				margin-right: 20px;
+				margin-top: 20px;				
 				@media screen and (max-width: 768px) {
 					margin-right: 30px;		
 				}
@@ -628,7 +629,7 @@ ol, ul {
 		margin-top: 40px;				
 		&_block {			
 			img {
-			width: 240px;
+			width: 80vw;
 			margin: 0 auto;			
 			}
 			.btn {
@@ -658,7 +659,7 @@ ol, ul {
 		height: 50px;
 		left: 2%;
 		z-index: 1000;
-		top: 5%;
+		top: 16%;
 		cursor: pointer;	
 	}
 	.services_nextarrow {	
@@ -669,7 +670,7 @@ ol, ul {
 		height: 50px;
 		right: 2%;
 		z-index: 1000;
-		top: 5%;
+		top: 16%;
 		cursor: pointer;	
 	}
 	.services_box {
@@ -850,8 +851,7 @@ ol, ul {
 		border-box: box-sizing;				
 		display: block;
 		input, textarea {
-			width: 100%;			
-			text-indent: 30px;
+			width: 100%;				
 			color: hsla(0, 0%, 34%, 1);
 			background-color: @white;
 			opacity: 0.6;			
@@ -863,10 +863,12 @@ ol, ul {
 
 		input {
 			height: 46px;
+			text-indent: 30px;
 		}
 		textarea {
 			height: 70px;
 			line-height: 55px;
+			padding-left: 30px;
 		}
 		input:-moz-placeholder {
 		    .opn-reg;
