@@ -35,7 +35,8 @@ $( document ).ready(function(){
 
 
 $('.services_stage li').click(function(){
-
+	$('.services_stage li').css('opacity', '0.5');
+	$(this).css('opacity', '1');
 	var libox = this;
 	var tooth = $('.services_progress img');
 	for(var i = 0; i < $('.services_stage li').length; i++) {

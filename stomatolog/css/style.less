@@ -660,7 +660,11 @@ ol, ul {
 			cursor: pointer;
 			display: inline-block;
 			width: 17%;
-			text-align: left;			
+			text-align: left;
+			opacity: 0.5;
+			&:first-child {
+				opacity: 1;
+			}			
 		}
 	}
 	p {

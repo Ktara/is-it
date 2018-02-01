@@ -698,6 +698,10 @@ ul {
   display: inline-block;
   width: 17%;
   text-align: left;
+  opacity: 0.5;
+}
+.services_stage li:first-child {
+  opacity: 1;
 }
 .services p {
   margin-top: 10px;
