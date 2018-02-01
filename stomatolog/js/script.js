@@ -168,6 +168,17 @@ var myVivustooth6 = new Vivus('box_anim12', {
 });
 myVivustooth6.setFrameProgress(0).stop();
 
+
+var myVivusAnton = new Vivus('anton_anim');
+myVivusAnton
+  .stop()
+  .reset()
+  .play(1, function(){
+  	// $('.st0').velocity({'fill-opacity': 1}, 300);
+  	// console.log($('.st0'));
+  	// $('#Layer_1').css("fill-opacity" , 1);
+  });
+
 var startanim = $('.advantage').offset().top;
 var $status = false;
 var $status2 = false;
