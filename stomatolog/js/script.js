@@ -107,8 +107,8 @@ $('.services_slide_mob').slick({
 });
 
 
-var myVivus7 = new Vivus('box_anim7');
-myVivus7.stop().reset().play(2);
+// var myVivus7 = new Vivus('box_anim7');
+// myVivus7.stop().reset().play(2);
 
 // var myVivusmain = new Vivus('main_anim');
 // myVivusmain
@@ -147,6 +147,37 @@ var myVivus6 = new Vivus('box_anim6', {
 myVivus6.setFrameProgress(0).stop();
 
 
+var myVivustooth1 = new Vivus('box_anim7', {
+	start: 'manual',
+});
+myVivustooth1.setFrameProgress(0).stop();
+
+var myVivustooth2 = new Vivus('box_anim8', {
+	start: 'manual',
+});
+myVivustooth2.setFrameProgress(0).stop();
+
+var myVivustooth3 = new Vivus('box_anim9', {
+	start: 'manual',
+});
+myVivustooth3.setFrameProgress(0).stop();
+
+var myVivustooth4 = new Vivus('box_anim10', {
+	start: 'manual',
+});
+myVivustooth4.setFrameProgress(0).stop();
+
+var myVivustooth5 = new Vivus('box_anim11', {
+	start: 'manual',
+});
+myVivustooth5.setFrameProgress(0).stop();
+
+var myVivustooth6 = new Vivus('box_anim12', {
+	start: 'manual',
+});
+myVivustooth6.setFrameProgress(0).stop();
+
+
 // var myVivusAnton = new Vivus('anton_anim', {
 // 	start: 'manual',
 // });
@@ -161,7 +192,7 @@ window.onscroll = function() {
 
 
 
-  if (scrolled > startanim*0.8 && $status == false) {
+  if (scrolled > startanim*0.6 && $status == false) {
   	$status = true;
 
 
@@ -192,17 +223,29 @@ window.onscroll = function() {
 // myVivus6.stop();
 
 
-myVivus.reset().play(1);
+myVivus.reset().play(0.5);
 
-myVivus2.reset().play(1);
+myVivus2.reset().play(0.5);
 
-myVivus3.reset().play(1);
+myVivus3.reset().play(0.5);
 
-myVivus4.reset().play(1);
+myVivus4.reset().play(0.5);
 
-myVivus5.reset().play(1);
+myVivus5.reset().play(0.5);
 
-myVivus6.reset().play(1);
+myVivus6.reset().play(0.5);
+
+myVivustooth1.reset().play(0.5);
+
+myVivustooth2.reset().play(0.5);
+
+myVivustooth3.reset().play(0.5);
+
+myVivustooth4.reset().play(0.5);
+
+myVivustooth5.reset().play(0.5);
+
+myVivustooth6.reset().play(0.5);
 
 
 
