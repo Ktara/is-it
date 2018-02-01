@@ -106,16 +106,6 @@ $('.services_slide_mob').slick({
 	nextArrow: '<div class="services_nextarrow"></div>'
 });
 
-
-// var myVivus7 = new Vivus('box_anim7');
-// myVivus7.stop().reset().play(2);
-
-// var myVivusmain = new Vivus('main_anim');
-// myVivusmain
-//   .stop()
-//   .reset()
-//   .play(2);
-
 var myVivus = new Vivus('box_anim', {
 	start: 'manual',
 });
@@ -177,80 +167,46 @@ var myVivustooth6 = new Vivus('box_anim12', {
 });
 myVivustooth6.setFrameProgress(0).stop();
 
-
-// var myVivusAnton = new Vivus('anton_anim', {
-// 	start: 'manual',
-// });
-// myVivusAnton.setFrameProgress(0).stop();
-
-  var startanim = $('.advantage').offset().top;
+var startanim = $('.advantage').offset().top;
 var $status = false;
+var $status2 = false;
 window.onscroll = function() {
   var scrolled = window.pageYOffset || document.documentElement.scrollTop;
 
 
+  $(".main").css("top", -scrolled/2.1);
 
 
-
-  if (scrolled > startanim*0.6 && $status == false) {
+  if (scrolled > startanim*0.75 && $status == false) {
   	$status = true;
 
+myVivustooth1.reset().play(0.7);
 
-// var myVivus2 = new Vivus('box_anim2');
-// myVivus2.stop();
-// var myVivus3= new Vivus('box_anim3');
-// myVivus3.stop();
+myVivustooth2.reset().play(0.7);
 
-// var myVivus4 = new Vivus('box_anim4');
-// myVivus4.stop();
-// var myVivus5 = new Vivus('box_anim5');
-// myVivus5.stop();
-// var myVivus6 = new Vivus('box_anim6');
-// myVivus6.stop();
+myVivustooth3.reset().play(0.7);
 
+myVivustooth4.reset().play(0.7);
 
+myVivustooth5.reset().play(0.7);
 
-// myVivus2.stop();
+myVivustooth6.reset().play(0.7);
 
-// myVivus3.stop();
-
-// myVivus.stop();
-
-// myVivus4.stop();
-
-// myVivus5.stop();
-
-// myVivus6.stop();
-
-
-myVivus.reset().play(0.5);
-
-myVivus2.reset().play(0.5);
-
-myVivus3.reset().play(0.5);
-
-myVivus4.reset().play(0.5);
-
-myVivus5.reset().play(0.5);
-
-myVivus6.reset().play(0.5);
-
-myVivustooth1.reset().play(0.5);
-
-myVivustooth2.reset().play(0.5);
-
-myVivustooth3.reset().play(0.5);
-
-myVivustooth4.reset().play(0.5);
-
-myVivustooth5.reset().play(0.5);
-
-myVivustooth6.reset().play(0.5);
-
-
-
-// myVivusAnton.reset().play(1);
   };
+  if (scrolled > startanim*0.9 && $status2 == false) {
+  	$status2 = true;
+  	myVivus.reset().play(1);
+
+myVivus2.reset().play(1);
+
+myVivus3.reset().play(1);
+
+myVivus4.reset().play(1);
+
+myVivus5.reset().play(1);
+
+myVivus6.reset().play(1);
+  }
 } ; 
 
 
