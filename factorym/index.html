@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+   
+    <title>FactoryMeals</title>
+
+    
+    <link rel="icon" href="" type="image/ico" sizes="16x16">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+  </head>
+  <body>
+    <div class="main_wrapper">
+
+
+      <header>
+        <div class="container">
+          <div class="row">
+            <div class="col-md-1">
+              <div class="menu_btn btn_active"></div>
+              <div id="nav_wrapper" class="nav_wrapper">
+                <ul role="navigation" class="nav_header_menu">
+                  <li role="presentation"><a href="">1</a></li>
+                  <li role="presentation"><a href="">2</a></li>
+                  <li role="presentation"><a href="">3</a></li>
+                  <li role="presentation"><a href="">4</a></li>
+                  <li role="presentation"><a href="">5</a></li>
+                  <li role="presentation"><a href="">6</a></li>
+                </ul>
+            </div>
+            </div>
+          </div>
+        </div>
+      </header>
+
+
+      <section class="main">
+        <div class="container">
+          <div class="col-md-12">
+            <div class="fm_wrapper">
+              <object id="fm_anim" class="main_header" type="image/svg+xml" data="img/fm.svg">                       
+              </object>
+            </div>
+            <p class="main_sub_header">Ресторан европейской кухни</p> 
+          </div>
+        </div>
+      </section>
+
+
+
+      <section class="order">
+        <img class="bread_img" src="img/bread.svg" alt="">
+        <img class="nut_img" src="img/nut.svg" alt="">
+        <div class="container">          
+          <div class="order_anim_wrapper">
+            <object id="order_anim" class="order_header" type="image/svg+xml" data="img/order.svg">                       
+            </object>
+          </div>
+          <p class="sub_header">Время открытия 8:00 - 22:00, каждый день</p>
+          <form action="" method="post">
+          <div class="col-md-3">
+             <select size="1" name="number" class="order_form">
+              <option value="1" selected>1 человек</option>
+              <option>2 человека</option>
+              <option>3 человека</option>
+              <option>4 человек</option>
+              <option>5 человек</option>
+              <option>6 человек</option>
+              <option>7 человек</option>
+              <option>8 человек</option>
+              <option>9 человек</option>
+              <option>10 человек</option>              
+            </select>
+          </div>
+           <div class="col-md-3">
+             <select size="1" name="time" class="order_form">
+              <option value="time" selected>Время</option>
+              <option>8:00</option>
+              <option">9:00</option>
+              <option>10:00</option>
+              <option>11:00</option>
+              <option>12:00</option>
+              <option>13:00</option>
+              <option>14:00</option>
+              <option>15:00</option>
+              <option>16:00</option>
+              <option>17:00</option>
+              <option>18:00</option>
+              <option>19:00</option>
+              <option>20:00</option>
+              <option>21:00</option>
+              <option>22:00</option>
+             </select>
+           </div>
+           <div class="col-md-3">
+             <select size="1" name="date" class="order_form">
+              <option value="date" selected>Дата</option>
+              <option></option>
+              <option></option>
+              <option></option>
+              <option></option>
+             </select>
+           </div>
+           <div class="col-md-3">
+             <button class="order_form_btn">Забронировать</button>
+           </div>
+          </form>
+        </div>
+      </section>
+
+
+
+      <section class="about">
+        <div class="container">         
+          <div class="row">
+            <div class="col-md-6"></div>
+            <div class="col-md-6"></div>
+          </div>
+        </div>
+      </section>
+
+
+    </div>
+
+  
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/velocity.js"></script>
+    <script src="js/velocity.ui.min.js"></script>
+    <script src="js/vivus.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>

@@ -173,11 +173,11 @@ var myVivusAnton = new Vivus('anton_anim');
 myVivusAnton
   .stop()
   .reset()
-  .play(1, function(){
-  	// $('.st0').velocity({'fill-opacity': 1}, 300);
-  	// console.log($('.st0'));
-  	// $('#Layer_1').css("fill-opacity" , 1);
-  });
+  .play(1);
+
+var myVivusLines = new Vivus('anim_line');
+myVivusLines
+  .play(.2);
 
 var startanim = $('.advantage').offset().top;
 var $status = false;

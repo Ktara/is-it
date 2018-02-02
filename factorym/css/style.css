@@ -1,0 +1,224 @@
+@font-face {
+  font-family: 'OpenSans';
+  src: url('../fonts/OpenSans-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'OpenSans';
+  src: url('../fonts/OpenSans-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'OpenSans';
+  src: url('../fonts/OpenSans-BoldItalic.ttf') format('truetype');
+  font-weight: 700;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'OpenSans';
+  src: url('../fonts/OpenSans-ExtraBold.ttf') format('truetype');
+  font-weight: 900;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'OpenSans';
+  src: url('../fonts/OpenSans-ExtraBoldItalic.ttf') format('truetype');
+  font-weight: 900;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'OpenSans';
+  src: url('../fonts/OpenSans-Italic.ttf') format('truetype');
+  font-weight: 400;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'OpenSans';
+  src: url('../fonts/OpenSans-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'OpenSans';
+  src: url('../fonts/OpenSans-LightItalic.ttf') format('truetype');
+  font-weight: 300;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'OpenSans';
+  src: url('../fonts/OpenSans-SemiBold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'OpenSans';
+  src: url('../fonts/OpenSans-SemiBoldItalic.ttf') format('truetype');
+  font-weight: 600;
+  font-style: italic;
+}
+/* Fonts files */
+.opn-reg {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+}
+/* Base colors */
+/* Base setting */
+body {
+  font-size: 16px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  color: #000000;
+}
+ol,
+ul {
+  list-style: none;
+}
+.sub_header {
+  text-align: center;
+}
+/* Header */
+header {
+  position: fixed;
+  z-index: 1000;
+  padding-top: 5%;
+  width: 100%;
+  text-align: center;
+}
+header .menu_btn {
+  display: block;
+  width: 60px;
+  height: 3px;
+  background-color: #ffffff;
+  position: relative;
+}
+header .menu_btn:after,
+header .menu_btn:before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: -10px;
+  left: 0;
+  width: 60px;
+  height: 3px;
+  background-color: #ffffff;
+  transition: all 1s;
+}
+header .menu_btn:after {
+  top: 10px;
+}
+header .btn_active {
+  height: 0;
+}
+header .btn_active:after {
+  transform: rotate(-45deg);
+  top: 0;
+}
+header .btn_active:before {
+  transform: rotate(45deg);
+  top: 0;
+}
+header .nav_wrapper {
+  display: flex;
+  flex-direction: column;
+  margin-top: 30px;
+  text-align: center;
+}
+header .nav_wrapper a {
+  color: #e3000f;
+}
+/* Main section */
+.main {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background-image: url(../img/main.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.main .fm_wrapper {
+  width: 100%;
+  text-align: center;
+}
+.main_header {
+  width: 430px;
+  height: 60px;
+  margin-top: 30%;
+}
+.main_sub_header {
+  color: #ffffff;
+  text-align: center;
+  font-size: 30px;
+  margin-top: 30px;
+}
+/* Order section */
+.order {
+  position: relative;
+  width: 100%;
+  margin-top: 120px;
+}
+.order .bread_img {
+  height: 210px;
+  position: absolute;
+  left: -70px;
+  top: -110px;
+  opacity: 0.2;
+}
+.order .nut_img {
+  height: 205px;
+  position: absolute;
+  right: -40px;
+  bottom: -190px;
+  opacity: 0.2;
+  transform: rotate(45deg);
+}
+.order_anim_wrapper {
+  width: 100%;
+  text-align: center;
+}
+.order_header {
+  width: 247px;
+  height: 37px;
+}
+.order .sub_header {
+  margin-top: 25px;
+}
+.order_form {
+  width: 100%;
+  height: 50px;
+  position: relative;
+  z-index: 2;
+  margin-top: 20px;
+  border-radius: 10px;
+  border: 1px solid #000000;
+  background-color: #ffffff;
+  opacity: 0.5;
+}
+.order_form_btn {
+  width: 100%;
+  height: 50px;
+  line-height: 48px;
+  margin-top: 20px;
+  cursor: pointer;
+  border-radius: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  background-color: #ffffff;
+  color: #000000;
+}
+.order_form_btn:hover {
+  background-color: #000000;
+  color: #ffffff;
+}
+/* About section */
+.about {
+  position: relative;
+  width: 100%;
+  height: 540px;
+  background-image: url(../img/about/1704.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  margin-top: 120px;
+}

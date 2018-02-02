@@ -79,6 +79,11 @@ body {
   font-weight: 400;
   color: #565656;
 }
+@media screen and (max-width: 992px) {
+  body {
+    font-size: 15px;
+  }
+}
 input:focus,
 button:focus,
 textarea:focus {
@@ -383,7 +388,7 @@ ul {
 }
 @media screen and (max-width: 768px) {
   .about .section_header_mob {
-    margin-top: 100px;
+    padding-top: 100px;
     text-align: center;
     font-size: 24px;
   }
@@ -531,7 +536,7 @@ ul {
 }
 @media screen and (max-width: 768px) {
   .advantage {
-    margin-top: 100px;
+    padding-top: 100px;
     text-align: center;
   }
 }
@@ -667,7 +672,7 @@ ul {
 }
 @media screen and (max-width: 768px) {
   .services {
-    margin-top: 100px;
+    padding-top: 100px;
   }
 }
 .services .section_header {
@@ -815,7 +820,7 @@ ul {
 }
 @media screen and (max-width: 768px) {
   .gallery {
-    margin-top: 100px;
+    padding-top: 100px;
   }
 }
 .gallery_slider_wrapper {
@@ -899,7 +904,7 @@ ul {
 }
 @media screen and (max-width: 768px) {
   .reviews {
-    margin-top: 100px;
+    padding-top: 100px;
   }
 }
 .reviews .section_header {
@@ -965,15 +970,21 @@ ul {
 /* Contacts section */
 .contacts {
   padding-top: 120px;
-  padding-bottom: 100px;
   position: relative;
   z-index: 10;
+  padding-bottom: 100px;
+  overflow: hidden;
   background-color: #ffffff;
 }
 @media screen and (max-width: 768px) {
   .contacts {
     margin-top: 100px;
   }
+}
+.contacts #anim_line {
+  position: absolute;
+  width: 130%;
+  top: 0;
 }
 .contacts .section_header {
   margin-bottom: 20px;
@@ -985,7 +996,6 @@ ul {
 }
 .contacts .contacts_form {
   width: 100%;
-  background-color: #ffffff;
   border-box: box-sizing;
   display: block;
   border: none;
