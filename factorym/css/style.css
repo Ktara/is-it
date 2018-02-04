@@ -63,6 +63,10 @@
   font-family: 'Open Sans', sans-serif;
   font-weight: 400;
 }
+.opn-bold {
+  font-family: 'OpenSans', sans-serif;
+  font-weight: 700;
+}
 /* Base colors */
 /* Base setting */
 body {
@@ -77,6 +81,9 @@ ul {
 }
 .sub_header {
   text-align: center;
+}
+.main_wrapper {
+  overflow: hidden;
 }
 /* Header */
 header {
@@ -307,6 +314,8 @@ header .nav_wrapper a {
 .share_block_img .share_text_wrapper {
   position: absolute;
   display: flex;
+  justify-content: center;
+  align-items: center;
   width: 100%;
   height: 100%;
   z-index: 10;
@@ -314,11 +323,13 @@ header .nav_wrapper a {
   left: 0;
 }
 .share_block_img .share_text_wrapper .share_text {
-  justify-content: center;
   display: inline-block;
-  width: 100%;
+  width: 80%;
+  height: auto;
   color: #ffffff;
   background-color: rgba(0, 0, 0, 0.6);
+  padding: 20% 5%;
+  text-align: center;
 }
 /* Menu section */
 .menu {
@@ -333,4 +344,78 @@ header .nav_wrapper a {
 .menu .section_header {
   width: 85px;
   height: 25px;
+}
+.menu_stage {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+}
+.menu_stage li {
+  cursor: pointer;
+  display: inline-block;
+  text-align: left;
+  opacity: 0.5;
+  width: 80px;
+  text-align: center;
+}
+.menu_stage li:first-child {
+  opacity: 1;
+}
+/* Menu_slider section */
+.menu_slider {
+  position: relative;
+  width: 100%;
+  height: 720px;
+  background-image: url(../img/plate.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  margin-top: 25px;
+}
+.menu_slider_wrapper {
+  position: relative;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.9);
+}
+.menu_slider_block {
+  margin-top: 50px;
+}
+.menu_slider_block .menu_slide {
+  margin-bottom: 20px;
+  position: relative;
+  height: 115px;
+  overflow: hidden;
+}
+.menu_slider_block .menu_slide img {
+  float: left;
+  width: 80px;
+  border-radius: 25px;
+}
+.menu_slider_block .menu_slide .menu_text {
+  margin-left: 100px;
+  margin-top: 15px;
+}
+.menu_slider_block .menu_slide .menu_text p {
+  display: inline-block;
+  margin-top: 10px;
+  margin-right: 40px;
+}
+.menu_slider_block_bar {
+  margin-top: 50px;
+  position: relative;
+}
+.menu_slider_block_bar h4 {
+  font-family: 'OpenSans', sans-serif;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+.menu_slider_block_bar .menu_slide {
+  margin-bottom: 10px;
+}
+.menu_slider_block_bar .menu_slide h6 {
+  display: inline-block;
+}
+.menu_slider_block_bar .menu_slide .menu_text p {
+  display: inline-block;
+  margin-right: 10px;
 }
