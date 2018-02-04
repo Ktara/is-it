@@ -174,6 +174,9 @@ header .nav_wrapper a {
   opacity: 0.2;
   transform: rotate(45deg);
 }
+.order .fixed {
+  padding-left: 0;
+}
 .order_anim_wrapper {
   width: 100%;
   text-align: center;
@@ -221,4 +224,113 @@ header .nav_wrapper a {
   background-position: center;
   background-size: cover;
   margin-top: 120px;
+}
+.about_slider_wrapper {
+  position: relative;
+  width: 100%;
+  margin-top: 140px;
+}
+.about_slider {
+  width: 100%;
+  height: 270px;
+  overflow: hidden;
+}
+.about_text {
+  width: 100%;
+  margin-top: 140px;
+}
+.about_text span {
+  color: #e3000f;
+}
+.about_text p {
+  margin-bottom: 15px;
+}
+/* Services section */
+.services {
+  position: relative;
+  width: 100%;
+  margin-top: 120px;
+}
+.services .services_anim_wrapper {
+  width: 100%;
+  text-align: center;
+}
+.services .section_header {
+  width: 95px;
+  height: 35px;
+}
+.services_sub_header {
+  margin: 40px 270px 0 270px;
+  text-align: center;
+}
+.services_block_img {
+  position: relative;
+  margin-top: 30px;
+}
+.services_block_img .cup_img {
+  width: 155px;
+  margin-top: 15px;
+}
+.services_block_img .bottle_img {
+  width: 105px;
+}
+.services_block_img .dish_img {
+  width: 180px;
+  margin-top: 30px;
+}
+.services_block_img p {
+  margin-top: 20px;
+}
+/* Share section */
+.share {
+  position: relative;
+  width: 100%;
+  margin-top: 120px;
+}
+.share_anim_wrapper {
+  width: 100%;
+  text-align: center;
+}
+.share .section_header {
+  width: 92px;
+  height: 35px;
+}
+.share_block_img {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  margin-top: 45px;
+}
+.share_block_img img {
+  width: 100%;
+}
+.share_block_img .share_text_wrapper {
+  position: absolute;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+  top: 0;
+  left: 0;
+}
+.share_block_img .share_text_wrapper .share_text {
+  justify-content: center;
+  display: inline-block;
+  width: 100%;
+  color: #ffffff;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+/* Menu section */
+.menu {
+  position: relative;
+  width: 100%;
+  margin-top: 120px;
+}
+.menu .menu_anim_wrapper {
+  width: 100%;
+  text-align: center;
+}
+.menu .section_header {
+  width: 85px;
+  height: 25px;
 }
