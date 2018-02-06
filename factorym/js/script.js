@@ -4,15 +4,17 @@ myVivusFM
   .reset()
   .play(1);
 
-// var startanim = $('.advantage').offset().top;
-// var $status = false;
-
-// window.onscroll = function() {
-//   var scrolled = window.pageYOffset || document.documentElement.scrollTop;
 
 
-  // $(".main").css("top", -scrolled/2.1);
-  // if (scrolled > startanim*0.75 && $status == false) {
-  // 	$status = true;
-  //  };
-// } ; 
+
+$('.about_slider').slick({
+	infinite: true,
+	slidesToShow: 1,
+	slidesToScroll: 1,
+	dots: true,
+	arrows: false,
+	autoplay: true,
+	autoplaySpeed: 2500,
+	fade: true,
+	zIndex: 100
+});
