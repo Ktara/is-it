@@ -159,7 +159,7 @@ header {
 	background-image: url(../img/main.jpg);
 	background-repeat: no-repeat;
 	background-position: center;
-	background-size: cover;
+	background-size: cover;	
 	.fm_wrapper {
 		width: 100%;
 		text-align: center;
@@ -167,7 +167,12 @@ header {
 	&_header {
 		width: 430px;
 		height: 60px;
-		margin-top: 30%;		
+		margin-top: 30%;
+		@media screen and (max-width: 768px) {
+		width: 205px;
+		height: 30px;
+		margin-top: 50%;
+		}		
 	}
 	&_sub_header {
 		color: @white;
@@ -184,21 +189,38 @@ header {
 .order {
 	position: relative;
 	width: 100%;
-	margin-top: 120px;
+	padding-top: 120px;
+	padding-bottom: 120px;
+	overflow: hidden;
+	@media screen and (max-width: 768px) {
+		padding-top: 100px;
+	}
 	.bread_img {		
 		height: 210px;
 		position: absolute;
-		left: -70px;
-		top: -110px;
+		left: -80px;
+		top: 10px;
 		opacity: 0.2;
+		@media screen and (max-width: 768px) {
+			height: 110px;
+			top: -10px;
+			left: -60px;
+			transform: rotate(10deg);
+		}
 	}
 	.nut_img {
 		height: 205px;
 		position: absolute;
-		right: -40px;
-		bottom: -190px;
+		right: -80px;
+		bottom: -70px;
 		opacity: 0.2;
 		transform: rotate(45deg);
+		@media screen and (max-width: 768px) {
+			height: 150px;
+			bottom: -40px;
+			right: -50px;
+			transform: rotate(35deg);
+		}
 	}
 	.fixed {
 		padding-left: 0;
@@ -213,7 +235,28 @@ header {
 	}
 	.sub_header {
 		margin-top: 25px;
+		@media screen and (max-width: 768px) {
+			margin-top: 40px;
+		}
 	}
+	&_input {
+		width: 100%;
+		height: 50px;
+		position: relative;
+		z-index: 2;		
+		margin-top: 20px;				
+		border-radius: 10px;
+		border: 1px solid @main-black;
+		background-color: @white;
+		opacity: 0.5;
+		-webkit-appearance: none; 
+		-moz-appearance: none;
+	    appearance: none;  
+	    background-image: url(../img/down-arrow.svg);
+	    background-repeat: no-repeat;
+	    background-position: 95% center;
+	    text-indent: 15px;
+	} 
 	&_form {
 		width: 100%;
 		height: 50px;
@@ -230,6 +273,7 @@ header {
 	    background-image: url(../img/down-arrow.svg);
 	    background-repeat: no-repeat;
 	    background-position: 95% center;
+	    text-indent: 5px; 
 		&_btn {
 			width: 100%;
 			height: 50px;
@@ -260,16 +304,24 @@ header {
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
-	margin-top: 120px;
+	@media screen and (max-width: 768px) {
+		height: 300px;
+	}
 	&_slider_wrapper {
 		position: relative;
 		width: 100%;
-		margin-top: 140px;		
+		margin-top: 140px;
+		@media screen and (max-width: 768px) {
+			margin-top: 75px;
+		}		
 	}
 	&_slider {
 		width: 100%;
 		height: 270px;
-		overflow: hidden;		
+		overflow: hidden;
+		@media screen and (max-width: 768px) {
+			height: 155px;
+		}		
 		img {
 			width: 100%;
 		}
@@ -277,6 +329,10 @@ header {
 	&_text {
 		width: 100%;
 		margin-top: 140px;
+		@media screen and (max-width: 768px) {
+			height: 235px;
+			overflow: hidden;
+		}
 		span {
 			color: @main-red;
 		}
@@ -306,6 +362,21 @@ header {
 			display: none;
 		}		
 	}
+	.show_about {
+		width: 100%;
+		height: 50px;
+		line-height: 48px;
+		margin-top: 20px;
+		cursor: pointer;
+		border-radius: 10px;
+		border: 1px solid rgba(0, 0, 0, 0.5);
+		background-color: @white;
+		color: @main-black;
+		&:hover {
+			background-color: @main-black;
+			color: @white;
+		}
+	}
 }
 
 
@@ -315,7 +386,10 @@ header {
 .services {
 	position: relative;
 	width: 100%;
-	margin-top: 120px;
+	padding-top: 120px;
+	@media screen and (max-width: 768px) {
+		padding-top: 100px;
+	}
 	.services_anim_wrapper {
 		width: 100%;
 		text-align: center;
@@ -331,16 +405,25 @@ header {
 	&_block_img {
 		position: relative;
 		margin-top: 30px;
+		@media screen and (max-width: 768px) {
+			text-align: center;
+		}
 		.cup_img {
 			width: 155px;
 			margin-top: 15px;			
 		}
 		.bottle_img {
 			width: 105px;
+			@media screen and (max-width: 768px) {
+				margin-top: 40px;
+			}
 		}
 		.dish_img {
 			width: 180px;
 			margin-top: 30px;
+			@media screen and (max-width: 768px) {
+				margin-top: 40px;
+			}
 		}
 		p {
 			margin-top: 20px;
@@ -355,7 +438,10 @@ header {
 .share {
 	position: relative;
 	width: 100%;
-	margin-top: 120px;
+	padding-top: 120px;
+	@media screen and (max-width: 768px) {
+		padding-top: 100px;
+	}
 	&_anim_wrapper {
 		width: 100%;
 		text-align: center;
@@ -393,6 +479,28 @@ header {
 			}
 		}				
 	}
+	.share_prevarrow {
+		position: absolute;
+		background-image: url(../img/prev-arrow.svg);
+		background-size: cover;
+		width: 20px;
+		height: 40px;
+		left: -7px;
+		z-index: 1000;
+		top: 50%;
+		cursor: pointer;	
+	}
+	.share_nextarrow {	
+		position: absolute;
+		background-image: url(../img/next-arrow.svg);
+		background-size: cover;	
+		width: 22px;
+		height: 40px;
+		right: -7px;
+		z-index: 1000;
+		top: 50%;
+		cursor: pointer;	
+	}
 }
 
 
@@ -402,7 +510,10 @@ header {
 .menu {
 	position: relative;
 	width: 100%;
-	margin-top: 120px;	
+	padding-top: 120px;
+	@media screen and (max-width: 768px) {
+		padding-top: 100px;
+	}	
 	.menu_anim_wrapper {
 		width: 100%;
 		text-align: center;
@@ -415,14 +526,13 @@ header {
 		display: flex;
 		justify-content: space-between;
 		margin-top: 40px;
-
 		li {
 			cursor: pointer;
 			display: inline-block;			
 			text-align: left;
 			opacity: 0.5;
 			width: 80px;
-			text-align: center;
+			text-align: center;			
 			&:first-child {
 				opacity: 1;
 			}			
@@ -470,8 +580,7 @@ header {
 			}			
 		}
 	}
-	&_block_bar {
-		margin-top: 50px;
+	&_block_bar {		
 		position: relative;
 		h4 {
 			.opn-bold;
@@ -494,7 +603,10 @@ header {
 .gallery {
 	position: relative;
 	width: 100%;
-	margin-top: 120px;
+	padding-top: 120px;
+	@media screen and (max-width: 768px) {
+		padding-top: 100px;
+	}
 	.gallery_anim_wrapper {
 		width: 100%;
 		text-align: center;
@@ -506,7 +618,7 @@ header {
 	&_slider_wrapper {
 		margin-top: 40px;
 		overflow: hidden;
-		height: 400px;
+		height: 430px;
 	}
 	&_slider {
 		img {
@@ -517,6 +629,36 @@ header {
 			width: 50%;
 		}
 	}
+	&_slide {
+		position: relative;
+		width: 100%;
+		margin-top: 40px;
+		img {
+			width: 100%;
+		}
+	}
+	.gallery_prevarrow {
+		position: absolute;
+		background-image: url(../img/pre-arrow.svg);
+		background-size: cover;
+		width: 20px;
+		height: 40px;
+		left: -7px;
+		z-index: 1000;
+		top: 40%;
+		cursor: pointer;	
+	}
+	.gallery_nextarrow {	
+		position: absolute;
+		background-image: url(../img/next-arrow.svg);
+		background-size: cover;	
+		width: 22px;
+		height: 40px;
+		right: -7px;
+		z-index: 1000;
+		top: 40%;
+		cursor: pointer;	
+	}
 }
 
 
@@ -526,7 +668,10 @@ header {
 .reviews {
 	position: relative;
 	width: 100%;
-	margin-top: 120px;
+	padding-top: 120px;
+	@media screen and (max-width: 768px) {
+		padding-top: 100px;
+	}
 	.reviews_anim_wrapper {
 		width: 100%;
 		text-align: center;
@@ -551,6 +696,66 @@ header {
 			margin-top: -5px;
 		}
 	}
+	&_slide {
+		margin-top: 40px;
+		position: relative;
+		img {
+			width: 135px;
+			height: 135px;
+			border-radius: 100px;
+			display: inline-block;			
+		}
+		p {
+			margin-top: 20px;
+		}		
+	}
+	&_slide_block {
+		text-align: center;
+	}
+	.reviews_mob_prevarrow {
+		position: absolute;
+		background-image: url(../img/pre-arrow.svg);
+		background-size: cover;
+		width: 20px;
+		height: 40px;
+		left: -7px;
+		z-index: 1000;
+		top: 20%;
+		cursor: pointer;	
+	}
+	.reviews_mob_nextarrow {	
+		position: absolute;
+		background-image: url(../img/next-arrow.svg);
+		background-size: cover;	
+		width: 22px;
+		height: 40px;
+		right: 0;
+		z-index: 1000;
+		top: 20%;
+		cursor: pointer;	
+	}	
+}
+.reviews_prevarrow {
+	position: absolute;
+	background-image: url(../img/prev-arrow.svg);
+	background-size: cover;
+	width: 8px;
+	height: 15px;
+	right: 5%;
+	z-index: 1000;
+	top: 90%;
+	cursor: pointer;	
+}
+.reviews_nextarrow {	
+	position: absolute;
+	background-image: url(../img/next-arrow.svg);
+	background-size: cover;	
+	width: 8px;
+	height: 15px;
+	right: 2%;
+	z-index: 1000;
+	top: 90%;
+	cursor: pointer;	
 }
 
 
@@ -560,7 +765,11 @@ header {
 	position: relative;
 	width: 100%;
 	height: 50vh;
-	margin-top: 160px;
+	padding-top: 160px;
+	@media screen and (max-width: 768px) {
+		padding-top: 95px;
+		height: auto;
+	}
 	&_map {
 		position: absolute;
 		width: 100%;
@@ -575,16 +784,28 @@ header {
 		overflow: hidden;
 		width: 100%;
 		height: 340px;
+		@media screen and (max-width: 768px) {			
+			height: auto;
+			background-color: @white;
+		}
 		img {
-		width: 40px;
-		height: 40px;
-		margin-right: 15px;
-		margin-top: 40px;
+			width: 40px;
+			height: 40px;
+			margin-right: 15px;
+			margin-top: 40px;
+			@media screen and (max-width: 768px) {			
+				width: 30px;
+				height: 30px;
+			}
 		}		
 	}
 	.info_wrapper {
 		height: 75px;
 		margin-top: 70px;
+		@media screen and (max-width: 768px) {			
+			height: auto;
+			margin-top: 20px;
+		}
 	}
 	.fix {
 		padding-right: 0;
