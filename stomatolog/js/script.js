@@ -225,8 +225,7 @@ myVivus6.reset().play(1);
 
 (function(){
   $(".show_btn").click(function(e){
-    $(e.target).css("display" , "none");
-    console.log(e.target);
+    $(e.target).css("display" , "none");    
     var trHeight = $(e.target).prev().children().css("height");
     $(e.target).prev().animate({"height" : trHeight}, 600);
   });
@@ -236,8 +235,7 @@ myVivus6.reset().play(1);
 
 (function(){
   $(".show_icon").click(function(e){
-    $(e.target).css("display" , "none");
-    console.log(e.target);
+    $(e.target).css("display" , "none");    
     var trHeight = $(e.target).prev().children().css("height");
     $(e.target).prev().animate({"height" : trHeight}, 600);
   });
@@ -246,9 +244,7 @@ myVivus6.reset().play(1);
 
 (function(){
   $(".show_block").click(function(e){
-    $(e.target).css("display" , "none");
-    console.log($(e.target).prev());
-    console.log(e.target);
+    $(e.target).css("display" , "none");   
     var trHeight = $(e.target).prev().children().css("height");
     $(e.target).prev().animate({"height" : trHeight}, 600);
   });

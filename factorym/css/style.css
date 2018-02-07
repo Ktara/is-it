@@ -268,6 +268,7 @@ header .nav_wrapper a {
   background-repeat: no-repeat;
   background-position: 95% center;
   text-indent: 5px;
+  cursor: pointer;
 }
 .order_form_btn {
   width: 100%;
@@ -322,14 +323,19 @@ header .nav_wrapper a {
 .about_slider img {
   width: 100%;
 }
+.about_text_wrapper {
+  position: relative;
+  height: 220px;
+  overflow: hidden;
+}
 .about_text {
   width: 100%;
   margin-top: 140px;
 }
 @media screen and (max-width: 768px) {
   .about_text {
-    height: 235px;
-    overflow: hidden;
+    margin-top: 20px;
+    height: auto;
   }
 }
 .about_text span {
@@ -360,20 +366,30 @@ header .nav_wrapper a {
 .about .slick-dots li button {
   display: none;
 }
-.about .show_about {
+.about_mob {
+  position: relative;
   width: 100%;
-  height: 50px;
-  line-height: 48px;
-  margin-top: 20px;
-  cursor: pointer;
-  border-radius: 10px;
-  border: 1px solid rgba(0, 0, 0, 0.5);
-  background-color: #ffffff;
-  color: #000000;
 }
-.about .show_about:hover {
-  background-color: #000000;
-  color: #ffffff;
+.about_mob .show_about {
+  display: none;
+}
+@media screen and (max-width: 768px) {
+  .about_mob .show_about {
+    display: block;
+    width: 100%;
+    height: 50px;
+    line-height: 48px;
+    margin-top: 20px;
+    cursor: pointer;
+    border-radius: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    background-color: #ffffff;
+    color: #000000;
+  }
+  .about_mob .show_about:hover {
+    background-color: #000000;
+    color: #ffffff;
+  }
 }
 /* Services section */
 .services {
@@ -397,6 +413,11 @@ header .nav_wrapper a {
 .services_sub_header {
   margin: 40px 270px 0 270px;
   text-align: center;
+}
+@media screen and (max-width: 768px) {
+  .services_sub_header {
+    margin: 40px 0 0 0;
+  }
 }
 .services_block_img {
   position: relative;
@@ -481,7 +502,7 @@ header .nav_wrapper a {
 }
 .share .share_prevarrow {
   position: absolute;
-  background-image: url(../img/prev-arrow.svg);
+  background-image: url(../img/pre-arrow.svg);
   background-size: cover;
   width: 20px;
   height: 40px;
@@ -520,10 +541,16 @@ header .nav_wrapper a {
   width: 85px;
   height: 25px;
 }
+.menu_list {
+  display: none;
+}
 .menu_stage {
   display: flex;
   justify-content: space-between;
   margin-top: 40px;
+}
+.menu_stage .slick-current {
+  opacity: 1;
 }
 .menu_stage li {
   cursor: pointer;
@@ -532,9 +559,6 @@ header .nav_wrapper a {
   opacity: 0.5;
   width: 80px;
   text-align: center;
-}
-.menu_stage li:first-child {
-  opacity: 1;
 }
 /* Menu_slider section */
 .menu_slider {
@@ -545,17 +569,22 @@ header .nav_wrapper a {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  margin-top: 25px;
+  margin-top: 100px;
+}
+@media screen and (max-width: 768px) {
+  .menu_slider {
+    background: none;
+  }
 }
 .menu_slider_wrapper {
   position: relative;
   width: 100%;
   height: 600px;
-  overflow: hidden;
   background-color: rgba(255, 255, 255, 0.9);
 }
 .menu_slider_block {
   margin-top: 50px;
+  position: relative;
 }
 .menu_slider_block .menu_slide {
   margin-bottom: 15px;
@@ -584,6 +613,7 @@ header .nav_wrapper a {
   font-family: 'OpenSans', sans-serif;
   font-weight: 700;
   margin-bottom: 20px;
+  margin-top: 60px;
 }
 .menu_slider_block_bar .menu_slide {
   margin-bottom: 10px;
@@ -591,6 +621,47 @@ header .nav_wrapper a {
 }
 .menu_slider_block_bar .menu_slide h6 {
   display: inline-block;
+}
+.menu_slider .slick-dots {
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  width: 730px;
+  left: 18%;
+  top: -70px;
+}
+.menu_slider .slick-dots .slick-active {
+  opacity: 1;
+}
+.menu_slider .slick-dots li {
+  cursor: pointer;
+  display: inline-block;
+  text-align: left;
+  opacity: 0.5;
+  width: 80px;
+  text-align: center;
+}
+.menu_prevarrow {
+  position: absolute;
+  background-image: url(../img/pre-arrow.svg);
+  background-size: cover;
+  z-index: 1000;
+  cursor: pointer;
+  width: 20px;
+  height: 40px;
+  top: 45%;
+  left: 5%;
+}
+.menu_nextarrow {
+  position: absolute;
+  background-image: url(../img/next-arrow.svg);
+  background-size: cover;
+  z-index: 1000;
+  cursor: pointer;
+  width: 22px;
+  height: 40px;
+  right: 5%;
+  top: 45%;
 }
 /* Gallery section */
 .gallery {
@@ -611,17 +682,30 @@ header .nav_wrapper a {
   width: 110px;
   height: 35px;
 }
+.gallery_slider_viewer {
+  position: relative;
+}
 .gallery_slider_wrapper {
   margin-top: 40px;
   overflow: hidden;
   height: 430px;
+  position: relative;
+}
+.gallery_slider {
+  font-size: 0;
 }
 .gallery_slider img {
   width: 100%;
   margin-bottom: 27px;
 }
+.gallery_slider .gallery_img {
+  overflow: hidden;
+  display: inline-block;
+  float: none;
+}
 .gallery_slider .gallery_img:first-child {
   width: 50%;
+  float: left;
 }
 .gallery_slide {
   position: relative;
@@ -635,29 +719,52 @@ header .nav_wrapper a {
   position: absolute;
   background-image: url(../img/pre-arrow.svg);
   background-size: cover;
-  width: 20px;
-  height: 40px;
-  left: -7px;
   z-index: 1000;
-  top: 40%;
   cursor: pointer;
+  width: 8px;
+  height: 15px;
+  bottom: 0;
+  right: 70px;
+}
+@media screen and (max-width: 768px) {
+  .gallery .gallery_prevarrow {
+    width: 20px;
+    height: 40px;
+    left: -7px;
+    top: 40%;
+  }
 }
 .gallery .gallery_nextarrow {
   position: absolute;
   background-image: url(../img/next-arrow.svg);
   background-size: cover;
-  width: 22px;
-  height: 40px;
-  right: -7px;
   z-index: 1000;
-  top: 40%;
   cursor: pointer;
+  width: 8px;
+  height: 15px;
+  right: 15px;
+  bottom: 0;
+}
+@media screen and (max-width: 768px) {
+  .gallery .gallery_nextarrow {
+    width: 22px;
+    height: 40px;
+    top: 40%;
+    right: -7px;
+  }
+}
+.gallery .gallery_counter {
+  position: absolute;
+  z-index: 1000;
+  bottom: -3px;
+  right: 35px;
 }
 /* Reviews section */
 .reviews {
   position: relative;
   width: 100%;
   padding-top: 120px;
+  padding-bottom: 160px;
 }
 @media screen and (max-width: 768px) {
   .reviews {
@@ -672,13 +779,46 @@ header .nav_wrapper a {
   width: 110px;
   height: 35px;
 }
+.reviews_slider_viewer {
+  position: relative;
+}
 .reviews_slider_wrapper {
+  position: relative;
   margin-top: 40px;
-  height: 180px;
+  height: 175px;
   overflow: hidden;
 }
+.reviews_slider_wrapper .reviews_prevarrow {
+  position: absolute;
+  background-image: url(../img/prev-arrow.svg);
+  background-size: cover;
+  z-index: 1000;
+  cursor: pointer;
+  width: 8px;
+  height: 15px;
+  right: 70px;
+  bottom: 0;
+}
+.reviews_slider_wrapper .reviews_nextarrow {
+  position: absolute;
+  background-image: url(../img/next-arrow.svg);
+  background-size: cover;
+  z-index: 1000;
+  cursor: pointer;
+  width: 8px;
+  height: 15px;
+  right: 15px;
+  bottom: 0;
+}
+.reviews_slider_wrapper .reviews_counter {
+  position: absolute;
+  z-index: 1000;
+  bottom: -3px;
+  right: 35px;
+}
 .reviews_slider {
-  margin-bottom: 30px;
+  margin-bottom: 50px;
+  height: 160px;
 }
 .reviews_slider img {
   width: 140px;
@@ -726,38 +866,14 @@ header .nav_wrapper a {
   top: 20%;
   cursor: pointer;
 }
-.reviews_prevarrow {
-  position: absolute;
-  background-image: url(../img/prev-arrow.svg);
-  background-size: cover;
-  width: 8px;
-  height: 15px;
-  right: 5%;
-  z-index: 1000;
-  top: 90%;
-  cursor: pointer;
-}
-.reviews_nextarrow {
-  position: absolute;
-  background-image: url(../img/next-arrow.svg);
-  background-size: cover;
-  width: 8px;
-  height: 15px;
-  right: 2%;
-  z-index: 1000;
-  top: 90%;
-  cursor: pointer;
-}
 /* Contacts section */
 .contacts {
   position: relative;
   width: 100%;
   height: 50vh;
-  padding-top: 160px;
 }
 @media screen and (max-width: 768px) {
   .contacts {
-    padding-top: 95px;
     height: auto;
   }
 }
@@ -767,7 +883,6 @@ header .nav_wrapper a {
   height: 100%;
   top: 0;
   left: 0;
-  background-color: grey;
 }
 .contacts_info {
   background-color: rgba(255, 255, 255, 0.9);
@@ -807,6 +922,19 @@ header .nav_wrapper a {
 .contacts .fix {
   padding-right: 0;
 }
+.map_mob {
+  position: relative;
+  margin-top: 40px;
+  width: 100%;
+  height: 220px;
+}
+.map_mob .contacts_map_mob {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
 /* Footer */
 footer {
   position: relative;
@@ -816,6 +944,7 @@ footer {
 }
 footer a {
   color: #e3000f;
+  text-decoration: none;
 }
 footer a:hover {
   text-decoration: none;
