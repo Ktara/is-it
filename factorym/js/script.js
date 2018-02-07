@@ -102,6 +102,14 @@ myVivusFM
 
 
 
+var myVivusRestaurant = new Vivus('restaurant_anim');
+myVivusRestaurant
+  .stop()
+  .reset()
+  .play(1);
+
+
+
 $('.about_slider').slick({
 	infinite: true,
 	slidesToShow: 1,

@@ -98,14 +98,19 @@ ol, ul {
 
 /* Header */
 header {
-	position: fixed;
-	z-index: 1000;
-	padding-top: 5%;
 	width: 100%;
-	text-align: center;
+	.fixed_menu {
+		position: fixed;
+		left: 5vw;
+		z-index: 1000;
+		padding-top: 5%;
+		width: 90px;
+		// background-color: rgba(0,0,0, 0.5);
+	}
 	.menu_btn {
 		display: block;
 		width: 60px;
+		margin: auto;
 		height: 3px;
 		background-color: @white;
 		position: relative;
@@ -140,10 +145,34 @@ header {
 	.nav_wrapper {
 		display: flex;
 		flex-direction: column;
-		margin-top: 30px;
-		text-align: center;		
-		a {
-			color: @main-red;
+		margin-top: 60px;
+		width:110px;
+		li {
+			position: relative;
+			text-align: left;
+			text-indent: 50px;
+			color: @white;
+			height: 10vh;
+			margin-bottom: 5vh;
+			line-height:90px;
+			display: block;
+		}		
+		span {
+			position: absolute;
+			left: -45px;
+			color: @white;
+			display: inline-block;
+			border-bottom: 4px solid @main-red;
+			width: 10vh;
+			transform: rotate(-90deg);
+			opacity: 0.5;
+			font-size: 30px;
+			line-height: 20px;
+			padding-bottom: 20px;
+			vertical-align: top;
+			text-align: left;
+			text-indent: 0;
+			.opn-bold;
 		}
 	}	
 }
@@ -175,10 +204,15 @@ header {
 		}		
 	}
 	&_sub_header {
+		display:block;
 		color: @white;
 		text-align: center;
 		font-size: 30px;
-		margin-top: 30px;
+		margin: 30px auto 0 auto;
+		width: 330px;
+		@media screen and (max-width: 768px) {
+			width: 250px;
+		}
 	}
 }
 
