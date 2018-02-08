@@ -26,15 +26,28 @@
             <div class="col-md-1 fixed_menu">
               <div class="menu_btn"></div>
               <div id="nav_wrapper" class="nav_wrapper">
-                <ul role="navigation" class="nav_header_menu">
-                  <li class="active_punct"><span>01</span>FM</li>
-                  <li><span>02</span>FM</li>
-                  <li><span>03</span>AU</li>
-                  <li><span>04</span>SV</li>
-                  <li><span>05</span>MN</li>
-                  <li><span>06</span>CT</li>
-                  <li><span>07</span>CT</li>
-                  <li><span>08</span>CT</li>
+                <ul class="nav_header_menu">
+                  <li><span><p>01</p></span><p>ZS</p></li>
+                  <li><span><p>02</p></span><p>FM</p></li>
+                  <li><span><p>03</p></span><p>SV</p></li>
+                  <li><span><p>04</p></span><p>AU</p></li>
+                  <li><span><p>05</p></span><p>MN</p></li>
+                  <li><span><p>06</p></span><p>GL</p></li>
+                  <li><span><p>07</p></span><p>RW</p></li>
+                  <li><span><p>08</p></span><p>CT</p></li>
+                </ul>
+            </div>
+            <div id="menu_wrapper" class="menu_wrapper">
+                <a class="menu_logo" href="/"><img src="img/logo.png" alt=""></a>
+                <ul class="header_menu">
+                  <li><a href="#order"><img src="img/order.svg" alt=""></a></li>
+                  <li><a href="#about">О ресторане<!-- <img src="img/order.svg" alt=""> --></a></li>
+                  <li><a href="#services"><img src="img/services.svg" alt=""></a></li>
+                  <li><a href="#share"><img src="img/share.svg" alt=""></a></li>
+                  <li><a href="#menu"><img src="img/menu.svg" alt=""></a></li>                  
+                  <li><a href="#gallery"><img src="img/gallery/gallery.svg" alt=""></a></li>
+                  <li><a href="#reviews"><img src="img/reviews.svg" alt=""></a></li>
+                  <li><a href="#contacts">Контакты<!-- <img src="img/order.svg" alt=""> --></a></li>
                 </ul>
             </div>
             </div>
@@ -60,7 +73,7 @@
 
 
 
-      <section class="order">
+      <section class="order" id="order">
         <img class="bread_img" src="img/bread.svg" alt="">
         <img class="nut_img" src="img/nut.svg" alt="">
         <div class="container">          
@@ -116,7 +129,7 @@
 
 
 
-      <section class="about">
+      <section class="about" id="about">
         <div class="container">         
           <div class="row">
             <div class="col-md-6 col-xs-12">
@@ -165,7 +178,7 @@
 
 
 
-      <section class="services">
+      <section class="services" id="services">
         <div class="container">
           <div class="services_anim_wrapper">
             <object id="services_anim" class="section_header" type="image/svg+xml" data="img/services.svg">
@@ -204,7 +217,7 @@
 
 
 
-      <section class="share">
+      <section class="share" id="share">
         <div class="container">
           <div class="row">            
             <div class="share_anim_wrapper">
@@ -281,7 +294,7 @@
 
 
 
-      <section class="menu">
+      <section class="menu" id="menu">
         <div class="container">
           <div class="row">            
             <div class="menu_anim_wrapper">
@@ -289,7 +302,7 @@
               </object>
             </div>
           </div>
-          <div class="menu_list">
+          <!-- <div class="menu_list">
             <div class="col-md-8 col-md-offset-2">
               <ul class="menu_stage">
                 <li>Холодные закуски</li>
@@ -302,7 +315,7 @@
                 <li>Бар</li>
               </ul>   
             </div>           
-          </div>
+          </div> -->
         </div>
       </section>
 
@@ -1109,6 +1122,23 @@
                 </div>
               </div>
             </div>  <!-- бар --> 
+          </div>
+
+
+
+
+          <div class="menu_slider_wrapper_mob">
+            <button class="mob_menu_btn">Холодные закуски</button>
+            <div class="menu_slider_mob">
+              <div class="menu_slide_mob">
+                <img src="img/mini_menu.png" alt="">
+                <div class="menu_text">
+                  <h6>Тар-Тар с лососем</h6>
+                  <p>120 гр</p>
+                  <p>180 грн</p>
+                </div>
+              </div>
+            </div>
           </div>            
         </div>
       </section>
@@ -1116,7 +1146,7 @@
 
 
 
-      <section class="gallery">
+      <section class="gallery" id="gallery">
         <div class="container">
           <div class="gallery_anim_wrapper">
             <object id="gallery_anim" class="section_header" type="image/svg+xml" data="img/gallery/gallery.svg">
@@ -1199,7 +1229,7 @@
             </div>
 
             <div class="gallery_slider">
-                  <div class="col-md-3 gallery_img">
+                <div class="col-md-3 gallery_img">
                   <img src="img/gallery/IMG_0663.jpg" alt="">
                 </div>
                 <div class="col-md-3 gallery_img">
@@ -1245,7 +1275,7 @@
 
 
 
-      <section class="reviews">
+      <section class="reviews" id="reviews">
         <div class="container">
           <div class="reviews_anim_wrapper">
             <object id="reviews_anim" class="section_header" type="image/svg+xml" data="img/reviews.svg">                       
@@ -1419,7 +1449,7 @@
         </div>        
       </section>
 
-      <section class="map_mob">
+      <section class="map_mob visible-xs">
         <div id="contacts_map_mob" class="contacts_map_mob visible-xs">
             
           </div>
