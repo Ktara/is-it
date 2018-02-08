@@ -5,7 +5,7 @@ var id = $(this).attr('href')
 , top = $(id).offset().top;
 $('body,html').animate({
 scrollTop: top
-}, 1000);
+}, 1200);
 $('.menu_btn').toggleClass('btn_active');
   if($('.menu_btn').hasClass('btn_active')) {
     $('.nav_wrapper').velocity({ 'left': '-20vw'}, 600);
@@ -137,10 +137,13 @@ $('.menu_btn').click(function(){
                  $(".active_punct").removeClass("active_punct");
                  $('.menu_btn').removeClass('menu_btn_first');
                }
+               if(punctPosition[0] - 100 < scrolled) {
+               	$('.menu_btn').addClass('menu_btn_first');
+               }
                if (punctPosition[0] - 100 < scrolled && scrolled - 100  < punctPosition[1]) {
                  $(".active_punct").removeClass("active_punct");
                  $($menuLi[0]).addClass("active_punct");
-                 $('.menu_btn').addClass('menu_btn_first');
+                 
                };
                if (punctPosition[1] - 100  < scrolled && scrolled - 100  < punctPosition[2]) {
                  $(".active_punct").removeClass("active_punct");
@@ -253,7 +256,8 @@ $('.reviews_slide').slick({
   arrows: true,
   prevArrow: '<div class="reviews_mob_prevarrow"></div>',
   nextArrow: '<div class="reviews_mob_nextarrow"></div>',
-  fade: true,  
+  fade: true, 
+  zIndex: 100 
 });
 
 
@@ -267,7 +271,8 @@ $('.share_slide').slick({
   arrows: true,
   prevArrow: '<div class="share_prevarrow"></div>',
   nextArrow: '<div class="share_nextarrow"></div>',
-  fade: true,  
+  fade: true, 
+  zIndex: 100 
 });
 
 
@@ -280,7 +285,8 @@ $('.gallery_slide').slick({
   arrows: true,
   prevArrow: '<div class="gallery_prevarrow"></div>',
   nextArrow: '<div class="gallery_nextarrow"></div>',
-  fade: true,  
+  fade: true, 
+  zIndex: 100 
 });
 
 
@@ -291,7 +297,9 @@ $('.menu_slider_mob').slick({
   arrows: true,
   prevArrow: '<div class="menu_prevarrow"></div>',
   nextArrow: '<div class="menu_nextarrow"></div>',
-  fade: true,  
+  fade: true, 
+  zIndex: 100,
+  centerMode: true,
 });
 
 
@@ -308,22 +316,108 @@ $('.menu_slider_mob').slick({
 })();
 
 
-var $slider_nav =  $('.menu_stage li');
+// var $slider_nav =  $('.menu_stage li');
 
-$('.menu_slider_wrapper').slick({
+$('#hot_food').slick({
   slidesToShow: 1,
   slidesToScroll: 1,
   arrows: true,
   prevArrow: '<div class="menu_prevarrow"></div>',
   nextArrow: '<div class="menu_nextarrow"></div>',
   fade: true,
-  dots: true,
-      customPaging : function(slider, i) {
-        var thumb = $($slider_nav[i]).text();
-        return thumb;
-    },
+  // dots: true,
+  //     customPaging : function(slider, i) {
+  //       var thumb = $($slider_nav[i]).text();
+  //       return thumb;
+    // },
+});
+$('#cold_food').slick({
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  arrows: true,
+  prevArrow: '<div class="menu_prevarrow"></div>',
+  nextArrow: '<div class="menu_nextarrow"></div>',
+  fade: true,
+});
+$('#veg_food').slick({
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  arrows: true,
+  prevArrow: '<div class="menu_prevarrow"></div>',
+  nextArrow: '<div class="menu_nextarrow"></div>',
+  fade: true,
+});
+$('#soup_food').slick({
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  arrows: true,
+  prevArrow: '<div class="menu_prevarrow"></div>',
+  nextArrow: '<div class="menu_nextarrow"></div>',
+  fade: true,
+});
+$('#fish_food').slick({
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  arrows: true,
+  prevArrow: '<div class="menu_prevarrow"></div>',
+  nextArrow: '<div class="menu_nextarrow"></div>',
+  fade: true,
+});
+$('#meat_food').slick({
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  arrows: true,
+  prevArrow: '<div class="menu_prevarrow"></div>',
+  nextArrow: '<div class="menu_nextarrow"></div>',
+  fade: true,
+});
+$('#garn_food').slick({
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  arrows: true,
+  prevArrow: '<div class="menu_prevarrow"></div>',
+  nextArrow: '<div class="menu_nextarrow"></div>',
+  fade: true,
+});
+$('#bar_food').slick({
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  arrows: true,
+  prevArrow: '<div class="menu_prevarrow"></div>',
+  nextArrow: '<div class="menu_nextarrow"></div>',
+  fade: true,
 });
 
+(function(){
+
+
+	var sliders = $('.menu_slider_wrapper');
+	var menu = $('.menu_stage li');
+	menu.click(function(){
+
+		var el = this;
+		menu.removeClass('menu_stage_active');
+		$(this).addClass('menu_stage_active');
+
+		for( var i = 0; i < menu.length; i++) {
+
+			if(menu[i] == el ) {
+
+				sliders.css({"display": "none", "opacity" : "0"});
+
+				$(sliders[i]).css("display", "block").velocity({opacity : 1}, 300);
+
+
+			}
+
+
+
+		}
+
+
+	});
+
+})();
 
 
 
@@ -331,6 +425,36 @@ $('.menu_slider_wrapper').slick({
   $(".show_about").click(function(e){
     $(e.target).css("display" , "none");    
     var trHeight = $(e.target).prev().children().css("height");
-    $(e.target).prev().animate({"height" : trHeight}, 800);
+    $(e.target).prev().velocity({"height" : trHeight}, 800);
   });
 })();
+
+
+
+(function(){
+	var prevElement;
+  $(".mob_menu_btn").click(function(e){
+  	if(prevElement != undefined) {
+  		prevElement.next().velocity({
+  		height : 0
+  	}, 600);
+  	};
+  	if($(e.target).hasClass('show_menu_active')) {
+  		$(".mob_menu_btn").removeClass('show_menu_active');
+  		prevElement = undefined;
+  		return;
+  	}
+  	$(".mob_menu_btn").removeClass('show_menu_active');
+  	prevElement = $(e.target);
+
+
+    $(e.target).addClass('show_menu_active');    
+    var trHeight = $(e.target).next().children().css("height");
+    $(e.target).next().velocity({"height" : trHeight}, 600);
+  });
+})();
+
+
+
+
+$('.slick-arrow').css('z-index' , 100);

@@ -58,6 +58,10 @@
   font-weight: 600;
   font-style: italic;
 }
+@font-face {
+  font-family: "Parsek";
+  src: url('../fonts/ParsekRegular.ttf') format('truetype');
+}
 /* Fonts files */
 .opn-reg {
   font-family: 'Open Sans', sans-serif;
@@ -66,6 +70,10 @@
 .opn-bold {
   font-family: 'OpenSans', sans-serif;
   font-weight: 700;
+}
+.parsek {
+  font-family: 'Parsek', sans-serif;
+  font-weight: 400;
 }
 /* Base colors */
 /* Base setting */
@@ -106,10 +114,12 @@ header .menu_btn {
   margin: auto;
   height: 26px;
   position: relative;
-  z-index: 1000;
+  left: calc( -50% + 8px);
+  z-index: 1001;
   border-bottom: 3px solid white;
   transition: all 1s;
   background-color: rgba(255,255,255,0);
+
 }
 
 header .menu_btn_first {
@@ -159,6 +169,7 @@ header .menu_btn_first:before {
   top: 0;
   width: 300px;
   padding-left: 50px;
+  z-index: 1000;
 }
 .menu_wrapper .menu_logo {
   width: 80px;
@@ -182,9 +193,10 @@ header .menu_btn_first:before {
 .menu_wrapper a {
   display: inline-block;
   cursor: pointer;
-  font-size: 20px;
-  height: 24px;
+  font-size: 28px;
+/*  height: 24px;*/
   color: red;
+  font-family: 'Parsek', sans-serif;
 }
 .menu_wrapper img {
   height: 100%;
@@ -198,7 +210,8 @@ header .nav_wrapper {
   flex-direction: column;
   margin-top: 60px;
   width: 110px;
-  left: 0;
+  left: 10px;
+  z-index: 1000;
 }
 header .btn_active {
   border-bottom: 3px solid rgba(0,0,0,0);
@@ -705,9 +718,9 @@ header .nav_wrapper span {
   width: 85px;
   height: 25px;
 }
-.menu_list {
+/*.menu_list {
   display: none;
-}
+}*/
 .menu_stage {
   display: flex;
   justify-content: space-between;
@@ -724,6 +737,9 @@ header .nav_wrapper span {
   width: 80px;
   text-align: center;
 }
+.menu_stage .menu_stage_active {
+  opacity: 1;
+}
 /* Menu_slider section */
 .menu_slider {
   position: relative;
@@ -733,22 +749,27 @@ header .nav_wrapper span {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  margin-top: 100px;
+  margin-top: 20px;
   overflow: hidden;
 }
 @media screen and (max-width: 768px) {
   .menu_slider {
     background: none;
-    margin-top: 75px;
+    margin-top: 35px;
     height: auto;
     overflow: none;    
   }
 }
 .menu_slider_wrapper {
   position: relative;
+  display: block;
   width: 100%;
   height: 600px;
   background-color: rgba(255, 255, 255, 0.9);
+  opacity: 0;
+}
+.menu_slider_wrapper:first-child {
+  opacity: 1;
 }
 @media screen and (max-width: 768px) {
   .menu_slider_wrapper {
@@ -768,8 +789,27 @@ header .nav_wrapper span {
   cursor: pointer;
   border-radius: 10px;
   border: 1px solid rgba(0, 0, 0, 0.5);
-  background-color: #ffffff;
+  background-color: rgba(0, 0, 0, 0);;
   color: #000000;
+  background-image: url(../img/down-arrow.svg);
+  background-repeat: no-repeat;
+  background-position: 95% center; 
+  transition: background-color 0.8s; 
+}
+.menu_slider_wrapper_mob .show_menu_active {
+  display: block;
+  width: 100%;
+  height: 50px;
+  line-height: 48px;
+  margin-top: 20px;
+  cursor: pointer;
+  border-radius: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 1);
+  color: #ffffff;
+  background-image: url(../img/up_arrow.svg);
+  background-repeat: no-repeat;
+  background-position: 95% center; 
 }
 .menu_slider_block {
   margin-top: 50px;
@@ -795,11 +835,12 @@ header .nav_wrapper span {
 .menu_slider_bar {
   margin-top: 10px;
   overflow: hidden;
+/*  width: 240px;*/
 }
-.menu_slider_mob {
+/*.menu_slider_mob {
   height: 590px;
   
-}
+}*/
 .menu_slide_mob {
   text-align: center;  
 }
@@ -1232,4 +1273,32 @@ footer a:hover {
     height: 60vh !important;
     align-items: center;
   }
+  header .menu_btn_first {
+/*    consten*/
+    background-color: rgba(255,255,255,0.7);
+    padding: 10px 20px 0px 20px;
+/*    border-radius: 25%;
+*/  }
+}
+.slick-arrow {
+  z-index: 100;
+}
+.menu_slider_mob_container {
+  overflow: hidden;
+  height: 0;
+}
+.bar_slider_container {
+  width: 100%;
+  padding: 0 10%;
+  box-sizing: border-box;
+  margin: auto;
+  display: block;
+  overflow: hidden;
+  height: 0;
+}
+.bar_slider_container .menu_nextarrow {
+  right: -7%;
+}
+.bar_slider_container .menu_prevarrow {
+  left: -7%;
 }
