@@ -188,6 +188,7 @@ $('.gallery_slider_viewer').fortySlider(600, '.gallery_prevarrow', '.gallery_nex
 
 $('.reviews_slider_viewer').fortySlider(600, '.reviews_prevarrow', '.reviews_nextarrow', '.reviews_counter');
 
+// $('.menu_slider_mob').fortySlider(600, '.menu_prevarrow', '.menu_nextarrow', '.menu_counter');
 
 
 
@@ -279,6 +280,17 @@ $('.gallery_slide').slick({
   arrows: true,
   prevArrow: '<div class="gallery_prevarrow"></div>',
   nextArrow: '<div class="gallery_nextarrow"></div>',
+  fade: true,  
+});
+
+
+$('.menu_slider_mob').slick({
+  infinite: true,
+  slidesToShow: 1,
+  slidesToScroll: 2,
+  arrows: true,
+  prevArrow: '<div class="menu_prevarrow"></div>',
+  nextArrow: '<div class="menu_nextarrow"></div>',
   fade: true,  
 });
 
