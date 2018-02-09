@@ -269,10 +269,6 @@ ul {
   position: fixed;
   width: 100%;
   height: 100vh;
-  background-image: url(../img/main_picture.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
   overflow: hidden;
 }
 @media screen and (max-width: 768px) {
@@ -280,18 +276,47 @@ ul {
     text-align: center;
   }
 }
-.main:before {
-  background-color: rgba(26, 123, 183, 0.62);
+.main .st0 {
+  fill: none;
+}
+.main .filter {
+  background-color: rgba(26, 123, 183, 0.2);
   content: '';
   display: block;
-  width: 100%;
-  height: 100%;
+  width: 100vw;
+  height: 100vh;
   position: absolute;
   top: 0;
   left: 0;
 }
-.main .st0 {
-  fill: none;
+.main_slider_wrapper {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+}
+.main_prevarrow {
+  position: absolute;
+  background-image: url(../img/prew_arrow.svg);
+  background-size: cover;
+  width: 25px;
+  height: 50px;
+  left: 0;
+  z-index: 1000;
+  top: 45%;
+  cursor: pointer;
+}
+.main_nextarrow {
+  position: absolute;
+  background-image: url(../img/next_arrow.svg);
+  background-size: cover;
+  width: 27px;
+  height: 50px;
+  right: 1%;
+  z-index: 1000;
+  top: 45%;
+  cursor: pointer;
 }
 .main .main_header {
   font-size: 60px;

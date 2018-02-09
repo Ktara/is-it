@@ -7,6 +7,18 @@
     });
 });
 
+$('.main_slider_wrapper').slick({  
+	infinite: true,	
+	fade: true,	
+	arrows: true,
+	slidesToShow: 1,
+	slidesToScroll: 1,
+	autoplay: true,
+	autoplaySpeed: 4000,
+	prevArrow: '<div class="main_prevarrow"></div>',
+	nextArrow: '<div class="main_nextarrow"></div>'
+});
+
 $('.reviews_slide').slick({  
 	infinite: true,
 	speed: 500,
@@ -101,7 +113,6 @@ $('.services_slide_mob').slick({
 	infinite: true,
 	speed: 500,
 	fade: true,
-
 	cssEase: 'linear',
 	prevArrow: '<div class="services_prevarrow"></div>',
 	nextArrow: '<div class="services_nextarrow"></div>'
