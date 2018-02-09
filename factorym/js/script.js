@@ -196,20 +196,20 @@ $('.reviews_slider_viewer').fortySlider(600, '.reviews_prevarrow', '.reviews_nex
 
 
 
-var myVivusFM = new Vivus('fm_anim');
-myVivusFM
-  .stop()
-  .reset()
-  .play(1);
+// var myVivusFM = new Vivus('fm_anim');
+// myVivusFM
+//   .stop()
+//   .reset()
+//   .play(1);
 
 
 
 
-var myVivusRestaurant = new Vivus('restaurant_anim');
-myVivusRestaurant
-  .stop()
-  .reset()
-  .play(1);
+// var myVivusRestaurant = new Vivus('restaurant_anim');
+// myVivusRestaurant
+//   .stop()
+//   .reset()
+//   .play(1);
 
 
 
