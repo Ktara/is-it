@@ -296,6 +296,19 @@ ul {
   top: 0;
   left: 0;
 }
+.main_slide {
+  height: 100%;
+}
+.main_slide img {
+  width: auto;
+  height: 100%;
+}
+@media screen and (max-width: 768px) {
+  .main_slide img {
+    position: relative;
+    left: -30%;
+  }
+}
 .main_prevarrow {
   position: absolute;
   background-image: url(../img/prew_arrow.svg);

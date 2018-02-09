@@ -301,6 +301,17 @@ ol, ul {
 		top: 0;
 		left: 0;
 	}
+	&_slide {
+		height: 100%;
+		img {
+			width: auto;
+			height: 100%;
+			@media screen and (max-width: 768px) {
+				position: relative;
+				left: -30%;			
+			}
+		}
+	}
 	&_prevarrow {
 		position: absolute;
 		background-image: url(../img/prew_arrow.svg);
