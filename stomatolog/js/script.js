@@ -186,9 +186,73 @@ myVivusAnton
   .reset()
   .play(1);
 
-var myVivusLines = new Vivus('anim_line');
-myVivusLines
-  .play(.2);
+// var myVivusLines = new Vivus('anim_line');
+// myVivusLines
+//   .play(.2);
+
+
+
+function animateText(textClass, time) {
+    var $target = $(textClass);
+    $target.css("opacity", "1");
+    var text = $target.text();
+    $target.html('');
+
+    var textArray = text.split('');
+    var textLength = textArray.length;
+    var i = 0;
+    function showSymbol() {
+      if(i < textLength) {
+      $target.append(textArray[i]);
+      i = i + 1;
+      setTimeout(showSymbol, time/textLength);        
+    } else {
+      return;
+    }
+
+    };
+    showSymbol();
+
+  } 
+
+  var $screen = screen.height/2;
+if($(".animate_text_1")[0] != undefined) {
+  var animtext1 = $(".animate_text_1");
+  var firstStage = animtext1.offset().top;
+  var firstStageStatus = false;
+}
+if($(".animate_text_2")[0] != undefined) {
+  var animtext2 = $(".animate_text_2");
+  var Stage2 = animtext2.offset().top;
+  var Stage2Status = false;
+}
+if($(".animate_text_3")[0] != undefined) {
+  var animtext3 = $(".animate_text_3");
+  var Stage3 = animtext3.offset().top;
+  var Stage3Status = false;
+}
+if($(".animate_text_4")[0] != undefined) {
+  var animtext4 = $(".animate_text_4");
+  var Stage4 = animtext4.offset().top;
+  var Stage4Status = false;
+}
+if($(".animate_text_5")[0] != undefined) {
+  var animtext5 = $(".animate_text_5");
+  var Stage5 = animtext5.offset().top;
+  var Stage5Status = false;
+}
+
+
+
+var startanim = $('.advantage').offset().top;
+var $status = false;
+var $status2 = false;
+
+
+
+
+
+
 
 var startanim = $('.advantage').offset().top;
 var $status = false;
@@ -230,6 +294,35 @@ myVivus5.reset().play(1);
 
 myVivus6.reset().play(1);
   }
+
+
+if($(".animate_text_1")[0] != undefined && scrolled > firstStage-$screen && firstStageStatus === false) {
+    firstStageStatus = true;
+    animateText(".animate_text_1", 1000);
+}
+if($(".animate_text_2")[0] != undefined && scrolled > Stage2-$screen && Stage2Status === false) {
+    Stage2Status = true;
+    animateText(".animate_text_2", 1000);
+}
+if($(".animate_text_3")[0] != undefined && scrolled > Stage3-$screen && Stage3Status === false) {
+    Stage3Status = true;
+    animateText(".animate_text_3", 1000);
+}
+if($(".animate_text_4")[0] != undefined && scrolled > Stage4-$screen*3 && Stage4Status === false) {
+    Stage4Status = true;
+    animateText(".animate_text_4", 1000);
+}
+if($(".animate_text_5")[0] != undefined && scrolled > Stage5-$screen*3 && Stage5Status === false) {
+    Stage5Status = true;
+    animateText(".animate_text_5", 1000);
+}
+
+
+   
+
+
+
+
 } ; 
 
 

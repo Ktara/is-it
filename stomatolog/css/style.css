@@ -450,6 +450,7 @@ ul {
 }
 .about .about_block .section_header {
   margin-top: 120px;
+  height: 95px;
 }
 @media screen and (max-width: 768px) {
   .about .about_block .section_header {
@@ -1205,4 +1206,14 @@ ul {
 }
 .contacts .contacts_copyright_2 a:hover {
   text-decoration: none;
+}
+
+
+
+.animate_text_1,
+.animate_text_2,
+.animate_text_3,
+.animate_text_4,
+.animate_text_5 {
+  opacity: 0;
 }

@@ -1,0 +1,211 @@
+@font-face {
+  font-family: 'Lato';
+  src: url('../fonts/Lato-Black.ttf') format('truetype');
+  font-weight: 900;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Lato';
+  src: url('../fonts/Lato-BlackItalic.ttf') format('truetype');
+  font-weight: 900;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Lato';
+  src: url('../fonts/Lato-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Lato';
+  src: url('../fonts/Lato-BoldItalic.ttf') format('truetype');
+  font-weight: 700;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Lato';
+  src: url('../fonts/Lato-Italic.ttf') format('truetype');
+  font-weight: 400;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Lato';
+  src: url('../fonts/Lato-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Lato';
+  src: url('../fonts/Lato-LightItalic.ttf') format('truetype');
+  font-weight: 300;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Lato';
+  src: url('../fonts/Lato-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+/* Fonts files */
+.opn-reg {
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+}
+.opn-bold {
+  font-family: 'Lato', sans-serif;
+  font-weight: 700;
+}
+/* Base colors */
+/* Base setting */
+body {
+  font-size: 16px;
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+  color: #000000;
+}
+ol,
+ul {
+  list-style: none;
+}
+.main_wrapper {
+  overflow: hidden;
+}
+.btn {
+  cursor: pointer;
+  width: 160px;
+  height: 50px;
+  line-height: 48px;
+  border: 1px solid #ffffff;
+  color: #ffffff;
+  font-size: 16px;
+  font-family: 'Lato', sans-serif;
+  font-weight: 700;
+  display: inline-block;
+  text-align: center;
+}
+.btn:hover {
+  text-decoration: none;
+}
+/* Header */
+.nav_header {
+  position: fixed;
+  width: 100%;
+  height: 65px;
+  line-height: 65px;
+  background-color: #000000;
+  overflow: hidden;
+  padding: 0 40px;
+  z-index: 1000;
+}
+.nav_wrapper {
+  position: relative;
+  overflow: hidden;
+}
+.nav_wrapper .nav_header_menu {
+  width: 100%;
+  display: inline-flex;
+  justify-content: space-between;
+  margin: 0;
+}
+.nav_wrapper .nav_header_menu a {
+  color: #ffffff;
+  display: inline-block;
+  text-decoration: none;
+  opacity: 0.7;
+}
+.nav_wrapper .nav_header_menu a:hover {
+  text-decoration: none;
+  color: #ffffff;
+  opacity: 1;
+}
+.nav_wrapper .nav_header_icon {
+  width: 100%;
+  display: inline-flex;
+  justify-content: space-between;
+}
+.nav_wrapper .search {
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+}
+.nav_wrapper .heart {
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+}
+.nav_wrapper .basket {
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+}
+.nav_wrapper .cabinet {
+  width: 16px;
+  height: 20px;
+  display: inline-block;
+}
+/* Main section */
+.main {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+}
+.main .fix {
+  padding: 0;
+}
+.main_block {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+.main_block:after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #000000;
+  opacity: 0.35;
+}
+.main_block:hover .main_text_wrapper {
+  color: #000000;
+}
+.main_block:hover .btn {
+  color: #000000;
+  background-color: #ffffff;
+}
+.main_block:hover:after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #ffffff;
+  opacity: 0.28;
+}
+.main_block img {
+  min-width: 100%;
+  height: 100vh;
+}
+.main_block .main_text_wrapper {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  font-size: 24px;
+  font-family: 'Lato', sans-serif;
+  font-weight: 700;
+  color: #ffffff;
+  top: 35%;
+  left: 0;
+  text-align: center;
+  z-index: 1;
+}
+.main_block .main_text_wrapper .main_text {
+  display: inline-block;
+  width: 60%;
+}
