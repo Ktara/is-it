@@ -113,8 +113,7 @@ ol, ul {
 .nav_wrapper {
 	position: relative;
 	overflow: hidden;
-	.nav_header_menu {
-		// position: absolute;
+	.nav_header_menu {		
 		width: 100%;
 		display: inline-flex;
 		justify-content: space-between;
@@ -253,6 +252,30 @@ ol, ul {
 			width: 100%;
 		}
 	}
+	.hover_btn {
+		position: absolute;
+		justify-content: center;
+		align-items: center;
+		display: none; 
+		width: ~"calc(100% - 40px)";
+		height: ~"calc(100% - 40px)";
+		top: 20px;
+		left: 20px;
+		right: 20px;
+		bottom: 20px;
+		z-index: 1;				
+		background-color: rgba(0, 0, 0, 0);
+		transition: all 0.2s;		
+		.btn {
+			width: 180px;
+			background-color: @white;			
+			color: @main-black;
+			clear: both;
+			&:hover {
+				color: @main-black;
+			}
+		}
+	}
 	&_block_wrapper {
 		margin-top: 20px;
 		&:hover {
@@ -260,7 +283,8 @@ ol, ul {
 				display: none;
 			}
 			.hover_btn {
-				display: flex;;
+				display: flex;				
+				background-color: rgba(0, 0, 0, 0.35);
 			}
 		}
 	}	
@@ -277,31 +301,7 @@ ol, ul {
 		left: 0;			
 		text-align: center;
 		z-index: 1;
-	}
-	.hover_btn {
-		position: absolute;
-
-		justify-content: center;
-		align-items: center;
-		display: none; 
-		width: ~"calc(100% - 40px)";
-		height: ~"calc(100% - 40px)";
-		top: 20px;
-		left: 20px;
-		right: 20px;
-		bottom: 20px;
-		z-index: 1;		
-		background-color: rgba(0, 0, 0, 0.35);
-		.btn {
-			width: 180px;
-			background-color: @white;			
-			color: @main-black;
-			clear: both;
-			&:hover {
-				color: @main-black;
-			}
-		}
-	}		
+	}			
 }
 .new_btn {
 	width: 180px;
@@ -312,5 +312,141 @@ ol, ul {
 	clear: both;
 	&:hover {
 		color: @main-black;
+	}
+}
+
+
+
+
+
+
+/* Share section */
+.share {
+	position: relative;
+	width: 100%;
+	margin-top: 140px;	
+	img {
+		width: 100%;
+	}
+	&_text {
+		position: absolute;
+		display: inline-block;
+		width: 50%;
+		height: 100%;
+		top: 30%;
+		left: 0;
+		.btn {
+			display: block;
+			color: @main-black;
+			background-color: @white;
+			margin: 40px auto 0 auto;			
+		}
+	}
+}
+
+
+
+
+
+/* Top section */
+.top {
+	position: relative;
+	width: 100%;
+	margin-top: 140px;
+	padding: 0 40px;
+	.section_header {
+		margin-bottom: 40px;
+	}
+	img {
+		width: 100%;
+	}
+	.btn {
+		width: 180px;
+		border: 1px solid @main-black;	
+		color: @main-black;
+		display: block;
+		margin: 60px auto 0 auto;
+	}
+}
+
+
+
+
+
+/* Blog section */
+.blog {
+	position: relative;
+	width: 100%;
+	margin-top: 140px;
+	padding: 0 40px;	
+	.section_header {
+		margin-bottom: 40px;
+	}
+	img {
+		width: 100%;
+	}
+	.btn {
+		width: 180px;
+		border: 1px solid @main-black;	
+		color: @main-black;
+		display: block;
+		margin: 60px auto 0 auto;
+	}
+}
+
+
+
+
+
+/* Footer */
+footer {
+	position: relative;
+	width: 100%;
+	height: 500px;
+	margin-top: 140px;
+	margin-bottom: 30px;
+	padding: 0 40px;
+	background-color: rgba(0, 0, 0, 0.75);
+	.row {
+		padding-top: 60px;
+	}
+	.footer_list {
+		li {
+			margin-bottom: 20px;
+			a {
+				color: @white;
+				text-decoration: none;
+				cursor: pointer;
+				&:hover {
+					color: @white;
+					text-decoration: none;
+				}
+			}			
+		}
+	}	
+	.social {		
+		margin-top: 30px;
+		img {
+			width: 45px;
+			height: 45px;
+			margin-right: 15px;
+		}
+	}
+	p {
+		color: @white;
+	}
+	.copy {
+		color: @white;
+		overflow: hidden;
+		margin-top: 105px;		
+		a {
+			text-decoration: underline;
+			cursor: pointer;
+			color: @white;
+			&:hover {				
+				color: @white;
+			}
+		}
+		
 	}
 }
