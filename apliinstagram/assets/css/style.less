@@ -90,6 +90,12 @@ ol, ul {
 		text-decoration: none;			
 	}		
 }
+.section_header {
+	font-size: 30px;
+	.opn-bold;
+	text-align: center;
+	margin: 0;
+}
 
 
 
@@ -221,6 +227,90 @@ ol, ul {
 			}
 		}
 	}
-
 }
 
+
+
+
+
+
+/* New section */
+.new {
+	position: relative;
+	width: 100%;
+	margin-top: 140px;
+	padding: 0 40px;
+	overflow: hidden;	
+	.section_header {
+		margin-bottom: 20px;
+	}	
+	.fixed {
+		float: right;
+	}		
+	&_block {
+	position: relative;		
+		img {
+			width: 100%;
+		}
+	}
+	&_block_wrapper {
+		margin-top: 20px;
+		&:hover {
+			p {
+				display: none;
+			}
+			.hover_btn {
+				display: flex;;
+			}
+		}
+	}	
+	.text_wrapper {
+		position: absolute;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 100%;
+		font-size: 24px;
+		.opn-bold;
+		color: @main-black;
+		top: 50%;
+		left: 0;			
+		text-align: center;
+		z-index: 1;
+	}
+	.hover_btn {
+		position: absolute;
+
+		justify-content: center;
+		align-items: center;
+		display: none; 
+		width: ~"calc(100% - 40px)";
+		height: ~"calc(100% - 40px)";
+		top: 20px;
+		left: 20px;
+		right: 20px;
+		bottom: 20px;
+		z-index: 1;		
+		background-color: rgba(0, 0, 0, 0.35);
+		.btn {
+			width: 180px;
+			background-color: @white;			
+			color: @main-black;
+			clear: both;
+			&:hover {
+				color: @main-black;
+			}
+		}
+	}		
+}
+.new_btn {
+	width: 180px;
+	display: block;
+	border: 1px solid @main-black;	
+	color: @main-black;
+	margin: 60px auto 0 auto;
+	clear: both;
+	&:hover {
+		color: @main-black;
+	}
+}
