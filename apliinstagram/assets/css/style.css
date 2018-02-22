@@ -594,3 +594,280 @@ footer .copy a:hover {
 .home .float {
   float: right;
 }
+/* MAN PAGE */
+.man_clothes {
+  position: relative;
+  width: 100%;
+  margin-top: 105px;
+  padding: 0 40px;
+  overflow: hidden;
+}
+.man_clothes img {
+  width: 100%;
+}
+.man_clothes_text {
+  position: absolute;
+  width: 100%;
+  top: 45%;
+  left: 0;
+  text-align: center;
+  color: #000000;
+}
+.man_clothes_text p {
+  font-size: 24px;
+  font-family: 'Lato', sans-serif;
+  font-weight: 700;
+}
+/* Man_accessory section */
+.man_accessory {
+  position: relative;
+  width: 100%;
+  margin-top: 140px;
+  padding: 0 40px;
+  overflow: hidden;
+}
+.man_accessory h2 {
+  font-size: 30px;
+  font-family: 'Lato', sans-serif;
+  font-weight: 700;
+  text-indent: 10px;
+}
+.man_accessory .man_image {
+  position: relative;
+  width: 100%;
+  margin-top: 40px;
+}
+.man_accessory .man_image img {
+  width: 100%;
+}
+.man_accessory .man_image .man_info_new {
+  position: absolute;
+  width: 95px;
+  height: 25px;
+  line-height: 22px;
+  left: 10px;
+  top: 10px;
+  border: 1px solid #000000;
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+}
+.man_accessory .man_image .man_info_new p {
+  font-size: 14px;
+}
+.man_accessory .man_image .man_button {
+  display: none;
+  position: absolute;
+  width: 35px;
+  height: 35px;
+  left: 10px;
+  bottom: 10px;
+  background-color: #ffffff;
+  border: none;
+  padding: 0;
+}
+.man_accessory .man_image .man_button img {
+  width: 20px;
+  height: 20px;
+}
+.man_accessory .man_image .button1 {
+  bottom: 55px;
+}
+.man_accessory .man_image:hover {
+  cursor: pointer;
+}
+.man_accessory .man_image:hover .man_button {
+  display: block;
+}
+.man_accessory .man_star {
+  width: 50%;
+  margin-top: 20px;
+  display: inline-block;
+}
+.man_accessory .man_star img {
+  width: 16px;
+  height: 15px;
+}
+.man_accessory .man_like {
+  width: 50%;
+  margin-top: 20px;
+  display: inline-block;
+  float: right;
+}
+.man_accessory .man_like button {
+  background-color: #ffffff;
+  border: none;
+  display: inline-block;
+  padding-left: 5px;
+  padding-right: 0;
+  float: right;
+}
+.man_accessory .man_like button img {
+  width: 16px;
+  height: 17px;
+}
+.man_accessory .man_like p {
+  display: inline-block;
+  float: right;
+}
+.man_accessory .man_text {
+  margin-top: 10px;
+}
+.man_accessory .man_price {
+  position: relative;
+  width: 100%;
+  margin-top: 10px;
+  display: inline-block;
+}
+.man_accessory .man_price p {
+  font-family: 'Lato', sans-serif;
+  font-weight: 700;
+  display: inline-block;
+}
+.man_accessory .btn {
+  width: 180px;
+  border: 1px solid #000000;
+  display: block;
+  text-align: center;
+  margin: 40px auto 0 auto;
+  clear: both;
+  color: #000000;
+}
+.man_accessory .btn:hover {
+  color: #000000;
+}
+/* Man_share section */
+.man_share {
+  position: relative;
+  width: 100%;
+  margin-top: 140px;
+  padding: 0 40px;
+  overflow: hidden;
+}
+.man_share h2 {
+  font-size: 30px;
+  font-family: 'Lato', sans-serif;
+  font-weight: 700;
+  text-indent: 10px;
+}
+.man_share .man_share_image {
+  position: relative;
+  width: 100%;
+  margin-top: 40px;
+}
+.man_share .man_share_image img {
+  width: 100%;
+}
+.man_share .man_share_image .man_share_info_new {
+  position: absolute;
+  width: 95px;
+  height: 25px;
+  line-height: 22px;
+  left: 10px;
+  top: 10px;
+  border: 1px solid #000000;
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+}
+.man_share .man_share_image .man_share_info_new p {
+  font-size: 14px;
+}
+.man_share .man_share_image .man_share_info_share {
+  position: absolute;
+  width: 95px;
+  height: 25px;
+  line-height: 22px;
+  left: 10px;
+  top: 45px;
+  border: 1px solid #000000;
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+}
+.man_share .man_share_image .man_share_info_share p {
+  font-size: 14px;
+}
+.man_share .man_share_image .man_share_button {
+  display: none;
+  position: absolute;
+  width: 35px;
+  height: 35px;
+  left: 10px;
+  bottom: 10px;
+  background-color: #ffffff;
+  border: none;
+  padding: 0;
+}
+.man_share .man_share_image .man_share_button img {
+  width: 20px;
+  height: 20px;
+}
+.man_share .man_share_image .button1 {
+  bottom: 55px;
+}
+.man_share .man_share_image:hover {
+  cursor: pointer;
+}
+.man_share .man_share_image:hover .man_share_button {
+  display: block;
+}
+.man_share .man_share_star {
+  width: 50%;
+  margin-top: 20px;
+  display: inline-block;
+}
+.man_share .man_share_star img {
+  width: 16px;
+  height: 15px;
+}
+.man_share .man_share_like {
+  width: 50%;
+  margin-top: 20px;
+  display: inline-block;
+  float: right;
+}
+.man_share .man_share_like button {
+  background-color: #ffffff;
+  border: none;
+  display: inline-block;
+  padding-left: 5px;
+  padding-right: 0;
+  float: right;
+}
+.man_share .man_share_like button img {
+  width: 16px;
+  height: 17px;
+}
+.man_share .man_share_like p {
+  display: inline-block;
+  float: right;
+}
+.man_share .man_share_text {
+  margin-top: 10px;
+}
+.man_share .man_share_price {
+  position: relative;
+  width: 100%;
+  margin-top: 10px;
+  display: inline-block;
+}
+.man_share .man_share_price strike {
+  opacity: 0.5;
+  display: inline-block;
+  width: 35%;
+}
+.man_share .man_share_price p {
+  font-family: 'Lato', sans-serif;
+  font-weight: 700;
+  display: inline-block;
+}
+.man_share .btn {
+  width: 180px;
+  border: 1px solid #000000;
+  display: block;
+  text-align: center;
+  margin: 40px auto 0 auto;
+  clear: both;
+  color: #000000;
+}
+.man_share .btn:hover {
+  color: #000000;
+}
