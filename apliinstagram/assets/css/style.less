@@ -96,6 +96,9 @@ ol, ul {
 	text-align: center;
 	margin: 0;
 }
+a:focus {
+	text-decoration: none;	
+}
 
 
 
@@ -224,7 +227,10 @@ ol, ul {
 			z-index: 1;
 			.main_text {
 				display: inline-block;
-				width: 60%;				
+				width: 60%;
+				.btn {
+					margin-top: 45px;
+				}				
 			}
 		}
 	}
@@ -325,8 +331,11 @@ ol, ul {
 /* Share section */
 .share {
 	position: relative;
+	display: block;
 	width: 100%;
-	margin-top: 140px;	
+	height: 30vh;
+	margin-top: 140px;
+	overflow: hidden;
 	img {
 		width: 100%;
 	}
@@ -353,14 +362,120 @@ ol, ul {
 /* Top section */
 .top {
 	position: relative;
+	display: block;
 	width: 100%;
 	margin-top: 140px;
 	padding: 0 40px;
-	.section_header {
-		margin-bottom: 40px;
+	&_block {
+		margin-top: 40px;
 	}
-	img {
+	&_image {
+		position: relative;
 		width: 100%;
+		img {
+			width: 100%;
+		}
+		.top_info_new {
+			position: absolute;
+			width: 95px;
+			height: 25px;
+			line-height: 22px;
+			left: 10px;
+			top: 10px;
+			border: 1px solid @main-black;
+			background-color: hsla(0, 0%, 100%, 0.8);
+			text-align: center;
+			p {
+				font-size: 14px;
+			}
+		}
+		.top_info_share {
+			position: absolute;
+			width: 95px;
+			height: 25px;
+			line-height: 22px;
+			left: 10px;
+			top: 45px;
+			border: 1px solid @main-black;
+			background-color: hsla(0, 0%, 100%, 0.8);
+			text-align: center;
+			p {
+				font-size: 14px;
+			}
+		}
+		.top_button {
+			display: none;
+			position: absolute;
+			width: 35px;
+			height: 35px;
+			left: 10px;
+			bottom: 10px;
+			background-color: @white;
+			border: none;
+			padding: 0;
+			img {				
+				width: 20px;
+				height: 20px;
+			}
+		}
+		.button1 {
+			bottom: 55px;
+		}
+	}	
+	&_image:hover {
+		cursor: pointer;
+		.top_button {
+			display: block;
+		}
+	}
+	&_star {
+		width: 50%;
+		margin-top: 20px;
+		display: inline-block;
+		img {
+			width: 16px;
+			height: 15px;
+		}
+	}
+	&_like {
+		width: 50%;
+		margin-top: 20px;		
+		display: inline-block;
+		float: right;
+		button {			
+			background-color: @white;
+			border: none;
+			display: inline-block;
+			padding-left: 5px;
+			padding-right: 0;			
+			float: right;
+			img {			
+				width: 16px;
+				height: 17px;								
+			}
+		}		
+		p {
+			display: inline-block;
+			float: right;
+		}		
+	}
+	&_text {
+		margin-top: 10px;
+	}
+	&_price {
+		position: relative;
+		width: 100%;
+		margin-top: 10px;
+		display: inline-block;
+		strike {
+			opacity: 0.5;
+			display: inline-block;
+			width: 35%;
+		}
+		p {
+			.opn-bold;
+			display: inline-block;
+		}
 	}
 	.btn {
 		width: 180px;
@@ -381,11 +496,44 @@ ol, ul {
 	width: 100%;
 	margin-top: 140px;
 	padding: 0 40px;	
-	.section_header {
-		margin-bottom: 40px;
-	}
-	img {
+	&_image {
+		position: relative;
 		width: 100%;
+		margin-top: 40px;
+		img {
+			width: 100%;
+		}
+		&_date {
+			position: absolute;
+			width: 80px;
+			height: 50px;
+			line-height: 22px;
+			left: 10px;
+			top: 10px;
+			background-color: @white;
+			border: 1px solid @main-black;
+			text-align: center;
+		}
+	}
+	&_info {
+		width: 100%;
+		margin-top: -2px;
+		padding: 20px 10px 25px 10px;
+		border: 1px solid @main-black;
+		h6 {
+			.opn-bold;			
+		}
+		p {
+			margin-top: 10px;
+			margin-bottom: 30px;
+		}
+		a {				
+			color: @main-black;
+			opacity: 0.5;
+		}
+		a:hover {
+			text-decoration: none;
+		}
 	}
 	.btn {
 		width: 180px;
