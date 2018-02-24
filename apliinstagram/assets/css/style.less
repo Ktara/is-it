@@ -167,7 +167,8 @@ a:focus {
 .main {
 	position: relative;
 	width: 100%;
-	height: 100vh;	
+	height: 100vh;
+	overflow: hidden;
 	.fix {
 		padding: 0;
 	}
@@ -247,7 +248,8 @@ a:focus {
 	width: 100%;
 	margin-top: 140px;
 	padding: 0 40px;
-	overflow: hidden;	
+	overflow: hidden;
+	clear: both;	
 	.section_header {
 		margin-bottom: 20px;
 	}	
@@ -432,9 +434,18 @@ a:focus {
 		width: 50%;
 		margin-top: 20px;
 		display: inline-block;
-		img {
+		span {
+			display: inline-block;
+			background-image: url(../img/star2.svg);
+			background-repeat: no-repeat;			
 			width: 16px;
 			height: 15px;
+		}
+		.active_star {
+			background-image: url(../img/star.svg);
+			background-repeat: no-repeat;			
+			width: 16px;
+			height: 15px;			
 		}
 	}
 	&_like {
@@ -649,14 +660,47 @@ footer {
 		}
 		.home_text {
 			position: absolute;
-			width: 100%;
-			// height: 100%;
+			width: 100%;			
 			top: 45%;
 			left: 0;
 			text-align: center;
 			p {
+				color: @main-black;
 				font-size: 24px;
 				.opn-bold;
+			}
+		}
+	}
+	&_image:hover {
+		.home_text {
+			display: none;
+		}
+		.hover_btn {
+			display: flex;
+			background-color: rgba(0, 0, 0, 0.35);
+		}
+	}
+	.hover_btn {
+		position: absolute;
+		justify-content: center;
+		align-items: center;
+		display: none; 
+		width: ~"calc(100% - 40px)";
+		height: ~"calc(100% - 40px)";
+		top: 20px;
+		left: 20px;
+		right: 20px;
+		bottom: 20px;
+		z-index: 1;				
+		background-color: rgba(0, 0, 0, 0);
+		transition: all 0.2s;		
+		.btn {
+			width: 180px;
+			background-color: @white;			
+			color: @main-black;
+			clear: both;
+			&:hover {
+				color: @main-black;
 			}
 		}
 	}
@@ -695,6 +739,43 @@ footer {
 		p {
 			font-size: 24px;
 			.opn-bold;
+		}
+	}
+	&_image {
+		position: relative;
+		width: 100%;
+	}
+	&_image:hover {
+		.man_clothes_text {
+			display: none;
+		}
+		.hover_btn {
+			display: flex;
+			background-color: rgba(0, 0, 0, 0.35);
+		}
+	}
+	.hover_btn {
+		position: absolute;
+		justify-content: center;
+		align-items: center;
+		display: none; 
+		width: ~"calc(100% - 40px)";
+		height: ~"calc(100% - 40px)";
+		top: 20px;
+		left: 20px;
+		right: 20px;
+		bottom: 20px;
+		z-index: 1;				
+		background-color: rgba(0, 0, 0, 0);
+		transition: all 0.2s;		
+		.btn {
+			width: 180px;
+			background-color: @white;			
+			color: @main-black;
+			clear: both;
+			&:hover {
+				color: @main-black;
+			}
 		}
 	}
 }
@@ -763,9 +844,18 @@ footer {
 		width: 50%;
 		margin-top: 20px;
 		display: inline-block;
-		img {
+		span {
+			display: inline-block;
+			background-image: url(../img/star2.svg);
+			background-repeat: no-repeat;			
 			width: 16px;
 			height: 15px;
+		}
+		.active_star {
+			background-image: url(../img/star.svg);
+			background-repeat: no-repeat;			
+			width: 16px;
+			height: 15px;			
 		}
 	}	
 	.man_like {
@@ -802,25 +892,38 @@ footer {
 			.opn-bold;
 			display: inline-block;
 		}
-	}
-	.btn {
-		width: 180px;
-		border: 1px solid @main-black;
-		display: block;
-		text-align: center;		
-		margin: 40px auto 0 auto;		
-		clear: both;		
-		color: @main-black;		
-		&:hover {
-			color: @main-black;
-		}
+	}	
+}
+.man_accessory_btn {
+	width: 180px;
+	border: 1px solid @main-black;
+	display: block;			
+	margin: 40px auto 0 auto;
+	color: @main-black;		
+	&:hover {
+		color: @main-black;
 	}
 }
 
 
 
-/* Man_share section */
-.man_share {
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* BLOCK_SHARE SECTION */
+.block_share {
 	position: relative;
 	width: 100%;
 	margin-top: 140px;
@@ -831,14 +934,14 @@ footer {
 		.opn-bold;
 		text-indent: 10px;
 	}
-	.man_share_image {
+	.block_share_image {
 		position: relative;
 		width: 100%;
 		margin-top: 40px;
 		img {
 			width: 100%;
 		}
-		.man_share_info_new {
+		.block_share_info_new {
 			position: absolute;
 			width: 95px;
 			height: 25px;
@@ -852,7 +955,7 @@ footer {
 				font-size: 14px;
 			}
 		}
-		.man_share_info_share {
+		.block_share_info_share {
 			position: absolute;
 			width: 95px;
 			height: 25px;
@@ -866,7 +969,7 @@ footer {
 				font-size: 14px;
 			}
 		}
-		.man_share_button {
+		.block_share_button {
 			display: none;
 			position: absolute;
 			width: 35px;
@@ -885,22 +988,31 @@ footer {
 			bottom: 55px;
 		}		
 	}
-	.man_share_image:hover {
+	.block_share_image:hover {
 		cursor: pointer;
 		.man_share_button {
 			display: block;
 		}
 	}
-	.man_share_star {
+	.block_share_star {
 		width: 50%;
 		margin-top: 20px;
 		display: inline-block;
-		img {
+		span {
+			display: inline-block;
+			background-image: url(../img/star2.svg);
+			background-repeat: no-repeat;			
 			width: 16px;
 			height: 15px;
 		}
+		.active_star {
+			background-image: url(../img/star.svg);
+			background-repeat: no-repeat;			
+			width: 16px;
+			height: 15px;			
+		}		
 	}
-	.man_share_like {
+	.block_share_like {
 		width: 50%;
 		margin-top: 20px;		
 		display: inline-block;
@@ -922,10 +1034,10 @@ footer {
 			float: right;
 		}		
 	}
-	.man_share_text {
+	.block_share_text {
 		margin-top: 10px;
 	}
-	.man_share_price {
+	.block_share_price {
 		position: relative;
 		width: 100%;
 		margin-top: 10px;
@@ -939,17 +1051,206 @@ footer {
 			.opn-bold;
 			display: inline-block;
 		}
+	}	
+}
+.block_share_btn {
+	width: 180px;
+	border: 1px solid @main-black;
+	display: block;	
+	margin: 40px auto 0 auto;
+	color: @main-black;		
+	&:hover {
+		color: @main-black;
 	}
-	.btn {
-		width: 180px;
-		border: 1px solid @main-black;
-		display: block;
-		text-align: center;		
-		margin: 40px auto 0 auto;		
-		clear: both;		
-		color: @main-black;		
-		&:hover {
-			color: @main-black;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* WOMAN PAGE */
+/* woman_clothes section */
+.woman_clothes {
+	position: relative;
+	width: 100%;
+	margin-top: 105px;
+	padding: 0 40px;
+	overflow: hidden;	
+	img {
+		width: 100%;
+	}
+	&_text {
+		position: absolute;
+		width: 100%;
+		top: 45%;
+		left: 0;
+		text-align: center;
+		color: @main-black;
+		p {
+			font-size: 24px;
+			.opn-bold;
 		}
+	}
+	&_image {
+		position: relative;
+		width: 100%;
+	}
+	&_image:hover {
+		.man_clothes_text {
+			display: none;
+		}
+		.hover_btn {
+			display: flex;
+			background-color: rgba(0, 0, 0, 0.35);
+		}
+	}
+	.hover_btn {
+		position: absolute;
+		justify-content: center;
+		align-items: center;
+		display: none; 
+		width: ~"calc(100% - 40px)";
+		height: ~"calc(100% - 40px)";
+		top: 20px;
+		left: 20px;
+		right: 20px;
+		bottom: 20px;
+		z-index: 1;				
+		background-color: rgba(0, 0, 0, 0);
+		transition: all 0.2s;		
+		.btn {
+			width: 180px;
+			background-color: @white;			
+			color: @main-black;
+			clear: both;
+			&:hover {
+				color: @main-black;
+			}
+		}
+	}
+}
+
+
+
+/* Woman_accessory section */
+.woman_accessory {
+	position: relative;
+	width: 100%;
+	margin-top: 140px;
+	padding: 0 40px;
+	overflow: hidden;	
+	h2 {
+		font-size: 30px;
+		.opn-bold;
+		text-indent: 10px;
+	}
+	.woman_image {
+		position: relative;
+		width: 100%;
+		margin-top: 40px;
+		img {
+			width: 100%;
+		}
+		.woman_info_new {
+			position: absolute;
+			width: 95px;
+			height: 25px;
+			line-height: 22px;
+			left: 10px;
+			top: 10px;
+			border: 1px solid @main-black;
+			background-color: hsla(0, 0%, 100%, 0.8);
+			text-align: center;
+			p {
+				font-size: 14px;
+			}
+		}
+		.woman_button {
+			display: none;
+			position: absolute;
+			width: 35px;
+			height: 35px;
+			left: 10px;
+			bottom: 10px;
+			background-color: @white;
+			border: none;
+			padding: 0;
+			img {				
+				width: 20px;
+				height: 20px;
+			}
+		}
+		.button1 {
+			bottom: 55px;
+		}		
+	}
+	.woman_image:hover {
+		cursor: pointer;
+		.woman_button {
+			display: block;
+		}
+	}
+	.woman_star {
+		width: 50%;
+		margin-top: 20px;
+		display: inline-block;
+		img {
+			width: 16px;
+			height: 15px;
+		}
+	}	
+	.woman_like {
+		width: 50%;
+		margin-top: 20px;		
+		display: inline-block;
+		float: right;
+		button {			
+			background-color: @white;
+			border: none;
+			display: inline-block;
+			padding-left: 5px;
+			padding-right: 0;			
+			float: right;
+			img {			
+				width: 16px;
+				height: 17px;								
+			}
+		}		
+		p {
+			display: inline-block;
+			float: right;
+		}		
+	}
+	.woman_text {
+		margin-top: 10px;
+	}
+	.woman_price {
+		position: relative;
+		width: 100%;
+		margin-top: 10px;
+		display: inline-block;		
+		p {
+			.opn-bold;
+			display: inline-block;
+		}
+	}	
+}
+.woman_accessory_btn {
+	width: 180px;
+	border: 1px solid @main-black;
+	display: block;			
+	margin: 40px auto 0 auto;
+	color: @main-black;		
+	&:hover {
+		color: @main-black;
 	}
 }

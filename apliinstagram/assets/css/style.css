@@ -158,6 +158,7 @@ a:focus {
   position: relative;
   width: 100%;
   height: 100vh;
+  overflow: hidden;
 }
 .main .fix {
   padding: 0;
@@ -231,6 +232,7 @@ a:focus {
   margin-top: 140px;
   padding: 0 40px;
   overflow: hidden;
+  clear: both;
 }
 .new .section_header {
   margin-bottom: 20px;
@@ -405,7 +407,16 @@ a:focus {
   margin-top: 20px;
   display: inline-block;
 }
-.top_star img {
+.top_star span {
+  display: inline-block;
+  background-image: url(../img/star2.svg);
+  background-repeat: no-repeat;
+  width: 16px;
+  height: 15px;
+}
+.top_star .active_star {
+  background-image: url(../img/star.svg);
+  background-repeat: no-repeat;
   width: 16px;
   height: 15px;
 }
@@ -587,9 +598,41 @@ footer .copy a:hover {
   text-align: center;
 }
 .home_image .home_text p {
+  color: #000000;
   font-size: 24px;
   font-family: 'Lato', sans-serif;
   font-weight: 700;
+}
+.home_image:hover .home_text {
+  display: none;
+}
+.home_image:hover .hover_btn {
+  display: flex;
+  background-color: rgba(0, 0, 0, 0.35);
+}
+.home .hover_btn {
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  display: none;
+  width: calc(100% - 40px);
+  height: calc(100% - 40px);
+  top: 20px;
+  left: 20px;
+  right: 20px;
+  bottom: 20px;
+  z-index: 1;
+  background-color: rgba(0, 0, 0, 0);
+  transition: all 0.2s;
+}
+.home .hover_btn .btn {
+  width: 180px;
+  background-color: #ffffff;
+  color: #000000;
+  clear: both;
+}
+.home .hover_btn .btn:hover {
+  color: #000000;
 }
 .home .float {
   float: right;
@@ -617,6 +660,41 @@ footer .copy a:hover {
   font-size: 24px;
   font-family: 'Lato', sans-serif;
   font-weight: 700;
+}
+.man_clothes_image {
+  position: relative;
+  width: 100%;
+}
+.man_clothes_image:hover .man_clothes_text {
+  display: none;
+}
+.man_clothes_image:hover .hover_btn {
+  display: flex;
+  background-color: rgba(0, 0, 0, 0.35);
+}
+.man_clothes .hover_btn {
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  display: none;
+  width: calc(100% - 40px);
+  height: calc(100% - 40px);
+  top: 20px;
+  left: 20px;
+  right: 20px;
+  bottom: 20px;
+  z-index: 1;
+  background-color: rgba(0, 0, 0, 0);
+  transition: all 0.2s;
+}
+.man_clothes .hover_btn .btn {
+  width: 180px;
+  background-color: #ffffff;
+  color: #000000;
+  clear: both;
+}
+.man_clothes .hover_btn .btn:hover {
+  color: #000000;
 }
 /* Man_accessory section */
 .man_accessory {
@@ -683,7 +761,16 @@ footer .copy a:hover {
   margin-top: 20px;
   display: inline-block;
 }
-.man_accessory .man_star img {
+.man_accessory .man_star span {
+  display: inline-block;
+  background-image: url(../img/star2.svg);
+  background-repeat: no-repeat;
+  width: 16px;
+  height: 15px;
+}
+.man_accessory .man_star .active_star {
+  background-image: url(../img/star.svg);
+  background-repeat: no-repeat;
   width: 16px;
   height: 15px;
 }
@@ -723,41 +810,39 @@ footer .copy a:hover {
   font-weight: 700;
   display: inline-block;
 }
-.man_accessory .btn {
+.man_accessory_btn {
   width: 180px;
   border: 1px solid #000000;
   display: block;
-  text-align: center;
   margin: 40px auto 0 auto;
-  clear: both;
   color: #000000;
 }
-.man_accessory .btn:hover {
+.man_accessory_btn:hover {
   color: #000000;
 }
-/* Man_share section */
-.man_share {
+/* BLOCK_SHARE SECTION */
+.block_share {
   position: relative;
   width: 100%;
   margin-top: 140px;
   padding: 0 40px;
   overflow: hidden;
 }
-.man_share h2 {
+.block_share h2 {
   font-size: 30px;
   font-family: 'Lato', sans-serif;
   font-weight: 700;
   text-indent: 10px;
 }
-.man_share .man_share_image {
+.block_share .block_share_image {
   position: relative;
   width: 100%;
   margin-top: 40px;
 }
-.man_share .man_share_image img {
+.block_share .block_share_image img {
   width: 100%;
 }
-.man_share .man_share_image .man_share_info_new {
+.block_share .block_share_image .block_share_info_new {
   position: absolute;
   width: 95px;
   height: 25px;
@@ -768,10 +853,10 @@ footer .copy a:hover {
   background-color: rgba(255, 255, 255, 0.8);
   text-align: center;
 }
-.man_share .man_share_image .man_share_info_new p {
+.block_share .block_share_image .block_share_info_new p {
   font-size: 14px;
 }
-.man_share .man_share_image .man_share_info_share {
+.block_share .block_share_image .block_share_info_share {
   position: absolute;
   width: 95px;
   height: 25px;
@@ -782,10 +867,10 @@ footer .copy a:hover {
   background-color: rgba(255, 255, 255, 0.8);
   text-align: center;
 }
-.man_share .man_share_image .man_share_info_share p {
+.block_share .block_share_image .block_share_info_share p {
   font-size: 14px;
 }
-.man_share .man_share_image .man_share_button {
+.block_share .block_share_image .block_share_button {
   display: none;
   position: absolute;
   width: 35px;
@@ -796,35 +881,44 @@ footer .copy a:hover {
   border: none;
   padding: 0;
 }
-.man_share .man_share_image .man_share_button img {
+.block_share .block_share_image .block_share_button img {
   width: 20px;
   height: 20px;
 }
-.man_share .man_share_image .button1 {
+.block_share .block_share_image .button1 {
   bottom: 55px;
 }
-.man_share .man_share_image:hover {
+.block_share .block_share_image:hover {
   cursor: pointer;
 }
-.man_share .man_share_image:hover .man_share_button {
+.block_share .block_share_image:hover .man_share_button {
   display: block;
 }
-.man_share .man_share_star {
+.block_share .block_share_star {
   width: 50%;
   margin-top: 20px;
   display: inline-block;
 }
-.man_share .man_share_star img {
+.block_share .block_share_star span {
+  display: inline-block;
+  background-image: url(../img/star2.svg);
+  background-repeat: no-repeat;
   width: 16px;
   height: 15px;
 }
-.man_share .man_share_like {
+.block_share .block_share_star .active_star {
+  background-image: url(../img/star.svg);
+  background-repeat: no-repeat;
+  width: 16px;
+  height: 15px;
+}
+.block_share .block_share_like {
   width: 50%;
   margin-top: 20px;
   display: inline-block;
   float: right;
 }
-.man_share .man_share_like button {
+.block_share .block_share_like button {
   background-color: #ffffff;
   border: none;
   display: inline-block;
@@ -832,42 +926,215 @@ footer .copy a:hover {
   padding-right: 0;
   float: right;
 }
-.man_share .man_share_like button img {
+.block_share .block_share_like button img {
   width: 16px;
   height: 17px;
 }
-.man_share .man_share_like p {
+.block_share .block_share_like p {
   display: inline-block;
   float: right;
 }
-.man_share .man_share_text {
+.block_share .block_share_text {
   margin-top: 10px;
 }
-.man_share .man_share_price {
+.block_share .block_share_price {
   position: relative;
   width: 100%;
   margin-top: 10px;
   display: inline-block;
 }
-.man_share .man_share_price strike {
+.block_share .block_share_price strike {
   opacity: 0.5;
   display: inline-block;
   width: 35%;
 }
-.man_share .man_share_price p {
+.block_share .block_share_price p {
   font-family: 'Lato', sans-serif;
   font-weight: 700;
   display: inline-block;
 }
-.man_share .btn {
+.block_share_btn {
   width: 180px;
   border: 1px solid #000000;
   display: block;
-  text-align: center;
   margin: 40px auto 0 auto;
-  clear: both;
   color: #000000;
 }
-.man_share .btn:hover {
+.block_share_btn:hover {
+  color: #000000;
+}
+/* WOMAN PAGE */
+/* woman_clothes section */
+.woman_clothes {
+  position: relative;
+  width: 100%;
+  margin-top: 105px;
+  padding: 0 40px;
+  overflow: hidden;
+}
+.woman_clothes img {
+  width: 100%;
+}
+.woman_clothes_text {
+  position: absolute;
+  width: 100%;
+  top: 45%;
+  left: 0;
+  text-align: center;
+  color: #000000;
+}
+.woman_clothes_text p {
+  font-size: 24px;
+  font-family: 'Lato', sans-serif;
+  font-weight: 700;
+}
+.woman_clothes_image {
+  position: relative;
+  width: 100%;
+}
+.woman_clothes_image:hover .man_clothes_text {
+  display: none;
+}
+.woman_clothes_image:hover .hover_btn {
+  display: flex;
+  background-color: rgba(0, 0, 0, 0.35);
+}
+.woman_clothes .hover_btn {
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  display: none;
+  width: calc(100% - 40px);
+  height: calc(100% - 40px);
+  top: 20px;
+  left: 20px;
+  right: 20px;
+  bottom: 20px;
+  z-index: 1;
+  background-color: rgba(0, 0, 0, 0);
+  transition: all 0.2s;
+}
+.woman_clothes .hover_btn .btn {
+  width: 180px;
+  background-color: #ffffff;
+  color: #000000;
+  clear: both;
+}
+.woman_clothes .hover_btn .btn:hover {
+  color: #000000;
+}
+/* Woman_accessory section */
+.woman_accessory {
+  position: relative;
+  width: 100%;
+  margin-top: 140px;
+  padding: 0 40px;
+  overflow: hidden;
+}
+.woman_accessory h2 {
+  font-size: 30px;
+  font-family: 'Lato', sans-serif;
+  font-weight: 700;
+  text-indent: 10px;
+}
+.woman_accessory .woman_image {
+  position: relative;
+  width: 100%;
+  margin-top: 40px;
+}
+.woman_accessory .woman_image img {
+  width: 100%;
+}
+.woman_accessory .woman_image .woman_info_new {
+  position: absolute;
+  width: 95px;
+  height: 25px;
+  line-height: 22px;
+  left: 10px;
+  top: 10px;
+  border: 1px solid #000000;
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+}
+.woman_accessory .woman_image .woman_info_new p {
+  font-size: 14px;
+}
+.woman_accessory .woman_image .woman_button {
+  display: none;
+  position: absolute;
+  width: 35px;
+  height: 35px;
+  left: 10px;
+  bottom: 10px;
+  background-color: #ffffff;
+  border: none;
+  padding: 0;
+}
+.woman_accessory .woman_image .woman_button img {
+  width: 20px;
+  height: 20px;
+}
+.woman_accessory .woman_image .button1 {
+  bottom: 55px;
+}
+.woman_accessory .woman_image:hover {
+  cursor: pointer;
+}
+.woman_accessory .woman_image:hover .woman_button {
+  display: block;
+}
+.woman_accessory .woman_star {
+  width: 50%;
+  margin-top: 20px;
+  display: inline-block;
+}
+.woman_accessory .woman_star img {
+  width: 16px;
+  height: 15px;
+}
+.woman_accessory .woman_like {
+  width: 50%;
+  margin-top: 20px;
+  display: inline-block;
+  float: right;
+}
+.woman_accessory .woman_like button {
+  background-color: #ffffff;
+  border: none;
+  display: inline-block;
+  padding-left: 5px;
+  padding-right: 0;
+  float: right;
+}
+.woman_accessory .woman_like button img {
+  width: 16px;
+  height: 17px;
+}
+.woman_accessory .woman_like p {
+  display: inline-block;
+  float: right;
+}
+.woman_accessory .woman_text {
+  margin-top: 10px;
+}
+.woman_accessory .woman_price {
+  position: relative;
+  width: 100%;
+  margin-top: 10px;
+  display: inline-block;
+}
+.woman_accessory .woman_price p {
+  font-family: 'Lato', sans-serif;
+  font-weight: 700;
+  display: inline-block;
+}
+.woman_accessory_btn {
+  width: 180px;
+  border: 1px solid #000000;
+  display: block;
+  margin: 40px auto 0 auto;
+  color: #000000;
+}
+.woman_accessory_btn:hover {
   color: #000000;
 }
