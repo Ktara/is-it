@@ -573,253 +573,6 @@ footer .copy a {
 footer .copy a:hover {
   color: #ffffff;
 }
-/* HOME PAGE */
-.home {
-  position: relative;
-  width: 100%;
-  overflow: hidden;
-  padding: 0 40px;
-  margin-top: 85px;
-}
-.home_image {
-  position: relative;
-  width: 100%;
-  margin-top: 20px;
-  color: #000000;
-}
-.home_image img {
-  width: 100%;
-}
-.home_image .home_text {
-  position: absolute;
-  width: 100%;
-  top: 45%;
-  left: 0;
-  text-align: center;
-}
-.home_image .home_text p {
-  color: #000000;
-  font-size: 24px;
-  font-family: 'Lato', sans-serif;
-  font-weight: 700;
-}
-.home_image:hover .home_text {
-  display: none;
-}
-.home_image:hover .hover_btn {
-  display: flex;
-  background-color: rgba(0, 0, 0, 0.35);
-}
-.home .hover_btn {
-  position: absolute;
-  justify-content: center;
-  align-items: center;
-  display: none;
-  width: calc(100% - 40px);
-  height: calc(100% - 40px);
-  top: 20px;
-  left: 20px;
-  right: 20px;
-  bottom: 20px;
-  z-index: 1;
-  background-color: rgba(0, 0, 0, 0);
-  transition: all 0.2s;
-}
-.home .hover_btn .btn {
-  width: 180px;
-  background-color: #ffffff;
-  color: #000000;
-  clear: both;
-}
-.home .hover_btn .btn:hover {
-  color: #000000;
-}
-.home .float {
-  float: right;
-}
-/* MAN PAGE */
-.man_clothes {
-  position: relative;
-  width: 100%;
-  margin-top: 105px;
-  padding: 0 40px;
-  overflow: hidden;
-}
-.man_clothes img {
-  width: 100%;
-}
-.man_clothes_text {
-  position: absolute;
-  width: 100%;
-  top: 45%;
-  left: 0;
-  text-align: center;
-  color: #000000;
-}
-.man_clothes_text p {
-  font-size: 24px;
-  font-family: 'Lato', sans-serif;
-  font-weight: 700;
-}
-.man_clothes_image {
-  position: relative;
-  width: 100%;
-}
-.man_clothes_image:hover .man_clothes_text {
-  display: none;
-}
-.man_clothes_image:hover .hover_btn {
-  display: flex;
-  background-color: rgba(0, 0, 0, 0.35);
-}
-.man_clothes .hover_btn {
-  position: absolute;
-  justify-content: center;
-  align-items: center;
-  display: none;
-  width: calc(100% - 40px);
-  height: calc(100% - 40px);
-  top: 20px;
-  left: 20px;
-  right: 20px;
-  bottom: 20px;
-  z-index: 1;
-  background-color: rgba(0, 0, 0, 0);
-  transition: all 0.2s;
-}
-.man_clothes .hover_btn .btn {
-  width: 180px;
-  background-color: #ffffff;
-  color: #000000;
-  clear: both;
-}
-.man_clothes .hover_btn .btn:hover {
-  color: #000000;
-}
-/* Man_accessory section */
-.man_accessory {
-  position: relative;
-  width: 100%;
-  margin-top: 140px;
-  padding: 0 40px;
-  overflow: hidden;
-}
-.man_accessory h2 {
-  font-size: 30px;
-  font-family: 'Lato', sans-serif;
-  font-weight: 700;
-  text-indent: 10px;
-}
-.man_accessory .man_image {
-  position: relative;
-  width: 100%;
-  margin-top: 40px;
-}
-.man_accessory .man_image img {
-  width: 100%;
-}
-.man_accessory .man_image .man_info_new {
-  position: absolute;
-  width: 95px;
-  height: 25px;
-  line-height: 22px;
-  left: 10px;
-  top: 10px;
-  border: 1px solid #000000;
-  background-color: rgba(255, 255, 255, 0.8);
-  text-align: center;
-}
-.man_accessory .man_image .man_info_new p {
-  font-size: 14px;
-}
-.man_accessory .man_image .man_button {
-  display: none;
-  position: absolute;
-  width: 35px;
-  height: 35px;
-  left: 10px;
-  bottom: 10px;
-  background-color: #ffffff;
-  border: none;
-  padding: 0;
-}
-.man_accessory .man_image .man_button img {
-  width: 20px;
-  height: 20px;
-}
-.man_accessory .man_image .button1 {
-  bottom: 55px;
-}
-.man_accessory .man_image:hover {
-  cursor: pointer;
-}
-.man_accessory .man_image:hover .man_button {
-  display: block;
-}
-.man_accessory .man_star {
-  width: 50%;
-  margin-top: 20px;
-  display: inline-block;
-}
-.man_accessory .man_star span {
-  display: inline-block;
-  background-image: url(../img/star2.svg);
-  background-repeat: no-repeat;
-  width: 16px;
-  height: 15px;
-}
-.man_accessory .man_star .active_star {
-  background-image: url(../img/star.svg);
-  background-repeat: no-repeat;
-  width: 16px;
-  height: 15px;
-}
-.man_accessory .man_like {
-  width: 50%;
-  margin-top: 20px;
-  display: inline-block;
-  float: right;
-}
-.man_accessory .man_like button {
-  background-color: #ffffff;
-  border: none;
-  display: inline-block;
-  padding-left: 5px;
-  padding-right: 0;
-  float: right;
-}
-.man_accessory .man_like button img {
-  width: 16px;
-  height: 17px;
-}
-.man_accessory .man_like p {
-  display: inline-block;
-  float: right;
-}
-.man_accessory .man_text {
-  margin-top: 10px;
-}
-.man_accessory .man_price {
-  position: relative;
-  width: 100%;
-  margin-top: 10px;
-  display: inline-block;
-}
-.man_accessory .man_price p {
-  font-family: 'Lato', sans-serif;
-  font-weight: 700;
-  display: inline-block;
-}
-.man_accessory_btn {
-  width: 180px;
-  border: 1px solid #000000;
-  display: block;
-  margin: 40px auto 0 auto;
-  color: #000000;
-}
-.man_accessory_btn:hover {
-  color: #000000;
-}
 /* BLOCK_SHARE SECTION */
 .block_share {
   position: relative;
@@ -963,43 +716,44 @@ footer .copy a:hover {
 .block_share_btn:hover {
   color: #000000;
 }
-/* WOMAN PAGE */
-/* woman_clothes section */
-.woman_clothes {
+/* BLOCK_THINGS SECTION */
+.block_things {
   position: relative;
   width: 100%;
-  margin-top: 105px;
-  padding: 0 40px;
   overflow: hidden;
+  padding: 0 40px;
+  margin-top: 85px;
 }
-.woman_clothes img {
+.block_things_image {
+  position: relative;
+  width: 100%;
+  margin-top: 20px;
+  color: #000000;
+}
+.block_things_image img {
   width: 100%;
 }
-.woman_clothes_text {
+.block_things_image .block_things_text {
   position: absolute;
   width: 100%;
   top: 45%;
   left: 0;
   text-align: center;
-  color: #000000;
 }
-.woman_clothes_text p {
+.block_things_image .block_things_text p {
+  color: #000000;
   font-size: 24px;
   font-family: 'Lato', sans-serif;
   font-weight: 700;
 }
-.woman_clothes_image {
-  position: relative;
-  width: 100%;
-}
-.woman_clothes_image:hover .man_clothes_text {
+.block_things_image:hover .block_things_text {
   display: none;
 }
-.woman_clothes_image:hover .hover_btn {
+.block_things_image:hover .hover_btn {
   display: flex;
   background-color: rgba(0, 0, 0, 0.35);
 }
-.woman_clothes .hover_btn {
+.block_things .hover_btn {
   position: absolute;
   justify-content: center;
   align-items: center;
@@ -1014,15 +768,144 @@ footer .copy a:hover {
   background-color: rgba(0, 0, 0, 0);
   transition: all 0.2s;
 }
-.woman_clothes .hover_btn .btn {
+.block_things .hover_btn .btn {
   width: 180px;
   background-color: #ffffff;
   color: #000000;
   clear: both;
 }
-.woman_clothes .hover_btn .btn:hover {
+.block_things .hover_btn .btn:hover {
   color: #000000;
 }
+.block_things .float {
+  float: right;
+}
+/* MAN PAGE */
+/* Man_accessory section */
+.man_accessory {
+  position: relative;
+  width: 100%;
+  margin-top: 140px;
+  padding: 0 40px;
+  overflow: hidden;
+}
+.man_accessory h2 {
+  font-size: 30px;
+  font-family: 'Lato', sans-serif;
+  font-weight: 700;
+  text-indent: 10px;
+}
+.man_accessory .man_image {
+  position: relative;
+  width: 100%;
+  margin-top: 40px;
+}
+.man_accessory .man_image img {
+  width: 100%;
+}
+.man_accessory .man_image .man_info_new {
+  position: absolute;
+  width: 95px;
+  height: 25px;
+  line-height: 22px;
+  left: 10px;
+  top: 10px;
+  border: 1px solid #000000;
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+}
+.man_accessory .man_image .man_info_new p {
+  font-size: 14px;
+}
+.man_accessory .man_image .man_button {
+  display: none;
+  position: absolute;
+  width: 35px;
+  height: 35px;
+  left: 10px;
+  bottom: 10px;
+  background-color: #ffffff;
+  border: none;
+  padding: 0;
+}
+.man_accessory .man_image .man_button img {
+  width: 20px;
+  height: 20px;
+}
+.man_accessory .man_image .button1 {
+  bottom: 55px;
+}
+.man_accessory .man_image:hover {
+  cursor: pointer;
+}
+.man_accessory .man_image:hover .man_button {
+  display: block;
+}
+.man_accessory .man_star {
+  width: 50%;
+  margin-top: 20px;
+  display: inline-block;
+}
+.man_accessory .man_star span {
+  display: inline-block;
+  background-image: url(../img/star2.svg);
+  background-repeat: no-repeat;
+  width: 16px;
+  height: 15px;
+}
+.man_accessory .man_star .active_star {
+  background-image: url(../img/star.svg);
+  background-repeat: no-repeat;
+  width: 16px;
+  height: 15px;
+}
+.man_accessory .man_like {
+  width: 50%;
+  margin-top: 20px;
+  display: inline-block;
+  float: right;
+}
+.man_accessory .man_like button {
+  background-color: #ffffff;
+  border: none;
+  display: inline-block;
+  padding-left: 5px;
+  padding-right: 0;
+  float: right;
+}
+.man_accessory .man_like button img {
+  width: 16px;
+  height: 17px;
+}
+.man_accessory .man_like p {
+  display: inline-block;
+  float: right;
+}
+.man_accessory .man_text {
+  margin-top: 10px;
+}
+.man_accessory .man_price {
+  position: relative;
+  width: 100%;
+  margin-top: 10px;
+  display: inline-block;
+}
+.man_accessory .man_price p {
+  font-family: 'Lato', sans-serif;
+  font-weight: 700;
+  display: inline-block;
+}
+.man_accessory_btn {
+  width: 180px;
+  border: 1px solid #000000;
+  display: block;
+  margin: 40px auto 0 auto;
+  color: #000000;
+}
+.man_accessory_btn:hover {
+  color: #000000;
+}
+/* WOMAN PAGE */
 /* Woman_accessory section */
 .woman_accessory {
   position: relative;
