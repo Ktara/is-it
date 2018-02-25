@@ -58,6 +58,10 @@
 	font-family: 'Lato', sans-serif;
 	font-weight: 700;
 }
+.opn-light {
+	font-family: 'Lato', sans-serif;
+	font-weight: 300;
+}
 
 /* Base colors */
 @main-black: #000000;
@@ -506,11 +510,17 @@ a:focus {
 	position: relative;
 	width: 100%;
 	margin-top: 140px;
-	padding: 0 40px;	
+	padding: 0 40px;
+	h3 {
+		margin-bottom: 40px;
+	}
+	.row {
+		margin-bottom: 20px;
+	}
 	&_image {
 		position: relative;
 		width: 100%;
-		margin-top: 40px;
+		// margin-top: 40px;
 		img {
 			width: 100%;
 		}
@@ -1109,5 +1119,93 @@ footer {
 	color: @main-black;		
 	&:hover {
 		color: @main-black;
+	}
+}
+
+
+
+
+
+
+
+/* CONTACTS PAGE */
+.map_contacts {
+	position: relative;
+	width: 100%;
+	height: 500px;
+}
+
+
+
+
+/* Contacts_tel section*/
+.contacts_tel {
+	position: relative;
+	width: 100%;
+	margin-top: 40px;
+	padding: 0 40px;
+	h3 {
+		font-size: 24px;
+		.opn-bold;
+		margin-bottom: 20px;
+	}
+	p {
+		.opn-light;
+	}	
+}
+
+
+
+/* Shops section */
+.shops {
+	position: relative;
+	width: 100%;
+	margin-top: 140px;
+	padding: 0 40px;
+	overflow: hidden;
+	h3 {
+		font-size: 24px;
+		.opn-bold;
+	}
+	img {
+		width: 100%;
+		margin-top: 40px;
+	}
+	.shops_text {
+		margin-top: 20px;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* THANKS PAGE */
+.thanks {
+	position: relative;
+	width: 100%;
+	min-height: 36vh;
+	margin-top: 65px;
+	padding: 0 40px;
+	overflow: hidden;
+	.section_header {
+		text-align: left;
+		margin-top: 40px;
+	}
+	a {
+		display: inline-block;
+		color: @main-black;
+		text-decoration: underline;
+		line-height: 20px;
+		margin-top: 60px;
 	}
 }

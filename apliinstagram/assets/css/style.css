@@ -55,6 +55,10 @@
   font-family: 'Lato', sans-serif;
   font-weight: 700;
 }
+.opn-light {
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+}
 /* Base colors */
 /* Base setting */
 body {
@@ -475,10 +479,15 @@ a:focus {
   margin-top: 140px;
   padding: 0 40px;
 }
+.blog h3 {
+  margin-bottom: 40px;
+}
+.blog .row {
+  margin-bottom: 20px;
+}
 .blog_image {
   position: relative;
   width: 100%;
-  margin-top: 40px;
 }
 .blog_image img {
   width: 100%;
@@ -1020,4 +1029,67 @@ footer .copy a:hover {
 }
 .woman_accessory_btn:hover {
   color: #000000;
+}
+/* CONTACTS PAGE */
+.map_contacts {
+  position: relative;
+  width: 100%;
+  height: 500px;
+}
+/* Contacts_tel section*/
+.contacts_tel {
+  position: relative;
+  width: 100%;
+  margin-top: 40px;
+  padding: 0 40px;
+}
+.contacts_tel h3 {
+  font-size: 24px;
+  font-family: 'Lato', sans-serif;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+.contacts_tel p {
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+}
+/* Shops section */
+.shops {
+  position: relative;
+  width: 100%;
+  margin-top: 140px;
+  padding: 0 40px;
+  overflow: hidden;
+}
+.shops h3 {
+  font-size: 24px;
+  font-family: 'Lato', sans-serif;
+  font-weight: 700;
+}
+.shops img {
+  width: 100%;
+  margin-top: 40px;
+}
+.shops .shops_text {
+  margin-top: 20px;
+}
+/* THANKS PAGE */
+.thanks {
+  position: relative;
+  width: 100%;
+  min-height: 36vh;
+  margin-top: 65px;
+  padding: 0 40px;
+  overflow: hidden;
+}
+.thanks .section_header {
+  text-align: left;
+  margin-top: 40px;
+}
+.thanks a {
+  display: inline-block;
+  color: #000000;
+  text-decoration: underline;
+  line-height: 20px;
+  margin-top: 60px;
 }
