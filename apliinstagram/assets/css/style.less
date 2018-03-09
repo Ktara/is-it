@@ -162,8 +162,9 @@ a:focus {
 		width: 16px;
 		height: 20px;
 		display: inline-block;
-	}
+	}	
 }
+
 
 
 
@@ -565,6 +566,138 @@ a:focus {
 		margin: 60px auto 0 auto;
 	}
 }
+
+
+
+
+
+
+
+
+/* BASKET WINDOW */
+.basket_window {
+	position: fixed;
+	width: 420px;
+	height: 100vh;
+	top: 0;
+	right: 0;
+	background-color: @white;
+	z-index:1000;
+	&_header {
+		font-size: 24px;
+		.opn-bold;
+		margin-top: 60px;
+		text-align: center;
+	}
+	&_bag {
+		width: 50px;
+		height: 50px;
+		display: block;
+		margin: 20px auto;
+	}
+	&_block {
+		margin-top: 30px;
+		position: relative;
+		width: 100%;
+		overflow: hidden;
+	}
+	&_product {
+		width: 100%;		
+	}
+	&_price {
+		margin-top: 10px;
+	}
+	&_color_block {
+		margin-top: 20px;
+		.color {
+			width: 13px;
+			height: 13px;
+			float: left;
+			margin-right: 10px;
+		}
+	}
+	&_size {
+		margin-top: 10px;
+	}
+	&_number {
+		margin-top: 10px;
+	}
+	&_back {
+		color: @grey;
+		text-decoration: underline;
+		display: block;
+		margin-top: 20px;
+		&:hover {
+			color: @grey;
+		}
+	}
+	&_result {
+		margin-top: 55px;
+	}
+	&_btn {
+		width: 100%;
+		height: 50px;
+		line-height: 48px;
+		text-align: center;
+		background-color: @main-black;
+		color: @white;
+		cursor: pointer;
+		display: block;
+		margin-top: 60px;
+		&:hover {
+			color: @white;
+			text-decoration: none;
+		}
+	}
+	&_block_close {
+		position: absolute;
+		width: 13px;
+		height: 13px;
+		top: 0;
+		right: 5px;
+		cursor: pointer;
+		&:before, &:after {
+			content: '';
+			width: 1px;
+			height: 13px;
+			position: absolute;
+			display: block;
+			border: 1px solid @main-black;			
+		}
+		&:before {
+			transform: rotate(45deg);
+		}
+		&:after {
+			transform: rotate(-45deg);
+		}
+	}
+	&_close {
+		position: absolute;
+		width: 25px;
+		height: 25px;
+		top: 25px;
+		right: 25px;
+		cursor: pointer;
+		&:before, &:after {
+			content: '';
+			width: 1px;
+			height: 25px;
+			position: absolute;
+			display: block;
+			border: 1px solid @main-black;			
+		}
+		&:before {
+			transform: rotate(45deg);
+		}
+		&:after {
+			transform: rotate(-45deg);
+		}
+	}
+	.fix {
+		padding-left: 0;
+	}
+}
+
 
 
 

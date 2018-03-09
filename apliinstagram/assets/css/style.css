@@ -531,6 +531,132 @@ a:focus {
   display: block;
   margin: 60px auto 0 auto;
 }
+/* BASKET WINDOW */
+.basket_window {
+  position: fixed;
+  width: 420px;
+  height: 100vh;
+  top: 0;
+  right: 0;
+  background-color: #ffffff;
+  z-index: 1000;
+}
+.basket_window_header {
+  font-size: 24px;
+  font-family: 'Lato', sans-serif;
+  font-weight: 700;
+  margin-top: 60px;
+  text-align: center;
+}
+.basket_window_bag {
+  width: 50px;
+  height: 50px;
+  display: block;
+  margin: 20px auto;
+}
+.basket_window_block {
+  margin-top: 30px;
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+.basket_window_product {
+  width: 100%;
+}
+.basket_window_price {
+  margin-top: 10px;
+}
+.basket_window_color_block {
+  margin-top: 20px;
+}
+.basket_window_color_block .color {
+  width: 13px;
+  height: 13px;
+  float: left;
+  margin-right: 10px;
+}
+.basket_window_size {
+  margin-top: 10px;
+}
+.basket_window_number {
+  margin-top: 10px;
+}
+.basket_window_back {
+  color: #7f7f7f;
+  text-decoration: underline;
+  display: block;
+  margin-top: 20px;
+}
+.basket_window_back:hover {
+  color: #7f7f7f;
+}
+.basket_window_result {
+  margin-top: 55px;
+}
+.basket_window_btn {
+  width: 100%;
+  height: 50px;
+  line-height: 48px;
+  text-align: center;
+  background-color: #000000;
+  color: #ffffff;
+  cursor: pointer;
+  display: block;
+  margin-top: 60px;
+}
+.basket_window_btn:hover {
+  color: #ffffff;
+  text-decoration: none;
+}
+.basket_window_block_close {
+  position: absolute;
+  width: 13px;
+  height: 13px;
+  top: 0;
+  right: 5px;
+  cursor: pointer;
+}
+.basket_window_block_close:before,
+.basket_window_block_close:after {
+  content: '';
+  width: 1px;
+  height: 13px;
+  position: absolute;
+  display: block;
+  border: 1px solid #000000;
+}
+.basket_window_block_close:before {
+  transform: rotate(45deg);
+}
+.basket_window_block_close:after {
+  transform: rotate(-45deg);
+}
+.basket_window_close {
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  top: 25px;
+  right: 25px;
+  cursor: pointer;
+}
+.basket_window_close:before,
+.basket_window_close:after {
+  content: '';
+  width: 1px;
+  height: 25px;
+  position: absolute;
+  display: block;
+  border: 1px solid #000000;
+}
+.basket_window_close:before {
+  transform: rotate(45deg);
+}
+.basket_window_close:after {
+  transform: rotate(-45deg);
+}
+.basket_window .fix {
+  padding-left: 0;
+}
 /* Footer */
 footer {
   position: relative;
