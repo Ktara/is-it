@@ -121,6 +121,7 @@ a:focus {
   display: inline-flex;
   justify-content: space-between;
   margin: 0;
+  padding-right: 20px;
 }
 .nav_wrapper .nav_header_menu .active_page {
   opacity: 1;
@@ -1348,6 +1349,13 @@ footer .copy a:hover {
   overflow: hidden;
   padding: 0 40px;
 }
+.about_wrapper {
+  position: fixed;
+  left: 60px;
+  top: 105px;
+  z-index: 10;
+  width: 15%;
+}
 .about_wrapper li {
   margin-bottom: 20px;
 }
@@ -1355,6 +1363,10 @@ footer .copy a:hover {
   opacity: 0.5;
   color: #000000;
   text-decoration: none;
+  transition: opacity 0.6s;
+}
+.about_wrapper li a:hover {
+  opacity: 1;
 }
 .about_image {
   position: relative;
@@ -1533,15 +1545,24 @@ footer .copy a:hover {
   margin-top: 105px;
   overflow: hidden;
 }
+.rules_wrapper {
+  position: fixed;
+  left: 60px;
+  top: 105px;
+  z-index: 10;
+  width: 15%;
+}
 .rules_wrapper li {
   margin-bottom: 20px;
 }
 .rules_wrapper li a {
   color: #000000;
   opacity: 0.5;
+  transition: opacity 0.6s;
 }
 .rules_wrapper li a:hover {
   text-decoration: none;
+  opacity: 1;
 }
 .rules_text h4 {
   font-size: 24px;
@@ -1931,14 +1952,20 @@ footer .copy a:hover {
 }
 .product .product_haed {
   margin-top: 60px;
+  margin-bottom: 20px;
   font-family: 'Lato', sans-serif;
   font-weight: 700;
   position: relative;
+}
+.product .product_header_arrow {
+  display: inline-block;
+  cursor: pointer;
 }
 .product .product_header_arrow:after {
   content: '';
   display: block;
   position: absolute;
+  transition: transform 0.6s;
   width: 20px;
   height: 10px;
   bottom: 3px;
@@ -1958,6 +1985,14 @@ footer .copy a:hover {
 }
 .product .review_slider_viewer {
   overflow: hidden;
+  width: 100%;
+  display: block;
+  position: relative;
+}
+.product .review_slide {
+  display: inline-block;
+  overflow: hidden;
+  padding-bottom: 35px;
 }
 .product .review_header {
   font-size: 24px;
@@ -2180,6 +2215,13 @@ footer .copy a:hover {
   color: #000000;
 }
 /* LISTING PAGE */
+.listing_page_filter_wrapper {
+  height: auto;
+}
+.listing_page_form_text_wrapper {
+  height: 0;
+  overflow: hidden;
+}
 .listing_page_woman {
   position: relative;
   width: 100%;
@@ -2193,9 +2235,10 @@ footer .copy a:hover {
   font-weight: 700;
 }
 .listing_page_woman_sub_header {
+  cursor: pointer;
   position: relative;
   margin-top: 40px;
-  display: inline-block;
+  display: block;
 }
 .listing_page_woman_sub_header:after {
   content: '';
@@ -2204,29 +2247,35 @@ footer .copy a:hover {
   width: 20px;
   height: 10px;
   bottom: 3px;
-  right: -30px;
+  right: 0;
   cursor: pointer;
+  transition: transform 0.3s;
   background-image: url(../img/rectangle-3-copy-2.svg);
   background-repeat: no-repeat;
 }
 .listing_page_woman_line {
-  border-bottom: 1px solid #7f7f7f;
+  border-top: 2px solid #7f7f7f;
   margin-top: 10px;
+  height: 0;
+  overflow: hidden;
 }
 .listing_page_woman_form label {
   display: block;
-  margin-top: 20px;
+  line-height: 40px;
+  overflow: hidden;
 }
 .listing_page_woman_form label input {
-  float: left;
   margin-right: 10px;
 }
 .listing_page_woman_form label p {
   color: #7f7f7f;
+  display: inline-block;
 }
 .listing_page_woman_form_text {
+  cursor: pointer;
   position: relative;
   margin-top: 20px;
+  margin-bottom: 10px;
   display: inline-block;
 }
 .listing_page_woman_form_text:after {
@@ -2238,6 +2287,7 @@ footer .copy a:hover {
   bottom: 3px;
   right: -30px;
   cursor: pointer;
+  transition: transform 0.3s;
   background-image: url(../img/rectangle-3-copy-2.svg);
   background-repeat: no-repeat;
 }
@@ -2245,6 +2295,7 @@ footer .copy a:hover {
   padding-left: 0;
 }
 .listing_page_woman .active_arrow:after {
+  transition: transform 0.6s;
   transform: rotate(180deg);
 }
 .listing_page_woman .listing_page_sorting {
@@ -2301,6 +2352,11 @@ footer .copy a:hover {
 }
 .listing_page_woman .button1 {
   bottom: 55px;
+  background-color: white;
+  background-image: url(../img/heartBlack.svg);
+  background-repeat: no-repeat;
+  background-size: 70%;
+  background-position: center;
 }
 .listing_page_woman .button1:hover {
   background-color: #000000;
@@ -2308,6 +2364,13 @@ footer .copy a:hover {
   background-repeat: no-repeat;
   width: 35px;
   height: 35px;
+}
+.listing_page_woman .button2 {
+  background-color: white;
+  background-image: url(../img/shopping-cart-black.svg);
+  background-repeat: no-repeat;
+  background-size: 70%;
+  background-position: center;
 }
 .listing_page_woman .button2:hover {
   background-color: #000000;
@@ -2383,6 +2446,64 @@ footer .copy a:hover {
   border: 1px solid #000000;
   cursor: pointer;
 }
+.product_block {
+  text-decoration: none;
+  color: black;
+}
+.product_block:hover {
+  color: black;
+  text-decoration: none;
+}
 .active_about {
   opacity: 1;
+}
+.filter_width_fix {
+  max-width: 320px;
+}
+.comment_next_arrow {
+  cursor: pointer;
+  position: absolute;
+  bottom: 0;
+  right: 45%;
+  background-image: url("../img/right_arrow.svg");
+  width: 10px;
+  height: 18px;
+}
+.comment_prev_arrow {
+  cursor: pointer;
+  background-image: url("../img/left_arrow.svg");
+  width: 10px;
+  height: 18px;
+  position: absolute;
+  bottom: 0;
+  left: 45%;
+}
+.review_slider_viewer .slick-dots li {
+  display: none;
+}
+.review_slider_viewer .slick-dots {
+  text-align: center;
+}
+.review_slider_viewer .slick-dots .slick-active {
+  display: inline-block;
+}
+.product_text_wrapper {
+  height: auto;
+  padding-bottom: 25px;
+}
+.product_text_viewer {
+  overflow: hidden;
+  height: 0;
+  border-bottom: 2px solid grey;
+}
+.product_text_description {
+  padding-bottom: 25px;
+  border-bottom: 2px solid grey;
+}
+.product .active_arrow {
+  transition: transform 0.6s;
+}
+.product .active_arrow:after {
+  transition: transform 0.6s;
+  transform: rotate(180deg);
 }

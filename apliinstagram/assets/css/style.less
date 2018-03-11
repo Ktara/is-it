@@ -127,6 +127,7 @@ a:focus {
 		display: inline-flex;
 		justify-content: space-between;
 		margin: 0;
+		padding-right: 20px;
 		.active_page {
 			opacity: 1;
 		}
@@ -1497,12 +1498,21 @@ footer {
 	overflow: hidden;
 	padding: 0 40px;
 	&_wrapper {
+		position: fixed;
+		left: 60px;
+		top: 105px;
+		z-index: 10;
+		width: 15%;
 		li {
 			margin-bottom: 20px;			
 			a {
 				opacity: 0.5;
 				color: @main-black;
 				text-decoration: none;
+				transition: opacity 0.6s;
+			}
+			a:hover {
+				opacity: 1;
 			}
 		}
 	}
@@ -1717,14 +1727,21 @@ footer {
 	margin-top: 105px;
 	overflow: hidden;
 	&_wrapper {
+		position: fixed;
+		left: 60px;
+		top: 105px;
+		z-index: 10;
+		width:15%;
 		li {
 			margin-bottom: 20px;
 			a {
 				color: @main-black;
 				opacity: 0.5;
+				transition: opacity 0.6s;
 			}
 			a:hover {
 				text-decoration: none;
+				opacity: 1;
 			}
 		}
 	}
@@ -2146,13 +2163,19 @@ footer {
 	}
 	.product_haed {
 		margin-top: 60px;
+		margin-bottom: 20px;
 		.opn-bold;
 		position: relative;		
+	}
+	.product_header_arrow {
+		display: inline-block;
+		cursor: pointer;
 	}
 	.product_header_arrow:after {
 		content: '';
 		display: block;
 		position: absolute;
+		transition: transform 0.6s;
 		width: 20px;
 		height: 10px;
 		bottom: 3px;
@@ -2172,6 +2195,14 @@ footer {
 	}
 	.review_slider_viewer {
 		overflow: hidden;
+		width: 100%;
+		display: block;
+		position: relative;
+	}
+	.review_slide {
+		display: inline-block;
+		overflow: hidden;
+		padding-bottom: 35px;
 	}
 	.review_header {
 		font-size: 24px;
@@ -2411,6 +2442,13 @@ footer {
 
 
 /* LISTING PAGE */
+.listing_page_filter_wrapper {
+	height: auto;
+}
+.listing_page_form_text_wrapper {
+	height: 0;
+	overflow: hidden;
+}
 .listing_page_woman {
 	position: relative;
 	width: 100%;
@@ -2422,9 +2460,10 @@ footer {
 		.opn-bold;		
 	}
 	&_sub_header {
+		cursor: pointer;
 		position: relative;		
 		margin-top: 40px;
-		display: inline-block;
+		display: block;
 	}
 	&_sub_header:after {
 		content: '';
@@ -2433,31 +2472,38 @@ footer {
 		width: 20px;
 		height: 10px;
 		bottom: 3px;
-		right: -30px;
+		right: 0;
 		cursor: pointer;
+		transition: transform 0.3s;
 		background-image: url(../img/rectangle-3-copy-2.svg);
 		background-repeat: no-repeat;
 	}
 	&_line {
-		border-bottom: 1px solid @grey;
+		border-top: 2px solid @grey;
 		margin-top: 10px;
+		height:0;
+		overflow: hidden;
 	}
 	&_form {		
 		label {
 			display: block;
-			margin-top: 20px;
+			line-height: 40px;
+			overflow: hidden;
 			input {				
-				float: left;
+				//float: left;
 				margin-right: 10px;
 			}
 			p {
 				color: @grey;
+				display: inline-block;
 			}
 		}		
 	}
 	&_form_text {
+		cursor: pointer;
 		position: relative;
 		margin-top: 20px;
+		margin-bottom: 10px;
 		display: inline-block;
 	}
 	&_form_text:after {
@@ -2469,6 +2515,7 @@ footer {
 		bottom: 3px;
 		right: -30px;
 		cursor: pointer;
+		transition: transform 0.3s;
 		background-image: url(../img/rectangle-3-copy-2.svg);
 		background-repeat: no-repeat;
 	}
@@ -2476,6 +2523,7 @@ footer {
 		padding-left: 0;
 	}
 	.active_arrow:after {
+		transition: transform 0.6s;
 		transform: rotate(180deg);
 	}
 	.listing_page_sorting {
@@ -2534,6 +2582,11 @@ footer {
 	}
 	.button1 {
 		bottom: 55px;
+		background-color: white;
+		background-image: url(../img/heartBlack.svg);
+		background-repeat: no-repeat;
+		background-size: 70%;
+		background-position: center;
 		&:hover {
 			background-color: @main-black;
 			background-image: url(../img/heart.svg);
@@ -2543,6 +2596,11 @@ footer {
 		}
 	}
 	.button2 {
+		background-color: white;
+		background-image: url(../img/shopping-cart-black.svg);
+		background-repeat: no-repeat;
+		background-size: 70%;
+		background-position: center;
 		&:hover {
 			background-color: @main-black;
 			background-image: url(../img/shopping-cart.svg);
@@ -2620,8 +2678,66 @@ footer {
 
 
 
-
+.product_block {
+	text-decoration: none;
+	color: black;
+}
+.product_block:hover {
+	color:black;
+	text-decoration: none;
+}
 
 .active_about {
 	opacity: 1;
+}
+.filter_width_fix {
+	max-width: 320px;
+}
+.comment_next_arrow {
+	cursor: pointer;
+	position: absolute;
+	bottom: 0;
+	right: 45%;
+	background-image: url("../img/right_arrow.svg");
+	width: 10px;
+	height: 18px;
+}
+.comment_prev_arrow {
+	cursor: pointer;
+	background-image: url("../img/left_arrow.svg");
+	width: 10px;
+	height: 18px;
+	position: absolute;
+	bottom: 0;
+	left: 45%;
+}
+.review_slider_viewer .slick-dots li {
+	display: none;
+}
+.review_slider_viewer .slick-dots {
+	text-align: center;
+}
+.review_slider_viewer .slick-dots .slick-active {
+	display: inline-block;
+}
+.product_text_wrapper {
+	height: auto;
+	padding-bottom: 25px;
+
+}
+.product_text_viewer {
+	overflow: hidden;
+	height: 0;
+	border-bottom: 2px solid grey;
+}
+.product_text_description {
+	padding-bottom: 25px;
+	border-bottom: 2px solid grey;
+}
+.product .active_arrow {
+	transition: transform 0.6s;
+}
+.product .active_arrow:after {
+	transition: transform 0.6s;
+	transform: rotate(180deg);
 }
