@@ -126,7 +126,10 @@ a:focus {
 		width: 100%;
 		display: inline-flex;
 		justify-content: space-between;
-		margin: 0;		
+		margin: 0;
+		.active_page {
+			opacity: 1;
+		}
 		a {
 			color: @white;
 			display: inline-block;
@@ -493,7 +496,7 @@ a:focus {
 			bottom: 10px;
 			background-color: @white;
 			border: none;
-			padding: 0;
+			padding: 0;			
 			img {				
 				width: 20px;
 				height: 20px;
@@ -501,6 +504,24 @@ a:focus {
 		}
 		.button1 {
 			bottom: 55px;
+			&:hover {
+				background-color: @main-black;
+				background-image: url(../img/heart.svg);
+				background-repeat: no-repeat;
+				width: 35px;
+				height: 35px;				
+			}
+		}
+		.button2 {
+			&:hover {
+				background-color: @main-black;
+				background-image: url(../img/shopping-cart.svg);
+				background-repeat: no-repeat;
+				width: 35px;
+				height: 35px;
+				// left: 10px;
+				// bottom: 10px;
+			}
 		}
 	}	
 	&_image:hover {
@@ -908,6 +929,24 @@ footer {
 		}
 		.button1 {
 			bottom: 55px;
+			&:hover {
+				background-color: @main-black;
+				background-image: url(../img/heart.svg);
+				background-repeat: no-repeat;
+				width: 35px;
+				height: 35px;				
+			}
+		}
+		.button2 {
+			&:hover {
+				background-color: @main-black;
+				background-image: url(../img/shopping-cart.svg);
+				background-repeat: no-repeat;
+				width: 35px;
+				height: 35px;
+				// left: 10px;
+				// bottom: 10px;
+			}
 		}		
 	}
 	.block_share_image:hover {
@@ -2476,6 +2515,24 @@ footer {
 	}
 	.button1 {
 		bottom: 55px;
+		&:hover {
+			background-color: @main-black;
+			background-image: url(../img/heart.svg);
+			background-repeat: no-repeat;
+			width: 35px;
+			height: 35px;				
+		}
+	}
+	.button2 {
+		&:hover {
+			background-color: @main-black;
+			background-image: url(../img/shopping-cart.svg);
+			background-repeat: no-repeat;
+			width: 35px;
+			height: 35px;
+			// left: 10px;
+			// bottom: 10px;
+		}
 	}
 	.block_listing_page_stars {
 		width: 50%;
@@ -2542,4 +2599,12 @@ footer {
 		border: 1px solid @main-black;
 		cursor: pointer;
 	}
+}
+
+
+
+
+
+.active_about {
+	opacity: 1;
 }

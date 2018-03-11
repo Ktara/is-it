@@ -122,6 +122,9 @@ a:focus {
   justify-content: space-between;
   margin: 0;
 }
+.nav_wrapper .nav_header_menu .active_page {
+  opacity: 1;
+}
 .nav_wrapper .nav_header_menu a {
   color: #ffffff;
   display: inline-block;
@@ -468,6 +471,20 @@ a:focus {
 }
 .top_image .button1 {
   bottom: 55px;
+}
+.top_image .button1:hover {
+  background-color: #000000;
+  background-image: url(../img/heart.svg);
+  background-repeat: no-repeat;
+  width: 35px;
+  height: 35px;
+}
+.top_image .button2:hover {
+  background-color: #000000;
+  background-image: url(../img/shopping-cart.svg);
+  background-repeat: no-repeat;
+  width: 35px;
+  height: 35px;
 }
 .top_image:hover {
   cursor: pointer;
@@ -846,6 +863,20 @@ footer .copy a:hover {
 }
 .block_share .block_share_image .button1 {
   bottom: 55px;
+}
+.block_share .block_share_image .button1:hover {
+  background-color: #000000;
+  background-image: url(../img/heart.svg);
+  background-repeat: no-repeat;
+  width: 35px;
+  height: 35px;
+}
+.block_share .block_share_image .button2:hover {
+  background-color: #000000;
+  background-image: url(../img/shopping-cart.svg);
+  background-repeat: no-repeat;
+  width: 35px;
+  height: 35px;
 }
 .block_share .block_share_image:hover {
   cursor: pointer;
@@ -2254,6 +2285,20 @@ footer .copy a:hover {
 .listing_page_woman .button1 {
   bottom: 55px;
 }
+.listing_page_woman .button1:hover {
+  background-color: #000000;
+  background-image: url(../img/heart.svg);
+  background-repeat: no-repeat;
+  width: 35px;
+  height: 35px;
+}
+.listing_page_woman .button2:hover {
+  background-color: #000000;
+  background-image: url(../img/shopping-cart.svg);
+  background-repeat: no-repeat;
+  width: 35px;
+  height: 35px;
+}
 .listing_page_woman .block_listing_page_stars {
   width: 50%;
   margin-top: 20px;
@@ -2320,4 +2365,7 @@ footer .copy a:hover {
   text-align: center;
   border: 1px solid #000000;
   cursor: pointer;
+}
+.active_about {
+  opacity: 1;
 }
