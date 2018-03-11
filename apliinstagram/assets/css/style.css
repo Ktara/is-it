@@ -1232,10 +1232,11 @@ footer .copy a:hover {
   color: #000000;
 }
 /* CONTACTS PAGE */
-.map_contacts {
+#map_contacts {
   position: relative;
   width: 100%;
-  height: 500px;
+  height: 50vh;
+  margin-top: 10vh;
 }
 /* Contacts_tel section*/
 .contacts_tel {

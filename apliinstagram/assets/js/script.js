@@ -46,7 +46,10 @@ $('.basket_window_close').click(function(){
 });
 
 var $share = $('.share_img_animated');
-var sharePosition = $('.share')[0].offsetTop;
+var sharePosition;
+if($('.share')[0] != undefined) {
+    sharePosition = $('.share')[0].offsetTop;
+}
 var shareHeight = parseInt($('.share').css('height') , 10) ;
 var shareStatus = 0;
 
@@ -60,7 +63,7 @@ window.onscroll = function() {
         }
 
     }
-}
+};
 
 
 
