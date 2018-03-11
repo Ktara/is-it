@@ -1,3 +1,29 @@
+$(document).ready(function () {
+    $(".rules_wrapper").on("click", "a", function (event) {
+        event.preventDefault();
+        var id = $(this).attr('href')
+            , top = $(id).offset().top - 150;
+        $('body,html').animate({
+            scrollTop: top
+        }, 1200);
+    });
+    $(".about_wrapper").on("click", "a", function (event) {
+        event.preventDefault();
+        var id = $(this).attr('href')
+            , top = $(id).offset().top - 150;
+        $('body,html').animate({
+            scrollTop: top
+        }, 1200);
+    });
+    $('.product_block').click(function (event) {
+        if(event.target == $('.button1')[0] || event.target == $('.button2')[0]){
+            event.preventDefault();
+        }
+
+    });
+
+});
+
 $('.wish_slider_wrapper').slick({
 	infinite: true,
 	slidesToShow: 1,
@@ -71,7 +97,7 @@ function showList(){
         $(this).addClass('active_arrow').next().velocity({'height': height}, 600 );
         return;
 	}
-    $(this).removeClass('active_arrow').next().velocity({'height': height}, 300 );
+    $(this).removeClass('active_arrow').next().velocity({'height': height}, 450 );
 }
 function showNextList(){
     var height = 0;
@@ -84,7 +110,7 @@ function showNextList(){
         $(this).parent().parent().css('height', 'auto');
         return;
     }
-    $(this).removeClass('active_arrow').next().velocity({'height': height}, 300 );
+    $(this).removeClass('active_arrow').next().velocity({'height': height}, 450 );
     $(this).parent().parent().css('height', 'auto');
 }
 $('.listing_page_woman_sub_header').click(showList);

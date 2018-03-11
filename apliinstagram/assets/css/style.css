@@ -121,6 +121,7 @@ a:focus {
   display: inline-flex;
   justify-content: space-between;
   margin: 0;
+  padding-right: 20px;
 }
 .nav_wrapper .nav_header_menu .active_page {
   opacity: 1;
@@ -1348,6 +1349,13 @@ footer .copy a:hover {
   overflow: hidden;
   padding: 0 40px;
 }
+.about_wrapper {
+  position: fixed;
+  left: 60px;
+  top: 105px;
+  z-index: 10;
+  width: 15%;
+}
 .about_wrapper li {
   margin-bottom: 20px;
 }
@@ -1355,6 +1363,10 @@ footer .copy a:hover {
   opacity: 0.5;
   color: #000000;
   text-decoration: none;
+  transition: opacity 0.6s;
+}
+.about_wrapper li a:hover {
+  opacity: 1;
 }
 .about_image {
   position: relative;
@@ -1533,15 +1545,24 @@ footer .copy a:hover {
   margin-top: 105px;
   overflow: hidden;
 }
+.rules_wrapper {
+  position: fixed;
+  left: 60px;
+  top: 105px;
+  z-index: 10;
+  width: 15%;
+}
 .rules_wrapper li {
   margin-bottom: 20px;
 }
 .rules_wrapper li a {
   color: #000000;
   opacity: 0.5;
+  transition: opacity 0.6s;
 }
 .rules_wrapper li a:hover {
   text-decoration: none;
+  opacity: 1;
 }
 .rules_text h4 {
   font-size: 24px;
@@ -2413,6 +2434,17 @@ footer .copy a:hover {
   border: 1px solid #000000;
   cursor: pointer;
 }
+.product_block {
+  text-decoration: none;
+  color: black;
+}
+.product_block:hover {
+  color: black;
+  text-decoration: none;
+}
 .active_about {
   opacity: 1;
+}
+.filter_width_fix {
+  max-width: 320px;
 }
