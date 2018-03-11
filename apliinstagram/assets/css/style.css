@@ -2255,22 +2255,20 @@ footer .copy a:hover {
   margin-bottom: 20px;
   display: inline-block;
 }
-.listing_page_woman .listing_page_sorting_price {
+.listing_page_woman .listing_page_sorting_list {
   position: relative;
   margin-top: 40px;
   display: inline-block;
-}
-.listing_page_woman .listing_page_sorting_price:after {
-  content: '';
-  display: block;
-  position: absolute;
-  width: 20px;
-  height: 10px;
-  bottom: 3px;
-  right: -30px;
-  cursor: pointer;
+  border: none;
+  width: 200px;
+  height: 25px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
   background-image: url(../img/rectangle-3-copy-2.svg);
   background-repeat: no-repeat;
+  background-position: 100% center;
+  cursor: pointer;
 }
 .listing_page_woman .listing_page_image_wrapper .listing_page_img {
   position: relative;
