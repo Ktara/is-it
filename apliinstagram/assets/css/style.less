@@ -2163,13 +2163,19 @@ footer {
 	}
 	.product_haed {
 		margin-top: 60px;
+		margin-bottom: 20px;
 		.opn-bold;
 		position: relative;		
+	}
+	.product_header_arrow {
+		display: inline-block;
+		cursor: pointer;
 	}
 	.product_header_arrow:after {
 		content: '';
 		display: block;
 		position: absolute;
+		transition: transform 0.6s;
 		width: 20px;
 		height: 10px;
 		bottom: 3px;
@@ -2189,6 +2195,14 @@ footer {
 	}
 	.review_slider_viewer {
 		overflow: hidden;
+		width: 100%;
+		display: block;
+		position: relative;
+	}
+	.review_slide {
+		display: inline-block;
+		overflow: hidden;
+		padding-bottom: 35px;
 	}
 	.review_header {
 		font-size: 24px;
@@ -2680,4 +2694,52 @@ footer {
 }
 .filter_width_fix {
 	max-width: 320px;
+}
+.comment_next_arrow {
+	cursor: pointer;
+	position: absolute;
+	bottom: 0;
+	right: 45%;
+	background-image: url("../img/right_arrow.svg");
+	width: 10px;
+	height: 18px;
+}
+.comment_prev_arrow {
+	cursor: pointer;
+	background-image: url("../img/left_arrow.svg");
+	width: 10px;
+	height: 18px;
+	position: absolute;
+	bottom: 0;
+	left: 45%;
+}
+.review_slider_viewer .slick-dots li {
+	display: none;
+}
+.review_slider_viewer .slick-dots {
+	text-align: center;
+}
+.review_slider_viewer .slick-dots .slick-active {
+	display: inline-block;
+}
+.product_text_wrapper {
+	height: auto;
+	padding-bottom: 25px;
+
+}
+.product_text_viewer {
+	overflow: hidden;
+	height: 0;
+	border-bottom: 2px solid grey;
+}
+.product_text_description {
+	padding-bottom: 25px;
+	border-bottom: 2px solid grey;
+}
+.product .active_arrow {
+	transition: transform 0.6s;
+}
+.product .active_arrow:after {
+	transition: transform 0.6s;
+	transform: rotate(180deg);
 }

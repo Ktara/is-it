@@ -35,6 +35,22 @@ $('.wish_slider_wrapper').slick({
 	fade: true,
 	zIndex: 100
 });
+$('.review_slider_viewer').slick({
+    infinite: true,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    nextArrow: '<div class="comment_next_arrow"></div>',
+    prevArrow: '<div class="comment_prev_arrow"></div>',
+    dots: true,
+    arrows: true,
+    fade: true,
+    zIndex: 100,
+    customPaging : function(slider, i) {
+        var length = slider.$slides.length;
+        $('.reviews_count').text(length);
+        return i + 1 + '/' + length;
+        }
+});
 
 
 // $('.product_slide').click(function(){
@@ -114,6 +130,8 @@ function showNextList(){
     $(this).parent().parent().css('height', 'auto');
 }
 $('.listing_page_woman_sub_header').click(showList);
+$('.product_header_arrow').click(showList);
+
 $('.listing_page_woman_form_text').click(showNextList);
 
 
