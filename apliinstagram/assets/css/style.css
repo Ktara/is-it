@@ -2166,6 +2166,13 @@ footer .copy a:hover {
   color: #000000;
 }
 /* LISTING PAGE */
+.listing_page_filter_wrapper {
+  height: auto;
+}
+.listing_page_form_text_wrapper {
+  height: 0;
+  overflow: hidden;
+}
 .listing_page_woman {
   position: relative;
   width: 100%;
@@ -2179,9 +2186,10 @@ footer .copy a:hover {
   font-weight: 700;
 }
 .listing_page_woman_sub_header {
+  cursor: pointer;
   position: relative;
   margin-top: 40px;
-  display: inline-block;
+  display: block;
 }
 .listing_page_woman_sub_header:after {
   content: '';
@@ -2190,29 +2198,35 @@ footer .copy a:hover {
   width: 20px;
   height: 10px;
   bottom: 3px;
-  right: -30px;
+  right: 0;
   cursor: pointer;
+  transition: transform 0.3s;
   background-image: url(../img/rectangle-3-copy-2.svg);
   background-repeat: no-repeat;
 }
 .listing_page_woman_line {
-  border-bottom: 1px solid #7f7f7f;
+  border-top: 2px solid #7f7f7f;
   margin-top: 10px;
+  height: 0;
+  overflow: hidden;
 }
 .listing_page_woman_form label {
   display: block;
-  margin-top: 20px;
+  line-height: 40px;
+  overflow: hidden;
 }
 .listing_page_woman_form label input {
-  float: left;
   margin-right: 10px;
 }
 .listing_page_woman_form label p {
   color: #7f7f7f;
+  display: inline-block;
 }
 .listing_page_woman_form_text {
+  cursor: pointer;
   position: relative;
   margin-top: 20px;
+  margin-bottom: 10px;
   display: inline-block;
 }
 .listing_page_woman_form_text:after {
@@ -2224,6 +2238,7 @@ footer .copy a:hover {
   bottom: 3px;
   right: -30px;
   cursor: pointer;
+  transition: transform 0.3s;
   background-image: url(../img/rectangle-3-copy-2.svg);
   background-repeat: no-repeat;
 }
@@ -2231,6 +2246,7 @@ footer .copy a:hover {
   padding-left: 0;
 }
 .listing_page_woman .active_arrow:after {
+  transition: transform 0.6s;
   transform: rotate(180deg);
 }
 .listing_page_woman .listing_page_sorting {

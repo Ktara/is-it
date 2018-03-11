@@ -64,6 +64,31 @@ window.onscroll = function() {
 
     }
 };
+function showList(){
+	var height = 0;
+	if(!$(this).hasClass('active_arrow')) {
+        height = $(this).next().children().css('height');
+        $(this).addClass('active_arrow').next().velocity({'height': height}, 600 );
+        return;
+	}
+    $(this).removeClass('active_arrow').next().velocity({'height': height}, 300 );
+}
+function showNextList(){
+    var height = 0;
+    if(!$(this).hasClass('active_arrow')) {
+        height = $(this).next().children().css('height');
+        height = parseInt(height , 10) * $(this).next().children().length;
+        $(this).addClass('active_arrow').next().velocity({'height': height}, 600 );
+        height = $(this).parent().css('height');
+        // $(this).parent().parent().velocity({'height' : 'auto'}, 600);
+        $(this).parent().parent().css('height', 'auto');
+        return;
+    }
+    $(this).removeClass('active_arrow').next().velocity({'height': height}, 300 );
+    $(this).parent().parent().css('height', 'auto');
+}
+$('.listing_page_woman_sub_header').click(showList);
+$('.listing_page_woman_form_text').click(showNextList);
 
 
 
