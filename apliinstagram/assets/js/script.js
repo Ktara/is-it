@@ -53,10 +53,8 @@ var shareStatus = 0;
 window.onscroll = function() {
     var scrolled = window.pageYOffset || document.documentElement.scrollTop;
 
-
-
-    if(scrolled > sharePosition*0.9 && scrolled < sharePosition+shareHeight) {
-        shareStatus = -(scrolled-sharePosition)*0.6;
+    if(scrolled > sharePosition-shareHeight*0.3 && scrolled < sharePosition+shareHeight*0.3) {
+        shareStatus = -(scrolled-(sharePosition-shareHeight*0.3))*0.7;
         if(shareStatus < 0) {
             $share.css('top' , shareStatus);
         }
