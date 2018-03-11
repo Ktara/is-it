@@ -476,6 +476,11 @@ a:focus {
 }
 .top_image .button1 {
   bottom: 55px;
+  background-color: white;
+  background-image: url(../img/heartBlack.svg);
+  background-repeat: no-repeat;
+  background-size: 70%;
+  background-position: center;
 }
 .top_image .button1:hover {
   background-color: #000000;
@@ -483,6 +488,13 @@ a:focus {
   background-repeat: no-repeat;
   width: 35px;
   height: 35px;
+}
+.top_image .button2 {
+  background-color: white;
+  background-image: url(../img/shopping-cart-black.svg);
+  background-repeat: no-repeat;
+  background-size: 70%;
+  background-position: center;
 }
 .top_image .button2:hover {
   background-color: #000000;
@@ -868,6 +880,11 @@ footer .copy a:hover {
 }
 .block_share .block_share_image .button1 {
   bottom: 55px;
+  background-color: white;
+  background-image: url(../img/heartBlack.svg);
+  background-repeat: no-repeat;
+  background-size: 70%;
+  background-position: center;
 }
 .block_share .block_share_image .button1:hover {
   background-color: #000000;
@@ -875,6 +892,13 @@ footer .copy a:hover {
   background-repeat: no-repeat;
   width: 35px;
   height: 35px;
+}
+.block_share .block_share_image .button2 {
+  background-color: white;
+  background-image: url(../img/shopping-cart-black.svg);
+  background-repeat: no-repeat;
+  background-size: 70%;
+  background-position: center;
 }
 .block_share .block_share_image .button2:hover {
   background-color: #000000;
@@ -1076,6 +1100,11 @@ footer .copy a:hover {
 }
 .man_accessory .man_image .button1 {
   bottom: 55px;
+  background-color: white;
+  background-image: url(../img/heartBlack.svg);
+  background-repeat: no-repeat;
+  background-size: 70%;
+  background-position: center;
 }
 .man_accessory .man_image .button1:hover {
   background-color: #000000;
@@ -1083,6 +1112,13 @@ footer .copy a:hover {
   background-repeat: no-repeat;
   width: 35px;
   height: 35px;
+}
+.man_accessory .man_image .button2 {
+  background-color: white;
+  background-image: url(../img/shopping-cart-black.svg);
+  background-repeat: no-repeat;
+  background-size: 70%;
+  background-position: center;
 }
 .man_accessory .man_image .button2:hover {
   background-color: #000000;
@@ -1215,6 +1251,32 @@ footer .copy a:hover {
 }
 .woman_accessory .woman_image .button1 {
   bottom: 55px;
+  background-color: white;
+  background-image: url(../img/heartBlack.svg);
+  background-repeat: no-repeat;
+  background-size: 70%;
+  background-position: center;
+}
+.woman_accessory .woman_image .button1:hover {
+  background-color: #000000;
+  background-image: url(../img/heart.svg);
+  background-repeat: no-repeat;
+  width: 35px;
+  height: 35px;
+}
+.woman_accessory .woman_image .button2 {
+  background-color: white;
+  background-image: url(../img/shopping-cart-black.svg);
+  background-repeat: no-repeat;
+  background-size: 70%;
+  background-position: center;
+}
+.woman_accessory .woman_image .button2:hover {
+  background-color: #000000;
+  background-image: url(../img/shopping-cart.svg);
+  background-repeat: no-repeat;
+  width: 35px;
+  height: 35px;
 }
 .woman_accessory .woman_image:hover {
   cursor: pointer;
@@ -2143,6 +2205,32 @@ footer .copy a:hover {
 }
 .product_accessory .product_image .button1 {
   bottom: 55px;
+  background-color: white;
+  background-image: url(../img/heartBlack.svg);
+  background-repeat: no-repeat;
+  background-size: 70%;
+  background-position: center;
+}
+.product_accessory .product_image .button1:hover {
+  background-color: #000000;
+  background-image: url(../img/heart.svg);
+  background-repeat: no-repeat;
+  width: 35px;
+  height: 35px;
+}
+.product_accessory .product_image .button2 {
+  background-color: white;
+  background-image: url(../img/shopping-cart-black.svg);
+  background-repeat: no-repeat;
+  background-size: 70%;
+  background-position: center;
+}
+.product_accessory .product_image .button2:hover {
+  background-color: #000000;
+  background-image: url(../img/shopping-cart.svg);
+  background-repeat: no-repeat;
+  width: 35px;
+  height: 35px;
 }
 .product_accessory .product_image:hover {
   cursor: pointer;
