@@ -1076,6 +1076,20 @@ footer .copy a:hover {
 .man_accessory .man_image .button1 {
   bottom: 55px;
 }
+.man_accessory .man_image .button1:hover {
+  background-color: #000000;
+  background-image: url(../img/heart.svg);
+  background-repeat: no-repeat;
+  width: 35px;
+  height: 35px;
+}
+.man_accessory .man_image .button2:hover {
+  background-color: #000000;
+  background-image: url(../img/shopping-cart.svg);
+  background-repeat: no-repeat;
+  width: 35px;
+  height: 35px;
+}
 .man_accessory .man_image:hover {
   cursor: pointer;
 }
