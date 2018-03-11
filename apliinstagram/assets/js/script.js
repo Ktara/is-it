@@ -44,3 +44,28 @@ $('.nav_basket').click(function(){
 $('.basket_window_close').click(function(){
 	$('.basket_window').velocity({'right': '-420px'}, 300);
 });
+
+var $share = $('.share_img_animated');
+var sharePosition = $('.share')[0].offsetTop;
+var shareHeight = parseInt($('.share').css('height') , 10) ;
+var shareStatus = 0;
+
+window.onscroll = function() {
+    var scrolled = window.pageYOffset || document.documentElement.scrollTop;
+
+
+
+    if(scrolled > sharePosition*0.9 && scrolled < sharePosition+shareHeight) {
+        shareStatus = -(scrolled-sharePosition)*0.6;
+        if(shareStatus < 0) {
+            $share.css('top' , shareStatus);
+        }
+
+    }
+}
+
+
+
+
+
+

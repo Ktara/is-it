@@ -390,6 +390,10 @@ a:focus {
 }
 .share img {
   width: 100%;
+  position: absolute;
+}
+.share .share_img_animated {
+  top: 0;
 }
 .share_text {
   position: absolute;
