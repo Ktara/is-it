@@ -53,24 +53,11 @@ $('.review_slider_viewer').slick({
 });
 
 
-// $('.product_slide').click(function(){
-// 	var slide_img = $(this).clone().css('opacity', '0');	
-// 	$('.product_slide_big').html(slide_img);
-// 	slide_img.animate({
-// 		opacity: 1
-// 	}, 200);
-// });
-
-
-// $( document ).ready(function(){
-// 	var heightimg = $('.product_slide_big').css('height');
-// 	$('.product_slider').css('height', heightimg);
-// })
 
 
 
 $('.nav_header_menu li').mouseover(function(){
-	$('.nav_list').velocity({'height': '45vh'}, 300);
+	$('.nav_list').velocity({'height': '55vh'}, 300);
 });
 
 $('.nav_list').mouseleave(function(){
