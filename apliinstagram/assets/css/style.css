@@ -1936,6 +1936,9 @@ footer .copy a:hover {
 .basket .basket_btn:hover {
   text-decoration: none;
 }
+.basket .basket_btn1 {
+  display: none;
+}
 .basket .result {
   display: block;
   margin-top: 35px;
