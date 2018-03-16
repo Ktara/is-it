@@ -1924,10 +1924,17 @@ footer .copy a:hover {
 .basket .basket_btn {
   width: 100%;
   height: 40px;
+  line-height: 38px;
+  display: block;
+  text-align: center;
+  text-decoration: none;
   color: #ffffff;
   background-color: #000000;
   border: none;
   margin-top: 20px;
+}
+.basket .basket_btn:hover {
+  text-decoration: none;
 }
 .basket .result {
   display: block;
