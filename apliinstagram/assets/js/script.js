@@ -116,10 +116,10 @@ function showNextList(){
     $(this).removeClass('active_arrow').next().velocity({'height': height}, 450 );
     $(this).parent().parent().css('height', 'auto');
 }
-$('.listing_page_woman_sub_header').click(showList);
+$('.listing_page_sub_header').click(showList);
 $('.product_header_arrow').click(showList);
 
-$('.listing_page_woman_form_text').click(showNextList);
+$('.listing_page_form_text').click(showNextList);
 
 
 

@@ -2322,25 +2322,30 @@ footer .copy a:hover {
   height: 0;
   overflow: hidden;
 }
-.listing_page_woman {
+.listing_page {
   position: relative;
   width: 100%;
   margin-top: 105px;
-  padding: 0 40px;
+  padding: 0 40px 0 60px;
   overflow: hidden;
 }
-.listing_page_woman_header {
+.listing_page_main_header {
+  font-size: 30px;
+  font-family: 'Lato', sans-serif;
+  font-weight: 700;
+}
+.listing_page_header {
   font-size: 24px;
   font-family: 'Lato', sans-serif;
   font-weight: 700;
 }
-.listing_page_woman_sub_header {
+.listing_page_sub_header {
   cursor: pointer;
   position: relative;
-  margin-top: 40px;
+  margin-top: 20px;
   display: block;
 }
-.listing_page_woman_sub_header:after {
+.listing_page_sub_header:after {
   content: '';
   display: block;
   position: absolute;
@@ -2353,32 +2358,52 @@ footer .copy a:hover {
   background-image: url(../img/rectangle-3-copy-2.svg);
   background-repeat: no-repeat;
 }
-.listing_page_woman_line {
+.listing_page_line {
   border-top: 2px solid #7f7f7f;
   margin-top: 10px;
   height: 0;
   overflow: hidden;
 }
-.listing_page_woman_form label {
+.listing_page_line1 {
+  border-top: 0 solid #7f7f7f;
+  margin-top: 10px;
+  height: 0;
+  overflow: hidden;
+}
+.listing_page_form label {
   display: block;
   line-height: 40px;
   overflow: hidden;
 }
-.listing_page_woman_form label input {
+.listing_page_form label input {
   margin-right: 10px;
 }
-.listing_page_woman_form label p {
+.listing_page_form label p {
   color: #7f7f7f;
   display: inline-block;
 }
-.listing_page_woman_form_text {
+.listing_page_form_label {
+  display: block;
+  line-height: 40px;
+  overflow: hidden;
+  color: #000000;
+}
+.listing_page_form_label input {
+  margin-right: 0;
+}
+.listing_page_form_label_text {
+  color: #000000;
+  display: inline-block;
+  margin-right: 20px;
+}
+.listing_page_form_text {
   cursor: pointer;
   position: relative;
   margin-top: 20px;
   margin-bottom: 10px;
   display: inline-block;
 }
-.listing_page_woman_form_text:after {
+.listing_page_form_text:after {
   content: '';
   display: block;
   position: absolute;
@@ -2391,14 +2416,15 @@ footer .copy a:hover {
   background-image: url(../img/rectangle-3-copy-2.svg);
   background-repeat: no-repeat;
 }
-.listing_page_woman .fix {
+.listing_page .fix {
   padding-left: 0;
+  margin-top: 35px;
 }
-.listing_page_woman .active_arrow:after {
+.listing_page .active_arrow:after {
   transition: transform 0.6s;
   transform: rotate(180deg);
 }
-.listing_page_woman .listing_page_sorting {
+.listing_page .listing_page_sorting {
   font-family: 'Lato', sans-serif;
   font-weight: 700;
   margin-top: 40px;
@@ -2406,7 +2432,7 @@ footer .copy a:hover {
   margin-bottom: 20px;
   display: inline-block;
 }
-.listing_page_woman .listing_page_sorting_list {
+.listing_page .listing_page_sorting_list {
   position: relative;
   margin-top: 40px;
   display: inline-block;
@@ -2421,21 +2447,69 @@ footer .copy a:hover {
   background-position: 100% center;
   cursor: pointer;
 }
-.listing_page_woman .listing_page_image_wrapper .listing_page_img {
+.listing_page .listing_page_location {
+  display: inline-block;
+  margin-top: 40px;
+  float: right;
+}
+.listing_page .listing_page_location_marker {
+  display: inline-block;
+  width: 10px;
+  height: 15px;
+}
+.listing_page .listing_page_location_marker:hover {
+  text-decoration: none;
+}
+.listing_page .listing_page_location_text {
+  display: inline-block;
+  padding-left: 10px;
+}
+.listing_page .listing_page_image_wrapper .listing_page_img {
   position: relative;
   width: 100%;
   margin-top: 20px;
 }
-.listing_page_woman .listing_page_image_wrapper .listing_page_img img {
+.listing_page .listing_page_image_wrapper .listing_page_img img {
   width: 100%;
 }
-.listing_page_woman .listing_page_image_wrapper .listing_page_img:hover {
+.listing_page .listing_page_image_wrapper .listing_page_img:hover {
   cursor: pointer;
 }
-.listing_page_woman .listing_page_image_wrapper .listing_page_img:hover .listing_page_button {
+.listing_page .listing_page_image_wrapper .listing_page_img:hover .listing_page_button {
   display: block;
 }
-.listing_page_woman .listing_page_button {
+.listing_page .listing_page_info_wrapper {
+  position: absolute;
+  width: 95px;
+  height: auto;
+  left: 10px;
+  top: 0;
+  text-align: center;
+}
+.listing_page .listing_page_info_wrapper p {
+  font-size: 14px;
+}
+.listing_page .listing_page_info_new {
+  display: block;
+  width: 95px;
+  height: 25px;
+  line-height: 22px;
+  border: 1px solid #000000;
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  margin-top: 10px;
+}
+.listing_page .listing_page_info_share {
+  display: block;
+  width: 95px;
+  height: 25px;
+  line-height: 22px;
+  border: 1px solid #000000;
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  margin-top: 10px;
+}
+.listing_page .listing_page_button {
   display: none;
   position: absolute;
   width: 35px;
@@ -2446,11 +2520,11 @@ footer .copy a:hover {
   border: none;
   padding: 0;
 }
-.listing_page_woman .listing_page_button img {
+.listing_page .listing_page_button img {
   width: 20px;
   height: 20px;
 }
-.listing_page_woman .button1 {
+.listing_page .button1 {
   bottom: 55px;
   background-color: white;
   background-image: url(../img/heartBlack.svg);
@@ -2458,52 +2532,54 @@ footer .copy a:hover {
   background-size: 70%;
   background-position: center;
 }
-.listing_page_woman .button1:hover {
+.listing_page .button1:hover {
   background-color: #000000;
   background-image: url(../img/heart.svg);
   background-repeat: no-repeat;
   width: 35px;
   height: 35px;
 }
-.listing_page_woman .button2 {
+.listing_page .button2 {
   background-color: white;
   background-image: url(../img/shopping-cart-black.svg);
   background-repeat: no-repeat;
   background-size: 70%;
   background-position: center;
 }
-.listing_page_woman .button2:hover {
+.listing_page .button2:hover {
   background-color: #000000;
   background-image: url(../img/shopping-cart.svg);
   background-repeat: no-repeat;
   width: 35px;
   height: 35px;
 }
-.listing_page_woman .block_listing_page_stars {
+.listing_page .block_listing_page_stars {
   width: 50%;
   margin-top: 20px;
   display: inline-block;
+  padding-left: 10px;
 }
-.listing_page_woman .block_listing_page_stars span {
+.listing_page .block_listing_page_stars span {
   display: inline-block;
   background-image: url(../img/star2.svg);
   background-repeat: no-repeat;
   width: 16px;
   height: 15px;
 }
-.listing_page_woman .block_listing_page_stars .active_star {
+.listing_page .block_listing_page_stars .active_star {
   background-image: url(../img/star.svg);
   background-repeat: no-repeat;
   width: 16px;
   height: 15px;
 }
-.listing_page_woman .block_listing_page_like {
+.listing_page .block_listing_page_like {
   width: 50%;
   margin-top: 20px;
+  padding-right: 10px;
   display: inline-block;
   float: right;
 }
-.listing_page_woman .block_listing_page_like button {
+.listing_page .block_listing_page_like button {
   background-color: #ffffff;
   border: none;
   display: inline-block;
@@ -2511,29 +2587,31 @@ footer .copy a:hover {
   padding-right: 0;
   float: right;
 }
-.listing_page_woman .block_listing_page_like button img {
+.listing_page .block_listing_page_like button img {
   width: 16px;
   height: 17px;
 }
-.listing_page_woman .block_listing_page_like p {
+.listing_page .block_listing_page_like p {
   display: inline-block;
   float: right;
 }
-.listing_page_woman .block_listing_page_text {
+.listing_page .block_listing_page_text {
   margin-top: 10px;
+  padding-left: 10px;
 }
-.listing_page_woman .block_listing_page_price {
+.listing_page .block_listing_page_price {
   position: relative;
   width: 100%;
   margin-top: 10px;
+  padding-left: 10px;
   display: inline-block;
 }
-.listing_page_woman .block_listing_page_price p {
+.listing_page .block_listing_page_price p {
   font-family: 'Lato', sans-serif;
   font-weight: 700;
   display: inline-block;
 }
-.listing_page_woman .listing_page_image_wrapper_button {
+.listing_page .listing_page_image_wrapper_button {
   width: 180px;
   height: 50px;
   line-height: 48px;
@@ -2549,10 +2627,15 @@ footer .copy a:hover {
 .product_block {
   text-decoration: none;
   color: black;
+  display: block;
+  padding-bottom: 20px;
 }
 .product_block:hover {
-  color: black;
+  color: #000000;
   text-decoration: none;
+  -webkit-box-shadow: 0px 0px 20px 1px rgba(0, 0, 0, 0.65);
+  -moz-box-shadow: 0px 0px 20px 1px rgba(0, 0, 0, 0.65);
+  box-shadow: 0px 0px 15px 1px rgba(0, 0, 0, 0.65);
 }
 .active_about {
   opacity: 1;
