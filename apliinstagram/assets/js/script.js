@@ -35,6 +35,24 @@ $('.wish_slider_wrapper').slick({
 	fade: true,
 	zIndex: 100
 });
+
+
+
+$('.product_slider_wrapper').slick({
+	infinite: true,
+	slidesToShow: 1,
+	slidesToScroll: 1,
+	dots: true,
+	arrows: true,
+	nextArrow: '<div class="product_next_arrow"></div>',
+    prevArrow: '<div class="product_prev_arrow"></div>',
+	autoplay: true,
+	autoplaySpeed: 2500,
+	fade: true,
+	zIndex: 100
+});
+
+
 $('.review_slider_viewer').slick({
     infinite: true,
     slidesToShow: 1,

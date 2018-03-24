@@ -271,8 +271,16 @@
 
         <div class="col-md-5 product_float">
           <div class="product_name">
-            Сумка Michael Kors
+            Платье
           </div>
+          <div class="product_star">
+            <span class="active_star"></span>
+            <span class="active_star"></span>
+            <span class="active_star"></span>
+            <span></span>
+            <span></span>
+          </div>
+          <a class="reviews_link">Отзывы (<span class="reviews_count"></span>)</a>
           <div class="product_price">
             700 руб.
           </div>
@@ -282,7 +290,17 @@
               <option>Черный</option>
               <option>Белый</option>
               <option>Бежевый</option>
-            </select>            
+            </select>
+            <select size="1" name="size" class="size">
+              <option value="1" selected>Размер</option>
+              <option>XS</option>
+              <option>S</option>
+              <option>M</option>
+              <option>L</option>
+              <option>XL</option>
+              <option>XXL</option>
+              <option>XXXL</option>
+            </select>
             <select size="1" name="quantity" class="quantity">
               <option value="1" selected>Количество</option>
               <option>1</option>
@@ -292,16 +310,6 @@
               <option>10</option>
             </select>
           </form>
-          <div class="product_text">
-            Верх:&nbsp;натуральная&nbsp;кожа&nbsp;Saffiano
-            Подкладка:&nbsp;текстиль
-            1&nbsp;отделение
-            Застегивается&nbsp;на&nbsp;магнит
-            Внутренний&nbsp;карман&nbsp;на&nbsp;молнии
-            Сьемный&nbsp;плечевой&nbsp;ремень:&nbsp;50&nbsp;см
-            Высота&nbsp;ручек:&nbsp;11&nbsp;см
-            Размеры:&nbsp;30&nbsp;х&nbsp;21&nbsp;х&nbsp;11&nbsp;см
-          </div>
           <div href="" class="product_btn">Купить</div>
           <div class="product_wish">
             <img class="product_heart" src="assets/img/heartBlack.svg" alt="">
@@ -328,6 +336,7 @@
           </div>
         </div>
       </section>
+
 
 
 
@@ -480,7 +489,7 @@
               <div class="block_share_info_new">
                 <p>Новинка</p>
               </div>
-            </div>
+            </div>              
             <button class="block_share_button button1">
               
             </button>
@@ -672,7 +681,8 @@
 
 
 
-      <section class="product_review">
+
+           <section class="product_review">
         <h4 class="review_header">Отзывы (<span class="reviews_count"></span>)</h4>
         <div class="review_slider_viewer">
           <!--<div class="review_sliders_wrapper">-->
