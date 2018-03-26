@@ -100,6 +100,9 @@ ol, ul {
 	.opn-bold;
 	text-align: center;
 	margin: 0;
+	@media screen and (max-width: 768px) {
+		font-size: 24px;
+	}
 }
 a:focus {
 	text-decoration: none;	
@@ -117,7 +120,11 @@ a:focus {
 	overflow: hidden;
 	padding: 0 40px;
 	z-index: 1000;
-	opacity: 0.7;	
+	opacity: 0.7;
+	@media screen and (max-width: 768px) {
+		height: 60px;
+		line-height: 60px;
+	}	
 }
 .nav_wrapper {
 	position: relative;
@@ -128,6 +135,31 @@ a:focus {
 		justify-content: space-between;
 		margin: 0;
 		padding-right: 20px;
+		@media screen and (max-width: 768px) {
+			display: block;
+			position: relative;
+			width: 25px;
+			height: 1px;
+			background-color: @white;
+			margin-top: 29px;
+			&:after,
+			&:before {
+				content: "";
+				display: block;
+				position: absolute;
+				top: -7px;
+				right: 0;
+				width: 25px;
+				height: 1px;
+				background-color: @white;
+			}
+			&:after {
+				top: 7px;
+			}
+			li {
+				display: none;
+			}			
+		}
 		.active_page {
 			opacity: 1;
 		}
@@ -142,7 +174,7 @@ a:focus {
 			color: @white;
 			opacity: 1;
 		}
-	}
+	}	
 	.nav_header_icon {
 		width: 100%;
 		display: inline-flex;
@@ -175,7 +207,7 @@ a:focus {
 		width: 16px;
 		height: 20px;
 		display: inline-block;
-	}	
+	}
 }
 
 
@@ -253,6 +285,9 @@ a:focus {
 	width: 100%;
 	height: 100vh;
 	overflow: hidden;
+	@media screen and (max-width: 768px) {
+		display: none;
+	}
 	.fix {
 		padding: 0;
 	}
@@ -323,6 +358,69 @@ a:focus {
 
 
 
+.main_mob {
+	display: none;
+	@media screen and (max-width: 768px) {
+		position: relative;
+		width: 100%;
+		height: 100vh;
+		overflow: hidden;
+		display: block;
+		&_slide {
+			width: 100%;
+			display: inline-block;
+			img {
+				min-width: 100%;
+				min-height: 100vh;
+				width: auto;
+				height: auto;
+			}
+		}
+		&_text_wrapper {
+			position: absolute;
+			width: 100%;
+			top: 30%;
+			right: 0;
+			text-align: center;
+			p {
+				font-size: 24px;
+				.opn-bold;
+			}
+			.btn {
+				border: 1px solid @main-black;
+				background-color: @white;
+				color: @main-black;
+				margin-top: 40px;
+			}
+		}
+		.slick-dots {
+			position: absolute;
+			bottom: 0;
+			width: 100%;
+			text-align: center;
+			li {
+				position: relative;
+				z-index: 110;
+				width: 12px;
+				height: 12px;
+				border: 1px solid @main-black;
+				border-radius: 25px;
+				display: inline-block;
+				margin-right: 10px;
+				bottom: 20px;
+			}
+			.slick-active {
+				background-color: @main-black;
+			}
+			li button {
+				display: none;
+			}		
+		}
+	}
+}
+
+
+
 
 
 
@@ -333,7 +431,10 @@ a:focus {
 	margin-top: 140px;
 	padding: 0 40px;
 	overflow: hidden;
-	clear: both;	
+	clear: both;
+	@media screen and (max-width: 768px) {
+		display: none;
+	}
 	.section_header {
 		margin-bottom: 20px;
 	}	
@@ -411,6 +512,49 @@ a:focus {
 
 
 
+.new_mob {
+	display: none;
+	@media screen and (max-width: 768px) {
+		position: relative;
+		display: block;
+		width: 100%;
+		padding: 0 40px;
+		margin-top: 120px;
+		.section_header {
+			font-size: 24px;
+			margin-bottom: 20px;
+		}
+		&_link_block {
+			color: @main-black;
+			margin-top: 20px;
+			position: relative;
+			display: block;
+			&:hover {
+				text-decoration: underline;
+				color: @main-black;
+			}
+			img {
+				width: 100%;
+				height: 35vh;
+			}
+			.text_wrapper {
+				position: absolute;
+				display: inline-block;
+				width: 100%;
+				height: auto;
+				top: 50%;
+				right: 0;
+				text-align: center;
+				font-size: 24px;
+				.opn-bold;
+			}
+		}
+	}
+}
+
+
+
+
 
 
 
@@ -422,9 +566,16 @@ a:focus {
 	height: 70vh;
 	margin-top: 140px;
 	overflow: hidden;
+	@media screen and (max-width: 768px) {
+		margin-top: 120px;
+		height: 40vh;
+	}
 	img {
-		width: 100%;
+		width: 100%;		
 		position: absolute;
+		@media screen and (max-width: 768px) {
+			height: 40vh;
+		}
 	}
 	.share_img_animated {
 		top:0;
@@ -442,7 +593,7 @@ a:focus {
 			background-color: @white;
 			margin: 40px auto 0 auto;			
 		}
-	}
+	}	
 }
 
 
@@ -456,6 +607,9 @@ a:focus {
 	width: 100%;
 	margin-top: 140px;
 	padding: 0 40px;
+	@media screen and (max-width: 768px) {
+		margin-top: 120px;
+	}
 	&_block {
 		margin-top: 40px;
 	}
@@ -464,6 +618,9 @@ a:focus {
 		width: 100%;
 		img {
 			width: 100%;
+			@media screen and (max-width: 768px) {
+				height: 35vh;
+			}
 		}
 		.top_info_new {
 			position: absolute;
@@ -621,16 +778,23 @@ a:focus {
 	width: 100%;
 	margin-top: 140px;
 	padding: 0 40px;
-	h3 {
+	.section_header {
 		margin-bottom: 40px;
+		@media screen and (max-width: 768px) {
+			margin-bottom: 20px;
+		}
 	}
 	.row {
 		margin-bottom: 20px;
 	}
+	.blog_block  {
+		@media screen and (max-width: 768px) {
+			margin-top: 20px;
+		}
+	}
 	&_image {
 		position: relative;
-		width: 100%;
-		// margin-top: 40px;
+		width: 100%;		
 		img {
 			width: 100%;
 		}
@@ -661,9 +825,10 @@ a:focus {
 		a {				
 			color: @main-black;
 			opacity: 0.5;
+			text-decoration: underline;
 		}
 		a:hover {
-			text-decoration: none;
+			text-decoration: underline;
 		}
 	}
 	.btn {
@@ -820,10 +985,19 @@ footer {
 	height: auto;
 	margin-top: 140px;		
 	background-color: rgba(0, 0, 0, 0.75);
+	@media screen and (max-width: 768px) {
+		margin-top: 120px;
+	}
 	.row {
 		padding-top: 60px;
+		@media screen and (max-width: 768px) {
+			padding-top: 0;
+		}
 	}
 	.footer_list {
+		@media screen and (max-width: 768px) {
+			padding-top: 40px;
+		}
 		li {
 			margin-bottom: 20px;
 			a {
@@ -842,21 +1016,31 @@ footer {
 		width: 100%;
 		display: inline-flex;
 		justify-content: space-between;
+		@media screen and (max-width: 768px) {
+			margin-top: 40px;
+		}
 		img {
 			width: 45px;
 			height: 45px;
-			// margin-right: 15px;
 		}
 	}
 	p {
 		color: @white;
+	}
+	.social_text {
+		@media screen and (max-width: 768px) {
+			margin-top: 40px;
+		}
 	}
 	.copy {
 		color: @white;
 		overflow: hidden;
 		margin-top: 105px;
 		padding-bottom: 40px;
-		line-height: 20px;		
+		line-height: 20px;
+		@media screen and (max-width: 768px) {
+			margin-top: 65px;
+		}		
 		a {
 			text-decoration: underline;
 			cursor: pointer;
@@ -865,7 +1049,11 @@ footer {
 				color: @white;
 			}
 		}
-		
+		.fix {
+			@media screen and (max-width: 768px) {
+				padding-left: 0;
+			}
+		}
 	}
 }
 

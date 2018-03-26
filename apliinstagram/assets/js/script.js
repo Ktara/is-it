@@ -38,6 +38,21 @@ $('.wish_slider_wrapper').slick({
 
 
 
+
+$('.main_mob_slider_wrapper').slick({
+	infinite: true,
+	slidesToShow: 1,
+	slidesToScroll: 1,
+	dots: true,
+	arrows: false,
+	autoplay: true,
+	autoplaySpeed: 2500,
+	fade: true,
+	zIndex: 100
+});
+
+
+
 $('.product_slider_wrapper').slick({
 	infinite: true,
 	slidesToShow: 1,
