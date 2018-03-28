@@ -98,6 +98,12 @@ $('.nav_list').mouseleave(function(){
 });
 
 
+$('.nav_header_menu').click(function(){
+	$('.nav_list').velocity({'height': '100vh'}, 300);
+});
+
+
+
 $('.nav_basket').click(function(){
 	$('.basket_window').velocity({'right': 0}, 300);
 });

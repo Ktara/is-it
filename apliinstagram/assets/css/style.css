@@ -46,24 +46,42 @@
   font-weight: 400;
   font-style: normal;
 }
+@font-face {
+  font-family: 'Gill';
+  src: url('../fonts/GIL_____.TTF') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Gill';
+  src: url('../fonts/GILB____.TTF') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Gill';
+  src: url('../fonts/GillSansStd-Light.otf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
 /* Fonts files */
 .opn-reg {
-  font-family: 'Lato', sans-serif;
+  font-family: 'Gill', sans-serif;
   font-weight: 400;
 }
 .opn-bold {
-  font-family: 'Lato', sans-serif;
+  font-family: 'Gill', sans-serif;
   font-weight: 700;
 }
 .opn-light {
-  font-family: 'Lato', sans-serif;
+  font-family: 'Gill', sans-serif;
   font-weight: 300;
 }
 /* Base colors */
 /* Base setting */
 body {
   font-size: 16px;
-  font-family: 'Lato', sans-serif;
+  font-family: 'Gill', sans-serif;
   font-weight: 400;
   color: #000000;
 }
@@ -82,7 +100,7 @@ ul {
   border: 1px solid #ffffff;
   color: #ffffff;
   font-size: 16px;
-  font-family: 'Lato', sans-serif;
+  font-family: 'Gill', sans-serif;
   font-weight: 700;
   display: inline-block;
   text-align: center;
@@ -92,7 +110,7 @@ ul {
 }
 .section_header {
   font-size: 30px;
-  font-family: 'Lato', sans-serif;
+  font-family: 'Gill', sans-serif;
   font-weight: 700;
   text-align: center;
   margin: 0;
@@ -142,6 +160,8 @@ a:focus {
     height: 1px;
     background-color: #ffffff;
     margin-top: 29px;
+    cursor: pointer;
+    float: right;
   }
   .nav_wrapper .nav_header_menu:after,
   .nav_wrapper .nav_header_menu:before {
@@ -222,8 +242,24 @@ a:focus {
   color: #ffffff;
   z-index: 1000;
 }
+@media screen and (max-width: 768px) {
+  .nav_list {
+    top: 60px;
+  }
+}
 .nav_list .page {
   margin-top: 25px;
+}
+@media screen and (max-width: 768px) {
+  .nav_list .page {
+    height: 30px;
+    overflow: hidden;
+  }
+}
+@media screen and (max-width: 768px) {
+  .nav_list .page_header {
+    cursor: pointer;
+  }
 }
 .nav_list .page_line {
   border-bottom: 1px solid #7f7f7f;
@@ -331,7 +367,7 @@ a:focus {
   align-items: center;
   width: 100%;
   font-size: 24px;
-  font-family: 'Lato', sans-serif;
+  font-family: 'Gill', sans-serif;
   font-weight: 700;
   color: #ffffff;
   top: 35%;
@@ -376,7 +412,7 @@ a:focus {
   }
   .main_mob_text_wrapper p {
     font-size: 24px;
-    font-family: 'Lato', sans-serif;
+    font-family: 'Gill', sans-serif;
     font-weight: 700;
   }
   .main_mob_text_wrapper .btn {
@@ -476,7 +512,7 @@ a:focus {
   align-items: center;
   width: 100%;
   font-size: 24px;
-  font-family: 'Lato', sans-serif;
+  font-family: 'Gill', sans-serif;
   font-weight: 700;
   color: #000000;
   top: 50%;
@@ -533,7 +569,7 @@ a:focus {
     right: 0;
     text-align: center;
     font-size: 24px;
-    font-family: 'Lato', sans-serif;
+    font-family: 'Gill', sans-serif;
     font-weight: 700;
   }
 }
@@ -739,7 +775,7 @@ a:focus {
   width: 35%;
 }
 .top_price p {
-  font-family: 'Lato', sans-serif;
+  font-family: 'Gill', sans-serif;
   font-weight: 700;
   display: inline-block;
 }
@@ -798,7 +834,7 @@ a:focus {
   border: 1px solid #000000;
 }
 .blog_info h6 {
-  font-family: 'Lato', sans-serif;
+  font-family: 'Gill', sans-serif;
   font-weight: 700;
 }
 .blog_info p {
@@ -832,16 +868,30 @@ a:focus {
 }
 .basket_window_header {
   font-size: 24px;
-  font-family: 'Lato', sans-serif;
+  font-family: 'Gill', sans-serif;
   font-weight: 700;
   margin-top: 60px;
   text-align: center;
+}
+.basket_window_bag_wrapper {
+  position: relative;
+  display: block;
+  width: 50px;
+  height: 50px;
+  margin: 20px auto 0 auto;
 }
 .basket_window_bag {
   width: 50px;
   height: 50px;
   display: block;
-  margin: 20px auto;
+}
+.basket_window_bag_number {
+  position: absolute;
+  display: block;
+  width: 8px;
+  height: 11px;
+  top: 27%;
+  left: 45%;
 }
 .basket_window_block {
   margin-top: 30px;
@@ -1044,7 +1094,7 @@ footer .copy a:hover {
 }
 .block_share h2 {
   font-size: 30px;
-  font-family: 'Lato', sans-serif;
+  font-family: 'Gill', sans-serif;
   font-weight: 700;
   text-indent: 10px;
 }
@@ -1192,7 +1242,7 @@ footer .copy a:hover {
   width: 35%;
 }
 .block_share .block_share_price p {
-  font-family: 'Lato', sans-serif;
+  font-family: 'Gill', sans-serif;
   font-weight: 700;
   display: inline-block;
 }
@@ -1233,7 +1283,7 @@ footer .copy a:hover {
 .block_things_image .block_things_text p {
   color: #000000;
   font-size: 24px;
-  font-family: 'Lato', sans-serif;
+  font-family: 'Gill', sans-serif;
   font-weight: 700;
 }
 .block_things_image:hover .block_things_text {
@@ -1281,7 +1331,7 @@ footer .copy a:hover {
 }
 .man_accessory h2 {
   font-size: 30px;
-  font-family: 'Lato', sans-serif;
+  font-family: 'Gill', sans-serif;
   font-weight: 700;
   text-indent: 10px;
 }
@@ -1424,7 +1474,7 @@ footer .copy a:hover {
   display: inline-block;
 }
 .man_accessory .man_price p {
-  font-family: 'Lato', sans-serif;
+  font-family: 'Gill', sans-serif;
   font-weight: 700;
   display: inline-block;
 }
@@ -1449,7 +1499,7 @@ footer .copy a:hover {
 }
 .woman_accessory h2 {
   font-size: 30px;
-  font-family: 'Lato', sans-serif;
+  font-family: 'Gill', sans-serif;
   font-weight: 700;
   text-indent: 10px;
 }
@@ -1583,7 +1633,7 @@ footer .copy a:hover {
   display: inline-block;
 }
 .woman_accessory .woman_price p {
-  font-family: 'Lato', sans-serif;
+  font-family: 'Gill', sans-serif;
   font-weight: 700;
   display: inline-block;
 }
@@ -1618,12 +1668,12 @@ footer .copy a:hover {
 }
 .contacts_tel h3 {
   font-size: 24px;
-  font-family: 'Lato', sans-serif;
+  font-family: 'Gill', sans-serif;
   font-weight: 700;
   margin-bottom: 20px;
 }
 .contacts_tel p {
-  font-family: 'Lato', sans-serif;
+  font-family: 'Gill', sans-serif;
   font-weight: 300;
 }
 /* Shops section */
@@ -1636,7 +1686,7 @@ footer .copy a:hover {
 }
 .shops h3 {
   font-size: 24px;
-  font-family: 'Lato', sans-serif;
+  font-family: 'Gill', sans-serif;
   font-weight: 700;
 }
 .shops img {
@@ -1718,7 +1768,7 @@ footer .copy a:hover {
 }
 .about_image .about_text p {
   margin-bottom: 10px;
-  font-family: 'Lato', sans-serif;
+  font-family: 'Gill', sans-serif;
   font-weight: 300;
 }
 .about_help {
@@ -1730,7 +1780,7 @@ footer .copy a:hover {
 }
 .about_help h4 {
   font-size: 24px;
-  font-family: 'Lato', sans-serif;
+  font-family: 'Gill', sans-serif;
   font-weight: 700;
   margin-bottom: 30px;
 }
@@ -1739,7 +1789,7 @@ footer .copy a:hover {
 }
 .about_help p {
   margin-top: 10px;
-  font-family: 'Lato', sans-serif;
+  font-family: 'Gill', sans-serif;
   font-weight: 300;
 }
 .about_demand {
@@ -1751,7 +1801,7 @@ footer .copy a:hover {
 }
 .about_demand h4 {
   font-size: 24px;
-  font-family: 'Lato', sans-serif;
+  font-family: 'Gill', sans-serif;
   font-weight: 700;
   margin-bottom: 30px;
 }
@@ -1767,7 +1817,7 @@ footer .copy a:hover {
 }
 .about_participate h4 {
   font-size: 24px;
-  font-family: 'Lato', sans-serif;
+  font-family: 'Gill', sans-serif;
   font-weight: 700;
   margin-bottom: 30px;
 }
@@ -1786,7 +1836,7 @@ footer .copy a:hover {
 }
 .article h3 {
   font-size: 24px;
-  font-family: 'Lato', sans-serif;
+  font-family: 'Gill', sans-serif;
   font-weight: 700;
   margin-top: 40px;
   text-align: left;
@@ -1796,7 +1846,7 @@ footer .copy a:hover {
 }
 .article_text p {
   margin-top: 15px;
-  font-family: 'Lato', sans-serif;
+  font-family: 'Gill', sans-serif;
   font-weight: 300;
 }
 .article_read {
@@ -1807,7 +1857,7 @@ footer .copy a:hover {
 }
 .article_read h3 {
   font-size: 24px;
-  font-family: 'Lato', sans-serif;
+  font-family: 'Gill', sans-serif;
   font-weight: 700;
   margin-bottom: 40px;
   text-align: left;
@@ -1840,7 +1890,7 @@ footer .copy a:hover {
   border: 1px solid #000000;
 }
 .article_read_info h6 {
-  font-family: 'Lato', sans-serif;
+  font-family: 'Gill', sans-serif;
   font-weight: 700;
 }
 .article_read_info p {
@@ -1891,7 +1941,7 @@ footer .copy a:hover {
 }
 .rules_text h4 {
   font-size: 24px;
-  font-family: 'Lato', sans-serif;
+  font-family: 'Gill', sans-serif;
   font-weight: 700;
 }
 .rules_text h5 {
@@ -1900,7 +1950,7 @@ footer .copy a:hover {
 .rules_text p {
   margin-bottom: 20px;
   margin-top: 20px;
-  font-family: 'Lato', sans-serif;
+  font-family: 'Gill', sans-serif;
   font-weight: 300;
 }
 #registration {
@@ -1918,7 +1968,7 @@ footer .copy a:hover {
 }
 .ban h4 {
   font-size: 24px;
-  font-family: 'Lato', sans-serif;
+  font-family: 'Gill', sans-serif;
   font-weight: 700;
 }
 .ban p {
@@ -2119,7 +2169,7 @@ footer .copy a:hover {
   width: 35%;
 }
 .wish_price p {
-  font-family: 'Lato', sans-serif;
+  font-family: 'Gill', sans-serif;
   font-weight: 700;
   display: inline-block;
 }
@@ -2225,7 +2275,7 @@ footer .copy a:hover {
 }
 .basket h3 {
   font-size: 24px;
-  font-family: 'Lato', sans-serif;
+  font-family: 'Gill', sans-serif;
   font-weight: 700;
   margin-bottom: 10px;
 }
@@ -2259,31 +2309,31 @@ footer .copy a:hover {
   text-indent: 15px;
 }
 .basket input::-moz-placeholder {
-  font-family: 'Lato', sans-serif;
+  font-family: 'Gill', sans-serif;
   font-weight: 400;
   color: #000000;
   opacity: 0.5;
 }
 .basket input::-webkit-input-placeholder {
-  font-family: 'Lato', sans-serif;
+  font-family: 'Gill', sans-serif;
   font-weight: 400;
   color: #000000;
   opacity: 0.5;
 }
 .basket input:-ms-input-placeholder {
-  font-family: 'Lato', sans-serif;
+  font-family: 'Gill', sans-serif;
   font-weight: 400;
   color: #000000;
   opacity: 0.5;
 }
 .basket input::-ms-input-placeholder {
-  font-family: 'Lato', sans-serif;
+  font-family: 'Gill', sans-serif;
   font-weight: 400;
   color: #000000;
   opacity: 0.5;
 }
 .basket input::placeholder {
-  font-family: 'Lato', sans-serif;
+  font-family: 'Gill', sans-serif;
   font-weight: 400;
   color: #000000;
   opacity: 0.5;
@@ -2382,7 +2432,7 @@ footer .copy a:hover {
 }
 .product_name {
   font-size: 24px;
-  font-family: 'Lato', sans-serif;
+  font-family: 'Gill', sans-serif;
   font-weight: 700;
 }
 .product_star {
@@ -2444,7 +2494,7 @@ footer .copy a:hover {
   border: 1px solid #000000;
   color: #000000;
   font-size: 16px;
-  font-family: 'Lato', sans-serif;
+  font-family: 'Gill', sans-serif;
   font-weight: 700;
   display: inline-block;
   text-align: center;
@@ -2475,7 +2525,7 @@ footer .copy a:hover {
   display: inline-block;
   margin-right: 65px;
   opacity: 0.5;
-  font-family: 'Lato', sans-serif;
+  font-family: 'Gill', sans-serif;
   font-weight: 700;
   cursor: pointer;
 }
@@ -2519,7 +2569,7 @@ footer .copy a:hover {
 }
 .product_review .review_header {
   font-size: 24px;
-  font-family: 'Lato', sans-serif;
+  font-family: 'Gill', sans-serif;
   font-weight: 700;
   margin-top: 70px;
   margin-bottom: 30px;
@@ -2576,31 +2626,31 @@ footer .copy a:hover {
   border: 1px solid #000000;
 }
 .product_review .comment_block .comment_form textarea:-moz-placeholder {
-  font-family: 'Lato', sans-serif;
+  font-family: 'Gill', sans-serif;
   font-weight: 400;
   color: #000000;
   opacity: 0.5;
 }
 .product_review .comment_block .comment_form textarea:-webkit-input-placeholder {
-  font-family: 'Lato', sans-serif;
+  font-family: 'Gill', sans-serif;
   font-weight: 400;
   color: #000000;
   opacity: 0.5;
 }
 .product_review .comment_block .comment_form textarea:-ms-input-placeholder {
-  font-family: 'Lato', sans-serif;
+  font-family: 'Gill', sans-serif;
   font-weight: 400;
   color: #000000;
   opacity: 0.5;
 }
 .product_review .comment_block .comment_form textarea:-ms-input-placeholder {
-  font-family: 'Lato', sans-serif;
+  font-family: 'Gill', sans-serif;
   font-weight: 400;
   color: #000000;
   opacity: 0.5;
 }
 .product_review .comment_block .comment_form textarea:placeholder {
-  font-family: 'Lato', sans-serif;
+  font-family: 'Gill', sans-serif;
   font-weight: 400;
   color: #000000;
   opacity: 0.5;
@@ -2630,7 +2680,7 @@ footer .copy a:hover {
 }
 .product_shop h2 {
   font-size: 30px;
-  font-family: 'Lato', sans-serif;
+  font-family: 'Gill', sans-serif;
   font-weight: 700;
   text-indent: 10px;
 }
@@ -2823,7 +2873,7 @@ footer .copy a:hover {
   width: 35%;
 }
 .product_shop .product_shop_price p {
-  font-family: 'Lato', sans-serif;
+  font-family: 'Gill', sans-serif;
   font-weight: 700;
   display: inline-block;
 }
@@ -2846,7 +2896,7 @@ footer .copy a:hover {
 }
 .product_accessory h2 {
   font-size: 30px;
-  font-family: 'Lato', sans-serif;
+  font-family: 'Gill', sans-serif;
   font-weight: 700;
   text-indent: 10px;
 }
@@ -2989,7 +3039,7 @@ footer .copy a:hover {
   display: inline-block;
 }
 .product_accessory .product_price p {
-  font-family: 'Lato', sans-serif;
+  font-family: 'Gill', sans-serif;
   font-weight: 700;
   display: inline-block;
 }
@@ -3020,12 +3070,12 @@ footer .copy a:hover {
 }
 .listing_page_main_header {
   font-size: 30px;
-  font-family: 'Lato', sans-serif;
+  font-family: 'Gill', sans-serif;
   font-weight: 700;
 }
 .listing_page_header {
   font-size: 24px;
-  font-family: 'Lato', sans-serif;
+  font-family: 'Gill', sans-serif;
   font-weight: 700;
 }
 .listing_page_sub_header {
@@ -3114,7 +3164,7 @@ footer .copy a:hover {
   transform: rotate(180deg);
 }
 .listing_page .listing_page_sorting {
-  font-family: 'Lato', sans-serif;
+  font-family: 'Gill', sans-serif;
   font-weight: 700;
   margin-top: 40px;
   margin-right: 65px;
@@ -3296,7 +3346,7 @@ footer .copy a:hover {
   display: inline-block;
 }
 .listing_page .block_listing_page_price p {
-  font-family: 'Lato', sans-serif;
+  font-family: 'Gill', sans-serif;
   font-weight: 700;
   display: inline-block;
 }
@@ -3307,7 +3357,7 @@ footer .copy a:hover {
   display: block;
   margin: 60px auto 0 auto;
   color: #000000;
-  font-family: 'Lato', sans-serif;
+  font-family: 'Gill', sans-serif;
   font-weight: 700;
   text-align: center;
   border: 1px solid #000000;

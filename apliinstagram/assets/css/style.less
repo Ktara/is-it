@@ -46,20 +46,37 @@
 	font-weight: 400;
 	font-style: normal;
 }
-
+@font-face {
+	font-family: 'Gill';
+	src: url('../fonts/GIL_____.TTF') format('truetype');
+	font-weight: 400;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Gill';
+	src: url('../fonts/GILB____.TTF') format('truetype');
+	font-weight: 700;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Gill';
+	src: url('../fonts/GillSansStd-Light.otf') format('truetype');
+	font-weight: 300;
+	font-style: normal;
+}
 
 
 /* Fonts files */
 .opn-reg {
-	font-family: 'Lato', sans-serif;
+	font-family: 'Gill', sans-serif;
 	font-weight: 400;	
 }
 .opn-bold {
-	font-family: 'Lato', sans-serif;
+	font-family: 'Gill', sans-serif;
 	font-weight: 700;
 }
 .opn-light {
-	font-family: 'Lato', sans-serif;
+	font-family: 'Gill', sans-serif;
 	font-weight: 300;
 }
 
@@ -139,9 +156,11 @@ a:focus {
 			display: block;
 			position: relative;
 			width: 25px;
-			height: 1px;
+			height: 1px;			
 			background-color: @white;
 			margin-top: 29px;
+			cursor: pointer;
+			float: right;
 			&:after,
 			&:before {
 				content: "";
@@ -226,8 +245,20 @@ a:focus {
 	background-color: @main-black;
 	color: @white;	
 	z-index: 1000;
+	@media screen and (max-width: 768px) {
+		top: 60px;
+	}
 	.page {
 		margin-top: 25px;
+		@media screen and (max-width: 768px) {
+			height: 30px;
+			overflow: hidden;
+		}
+		&_header {
+			@media screen and (max-width: 768px) {
+				cursor: pointer;
+			}
+		}
 		&_line {
 			border-bottom: 1px solid @grey;
 			margin-top: 10px;
@@ -862,11 +893,25 @@ a:focus {
 		margin-top: 60px;
 		text-align: center;
 	}
+	&_bag_wrapper {
+		position: relative;
+		display: block;
+		width: 50px;
+		height: 50px;
+		margin: 20px auto 0 auto;		
+	}
 	&_bag {
 		width: 50px;
 		height: 50px;
+		display: block;		
+	}
+	&_bag_number {
+		position: absolute;
 		display: block;
-		margin: 20px auto;
+		width: 8px;
+		height: 11px;
+		top: 27%;
+		left: 45%;
 	}
 	&_block {
 		margin-top: 30px;
