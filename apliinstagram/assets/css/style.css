@@ -2207,8 +2207,19 @@ footer .copy a:hover {
   padding: 0 40px;
   margin-top: 105px;
 }
+@media screen and (max-width: 768px) {
+  .wish_slider {
+    padding: 0;
+    height: 230px;
+  }
+}
 .wish_slider img {
   width: 100%;
+}
+@media screen and (max-width: 768px) {
+  .wish_slider img {
+    height: 230px;
+  }
 }
 .wish_slider .slick-dots {
   position: absolute;
@@ -2243,12 +2254,37 @@ footer .copy a:hover {
 .wish .section_header {
   text-align: left;
 }
+@media screen and (max-width: 768px) {
+  .wish .section_header {
+    font-size: 24px;
+    text-align: center;
+    padding-bottom: 30px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .wish_wrapper {
+    height: 65vh;
+    overflow: scroll;
+  }
+}
 .wish_block {
   margin-top: 80px;
+}
+@media screen and (max-width: 768px) {
+  .wish_block {
+    margin-top: 0;
+    padding-bottom: 30px;
+  }
 }
 .wish_image {
   position: relative;
   width: 100%;
+}
+@media screen and (max-width: 768px) {
+  .wish_image {
+    width: 40%;
+    float: left;
+  }
 }
 .wish_image img {
   width: 100%;
@@ -2345,6 +2381,13 @@ footer .copy a:hover {
   margin-top: 20px;
   display: inline-block;
 }
+@media screen and (max-width: 768px) {
+  .wish_star {
+    margin-top: 0;
+    margin-left: 15px;
+    width: 35%;
+  }
+}
 .wish_star span {
   display: inline-block;
   background-image: url(../img/star2.svg);
@@ -2352,17 +2395,35 @@ footer .copy a:hover {
   width: 16px;
   height: 15px;
 }
+@media screen and (max-width: 768px) {
+  .wish_star span {
+    width: 14px;
+    height: 14px;
+  }
+}
 .wish_star .active_star {
   background-image: url(../img/star.svg);
   background-repeat: no-repeat;
   width: 16px;
   height: 15px;
 }
+@media screen and (max-width: 768px) {
+  .wish_star .active_star {
+    width: 14px;
+    height: 14px;
+  }
+}
 .wish_like {
   width: 50%;
   margin-top: 20px;
   display: inline-block;
   float: right;
+}
+@media screen and (max-width: 768px) {
+  .wish_like {
+    margin-top: 0;
+    width: 15%;
+  }
 }
 .wish_like button {
   background-color: #ffffff;
@@ -2376,18 +2437,46 @@ footer .copy a:hover {
   width: 16px;
   height: 17px;
 }
+@media screen and (max-width: 768px) {
+  .wish_like button img {
+    width: 14px;
+    height: 14px;
+  }
+}
 .wish_like p {
   display: inline-block;
   float: right;
 }
+@media screen and (max-width: 768px) {
+  .wish_like p {
+    font-size: 14px;
+  }
+}
 .wish_text {
   margin-top: 10px;
+}
+@media screen and (max-width: 768px) {
+  .wish_text {
+    margin-top: 5px;
+    margin-left: 15px;
+    clear: both;
+    display: inline-block;
+    font-size: 14px;
+  }
 }
 .wish_price {
   position: relative;
   width: 100%;
   margin-top: 10px;
   display: inline-block;
+}
+@media screen and (max-width: 768px) {
+  .wish_price {
+    margin-top: 5px;
+    margin-left: 15px;
+    font-size: 14px;
+    width: 50%;
+  }
 }
 .wish_price strike {
   opacity: 0.5;
@@ -2411,19 +2500,42 @@ footer .copy a:hover {
   text-align: center;
   float: left;
   cursor: pointer;
+  font-family: 'LucidaGrande', sans-serif;
+  font-weight: 700;
 }
-.wish .wish_basket {
+@media screen and (max-width: 768px) {
+  .wish .wish_btn {
+    margin-top: 20px;
+    margin-left: 15px;
+    width: 40%;
+    height: 40px;
+    line-height: 38px;
+  }
+}
+.wish .wish_delete {
   display: block;
   width: 25px;
   height: 30px;
   margin: 50px auto 0 auto;
   cursor: pointer;
 }
+@media screen and (max-width: 768px) {
+  .wish .wish_delete {
+    margin: 25px auto 0 auto;
+    width: 20px;
+    height: 25px;
+  }
+}
 .wish .wish_link {
   color: #000000;
   text-decoration: underline;
   display: block;
   margin-top: 60px;
+}
+@media screen and (max-width: 768px) {
+  .wish .wish_link {
+    margin-top: 40px;
+  }
 }
 .wish .wish_link:hover {
   color: #000000;
@@ -3594,6 +3706,11 @@ footer .copy a:hover {
   color: black;
   display: block;
   padding-bottom: 20px;
+}
+@media screen and (max-width: 768px) {
+  .product_block {
+    padding-bottom: 0;
+  }
 }
 .product_block:hover {
   color: #000000;

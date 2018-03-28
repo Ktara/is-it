@@ -2309,8 +2309,15 @@ footer {
 	width: 100%;
 	padding: 0 40px;
 	margin-top: 105px;
+	@media screen and (max-width: 768px) {
+		padding: 0;
+		height: 230px;
+	}
 	img {
 		width: 100%;
+		@media screen and (max-width: 768px) {
+			height: 230px;
+		}
 	}
 	.slick-dots {
 		position: absolute;
@@ -2347,13 +2354,32 @@ footer {
 	margin-top: 60px;	
 	.section_header {
 		text-align: left;
+		@media screen and (max-width: 768px) {
+			font-size: 24px;
+			text-align: center;
+			padding-bottom: 30px;
+		}
+	}
+	&_wrapper {
+		@media screen and (max-width: 768px) {
+			height: 65vh;
+			overflow: scroll;
+		}
 	}
 	&_block {
 		margin-top: 80px;
+		@media screen and (max-width: 768px) {
+			margin-top: 0;
+			padding-bottom: 30px;
+		}
 	}
 	&_image {
 		position: relative;
 		width: 100%;
+		@media screen and (max-width: 768px) {
+			width: 40%;
+			float: left;
+		}
 		img {
 			width: 100%;
 		}
@@ -2449,18 +2475,31 @@ footer {
 		width: 50%;
 		margin-top: 20px;
 		display: inline-block;
+		@media screen and (max-width: 768px) {
+			margin-top: 0;
+			margin-left: 15px;
+			width: 35%;
+		}
 		span {
 			display: inline-block;
 			background-image: url(../img/star2.svg);
 			background-repeat: no-repeat;			
 			width: 16px;
 			height: 15px;
+			@media screen and (max-width: 768px) {
+				width: 14px;
+				height: 14px;
+			}
 		}
 		.active_star {
 			background-image: url(../img/star.svg);
 			background-repeat: no-repeat;			
 			width: 16px;
-			height: 15px;			
+			height: 15px;
+			@media screen and (max-width: 768px) {
+				width: 14px;
+				height: 14px;
+			}			
 		}
 	}
 	&_like {
@@ -2468,6 +2507,10 @@ footer {
 		margin-top: 20px;		
 		display: inline-block;
 		float: right;
+		@media screen and (max-width: 768px) {
+			margin-top: 0;
+			width: 15%;
+		}
 		button {			
 			background-color: @white;
 			border: none;
@@ -2477,22 +2520,42 @@ footer {
 			float: right;
 			img {			
 				width: 16px;
-				height: 17px;								
+				height: 17px;
+				@media screen and (max-width: 768px) {
+					width: 14px;
+					height: 14px;
+				}								
 			}
 		}		
 		p {
 			display: inline-block;
 			float: right;
+			@media screen and (max-width: 768px) {
+				font-size: 14px;
+			}
 		}		
 	}
 	&_text {
 		margin-top: 10px;
+		@media screen and (max-width: 768px) {
+			margin-top: 5px;
+			margin-left: 15px;
+			clear: both;
+			display: inline-block;
+			font-size: 14px;
+		}
 	}
 	&_price {
 		position: relative;
 		width: 100%;
 		margin-top: 10px;
 		display: inline-block;
+		@media screen and (max-width: 768px) {
+			margin-top: 5px;
+			margin-left: 15px;
+			font-size: 14px;
+			width: 50%;
+		}
 		strike {
 			opacity: 0.5;
 			display: inline-block;
@@ -2515,19 +2578,35 @@ footer {
 		text-align: center;
 		float: left;
 		cursor: pointer;
+		.opn-bold;
+		@media screen and (max-width: 768px) {
+			margin-top: 20px;
+			margin-left: 15px;
+			width: 40%;
+			height: 40px;
+			line-height: 38px;
+		}
 	}
-	.wish_basket {
+	.wish_delete {
 		display: block;
 		width: 25px;
 		height: 30px;
 		margin: 50px auto 0 auto;
 		cursor: pointer;
+		@media screen and (max-width: 768px) {
+			margin: 25px auto 0 auto;
+			width: 20px;
+			height: 25px;
+		}
 	}
 	.wish_link {
 		color: @main-black;
 		text-decoration: underline;
 		display: block;
 		margin-top: 60px;
+		@media screen and (max-width: 768px) {
+			margin-top: 40px;
+		}
 		&:hover {
 			color: @main-black;
 			text-decoration: underline;
@@ -3737,7 +3816,10 @@ footer {
 	text-decoration: none;
 	color: black;
 	display: block;
-	padding-bottom: 20px;	
+	padding-bottom: 20px;
+	@media screen and (max-width: 768px) {
+		padding-bottom: 0;
+	}	
 }
 .product_block:hover {
 	color: @main-black;
