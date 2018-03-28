@@ -1419,8 +1419,26 @@ footer .copy a:hover {
   margin-top: 20px;
   color: #000000;
 }
+@media screen and (max-width: 768px) {
+  .block_things_image {
+    height: 160px;
+  }
+}
 .block_things_image img {
   width: 100%;
+}
+@media screen and (max-width: 768px) {
+  .block_things_image img {
+    height: 160px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .block_things_image_link {
+    display: block;
+    width: 100%;
+    height: 160px;
+    position: relative;
+  }
 }
 .block_things_image .block_things_text {
   position: absolute;
@@ -1484,6 +1502,23 @@ footer .copy a:hover {
 }
 .block_things .float {
   float: right;
+}
+.block_things_link_btn {
+  display: block;
+  width: 180px;
+  height: 50px;
+  line-height: 48px;
+  margin: 60px auto 0 auto;
+  border: 1px solid #000000;
+  color: #000000;
+  text-align: center;
+  font-family: 'LucidaGrande', sans-serif;
+  font-weight: 700;
+  text-decoration: none;
+}
+.block_things_link_btn:hover {
+  color: #000000;
+  text-decoration: none;
 }
 /* MAN PAGE */
 /* Man_accessory section */
