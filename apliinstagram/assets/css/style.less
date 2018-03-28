@@ -64,19 +64,31 @@
 	font-weight: 300;
 	font-style: normal;
 }
+@font-face {
+	font-family: 'LucidaGrande';
+	src: url('../fonts/LucidaGrande.ttf') format('truetype');
+	font-weight: 400;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'LucidaGrande';
+	src: url('../fonts/LucidaGrandeBold.ttf') format('truetype');
+	font-weight: 700;
+	font-style: normal;
+}
 
 
 /* Fonts files */
 .opn-reg {
-	font-family: 'Gill', sans-serif;
+	font-family: 'LucidaGrande', sans-serif;
 	font-weight: 400;	
 }
 .opn-bold {
-	font-family: 'Gill', sans-serif;
+	font-family: 'LucidaGrande', sans-serif;
 	font-weight: 700;
 }
 .opn-light {
-	font-family: 'Gill', sans-serif;
+	font-family: 'LucidaGrande', sans-serif;
 	font-weight: 300;
 }
 
@@ -141,6 +153,7 @@ a:focus {
 	@media screen and (max-width: 768px) {
 		height: 60px;
 		line-height: 60px;
+		padding: 0 20px;	
 	}	
 }
 .nav_wrapper {
@@ -211,12 +224,40 @@ a:focus {
 		width: 20px;
 		height: 20px;
 		display: inline-block;
+		position: relative;
+		.nav_heart_number {
+			position: absolute;			
+			display: block;
+			width: 16px;
+			height: 16px;
+			bottom: -10px;
+			right: -10px;
+			font-size: 10px;
+			color: @main-black;
+			background-color: @white;
+			border: 1px solid @white;
+			border-radius: 50px;			
+		}
 	}
 	.nav_basket {
 		width: 20px;
 		height: 20px;
 		display: inline-block;
 		cursor: pointer;
+		position: relative;
+		.nav_basket_number {
+			position: absolute;			
+			display: block;
+			width: 16px;
+			height: 16px;
+			bottom: -10px;
+			right: -10px;
+			font-size: 10px;
+			color: @main-black;
+			background-color: @white;
+			border: 1px solid @white;
+			border-radius: 50px;
+		}
 		img {
 			width: 20px;
 			height: 20px;
@@ -247,6 +288,7 @@ a:focus {
 	z-index: 1000;
 	@media screen and (max-width: 768px) {
 		top: 60px;
+		padding: 0 20px;
 	}
 	.page {
 		margin-top: 25px;
@@ -257,6 +299,20 @@ a:focus {
 		&_header {
 			@media screen and (max-width: 768px) {
 				cursor: pointer;
+				position: relative;
+				&:after {
+					position: absolute;
+					content: '';
+					display: block;
+					width: 20px;
+					height: 16px;
+					top: 40%;
+					right: 0;
+					background-image: url(../img/rectangle-3.svg);
+					background-repeat: no-repeat;
+					cursor: pointer;
+					transform: rotate(90deg);
+				}			
 			}
 		}
 		&_line {
@@ -465,6 +521,7 @@ a:focus {
 	clear: both;
 	@media screen and (max-width: 768px) {
 		display: none;
+		padding: 0 20px;
 	}
 	.section_header {
 		margin-bottom: 20px;
@@ -640,6 +697,7 @@ a:focus {
 	padding: 0 40px;
 	@media screen and (max-width: 768px) {
 		margin-top: 120px;
+		padding: 0 20px;
 	}
 	&_block {
 		margin-top: 40px;
@@ -809,6 +867,9 @@ a:focus {
 	width: 100%;
 	margin-top: 140px;
 	padding: 0 40px;
+	@media screen and (max-width: 768px) {
+		padding: 0 20px;
+	}
 	.section_header {
 		margin-bottom: 40px;
 		@media screen and (max-width: 768px) {
@@ -887,23 +948,38 @@ a:focus {
 	right: -420px;
 	background-color: @white;
 	z-index:1000;
+	overflow: hidden;
+	@media screen and (max-width: 768px) {
+		width: 100%;		
+	}
 	&_header {
 		font-size: 24px;
 		.opn-bold;
 		margin-top: 60px;
 		text-align: center;
+		@media screen and (max-width: 768px) {
+			margin-top: 20px;
+		}
 	}
 	&_bag_wrapper {
 		position: relative;
 		display: block;
 		width: 50px;
 		height: 50px;
-		margin: 20px auto 0 auto;		
+		margin: 20px auto 0 auto;
+		@media screen and (max-width: 768px) {
+			width: 45px;
+			height: 45px;
+		}
 	}
 	&_bag {
 		width: 50px;
 		height: 50px;
-		display: block;		
+		display: block;
+		@media screen and (max-width: 768px) {
+			width: 45px;
+			height: 45px;
+		}
 	}
 	&_bag_number {
 		position: absolute;
@@ -913,20 +989,36 @@ a:focus {
 		top: 27%;
 		left: 45%;
 	}
+	&_block_wrapper {
+		@media screen and (max-width: 768px) {
+			overflow: scroll;
+			height: 45vh;
+		}
+	}
 	&_block {
 		margin-top: 30px;
 		position: relative;
 		width: 100%;
 		overflow: hidden;
+		@media screen and (max-width: 768px) {
+			margin-top: 20px;
+		}
 	}
 	&_product {
 		width: 100%;		
 	}
 	&_price {
 		margin-top: 10px;
+		@media screen and (max-width: 768px) {
+			margin-top: 5px;
+		}
 	}
 	&_color_block {
 		margin-top: 20px;
+		@media screen and (max-width: 768px) {
+			font-size: 14px;
+			margin-top: 15px;
+		}
 		.color {
 			width: 13px;
 			height: 13px;
@@ -936,9 +1028,17 @@ a:focus {
 	}
 	&_size {
 		margin-top: 10px;
+		@media screen and (max-width: 768px) {
+			font-size: 14px;
+			margin-top: 5px;
+		}
 	}
 	&_number {
 		margin-top: 10px;
+		@media screen and (max-width: 768px) {
+			font-size: 14px;
+			margin-top: 5px;
+		}
 	}
 	&_back {
 		color: @grey;
@@ -951,6 +1051,9 @@ a:focus {
 	}
 	&_result {
 		margin-top: 55px;
+		@media screen and (max-width: 768px) {
+			margin-top: 20px;
+		}
 	}
 	&_btn {
 		width: 100%;
@@ -962,6 +1065,9 @@ a:focus {
 		cursor: pointer;
 		display: block;
 		margin-top: 60px;
+		@media screen and (max-width: 768px) {
+			margin-top: 20px;
+		}
 		&:hover {
 			color: @white;
 			text-decoration: none;
@@ -1118,11 +1224,20 @@ footer {
 	width: 100%;
 	margin-top: 140px;
 	padding: 0 40px;
-	overflow: hidden;	
+	overflow: hidden;
+	@media screen and (max-width: 768px) {
+		margin-top: 120px;
+		padding: 0 20px;
+	}
 	h2 {
 		font-size: 30px;
 		.opn-bold;
 		text-indent: 10px;
+		@media screen and (max-width: 768px) {
+			font-size: 24px;
+			text-indent: 0;
+			text-align: center;
+		}
 	}
 	.block_share_image {
 		position: relative;
@@ -1299,9 +1414,13 @@ footer {
 	width: 100%;
 	overflow: hidden;
 	padding: 0 40px;
-	margin-top: 85px;	
+	margin-top: 85px;
+	@media screen and (max-width: 768px) {
+		padding: 0 20px;
+	}
 	&_image {
 		position: relative;
+		display: block;
 		width: 100%;
 		margin-top: 20px;
 		color: @main-black;
@@ -1314,20 +1433,30 @@ footer {
 			top: 45%;
 			left: 0;
 			text-align: center;
+			@media screen and (max-width: 768px) {
+				cursor: pointer;
+				pointer-events: none;
+			}
 			p {
 				color: @main-black;
 				font-size: 24px;
-				.opn-bold;
+				.opn-bold;				
 			}
 		}
 	}
-	&_image:hover {
+	&_image:hover {		
 		.block_things_text {
 			display: none;
+			@media screen and (max-width: 768px) {
+				display: inline-block;
+			}
 		}
 		.hover_btn {
 			display: flex;
 			background-color: rgba(0, 0, 0, 0.35);
+			@media screen and (max-width: 768px) {
+				display: none;
+			}
 		}
 	}
 	.hover_btn {
@@ -1376,11 +1505,20 @@ footer {
 	width: 100%;
 	margin-top: 140px;
 	padding: 0 40px;
-	overflow: hidden;	
+	overflow: hidden;
+	@media screen and (max-width: 768px) {
+		margin-top: 120px;
+		padding: 0 20px;
+	}	
 	h2 {
 		font-size: 30px;
 		.opn-bold;
 		text-indent: 10px;
+		@media screen and (max-width: 768px) {
+			font-size: 24px;
+			text-indent: 0;
+			text-align: center;
+		}
 	}
 	.man_image {
 		position: relative;
@@ -1563,11 +1701,20 @@ footer {
 	width: 100%;
 	margin-top: 140px;
 	padding: 0 40px;
-	overflow: hidden;	
+	overflow: hidden;
+	@media screen and (max-width: 768px) {
+		margin-top: 120px;
+		padding: 0 20px;		
+	}	
 	h2 {
 		font-size: 30px;
 		.opn-bold;
 		text-indent: 10px;
+		@media screen and (max-width: 768px) {
+			font-size: 24px;
+			text-indent: 0;
+			text-align: center;
+		}
 	}
 	.woman_image {
 		position: relative;

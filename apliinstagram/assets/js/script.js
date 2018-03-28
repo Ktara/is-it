@@ -155,6 +155,13 @@ function showNextList(){
     $(this).removeClass('active_arrow').next().velocity({'height': height}, 450 );
     $(this).parent().parent().css('height', 'auto');
 }
+
+
+
+
+
+
+
 $('.listing_page_sub_header').click(showList);
 $('.product_header_arrow').click(showList);
 
