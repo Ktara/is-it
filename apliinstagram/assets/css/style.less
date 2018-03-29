@@ -869,6 +869,7 @@ a:focus {
 	padding: 0 40px;
 	@media screen and (max-width: 768px) {
 		padding: 0 20px;
+		margin-top: 100px;
 	}
 	.section_header {
 		margin-bottom: 40px;
@@ -886,7 +887,10 @@ a:focus {
 	}
 	&_image {
 		position: relative;
-		width: 100%;		
+		width: 100%;
+		@media screen and (max-width: 768px) {
+			margin-top: 20px;
+		}		
 		img {
 			width: 100%;
 		}
@@ -1169,10 +1173,16 @@ footer {
 		justify-content: space-between;
 		@media screen and (max-width: 768px) {
 			margin-top: 40px;
+			display: inline-block;
 		}
 		img {
 			width: 45px;
 			height: 45px;
+			@media screen and (max-width: 768px) {
+				width: 30px;
+				height: 30px;
+				margin-right: 10px;
+			}
 		}
 	}
 	p {
@@ -1908,6 +1918,10 @@ footer {
 	height: 50vh;
 	margin-top: 10vh;
 	padding: 0 40px;
+	@media screen and (max-width: 768px) {
+		margin-top: 100px;
+		padding: 0;
+	}
 }
 
 
@@ -1919,10 +1933,17 @@ footer {
 	width: 100%;
 	margin-top: 40px;
 	padding: 0 40px;
+	@media screen and (max-width: 768px) {
+		padding: 0 20px;
+		margin-top: 20px;
+	}
 	h3 {
 		font-size: 24px;
 		.opn-bold;
 		margin-bottom: 20px;
+		@media screen and (max-width: 768px) {
+			margin-top: 40px;
+		}
 	}
 	p {
 		.opn-light;
@@ -1938,16 +1959,41 @@ footer {
 	margin-top: 140px;
 	padding: 0 40px;
 	overflow: hidden;
+	@media screen and (max-width: 768px) {
+		padding: 0 5px;
+		margin-top: 120px;
+	}
 	h3 {
 		font-size: 24px;
 		.opn-bold;
+		@media screen and (max-width: 768px) {
+			padding: 0 15px;
+		}
 	}
 	img {
 		width: 100%;
 		margin-top: 40px;
+		@media screen and (max-width: 768px) {
+			margin-top: 20px;
+		}
 	}
 	.shops_text {
 		margin-top: 20px;
+		@media screen and (max-width: 768px) {
+			margin-top: 10px;
+		}
+	}
+	&_btn {
+		display: block;
+		width: 180px;
+		height: 50px;
+		line-height: 48px;
+		border: 1px solid @main-black;
+		color: @main-black;
+		.opn-bold;
+		text-align: center;
+		cursor: pointer;
+		margin: 60px auto 0 auto;
 	}
 }
 
@@ -1972,9 +2018,16 @@ footer {
 	margin-top: 65px;
 	padding: 0 40px;
 	overflow: hidden;
+	@media screen and (max-width: 768px) {
+		padding: 0 20px;
+	}
 	.section_header {
 		text-align: left;
 		margin-top: 40px;
+		@media screen and (max-width: 768px) {
+			font-size: 24px;
+			margin-top: 20px;
+		}
 	}
 	a {
 		display: inline-block;
@@ -1982,6 +2035,9 @@ footer {
 		text-decoration: underline;
 		line-height: 20px;
 		margin-top: 60px;
+		@media screen and (max-width: 768px) {
+			margin-top: 40px;
+		}
 	}
 }
 
@@ -2053,6 +2109,45 @@ footer {
 
 
 
+.about_mob {
+	position: relative;
+	padding: 0 20px;
+	width: 100%;
+	height: 30px;
+	overflow: hidden;
+	margin-top: 100px;
+	margin-bottom: 15px;	
+	&_info_header {
+		position: relative;
+		display: inline-block;
+		cursor: pointer;
+		.opn-bold;
+		&:after {
+			content: '';
+			position: absolute;
+			display: block;
+			width: 17px;
+			height: 9px;
+			bottom: 2px;
+			right: -30px;
+			cursor: pointer;
+			background-image: url(../img/arDown.png);
+			background-repeat: no-repeat;
+		}
+	}
+	&_info_img {
+		width: 100%;
+		margin-top: 40px;
+		margin-bottom: 10px;
+	}
+	&_info_text {
+		margin-top: 10px;
+	}
+}
+
+
+
+
 
 
 .about_help {
@@ -2061,13 +2156,41 @@ footer {
 	overflow: hidden;
 	margin-top: 80px;
 	padding: 0 40px;
+	@media screen and (max-width: 768px) {
+		margin-top: 0;
+		padding: 0 5px;
+		margin-bottom: 15px;
+		height: 30px;		
+	}
 	h4 {
 		font-size: 24px;
 		.opn-bold;
 		margin-bottom: 30px;
+		@media screen and (max-width: 768px) {
+			position: relative;
+			display: inline-block;
+			font-size: 16px;
+			margin-bottom: 10px;
+			cursor: pointer;
+			&:after {
+				content: '';
+				position: absolute;
+				display: block;
+				width: 17px;
+				height: 9px;
+				bottom: 2px;
+				right: -30px;
+				cursor: pointer;
+				background-image: url(../img/arDown.png);
+				background-repeat: no-repeat;
+			}
+		}
 	}
 	h5 {
 		margin-top: 10px;
+		@media screen and (max-width: 768px) {
+
+		}
 	}
 	p {
 		margin-top: 10px;
@@ -2085,13 +2208,39 @@ footer {
 	overflow: hidden;
 	margin-top: 80px;
 	padding: 0 40px;
+	@media screen and (max-width: 768px) {
+		margin-top: 0;
+		padding: 0 5px;
+		margin-bottom: 15px;
+		height: 30px;
+	}
 	h4 {
 		font-size: 24px;
 		.opn-bold;
 		margin-bottom: 30px;
+		@media screen and (max-width: 768px) {
+			position: relative;
+			display: inline-block;
+			font-size: 16px;
+			margin-bottom: 10px;
+			cursor: pointer;
+			&:after {
+				content: '';
+				position: absolute;
+				display: block;
+				width: 17px;
+				height: 9px;
+				bottom: 2px;
+				right: -30px;
+				cursor: pointer;
+				background-image: url(../img/arDown.png);
+				background-repeat: no-repeat;
+			}
+		}
 	}
 	p {
 		margin-top: 10px;
+		.opn-light;
 	}
 }
 
@@ -2105,13 +2254,39 @@ footer {
 	overflow: hidden;
 	margin-top: 80px;
 	padding: 0 40px;
+	@media screen and (max-width: 768px) {
+		margin-top: 0;
+		padding: 0 5px;
+		margin-bottom: 15px;
+		height: 30px;	
+	}
 	h4 {
 		font-size: 24px;
 		.opn-bold;
 		margin-bottom: 30px;
+		@media screen and (max-width: 768px) {
+			position: relative;
+			display: inline-block;
+			font-size: 16px;
+			margin-bottom: 10px;
+			cursor: pointer;
+			&:after {
+				content: '';
+				position: absolute;
+				display: block;
+				width: 17px;
+				height: 9px;
+				bottom: 2px;
+				right: -30px;
+				cursor: pointer;
+				background-image: url(../img/arDown.png);
+				background-repeat: no-repeat;
+			}
+		}
 	}
 	p {
 		margin-top: 10px;
+		.opn-light;
 	}
 }
 
@@ -2130,6 +2305,10 @@ footer {
 	width: 100%;
 	margin-top: 105px;
 	padding: 0 40px;
+	@media screen and (max-width: 768px) {
+		padding: 0;
+		margin-top: 100px;
+	}
 	img {
 		width: 100%;
 	}
@@ -2138,12 +2317,22 @@ footer {
 		.opn-bold;
 		margin-top: 40px;		
 		text-align: left;
+		@media screen and (max-width: 768px) {
+			margin-top: 20px;
+			padding: 0 20px;
+		}
 	}
 	&_text {
 		margin-top: 5px;
+		@media screen and (max-width: 768px) {
+			padding: 0 20px;
+		}
 		p {
 			margin-top: 15px;
 			.opn-light;
+			@media screen and (max-width: 768px) {
+				margin-top: 5px;
+			}
 		}
 	}
 }
@@ -2158,18 +2347,29 @@ footer {
 	width: 100%;
 	margin-top: 140px;
 	padding: 0 40px;
+	@media screen and (max-width: 768px) {
+		margin-top: 120px;
+		padding: 0 20px;
+	}
 	h3 {
 		font-size: 24px;
 		.opn-bold;
 		margin-bottom: 40px;
 		text-align: left;
+		@media screen and (max-width: 768px) {
+			text-align: center;
+			margin-bottom: 20px;
+		}
 	}
 	.row {
 		margin-bottom: 20px;
 	}
 	&_image {
 		position: relative;
-		width: 100%;		
+		width: 100%;
+		@media screen and (max-width: 768px) {
+			margin-top: 20px;
+		}		
 		img {
 			width: 100%;
 		}
@@ -2196,6 +2396,9 @@ footer {
 		p {
 			margin-top: 10px;
 			margin-bottom: 30px;
+			@media screen and (max-width: 768px) {
+				.opn-light;
+			}
 		}
 		a {				
 			color: @main-black;
@@ -2231,6 +2434,12 @@ footer {
 	padding: 0 40px;
 	margin-top: 105px;
 	overflow: hidden;
+	@media screen and (max-width: 768px) {
+		margin-top: 100px;
+		margin-bottom: 20px;
+		padding: 0 20px;
+		height: 30px;
+	}
 	&_wrapper {
 		position: fixed;
 		left: 60px;
@@ -2253,7 +2462,24 @@ footer {
 	&_text {
 		h4 {
 			font-size: 24px;
-			.opn-bold;			
+			.opn-bold;
+			@media screen and (max-width: 768px) {
+				font-size: 16px;
+				position: relative;
+				display: inline-block;				
+				&:after {
+					content: '';
+					position: absolute;
+					display: block;
+					width: 17px;
+					height: 9px;
+					bottom: 2px;
+					right: -30px;
+					cursor: pointer;
+					background-image: url(../img/arDown.png);
+					background-repeat: no-repeat;
+				}
+			}
 		}
 		h5 {
 			margin-top: 20px;
@@ -2269,9 +2495,17 @@ footer {
 
 #registration {
 	margin-top: 80px;
+	@media screen and (max-width: 768px) {
+		margin-top: 0;
+		margin-bottom: 20px;
+	}
 }
 #policy {
 	margin-top: 80px;
+	@media screen and (max-width: 768px) {
+		margin-top: 0;
+		margin-bottom: 20px;
+	}
 }
 
 
@@ -2281,12 +2515,36 @@ footer {
 	padding: 0 40px;
 	margin-top: 80px;
 	overflow: hidden;
+	@media screen and (max-width: 768px) {
+		margin-top: 0;
+		margin-bottom: 20px;
+		padding: 0 20px;
+		height: 30px;
+	}
 	h4 {
 		font-size: 24px;
 		.opn-bold;
+		@media screen and (max-width: 768px) {
+			font-size: 16px;
+			position: relative;
+			display: inline-block;
+			&:after {
+				content: '';
+				position: absolute;
+				display: block;
+				width: 17px;
+				height: 9px;
+				bottom: 2px;
+				right: -30px;
+				cursor: pointer;
+				background-image: url(../img/arDown.png);
+				background-repeat: no-repeat;
+			}
+		}
 	}
 	p {
 		margin-top: 20px;
+		.opn-light;
 	}
 }
 
@@ -2632,17 +2890,30 @@ footer {
 	padding: 0 40px;
 	overflow: hidden;
 	margin-top: 110px;
+	@media screen and (max-width: 768px) {
+		padding: 0 5px;
+		margin-top: 100px;
+	}
 	&_product_wrapper {
 		margin-bottom: 20px;
 	}
 	img {
-		width: 100%;
+		width: 100%;		
+	}
+	.text {
+		width: 50%;
 	}
 	.price {
 		margin-top: 10px;
+		@media screen and (max-width: 768px) {
+			margin-top: 5px;
+		}
 	}
 	.color_block {
 		margin-top: 20px;
+		@media screen and (max-width: 768px) {
+			margin-top: 15px;
+		}
 		.color {
 			width: 13px;
 			height: 13px;
@@ -2654,13 +2925,23 @@ footer {
 			display: inline-block;
 		}
 	}
-	.basket_form {
+	.size {
+		margin-top: 10px;
+		@media screen and (max-width: 768px) {
+			margin-top: 5px;
+		}
+	}
+	.basket_form {		
 		margin-top: 10px;
 		margin-left: -5px;
 		position: relative;
+		@media screen and (max-width: 768px) {
+			margin-top: 5px;
+		}
 		.basket_number {
 			width: 65px;
 			height: 25px;
+			margin: 0;
 			-webkit-appearance: none; 
 			-moz-appearance: none;
 		    appearance: none;  
@@ -2676,8 +2957,11 @@ footer {
 		width: 13px;
 		height: 13px;
 		top: 0;
-		right: 5px;
+		right: 45%;
 		cursor: pointer;
+		@media screen and (max-width: 768px) {
+			right: 0;
+		}
 		&:before, &:after {
 			content: '';
 			width: 1px;
