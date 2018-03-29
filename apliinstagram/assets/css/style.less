@@ -3075,12 +3075,18 @@ footer {
 	margin-top: 105px;
 	padding: 0 40px;
 	overflow: hidden;
+	@media screen and (max-width: 768px) {
+		padding: 0 5px;
+	}
 	&_slider_wrapper {
 		position: relative;
 		width: 100%;
 		height: 545px;
 		display: inline-block;
 		overflow: hidden;
+		@media screen and (max-width: 768px) {			
+			height: auto;
+		}
 		.product_slide {
 			width: 100%;
 			height: auto;
@@ -3137,6 +3143,9 @@ footer {
 	&_name {
 		font-size: 24px;
 		.opn-bold;
+		@media screen and (max-width: 768px) {
+			margin-top: 20px;
+		}
 	}
 	&_star {
 		width: 40%;
@@ -3172,8 +3181,8 @@ footer {
 		margin-top: 20px;		
 		width: 100%;
 		select {
-			width: 25%;
-			margin-right: 30px;
+			width: 30%;
+			margin-right: 15px;
 			border: none;
 			margin-left: -5px;
 			-webkit-appearance: none; 
@@ -3183,6 +3192,10 @@ footer {
 		    background-repeat: no-repeat;
 		    background-position: 100% center;		    
 		    cursor: pointer;
+		    @media screen and (max-width: 768px) {
+		    	width: 60%;
+		    	margin-top: 10px;
+		    }
 		}
 	}
 	&_text {
@@ -3202,6 +3215,9 @@ footer {
 		text-align: center;
 		margin-top: 40px;		
 		float: left;
+		@media screen and (max-width: 768px) {
+			margin-top: 20px;
+		}
 		&:hover {			
 			text-decoration: none;
 			color: @main-black;			
@@ -3216,6 +3232,10 @@ footer {
 		margin-top: 50px;
 		margin-left: 20px;
 		display: inline-block;
+		cursor: pointer;
+		@media screen and (max-width: 768px) {
+			margin-top: 30px;
+		}
 	}
 	&_header {
 		display: inline-block;		
@@ -3241,11 +3261,43 @@ footer {
 			right: 0;
 			color: @grey;
 		}
+		&_header {
+			@media screen and (max-width: 768px) {
+				display: inline-block !important;
+				position: relative;
+				opacity: 0.5;
+				.opn-bold;
+				cursor: pointer;
+				padding-bottom: 20px;				
+				&:after {
+					content: '';
+					position: absolute;
+					display: block;
+					width: 17px;
+					height: 9px;
+					bottom: 22px;
+					right: -30px;
+					cursor: pointer;
+					background-image: url(../img/arDown.png);
+					background-repeat: no-repeat;
+					opacity: 1;
+				}
+			}
+		}
 		.product_about_wrapper {
 			margin-top: 30px;
 			width: 100%;
 			height: 50px;
 			overflow: hidden;
+			@media screen and (max-width: 768px) {
+				height: auto;
+			}
+		}
+		&_block {
+			@media screen and (max-width: 768px) {
+				height: 30px;
+				overflow: hidden;
+			}
 		}
 	}
 }
@@ -3260,6 +3312,10 @@ footer {
 	padding: 0 40px;
 	margin-top: 140px;
 	overflow: hidden;
+	@media screen and (max-width: 768px) {
+		margin-top: 120px;
+		padding: 0 20px;
+	}
 	.review_slider_viewer {
 		overflow: hidden;
 		width: 100%;
@@ -3299,13 +3355,18 @@ footer {
 			width: 60px;
 			height: 60px;
 			float: left;
-			margin-top: 16px;
 			margin-right: 20px;
+			@media screen and (max-width: 768px) {
+				display: none;
+			}
 		}
 		.comment_stars {			
 			display: block;
 			float: right;
-			margin-right: 5%;
+			margin-right: 20%;
+			@media screen and (max-width: 768px) {
+				margin-right: 0;
+			}
 			.comment_star {
 				display: inline-block;
 				background-image: url(../img/star2.svg);
@@ -3316,11 +3377,11 @@ footer {
 		}
 		.comment_form {
 			display: inline-block;
-			width: 90%;
+			width: 100%;
 			margin-top: 10px;
 			.comment_textarea {
-				width: 80%;
-				height: 50px;
+				width: ~"calc(100% - 260px)";
+				height: 100px;
 				margin-right: 20px;
 				text-indent: 25px;
 				resize: vertical;
@@ -3329,6 +3390,10 @@ footer {
 				outline: none;
 				-moz-appearance: none;
 				border: 1px solid @main-black;
+				@media screen and (max-width: 768px) {
+					width: 100%;
+					margin-right: 0;
+				}
 			}
 			textarea:-moz-placeholder {
 			    .opn-reg;
@@ -3361,17 +3426,25 @@ footer {
 		}
 		.comment_btn {
 			display: inline-block;
-			width: 15%;
+			width: 160px;
 			height: 50px;
 			line-height: 50px;			
 			border: @main-black;
 			background-color: @main-black;
 			color: @white;
-			float: right;			
+			float: right;
+			@media screen and (max-width: 768px) {
+				display: block;
+				width: 50%;
+				margin-top: 10px;
+			} 			
 		}
 	}
 	.fix {
 		padding-left: 0;
+		@media screen and (max-width: 768px) {
+			padding: 0;
+		}
 	}
 }
 
@@ -3386,11 +3459,20 @@ footer {
 	width: 100%;
 	margin-top: 140px;
 	padding: 0 40px;
-	overflow: hidden;	
+	overflow: hidden;
+	@media screen and (max-width: 768px) {
+		margin-top: 100px;
+		padding: 0 5px;
+	}	
 	h2 {
 		font-size: 30px;
 		.opn-bold;
 		text-indent: 10px;
+		@media screen and (max-width: 768px) {
+			font-size: 24px;
+			text-indent: 0;
+			text-align: center;
+		}
 	}
 	.product_shop_image1 {
 		position: relative;
@@ -3607,11 +3689,21 @@ footer {
 	width: 100%;
 	margin-top: 140px;
 	padding: 0 40px;
-	overflow: hidden;	
+	overflow: hidden;
+	@media screen and (max-width: 768px) {
+		margin-top: 120px;
+		padding: 0 5px;
+	}	
 	h2 {
 		font-size: 30px;
 		.opn-bold;
 		text-indent: 10px;
+		@media screen and (max-width: 768px) {
+			font-size: 24px;
+			text-indent: 0;
+			text-align: center;
+			padding: 0 15px;
+		}
 	}
 	.product_image {
 		position: relative;
@@ -3796,9 +3888,15 @@ footer {
 	margin-top: 105px;
 	padding: 0 40px 0 60px;
 	overflow: hidden;
+	@media screen and (max-width: 768px) {
+		padding: 0 20px;
+	}
 	&_main_header {
 		font-size: 30px;
 		.opn-bold;
+		@media screen and (max-width: 768px) {
+			font-size: 24px;
+		}
 	}
 	&_header {
 		font-size: 24px;
@@ -3835,7 +3933,7 @@ footer {
 		height:0;
 		overflow: hidden;
 	}
-	&_form {		
+	&_form {			
 		label {
 			display: block;
 			line-height: 40px;
@@ -3886,7 +3984,12 @@ footer {
 	}
 	.fix {
 		padding-left: 0;
-		margin-top: 35px;
+		
+	}
+	.fixed {
+		@media screen and (max-width: 768px) {
+			padding: 0;
+		}
 	}
 	.active_arrow:after {
 		transition: transform 0.6s;
@@ -3898,6 +4001,11 @@ footer {
 		margin-right: 65px;
 		margin-bottom: 20px;
 		display: inline-block;
+		@media screen and (max-width: 768px) {
+			margin-right: 0;
+			margin-bottom: 0;
+			// display: block;
+		}
 	}
 	.listing_page_sorting_list {
 		position: relative;
@@ -3912,7 +4020,13 @@ footer {
 	    background-image: url(../img/rectangle-3-copy-2.svg);		    
 	    background-repeat: no-repeat;
 	    background-position: 100% center;		    
-	    cursor: pointer;		
+	    cursor: pointer;
+	    @media screen and (max-width: 768px) {
+	    	margin-top: 10px;
+	    	margin-bottom: 25px;
+	    	width: 220px;
+	    	display: block;
+	    }
 	}
 	.listing_page_location {
 		display: inline-block;
@@ -3936,6 +4050,10 @@ footer {
 			position: relative;
 			width: 100%;
 			margin-top: 20px;
+			@media screen and (max-width: 768px) {
+				width: 45%;
+				float: left;
+			}
 			img {
 				width: 100%;
 			}
@@ -4028,18 +4146,29 @@ footer {
 		margin-top: 20px;
 		display: inline-block;
 		padding-left: 10px;
+		@media screen and (max-width: 768px) {
+			width: 30%;
+		}
 		span {
 			display: inline-block;
 			background-image: url(../img/star2.svg);
 			background-repeat: no-repeat;			
 			width: 16px;
 			height: 15px;
+			@media screen and (max-width: 768px) {
+				width: 14px;
+				height: 14px;
+			}
 		}
 		.active_star {
 			background-image: url(../img/star.svg);
 			background-repeat: no-repeat;			
 			width: 16px;
-			height: 15px;			
+			height: 15px;
+			@media screen and (max-width: 768px) {
+				width: 14px;
+				height: 14px;
+			}			
 		}		
 	}
 	.block_listing_page_like {
@@ -4048,6 +4177,10 @@ footer {
 		padding-right: 10px;
 		display: inline-block;
 		float: right;
+		@media screen and (max-width: 768px) {
+			width: 10%;
+			padding-right: 0;
+		}
 		button {			
 			background-color: @white;
 			border: none;
@@ -4057,24 +4190,38 @@ footer {
 			float: right;
 			img {			
 				width: 16px;
-				height: 17px;								
+				height: 17px;
+				@media screen and (max-width: 768px) {
+					width: 14px;
+					height: 14px;
+				}								
 			}
 		}		
 		p {
 			display: inline-block;
 			float: right;
+			@media screen and (max-width: 768px) {
+				font-size: 14px;
+			}
 		}		
 	}
 	.block_listing_page_text {
 		margin-top: 10px;
 		padding-left: 10px;
+		@media screen and (max-width: 768px) {
+			display: inline-block;
+		}
 	}
 	.block_listing_page_price {
 		position: relative;
 		width: 100%;
 		margin-top: 10px;
 		padding-left: 10px;
-		display: inline-block;				
+		display: inline-block;
+		@media screen and (max-width: 768px) {
+			display: inline-block;
+			width: 45%;
+		}				
 		p {
 			.opn-bold;
 			display: inline-block;
@@ -4103,6 +4250,7 @@ footer {
 	padding-bottom: 20px;
 	@media screen and (max-width: 768px) {
 		padding-bottom: 0;
+		overflow: hidden;
 	}	
 }
 .product_block:hover {
@@ -4118,6 +4266,12 @@ footer {
 }
 .filter_width_fix {
 	max-width: 320px;
+	margin-top: 35px;
+	@media screen and (max-width: 768px) {
+		max-width: 100%;
+		margin-top: 20px;
+		overflow: hidden;
+	}
 }
 .comment_next_arrow {
 	cursor: pointer;

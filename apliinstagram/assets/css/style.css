@@ -3068,12 +3068,22 @@ footer .copy a:hover {
   padding: 0 40px;
   overflow: hidden;
 }
+@media screen and (max-width: 768px) {
+  .product {
+    padding: 0 5px;
+  }
+}
 .product_slider_wrapper {
   position: relative;
   width: 100%;
   height: 545px;
   display: inline-block;
   overflow: hidden;
+}
+@media screen and (max-width: 768px) {
+  .product_slider_wrapper {
+    height: auto;
+  }
 }
 .product_slider_wrapper .product_slide {
   width: 100%;
@@ -3132,6 +3142,11 @@ footer .copy a:hover {
   font-family: 'LucidaGrande', sans-serif;
   font-weight: 700;
 }
+@media screen and (max-width: 768px) {
+  .product_name {
+    margin-top: 20px;
+  }
+}
 .product_star {
   width: 40%;
   margin-top: 20px;
@@ -3167,8 +3182,8 @@ footer .copy a:hover {
   width: 100%;
 }
 .product form select {
-  width: 25%;
-  margin-right: 30px;
+  width: 30%;
+  margin-right: 15px;
   border: none;
   margin-left: -5px;
   -webkit-appearance: none;
@@ -3178,6 +3193,12 @@ footer .copy a:hover {
   background-repeat: no-repeat;
   background-position: 100% center;
   cursor: pointer;
+}
+@media screen and (max-width: 768px) {
+  .product form select {
+    width: 60%;
+    margin-top: 10px;
+  }
 }
 .product_text {
   width: 45%;
@@ -3198,6 +3219,11 @@ footer .copy a:hover {
   margin-top: 40px;
   float: left;
 }
+@media screen and (max-width: 768px) {
+  .product_btn {
+    margin-top: 20px;
+  }
+}
 .product_btn:hover {
   text-decoration: none;
   color: #000000;
@@ -3211,6 +3237,12 @@ footer .copy a:hover {
   margin-top: 50px;
   margin-left: 20px;
   display: inline-block;
+  cursor: pointer;
+}
+@media screen and (max-width: 768px) {
+  .product_heart {
+    margin-top: 30px;
+  }
 }
 .product_header {
   display: inline-block;
@@ -3236,11 +3268,46 @@ footer .copy a:hover {
   right: 0;
   color: #7f7f7f;
 }
+@media screen and (max-width: 768px) {
+  .product_about_header {
+    display: inline-block !important;
+    position: relative;
+    opacity: 0.5;
+    font-family: 'LucidaGrande', sans-serif;
+    font-weight: 700;
+    cursor: pointer;
+    padding-bottom: 20px;
+  }
+  .product_about_header:after {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 17px;
+    height: 9px;
+    bottom: 22px;
+    right: -30px;
+    cursor: pointer;
+    background-image: url(../img/arDown.png);
+    background-repeat: no-repeat;
+    opacity: 1;
+  }
+}
 .product_about .product_about_wrapper {
   margin-top: 30px;
   width: 100%;
   height: 50px;
   overflow: hidden;
+}
+@media screen and (max-width: 768px) {
+  .product_about .product_about_wrapper {
+    height: auto;
+  }
+}
+@media screen and (max-width: 768px) {
+  .product_about_block {
+    height: 30px;
+    overflow: hidden;
+  }
 }
 .product_review {
   position: relative;
@@ -3248,6 +3315,12 @@ footer .copy a:hover {
   padding: 0 40px;
   margin-top: 140px;
   overflow: hidden;
+}
+@media screen and (max-width: 768px) {
+  .product_review {
+    margin-top: 120px;
+    padding: 0 20px;
+  }
 }
 .product_review .review_slider_viewer {
   overflow: hidden;
@@ -3290,13 +3363,22 @@ footer .copy a:hover {
   width: 60px;
   height: 60px;
   float: left;
-  margin-top: 16px;
   margin-right: 20px;
+}
+@media screen and (max-width: 768px) {
+  .product_review .comment_block .comment_img {
+    display: none;
+  }
 }
 .product_review .comment_block .comment_stars {
   display: block;
   float: right;
-  margin-right: 5%;
+  margin-right: 20%;
+}
+@media screen and (max-width: 768px) {
+  .product_review .comment_block .comment_stars {
+    margin-right: 0;
+  }
 }
 .product_review .comment_block .comment_stars .comment_star {
   display: inline-block;
@@ -3307,12 +3389,12 @@ footer .copy a:hover {
 }
 .product_review .comment_block .comment_form {
   display: inline-block;
-  width: 90%;
+  width: 100%;
   margin-top: 10px;
 }
 .product_review .comment_block .comment_form .comment_textarea {
-  width: 80%;
-  height: 50px;
+  width: calc(100% - 260px);
+  height: 100px;
   margin-right: 20px;
   text-indent: 25px;
   resize: vertical;
@@ -3321,6 +3403,12 @@ footer .copy a:hover {
   outline: none;
   -moz-appearance: none;
   border: 1px solid #000000;
+}
+@media screen and (max-width: 768px) {
+  .product_review .comment_block .comment_form .comment_textarea {
+    width: 100%;
+    margin-right: 0;
+  }
 }
 .product_review .comment_block .comment_form textarea:-moz-placeholder {
   font-family: 'LucidaGrande', sans-serif;
@@ -3357,7 +3445,7 @@ footer .copy a:hover {
 }
 .product_review .comment_block .comment_btn {
   display: inline-block;
-  width: 15%;
+  width: 160px;
   height: 50px;
   line-height: 50px;
   border: #000000;
@@ -3365,8 +3453,20 @@ footer .copy a:hover {
   color: #ffffff;
   float: right;
 }
+@media screen and (max-width: 768px) {
+  .product_review .comment_block .comment_btn {
+    display: block;
+    width: 50%;
+    margin-top: 10px;
+  }
+}
 .product_review .fix {
   padding-left: 0;
+}
+@media screen and (max-width: 768px) {
+  .product_review .fix {
+    padding: 0;
+  }
 }
 .product_shop {
   position: relative;
@@ -3375,11 +3475,24 @@ footer .copy a:hover {
   padding: 0 40px;
   overflow: hidden;
 }
+@media screen and (max-width: 768px) {
+  .product_shop {
+    margin-top: 100px;
+    padding: 0 5px;
+  }
+}
 .product_shop h2 {
   font-size: 30px;
   font-family: 'LucidaGrande', sans-serif;
   font-weight: 700;
   text-indent: 10px;
+}
+@media screen and (max-width: 768px) {
+  .product_shop h2 {
+    font-size: 24px;
+    text-indent: 0;
+    text-align: center;
+  }
 }
 .product_shop .product_shop_image1 {
   position: relative;
@@ -3591,11 +3704,25 @@ footer .copy a:hover {
   padding: 0 40px;
   overflow: hidden;
 }
+@media screen and (max-width: 768px) {
+  .product_accessory {
+    margin-top: 120px;
+    padding: 0 5px;
+  }
+}
 .product_accessory h2 {
   font-size: 30px;
   font-family: 'LucidaGrande', sans-serif;
   font-weight: 700;
   text-indent: 10px;
+}
+@media screen and (max-width: 768px) {
+  .product_accessory h2 {
+    font-size: 24px;
+    text-indent: 0;
+    text-align: center;
+    padding: 0 15px;
+  }
 }
 .product_accessory .product_image {
   position: relative;
@@ -3765,10 +3892,20 @@ footer .copy a:hover {
   padding: 0 40px 0 60px;
   overflow: hidden;
 }
+@media screen and (max-width: 768px) {
+  .listing_page {
+    padding: 0 20px;
+  }
+}
 .listing_page_main_header {
   font-size: 30px;
   font-family: 'LucidaGrande', sans-serif;
   font-weight: 700;
+}
+@media screen and (max-width: 768px) {
+  .listing_page_main_header {
+    font-size: 24px;
+  }
 }
 .listing_page_header {
   font-size: 24px;
@@ -3854,7 +3991,11 @@ footer .copy a:hover {
 }
 .listing_page .fix {
   padding-left: 0;
-  margin-top: 35px;
+}
+@media screen and (max-width: 768px) {
+  .listing_page .fixed {
+    padding: 0;
+  }
 }
 .listing_page .active_arrow:after {
   transition: transform 0.6s;
@@ -3867,6 +4008,12 @@ footer .copy a:hover {
   margin-right: 65px;
   margin-bottom: 20px;
   display: inline-block;
+}
+@media screen and (max-width: 768px) {
+  .listing_page .listing_page_sorting {
+    margin-right: 0;
+    margin-bottom: 0;
+  }
 }
 .listing_page .listing_page_sorting_list {
   position: relative;
@@ -3882,6 +4029,14 @@ footer .copy a:hover {
   background-repeat: no-repeat;
   background-position: 100% center;
   cursor: pointer;
+}
+@media screen and (max-width: 768px) {
+  .listing_page .listing_page_sorting_list {
+    margin-top: 10px;
+    margin-bottom: 25px;
+    width: 220px;
+    display: block;
+  }
 }
 .listing_page .listing_page_location {
   display: inline-block;
@@ -3904,6 +4059,12 @@ footer .copy a:hover {
   position: relative;
   width: 100%;
   margin-top: 20px;
+}
+@media screen and (max-width: 768px) {
+  .listing_page .listing_page_image_wrapper .listing_page_img {
+    width: 45%;
+    float: left;
+  }
 }
 .listing_page .listing_page_image_wrapper .listing_page_img img {
   width: 100%;
@@ -3995,6 +4156,11 @@ footer .copy a:hover {
   display: inline-block;
   padding-left: 10px;
 }
+@media screen and (max-width: 768px) {
+  .listing_page .block_listing_page_stars {
+    width: 30%;
+  }
+}
 .listing_page .block_listing_page_stars span {
   display: inline-block;
   background-image: url(../img/star2.svg);
@@ -4002,11 +4168,23 @@ footer .copy a:hover {
   width: 16px;
   height: 15px;
 }
+@media screen and (max-width: 768px) {
+  .listing_page .block_listing_page_stars span {
+    width: 14px;
+    height: 14px;
+  }
+}
 .listing_page .block_listing_page_stars .active_star {
   background-image: url(../img/star.svg);
   background-repeat: no-repeat;
   width: 16px;
   height: 15px;
+}
+@media screen and (max-width: 768px) {
+  .listing_page .block_listing_page_stars .active_star {
+    width: 14px;
+    height: 14px;
+  }
 }
 .listing_page .block_listing_page_like {
   width: 50%;
@@ -4014,6 +4192,12 @@ footer .copy a:hover {
   padding-right: 10px;
   display: inline-block;
   float: right;
+}
+@media screen and (max-width: 768px) {
+  .listing_page .block_listing_page_like {
+    width: 10%;
+    padding-right: 0;
+  }
 }
 .listing_page .block_listing_page_like button {
   background-color: #ffffff;
@@ -4027,13 +4211,29 @@ footer .copy a:hover {
   width: 16px;
   height: 17px;
 }
+@media screen and (max-width: 768px) {
+  .listing_page .block_listing_page_like button img {
+    width: 14px;
+    height: 14px;
+  }
+}
 .listing_page .block_listing_page_like p {
   display: inline-block;
   float: right;
 }
+@media screen and (max-width: 768px) {
+  .listing_page .block_listing_page_like p {
+    font-size: 14px;
+  }
+}
 .listing_page .block_listing_page_text {
   margin-top: 10px;
   padding-left: 10px;
+}
+@media screen and (max-width: 768px) {
+  .listing_page .block_listing_page_text {
+    display: inline-block;
+  }
 }
 .listing_page .block_listing_page_price {
   position: relative;
@@ -4041,6 +4241,12 @@ footer .copy a:hover {
   margin-top: 10px;
   padding-left: 10px;
   display: inline-block;
+}
+@media screen and (max-width: 768px) {
+  .listing_page .block_listing_page_price {
+    display: inline-block;
+    width: 45%;
+  }
 }
 .listing_page .block_listing_page_price p {
   font-family: 'LucidaGrande', sans-serif;
@@ -4069,6 +4275,7 @@ footer .copy a:hover {
 @media screen and (max-width: 768px) {
   .product_block {
     padding-bottom: 0;
+    overflow: hidden;
   }
 }
 .product_block:hover {
@@ -4080,6 +4287,14 @@ footer .copy a:hover {
 }
 .filter_width_fix {
   max-width: 320px;
+  margin-top: 35px;
+}
+@media screen and (max-width: 768px) {
+  .filter_width_fix {
+    max-width: 100%;
+    margin-top: 20px;
+    overflow: hidden;
+  }
 }
 .comment_next_arrow {
   cursor: pointer;
