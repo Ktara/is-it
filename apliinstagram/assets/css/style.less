@@ -372,6 +372,9 @@ a:focus {
 	width: 100%;
 	height: 100vh;
 	overflow: hidden;
+	@media screen and (max-width: 992px) {
+		display: none;
+	}
 	@media screen and (max-width: 768px) {
 		display: none;
 	}
@@ -447,6 +450,63 @@ a:focus {
 
 .main_mob {
 	display: none;
+	@media screen and (max-width: 992px) {
+		position: relative;
+		width: 100%;
+		height: 100vh;
+		overflow: hidden;
+		display: block;
+		&_slide {
+			width: 100%;
+			display: inline-block;
+			img {
+				max-width: 100%;
+				min-height: 100vh;
+				width: auto;
+				height: auto;
+			}
+		}
+		&_text_wrapper {
+			position: absolute;
+			width: 50%;
+			top: 30%;
+			left: 5%;
+
+			p {
+				font-size: 48px;
+				.opn-bold;
+			}
+			.btn {
+				border: 1px solid @main-black;
+				background-color: @white;
+				color: @main-black;
+				margin-top: 40px;
+			}
+		}
+		.slick-dots {
+			position: absolute;
+			bottom: 0;
+			width: 100%;
+			text-align: center;
+			li {
+				position: relative;
+				z-index: 110;
+				width: 12px;
+				height: 12px;
+				border: 1px solid @main-black;
+				border-radius: 25px;
+				display: inline-block;
+				margin-right: 10px;
+				bottom: 20px;
+			}
+			.slick-active {
+				background-color: @main-black;
+			}
+			li button {
+				display: none;
+			}		
+		}
+	}
 	@media screen and (max-width: 768px) {
 		position: relative;
 		width: 100%;
@@ -519,6 +579,9 @@ a:focus {
 	padding: 0 40px;
 	overflow: hidden;
 	clear: both;
+	@media screen and (max-width: 992px) {
+		margin-top: 120px;
+	}
 	@media screen and (max-width: 768px) {
 		display: none;
 		padding: 0 20px;
@@ -654,6 +717,9 @@ a:focus {
 	height: 70vh;
 	margin-top: 140px;
 	overflow: hidden;
+	@media screen and (max-width: 992px) {
+		margin-top: 120px;
+	}
 	@media screen and (max-width: 768px) {
 		margin-top: 120px;
 		height: 40vh;
@@ -695,6 +761,9 @@ a:focus {
 	width: 100%;
 	margin-top: 140px;
 	padding: 0 40px;
+	@media screen and (max-width: 992px) {
+		margin-top: 120px;
+	}
 	@media screen and (max-width: 768px) {
 		margin-top: 120px;
 		padding: 0 20px;
@@ -867,6 +936,9 @@ a:focus {
 	width: 100%;
 	margin-top: 140px;
 	padding: 0 40px;
+	@media screen and (max-width: 992px) {
+		margin-top: 120px;
+	}
 	@media screen and (max-width: 768px) {
 		padding: 0 20px;
 		margin-top: 100px;
@@ -1138,10 +1210,15 @@ footer {
 	position: relative;
 	width: 100%;
 	height: auto;
-	margin-top: 140px;		
+	margin-top: 140px;
+	padding: 0 40px;
 	background-color: rgba(0, 0, 0, 0.75);
+	@media screen and (max-width: 992px) {
+		margin-top: 120px;
+	}
 	@media screen and (max-width: 768px) {
 		margin-top: 120px;
+		padding: 0 20px;
 	}
 	.row {
 		padding-top: 60px;
@@ -1169,8 +1246,7 @@ footer {
 	.social {		
 		margin-top: 30px;
 		width: 100%;
-		display: inline-flex;
-		justify-content: space-between;
+		display: inline-block;
 		@media screen and (max-width: 768px) {
 			margin-top: 40px;
 			display: inline-block;
@@ -1178,6 +1254,11 @@ footer {
 		img {
 			width: 45px;
 			height: 45px;
+			margin-right: 3%;
+			@media screen and (max-width: 992px) {
+				width: 30px;
+				height: 30px;
+			}
 			@media screen and (max-width: 768px) {
 				width: 30px;
 				height: 30px;
@@ -1211,9 +1292,20 @@ footer {
 			}
 		}
 		.fix {
-			@media screen and (max-width: 768px) {
+			@media screen and (max-width: 992px) {
 				padding-left: 0;
 			}
+			@media screen and (max-width: 768px) {
+				padding: 0;
+			}
+		}
+	}
+	.fixed {
+		@media screen and (max-width: 992px) {
+			padding-left: 0;
+		}
+		@media screen and (max-width: 768px) {
+			padding-left: 15px;
 		}
 	}
 }
@@ -1235,6 +1327,9 @@ footer {
 	margin-top: 140px;
 	padding: 0 40px;
 	overflow: hidden;
+	@media screen and (max-width: 992px) {
+		margin-top: 120px;
+	}
 	@media screen and (max-width: 768px) {
 		margin-top: 120px;
 		padding: 0 20px;
@@ -1425,6 +1520,9 @@ footer {
 	overflow: hidden;
 	padding: 0 40px;
 	margin-top: 85px;
+	@media screen and (max-width: 992px) {
+		margin-top: 120px;
+	}
 	@media screen and (max-width: 768px) {
 		padding: 0 20px;
 	}
@@ -1546,6 +1644,9 @@ footer {
 	margin-top: 140px;
 	padding: 0 40px;
 	overflow: hidden;
+	@media screen and (max-width: 992px) {
+		margin-top: 120px;
+	}
 	@media screen and (max-width: 768px) {
 		margin-top: 120px;
 		padding: 0 20px;
@@ -1742,6 +1843,9 @@ footer {
 	margin-top: 140px;
 	padding: 0 40px;
 	overflow: hidden;
+	@media screen and (max-width: 992px) {
+		margin-top: 120px;
+	}
 	@media screen and (max-width: 768px) {
 		margin-top: 120px;
 		padding: 0 20px;		
@@ -1959,6 +2063,9 @@ footer {
 	margin-top: 140px;
 	padding: 0 40px;
 	overflow: hidden;
+	@media screen and (max-width: 992px) {
+		margin-top: 120px;
+	}
 	@media screen and (max-width: 768px) {
 		padding: 0 5px;
 		margin-top: 120px;
@@ -2347,6 +2454,9 @@ footer {
 	width: 100%;
 	margin-top: 140px;
 	padding: 0 40px;
+	@media screen and (max-width: 992px) {
+		margin-top: 120px;
+	}
 	@media screen and (max-width: 768px) {
 		margin-top: 120px;
 		padding: 0 20px;
@@ -3084,6 +3194,9 @@ footer {
 		height: 545px;
 		display: inline-block;
 		overflow: hidden;
+		@media screen and (max-width: 992px) {
+			height: auto;
+		}
 		@media screen and (max-width: 768px) {			
 			height: auto;
 		}
@@ -3312,6 +3425,9 @@ footer {
 	padding: 0 40px;
 	margin-top: 140px;
 	overflow: hidden;
+	@media screen and (max-width: 992px) {
+		margin-top: 120px;
+	}
 	@media screen and (max-width: 768px) {
 		margin-top: 120px;
 		padding: 0 20px;
@@ -3460,6 +3576,9 @@ footer {
 	margin-top: 140px;
 	padding: 0 40px;
 	overflow: hidden;
+	@media screen and (max-width: 992px) {
+		margin-top: 120px;
+	}
 	@media screen and (max-width: 768px) {
 		margin-top: 100px;
 		padding: 0 5px;
@@ -3690,6 +3809,9 @@ footer {
 	margin-top: 140px;
 	padding: 0 40px;
 	overflow: hidden;
+	@media screen and (max-width: 992px) {
+		margin-top: 120px;
+	}
 	@media screen and (max-width: 768px) {
 		margin-top: 120px;
 		padding: 0 5px;
@@ -3888,6 +4010,11 @@ footer {
 	margin-top: 105px;
 	padding: 0 40px 0 60px;
 	overflow: hidden;
+	@media screen and (max-width: 992px) {
+		.fixed {
+			padding-left: 0;
+		}
+	}
 	@media screen and (max-width: 768px) {
 		padding: 0 20px;
 	}

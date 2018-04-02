@@ -368,6 +368,11 @@ a:focus {
   height: 100vh;
   overflow: hidden;
 }
+@media screen and (max-width: 992px) {
+  .main {
+    display: none;
+  }
+}
 @media screen and (max-width: 768px) {
   .main {
     display: none;
@@ -441,6 +446,65 @@ a:focus {
 .main_mob {
   display: none;
 }
+@media screen and (max-width: 992px) {
+  .main_mob {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    display: block;
+  }
+  .main_mob_slide {
+    width: 100%;
+    display: inline-block;
+  }
+  .main_mob_slide img {
+    max-width: 100%;
+    min-height: 100vh;
+    width: auto;
+    height: auto;
+  }
+  .main_mob_text_wrapper {
+    position: absolute;
+    width: 50%;
+    top: 30%;
+    left: 5%;
+  }
+  .main_mob_text_wrapper p {
+    font-size: 48px;
+    font-family: 'LucidaGrande', sans-serif;
+    font-weight: 700;
+  }
+  .main_mob_text_wrapper .btn {
+    border: 1px solid #000000;
+    background-color: #ffffff;
+    color: #000000;
+    margin-top: 40px;
+  }
+  .main_mob .slick-dots {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+  }
+  .main_mob .slick-dots li {
+    position: relative;
+    z-index: 110;
+    width: 12px;
+    height: 12px;
+    border: 1px solid #000000;
+    border-radius: 25px;
+    display: inline-block;
+    margin-right: 10px;
+    bottom: 20px;
+  }
+  .main_mob .slick-dots .slick-active {
+    background-color: #000000;
+  }
+  .main_mob .slick-dots li button {
+    display: none;
+  }
+}
 @media screen and (max-width: 768px) {
   .main_mob {
     position: relative;
@@ -509,6 +573,11 @@ a:focus {
   padding: 0 40px;
   overflow: hidden;
   clear: both;
+}
+@media screen and (max-width: 992px) {
+  .new {
+    margin-top: 120px;
+  }
 }
 @media screen and (max-width: 768px) {
   .new {
@@ -639,6 +708,11 @@ a:focus {
   margin-top: 140px;
   overflow: hidden;
 }
+@media screen and (max-width: 992px) {
+  .share {
+    margin-top: 120px;
+  }
+}
 @media screen and (max-width: 768px) {
   .share {
     margin-top: 120px;
@@ -678,6 +752,11 @@ a:focus {
   width: 100%;
   margin-top: 140px;
   padding: 0 40px;
+}
+@media screen and (max-width: 992px) {
+  .top {
+    margin-top: 120px;
+  }
 }
 @media screen and (max-width: 768px) {
   .top {
@@ -850,6 +929,11 @@ a:focus {
   width: 100%;
   margin-top: 140px;
   padding: 0 40px;
+}
+@media screen and (max-width: 992px) {
+  .blog {
+    margin-top: 120px;
+  }
 }
 @media screen and (max-width: 768px) {
   .blog {
@@ -1140,11 +1224,18 @@ footer {
   width: 100%;
   height: auto;
   margin-top: 140px;
+  padding: 0 40px;
   background-color: rgba(0, 0, 0, 0.75);
+}
+@media screen and (max-width: 992px) {
+  footer {
+    margin-top: 120px;
+  }
 }
 @media screen and (max-width: 768px) {
   footer {
     margin-top: 120px;
+    padding: 0 20px;
   }
 }
 footer .row {
@@ -1175,8 +1266,7 @@ footer .footer_list li a:hover {
 footer .social {
   margin-top: 30px;
   width: 100%;
-  display: inline-flex;
-  justify-content: space-between;
+  display: inline-block;
 }
 @media screen and (max-width: 768px) {
   footer .social {
@@ -1187,6 +1277,13 @@ footer .social {
 footer .social img {
   width: 45px;
   height: 45px;
+  margin-right: 3%;
+}
+@media screen and (max-width: 992px) {
+  footer .social img {
+    width: 30px;
+    height: 30px;
+  }
 }
 @media screen and (max-width: 768px) {
   footer .social img {
@@ -1223,9 +1320,24 @@ footer .copy a {
 footer .copy a:hover {
   color: #ffffff;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 992px) {
   footer .copy .fix {
     padding-left: 0;
+  }
+}
+@media screen and (max-width: 768px) {
+  footer .copy .fix {
+    padding: 0;
+  }
+}
+@media screen and (max-width: 992px) {
+  footer .fixed {
+    padding-left: 0;
+  }
+}
+@media screen and (max-width: 768px) {
+  footer .fixed {
+    padding-left: 15px;
   }
 }
 /* BLOCK_SHARE SECTION */
@@ -1235,6 +1347,11 @@ footer .copy a:hover {
   margin-top: 140px;
   padding: 0 40px;
   overflow: hidden;
+}
+@media screen and (max-width: 992px) {
+  .block_share {
+    margin-top: 120px;
+  }
 }
 @media screen and (max-width: 768px) {
   .block_share {
@@ -1421,6 +1538,11 @@ footer .copy a:hover {
   padding: 0 40px;
   margin-top: 85px;
 }
+@media screen and (max-width: 992px) {
+  .block_things {
+    margin-top: 120px;
+  }
+}
 @media screen and (max-width: 768px) {
   .block_things {
     padding: 0 20px;
@@ -1542,6 +1664,11 @@ footer .copy a:hover {
   margin-top: 140px;
   padding: 0 40px;
   overflow: hidden;
+}
+@media screen and (max-width: 992px) {
+  .man_accessory {
+    margin-top: 120px;
+  }
 }
 @media screen and (max-width: 768px) {
   .man_accessory {
@@ -1723,6 +1850,11 @@ footer .copy a:hover {
   margin-top: 140px;
   padding: 0 40px;
   overflow: hidden;
+}
+@media screen and (max-width: 992px) {
+  .woman_accessory {
+    margin-top: 120px;
+  }
 }
 @media screen and (max-width: 768px) {
   .woman_accessory {
@@ -1940,6 +2072,11 @@ footer .copy a:hover {
   margin-top: 140px;
   padding: 0 40px;
   overflow: hidden;
+}
+@media screen and (max-width: 992px) {
+  .shops {
+    margin-top: 120px;
+  }
 }
 @media screen and (max-width: 768px) {
   .shops {
@@ -2310,6 +2447,11 @@ footer .copy a:hover {
   width: 100%;
   margin-top: 140px;
   padding: 0 40px;
+}
+@media screen and (max-width: 992px) {
+  .article_read {
+    margin-top: 120px;
+  }
 }
 @media screen and (max-width: 768px) {
   .article_read {
@@ -3080,6 +3222,11 @@ footer .copy a:hover {
   display: inline-block;
   overflow: hidden;
 }
+@media screen and (max-width: 992px) {
+  .product_slider_wrapper {
+    height: auto;
+  }
+}
 @media screen and (max-width: 768px) {
   .product_slider_wrapper {
     height: auto;
@@ -3316,6 +3463,11 @@ footer .copy a:hover {
   margin-top: 140px;
   overflow: hidden;
 }
+@media screen and (max-width: 992px) {
+  .product_review {
+    margin-top: 120px;
+  }
+}
 @media screen and (max-width: 768px) {
   .product_review {
     margin-top: 120px;
@@ -3474,6 +3626,11 @@ footer .copy a:hover {
   margin-top: 140px;
   padding: 0 40px;
   overflow: hidden;
+}
+@media screen and (max-width: 992px) {
+  .product_shop {
+    margin-top: 120px;
+  }
 }
 @media screen and (max-width: 768px) {
   .product_shop {
@@ -3704,6 +3861,11 @@ footer .copy a:hover {
   padding: 0 40px;
   overflow: hidden;
 }
+@media screen and (max-width: 992px) {
+  .product_accessory {
+    margin-top: 120px;
+  }
+}
 @media screen and (max-width: 768px) {
   .product_accessory {
     margin-top: 120px;
@@ -3891,6 +4053,11 @@ footer .copy a:hover {
   margin-top: 105px;
   padding: 0 40px 0 60px;
   overflow: hidden;
+}
+@media screen and (max-width: 992px) {
+  .listing_page .fixed {
+    padding-left: 0;
+  }
 }
 @media screen and (max-width: 768px) {
   .listing_page {
