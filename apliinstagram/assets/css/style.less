@@ -145,8 +145,7 @@ a:focus {
 	width: 100%;
 	height: 65px;
 	line-height: 65px;
-	background-color: @main-black;	
-	overflow: hidden;
+	background-color: @main-black;
 	padding: 0 40px;
 	z-index: 1000;
 	opacity: 0.7;
@@ -154,6 +153,74 @@ a:focus {
 		height: 60px;
 		line-height: 60px;
 		padding: 0 20px;	
+	}
+	.search {
+		position: absolute;
+		width: 350px;
+		height: 45px;
+		bottom: -45px;
+		right: 5%;
+		display: none;
+		border: none;
+		z-index: 101;
+		outline: none;
+		-webkit-box-shadow: 0px 5px 20px 5px rgba(0,0,0,0.75);
+		-moz-box-shadow: 0px 5px 20px 5px rgba(0,0,0,0.75);
+		box-shadow: 0px 5px 20px 5px rgba(0,0,0,0.75);
+		@media screen and (max-width: 992px) {
+			width: 300px;
+		}
+		@media screen and (max-width: 768px) {
+			width: 250px;
+		}
+		.search_tr {
+			position: absolute;
+			display: block;
+			width: 350px;
+			height: 45px;
+			top: 0;
+			left: 0;
+			outline: none;
+			text-indent: 10px;
+			color: rgba(0, 0, 0, 0.6);
+			appearance: none;
+			border: 1px solid @grey;
+			@media screen and (max-width: 992px) {
+				width: 300px;
+			}
+			@media screen and (max-width: 768px) {
+				width: 250px;
+			}
+			&:hover {
+				border: 1px solid @grey;
+				appearance: none;
+			}
+		}
+		input::-moz-placeholder {
+		    .opn-reg;
+		    color: rgba(0, 0, 0, 0.6);
+		}
+		input::-webkit-input-placeholder {
+		    .opn-reg;
+		    color: rgba(0, 0, 0, 0.6);
+		}
+		input:-ms-input-placeholder {
+		    .opn-reg;
+		    color: rgba(0, 0, 0, 0.6);
+		}
+		input::-ms-input-placeholder {		    
+		    .opn-reg;
+		    color: rgba(0, 0, 0, 0.6);
+		}
+		input::placeholder { 
+		    .opn-reg;
+		    color: rgba(0, 0, 0, 0.6);
+		}
+		input:focus {
+			outline: none;
+			color: rgba(0, 0, 0, 1);
+			border: 1px solid @grey;
+		}
 	}	
 }
 .nav_wrapper {
@@ -229,10 +296,11 @@ a:focus {
 			border-bottom:none;
 		}
 	}
-	.search {
+	.show_search {
 		width: 20px;
 		height: 20px;
 		display: inline-block;
+		cursor: pointer;
 	}
 	.nav_heart {
 		width: 20px;
@@ -240,12 +308,18 @@ a:focus {
 		display: inline-block;
 		position: relative;
 		cursor: pointer;
+		img {
+			width: 20px;
+			height: 20px;
+			display: block;
+		}
 		.nav_heart_number {
 			position: absolute;			
 			display: block;
 			width: 16px;
 			height: 16px;
-			bottom: -10px;
+			line-height: 15px;
+			top: -5px;
 			right: -10px;
 			font-size: 10px;
 			color: @main-black;
@@ -265,7 +339,8 @@ a:focus {
 			display: block;
 			width: 16px;
 			height: 16px;
-			bottom: -10px;
+			line-height: 15px;
+			top: -5px;
 			right: -10px;
 			font-size: 10px;
 			color: @main-black;
@@ -276,12 +351,18 @@ a:focus {
 		img {
 			width: 20px;
 			height: 20px;
+			display: block;
 		}
 	}
 	.cabinet {
 		width: 16px;
 		height: 20px;
 		display: inline-block;
+		img {
+			width: 20px;
+			height: 20px;
+			display: block;
+		}
 	}
 }
 
@@ -307,6 +388,10 @@ a:focus {
 	}
 	.page {
 		margin-top: 25px;
+		opacity: 0.5;
+		&:hover {
+			opacity: 1;
+		}
 		@media screen and (max-width: 768px) {
 			height: 30px;
 			overflow: hidden;
@@ -899,19 +984,15 @@ a:focus {
 		margin-top: 20px;		
 		display: inline-block;
 		float: right;
-		button {			
-			background-color: @white;
-			border: none;
+		img {			
+			width: 20px;
+			height: 20px;
 			display: inline-block;
 			padding-left: 5px;
-			padding-right: 0;			
-			float: right;
-			img {			
-				width: 16px;
-				height: 17px;								
-			}
-		}		
-		p {
+			padding-bottom: 5px;	
+			float: right;							
+		}
+		span {
 			display: inline-block;
 			float: right;
 		}		
@@ -1679,19 +1760,15 @@ footer {
 		margin-top: 20px;		
 		display: inline-block;
 		float: right;
-		button {			
-			background-color: @white;
-			border: none;
+		img {			
+			width: 20px;
+			height: 20px;
 			display: inline-block;
 			padding-left: 5px;
-			padding-right: 0;			
-			float: right;
-			img {			
-				width: 16px;
-				height: 17px;								
-			}
-		}		
-		p {
+			padding-bottom: 5px;	
+			float: right;							
+		}
+		span {
 			display: inline-block;
 			float: right;
 		}		
@@ -1998,19 +2075,15 @@ footer {
 		margin-top: 20px;		
 		display: inline-block;
 		float: right;
-		button {			
-			background-color: @white;
-			border: none;
+		img {			
+			width: 20px;
+			height: 20px;
 			display: inline-block;
 			padding-left: 5px;
-			padding-right: 0;			
+			padding-bottom: 5px;	
 			float: right;
-			img {			
-				width: 16px;
-				height: 17px;								
-			}
-		}		
-		p {
+		}
+		span {
 			display: inline-block;
 			float: right;
 		}		
@@ -2190,19 +2263,15 @@ footer {
 		margin-top: 20px;		
 		display: inline-block;
 		float: right;
-		button {			
-			background-color: @white;
-			border: none;
+		img {			
+			width: 20px;
+			height: 20px;
 			display: inline-block;
 			padding-left: 5px;
-			padding-right: 0;			
-			float: right;
-			img {			
-				width: 16px;
-				height: 17px;								
-			}
-		}		
-		p {
+			padding-bottom: 5px;	
+			float: right;				
+		}
+		span {
 			display: inline-block;
 			float: right;
 		}		
@@ -3046,23 +3115,19 @@ footer {
 			margin-top: 0;
 			width: 15%;
 		}
-		button {			
-			background-color: @white;
-			border: none;
+		img {			
+			width: 20px;
+			height: 20px;
 			display: inline-block;
 			padding-left: 5px;
-			padding-right: 0;			
+			padding-bottom: 5px;	
 			float: right;
-			img {			
-				width: 16px;
-				height: 17px;
-				@media screen and (max-width: 768px) {
-					width: 14px;
-					height: 14px;
-				}								
-			}
-		}		
-		p {
+			@media screen and (max-width: 768px) {
+				width: 14px;
+				height: 14px;
+			}							
+		}
+		span {
 			display: inline-block;
 			float: right;
 			@media screen and (max-width: 768px) {
@@ -3529,6 +3594,7 @@ footer {
 	&_about {
 		margin-top: 60px;
 		.product_about_head {
+			position: relative;
 			li {
 				display: inline-block;
 				margin-right: 65px;
@@ -3544,12 +3610,11 @@ footer {
 		.product_about_head:after {
 			content: '';
 			display: block;
-			position: absolute;				
+			position: absolute;
+			border: 1px solid @grey;				
 			width: 100%;
-			height: 1px;
-			bottom: -3px;
+			bottom: -10px;
 			right: 0;
-			color: @grey;
 		}
 		&_header {
 			@media screen and (max-width: 768px) {
@@ -3675,7 +3740,7 @@ footer {
 		.comment_stars {			
 			display: block;
 			float: right;
-			margin-right: 20%;
+			margin-right: 0;
 			@media screen and (max-width: 768px) {
 				margin-right: 0;
 			}
@@ -3692,9 +3757,8 @@ footer {
 			width: 100%;
 			margin-top: 10px;
 			.comment_textarea {
-				width: ~"calc(100% - 260px)";
+				width: ~"calc(100% - 80px)";
 				height: 100px;
-				margin-right: 20px;
 				text-indent: 25px;
 				resize: vertical;
 				line-height: 40px;
@@ -3702,6 +3766,7 @@ footer {
 				outline: none;
 				-moz-appearance: none;
 				border: 1px solid @main-black;
+				display: block;
 				@media screen and (max-width: 768px) {
 					width: 100%;
 					margin-right: 0;
@@ -3737,14 +3802,15 @@ footer {
 			}
 		}
 		.comment_btn {
-			display: inline-block;
-			width: 160px;
+			display: block;
+			width: 220px;
 			height: 50px;
 			line-height: 50px;			
 			border: @main-black;
 			background-color: @main-black;
 			color: @white;
 			float: right;
+			margin-top: 40px;
 			@media screen and (max-width: 768px) {
 				display: block;
 				width: 50%;
@@ -3792,6 +3858,7 @@ footer {
 	.product_shop_image1 {
 		position: relative;
 		width: 100%;
+		height: auto;
 		margin-top: 40px;
 		&:after {
 			position: absolute;
@@ -3810,7 +3877,7 @@ footer {
 			position: absolute;
 			display: inline-block;
 			width: 100%;
-			height: 100%;
+			height: 60%;
 			top: 40%;
 			left: 0;
 			font-size: 30px;
@@ -3946,19 +4013,15 @@ footer {
 		margin-top: 20px;		
 		display: inline-block;
 		float: right;
-		button {			
-			background-color: @white;
-			border: none;
+		img {			
+			width: 20px;
+			height: 20px;
 			display: inline-block;
 			padding-left: 5px;
-			padding-right: 0;			
+			padding-bottom: 5px;	
 			float: right;
-			img {			
-				width: 16px;
-				height: 17px;								
-			}
-		}		
-		p {
+		}
+		span {
 			display: inline-block;
 			float: right;
 		}		
@@ -4135,19 +4198,15 @@ footer {
 		margin-top: 20px;		
 		display: inline-block;
 		float: right;
-		button {			
-			background-color: @white;
-			border: none;
+		img {			
+			width: 20px;
+			height: 20px;
 			display: inline-block;
 			padding-left: 5px;
-			padding-right: 0;			
+			padding-bottom: 5px;	
 			float: right;
-			img {			
-				width: 16px;
-				height: 17px;								
-			}
-		}		
-		p {
+		}
+		span {
 			display: inline-block;
 			float: right;
 		}		
@@ -4507,23 +4566,19 @@ footer {
 			width: 10%;
 			padding-right: 0;
 		}
-		button {			
-			background-color: @white;
-			border: none;
+		img {			
+			width: 20px;
+			height: 20px;
 			display: inline-block;
 			padding-left: 5px;
-			padding-right: 0;			
+			padding-bottom: 5px;	
 			float: right;
-			img {			
-				width: 16px;
-				height: 17px;
-				@media screen and (max-width: 768px) {
-					width: 14px;
-					height: 14px;
-				}								
+			@media screen and (max-width: 768px) {
+				width: 14px;
+				height: 14px;
 			}
-		}		
-		p {
+		}
+		span {
 			display: inline-block;
 			float: right;
 			@media screen and (max-width: 768px) {
@@ -4652,4 +4707,10 @@ footer {
 .product .active_arrow:after {
 	transition: transform 0.6s;
 	transform: rotate(180deg);
+}
+.nav_list .page_list_active {
+	opacity: 1;
+}
+.nav_header_menu .active_page a {
+	opacity: 1;
 }

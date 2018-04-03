@@ -266,6 +266,38 @@ $('.listing_page_form_text').click(showNextList);
 
 
 
+$('.show_search').click(function(){
+	$('.search').css({'display': 'block'}, 300);
+});
+
+
+(function(){
+	var menuPuncts = $('.nav_header_menu li');
+	var pageList = $('.page');
+	var navList = $('.nav_list');
+	var navMenu = $('.nav_header_menu');
+	for(var i = 0; i < menuPuncts.length; i++) {
+		var clss = 'action_' + i;
+		$(menuPuncts[i]).addClass(clss);
+		$(pageList[i]).addClass(clss);
+	};
+	menuPuncts.mouseover(function(){
+		var clss = $(this).attr('class');
+		var clss = '.' + clss;
+		pageList.removeClass('page_list_active');
+		menuPuncts.removeClass('active_page');
+		$(this).addClass('active_page');
+		navList.find(clss).addClass('page_list_active');
+	});
+
+
+
+})();
+
+
+
+
+
 
 
 

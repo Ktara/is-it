@@ -142,7 +142,6 @@ a:focus {
   height: 65px;
   line-height: 65px;
   background-color: #000000;
-  overflow: hidden;
   padding: 0 40px;
   z-index: 1000;
   opacity: 0.7;
@@ -153,6 +152,87 @@ a:focus {
     line-height: 60px;
     padding: 0 20px;
   }
+}
+.nav_header .search {
+  position: absolute;
+  width: 350px;
+  height: 45px;
+  bottom: -45px;
+  right: 5%;
+  display: none;
+  border: none;
+  z-index: 101;
+  outline: none;
+  -webkit-box-shadow: 0px 5px 20px 5px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 5px 20px 5px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 5px 20px 5px rgba(0, 0, 0, 0.75);
+}
+@media screen and (max-width: 992px) {
+  .nav_header .search {
+    width: 300px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .nav_header .search {
+    width: 250px;
+  }
+}
+.nav_header .search .search_tr {
+  position: absolute;
+  display: block;
+  width: 350px;
+  height: 45px;
+  top: 0;
+  left: 0;
+  outline: none;
+  text-indent: 10px;
+  color: rgba(0, 0, 0, 0.6);
+  appearance: none;
+  border: 1px solid #7f7f7f;
+}
+@media screen and (max-width: 992px) {
+  .nav_header .search .search_tr {
+    width: 300px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .nav_header .search .search_tr {
+    width: 250px;
+  }
+}
+.nav_header .search .search_tr:hover {
+  border: 1px solid #7f7f7f;
+  appearance: none;
+}
+.nav_header .search input::-moz-placeholder {
+  font-family: 'LucidaGrande', sans-serif;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 0.6);
+}
+.nav_header .search input::-webkit-input-placeholder {
+  font-family: 'LucidaGrande', sans-serif;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 0.6);
+}
+.nav_header .search input:-ms-input-placeholder {
+  font-family: 'LucidaGrande', sans-serif;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 0.6);
+}
+.nav_header .search input::-ms-input-placeholder {
+  font-family: 'LucidaGrande', sans-serif;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 0.6);
+}
+.nav_header .search input::placeholder {
+  font-family: 'LucidaGrande', sans-serif;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 0.6);
+}
+.nav_header .search input:focus {
+  outline: none;
+  color: #000000;
+  border: 1px solid #7f7f7f;
 }
 .nav_wrapper {
   position: relative;
@@ -230,10 +310,11 @@ a:focus {
     top: 7px;
   }
 }
-.nav_wrapper .search {
+.nav_wrapper .show_search {
   width: 20px;
   height: 20px;
   display: inline-block;
+  cursor: pointer;
 }
 .nav_wrapper .nav_heart {
   width: 20px;
@@ -242,12 +323,18 @@ a:focus {
   position: relative;
   cursor: pointer;
 }
+.nav_wrapper .nav_heart img {
+  width: 20px;
+  height: 20px;
+  display: block;
+}
 .nav_wrapper .nav_heart .nav_heart_number {
   position: absolute;
   display: block;
   width: 16px;
   height: 16px;
-  bottom: -10px;
+  line-height: 15px;
+  top: -5px;
   right: -10px;
   font-size: 10px;
   color: #000000;
@@ -267,7 +354,8 @@ a:focus {
   display: block;
   width: 16px;
   height: 16px;
-  bottom: -10px;
+  line-height: 15px;
+  top: -5px;
   right: -10px;
   font-size: 10px;
   color: #000000;
@@ -278,11 +366,17 @@ a:focus {
 .nav_wrapper .nav_basket img {
   width: 20px;
   height: 20px;
+  display: block;
 }
 .nav_wrapper .cabinet {
   width: 16px;
   height: 20px;
   display: inline-block;
+}
+.nav_wrapper .cabinet img {
+  width: 20px;
+  height: 20px;
+  display: block;
 }
 /* NAV LIST */
 .nav_list {
@@ -306,6 +400,10 @@ a:focus {
 }
 .nav_list .page {
   margin-top: 25px;
+  opacity: 0.5;
+}
+.nav_list .page:hover {
+  opacity: 1;
 }
 @media screen and (max-width: 768px) {
   .nav_list .page {
@@ -898,19 +996,15 @@ a:focus {
   display: inline-block;
   float: right;
 }
-.top_like button {
-  background-color: #ffffff;
-  border: none;
+.top_like img {
+  width: 20px;
+  height: 20px;
   display: inline-block;
   padding-left: 5px;
-  padding-right: 0;
+  padding-bottom: 5px;
   float: right;
 }
-.top_like button img {
-  width: 16px;
-  height: 17px;
-}
-.top_like p {
+.top_like span {
   display: inline-block;
   float: right;
 }
@@ -1720,19 +1814,15 @@ footer .copy a:hover {
   display: inline-block;
   float: right;
 }
-.block_share .block_share_like button {
-  background-color: #ffffff;
-  border: none;
+.block_share .block_share_like img {
+  width: 20px;
+  height: 20px;
   display: inline-block;
   padding-left: 5px;
-  padding-right: 0;
+  padding-bottom: 5px;
   float: right;
 }
-.block_share .block_share_like button img {
-  width: 16px;
-  height: 17px;
-}
-.block_share .block_share_like p {
+.block_share .block_share_like span {
   display: inline-block;
   float: right;
 }
@@ -2039,19 +2129,15 @@ footer .copy a:hover {
   display: inline-block;
   float: right;
 }
-.man_accessory .man_like button {
-  background-color: #ffffff;
-  border: none;
+.man_accessory .man_like img {
+  width: 20px;
+  height: 20px;
   display: inline-block;
   padding-left: 5px;
-  padding-right: 0;
+  padding-bottom: 5px;
   float: right;
 }
-.man_accessory .man_like button img {
-  width: 16px;
-  height: 17px;
-}
-.man_accessory .man_like p {
+.man_accessory .man_like span {
   display: inline-block;
   float: right;
 }
@@ -2218,19 +2304,15 @@ footer .copy a:hover {
   display: inline-block;
   float: right;
 }
-.woman_accessory .woman_like button {
-  background-color: #ffffff;
-  border: none;
+.woman_accessory .woman_like img {
+  width: 20px;
+  height: 20px;
   display: inline-block;
   padding-left: 5px;
-  padding-right: 0;
+  padding-bottom: 5px;
   float: right;
 }
-.woman_accessory .woman_like button img {
-  width: 16px;
-  height: 17px;
-}
-.woman_accessory .woman_like p {
+.woman_accessory .woman_like span {
   display: inline-block;
   float: right;
 }
@@ -3067,30 +3149,26 @@ footer .copy a:hover {
     width: 15%;
   }
 }
-.wish_like button {
-  background-color: #ffffff;
-  border: none;
+.wish_like img {
+  width: 20px;
+  height: 20px;
   display: inline-block;
   padding-left: 5px;
-  padding-right: 0;
+  padding-bottom: 5px;
   float: right;
 }
-.wish_like button img {
-  width: 16px;
-  height: 17px;
-}
 @media screen and (max-width: 768px) {
-  .wish_like button img {
+  .wish_like img {
     width: 14px;
     height: 14px;
   }
 }
-.wish_like p {
+.wish_like span {
   display: inline-block;
   float: right;
 }
 @media screen and (max-width: 768px) {
-  .wish_like p {
+  .wish_like span {
     font-size: 14px;
   }
 }
@@ -3582,6 +3660,9 @@ footer .copy a:hover {
 .product_about {
   margin-top: 60px;
 }
+.product_about .product_about_head {
+  position: relative;
+}
 .product_about .product_about_head li {
   display: inline-block;
   margin-right: 65px;
@@ -3598,11 +3679,10 @@ footer .copy a:hover {
   content: '';
   display: block;
   position: absolute;
+  border: 1px solid #7f7f7f;
   width: 100%;
-  height: 1px;
-  bottom: -3px;
+  bottom: -10px;
   right: 0;
-  color: #7f7f7f;
 }
 @media screen and (max-width: 768px) {
   .product_about_header {
@@ -3732,7 +3812,7 @@ footer .copy a:hover {
 .product_review .comment_block .comment_stars {
   display: block;
   float: right;
-  margin-right: 20%;
+  margin-right: 0;
 }
 @media screen and (max-width: 768px) {
   .product_review .comment_block .comment_stars {
@@ -3752,9 +3832,8 @@ footer .copy a:hover {
   margin-top: 10px;
 }
 .product_review .comment_block .comment_form .comment_textarea {
-  width: calc(100% - 260px);
+  width: calc(100% - 80px);
   height: 100px;
-  margin-right: 20px;
   text-indent: 25px;
   resize: vertical;
   line-height: 40px;
@@ -3762,6 +3841,7 @@ footer .copy a:hover {
   outline: none;
   -moz-appearance: none;
   border: 1px solid #000000;
+  display: block;
 }
 @media screen and (max-width: 768px) {
   .product_review .comment_block .comment_form .comment_textarea {
@@ -3803,14 +3883,15 @@ footer .copy a:hover {
   outline: none;
 }
 .product_review .comment_block .comment_btn {
-  display: inline-block;
-  width: 160px;
+  display: block;
+  width: 220px;
   height: 50px;
   line-height: 50px;
   border: #000000;
   background-color: #000000;
   color: #ffffff;
   float: right;
+  margin-top: 40px;
 }
 @media screen and (max-width: 768px) {
   .product_review .comment_block .comment_btn {
@@ -3861,6 +3942,7 @@ footer .copy a:hover {
 .product_shop .product_shop_image1 {
   position: relative;
   width: 100%;
+  height: auto;
   margin-top: 40px;
 }
 .product_shop .product_shop_image1:after {
@@ -3880,7 +3962,7 @@ footer .copy a:hover {
   position: absolute;
   display: inline-block;
   width: 100%;
-  height: 100%;
+  height: 60%;
   top: 40%;
   left: 0;
   font-size: 30px;
@@ -4016,19 +4098,15 @@ footer .copy a:hover {
   display: inline-block;
   float: right;
 }
-.product_shop .product_shop_like button {
-  background-color: #ffffff;
-  border: none;
+.product_shop .product_shop_like img {
+  width: 20px;
+  height: 20px;
   display: inline-block;
   padding-left: 5px;
-  padding-right: 0;
+  padding-bottom: 5px;
   float: right;
 }
-.product_shop .product_shop_like button img {
-  width: 16px;
-  height: 17px;
-}
-.product_shop .product_shop_like p {
+.product_shop .product_shop_like span {
   display: inline-block;
   float: right;
 }
@@ -4206,19 +4284,15 @@ footer .copy a:hover {
   display: inline-block;
   float: right;
 }
-.product_accessory .product_like button {
-  background-color: #ffffff;
-  border: none;
+.product_accessory .product_like img {
+  width: 20px;
+  height: 20px;
   display: inline-block;
   padding-left: 5px;
-  padding-right: 0;
+  padding-bottom: 5px;
   float: right;
 }
-.product_accessory .product_like button img {
-  width: 16px;
-  height: 17px;
-}
-.product_accessory .product_like p {
+.product_accessory .product_like span {
   display: inline-block;
   float: right;
 }
@@ -4576,30 +4650,26 @@ footer .copy a:hover {
     padding-right: 0;
   }
 }
-.listing_page .block_listing_page_like button {
-  background-color: #ffffff;
-  border: none;
+.listing_page .block_listing_page_like img {
+  width: 20px;
+  height: 20px;
   display: inline-block;
   padding-left: 5px;
-  padding-right: 0;
+  padding-bottom: 5px;
   float: right;
 }
-.listing_page .block_listing_page_like button img {
-  width: 16px;
-  height: 17px;
-}
 @media screen and (max-width: 768px) {
-  .listing_page .block_listing_page_like button img {
+  .listing_page .block_listing_page_like img {
     width: 14px;
     height: 14px;
   }
 }
-.listing_page .block_listing_page_like p {
+.listing_page .block_listing_page_like span {
   display: inline-block;
   float: right;
 }
 @media screen and (max-width: 768px) {
-  .listing_page .block_listing_page_like p {
+  .listing_page .block_listing_page_like span {
     font-size: 14px;
   }
 }
@@ -4725,4 +4795,10 @@ footer .copy a:hover {
 .product .active_arrow:after {
   transition: transform 0.6s;
   transform: rotate(180deg);
+}
+.nav_list .page_list_active {
+  opacity: 1;
+}
+.nav_header_menu .active_page a {
+  opacity: 1;
 }
