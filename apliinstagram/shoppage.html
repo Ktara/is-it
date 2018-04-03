@@ -53,10 +53,10 @@
               <a href="" class="search">              
                 <img class="show_search" src="assets/img/magnifying-glass.svg" alt="">
               </a>
-              <a href="https://ktara.github.io/is-it/apliinstagram/wishlist.html" class="heart">
+              <div class="heart">
                 <img src="assets/img/heart.svg" alt="">
                 <span class="nav_heart_number">10</span>
-              </a>
+              </div>
               <div class="nav_basket">
                 <img src="assets/img/shopping-cart.svg" alt="">
                 <span class="nav_basket_number">10</span>
@@ -992,8 +992,10 @@
         <div class="col-md-9 col-sm-9 fixed col-xs-12">          
           <p class="listing_page_sorting">Сортировать</p>
           <div class="listing_page_location visible-xs">
-            <a class="listing_page_location_marker" href=""><img src="assets/img/marker.png" alt=""></a>
-            <p class="listing_page_location_text">Москва</p>
+            <a class="listing_page_location_marker" href="">
+              <img src="assets/img/marker.png" alt="">
+              <div class="listing_page_location_text">Москва</div>
+            </a>
           </div>
           <select name="" id="" class="listing_page_sorting_list">
             <option value="1" selected>по возрастанию цены</option>
@@ -1003,8 +1005,10 @@
             <option>по популярности</option>
           </select>
           <div class="listing_page_location hidden-xs">
-            <a class="listing_page_location_marker" href=""><img src="assets/img/marker.png" alt=""></a>
-            <p class="listing_page_location_text">Москва</p>
+            <a class="listing_page_location_marker" href="">
+              <img src="assets/img/marker.png" alt="">
+              <div class="listing_page_location_text">Москва</div>
+            </a>
           </div>
           <div class="row listing_page_image_wrapper">
             <div class="col-md-4 col-sm-4 col-xs-12">
@@ -1287,6 +1291,76 @@
           </div>
           <div class="listing_page_image_wrapper_button">Показать еще</div>
         </div>
+      </section>
+
+
+
+
+
+      <section class="wish_window">        
+        <h2 class="wish_window_header">Моя корзина</h2>
+        <div class="wish_window_bag_wrapper">
+          <img class="wish_window_bag" src="assets/img/shopping-cart-black.svg" alt="">
+          <span class="wish_window_bag_number">3</span>
+        </div>
+        <div class="col-md-11 col-md-offset-1 col-sm-11 col-sm-offset-1 col-xs-12">
+          <div class="wish_window_block">
+            <div class="col-md-5 col-sm-5 fix col-xs-5">
+              <img class="wish_window_product" src="assets/img/Wishlist/703.jpg" alt="">
+            </div>
+            <div class="col-md-6 col-md-offset-1 col-sm-6 col-sm-offset-1 col-xs-6">
+               <div class="wish_window_text">Платье</div>
+               <div class="wish_window_price">700 руб</div>
+               <div class="wish_window_color_block">
+                 <div class="color" style="background-color: #000000"></div>
+                 <p>черный</p>
+               </div>
+               <div class="wish_window_size">размер 38</div>
+               <div class="wish_window_number">1 шт</div>
+               <div class="wish_window_block_close"></div>               
+            </div>
+          </div>
+
+          <div class="basket_window_block">
+            <div class="col-md-5 col-sm-5 fix col-xs-5">
+              <img class="wish_window_product" src="assets/img/Wishlist/703.jpg" alt="">
+            </div>
+            <div class="col-md-6 col-md-offset-1 col-sm-6 col-sm-offset-1 col-xs-6">
+               <div class="wish_window_text">Платье</div>
+               <div class="wish_window_price">700 руб</div>
+               <div class="wish_window_color_block">
+                 <div class="color" style="background-color: #000000"></div>
+                 <p>черный</p>
+               </div>
+               <div class="wish_window_size">размер 38</div>
+               <div class="wish_window_number">1 шт</div>
+               <div class="wish_window_block_close"></div>               
+            </div>
+          </div>
+
+          <div class="wish_window_block">
+            <div class="col-md-5 col-sm-5 fix col-xs-5">
+              <img class="wish_window_product" src="assets/img/Wishlist/703.jpg" alt="">
+            </div>
+            <div class="col-md-6 col-md-offset-1 col-sm-6 col-sm-offset-1 col-xs-6">
+               <div class="wish_window_text">Платье</div>
+               <div class="wish_window_price">700 руб</div>
+               <div class="wish_window_color_block">
+                 <div class="color" style="background-color: #000000"></div>
+                 <p>черный</p>
+               </div>
+               <div class="wish_window_size">размер 38</div>
+               <div class="wish_window_number">1 шт</div>
+               <div class="wish_window_block_close"></div>               
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-11 col-md-offset-1 col-sm-11 col-sm-offset-1 col-xs-12">
+          <div class="wish_window_result">К оплате: 2 100 руб.</div>
+          <a href="https://ktara.github.io/is-it/apliinstagram/basket.html" class="basket_window_btn">Перейти в список желаний</a>
+        </div>
+        <div class="wish_window_close"></div>
       </section>
 
 
