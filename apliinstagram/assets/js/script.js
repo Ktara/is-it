@@ -87,9 +87,6 @@ $('.review_slider_viewer').slick({
 });
 
 
-
-
-
 $('.nav_header_menu li').mouseover(function(){
 	$('.nav_list').velocity({'height': '55vh'}, 300);
 });
@@ -99,10 +96,102 @@ $('.nav_list').mouseleave(function(){
 });
 
 
+// for moble
+
 $('.nav_header_menu').click(function(){
-	$('.nav_list').velocity({'height': '100vh'}, 300);
+    if($(this).hasClass('active_mob_menu')) {
+        $('.nav_list').velocity({'height': 0}, 300);
+    } else {
+        $('.nav_list').velocity({'height': '100vh'}, 400);
+
+    };
+    $(this).toggleClass('active_mob_menu');
+
+});
+$('.page_header').click(function () {
+   var height = $(this).next().next().css('height');
+    $('.page_header').parent().velocity({
+        height: '30px'
+    }, 350);
+   $(this).parent().velocity({
+       'height' : (height + '30px')
+   }, 600);
+});
+$('.product_about_header').click(function () {
+    if(!$(this).hasClass('product_about_header_active')) {
+        $('.product_about_header').removeClass('product_about_header_active');
+        $(this).addClass('product_about_header_active');
+        var height = parseInt($(this).next().css('height'), 10) + 50;
+        $('.product_about_header').parent().velocity({
+            height: '30px'
+        }, 350);
+        $(this).parent().velocity({
+            'height' : height
+        }, 600);
+    } else {
+        $(this).parent().velocity({
+            'height' : '30px'
+        }, 600);
+        $('.product_about_header').removeClass('product_about_header_active');
+    }
+
+
+});
+$('.about_mob_info_header').click(function () {
+
+    if(!$(this).hasClass('about_mob_info_active')) {
+        $('.about_mob_info_header').removeClass('about_mob_info_active');
+        $('.about_mob_info_header').next().velocity({
+            height : 0
+        }, 350);
+        $(this).addClass('about_mob_info_active');
+        var height = $(this).next().children('.about_help_container').css('height');
+        $(this).next().velocity({
+            height : height
+        }, 850);
+    } else {
+        $('.about_mob_info_header').removeClass('about_mob_info_active');
+        $(this).next().velocity({
+            height : 0
+        }, 350);
+    }
+});
+$('.rules_header').click(function () {
+
+    if(!$(this).hasClass('about_mob_info_active')) {
+        $('.rules_header').removeClass('about_mob_info_active');
+        $('.rules_header').next().velocity({
+            height : 0
+        }, 350);
+        $(this).addClass('about_mob_info_active');
+        var height = $(this).next().children('.about_help_container').css('height');
+        $(this).next().velocity({
+            height : height
+        }, 850);
+    } else {
+        $('.rules_header').removeClass('about_mob_info_active');
+        $(this).next().velocity({
+            height : 0
+        }, 350);
+    }
 });
 
+
+// for mobile -- end
+
+var $productTabs = $('.product_about_head li');
+var $productTexts = $('.product_about_block');
+$productTabs.click(function () {
+
+    for(var i = 0; i < $productTabs.length; i++) {
+        if($(this)[0] == $productTabs[i]) {
+            $productTabs.removeClass('product_about_active');
+            $productTexts.removeClass('product_about_text_active');
+            $(this).addClass('product_about_active');
+            $($productTexts[i]).addClass('product_about_text_active');
+        }
+    }
+});
 
 
 $('.nav_basket').click(function(){

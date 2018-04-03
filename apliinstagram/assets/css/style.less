@@ -169,9 +169,9 @@ a:focus {
 			display: block;
 			position: relative;
 			width: 25px;
-			height: 1px;			
-			background-color: @white;
-			margin-top: 29px;
+			height: 15px;
+			margin-top: 16px;
+			border-bottom:1px solid @white;
 			cursor: pointer;
 			float: right;
 			&:after,
@@ -179,11 +179,12 @@ a:focus {
 				content: "";
 				display: block;
 				position: absolute;
-				top: -7px;
+				top: 0;
 				right: 0;
 				width: 25px;
 				height: 1px;
 				background-color: @white;
+				transition: transform 0.6s , top 0.6s;
 			}
 			&:after {
 				top: 7px;
@@ -206,13 +207,27 @@ a:focus {
 			color: @white;
 			opacity: 1;
 		}
-	}	
-	.nav_header_icon {
-		width: 100%;
-		display: inline-flex;
-		justify-content: space-between;
-		a {
-			cursor: pointer;
+	}
+	@media screen and (max-width: 768px) {
+		.active_mob_menu {
+			&:after {
+				transform: rotate(45deg);
+				top: 7px;
+			}
+			&:before {
+				transform: rotate(-45deg);
+				top: 7px;
+			}
+			border-bottom:none;
+		}
+
+		.nav_header_icon {
+			width: 100%;
+			display: inline-flex;
+			justify-content: space-between;
+			a {
+				cursor: pointer;
+			}
 		}
 	}
 	.search {
@@ -2417,26 +2432,40 @@ footer {
 	position: relative;
 	padding: 0 20px;
 	width: 100%;
-	height: 30px;
+	height: auto;
 	overflow: hidden;
 	margin-top: 100px;
-	margin-bottom: 15px;	
+	margin-bottom: 15px;
+    @media screen and (max-width: 768px) {
+		.about_help_wrapper {
+			height: 0;
+			overflow: hidden;
+		}
+	}
+
 	&_info_header {
-		position: relative;
-		display: inline-block;
-		cursor: pointer;
+		font-size: 24px;
 		.opn-bold;
-		&:after {
-			content: '';
-			position: absolute;
-			display: block;
-			width: 17px;
-			height: 9px;
-			bottom: 2px;
-			right: -30px;
+		margin-bottom: 30px;
+		@media screen and (max-width: 768px) {
+			position: relative;
+			display: inline-block;
+			font-size: 16px;
+			margin-bottom: 10px;
 			cursor: pointer;
-			background-image: url(../img/arDown.png);
-			background-repeat: no-repeat;
+			&:after {
+				content: '';
+				position: absolute;
+				display: block;
+				width: 17px;
+				height: 9px;
+				bottom: 2px;
+				right: -30px;
+				cursor: pointer;
+				background-image: url(../img/arDown.png);
+				background-repeat: no-repeat;
+				transition: transform 1s;
+			}
 		}
 	}
 	&_info_img {
@@ -2464,7 +2493,16 @@ footer {
 		margin-top: 0;
 		padding: 0 5px;
 		margin-bottom: 15px;
-		height: 30px;		
+		height: auto;
+	}
+	@media screen and (max-width: 768px) {
+		.about_help_wrapper {
+			height: 0;
+			overflow: hidden;
+		}
+	}
+	.about_help_container {
+		height: auto;
 	}
 	h4 {
 		font-size: 24px;
@@ -2487,110 +2525,18 @@ footer {
 				cursor: pointer;
 				background-image: url(../img/arDown.png);
 				background-repeat: no-repeat;
+				transition: transform 1s;
 			}
 		}
 	}
-	h5 {
-		margin-top: 10px;
-		@media screen and (max-width: 768px) {
-
-		}
-	}
 	p {
-		margin-top: 10px;
+		padding-top: 10px;
 		.opn-light;
 	}
 }
-
-
-
-
-
-.about_demand {
-	position: relative;
-	width: 100%;
-	overflow: hidden;
-	margin-top: 80px;
-	padding: 0 40px;
-	@media screen and (max-width: 768px) {
-		margin-top: 0;
-		padding: 0 5px;
-		margin-bottom: 15px;
-		height: 30px;
-	}
-	h4 {
-		font-size: 24px;
-		.opn-bold;
-		margin-bottom: 30px;
-		@media screen and (max-width: 768px) {
-			position: relative;
-			display: inline-block;
-			font-size: 16px;
-			margin-bottom: 10px;
-			cursor: pointer;
-			&:after {
-				content: '';
-				position: absolute;
-				display: block;
-				width: 17px;
-				height: 9px;
-				bottom: 2px;
-				right: -30px;
-				cursor: pointer;
-				background-image: url(../img/arDown.png);
-				background-repeat: no-repeat;
-			}
-		}
-	}
-	p {
-		margin-top: 10px;
-		.opn-light;
-	}
-}
-
-
-
-
-
-.about_participate {
-	position: relative;
-	width: 100%;
-	overflow: hidden;
-	margin-top: 80px;
-	padding: 0 40px;
-	@media screen and (max-width: 768px) {
-		margin-top: 0;
-		padding: 0 5px;
-		margin-bottom: 15px;
-		height: 30px;	
-	}
-	h4 {
-		font-size: 24px;
-		.opn-bold;
-		margin-bottom: 30px;
-		@media screen and (max-width: 768px) {
-			position: relative;
-			display: inline-block;
-			font-size: 16px;
-			margin-bottom: 10px;
-			cursor: pointer;
-			&:after {
-				content: '';
-				position: absolute;
-				display: block;
-				width: 17px;
-				height: 9px;
-				bottom: 2px;
-				right: -30px;
-				cursor: pointer;
-				background-image: url(../img/arDown.png);
-				background-repeat: no-repeat;
-			}
-		}
-	}
-	p {
-		margin-top: 10px;
-		.opn-light;
+.about_mob_info_active {
+	&:after {
+		transform: rotate(180deg);
 	}
 }
 
@@ -2745,7 +2691,10 @@ footer {
 		margin-top: 100px;
 		margin-bottom: 20px;
 		padding: 0 20px;
-		height: 30px;
+		height: auto;
+		.about_help_wrapper {
+			height: 0;
+		}
 	}
 	&_wrapper {
 		position: fixed;
@@ -2785,6 +2734,7 @@ footer {
 					cursor: pointer;
 					background-image: url(../img/arDown.png);
 					background-repeat: no-repeat;
+					transition: transform 1s;
 				}
 			}
 		}
@@ -2826,7 +2776,10 @@ footer {
 		margin-top: 0;
 		margin-bottom: 20px;
 		padding: 0 20px;
-		height: 30px;
+		height: auto;
+		.about_help_wrapper {
+			height: 0;
+		}
 	}
 	h4 {
 		font-size: 24px;
@@ -3559,6 +3512,10 @@ footer {
 				opacity: 0.5;
 				.opn-bold;
 				cursor: pointer;
+				transition: opacity 1s;
+			}
+			.product_about_active {
+				opacity: 1;
 			}
 		}
 		.product_about_head:after {
@@ -3576,9 +3533,10 @@ footer {
 				display: inline-block !important;
 				position: relative;
 				opacity: 0.5;
+				transition: opacity 1s;
 				.opn-bold;
 				cursor: pointer;
-				padding-bottom: 20px;				
+				padding-bottom: 20px;
 				&:after {
 					content: '';
 					position: absolute;
@@ -3591,16 +3549,34 @@ footer {
 					background-image: url(../img/arDown.png);
 					background-repeat: no-repeat;
 					opacity: 1;
+					transition: transform 1s;
 				}
 			}
 		}
 		.product_about_wrapper {
 			margin-top: 30px;
 			width: 100%;
-			height: 50px;
+			height: auto;
+			transition: height 1s;
 			overflow: hidden;
+			.product_about_block {
+				display: none;
+			}
 			@media screen and (max-width: 768px) {
 				height: auto;
+				.product_about_block {
+					display: block;
+				}
+				.product_about_header_active {
+					opacity: 1;
+					&:after {
+						transform: rotate(180deg);
+					}
+				}
+			}
+
+			.product_about_text_active {
+				display: block !important;
 			}
 		}
 		&_block {

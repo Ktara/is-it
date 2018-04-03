@@ -170,9 +170,9 @@ a:focus {
     display: block;
     position: relative;
     width: 25px;
-    height: 1px;
-    background-color: #ffffff;
-    margin-top: 29px;
+    height: 15px;
+    margin-top: 16px;
+    border-bottom: 1px solid #ffffff;
     cursor: pointer;
     float: right;
   }
@@ -181,11 +181,12 @@ a:focus {
     content: "";
     display: block;
     position: absolute;
-    top: -7px;
+    top: 0;
     right: 0;
     width: 25px;
     height: 1px;
     background-color: #ffffff;
+    transition: transform 0.6s , top 0.6s;
   }
   .nav_wrapper .nav_header_menu:after {
     top: 7px;
@@ -208,13 +209,26 @@ a:focus {
   color: #ffffff;
   opacity: 1;
 }
-.nav_wrapper .nav_header_icon {
-  width: 100%;
-  display: inline-flex;
-  justify-content: space-between;
-}
-.nav_wrapper .nav_header_icon a {
-  cursor: pointer;
+@media screen and (max-width: 768px) {
+  .nav_wrapper .active_mob_menu {
+    border-bottom: none;
+  }
+  .nav_wrapper .active_mob_menu:after {
+    transform: rotate(45deg);
+    top: 7px;
+  }
+  .nav_wrapper .active_mob_menu:before {
+    transform: rotate(-45deg);
+    top: 7px;
+  }
+  .nav_wrapper .nav_header_icon {
+    width: 100%;
+    display: inline-flex;
+    justify-content: space-between;
+  }
+  .nav_wrapper .nav_header_icon a {
+    cursor: pointer;
+  }
 }
 .nav_wrapper .search {
   width: 20px;
@@ -2428,29 +2442,44 @@ footer .copy a:hover {
   position: relative;
   padding: 0 20px;
   width: 100%;
-  height: 30px;
+  height: auto;
   overflow: hidden;
   margin-top: 100px;
   margin-bottom: 15px;
 }
+@media screen and (max-width: 768px) {
+  .about_mob .about_help_wrapper {
+    height: 0;
+    overflow: hidden;
+  }
+}
 .about_mob_info_header {
-  position: relative;
-  display: inline-block;
-  cursor: pointer;
+  font-size: 24px;
   font-family: 'LucidaGrande', sans-serif;
   font-weight: 700;
+  margin-bottom: 30px;
 }
-.about_mob_info_header:after {
-  content: '';
-  position: absolute;
-  display: block;
-  width: 17px;
-  height: 9px;
-  bottom: 2px;
-  right: -30px;
-  cursor: pointer;
-  background-image: url(../img/arDown.png);
-  background-repeat: no-repeat;
+@media screen and (max-width: 768px) {
+  .about_mob_info_header {
+    position: relative;
+    display: inline-block;
+    font-size: 16px;
+    margin-bottom: 10px;
+    cursor: pointer;
+  }
+  .about_mob_info_header:after {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 17px;
+    height: 9px;
+    bottom: 2px;
+    right: -30px;
+    cursor: pointer;
+    background-image: url(../img/arDown.png);
+    background-repeat: no-repeat;
+    transition: transform 1s;
+  }
 }
 .about_mob_info_img {
   width: 100%;
@@ -2472,8 +2501,17 @@ footer .copy a:hover {
     margin-top: 0;
     padding: 0 5px;
     margin-bottom: 15px;
-    height: 30px;
+    height: auto;
   }
+}
+@media screen and (max-width: 768px) {
+  .about_help .about_help_wrapper {
+    height: 0;
+    overflow: hidden;
+  }
+}
+.about_help .about_help_container {
+  height: auto;
 }
 .about_help h4 {
   font-size: 24px;
@@ -2500,109 +2538,16 @@ footer .copy a:hover {
     cursor: pointer;
     background-image: url(../img/arDown.png);
     background-repeat: no-repeat;
+    transition: transform 1s;
   }
-}
-.about_help h5 {
-  margin-top: 10px;
 }
 .about_help p {
-  margin-top: 10px;
+  padding-top: 10px;
   font-family: 'LucidaGrande', sans-serif;
   font-weight: 300;
 }
-.about_demand {
-  position: relative;
-  width: 100%;
-  overflow: hidden;
-  margin-top: 80px;
-  padding: 0 40px;
-}
-@media screen and (max-width: 768px) {
-  .about_demand {
-    margin-top: 0;
-    padding: 0 5px;
-    margin-bottom: 15px;
-    height: 30px;
-  }
-}
-.about_demand h4 {
-  font-size: 24px;
-  font-family: 'LucidaGrande', sans-serif;
-  font-weight: 700;
-  margin-bottom: 30px;
-}
-@media screen and (max-width: 768px) {
-  .about_demand h4 {
-    position: relative;
-    display: inline-block;
-    font-size: 16px;
-    margin-bottom: 10px;
-    cursor: pointer;
-  }
-  .about_demand h4:after {
-    content: '';
-    position: absolute;
-    display: block;
-    width: 17px;
-    height: 9px;
-    bottom: 2px;
-    right: -30px;
-    cursor: pointer;
-    background-image: url(../img/arDown.png);
-    background-repeat: no-repeat;
-  }
-}
-.about_demand p {
-  margin-top: 10px;
-  font-family: 'LucidaGrande', sans-serif;
-  font-weight: 300;
-}
-.about_participate {
-  position: relative;
-  width: 100%;
-  overflow: hidden;
-  margin-top: 80px;
-  padding: 0 40px;
-}
-@media screen and (max-width: 768px) {
-  .about_participate {
-    margin-top: 0;
-    padding: 0 5px;
-    margin-bottom: 15px;
-    height: 30px;
-  }
-}
-.about_participate h4 {
-  font-size: 24px;
-  font-family: 'LucidaGrande', sans-serif;
-  font-weight: 700;
-  margin-bottom: 30px;
-}
-@media screen and (max-width: 768px) {
-  .about_participate h4 {
-    position: relative;
-    display: inline-block;
-    font-size: 16px;
-    margin-bottom: 10px;
-    cursor: pointer;
-  }
-  .about_participate h4:after {
-    content: '';
-    position: absolute;
-    display: block;
-    width: 17px;
-    height: 9px;
-    bottom: 2px;
-    right: -30px;
-    cursor: pointer;
-    background-image: url(../img/arDown.png);
-    background-repeat: no-repeat;
-  }
-}
-.about_participate p {
-  margin-top: 10px;
-  font-family: 'LucidaGrande', sans-serif;
-  font-weight: 300;
+.about_mob_info_active:after {
+  transform: rotate(180deg);
 }
 /* ARTICLES PAGE */
 .article {
@@ -2755,7 +2700,10 @@ footer .copy a:hover {
     margin-top: 100px;
     margin-bottom: 20px;
     padding: 0 20px;
-    height: 30px;
+    height: auto;
+  }
+  .rules .about_help_wrapper {
+    height: 0;
   }
 }
 .rules_wrapper {
@@ -2799,6 +2747,7 @@ footer .copy a:hover {
     cursor: pointer;
     background-image: url(../img/arDown.png);
     background-repeat: no-repeat;
+    transition: transform 1s;
   }
 }
 .rules_text h5 {
@@ -2840,7 +2789,10 @@ footer .copy a:hover {
     margin-top: 0;
     margin-bottom: 20px;
     padding: 0 20px;
-    height: 30px;
+    height: auto;
+  }
+  .ban .about_help_wrapper {
+    height: 0;
   }
 }
 .ban h4 {
@@ -3613,6 +3565,10 @@ footer .copy a:hover {
   font-family: 'LucidaGrande', sans-serif;
   font-weight: 700;
   cursor: pointer;
+  transition: opacity 1s;
+}
+.product_about .product_about_head .product_about_active {
+  opacity: 1;
 }
 .product_about .product_about_head:after {
   content: '';
@@ -3629,6 +3585,7 @@ footer .copy a:hover {
     display: inline-block !important;
     position: relative;
     opacity: 0.5;
+    transition: opacity 1s;
     font-family: 'LucidaGrande', sans-serif;
     font-weight: 700;
     cursor: pointer;
@@ -3646,18 +3603,35 @@ footer .copy a:hover {
     background-image: url(../img/arDown.png);
     background-repeat: no-repeat;
     opacity: 1;
+    transition: transform 1s;
   }
 }
 .product_about .product_about_wrapper {
   margin-top: 30px;
   width: 100%;
-  height: 50px;
+  height: auto;
+  transition: height 1s;
   overflow: hidden;
+}
+.product_about .product_about_wrapper .product_about_block {
+  display: none;
 }
 @media screen and (max-width: 768px) {
   .product_about .product_about_wrapper {
     height: auto;
   }
+  .product_about .product_about_wrapper .product_about_block {
+    display: block;
+  }
+  .product_about .product_about_wrapper .product_about_header_active {
+    opacity: 1;
+  }
+  .product_about .product_about_wrapper .product_about_header_active:after {
+    transform: rotate(180deg);
+  }
+}
+.product_about .product_about_wrapper .product_about_text_active {
+  display: block !important;
 }
 @media screen and (max-width: 768px) {
   .product_about_block {
