@@ -209,6 +209,14 @@ a:focus {
   color: #ffffff;
   opacity: 1;
 }
+.nav_wrapper .nav_header_icon {
+  width: 100%;
+  display: inline-flex;
+  justify-content: space-between;
+}
+.nav_wrapper .nav_header_icon a {
+  cursor: pointer;
+}
 @media screen and (max-width: 768px) {
   .nav_wrapper .active_mob_menu {
     border-bottom: none;
@@ -221,28 +229,20 @@ a:focus {
     transform: rotate(-45deg);
     top: 7px;
   }
-  .nav_wrapper .nav_header_icon {
-    width: 100%;
-    display: inline-flex;
-    justify-content: space-between;
-  }
-  .nav_wrapper .nav_header_icon a {
-    cursor: pointer;
-  }
 }
 .nav_wrapper .search {
   width: 20px;
   height: 20px;
   display: inline-block;
 }
-.nav_wrapper .heart {
+.nav_wrapper .nav_heart {
   width: 20px;
   height: 20px;
   display: inline-block;
   position: relative;
   cursor: pointer;
 }
-.nav_wrapper .heart .nav_heart_number {
+.nav_wrapper .nav_heart .nav_heart_number {
   position: absolute;
   display: block;
   width: 16px;
@@ -668,9 +668,11 @@ a:focus {
   color: #000000;
   margin: 60px auto 0 auto;
   clear: both;
+  transition: 1s;
 }
 .new_btn:hover {
-  color: #000000;
+  background-color: #000000;
+  color: #ffffff;
 }
 .new_mob {
   display: none;
@@ -937,6 +939,11 @@ a:focus {
   color: #000000;
   display: block;
   margin: 60px auto 0 auto;
+  transition: 1s;
+}
+.top .btn:hover {
+  background-color: #000000;
+  color: #ffffff;
 }
 /* Blog section */
 .blog {
@@ -1023,6 +1030,11 @@ a:focus {
   color: #000000;
   display: block;
   margin: 60px auto 0 auto;
+  transition: 1s;
+}
+.blog .btn:hover {
+  background-color: #000000;
+  color: #ffffff;
 }
 .wish_window {
   position: fixed;
@@ -1080,8 +1092,8 @@ a:focus {
   display: block;
   width: 8px;
   height: 11px;
-  top: 27%;
-  left: 45%;
+  top: 30%;
+  left: 40%;
 }
 @media screen and (max-width: 768px) {
   .wish_window_block_wrapper {
@@ -1749,9 +1761,11 @@ footer .copy a:hover {
   display: block;
   margin: 40px auto 0 auto;
   color: #000000;
+  transition: 1s;
 }
 .block_share_btn:hover {
-  color: #000000;
+  color: #ffffff;
+  background-color: #000000;
 }
 /* BLOCK_THINGS SECTION */
 .block_things {
@@ -2061,9 +2075,11 @@ footer .copy a:hover {
   display: block;
   margin: 40px auto 0 auto;
   color: #000000;
+  transition: 1s;
 }
 .man_accessory_btn:hover {
-  color: #000000;
+  color: #ffffff;
+  background-color: #000000;
 }
 /* WOMAN PAGE */
 /* Woman_accessory section */
@@ -2238,9 +2254,11 @@ footer .copy a:hover {
   display: block;
   margin: 40px auto 0 auto;
   color: #000000;
+  transition: 1s;
 }
 .woman_accessory_btn:hover {
-  color: #000000;
+  color: #ffffff;
+  background-color: #000000;
 }
 /* CONTACTS PAGE */
 #map_contacts {
@@ -3126,6 +3144,11 @@ footer .copy a:hover {
   cursor: pointer;
   font-family: 'LucidaGrande', sans-serif;
   font-weight: 700;
+  transition: 1s;
+}
+.wish .wish_btn:hover {
+  color: #ffffff;
+  background-color: #000000;
 }
 @media screen and (max-width: 768px) {
   .wish .wish_btn {
@@ -3526,15 +3549,16 @@ footer .copy a:hover {
   text-align: center;
   margin-top: 40px;
   float: left;
+  transition: 1s;
+}
+.product_btn:hover {
+  color: #ffffff;
+  background-color: #000000;
 }
 @media screen and (max-width: 768px) {
   .product_btn {
     margin-top: 20px;
   }
-}
-.product_btn:hover {
-  text-decoration: none;
-  color: #000000;
 }
 .product_float {
   float: right;
@@ -4618,6 +4642,11 @@ footer .copy a:hover {
   text-align: center;
   border: 1px solid #000000;
   cursor: pointer;
+  transition: 1s;
+}
+.listing_page .listing_page_image_wrapper_button:hover {
+  color: #ffffff;
+  background-color: #000000;
 }
 .product_block {
   text-decoration: none;

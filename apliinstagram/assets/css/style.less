@@ -208,6 +208,14 @@ a:focus {
 			opacity: 1;
 		}
 	}
+	.nav_header_icon {
+		width: 100%;
+		display: inline-flex;
+		justify-content: space-between;
+		a {
+			cursor: pointer;
+		}
+	}
 	@media screen and (max-width: 768px) {
 		.active_mob_menu {
 			&:after {
@@ -220,22 +228,13 @@ a:focus {
 			}
 			border-bottom:none;
 		}
-
-		.nav_header_icon {
-			width: 100%;
-			display: inline-flex;
-			justify-content: space-between;
-			a {
-				cursor: pointer;
-			}
-		}
 	}
 	.search {
 		width: 20px;
 		height: 20px;
 		display: inline-block;
 	}
-	.heart {
+	.nav_heart {
 		width: 20px;
 		height: 20px;
 		display: inline-block;
@@ -672,8 +671,10 @@ a:focus {
 	color: @main-black;
 	margin: 60px auto 0 auto;
 	clear: both;
+	transition: 1s;
 	&:hover {
-		color: @main-black;
+		background-color: @main-black;
+		color: @white;
 	}
 }
 
@@ -939,6 +940,11 @@ a:focus {
 		color: @main-black;
 		display: block;
 		margin: 60px auto 0 auto;
+		transition: 1s;
+		&:hover {
+			background-color: @main-black;
+			color: @white;
+		}
 	}
 }
 
@@ -1021,6 +1027,11 @@ a:focus {
 		color: @main-black;
 		display: block;
 		margin: 60px auto 0 auto;
+		transition: 1s;
+		&:hover {
+			background-color: @main-black;
+			color: @white;
+		}
 	}
 }
 
@@ -1082,8 +1093,8 @@ a:focus {
 		display: block;
 		width: 8px;
 		height: 11px;
-		top: 27%;
-		left: 45%;
+		top: 30%;
+		left: 40%;
 	}
 	&_block_wrapper {
 		@media screen and (max-width: 768px) {
@@ -1709,9 +1720,11 @@ footer {
 	border: 1px solid @main-black;
 	display: block;	
 	margin: 40px auto 0 auto;
-	color: @main-black;		
+	color: @main-black;
+	transition: 1s;
 	&:hover {
-		color: @main-black;
+		color: @white;
+		background-color: @main-black;
 	}
 }
 
@@ -2022,8 +2035,10 @@ footer {
 	display: block;			
 	margin: 40px auto 0 auto;
 	color: @main-black;		
+	transition: 1s;
 	&:hover {
-		color: @main-black;
+		color: @white;
+		background-color: @main-black;
 	}
 }
 
@@ -2212,8 +2227,10 @@ footer {
 	display: block;			
 	margin: 40px auto 0 auto;
 	color: @main-black;		
+	transition: 1s;
 	&:hover {
-		color: @main-black;
+		color: @white;
+		background-color: @main-black;
 	}
 }
 
@@ -3097,6 +3114,11 @@ footer {
 		float: left;
 		cursor: pointer;
 		.opn-bold;
+		transition: 1s;
+		&:hover {
+			color: @white;
+			background-color: @main-black;
+		}
 		@media screen and (max-width: 768px) {
 			margin-top: 20px;
 			margin-left: 15px;
@@ -3478,12 +3500,13 @@ footer {
 		text-align: center;
 		margin-top: 40px;		
 		float: left;
+		transition: 1s;
+		&:hover {
+			color: @white;
+			background-color: @main-black;
+		}
 		@media screen and (max-width: 768px) {
 			margin-top: 20px;
-		}
-		&:hover {			
-			text-decoration: none;
-			color: @main-black;			
 		}
 	}
 	&_float {
@@ -4541,6 +4564,11 @@ footer {
 		text-align: center;
 		border: 1px solid @main-black;
 		cursor: pointer;
+		transition: 1s;
+		&:hover {
+			color: @white;
+			background-color: @main-black;
+		}
 	}
 }
 
