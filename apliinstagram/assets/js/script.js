@@ -198,7 +198,7 @@ $('.nav_heart').click(function(){
 	$('.wish_window').velocity({'right': 0}, 300);
 });
 $('.wish_window_close').click(function(){
-	$('.wish_window').velocity({'right': '-420px'}, 300);
+	$('.wish_window').velocity({'right': '-770px'}, 300);
 });
 
 
@@ -207,7 +207,7 @@ $('.nav_basket').click(function(){
 	$('.basket_window').velocity({'right': 0}, 300);
 });
 $('.basket_window_close').click(function(){
-	$('.basket_window').velocity({'right': '-420px'}, 300);
+	$('.basket_window').velocity({'right': '-770px'}, 300);
 });
 
 var $share = $('.share_img_animated');
