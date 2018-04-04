@@ -1189,11 +1189,9 @@ a:focus {
   top: 30%;
   left: 40%;
 }
-@media screen and (max-width: 768px) {
-  .wish_window_block_wrapper {
-    overflow: scroll;
-    height: 50vh;
-  }
+.wish_window_block_wrapper {
+  overflow: scroll;
+  height: 50vh;
 }
 .wish_window_block {
   margin-top: 30px;
@@ -1399,11 +1397,9 @@ a:focus {
   top: 27%;
   left: 45%;
 }
-@media screen and (max-width: 768px) {
-  .basket_window_block_wrapper {
-    overflow: scroll;
-    height: 50vh;
-  }
+.basket_window_block_wrapper {
+  overflow: scroll;
+  height: 50vh;
 }
 .basket_window_block {
   margin-top: 30px;
