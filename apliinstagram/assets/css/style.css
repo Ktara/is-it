@@ -3287,6 +3287,11 @@ footer .copy a:hover {
   margin-top: 20px;
   display: inline-block;
 }
+@media screen and (max-width: 992px) {
+  .wish_star {
+    width: 70%;
+  }
+}
 @media screen and (max-width: 760px) {
   .wish_star {
     margin-top: 0;
@@ -3324,6 +3329,11 @@ footer .copy a:hover {
   margin-top: 20px;
   display: inline-block;
   float: right;
+}
+@media screen and (max-width: 992px) {
+  .wish_like {
+    width: 30%;
+  }
 }
 @media screen and (max-width: 760px) {
   .wish_like {
@@ -3438,6 +3448,7 @@ footer .copy a:hover {
   text-decoration: underline;
   display: block;
   margin-top: 60px;
+  line-height: 20px;
 }
 @media screen and (max-width: 760px) {
   .wish .wish_link {
