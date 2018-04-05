@@ -4405,6 +4405,9 @@ footer {
 		position: relative;		
 		margin-top: 20px;
 		display: block;
+		@media screen and (max-width: 992px) {
+			font-size: 14px;
+		}
 	}
 	&_sub_header:after {
 		content: '';
@@ -4431,11 +4434,14 @@ footer {
 		height:0;
 		overflow: hidden;
 	}
-	&_form {			
+	&_form {
+		@media screen and (max-width: 992px) {
+			font-size: 14px;
+		}
 		label {
 			display: block;
 			line-height: 40px;
-			overflow: hidden;
+			overflow: hidden;			
 			input {				
 				//float: left;
 				margin-right: 10px;
@@ -4443,6 +4449,9 @@ footer {
 			p {
 				color: @grey;
 				display: inline-block;
+				@media screen and (max-width: 992px) {
+					font-size: 13px;
+				}
 			}
 		}
 		&_label {
@@ -4457,6 +4466,9 @@ footer {
 				color: @main-black !important;
 				display: inline-block;
 				margin-right: 20px;
+				@media screen and (max-width: 992px) {
+					font-size: 14px;
+				}
 			}
 		}		
 	}

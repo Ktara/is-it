@@ -4516,6 +4516,11 @@ footer .copy a:hover {
   margin-top: 20px;
   display: block;
 }
+@media screen and (max-width: 992px) {
+  .listing_page_sub_header {
+    font-size: 14px;
+  }
+}
 .listing_page_sub_header:after {
   content: '';
   display: block;
@@ -4541,6 +4546,11 @@ footer .copy a:hover {
   height: 0;
   overflow: hidden;
 }
+@media screen and (max-width: 992px) {
+  .listing_page_form {
+    font-size: 14px;
+  }
+}
 .listing_page_form label {
   display: block;
   line-height: 40px;
@@ -4552,6 +4562,11 @@ footer .copy a:hover {
 .listing_page_form label p {
   color: #7f7f7f;
   display: inline-block;
+}
+@media screen and (max-width: 992px) {
+  .listing_page_form label p {
+    font-size: 13px;
+  }
 }
 .listing_page_form_label {
   display: block;
@@ -4566,6 +4581,11 @@ footer .copy a:hover {
   color: #000000 !important;
   display: inline-block;
   margin-right: 20px;
+}
+@media screen and (max-width: 992px) {
+  .listing_page_form_label_text {
+    font-size: 14px;
+  }
 }
 .listing_page_form_text {
   cursor: pointer;
