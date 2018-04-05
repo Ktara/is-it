@@ -28,6 +28,7 @@ $('.wish_slider_wrapper').slick({
 	infinite: true,
 	slidesToShow: 1,
 	slidesToScroll: 1,
+	adaptiveHeight: true,
 	dots: true,
 	arrows: false,
 	autoplay: true,

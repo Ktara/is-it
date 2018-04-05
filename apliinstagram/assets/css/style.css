@@ -291,6 +291,25 @@ a:focus {
   position: relative;
   overflow: hidden;
 }
+.nav_wrapper .logo {
+  display: inline-block;
+  text-align: center;
+}
+@media screen and (max-width: 992px) {
+  .nav_wrapper .logo {
+    text-align: left;
+  }
+}
+.nav_wrapper .logo img {
+  width: 100%;
+  line-height: 65;
+  vertical-align: middle;
+}
+@media screen and (max-width: 992px) {
+  .nav_wrapper .logo img {
+    line-height: 60px;
+  }
+}
 .nav_wrapper .nav_header_menu {
   width: 100%;
   display: inline-flex;
@@ -300,7 +319,32 @@ a:focus {
 }
 @media screen and (max-width: 992px) {
   .nav_wrapper .nav_header_menu {
-    font-size: 14px;
+    display: block;
+    position: relative;
+    width: 25px;
+    height: 15px;
+    margin-top: 22px;
+    border-bottom: 1px solid #ffffff;
+    cursor: pointer;
+    float: right;
+  }
+  .nav_wrapper .nav_header_menu:after,
+  .nav_wrapper .nav_header_menu:before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 25px;
+    height: 1px;
+    background-color: #ffffff;
+    transition: transform 0.6s , top 0.6s;
+  }
+  .nav_wrapper .nav_header_menu:after {
+    top: 7px;
+  }
+  .nav_wrapper .nav_header_menu li {
+    display: none;
   }
 }
 @media screen and (max-width: 760px) {
@@ -436,6 +480,11 @@ a:focus {
   height: 20px;
   display: block;
 }
+@media screen and (max-width: 760px) {
+  .nav_wrapper .fixed {
+    padding: 0;
+  }
+}
 /* NAV LIST */
 .nav_list {
   position: fixed;
@@ -464,6 +513,11 @@ a:focus {
 .nav_list .page {
   margin-top: 25px;
   opacity: 0.5;
+}
+@media screen and (max-width: 992px) {
+  .nav_list .page {
+    font-size: 14px;
+  }
 }
 .nav_list .page:hover {
   opacity: 1;
@@ -533,6 +587,12 @@ a:focus {
   cursor: pointer;
   background-image: url(../img/rectangle-3.svg);
   background-repeat: no-repeat;
+}
+@media screen and (max-width: 992px) {
+  .nav_list .fix {
+    display: block;
+    clear: both;
+  }
 }
 .active_nav_list {
   height: 45vh;
@@ -3111,16 +3171,10 @@ footer .copy a:hover {
 @media screen and (max-width: 760px) {
   .wish_slider {
     padding: 0;
-    height: 230px;
   }
 }
 .wish_slider img {
   width: 100%;
-}
-@media screen and (max-width: 760px) {
-  .wish_slider img {
-    height: 230px;
-  }
 }
 .wish_slider .slick-dots {
   position: absolute;
@@ -3138,6 +3192,11 @@ footer .copy a:hover {
   display: inline-block;
   margin-right: 10px;
   bottom: 20px;
+}
+@media screen and (max-width: 760px) {
+  .wish_slider .slick-dots li {
+    bottom: 10px;
+  }
 }
 .wish_slider .slick-dots .slick-active {
   background-color: #000000;

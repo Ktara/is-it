@@ -277,7 +277,22 @@ a:focus {
 }
 .nav_wrapper {
 	position: relative;
-	overflow: hidden;	
+	overflow: hidden;
+	.logo {
+		display: inline-block;
+		text-align: center;
+		@media screen and (max-width: 992px) {
+			text-align: left;
+		}
+		img {
+			width: 100%;
+			line-height: 65;
+			vertical-align: middle;
+			@media screen and (max-width: 992px) {
+				line-height: 60px;
+			}
+		}
+	}
 	.nav_header_menu {		
 		width: 100%;
 		display: inline-flex;
@@ -285,7 +300,32 @@ a:focus {
 		margin: 0;
 		padding-right: 20px;
 		@media screen and (max-width: 992px) {
-			font-size: 14px;
+			display: block;
+			position: relative;
+			width: 25px;
+			height: 15px;
+			margin-top: 22px;
+			border-bottom:1px solid @white;
+			cursor: pointer;
+			float: right;
+			&:after,
+			&:before {
+				content: "";
+				display: block;
+				position: absolute;
+				top: 0;
+				right: 0;
+				width: 25px;
+				height: 1px;
+				background-color: @white;
+				transition: transform 0.6s , top 0.6s;
+			}
+			&:after {
+				top: 7px;
+			}
+			li {
+				display: none;
+			}	
 		}
 		@media screen and (max-width: 760px) {
 			display: block;
@@ -419,6 +459,11 @@ a:focus {
 			display: block;
 		}
 	}
+	.fixed {
+		@media screen and (max-width: 760px) {
+			padding: 0;
+		}
+	}
 }
 
 
@@ -447,6 +492,9 @@ a:focus {
 	.page {
 		margin-top: 25px;
 		opacity: 0.5;
+		@media screen and (max-width: 992px) {
+			font-size: 14px;
+		}
 		&:hover {
 			opacity: 1;
 		}
@@ -513,6 +561,12 @@ a:focus {
 				background-image: url(../img/rectangle-3.svg);
 				background-repeat: no-repeat;
 			}
+		}
+	}
+	.fix {
+		@media screen and (max-width: 992px) {
+			display: block;
+			clear: both;
 		}
 	}
 }
@@ -3054,13 +3108,9 @@ footer {
 	}
 	@media screen and (max-width: 760px) {
 		padding: 0;
-		height: 230px;
 	}
 	img {
 		width: 100%;
-		@media screen and (max-width: 760px) {
-			height: 230px;
-		}
 	}
 	.slick-dots {
 		position: absolute;
@@ -3077,6 +3127,9 @@ footer {
 			display: inline-block;
 			margin-right: 10px;
 			bottom: 20px;
+			@media screen and (max-width: 760px) {
+				bottom: 10px;
+			}
 		}
 		.slick-active {
 			background-color: @main-black;
