@@ -298,6 +298,11 @@ a:focus {
   margin: 0;
   padding-right: 20px;
 }
+@media screen and (max-width: 992px) {
+  .nav_wrapper .nav_header_menu {
+    font-size: 14px;
+  }
+}
 @media screen and (max-width: 760px) {
   .nav_wrapper .nav_header_menu {
     display: block;
