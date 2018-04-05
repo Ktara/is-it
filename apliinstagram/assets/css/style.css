@@ -1879,6 +1879,11 @@ footer .copy a:hover {
   margin-top: 20px;
   display: inline-block;
 }
+@media screen and (max-width: 992px) {
+  .block_share .block_share_star {
+    width: 70%;
+  }
+}
 .block_share .block_share_star span {
   display: inline-block;
   background-image: url(../img/star2.svg);
@@ -1897,6 +1902,11 @@ footer .copy a:hover {
   margin-top: 20px;
   display: inline-block;
   float: right;
+}
+@media screen and (max-width: 992px) {
+  .block_share .block_share_like {
+    width: 30%;
+  }
 }
 .block_share .block_share_like img {
   width: 20px;
