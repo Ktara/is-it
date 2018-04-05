@@ -2597,12 +2597,23 @@ footer .copy a:hover {
     padding: 0 20px;
   }
 }
+@media screen and (max-width: 992px) {
+  .about .fix_height {
+    overflow: hidden;
+  }
+}
 .about_wrapper {
   position: fixed;
-  left: 60px;
+  left: 40px;
   top: 105px;
   z-index: 10;
   width: 15%;
+}
+@media screen and (max-width: 992px) {
+  .about_wrapper {
+    left: 20px;
+    width: 20%;
+  }
 }
 .about_wrapper li {
   margin-bottom: 20px;
@@ -2621,19 +2632,29 @@ footer .copy a:hover {
   width: 100%;
   margin-top: 30px;
 }
+@media screen and (max-width: 992px) {
+  .about_image {
+    margin-top: 0;
+  }
+}
 .about_image img {
   width: 50%;
 }
+@media screen and (max-width: 992px) {
+  .about_image img {
+    width: 80%;
+  }
+}
 .about_image .about_text {
   position: absolute;
-  width: 55%;
+  width: 70%;
   top: 5%;
   right: 0;
-  left: 45%;
+  left: 30%;
   bottom: 5%;
   background-color: #ffffff;
   border: 1px solid #000000;
-  padding: 50px 20px;
+  padding: 20px 15px;
 }
 .about_image .about_text .section_header {
   text-align: left;
@@ -2641,6 +2662,7 @@ footer .copy a:hover {
 }
 .about_image .about_text p {
   margin-bottom: 10px;
+  font-size: 15px;
   font-family: 'Ubuntu', sans-serif;
   font-weight: 300;
 }
@@ -2752,10 +2774,14 @@ footer .copy a:hover {
     transition: transform 1s;
   }
 }
+.about_help h5 {
+  margin-top: 20px;
+}
 .about_help p {
   padding-top: 10px;
   font-family: 'Ubuntu', sans-serif;
   font-weight: 300;
+  font-size: 15px;
 }
 .about_mob_info_active:after {
   transform: rotate(180deg);

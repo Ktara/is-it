@@ -2553,12 +2553,21 @@ footer {
 	@media screen and (max-width: 992px) {
 		padding: 0 20px;
 	}
+	.fix_height {
+		@media screen and (max-width: 992px) {
+			overflow: hidden;
+		}
+	}
 	&_wrapper {
 		position: fixed;
-		left: 60px;
+		left: 40px;
 		top: 105px;
 		z-index: 10;
 		width: 15%;
+		@media screen and (max-width: 992px) {
+			left: 20px;
+			width: 20%;
+		}
 		li {
 			margin-bottom: 20px;			
 			a {
@@ -2576,25 +2585,32 @@ footer {
 		position: relative;
 		width: 100%;
 		margin-top: 30px;
+		@media screen and (max-width: 992px) {
+			margin-top: 0;
+		}
 		img {
 			width: 50%;
+			@media screen and (max-width: 992px) {
+				width: 80%;
+			}
 		}
 		.about_text {
 			position: absolute;
-			width: 55%;
+			width: 70%;
 			top: 5%;
 			right: 0;			
-			left: 45%;
+			left: 30%;
 			bottom: 5%;
 			background-color: @white;
 			border: 1px solid @main-black;
-			padding: 50px 20px;
+			padding: 20px 15px;
 			.section_header {
 				text-align: left;
 				margin-bottom: 20px;
 			}
 			p {
 				margin-bottom: 10px;
+				font-size: 15px;
 				.opn-light;				
 			}
 		}
@@ -2708,9 +2724,13 @@ footer {
 			}
 		}
 	}
+	h5 {
+		margin-top: 20px;
+	}
 	p {
 		padding-top: 10px;
 		.opn-light;
+		font-size: 15px;
 	}
 }
 .about_mob_info_active {
