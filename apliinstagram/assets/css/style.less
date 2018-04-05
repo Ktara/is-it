@@ -77,18 +77,67 @@
 	font-style: normal;
 }
 
+@font-face{
+	font-family: 'Ubuntu';
+	src: url('../fonts/Ubuntu-Bold.ttf') format('truetype');
+	font-weight: 700;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Ubuntu';
+	src: url('../fonts/Ubuntu-BoldItalic.ttf') format('truetype');
+	font-weight: 700;
+	font-style: italic;
+}
+@font-face {
+	font-family: 'Ubuntu';
+	src: url('../fonts/Ubuntu-Medium.ttf') format('truetype');
+	font-weight: 500;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Ubuntu';
+	src: url('../fonts/Ubuntu-MediumItalic.ttf') format('truetype');
+	font-weight: 500;
+	font-style: italic;
+}
+@font-face {
+	font-family: 'Ubuntu';
+	src: url('../fonts/Ubuntu-Italic.ttf') format('truetype');
+	font-weight: 400;
+	font-style: italic;
+}
+@font-face {
+	font-family: 'Ubuntu';
+	src: url('../fonts/Ubuntu-Light.ttf') format('truetype');
+	font-weight: 300;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Ubuntu';
+	src: url('../fonts/Ubuntu-LightItalic.ttf') format('truetype');
+	font-weight: 300;
+	font-style: italic;
+}
+@font-face {
+	font-family: 'Ubuntu';
+	src: url('../fonts/Ubuntu-Regular.ttf') format('truetype');
+	font-weight: 400;
+	font-style: normal;
+}
+
 
 /* Fonts files */
 .opn-reg {
-	font-family: 'LucidaGrande', sans-serif;
+	font-family: 'Ubuntu', sans-serif;
 	font-weight: 400;	
 }
 .opn-bold {
-	font-family: 'LucidaGrande', sans-serif;
+	font-family: 'Ubuntu', sans-serif;
 	font-weight: 700;
 }
 .opn-light {
-	font-family: 'LucidaGrande', sans-serif;
+	font-family: 'Ubuntu', sans-serif;
 	font-weight: 300;
 }
 
@@ -129,7 +178,7 @@ ol, ul {
 	.opn-bold;
 	text-align: center;
 	margin: 0;
-	@media screen and (max-width: 768px) {
+	@media screen and (max-width: 760px) {
 		font-size: 24px;
 	}
 }
@@ -149,7 +198,10 @@ a:focus {
 	padding: 0 40px;
 	z-index: 1000;
 	opacity: 0.7;
-	@media screen and (max-width: 768px) {
+	@media screen and (max-width: 992px) {
+		padding: 0 20px;
+	}
+	@media screen and (max-width: 760px) {
 		height: 60px;
 		line-height: 60px;
 		padding: 0 20px;	
@@ -170,7 +222,7 @@ a:focus {
 		@media screen and (max-width: 992px) {
 			width: 300px;
 		}
-		@media screen and (max-width: 768px) {
+		@media screen and (max-width: 760px) {
 			width: 250px;
 		}
 		.search_tr {
@@ -188,7 +240,7 @@ a:focus {
 			@media screen and (max-width: 992px) {
 				width: 300px;
 			}
-			@media screen and (max-width: 768px) {
+			@media screen and (max-width: 760px) {
 				width: 250px;
 			}
 			&:hover {
@@ -232,7 +284,7 @@ a:focus {
 		justify-content: space-between;
 		margin: 0;
 		padding-right: 20px;
-		@media screen and (max-width: 768px) {
+		@media screen and (max-width: 760px) {
 			display: block;
 			position: relative;
 			width: 25px;
@@ -283,7 +335,7 @@ a:focus {
 			cursor: pointer;
 		}
 	}
-	@media screen and (max-width: 768px) {
+	@media screen and (max-width: 760px) {
 		.active_mob_menu {
 			&:after {
 				transform: rotate(45deg);
@@ -382,7 +434,10 @@ a:focus {
 	background-color: @main-black;
 	color: @white;	
 	z-index: 1000;
-	@media screen and (max-width: 768px) {
+	@media screen and (max-width: 992px) {
+		padding: 0 20px;
+	}
+	@media screen and (max-width: 760px) {
 		top: 60px;
 		padding: 0 20px;
 	}
@@ -392,12 +447,12 @@ a:focus {
 		&:hover {
 			opacity: 1;
 		}
-		@media screen and (max-width: 768px) {
+		@media screen and (max-width: 760px) {
 			height: 30px;
 			overflow: hidden;
 		}
 		&_header {
-			@media screen and (max-width: 768px) {
+			@media screen and (max-width: 760px) {
 				cursor: pointer;
 				position: relative;
 				&:after {
@@ -475,7 +530,7 @@ a:focus {
 	@media screen and (max-width: 992px) {
 		display: none;
 	}
-	@media screen and (max-width: 768px) {
+	@media screen and (max-width: 760px) {
 		display: none;
 	}
 	.fix {
@@ -607,7 +662,7 @@ a:focus {
 			}		
 		}
 	}
-	@media screen and (max-width: 768px) {
+	@media screen and (max-width: 760px) {
 		position: relative;
 		width: 100%;
 		height: 100vh;
@@ -680,9 +735,10 @@ a:focus {
 	overflow: hidden;
 	clear: both;
 	@media screen and (max-width: 992px) {
+		padding: 0 20px;
 		margin-top: 120px;
 	}
-	@media screen and (max-width: 768px) {
+	@media screen and (max-width: 760px) {
 		display: none;
 		padding: 0 20px;
 	}
@@ -767,11 +823,11 @@ a:focus {
 
 .new_mob {
 	display: none;
-	@media screen and (max-width: 768px) {
+	@media screen and (max-width: 760px) {
 		position: relative;
 		display: block;
 		width: 100%;
-		padding: 0 40px;
+		padding: 0 20px;
 		margin-top: 120px;
 		.section_header {
 			font-size: 24px;
@@ -782,13 +838,15 @@ a:focus {
 			margin-top: 20px;
 			position: relative;
 			display: block;
+			overflow: hidden;
+			max-height: 70vw;
 			&:hover {
 				text-decoration: underline;
 				color: @main-black;
 			}
 			img {
-				width: 100%;
-				height: 35vh;
+				min-width: 100%;
+				min-height: 70vw;
 			}
 			.text_wrapper {
 				position: absolute;
@@ -822,15 +880,17 @@ a:focus {
 	@media screen and (max-width: 992px) {
 		margin-top: 120px;
 	}
-	@media screen and (max-width: 768px) {
+	@media screen and (max-width: 760px) {
 		margin-top: 120px;
 		height: 40vh;
 	}
 	img {
 		width: 100%;		
 		position: absolute;
-		@media screen and (max-width: 768px) {
-			height: 40vh;
+	}
+	&_line {
+		@media screen and (max-width: 760px) {
+			min-height: 40vh;
 		}
 	}
 	.share_img_animated {
@@ -864,9 +924,10 @@ a:focus {
 	margin-top: 140px;
 	padding: 0 40px;
 	@media screen and (max-width: 992px) {
+		padding: 0 20px;
 		margin-top: 120px;
 	}
-	@media screen and (max-width: 768px) {
+	@media screen and (max-width: 760px) {
 		margin-top: 120px;
 		padding: 0 20px;
 	}
@@ -878,8 +939,8 @@ a:focus {
 		width: 100%;
 		img {
 			width: 100%;
-			@media screen and (max-width: 768px) {
-				height: 35vh;
+			@media screen and (max-width: 760px) {
+				max-height: 35vh;
 			}
 		}
 		.top_info_new {
@@ -1040,15 +1101,16 @@ a:focus {
 	margin-top: 140px;
 	padding: 0 40px;
 	@media screen and (max-width: 992px) {
+		padding: 0 20px;
 		margin-top: 120px;
 	}
-	@media screen and (max-width: 768px) {
+	@media screen and (max-width: 760px) {
 		padding: 0 20px;
 		margin-top: 100px;
 	}
 	.section_header {
 		margin-bottom: 40px;
-		@media screen and (max-width: 768px) {
+		@media screen and (max-width: 760px) {
 			margin-bottom: 20px;
 		}
 	}
@@ -1056,14 +1118,14 @@ a:focus {
 		margin-bottom: 20px;
 	}
 	.blog_block  {
-		@media screen and (max-width: 768px) {
+		@media screen and (max-width: 760px) {
 			margin-top: 20px;
 		}
 	}
 	&_image {
 		position: relative;
 		width: 100%;
-		@media screen and (max-width: 768px) {
+		@media screen and (max-width: 760px) {
 			margin-top: 20px;
 		}		
 		img {
@@ -1140,7 +1202,7 @@ a:focus {
 	@media screen and (max-width: 992px) {
 		width: 420px;
 	}
-	@media screen and (max-width: 768px) {
+	@media screen and (max-width: 760px) {
 		width: 100%;
 		height: 100vh;
 		right: -770px;
@@ -1150,7 +1212,7 @@ a:focus {
 		.opn-bold;
 		margin-top: 60px;
 		text-align: center;
-		@media screen and (max-width: 768px) {
+		@media screen and (max-width: 760px) {
 			margin-top: 20px;
 		}
 	}
@@ -1160,7 +1222,7 @@ a:focus {
 		width: 50px;
 		height: 50px;
 		margin: 20px auto 0 auto;
-		@media screen and (max-width: 768px) {
+		@media screen and (max-width: 760px) {
 			width: 45px;
 			height: 45px;
 		}
@@ -1169,7 +1231,7 @@ a:focus {
 		width: 50px;
 		height: 50px;
 		display: block;
-		@media screen and (max-width: 768px) {
+		@media screen and (max-width: 760px) {
 			width: 45px;
 			height: 45px;
 		}
@@ -1191,7 +1253,7 @@ a:focus {
 		position: relative;
 		width: 100%;
 		overflow: hidden;
-		@media screen and (max-width: 768px) {
+		@media screen and (max-width: 760px) {
 			margin-top: 20px;
 		}
 	}
@@ -1200,13 +1262,13 @@ a:focus {
 	}
 	&_price {
 		margin-top: 10px;
-		@media screen and (max-width: 768px) {
+		@media screen and (max-width: 760px) {
 			margin-top: 5px;
 		}
 	}
 	&_color_block {
 		margin-top: 20px;
-		@media screen and (max-width: 768px) {
+		@media screen and (max-width: 760px) {
 			font-size: 14px;
 			margin-top: 15px;
 		}
@@ -1219,14 +1281,14 @@ a:focus {
 	}
 	&_size {
 		margin-top: 10px;
-		@media screen and (max-width: 768px) {
+		@media screen and (max-width: 760px) {
 			font-size: 14px;
 			margin-top: 5px;
 		}
 	}
 	&_number {
 		margin-top: 10px;
-		@media screen and (max-width: 768px) {
+		@media screen and (max-width: 760px) {
 			font-size: 14px;
 			margin-top: 5px;
 		}
@@ -1242,7 +1304,7 @@ a:focus {
 	}
 	&_result {
 		margin-top: 55px;
-		@media screen and (max-width: 768px) {
+		@media screen and (max-width: 760px) {
 			margin-top: 20px;
 		}
 	}
@@ -1256,7 +1318,7 @@ a:focus {
 		cursor: pointer;
 		display: block;
 		margin-top: 60px;
-		@media screen and (max-width: 768px) {
+		@media screen and (max-width: 760px) {
 			margin-top: 20px;
 		}
 		&:hover {
@@ -1335,7 +1397,7 @@ a:focus {
 	@media screen and (max-width: 992px) {
 		width: 420px;
 	}
-	@media screen and (max-width: 768px) {
+	@media screen and (max-width: 760px) {
 		width: 100%;
 		height: 100vh;
 		right: -770px;
@@ -1345,7 +1407,7 @@ a:focus {
 		.opn-bold;
 		margin-top: 60px;
 		text-align: center;
-		@media screen and (max-width: 768px) {
+		@media screen and (max-width: 760px) {
 			margin-top: 20px;
 		}
 	}
@@ -1355,7 +1417,7 @@ a:focus {
 		width: 50px;
 		height: 50px;
 		margin: 20px auto 0 auto;
-		@media screen and (max-width: 768px) {
+		@media screen and (max-width: 760px) {
 			width: 45px;
 			height: 45px;
 		}
@@ -1364,7 +1426,7 @@ a:focus {
 		width: 50px;
 		height: 50px;
 		display: block;
-		@media screen and (max-width: 768px) {
+		@media screen and (max-width: 760px) {
 			width: 45px;
 			height: 45px;
 		}
@@ -1386,7 +1448,7 @@ a:focus {
 		position: relative;
 		width: 100%;
 		overflow: hidden;
-		@media screen and (max-width: 768px) {
+		@media screen and (max-width: 760px) {
 			margin-top: 20px;
 		}
 	}
@@ -1395,13 +1457,13 @@ a:focus {
 	}
 	&_price {
 		margin-top: 10px;
-		@media screen and (max-width: 768px) {
+		@media screen and (max-width: 760px) {
 			margin-top: 5px;
 		}
 	}
 	&_color_block {
 		margin-top: 20px;
-		@media screen and (max-width: 768px) {
+		@media screen and (max-width: 760px) {
 			font-size: 14px;
 			margin-top: 15px;
 		}
@@ -1414,14 +1476,14 @@ a:focus {
 	}
 	&_size {
 		margin-top: 10px;
-		@media screen and (max-width: 768px) {
+		@media screen and (max-width: 760px) {
 			font-size: 14px;
 			margin-top: 5px;
 		}
 	}
 	&_number {
 		margin-top: 10px;
-		@media screen and (max-width: 768px) {
+		@media screen and (max-width: 760px) {
 			font-size: 14px;
 			margin-top: 5px;
 		}
@@ -1437,7 +1499,7 @@ a:focus {
 	}
 	&_result {
 		margin-top: 55px;
-		@media screen and (max-width: 768px) {
+		@media screen and (max-width: 760px) {
 			margin-top: 20px;
 		}
 	}
@@ -1451,7 +1513,7 @@ a:focus {
 		cursor: pointer;
 		display: block;
 		margin-top: 60px;
-		@media screen and (max-width: 768px) {
+		@media screen and (max-width: 760px) {
 			margin-top: 20px;
 		}
 		&:hover {
@@ -1523,21 +1585,21 @@ footer {
 	margin-top: 140px;
 	padding: 0 40px;
 	background-color: rgba(0, 0, 0, 0.75);
-	@media screen and (max-width: 992px) {
+	@media screen and (max-width: 992px) {		
 		margin-top: 120px;
 	}
-	@media screen and (max-width: 768px) {
+	@media screen and (max-width: 760px) {
 		margin-top: 120px;
 		padding: 0 20px;
 	}
 	.row {
 		padding-top: 60px;
-		@media screen and (max-width: 768px) {
+		@media screen and (max-width: 760px) {
 			padding-top: 0;
 		}
 	}
 	.footer_list {
-		@media screen and (max-width: 768px) {
+		@media screen and (max-width: 760px) {
 			padding-top: 40px;
 		}
 		li {
@@ -1557,7 +1619,7 @@ footer {
 		margin-top: 30px;
 		width: 100%;
 		display: inline-block;
-		@media screen and (max-width: 768px) {
+		@media screen and (max-width: 760px) {
 			margin-top: 40px;
 			display: inline-block;
 		}
@@ -1569,7 +1631,7 @@ footer {
 				width: 30px;
 				height: 30px;
 			}
-			@media screen and (max-width: 768px) {
+			@media screen and (max-width: 760px) {
 				width: 30px;
 				height: 30px;
 				margin-right: 10px;
@@ -1580,7 +1642,7 @@ footer {
 		color: @white;
 	}
 	.social_text {
-		@media screen and (max-width: 768px) {
+		@media screen and (max-width: 760px) {
 			margin-top: 40px;
 		}
 	}
@@ -1590,7 +1652,7 @@ footer {
 		margin-top: 105px;
 		padding-bottom: 40px;
 		line-height: 20px;
-		@media screen and (max-width: 768px) {
+		@media screen and (max-width: 760px) {
 			margin-top: 65px;
 		}		
 		a {
@@ -1605,7 +1667,7 @@ footer {
 			@media screen and (max-width: 992px) {
 				padding-left: 0;
 			}
-			@media screen and (max-width: 768px) {
+			@media screen and (max-width: 760px) {
 				padding: 0;
 			}
 		}
@@ -1614,7 +1676,7 @@ footer {
 		@media screen and (max-width: 992px) {
 			padding-left: 0;
 		}
-		@media screen and (max-width: 768px) {
+		@media screen and (max-width: 760px) {
 			padding-left: 15px;
 		}
 	}
@@ -1638,9 +1700,10 @@ footer {
 	padding: 0 40px;
 	overflow: hidden;
 	@media screen and (max-width: 992px) {
+		padding: 0 20px;
 		margin-top: 120px;
 	}
-	@media screen and (max-width: 768px) {
+	@media screen and (max-width: 760px) {
 		margin-top: 120px;
 		padding: 0 20px;
 	}
@@ -1648,7 +1711,7 @@ footer {
 		font-size: 30px;
 		.opn-bold;
 		text-indent: 10px;
-		@media screen and (max-width: 768px) {
+		@media screen and (max-width: 760px) {
 			font-size: 24px;
 			text-indent: 0;
 			text-align: center;
@@ -1829,9 +1892,10 @@ footer {
 	padding: 0 40px;
 	margin-top: 85px;
 	@media screen and (max-width: 992px) {
+		padding: 0 20px;
 		margin-top: 120px;
 	}
-	@media screen and (max-width: 768px) {
+	@media screen and (max-width: 760px) {
 		padding: 0 20px;
 	}
 	&_image {
@@ -1840,17 +1904,17 @@ footer {
 		width: 100%;
 		margin-top: 20px;
 		color: @main-black;
-		@media screen and (max-width: 768px) {
+		@media screen and (max-width: 760px) {
 			height: 160px;
 		}
 		img {
 			width: 100%;
-			@media screen and (max-width: 768px) {
+			@media screen and (max-width: 760px) {
 				height: 160px;
 			}
 		}
 		&_link {
-			@media screen and (max-width: 768px) {
+			@media screen and (max-width: 760px) {
 				display: block;
 				width: 100%;
 				height: 160px;
@@ -1863,7 +1927,7 @@ footer {
 			top: 45%;
 			left: 0;
 			text-align: center;
-			@media screen and (max-width: 768px) {
+			@media screen and (max-width: 760px) {
 				cursor: pointer;
 				pointer-events: none;
 			}
@@ -1877,14 +1941,14 @@ footer {
 	&_image:hover {		
 		.block_things_text {
 			display: none;
-			@media screen and (max-width: 768px) {
+			@media screen and (max-width: 760px) {
 				display: inline-block;
 			}
 		}
 		.hover_btn {
 			display: flex;
 			background-color: rgba(0, 0, 0, 0.35);
-			@media screen and (max-width: 768px) {
+			@media screen and (max-width: 760px) {
 				display: none;
 			}
 		}
@@ -1953,9 +2017,10 @@ footer {
 	padding: 0 40px;
 	overflow: hidden;
 	@media screen and (max-width: 992px) {
+		padding: 0 20px;
 		margin-top: 120px;
 	}
-	@media screen and (max-width: 768px) {
+	@media screen and (max-width: 760px) {
 		margin-top: 120px;
 		padding: 0 20px;
 	}	
@@ -1963,7 +2028,7 @@ footer {
 		font-size: 30px;
 		.opn-bold;
 		text-indent: 10px;
-		@media screen and (max-width: 768px) {
+		@media screen and (max-width: 760px) {
 			font-size: 24px;
 			text-indent: 0;
 			text-align: center;
@@ -2150,9 +2215,10 @@ footer {
 	padding: 0 40px;
 	overflow: hidden;
 	@media screen and (max-width: 992px) {
+		padding: 0 20px;
 		margin-top: 120px;
 	}
-	@media screen and (max-width: 768px) {
+	@media screen and (max-width: 760px) {
 		margin-top: 120px;
 		padding: 0 20px;		
 	}	
@@ -2160,7 +2226,7 @@ footer {
 		font-size: 30px;
 		.opn-bold;
 		text-indent: 10px;
-		@media screen and (max-width: 768px) {
+		@media screen and (max-width: 760px) {
 			font-size: 24px;
 			text-indent: 0;
 			text-align: center;
@@ -2326,7 +2392,10 @@ footer {
 	height: 50vh;
 	margin-top: 10vh;
 	padding: 0 40px;
-	@media screen and (max-width: 768px) {
+	@media screen and (max-width: 992px) {
+		padding: 0 20px;
+	}
+	@media screen and (max-width: 760px) {
 		margin-top: 100px;
 		padding: 0;
 	}
@@ -2341,7 +2410,10 @@ footer {
 	width: 100%;
 	margin-top: 40px;
 	padding: 0 40px;
-	@media screen and (max-width: 768px) {
+	@media screen and (max-width: 992px) {
+		padding: 0 20px;
+	}
+	@media screen and (max-width: 760px) {
 		padding: 0 20px;
 		margin-top: 20px;
 	}
@@ -2349,7 +2421,7 @@ footer {
 		font-size: 24px;
 		.opn-bold;
 		margin-bottom: 20px;
-		@media screen and (max-width: 768px) {
+		@media screen and (max-width: 760px) {
 			margin-top: 40px;
 		}
 	}
@@ -2368,29 +2440,30 @@ footer {
 	padding: 0 40px;
 	overflow: hidden;
 	@media screen and (max-width: 992px) {
+		padding: 0 20px;
 		margin-top: 120px;
 	}
-	@media screen and (max-width: 768px) {
+	@media screen and (max-width: 760px) {
 		padding: 0 5px;
 		margin-top: 120px;
 	}
 	h3 {
 		font-size: 24px;
 		.opn-bold;
-		@media screen and (max-width: 768px) {
+		@media screen and (max-width: 760px) {
 			padding: 0 15px;
 		}
 	}
 	img {
 		width: 100%;
 		margin-top: 40px;
-		@media screen and (max-width: 768px) {
+		@media screen and (max-width: 760px) {
 			margin-top: 20px;
 		}
 	}
 	.shops_text {
 		margin-top: 20px;
-		@media screen and (max-width: 768px) {
+		@media screen and (max-width: 760px) {
 			margin-top: 10px;
 		}
 	}
@@ -2429,13 +2502,16 @@ footer {
 	margin-top: 65px;
 	padding: 0 40px;
 	overflow: hidden;
-	@media screen and (max-width: 768px) {
+	@media screen and (max-width: 992px) {
+		padding: 0 20px;
+	}
+	@media screen and (max-width: 760px) {
 		padding: 0 20px;
 	}
 	.section_header {
 		text-align: left;
 		margin-top: 40px;
-		@media screen and (max-width: 768px) {
+		@media screen and (max-width: 760px) {
 			font-size: 24px;
 			margin-top: 20px;
 		}
@@ -2446,7 +2522,7 @@ footer {
 		text-decoration: underline;
 		line-height: 20px;
 		margin-top: 60px;
-		@media screen and (max-width: 768px) {
+		@media screen and (max-width: 760px) {
 			margin-top: 40px;
 		}
 	}
@@ -2469,6 +2545,9 @@ footer {
 	margin-top: 105px;
 	overflow: hidden;
 	padding: 0 40px;
+	@media screen and (max-width: 992px) {
+		padding: 0 20px;
+	}
 	&_wrapper {
 		position: fixed;
 		left: 60px;
@@ -2528,7 +2607,7 @@ footer {
 	overflow: hidden;
 	margin-top: 100px;
 	margin-bottom: 15px;
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 760px) {
 		.about_help_wrapper {
 			height: 0;
 			overflow: hidden;
@@ -2539,7 +2618,7 @@ footer {
 		font-size: 24px;
 		.opn-bold;
 		margin-bottom: 30px;
-		@media screen and (max-width: 768px) {
+		@media screen and (max-width: 760px) {
 			position: relative;
 			display: inline-block;
 			font-size: 16px;
@@ -2581,13 +2660,16 @@ footer {
 	overflow: hidden;
 	margin-top: 80px;
 	padding: 0 40px;
-	@media screen and (max-width: 768px) {
+	@media screen and (max-width: 992px) {
+		padding: 0 20px;
+	}
+	@media screen and (max-width: 760px) {
 		margin-top: 0;
 		padding: 0 5px;
 		margin-bottom: 15px;
 		height: auto;
 	}
-	@media screen and (max-width: 768px) {
+	@media screen and (max-width: 760px) {
 		.about_help_wrapper {
 			height: 0;
 			overflow: hidden;
@@ -2600,7 +2682,7 @@ footer {
 		font-size: 24px;
 		.opn-bold;
 		margin-bottom: 30px;
-		@media screen and (max-width: 768px) {
+		@media screen and (max-width: 760px) {
 			position: relative;
 			display: inline-block;
 			font-size: 16px;
@@ -2647,7 +2729,10 @@ footer {
 	width: 100%;
 	margin-top: 105px;
 	padding: 0 40px;
-	@media screen and (max-width: 768px) {
+	@media screen and (max-width: 992px) {
+		padding: 0 20px;
+	}
+	@media screen and (max-width: 760px) {
 		padding: 0;
 		margin-top: 100px;
 	}
@@ -2659,20 +2744,20 @@ footer {
 		.opn-bold;
 		margin-top: 40px;		
 		text-align: left;
-		@media screen and (max-width: 768px) {
+		@media screen and (max-width: 760px) {
 			margin-top: 20px;
 			padding: 0 20px;
 		}
 	}
 	&_text {
 		margin-top: 5px;
-		@media screen and (max-width: 768px) {
+		@media screen and (max-width: 760px) {
 			padding: 0 20px;
 		}
 		p {
 			margin-top: 15px;
 			.opn-light;
-			@media screen and (max-width: 768px) {
+			@media screen and (max-width: 760px) {
 				margin-top: 5px;
 			}
 		}
@@ -2690,9 +2775,10 @@ footer {
 	margin-top: 140px;
 	padding: 0 40px;
 	@media screen and (max-width: 992px) {
+		padding: 0 20px;
 		margin-top: 120px;
 	}
-	@media screen and (max-width: 768px) {
+	@media screen and (max-width: 760px) {
 		margin-top: 120px;
 		padding: 0 20px;
 	}
@@ -2701,7 +2787,7 @@ footer {
 		.opn-bold;
 		margin-bottom: 40px;
 		text-align: left;
-		@media screen and (max-width: 768px) {
+		@media screen and (max-width: 760px) {
 			text-align: center;
 			margin-bottom: 20px;
 		}
@@ -2712,7 +2798,7 @@ footer {
 	&_image {
 		position: relative;
 		width: 100%;
-		@media screen and (max-width: 768px) {
+		@media screen and (max-width: 760px) {
 			margin-top: 20px;
 		}		
 		img {
@@ -2741,7 +2827,7 @@ footer {
 		p {
 			margin-top: 10px;
 			margin-bottom: 30px;
-			@media screen and (max-width: 768px) {
+			@media screen and (max-width: 760px) {
 				.opn-light;
 			}
 		}
@@ -2779,7 +2865,10 @@ footer {
 	padding: 0 40px;
 	margin-top: 105px;
 	overflow: hidden;
-	@media screen and (max-width: 768px) {
+	@media screen and (max-width: 992px) {
+		padding: 0 20px;
+	}
+	@media screen and (max-width: 760px) {
 		margin-top: 100px;
 		margin-bottom: 20px;
 		padding: 0 20px;
@@ -2811,7 +2900,7 @@ footer {
 		h4 {
 			font-size: 24px;
 			.opn-bold;
-			@media screen and (max-width: 768px) {
+			@media screen and (max-width: 760px) {
 				font-size: 16px;
 				position: relative;
 				display: inline-block;				
@@ -2844,14 +2933,14 @@ footer {
 
 #registration {
 	margin-top: 80px;
-	@media screen and (max-width: 768px) {
+	@media screen and (max-width: 760px) {
 		margin-top: 0;
 		margin-bottom: 20px;
 	}
 }
 #policy {
 	margin-top: 80px;
-	@media screen and (max-width: 768px) {
+	@media screen and (max-width: 760px) {
 		margin-top: 0;
 		margin-bottom: 20px;
 	}
@@ -2864,7 +2953,10 @@ footer {
 	padding: 0 40px;
 	margin-top: 80px;
 	overflow: hidden;
-	@media screen and (max-width: 768px) {
+	@media screen and (max-width: 992px) {
+		padding: 0 20px;
+	}
+	@media screen and (max-width: 760px) {
 		margin-top: 0;
 		margin-bottom: 20px;
 		padding: 0 20px;
@@ -2876,7 +2968,7 @@ footer {
 	h4 {
 		font-size: 24px;
 		.opn-bold;
-		@media screen and (max-width: 768px) {
+		@media screen and (max-width: 760px) {
 			font-size: 16px;
 			position: relative;
 			display: inline-block;
@@ -2919,13 +3011,16 @@ footer {
 	width: 100%;
 	padding: 0 40px;
 	margin-top: 105px;
-	@media screen and (max-width: 768px) {
+	@media screen and (max-width: 992px) {
+		padding: 0 20px;
+	}
+	@media screen and (max-width: 760px) {
 		padding: 0;
 		height: 230px;
 	}
 	img {
 		width: 100%;
-		@media screen and (max-width: 768px) {
+		@media screen and (max-width: 760px) {
 			height: 230px;
 		}
 	}
@@ -2961,24 +3056,27 @@ footer {
 	width: 100%;
 	padding: 0 40px;
 	overflow: hidden;
-	margin-top: 60px;	
+	margin-top: 60px;
+	@media screen and (max-width: 992px) {
+		padding: 0 20px;
+	}
 	.section_header {
 		text-align: left;
-		@media screen and (max-width: 768px) {
+		@media screen and (max-width: 760px) {
 			font-size: 24px;
 			text-align: center;
 			padding-bottom: 30px;
 		}
 	}
 	&_wrapper {
-		@media screen and (max-width: 768px) {
+		@media screen and (max-width: 760px) {
 			height: 65vh;
 			overflow: scroll;
 		}
 	}
 	&_block {
 		margin-top: 80px;
-		@media screen and (max-width: 768px) {
+		@media screen and (max-width: 760px) {
 			margin-top: 0;
 			padding-bottom: 30px;
 		}
@@ -2986,7 +3084,7 @@ footer {
 	&_image {
 		position: relative;
 		width: 100%;
-		@media screen and (max-width: 768px) {
+		@media screen and (max-width: 760px) {
 			width: 40%;
 			float: left;
 		}
@@ -3085,7 +3183,7 @@ footer {
 		width: 50%;
 		margin-top: 20px;
 		display: inline-block;
-		@media screen and (max-width: 768px) {
+		@media screen and (max-width: 760px) {
 			margin-top: 0;
 			margin-left: 15px;
 			width: 35%;
@@ -3096,7 +3194,7 @@ footer {
 			background-repeat: no-repeat;			
 			width: 16px;
 			height: 15px;
-			@media screen and (max-width: 768px) {
+			@media screen and (max-width: 760px) {
 				width: 14px;
 				height: 14px;
 			}
@@ -3106,7 +3204,7 @@ footer {
 			background-repeat: no-repeat;			
 			width: 16px;
 			height: 15px;
-			@media screen and (max-width: 768px) {
+			@media screen and (max-width: 760px) {
 				width: 14px;
 				height: 14px;
 			}			
@@ -3117,7 +3215,7 @@ footer {
 		margin-top: 20px;		
 		display: inline-block;
 		float: right;
-		@media screen and (max-width: 768px) {
+		@media screen and (max-width: 760px) {
 			margin-top: 0;
 			width: 15%;
 		}
@@ -3128,7 +3226,7 @@ footer {
 			padding-left: 5px;
 			padding-bottom: 5px;	
 			float: right;
-			@media screen and (max-width: 768px) {
+			@media screen and (max-width: 760px) {
 				width: 14px;
 				height: 14px;
 			}							
@@ -3136,14 +3234,14 @@ footer {
 		span {
 			display: inline-block;
 			float: right;
-			@media screen and (max-width: 768px) {
+			@media screen and (max-width: 760px) {
 				font-size: 14px;
 			}
 		}		
 	}
 	&_text {
 		margin-top: 10px;
-		@media screen and (max-width: 768px) {
+		@media screen and (max-width: 760px) {
 			margin-top: 5px;
 			margin-left: 15px;
 			clear: both;
@@ -3156,7 +3254,7 @@ footer {
 		width: 100%;
 		margin-top: 10px;
 		display: inline-block;
-		@media screen and (max-width: 768px) {
+		@media screen and (max-width: 760px) {
 			margin-top: 5px;
 			margin-left: 15px;
 			font-size: 14px;
@@ -3190,7 +3288,7 @@ footer {
 			color: @white;
 			background-color: @main-black;
 		}
-		@media screen and (max-width: 768px) {
+		@media screen and (max-width: 760px) {
 			margin-top: 20px;
 			margin-left: 15px;
 			width: 40%;
@@ -3204,7 +3302,7 @@ footer {
 		height: 30px;
 		margin: 50px auto 0 auto;
 		cursor: pointer;
-		@media screen and (max-width: 768px) {
+		@media screen and (max-width: 760px) {
 			margin: 25px auto 0 auto;
 			width: 20px;
 			height: 25px;
@@ -3215,7 +3313,7 @@ footer {
 		text-decoration: underline;
 		display: block;
 		margin-top: 60px;
-		@media screen and (max-width: 768px) {
+		@media screen and (max-width: 760px) {
 			margin-top: 40px;
 		}
 		&:hover {
@@ -3243,7 +3341,10 @@ footer {
 	padding: 0 40px;
 	overflow: hidden;
 	margin-top: 110px;
-	@media screen and (max-width: 768px) {
+	@media screen and (max-width: 992px) {
+		padding: 0 20px;
+	}
+	@media screen and (max-width: 760px) {
 		padding: 0 5px;
 		margin-top: 100px;
 	}
@@ -3258,13 +3359,13 @@ footer {
 	}
 	.price {
 		margin-top: 10px;
-		@media screen and (max-width: 768px) {
+		@media screen and (max-width: 760px) {
 			margin-top: 5px;
 		}
 	}
 	.color_block {
 		margin-top: 20px;
-		@media screen and (max-width: 768px) {
+		@media screen and (max-width: 760px) {
 			margin-top: 15px;
 		}
 		.color {
@@ -3280,7 +3381,7 @@ footer {
 	}
 	.size {
 		margin-top: 10px;
-		@media screen and (max-width: 768px) {
+		@media screen and (max-width: 760px) {
 			margin-top: 5px;
 		}
 	}
@@ -3288,7 +3389,7 @@ footer {
 		margin-top: 10px;
 		margin-left: -5px;
 		position: relative;
-		@media screen and (max-width: 768px) {
+		@media screen and (max-width: 760px) {
 			margin-top: 5px;
 		}
 		.basket_number {
@@ -3312,7 +3413,7 @@ footer {
 		top: 0;
 		right: 45%;
 		cursor: pointer;
-		@media screen and (max-width: 768px) {
+		@media screen and (max-width: 760px) {
 			right: 0;
 		}
 		&:before, &:after {
@@ -3428,7 +3529,10 @@ footer {
 	margin-top: 105px;
 	padding: 0 40px;
 	overflow: hidden;
-	@media screen and (max-width: 768px) {
+	@media screen and (max-width: 992px) {
+		padding: 0 20px;
+	}
+	@media screen and (max-width: 760px) {
 		padding: 0 5px;
 	}
 	&_slider_wrapper {
@@ -3440,7 +3544,7 @@ footer {
 		@media screen and (max-width: 992px) {
 			height: auto;
 		}
-		@media screen and (max-width: 768px) {			
+		@media screen and (max-width: 760px) {			
 			height: auto;
 		}
 		.product_slide {
@@ -3499,7 +3603,7 @@ footer {
 	&_name {
 		font-size: 24px;
 		.opn-bold;
-		@media screen and (max-width: 768px) {
+		@media screen and (max-width: 760px) {
 			margin-top: 20px;
 		}
 	}
@@ -3548,7 +3652,7 @@ footer {
 		    background-repeat: no-repeat;
 		    background-position: 100% center;		    
 		    cursor: pointer;
-		    @media screen and (max-width: 768px) {
+		    @media screen and (max-width: 760px) {
 		    	width: 60%;
 		    	margin-top: 10px;
 		    }
@@ -3576,7 +3680,7 @@ footer {
 			color: @white;
 			background-color: @main-black;
 		}
-		@media screen and (max-width: 768px) {
+		@media screen and (max-width: 760px) {
 			margin-top: 20px;
 		}
 	}
@@ -3590,7 +3694,7 @@ footer {
 		margin-left: 20px;
 		display: inline-block;
 		cursor: pointer;
-		@media screen and (max-width: 768px) {
+		@media screen and (max-width: 760px) {
 			margin-top: 30px;
 		}
 	}
@@ -3623,7 +3727,7 @@ footer {
 			right: 0;
 		}
 		&_header {
-			@media screen and (max-width: 768px) {
+			@media screen and (max-width: 760px) {
 				display: inline-block !important;
 				position: relative;
 				opacity: 0.5;
@@ -3656,7 +3760,7 @@ footer {
 			.product_about_block {
 				display: none;
 			}
-			@media screen and (max-width: 768px) {
+			@media screen and (max-width: 760px) {
 				height: auto;
 				.product_about_block {
 					display: block;
@@ -3674,7 +3778,7 @@ footer {
 			}
 		}
 		&_block {
-			@media screen and (max-width: 768px) {
+			@media screen and (max-width: 760px) {
 				height: 30px;
 				overflow: hidden;
 			}
@@ -3693,9 +3797,10 @@ footer {
 	margin-top: 140px;
 	overflow: hidden;
 	@media screen and (max-width: 992px) {
+		padding: 0 20px;
 		margin-top: 120px;
 	}
-	@media screen and (max-width: 768px) {
+	@media screen and (max-width: 760px) {
 		margin-top: 120px;
 		padding: 0 20px;
 	}
@@ -3739,7 +3844,7 @@ footer {
 			height: 60px;
 			float: left;
 			margin-right: 20px;
-			@media screen and (max-width: 768px) {
+			@media screen and (max-width: 760px) {
 				display: none;
 			}
 		}
@@ -3747,7 +3852,7 @@ footer {
 			display: block;
 			float: right;
 			margin-right: 0;
-			@media screen and (max-width: 768px) {
+			@media screen and (max-width: 760px) {
 				margin-right: 0;
 			}
 			.comment_star {
@@ -3773,7 +3878,7 @@ footer {
 				-moz-appearance: none;
 				border: 1px solid @main-black;
 				display: block;
-				@media screen and (max-width: 768px) {
+				@media screen and (max-width: 760px) {
 					width: 100%;
 					margin-right: 0;
 				}
@@ -3817,7 +3922,7 @@ footer {
 			color: @white;
 			float: right;
 			margin-top: 40px;
-			@media screen and (max-width: 768px) {
+			@media screen and (max-width: 760px) {
 				display: block;
 				width: 50%;
 				margin-top: 10px;
@@ -3826,7 +3931,7 @@ footer {
 	}
 	.fix {
 		padding-left: 0;
-		@media screen and (max-width: 768px) {
+		@media screen and (max-width: 760px) {
 			padding: 0;
 		}
 	}
@@ -3845,9 +3950,10 @@ footer {
 	padding: 0 40px;
 	overflow: hidden;
 	@media screen and (max-width: 992px) {
+		padding: 0 20px;
 		margin-top: 120px;
 	}
-	@media screen and (max-width: 768px) {
+	@media screen and (max-width: 760px) {
 		margin-top: 100px;
 		padding: 0 5px;
 	}	
@@ -3855,7 +3961,7 @@ footer {
 		font-size: 30px;
 		.opn-bold;
 		text-indent: 10px;
-		@media screen and (max-width: 768px) {
+		@media screen and (max-width: 760px) {
 			font-size: 24px;
 			text-indent: 0;
 			text-align: center;
@@ -4075,9 +4181,10 @@ footer {
 	padding: 0 40px;
 	overflow: hidden;
 	@media screen and (max-width: 992px) {
+		padding: 0 20px;
 		margin-top: 120px;
 	}
-	@media screen and (max-width: 768px) {
+	@media screen and (max-width: 760px) {
 		margin-top: 120px;
 		padding: 0 5px;
 	}	
@@ -4085,7 +4192,7 @@ footer {
 		font-size: 30px;
 		.opn-bold;
 		text-indent: 10px;
-		@media screen and (max-width: 768px) {
+		@media screen and (max-width: 760px) {
 			font-size: 24px;
 			text-indent: 0;
 			text-align: center;
@@ -4272,17 +4379,15 @@ footer {
 	padding: 0 40px 0 60px;
 	overflow: hidden;
 	@media screen and (max-width: 992px) {
-		.fixed {
-			padding-left: 0;
-		}
+		padding: 0 20px;		
 	}
-	@media screen and (max-width: 768px) {
+	@media screen and (max-width: 760px) {
 		padding: 0 20px;
 	}
 	&_main_header {
 		font-size: 30px;
 		.opn-bold;
-		@media screen and (max-width: 768px) {
+		@media screen and (max-width: 760px) {
 			font-size: 24px;
 		}
 	}
@@ -4375,7 +4480,7 @@ footer {
 		
 	}
 	.fixed {
-		@media screen and (max-width: 768px) {
+		@media screen and (max-width: 760px) {
 			padding: 0;
 		}
 	}
@@ -4389,7 +4494,7 @@ footer {
 		margin-right: 65px;
 		margin-bottom: 20px;
 		display: inline-block;
-		@media screen and (max-width: 768px) {
+		@media screen and (max-width: 760px) {
 			margin-right: 0;
 			margin-bottom: 0;
 			// display: block;
@@ -4409,7 +4514,7 @@ footer {
 	    background-repeat: no-repeat;
 	    background-position: 100% center;		    
 	    cursor: pointer;
-	    @media screen and (max-width: 768px) {
+	    @media screen and (max-width: 760px) {
 	    	margin-top: 10px;
 	    	margin-bottom: 25px;
 	    	width: 220px;
@@ -4441,7 +4546,7 @@ footer {
 			position: relative;
 			width: 100%;
 			margin-top: 20px;
-			@media screen and (max-width: 768px) {
+			@media screen and (max-width: 760px) {
 				width: 45%;
 				float: left;
 			}
@@ -4537,8 +4642,8 @@ footer {
 		margin-top: 20px;
 		display: inline-block;
 		padding-left: 10px;
-		@media screen and (max-width: 768px) {
-			width: 30%;
+		@media screen and (max-width: 760px) {
+			width: 40%;
 		}
 		span {
 			display: inline-block;
@@ -4546,7 +4651,7 @@ footer {
 			background-repeat: no-repeat;			
 			width: 16px;
 			height: 15px;
-			@media screen and (max-width: 768px) {
+			@media screen and (max-width: 760px) {
 				width: 14px;
 				height: 14px;
 			}
@@ -4556,7 +4661,7 @@ footer {
 			background-repeat: no-repeat;			
 			width: 16px;
 			height: 15px;
-			@media screen and (max-width: 768px) {
+			@media screen and (max-width: 760px) {
 				width: 14px;
 				height: 14px;
 			}			
@@ -4568,8 +4673,8 @@ footer {
 		padding-right: 10px;
 		display: inline-block;
 		float: right;
-		@media screen and (max-width: 768px) {
-			width: 10%;
+		@media screen and (max-width: 760px) {
+			width: 15%;
 			padding-right: 0;
 		}
 		img {			
@@ -4579,7 +4684,9 @@ footer {
 			padding-left: 5px;
 			padding-bottom: 5px;	
 			float: right;
-			@media screen and (max-width: 768px) {
+			@media screen and (max-width: 760px) {
+				padding-left: 2px;
+				padding-bottom: 1px;	
 				width: 14px;
 				height: 14px;
 			}
@@ -4587,7 +4694,7 @@ footer {
 		span {
 			display: inline-block;
 			float: right;
-			@media screen and (max-width: 768px) {
+			@media screen and (max-width: 760px) {
 				font-size: 14px;
 			}
 		}		
@@ -4595,7 +4702,7 @@ footer {
 	.block_listing_page_text {
 		margin-top: 10px;
 		padding-left: 10px;
-		@media screen and (max-width: 768px) {
+		@media screen and (max-width: 760px) {
 			display: inline-block;
 		}
 	}
@@ -4605,7 +4712,7 @@ footer {
 		margin-top: 10px;
 		padding-left: 10px;
 		display: inline-block;
-		@media screen and (max-width: 768px) {
+		@media screen and (max-width: 760px) {
 			display: inline-block;
 			width: 45%;
 		}				
@@ -4640,7 +4747,7 @@ footer {
 	color: black;
 	display: block;
 	padding-bottom: 20px;
-	@media screen and (max-width: 768px) {
+	@media screen and (max-width: 760px) {
 		padding-bottom: 0;
 		overflow: hidden;
 	}	
@@ -4659,7 +4766,7 @@ footer {
 .filter_width_fix {
 	max-width: 320px;
 	margin-top: 35px;
-	@media screen and (max-width: 768px) {
+	@media screen and (max-width: 760px) {
 		max-width: 100%;
 		margin-top: 20px;
 		overflow: hidden;

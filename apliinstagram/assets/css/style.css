@@ -76,24 +76,72 @@
   font-weight: 700;
   font-style: normal;
 }
+@font-face {
+  font-family: 'Ubuntu';
+  src: url('../fonts/Ubuntu-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Ubuntu';
+  src: url('../fonts/Ubuntu-BoldItalic.ttf') format('truetype');
+  font-weight: 700;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Ubuntu';
+  src: url('../fonts/Ubuntu-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Ubuntu';
+  src: url('../fonts/Ubuntu-MediumItalic.ttf') format('truetype');
+  font-weight: 500;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Ubuntu';
+  src: url('../fonts/Ubuntu-Italic.ttf') format('truetype');
+  font-weight: 400;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Ubuntu';
+  src: url('../fonts/Ubuntu-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Ubuntu';
+  src: url('../fonts/Ubuntu-LightItalic.ttf') format('truetype');
+  font-weight: 300;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Ubuntu';
+  src: url('../fonts/Ubuntu-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
 /* Fonts files */
 .opn-reg {
-  font-family: 'LucidaGrande', sans-serif;
+  font-family: 'Ubuntu', sans-serif;
   font-weight: 400;
 }
 .opn-bold {
-  font-family: 'LucidaGrande', sans-serif;
+  font-family: 'Ubuntu', sans-serif;
   font-weight: 700;
 }
 .opn-light {
-  font-family: 'LucidaGrande', sans-serif;
+  font-family: 'Ubuntu', sans-serif;
   font-weight: 300;
 }
 /* Base colors */
 /* Base setting */
 body {
   font-size: 16px;
-  font-family: 'LucidaGrande', sans-serif;
+  font-family: 'Ubuntu', sans-serif;
   font-weight: 400;
   color: #000000;
 }
@@ -112,7 +160,7 @@ ul {
   border: 1px solid #ffffff;
   color: #ffffff;
   font-size: 16px;
-  font-family: 'LucidaGrande', sans-serif;
+  font-family: 'Ubuntu', sans-serif;
   font-weight: 700;
   display: inline-block;
   text-align: center;
@@ -122,12 +170,12 @@ ul {
 }
 .section_header {
   font-size: 30px;
-  font-family: 'LucidaGrande', sans-serif;
+  font-family: 'Ubuntu', sans-serif;
   font-weight: 700;
   text-align: center;
   margin: 0;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 760px) {
   .section_header {
     font-size: 24px;
   }
@@ -146,7 +194,12 @@ a:focus {
   z-index: 1000;
   opacity: 0.7;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 992px) {
+  .nav_header {
+    padding: 0 20px;
+  }
+}
+@media screen and (max-width: 760px) {
   .nav_header {
     height: 60px;
     line-height: 60px;
@@ -172,7 +225,7 @@ a:focus {
     width: 300px;
   }
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 760px) {
   .nav_header .search {
     width: 250px;
   }
@@ -195,7 +248,7 @@ a:focus {
     width: 300px;
   }
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 760px) {
   .nav_header .search .search_tr {
     width: 250px;
   }
@@ -205,27 +258,27 @@ a:focus {
   appearance: none;
 }
 .nav_header .search input::-moz-placeholder {
-  font-family: 'LucidaGrande', sans-serif;
+  font-family: 'Ubuntu', sans-serif;
   font-weight: 400;
   color: rgba(0, 0, 0, 0.6);
 }
 .nav_header .search input::-webkit-input-placeholder {
-  font-family: 'LucidaGrande', sans-serif;
+  font-family: 'Ubuntu', sans-serif;
   font-weight: 400;
   color: rgba(0, 0, 0, 0.6);
 }
 .nav_header .search input:-ms-input-placeholder {
-  font-family: 'LucidaGrande', sans-serif;
+  font-family: 'Ubuntu', sans-serif;
   font-weight: 400;
   color: rgba(0, 0, 0, 0.6);
 }
 .nav_header .search input::-ms-input-placeholder {
-  font-family: 'LucidaGrande', sans-serif;
+  font-family: 'Ubuntu', sans-serif;
   font-weight: 400;
   color: rgba(0, 0, 0, 0.6);
 }
 .nav_header .search input::placeholder {
-  font-family: 'LucidaGrande', sans-serif;
+  font-family: 'Ubuntu', sans-serif;
   font-weight: 400;
   color: rgba(0, 0, 0, 0.6);
 }
@@ -245,7 +298,7 @@ a:focus {
   margin: 0;
   padding-right: 20px;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 760px) {
   .nav_wrapper .nav_header_menu {
     display: block;
     position: relative;
@@ -297,7 +350,7 @@ a:focus {
 .nav_wrapper .nav_header_icon a {
   cursor: pointer;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 760px) {
   .nav_wrapper .active_mob_menu {
     border-bottom: none;
   }
@@ -392,7 +445,12 @@ a:focus {
   color: #ffffff;
   z-index: 1000;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 992px) {
+  .nav_list {
+    padding: 0 20px;
+  }
+}
+@media screen and (max-width: 760px) {
   .nav_list {
     top: 60px;
     padding: 0 20px;
@@ -405,13 +463,13 @@ a:focus {
 .nav_list .page:hover {
   opacity: 1;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 760px) {
   .nav_list .page {
     height: 30px;
     overflow: hidden;
   }
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 760px) {
   .nav_list .page_header {
     cursor: pointer;
     position: relative;
@@ -486,7 +544,7 @@ a:focus {
     display: none;
   }
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 760px) {
   .main {
     display: none;
   }
@@ -541,7 +599,7 @@ a:focus {
   align-items: center;
   width: 100%;
   font-size: 24px;
-  font-family: 'LucidaGrande', sans-serif;
+  font-family: 'Ubuntu', sans-serif;
   font-weight: 700;
   color: #ffffff;
   top: 35%;
@@ -585,7 +643,7 @@ a:focus {
   }
   .main_mob_text_wrapper p {
     font-size: 48px;
-    font-family: 'LucidaGrande', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
     font-weight: 700;
   }
   .main_mob_text_wrapper .btn {
@@ -618,7 +676,7 @@ a:focus {
     display: none;
   }
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 760px) {
   .main_mob {
     position: relative;
     width: 100%;
@@ -645,7 +703,7 @@ a:focus {
   }
   .main_mob_text_wrapper p {
     font-size: 24px;
-    font-family: 'LucidaGrande', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
     font-weight: 700;
   }
   .main_mob_text_wrapper .btn {
@@ -689,10 +747,11 @@ a:focus {
 }
 @media screen and (max-width: 992px) {
   .new {
+    padding: 0 20px;
     margin-top: 120px;
   }
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 760px) {
   .new {
     display: none;
     padding: 0 20px;
@@ -751,7 +810,7 @@ a:focus {
   align-items: center;
   width: 100%;
   font-size: 24px;
-  font-family: 'LucidaGrande', sans-serif;
+  font-family: 'Ubuntu', sans-serif;
   font-weight: 700;
   color: #000000;
   top: 50%;
@@ -775,12 +834,12 @@ a:focus {
 .new_mob {
   display: none;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 760px) {
   .new_mob {
     position: relative;
     display: block;
     width: 100%;
-    padding: 0 40px;
+    padding: 0 20px;
     margin-top: 120px;
   }
   .new_mob .section_header {
@@ -792,14 +851,16 @@ a:focus {
     margin-top: 20px;
     position: relative;
     display: block;
+    overflow: hidden;
+    max-height: 70vw;
   }
   .new_mob_link_block:hover {
     text-decoration: underline;
     color: #000000;
   }
   .new_mob_link_block img {
-    width: 100%;
-    height: 35vh;
+    min-width: 100%;
+    min-height: 70vw;
   }
   .new_mob_link_block .text_wrapper {
     position: absolute;
@@ -810,7 +871,7 @@ a:focus {
     right: 0;
     text-align: center;
     font-size: 24px;
-    font-family: 'LucidaGrande', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
     font-weight: 700;
   }
 }
@@ -828,7 +889,7 @@ a:focus {
     margin-top: 120px;
   }
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 760px) {
   .share {
     margin-top: 120px;
     height: 40vh;
@@ -838,9 +899,9 @@ a:focus {
   width: 100%;
   position: absolute;
 }
-@media screen and (max-width: 768px) {
-  .share img {
-    height: 40vh;
+@media screen and (max-width: 760px) {
+  .share_line {
+    min-height: 40vh;
   }
 }
 .share .share_img_animated {
@@ -870,10 +931,11 @@ a:focus {
 }
 @media screen and (max-width: 992px) {
   .top {
+    padding: 0 20px;
     margin-top: 120px;
   }
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 760px) {
   .top {
     margin-top: 120px;
     padding: 0 20px;
@@ -889,9 +951,9 @@ a:focus {
 .top_image img {
   width: 100%;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 760px) {
   .top_image img {
-    height: 35vh;
+    max-height: 35vh;
   }
 }
 .top_image .top_info_new {
@@ -1023,7 +1085,7 @@ a:focus {
   width: 35%;
 }
 .top_price p {
-  font-family: 'LucidaGrande', sans-serif;
+  font-family: 'Ubuntu', sans-serif;
   font-weight: 700;
   display: inline-block;
 }
@@ -1048,10 +1110,11 @@ a:focus {
 }
 @media screen and (max-width: 992px) {
   .blog {
+    padding: 0 20px;
     margin-top: 120px;
   }
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 760px) {
   .blog {
     padding: 0 20px;
     margin-top: 100px;
@@ -1060,7 +1123,7 @@ a:focus {
 .blog .section_header {
   margin-bottom: 40px;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 760px) {
   .blog .section_header {
     margin-bottom: 20px;
   }
@@ -1068,7 +1131,7 @@ a:focus {
 .blog .row {
   margin-bottom: 20px;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 760px) {
   .blog .blog_block {
     margin-top: 20px;
   }
@@ -1077,7 +1140,7 @@ a:focus {
   position: relative;
   width: 100%;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 760px) {
   .blog_image {
     margin-top: 20px;
   }
@@ -1103,7 +1166,7 @@ a:focus {
   border: 1px solid #000000;
 }
 .blog_info h6 {
-  font-family: 'LucidaGrande', sans-serif;
+  font-family: 'Ubuntu', sans-serif;
   font-weight: 700;
 }
 .blog_info p {
@@ -1145,7 +1208,7 @@ a:focus {
     width: 420px;
   }
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 760px) {
   .wish_window {
     width: 100%;
     height: 100vh;
@@ -1154,12 +1217,12 @@ a:focus {
 }
 .wish_window_header {
   font-size: 24px;
-  font-family: 'LucidaGrande', sans-serif;
+  font-family: 'Ubuntu', sans-serif;
   font-weight: 700;
   margin-top: 60px;
   text-align: center;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 760px) {
   .wish_window_header {
     margin-top: 20px;
   }
@@ -1171,7 +1234,7 @@ a:focus {
   height: 50px;
   margin: 20px auto 0 auto;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 760px) {
   .wish_window_bag_wrapper {
     width: 45px;
     height: 45px;
@@ -1182,7 +1245,7 @@ a:focus {
   height: 50px;
   display: block;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 760px) {
   .wish_window_bag {
     width: 45px;
     height: 45px;
@@ -1206,7 +1269,7 @@ a:focus {
   width: 100%;
   overflow: hidden;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 760px) {
   .wish_window_block {
     margin-top: 20px;
   }
@@ -1217,7 +1280,7 @@ a:focus {
 .wish_window_price {
   margin-top: 10px;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 760px) {
   .wish_window_price {
     margin-top: 5px;
   }
@@ -1225,7 +1288,7 @@ a:focus {
 .wish_window_color_block {
   margin-top: 20px;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 760px) {
   .wish_window_color_block {
     font-size: 14px;
     margin-top: 15px;
@@ -1240,7 +1303,7 @@ a:focus {
 .wish_window_size {
   margin-top: 10px;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 760px) {
   .wish_window_size {
     font-size: 14px;
     margin-top: 5px;
@@ -1249,7 +1312,7 @@ a:focus {
 .wish_window_number {
   margin-top: 10px;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 760px) {
   .wish_window_number {
     font-size: 14px;
     margin-top: 5px;
@@ -1267,7 +1330,7 @@ a:focus {
 .wish_window_result {
   margin-top: 55px;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 760px) {
   .wish_window_result {
     margin-top: 20px;
   }
@@ -1283,7 +1346,7 @@ a:focus {
   display: block;
   margin-top: 60px;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 760px) {
   .wish_window_btn {
     margin-top: 20px;
   }
@@ -1359,7 +1422,7 @@ a:focus {
     width: 420px;
   }
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 760px) {
   .basket_window {
     width: 100%;
     height: 100vh;
@@ -1368,12 +1431,12 @@ a:focus {
 }
 .basket_window_header {
   font-size: 24px;
-  font-family: 'LucidaGrande', sans-serif;
+  font-family: 'Ubuntu', sans-serif;
   font-weight: 700;
   margin-top: 60px;
   text-align: center;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 760px) {
   .basket_window_header {
     margin-top: 20px;
   }
@@ -1385,7 +1448,7 @@ a:focus {
   height: 50px;
   margin: 20px auto 0 auto;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 760px) {
   .basket_window_bag_wrapper {
     width: 45px;
     height: 45px;
@@ -1396,7 +1459,7 @@ a:focus {
   height: 50px;
   display: block;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 760px) {
   .basket_window_bag {
     width: 45px;
     height: 45px;
@@ -1420,7 +1483,7 @@ a:focus {
   width: 100%;
   overflow: hidden;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 760px) {
   .basket_window_block {
     margin-top: 20px;
   }
@@ -1431,7 +1494,7 @@ a:focus {
 .basket_window_price {
   margin-top: 10px;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 760px) {
   .basket_window_price {
     margin-top: 5px;
   }
@@ -1439,7 +1502,7 @@ a:focus {
 .basket_window_color_block {
   margin-top: 20px;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 760px) {
   .basket_window_color_block {
     font-size: 14px;
     margin-top: 15px;
@@ -1454,7 +1517,7 @@ a:focus {
 .basket_window_size {
   margin-top: 10px;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 760px) {
   .basket_window_size {
     font-size: 14px;
     margin-top: 5px;
@@ -1463,7 +1526,7 @@ a:focus {
 .basket_window_number {
   margin-top: 10px;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 760px) {
   .basket_window_number {
     font-size: 14px;
     margin-top: 5px;
@@ -1481,7 +1544,7 @@ a:focus {
 .basket_window_result {
   margin-top: 55px;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 760px) {
   .basket_window_result {
     margin-top: 20px;
   }
@@ -1497,7 +1560,7 @@ a:focus {
   display: block;
   margin-top: 60px;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 760px) {
   .basket_window_btn {
     margin-top: 20px;
   }
@@ -1571,7 +1634,7 @@ footer {
     margin-top: 120px;
   }
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 760px) {
   footer {
     margin-top: 120px;
     padding: 0 20px;
@@ -1580,12 +1643,12 @@ footer {
 footer .row {
   padding-top: 60px;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 760px) {
   footer .row {
     padding-top: 0;
   }
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 760px) {
   footer .footer_list {
     padding-top: 40px;
   }
@@ -1607,7 +1670,7 @@ footer .social {
   width: 100%;
   display: inline-block;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 760px) {
   footer .social {
     margin-top: 40px;
     display: inline-block;
@@ -1624,7 +1687,7 @@ footer .social img {
     height: 30px;
   }
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 760px) {
   footer .social img {
     width: 30px;
     height: 30px;
@@ -1634,7 +1697,7 @@ footer .social img {
 footer p {
   color: #ffffff;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 760px) {
   footer .social_text {
     margin-top: 40px;
   }
@@ -1646,7 +1709,7 @@ footer .copy {
   padding-bottom: 40px;
   line-height: 20px;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 760px) {
   footer .copy {
     margin-top: 65px;
   }
@@ -1664,7 +1727,7 @@ footer .copy a:hover {
     padding-left: 0;
   }
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 760px) {
   footer .copy .fix {
     padding: 0;
   }
@@ -1674,7 +1737,7 @@ footer .copy a:hover {
     padding-left: 0;
   }
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 760px) {
   footer .fixed {
     padding-left: 15px;
   }
@@ -1689,10 +1752,11 @@ footer .copy a:hover {
 }
 @media screen and (max-width: 992px) {
   .block_share {
+    padding: 0 20px;
     margin-top: 120px;
   }
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 760px) {
   .block_share {
     margin-top: 120px;
     padding: 0 20px;
@@ -1700,11 +1764,11 @@ footer .copy a:hover {
 }
 .block_share h2 {
   font-size: 30px;
-  font-family: 'LucidaGrande', sans-serif;
+  font-family: 'Ubuntu', sans-serif;
   font-weight: 700;
   text-indent: 10px;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 760px) {
   .block_share h2 {
     font-size: 24px;
     text-indent: 0;
@@ -1851,7 +1915,7 @@ footer .copy a:hover {
   width: 35%;
 }
 .block_share .block_share_price p {
-  font-family: 'LucidaGrande', sans-serif;
+  font-family: 'Ubuntu', sans-serif;
   font-weight: 700;
   display: inline-block;
 }
@@ -1877,10 +1941,11 @@ footer .copy a:hover {
 }
 @media screen and (max-width: 992px) {
   .block_things {
+    padding: 0 20px;
     margin-top: 120px;
   }
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 760px) {
   .block_things {
     padding: 0 20px;
   }
@@ -1892,7 +1957,7 @@ footer .copy a:hover {
   margin-top: 20px;
   color: #000000;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 760px) {
   .block_things_image {
     height: 160px;
   }
@@ -1900,12 +1965,12 @@ footer .copy a:hover {
 .block_things_image img {
   width: 100%;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 760px) {
   .block_things_image img {
     height: 160px;
   }
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 760px) {
   .block_things_image_link {
     display: block;
     width: 100%;
@@ -1920,7 +1985,7 @@ footer .copy a:hover {
   left: 0;
   text-align: center;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 760px) {
   .block_things_image .block_things_text {
     cursor: pointer;
     pointer-events: none;
@@ -1929,13 +1994,13 @@ footer .copy a:hover {
 .block_things_image .block_things_text p {
   color: #000000;
   font-size: 24px;
-  font-family: 'LucidaGrande', sans-serif;
+  font-family: 'Ubuntu', sans-serif;
   font-weight: 700;
 }
 .block_things_image:hover .block_things_text {
   display: none;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 760px) {
   .block_things_image:hover .block_things_text {
     display: inline-block;
   }
@@ -1944,7 +2009,7 @@ footer .copy a:hover {
   display: flex;
   background-color: rgba(0, 0, 0, 0.35);
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 760px) {
   .block_things_image:hover .hover_btn {
     display: none;
   }
@@ -1985,7 +2050,7 @@ footer .copy a:hover {
   border: 1px solid #000000;
   color: #000000;
   text-align: center;
-  font-family: 'LucidaGrande', sans-serif;
+  font-family: 'Ubuntu', sans-serif;
   font-weight: 700;
   text-decoration: none;
 }
@@ -2004,10 +2069,11 @@ footer .copy a:hover {
 }
 @media screen and (max-width: 992px) {
   .man_accessory {
+    padding: 0 20px;
     margin-top: 120px;
   }
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 760px) {
   .man_accessory {
     margin-top: 120px;
     padding: 0 20px;
@@ -2015,11 +2081,11 @@ footer .copy a:hover {
 }
 .man_accessory h2 {
   font-size: 30px;
-  font-family: 'LucidaGrande', sans-serif;
+  font-family: 'Ubuntu', sans-serif;
   font-weight: 700;
   text-indent: 10px;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 760px) {
   .man_accessory h2 {
     font-size: 24px;
     text-indent: 0;
@@ -2161,7 +2227,7 @@ footer .copy a:hover {
   display: inline-block;
 }
 .man_accessory .man_price p {
-  font-family: 'LucidaGrande', sans-serif;
+  font-family: 'Ubuntu', sans-serif;
   font-weight: 700;
   display: inline-block;
 }
@@ -2188,10 +2254,11 @@ footer .copy a:hover {
 }
 @media screen and (max-width: 992px) {
   .woman_accessory {
+    padding: 0 20px;
     margin-top: 120px;
   }
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 760px) {
   .woman_accessory {
     margin-top: 120px;
     padding: 0 20px;
@@ -2199,11 +2266,11 @@ footer .copy a:hover {
 }
 .woman_accessory h2 {
   font-size: 30px;
-  font-family: 'LucidaGrande', sans-serif;
+  font-family: 'Ubuntu', sans-serif;
   font-weight: 700;
   text-indent: 10px;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 760px) {
   .woman_accessory h2 {
     font-size: 24px;
     text-indent: 0;
@@ -2336,7 +2403,7 @@ footer .copy a:hover {
   display: inline-block;
 }
 .woman_accessory .woman_price p {
-  font-family: 'LucidaGrande', sans-serif;
+  font-family: 'Ubuntu', sans-serif;
   font-weight: 700;
   display: inline-block;
 }
@@ -2364,7 +2431,12 @@ footer .copy a:hover {
   margin-top: 10vh;
   padding: 0 40px;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 992px) {
+  .map_contacts {
+    padding: 0 20px;
+  }
+}
+@media screen and (max-width: 760px) {
   .map_contacts {
     margin-top: 100px;
     padding: 0;
@@ -2377,7 +2449,12 @@ footer .copy a:hover {
   margin-top: 40px;
   padding: 0 40px;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 992px) {
+  .contacts_tel {
+    padding: 0 20px;
+  }
+}
+@media screen and (max-width: 760px) {
   .contacts_tel {
     padding: 0 20px;
     margin-top: 20px;
@@ -2385,17 +2462,17 @@ footer .copy a:hover {
 }
 .contacts_tel h3 {
   font-size: 24px;
-  font-family: 'LucidaGrande', sans-serif;
+  font-family: 'Ubuntu', sans-serif;
   font-weight: 700;
   margin-bottom: 20px;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 760px) {
   .contacts_tel h3 {
     margin-top: 40px;
   }
 }
 .contacts_tel p {
-  font-family: 'LucidaGrande', sans-serif;
+  font-family: 'Ubuntu', sans-serif;
   font-weight: 300;
 }
 /* Shops section */
@@ -2408,10 +2485,11 @@ footer .copy a:hover {
 }
 @media screen and (max-width: 992px) {
   .shops {
+    padding: 0 20px;
     margin-top: 120px;
   }
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 760px) {
   .shops {
     padding: 0 5px;
     margin-top: 120px;
@@ -2419,10 +2497,10 @@ footer .copy a:hover {
 }
 .shops h3 {
   font-size: 24px;
-  font-family: 'LucidaGrande', sans-serif;
+  font-family: 'Ubuntu', sans-serif;
   font-weight: 700;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 760px) {
   .shops h3 {
     padding: 0 15px;
   }
@@ -2431,7 +2509,7 @@ footer .copy a:hover {
   width: 100%;
   margin-top: 40px;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 760px) {
   .shops img {
     margin-top: 20px;
   }
@@ -2439,7 +2517,7 @@ footer .copy a:hover {
 .shops .shops_text {
   margin-top: 20px;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 760px) {
   .shops .shops_text {
     margin-top: 10px;
   }
@@ -2451,7 +2529,7 @@ footer .copy a:hover {
   line-height: 48px;
   border: 1px solid #000000;
   color: #000000;
-  font-family: 'LucidaGrande', sans-serif;
+  font-family: 'Ubuntu', sans-serif;
   font-weight: 700;
   text-align: center;
   cursor: pointer;
@@ -2466,7 +2544,12 @@ footer .copy a:hover {
   padding: 0 40px;
   overflow: hidden;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 992px) {
+  .thanks {
+    padding: 0 20px;
+  }
+}
+@media screen and (max-width: 760px) {
   .thanks {
     padding: 0 20px;
   }
@@ -2475,7 +2558,7 @@ footer .copy a:hover {
   text-align: left;
   margin-top: 40px;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 760px) {
   .thanks .section_header {
     font-size: 24px;
     margin-top: 20px;
@@ -2488,7 +2571,7 @@ footer .copy a:hover {
   line-height: 20px;
   margin-top: 60px;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 760px) {
   .thanks a {
     margin-top: 40px;
   }
@@ -2500,6 +2583,11 @@ footer .copy a:hover {
   margin-top: 105px;
   overflow: hidden;
   padding: 0 40px;
+}
+@media screen and (max-width: 992px) {
+  .about {
+    padding: 0 20px;
+  }
 }
 .about_wrapper {
   position: fixed;
@@ -2545,7 +2633,7 @@ footer .copy a:hover {
 }
 .about_image .about_text p {
   margin-bottom: 10px;
-  font-family: 'LucidaGrande', sans-serif;
+  font-family: 'Ubuntu', sans-serif;
   font-weight: 300;
 }
 .about_mob {
@@ -2557,7 +2645,7 @@ footer .copy a:hover {
   margin-top: 100px;
   margin-bottom: 15px;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 760px) {
   .about_mob .about_help_wrapper {
     height: 0;
     overflow: hidden;
@@ -2565,11 +2653,11 @@ footer .copy a:hover {
 }
 .about_mob_info_header {
   font-size: 24px;
-  font-family: 'LucidaGrande', sans-serif;
+  font-family: 'Ubuntu', sans-serif;
   font-weight: 700;
   margin-bottom: 30px;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 760px) {
   .about_mob_info_header {
     position: relative;
     display: inline-block;
@@ -2606,7 +2694,12 @@ footer .copy a:hover {
   margin-top: 80px;
   padding: 0 40px;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 992px) {
+  .about_help {
+    padding: 0 20px;
+  }
+}
+@media screen and (max-width: 760px) {
   .about_help {
     margin-top: 0;
     padding: 0 5px;
@@ -2614,7 +2707,7 @@ footer .copy a:hover {
     height: auto;
   }
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 760px) {
   .about_help .about_help_wrapper {
     height: 0;
     overflow: hidden;
@@ -2625,11 +2718,11 @@ footer .copy a:hover {
 }
 .about_help h4 {
   font-size: 24px;
-  font-family: 'LucidaGrande', sans-serif;
+  font-family: 'Ubuntu', sans-serif;
   font-weight: 700;
   margin-bottom: 30px;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 760px) {
   .about_help h4 {
     position: relative;
     display: inline-block;
@@ -2653,7 +2746,7 @@ footer .copy a:hover {
 }
 .about_help p {
   padding-top: 10px;
-  font-family: 'LucidaGrande', sans-serif;
+  font-family: 'Ubuntu', sans-serif;
   font-weight: 300;
 }
 .about_mob_info_active:after {
@@ -2666,7 +2759,12 @@ footer .copy a:hover {
   margin-top: 105px;
   padding: 0 40px;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 992px) {
+  .article {
+    padding: 0 20px;
+  }
+}
+@media screen and (max-width: 760px) {
   .article {
     padding: 0;
     margin-top: 100px;
@@ -2677,12 +2775,12 @@ footer .copy a:hover {
 }
 .article h3 {
   font-size: 24px;
-  font-family: 'LucidaGrande', sans-serif;
+  font-family: 'Ubuntu', sans-serif;
   font-weight: 700;
   margin-top: 40px;
   text-align: left;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 760px) {
   .article h3 {
     margin-top: 20px;
     padding: 0 20px;
@@ -2691,17 +2789,17 @@ footer .copy a:hover {
 .article_text {
   margin-top: 5px;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 760px) {
   .article_text {
     padding: 0 20px;
   }
 }
 .article_text p {
   margin-top: 15px;
-  font-family: 'LucidaGrande', sans-serif;
+  font-family: 'Ubuntu', sans-serif;
   font-weight: 300;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 760px) {
   .article_text p {
     margin-top: 5px;
   }
@@ -2714,10 +2812,11 @@ footer .copy a:hover {
 }
 @media screen and (max-width: 992px) {
   .article_read {
+    padding: 0 20px;
     margin-top: 120px;
   }
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 760px) {
   .article_read {
     margin-top: 120px;
     padding: 0 20px;
@@ -2725,12 +2824,12 @@ footer .copy a:hover {
 }
 .article_read h3 {
   font-size: 24px;
-  font-family: 'LucidaGrande', sans-serif;
+  font-family: 'Ubuntu', sans-serif;
   font-weight: 700;
   margin-bottom: 40px;
   text-align: left;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 760px) {
   .article_read h3 {
     text-align: center;
     margin-bottom: 20px;
@@ -2743,7 +2842,7 @@ footer .copy a:hover {
   position: relative;
   width: 100%;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 760px) {
   .article_read_image {
     margin-top: 20px;
   }
@@ -2769,16 +2868,16 @@ footer .copy a:hover {
   border: 1px solid #000000;
 }
 .article_read_info h6 {
-  font-family: 'LucidaGrande', sans-serif;
+  font-family: 'Ubuntu', sans-serif;
   font-weight: 700;
 }
 .article_read_info p {
   margin-top: 10px;
   margin-bottom: 30px;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 760px) {
   .article_read_info p {
-    font-family: 'LucidaGrande', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
     font-weight: 300;
   }
 }
@@ -2805,7 +2904,12 @@ footer .copy a:hover {
   margin-top: 105px;
   overflow: hidden;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 992px) {
+  .rules {
+    padding: 0 20px;
+  }
+}
+@media screen and (max-width: 760px) {
   .rules {
     margin-top: 100px;
     margin-bottom: 20px;
@@ -2837,10 +2941,10 @@ footer .copy a:hover {
 }
 .rules_text h4 {
   font-size: 24px;
-  font-family: 'LucidaGrande', sans-serif;
+  font-family: 'Ubuntu', sans-serif;
   font-weight: 700;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 760px) {
   .rules_text h4 {
     font-size: 16px;
     position: relative;
@@ -2866,13 +2970,13 @@ footer .copy a:hover {
 .rules_text p {
   margin-bottom: 20px;
   margin-top: 20px;
-  font-family: 'LucidaGrande', sans-serif;
+  font-family: 'Ubuntu', sans-serif;
   font-weight: 300;
 }
 #registration {
   margin-top: 80px;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 760px) {
   #registration {
     margin-top: 0;
     margin-bottom: 20px;
@@ -2881,7 +2985,7 @@ footer .copy a:hover {
 #policy {
   margin-top: 80px;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 760px) {
   #policy {
     margin-top: 0;
     margin-bottom: 20px;
@@ -2894,7 +2998,12 @@ footer .copy a:hover {
   margin-top: 80px;
   overflow: hidden;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 992px) {
+  .ban {
+    padding: 0 20px;
+  }
+}
+@media screen and (max-width: 760px) {
   .ban {
     margin-top: 0;
     margin-bottom: 20px;
@@ -2907,10 +3016,10 @@ footer .copy a:hover {
 }
 .ban h4 {
   font-size: 24px;
-  font-family: 'LucidaGrande', sans-serif;
+  font-family: 'Ubuntu', sans-serif;
   font-weight: 700;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 760px) {
   .ban h4 {
     font-size: 16px;
     position: relative;
@@ -2931,7 +3040,7 @@ footer .copy a:hover {
 }
 .ban p {
   margin-top: 20px;
-  font-family: 'LucidaGrande', sans-serif;
+  font-family: 'Ubuntu', sans-serif;
   font-weight: 300;
 }
 /* WISHLIST PAGE */
@@ -2941,7 +3050,12 @@ footer .copy a:hover {
   padding: 0 40px;
   margin-top: 105px;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 992px) {
+  .wish_slider {
+    padding: 0 20px;
+  }
+}
+@media screen and (max-width: 760px) {
   .wish_slider {
     padding: 0;
     height: 230px;
@@ -2950,7 +3064,7 @@ footer .copy a:hover {
 .wish_slider img {
   width: 100%;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 760px) {
   .wish_slider img {
     height: 230px;
   }
@@ -2985,17 +3099,22 @@ footer .copy a:hover {
   overflow: hidden;
   margin-top: 60px;
 }
+@media screen and (max-width: 992px) {
+  .wish {
+    padding: 0 20px;
+  }
+}
 .wish .section_header {
   text-align: left;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 760px) {
   .wish .section_header {
     font-size: 24px;
     text-align: center;
     padding-bottom: 30px;
   }
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 760px) {
   .wish_wrapper {
     height: 65vh;
     overflow: scroll;
@@ -3004,7 +3123,7 @@ footer .copy a:hover {
 .wish_block {
   margin-top: 80px;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 760px) {
   .wish_block {
     margin-top: 0;
     padding-bottom: 30px;
@@ -3014,7 +3133,7 @@ footer .copy a:hover {
   position: relative;
   width: 100%;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 760px) {
   .wish_image {
     width: 40%;
     float: left;
@@ -3115,7 +3234,7 @@ footer .copy a:hover {
   margin-top: 20px;
   display: inline-block;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 760px) {
   .wish_star {
     margin-top: 0;
     margin-left: 15px;
@@ -3129,7 +3248,7 @@ footer .copy a:hover {
   width: 16px;
   height: 15px;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 760px) {
   .wish_star span {
     width: 14px;
     height: 14px;
@@ -3141,7 +3260,7 @@ footer .copy a:hover {
   width: 16px;
   height: 15px;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 760px) {
   .wish_star .active_star {
     width: 14px;
     height: 14px;
@@ -3153,7 +3272,7 @@ footer .copy a:hover {
   display: inline-block;
   float: right;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 760px) {
   .wish_like {
     margin-top: 0;
     width: 15%;
@@ -3167,7 +3286,7 @@ footer .copy a:hover {
   padding-bottom: 5px;
   float: right;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 760px) {
   .wish_like img {
     width: 14px;
     height: 14px;
@@ -3177,7 +3296,7 @@ footer .copy a:hover {
   display: inline-block;
   float: right;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 760px) {
   .wish_like span {
     font-size: 14px;
   }
@@ -3185,7 +3304,7 @@ footer .copy a:hover {
 .wish_text {
   margin-top: 10px;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 760px) {
   .wish_text {
     margin-top: 5px;
     margin-left: 15px;
@@ -3200,7 +3319,7 @@ footer .copy a:hover {
   margin-top: 10px;
   display: inline-block;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 760px) {
   .wish_price {
     margin-top: 5px;
     margin-left: 15px;
@@ -3214,7 +3333,7 @@ footer .copy a:hover {
   width: 35%;
 }
 .wish_price p {
-  font-family: 'LucidaGrande', sans-serif;
+  font-family: 'Ubuntu', sans-serif;
   font-weight: 700;
   display: inline-block;
 }
@@ -3230,7 +3349,7 @@ footer .copy a:hover {
   text-align: center;
   float: left;
   cursor: pointer;
-  font-family: 'LucidaGrande', sans-serif;
+  font-family: 'Ubuntu', sans-serif;
   font-weight: 700;
   transition: 1s;
 }
@@ -3238,7 +3357,7 @@ footer .copy a:hover {
   color: #ffffff;
   background-color: #000000;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 760px) {
   .wish .wish_btn {
     margin-top: 20px;
     margin-left: 15px;
@@ -3254,7 +3373,7 @@ footer .copy a:hover {
   margin: 50px auto 0 auto;
   cursor: pointer;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 760px) {
   .wish .wish_delete {
     margin: 25px auto 0 auto;
     width: 20px;
@@ -3267,7 +3386,7 @@ footer .copy a:hover {
   display: block;
   margin-top: 60px;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 760px) {
   .wish .wish_link {
     margin-top: 40px;
   }
@@ -3284,7 +3403,12 @@ footer .copy a:hover {
   overflow: hidden;
   margin-top: 110px;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 992px) {
+  .basket {
+    padding: 0 20px;
+  }
+}
+@media screen and (max-width: 760px) {
   .basket {
     padding: 0 5px;
     margin-top: 100px;
@@ -3302,7 +3426,7 @@ footer .copy a:hover {
 .basket .price {
   margin-top: 10px;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 760px) {
   .basket .price {
     margin-top: 5px;
   }
@@ -3310,7 +3434,7 @@ footer .copy a:hover {
 .basket .color_block {
   margin-top: 20px;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 760px) {
   .basket .color_block {
     margin-top: 15px;
   }
@@ -3328,7 +3452,7 @@ footer .copy a:hover {
 .basket .size {
   margin-top: 10px;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 760px) {
   .basket .size {
     margin-top: 5px;
   }
@@ -3338,7 +3462,7 @@ footer .copy a:hover {
   margin-left: -5px;
   position: relative;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 760px) {
   .basket .basket_form {
     margin-top: 5px;
   }
@@ -3364,7 +3488,7 @@ footer .copy a:hover {
   right: 45%;
   cursor: pointer;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 760px) {
   .basket .basket_close {
     right: 0;
   }
@@ -3386,7 +3510,7 @@ footer .copy a:hover {
 }
 .basket h3 {
   font-size: 24px;
-  font-family: 'LucidaGrande', sans-serif;
+  font-family: 'Ubuntu', sans-serif;
   font-weight: 700;
   margin-bottom: 10px;
 }
@@ -3420,31 +3544,31 @@ footer .copy a:hover {
   text-indent: 15px;
 }
 .basket input::-moz-placeholder {
-  font-family: 'LucidaGrande', sans-serif;
+  font-family: 'Ubuntu', sans-serif;
   font-weight: 400;
   color: #000000;
   opacity: 0.5;
 }
 .basket input::-webkit-input-placeholder {
-  font-family: 'LucidaGrande', sans-serif;
+  font-family: 'Ubuntu', sans-serif;
   font-weight: 400;
   color: #000000;
   opacity: 0.5;
 }
 .basket input:-ms-input-placeholder {
-  font-family: 'LucidaGrande', sans-serif;
+  font-family: 'Ubuntu', sans-serif;
   font-weight: 400;
   color: #000000;
   opacity: 0.5;
 }
 .basket input::-ms-input-placeholder {
-  font-family: 'LucidaGrande', sans-serif;
+  font-family: 'Ubuntu', sans-serif;
   font-weight: 400;
   color: #000000;
   opacity: 0.5;
 }
 .basket input::placeholder {
-  font-family: 'LucidaGrande', sans-serif;
+  font-family: 'Ubuntu', sans-serif;
   font-weight: 400;
   color: #000000;
   opacity: 0.5;
@@ -3482,7 +3606,12 @@ footer .copy a:hover {
   padding: 0 40px;
   overflow: hidden;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 992px) {
+  .product {
+    padding: 0 20px;
+  }
+}
+@media screen and (max-width: 760px) {
   .product {
     padding: 0 5px;
   }
@@ -3499,7 +3628,7 @@ footer .copy a:hover {
     height: auto;
   }
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 760px) {
   .product_slider_wrapper {
     height: auto;
   }
@@ -3558,10 +3687,10 @@ footer .copy a:hover {
 }
 .product_name {
   font-size: 24px;
-  font-family: 'LucidaGrande', sans-serif;
+  font-family: 'Ubuntu', sans-serif;
   font-weight: 700;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 760px) {
   .product_name {
     margin-top: 20px;
   }
@@ -3613,7 +3742,7 @@ footer .copy a:hover {
   background-position: 100% center;
   cursor: pointer;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 760px) {
   .product form select {
     width: 60%;
     margin-top: 10px;
@@ -3631,7 +3760,7 @@ footer .copy a:hover {
   border: 1px solid #000000;
   color: #000000;
   font-size: 16px;
-  font-family: 'LucidaGrande', sans-serif;
+  font-family: 'Ubuntu', sans-serif;
   font-weight: 700;
   display: inline-block;
   text-align: center;
@@ -3643,7 +3772,7 @@ footer .copy a:hover {
   color: #ffffff;
   background-color: #000000;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 760px) {
   .product_btn {
     margin-top: 20px;
   }
@@ -3659,7 +3788,7 @@ footer .copy a:hover {
   display: inline-block;
   cursor: pointer;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 760px) {
   .product_heart {
     margin-top: 30px;
   }
@@ -3677,7 +3806,7 @@ footer .copy a:hover {
   display: inline-block;
   margin-right: 65px;
   opacity: 0.5;
-  font-family: 'LucidaGrande', sans-serif;
+  font-family: 'Ubuntu', sans-serif;
   font-weight: 700;
   cursor: pointer;
   transition: opacity 1s;
@@ -3694,13 +3823,13 @@ footer .copy a:hover {
   bottom: -10px;
   right: 0;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 760px) {
   .product_about_header {
     display: inline-block !important;
     position: relative;
     opacity: 0.5;
     transition: opacity 1s;
-    font-family: 'LucidaGrande', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
     font-weight: 700;
     cursor: pointer;
     padding-bottom: 20px;
@@ -3730,7 +3859,7 @@ footer .copy a:hover {
 .product_about .product_about_wrapper .product_about_block {
   display: none;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 760px) {
   .product_about .product_about_wrapper {
     height: auto;
   }
@@ -3747,7 +3876,7 @@ footer .copy a:hover {
 .product_about .product_about_wrapper .product_about_text_active {
   display: block !important;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 760px) {
   .product_about_block {
     height: 30px;
     overflow: hidden;
@@ -3762,10 +3891,11 @@ footer .copy a:hover {
 }
 @media screen and (max-width: 992px) {
   .product_review {
+    padding: 0 20px;
     margin-top: 120px;
   }
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 760px) {
   .product_review {
     margin-top: 120px;
     padding: 0 20px;
@@ -3788,7 +3918,7 @@ footer .copy a:hover {
 }
 .product_review .review_header {
   font-size: 24px;
-  font-family: 'LucidaGrande', sans-serif;
+  font-family: 'Ubuntu', sans-serif;
   font-weight: 700;
   margin-top: 70px;
   margin-bottom: 30px;
@@ -3814,7 +3944,7 @@ footer .copy a:hover {
   float: left;
   margin-right: 20px;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 760px) {
   .product_review .comment_block .comment_img {
     display: none;
   }
@@ -3824,7 +3954,7 @@ footer .copy a:hover {
   float: right;
   margin-right: 0;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 760px) {
   .product_review .comment_block .comment_stars {
     margin-right: 0;
   }
@@ -3853,38 +3983,38 @@ footer .copy a:hover {
   border: 1px solid #000000;
   display: block;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 760px) {
   .product_review .comment_block .comment_form .comment_textarea {
     width: 100%;
     margin-right: 0;
   }
 }
 .product_review .comment_block .comment_form textarea:-moz-placeholder {
-  font-family: 'LucidaGrande', sans-serif;
+  font-family: 'Ubuntu', sans-serif;
   font-weight: 400;
   color: #000000;
   opacity: 0.5;
 }
 .product_review .comment_block .comment_form textarea:-webkit-input-placeholder {
-  font-family: 'LucidaGrande', sans-serif;
+  font-family: 'Ubuntu', sans-serif;
   font-weight: 400;
   color: #000000;
   opacity: 0.5;
 }
 .product_review .comment_block .comment_form textarea:-ms-input-placeholder {
-  font-family: 'LucidaGrande', sans-serif;
+  font-family: 'Ubuntu', sans-serif;
   font-weight: 400;
   color: #000000;
   opacity: 0.5;
 }
 .product_review .comment_block .comment_form textarea:-ms-input-placeholder {
-  font-family: 'LucidaGrande', sans-serif;
+  font-family: 'Ubuntu', sans-serif;
   font-weight: 400;
   color: #000000;
   opacity: 0.5;
 }
 .product_review .comment_block .comment_form textarea:placeholder {
-  font-family: 'LucidaGrande', sans-serif;
+  font-family: 'Ubuntu', sans-serif;
   font-weight: 400;
   color: #000000;
   opacity: 0.5;
@@ -3903,7 +4033,7 @@ footer .copy a:hover {
   float: right;
   margin-top: 40px;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 760px) {
   .product_review .comment_block .comment_btn {
     display: block;
     width: 50%;
@@ -3913,7 +4043,7 @@ footer .copy a:hover {
 .product_review .fix {
   padding-left: 0;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 760px) {
   .product_review .fix {
     padding: 0;
   }
@@ -3927,10 +4057,11 @@ footer .copy a:hover {
 }
 @media screen and (max-width: 992px) {
   .product_shop {
+    padding: 0 20px;
     margin-top: 120px;
   }
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 760px) {
   .product_shop {
     margin-top: 100px;
     padding: 0 5px;
@@ -3938,11 +4069,11 @@ footer .copy a:hover {
 }
 .product_shop h2 {
   font-size: 30px;
-  font-family: 'LucidaGrande', sans-serif;
+  font-family: 'Ubuntu', sans-serif;
   font-weight: 700;
   text-indent: 10px;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 760px) {
   .product_shop h2 {
     font-size: 24px;
     text-indent: 0;
@@ -4135,7 +4266,7 @@ footer .copy a:hover {
   width: 35%;
 }
 .product_shop .product_shop_price p {
-  font-family: 'LucidaGrande', sans-serif;
+  font-family: 'Ubuntu', sans-serif;
   font-weight: 700;
   display: inline-block;
 }
@@ -4158,10 +4289,11 @@ footer .copy a:hover {
 }
 @media screen and (max-width: 992px) {
   .product_accessory {
+    padding: 0 20px;
     margin-top: 120px;
   }
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 760px) {
   .product_accessory {
     margin-top: 120px;
     padding: 0 5px;
@@ -4169,11 +4301,11 @@ footer .copy a:hover {
 }
 .product_accessory h2 {
   font-size: 30px;
-  font-family: 'LucidaGrande', sans-serif;
+  font-family: 'Ubuntu', sans-serif;
   font-weight: 700;
   text-indent: 10px;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 760px) {
   .product_accessory h2 {
     font-size: 24px;
     text-indent: 0;
@@ -4316,7 +4448,7 @@ footer .copy a:hover {
   display: inline-block;
 }
 .product_accessory .product_price p {
-  font-family: 'LucidaGrande', sans-serif;
+  font-family: 'Ubuntu', sans-serif;
   font-weight: 700;
   display: inline-block;
 }
@@ -4346,28 +4478,28 @@ footer .copy a:hover {
   overflow: hidden;
 }
 @media screen and (max-width: 992px) {
-  .listing_page .fixed {
-    padding-left: 0;
+  .listing_page {
+    padding: 0 20px;
   }
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 760px) {
   .listing_page {
     padding: 0 20px;
   }
 }
 .listing_page_main_header {
   font-size: 30px;
-  font-family: 'LucidaGrande', sans-serif;
+  font-family: 'Ubuntu', sans-serif;
   font-weight: 700;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 760px) {
   .listing_page_main_header {
     font-size: 24px;
   }
 }
 .listing_page_header {
   font-size: 24px;
-  font-family: 'LucidaGrande', sans-serif;
+  font-family: 'Ubuntu', sans-serif;
   font-weight: 700;
 }
 .listing_page_sub_header {
@@ -4450,7 +4582,7 @@ footer .copy a:hover {
 .listing_page .fix {
   padding-left: 0;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 760px) {
   .listing_page .fixed {
     padding: 0;
   }
@@ -4460,14 +4592,14 @@ footer .copy a:hover {
   transform: rotate(180deg);
 }
 .listing_page .listing_page_sorting {
-  font-family: 'LucidaGrande', sans-serif;
+  font-family: 'Ubuntu', sans-serif;
   font-weight: 700;
   margin-top: 40px;
   margin-right: 65px;
   margin-bottom: 20px;
   display: inline-block;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 760px) {
   .listing_page .listing_page_sorting {
     margin-right: 0;
     margin-bottom: 0;
@@ -4488,7 +4620,7 @@ footer .copy a:hover {
   background-position: 100% center;
   cursor: pointer;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 760px) {
   .listing_page .listing_page_sorting_list {
     margin-top: 10px;
     margin-bottom: 25px;
@@ -4521,7 +4653,7 @@ footer .copy a:hover {
   width: 100%;
   margin-top: 20px;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 760px) {
   .listing_page .listing_page_image_wrapper .listing_page_img {
     width: 45%;
     float: left;
@@ -4617,9 +4749,9 @@ footer .copy a:hover {
   display: inline-block;
   padding-left: 10px;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 760px) {
   .listing_page .block_listing_page_stars {
-    width: 30%;
+    width: 40%;
   }
 }
 .listing_page .block_listing_page_stars span {
@@ -4629,7 +4761,7 @@ footer .copy a:hover {
   width: 16px;
   height: 15px;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 760px) {
   .listing_page .block_listing_page_stars span {
     width: 14px;
     height: 14px;
@@ -4641,7 +4773,7 @@ footer .copy a:hover {
   width: 16px;
   height: 15px;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 760px) {
   .listing_page .block_listing_page_stars .active_star {
     width: 14px;
     height: 14px;
@@ -4654,9 +4786,9 @@ footer .copy a:hover {
   display: inline-block;
   float: right;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 760px) {
   .listing_page .block_listing_page_like {
-    width: 10%;
+    width: 15%;
     padding-right: 0;
   }
 }
@@ -4668,8 +4800,10 @@ footer .copy a:hover {
   padding-bottom: 5px;
   float: right;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 760px) {
   .listing_page .block_listing_page_like img {
+    padding-left: 2px;
+    padding-bottom: 1px;
     width: 14px;
     height: 14px;
   }
@@ -4678,7 +4812,7 @@ footer .copy a:hover {
   display: inline-block;
   float: right;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 760px) {
   .listing_page .block_listing_page_like span {
     font-size: 14px;
   }
@@ -4687,7 +4821,7 @@ footer .copy a:hover {
   margin-top: 10px;
   padding-left: 10px;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 760px) {
   .listing_page .block_listing_page_text {
     display: inline-block;
   }
@@ -4699,14 +4833,14 @@ footer .copy a:hover {
   padding-left: 10px;
   display: inline-block;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 760px) {
   .listing_page .block_listing_page_price {
     display: inline-block;
     width: 45%;
   }
 }
 .listing_page .block_listing_page_price p {
-  font-family: 'LucidaGrande', sans-serif;
+  font-family: 'Ubuntu', sans-serif;
   font-weight: 700;
   display: inline-block;
 }
@@ -4717,7 +4851,7 @@ footer .copy a:hover {
   display: block;
   margin: 60px auto 0 auto;
   color: #000000;
-  font-family: 'LucidaGrande', sans-serif;
+  font-family: 'Ubuntu', sans-serif;
   font-weight: 700;
   text-align: center;
   border: 1px solid #000000;
@@ -4734,7 +4868,7 @@ footer .copy a:hover {
   display: block;
   padding-bottom: 20px;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 760px) {
   .product_block {
     padding-bottom: 0;
     overflow: hidden;
@@ -4751,7 +4885,7 @@ footer .copy a:hover {
   max-width: 320px;
   margin-top: 35px;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 760px) {
   .filter_width_fix {
     max-width: 100%;
     margin-top: 20px;
