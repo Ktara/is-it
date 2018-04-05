@@ -3457,8 +3457,18 @@ footer .copy a:hover {
 .basket .text {
   width: 50%;
 }
+@media screen and (max-width: 992px) {
+  .basket .text {
+    width: 90%;
+  }
+}
 .basket .price {
   margin-top: 10px;
+}
+@media screen and (max-width: 992px) {
+  .basket .price {
+    margin-top: 5px;
+  }
 }
 @media screen and (max-width: 760px) {
   .basket .price {
@@ -3467,6 +3477,11 @@ footer .copy a:hover {
 }
 .basket .color_block {
   margin-top: 20px;
+}
+@media screen and (max-width: 992px) {
+  .basket .color_block {
+    margin-top: 15px;
+  }
 }
 @media screen and (max-width: 760px) {
   .basket .color_block {
@@ -3486,33 +3501,28 @@ footer .copy a:hover {
 .basket .size {
   margin-top: 10px;
 }
+@media screen and (max-width: 992px) {
+  .basket .size {
+    margin-top: 5px;
+  }
+}
 @media screen and (max-width: 760px) {
   .basket .size {
     margin-top: 5px;
   }
 }
-.basket .basket_form {
-  margin-top: 10px;
-  margin-left: -5px;
-  position: relative;
+.basket .basket_number {
+  padding-top: 10px;
 }
-@media screen and (max-width: 760px) {
-  .basket .basket_form {
-    margin-top: 5px;
+@media screen and (max-width: 992px) {
+  .basket .basket_number {
+    padding-top: 5px;
   }
 }
-.basket .basket_form .basket_number {
-  width: 65px;
-  height: 25px;
-  margin: 0;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  background-image: url(../img/rectangle-3-copy-2.svg);
-  background-repeat: no-repeat;
-  background-position: 100% center;
-  cursor: pointer;
-  border: none;
+@media screen and (max-width: 760px) {
+  .basket .basket_number {
+    padding-top: 5px;
+  }
 }
 .basket .basket_close {
   position: absolute;
@@ -3521,6 +3531,11 @@ footer .copy a:hover {
   top: 0;
   right: 45%;
   cursor: pointer;
+}
+@media screen and (max-width: 992px) {
+  .basket .basket_close {
+    right: 0;
+  }
 }
 @media screen and (max-width: 760px) {
   .basket .basket_close {
