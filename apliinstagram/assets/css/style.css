@@ -1115,6 +1115,7 @@ a:focus {
   width: 100%;
   margin-top: 140px;
   padding: 0 40px;
+  overflow: hidden;
 }
 @media screen and (max-width: 992px) {
   .blog {
@@ -1172,6 +1173,7 @@ a:focus {
   margin-top: -2px;
   padding: 20px 10px 25px 10px;
   border: 1px solid #000000;
+  margin-bottom: 20px;
 }
 .blog_info h6 {
   font-family: 'Ubuntu', sans-serif;
@@ -3512,16 +3514,16 @@ footer .copy a:hover {
   }
 }
 .basket .basket_number {
-  padding-top: 10px;
+  margin-top: 10px;
 }
 @media screen and (max-width: 992px) {
   .basket .basket_number {
-    padding-top: 5px;
+    margin-top: 5px;
   }
 }
 @media screen and (max-width: 760px) {
   .basket .basket_number {
-    padding-top: 5px;
+    margin-top: 5px;
   }
 }
 .basket .basket_close {
