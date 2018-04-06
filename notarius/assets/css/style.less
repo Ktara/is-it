@@ -67,6 +67,23 @@ ol, ul {
 
 
 
+/* BACKGR_IMAGE SECTION */
+.backgr_image {
+	position: fixed;
+	width: 100%;
+	height: 100vh;
+	background-image: url(../img/bgi-books.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	opacity: 0.5;
+}
+
+
+
+
+
+
+
 
 
 
@@ -207,6 +224,86 @@ ol, ul {
 			font-size: 22px;
 			.opn-bold;
 			margin-right: 20px;
+		}
+	}
+}
+
+
+
+
+
+
+
+
+
+
+/* ABOUT SECTION */
+.about {
+	position: relative;
+	width: 100%;
+	margin-top: 30vh;
+	background-color: rgba(54, 10, 0, 0.8);
+	overflow: hidden;
+	z-index: 100;
+	&_head {
+		width: 100%;
+		padding-top: 50px;
+		padding-bottom: 50px;
+		text-align: center;
+		p {
+			color: @white;
+			font-size: 30px;
+			.opn-regA;
+		}
+	}
+}
+
+
+
+
+
+
+
+
+
+/* SERVICE SECTION */
+.service {
+	position: relative;
+	width: 100%;
+	padding-top: 100px;
+	background-color: @white;
+	z-index: 100;
+	&_list {
+		li {
+			width: 48%;
+			float: left;
+			margin-top: 30px;
+		}
+		img {
+			width: 43px;
+			height: auto;
+			display: inline-block;
+			margin-right: 40px;
+		}
+		p {
+			display: inline-block;
+			color: @dark-brown;
+			.opn-regM;
+			font-size: 27px;
+		}
+	}
+	&_list li:nth-child(-n+3) {
+		width: 33%;
+		text-align: center;
+		margin-bottom: 50px;
+		img {
+			width: 160px;
+			height: auto;
+			display: block;
+			margin: 0 auto 40px auto;
+		}
+		p {
+			font-size: 36px;
 		}
 	}
 }
