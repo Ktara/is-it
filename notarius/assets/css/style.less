@@ -52,6 +52,7 @@
 @grey: #565656;
 @black: #000000;
 @light-grey: #acacac;
+@yellow: #dbbd9a;
 
 /* Base setting */
 ol, ul {
@@ -196,10 +197,8 @@ ol, ul {
 			font-size: 22px;
 			.opn-bold;
 			color: @dark-brown;
+			padding-right: 15px;
 		}
-	}
-	&_tel p:nth-child(1) {
-		padding-right: 15px;
 	}
 	.map_mark {
 		position: relative;
@@ -250,7 +249,7 @@ ol, ul {
 		padding-top: 50px;
 		padding-bottom: 50px;
 		text-align: center;
-		
+
 		p {
 			color: @white;
 			font-size: 30px;
@@ -330,8 +329,8 @@ ol, ul {
 		position: absolute;
 		content: '';
 		display: block;
-		width: 20%;
-		height: auto;
+		width: 12%;
+		height: 100%;
 		top: 0;
 		right: 0;
 		background-image: url(../img/wood-backgr.png);
@@ -342,8 +341,8 @@ ol, ul {
 		position: absolute;
 		content: '';
 		display: block;
-		width: 20%;
-		height: auto;
+		width: 12%;
+		height: 100%;
 		top: 0;
 		left: 0;
 		background-image: url(../img/wood-backgr.png);
@@ -351,6 +350,8 @@ ol, ul {
 		background-size: cover;
 	}
 	&_head {
+		position: relative;
+		z-index: 101;
 		background-color: @white;
 		text-align: center;
 		margin-top: 30px;
@@ -363,9 +364,10 @@ ol, ul {
 	}
 	.about_notarius {
 		position: relative;
+		z-index: 101;
 		background-color: rgba(54, 10, 0, 0.8);
 		width: 100%;
-		height: 70vh;
+		height: 80vh;
 		text-align: center;
 		color: @white;
 		margin-top: 20px;
@@ -384,5 +386,191 @@ ol, ul {
 	}
 	.fix {
 		padding-left: 0;
+	}
+	.fixed {
+		padding-right: 0;
+	}
+	&_document_wrapper {
+		margin-top: 20px;
+		position: relative;
+		z-index: 101;
+		overflow: hidden;
+	}
+	&_document_image {
+		width: 100%;
+		img {
+			width: 100%;
+		}
+	}
+}
+
+
+
+
+
+
+
+
+
+/* CONTACTS SECTION */
+.contacts {
+	position: relative;
+	width: 100%;
+	z-index: 100;
+	height: 90vh;
+	text-align: center;
+	.map {
+		width: 100%;
+		height: 90vh;
+	}
+	.contacts_info {
+		position: absolute;
+		display: inline-block;
+		width: 40%;
+		height: auto;
+		top: 27%;
+		margin-left: -20%;
+		background-color: @white;
+		text-align: center;
+		h5 {
+			font-size: 36px;
+			.opn-bold;
+			color: @main-brown;
+			margin-top: 25px;
+		}
+		.adress {
+			font-size: 16px;
+			.opn-regM;
+			margin-top: 15px;
+			color: @grey;
+		}
+		.social {
+			margin-top: 30px;
+			a {
+				margin-right: 10px;
+				text-decoration: none;
+				&:hover {
+					text-decoration: none;
+				}
+				img {
+					width: 40px;
+				}
+			}
+		}
+		.email {
+			color: @main-brown;
+			font-size: 18px;
+			margin-top: 30px;
+			.opn-regM;
+		}
+		.work_time {
+			font-size: 16px;
+			.opn-regM;
+			margin-top: 20px;
+			color: @grey;
+			margin-bottom: 60px;
+		}
+		.contacts_btn {
+			position: absolute;
+			display: inline-block;
+			width: 240px;
+			height: 46px;
+			bottom: -23px;
+			margin-left: -120px;
+			line-height: 40px;
+			border: 3px solid @main-brown;
+			background-color: @yellow;
+			border-radius: 22px;
+			color: @main-brown;
+			font-size: 20px;
+			.opn-bold;
+			cursor: pointer;
+		}
+	}
+	.contacts_line {
+		position: absolute;
+		width: 100%;
+		display: block;
+		bottom: 0;
+		background-color: @white;
+		box-shadow: 0 3px 3px 1px rgba(0, 0, 0, 0.05);
+	}
+	.contacts_tel {
+		p {
+			display: inline-block;
+		}
+	}
+	&_tel {
+		position: relative;
+		background-color: @white;
+		box-shadow: 0 3px 3px 1px rgba(0, 0, 0, 0.05);
+		width: 100%;
+		height: 55px;
+		line-height: 55px;
+		text-align: center;
+		p {
+			display: inline-block;
+			font-size: 22px;
+			.opn-bold;
+			color: @dark-brown;
+			padding-right: 15px;
+		}
+	}
+	.map_mark {
+		position: relative;
+		display: flex;
+		justify-content: flex-end;
+		align-items: center;
+		width: 100%;
+		height: 55px;
+		color: @dark-brown;		
+		text-decoration: none;		
+		&:hover {
+			color: @dark-brown;
+			text-decoration: none;
+		}
+		img {
+			width: 20px;
+			height: 30px;
+			display: inline-block;
+		}
+		p {
+			display: inline-block;
+			font-size: 22px;
+			.opn-bold;
+			margin-right: 20px;
+		}
+	}
+}
+
+
+
+
+
+
+
+
+
+/* FOOTER */
+footer {
+	position: relative;
+	width: 100%;
+	height: 100px;
+	line-height: 100px;
+	background-image: url(../img/wood-bgi2.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	.copy {
+		text-shadow: 1px 2px 12px rgba(0, 0, 0, 0.77);
+		color: @white;
+		font-size: 19px;
+		.opn-regM;
+	}
+	.design {
+		text-shadow: 1px 2px 12px rgba(0, 0, 0, 0.77);
+		color: @white;
+		font-size: 19px;
+		.opn-regM;
+		text-align: right;
 	}
 }

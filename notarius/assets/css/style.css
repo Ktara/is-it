@@ -172,8 +172,6 @@ ul {
   font-family: 'MyriadPro', sans-serif;
   font-weight: 700;
   color: #221511;
-}
-.main_tel p:nth-child(1) {
   padding-right: 15px;
 }
 .main .map_mark {
@@ -274,8 +272,8 @@ ul {
   position: absolute;
   content: '';
   display: block;
-  width: 20%;
-  height: auto;
+  width: 12%;
+  height: 100%;
   top: 0;
   right: 0;
   background-image: url(../img/wood-backgr.png);
@@ -286,8 +284,8 @@ ul {
   position: absolute;
   content: '';
   display: block;
-  width: 20%;
-  height: auto;
+  width: 12%;
+  height: 100%;
   top: 0;
   left: 0;
   background-image: url(../img/wood-backgr.png);
@@ -295,6 +293,8 @@ ul {
   background-size: cover;
 }
 .certificates_head {
+  position: relative;
+  z-index: 101;
   background-color: #ffffff;
   text-align: center;
   margin-top: 30px;
@@ -307,9 +307,10 @@ ul {
 }
 .certificates .about_notarius {
   position: relative;
+  z-index: 101;
   background-color: rgba(54, 10, 0, 0.8);
   width: 100%;
-  height: 70vh;
+  height: 80vh;
   text-align: center;
   color: #ffffff;
   margin-top: 20px;
@@ -330,4 +331,179 @@ ul {
 }
 .certificates .fix {
   padding-left: 0;
+}
+.certificates .fixed {
+  padding-right: 0;
+}
+.certificates_document_wrapper {
+  margin-top: 20px;
+  position: relative;
+  z-index: 101;
+  overflow: hidden;
+}
+.certificates_document_image {
+  width: 100%;
+}
+.certificates_document_image img {
+  width: 100%;
+}
+/* CONTACTS SECTION */
+.contacts {
+  position: relative;
+  width: 100%;
+  z-index: 100;
+  height: 90vh;
+  text-align: center;
+}
+.contacts .map {
+  width: 100%;
+  height: 90vh;
+}
+.contacts .contacts_info {
+  position: absolute;
+  display: inline-block;
+  width: 40%;
+  height: auto;
+  top: 27%;
+  margin-left: -20%;
+  background-color: #ffffff;
+  text-align: center;
+}
+.contacts .contacts_info h5 {
+  font-size: 36px;
+  font-family: 'MyriadPro', sans-serif;
+  font-weight: 700;
+  color: #58332b;
+  margin-top: 25px;
+}
+.contacts .contacts_info .adress {
+  font-size: 16px;
+  font-family: 'MyriadPro', sans-serif;
+  font-weight: 400;
+  margin-top: 15px;
+  color: #565656;
+}
+.contacts .contacts_info .social {
+  margin-top: 30px;
+}
+.contacts .contacts_info .social a {
+  margin-right: 10px;
+  text-decoration: none;
+}
+.contacts .contacts_info .social a:hover {
+  text-decoration: none;
+}
+.contacts .contacts_info .social a img {
+  width: 40px;
+}
+.contacts .contacts_info .email {
+  color: #58332b;
+  font-size: 18px;
+  margin-top: 30px;
+  font-family: 'MyriadPro', sans-serif;
+  font-weight: 400;
+}
+.contacts .contacts_info .work_time {
+  font-size: 16px;
+  font-family: 'MyriadPro', sans-serif;
+  font-weight: 400;
+  margin-top: 20px;
+  color: #565656;
+  margin-bottom: 60px;
+}
+.contacts .contacts_info .contacts_btn {
+  position: absolute;
+  display: inline-block;
+  width: 240px;
+  height: 46px;
+  bottom: -23px;
+  margin-left: -120px;
+  line-height: 40px;
+  border: 3px solid #58332b;
+  background-color: #dbbd9a;
+  border-radius: 22px;
+  color: #58332b;
+  font-size: 20px;
+  font-family: 'MyriadPro', sans-serif;
+  font-weight: 700;
+  cursor: pointer;
+}
+.contacts .contacts_line {
+  position: absolute;
+  width: 100%;
+  display: block;
+  bottom: 0;
+  background-color: #ffffff;
+  box-shadow: 0 3px 3px 1px rgba(0, 0, 0, 0.05);
+}
+.contacts .contacts_tel p {
+  display: inline-block;
+}
+.contacts_tel {
+  position: relative;
+  background-color: #ffffff;
+  box-shadow: 0 3px 3px 1px rgba(0, 0, 0, 0.05);
+  width: 100%;
+  height: 55px;
+  line-height: 55px;
+  text-align: center;
+}
+.contacts_tel p {
+  display: inline-block;
+  font-size: 22px;
+  font-family: 'MyriadPro', sans-serif;
+  font-weight: 700;
+  color: #221511;
+  padding-right: 15px;
+}
+.contacts .map_mark {
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 100%;
+  height: 55px;
+  color: #221511;
+  text-decoration: none;
+}
+.contacts .map_mark:hover {
+  color: #221511;
+  text-decoration: none;
+}
+.contacts .map_mark img {
+  width: 20px;
+  height: 30px;
+  display: inline-block;
+}
+.contacts .map_mark p {
+  display: inline-block;
+  font-size: 22px;
+  font-family: 'MyriadPro', sans-serif;
+  font-weight: 700;
+  margin-right: 20px;
+}
+/* FOOTER */
+footer {
+  position: relative;
+  width: 100%;
+  height: 100px;
+  line-height: 100px;
+  background-image: url(../img/wood-bgi2.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+footer .copy {
+  text-shadow: 1px 2px 12px rgba(0, 0, 0, 0.77);
+  color: #ffffff;
+  font-size: 19px;
+  font-family: 'MyriadPro', sans-serif;
+  font-weight: 400;
+}
+footer .design {
+  text-shadow: 1px 2px 12px rgba(0, 0, 0, 0.77);
+  color: #ffffff;
+  font-size: 19px;
+  font-family: 'MyriadPro', sans-serif;
+  font-weight: 400;
+  text-align: right;
 }
