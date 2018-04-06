@@ -428,27 +428,21 @@ ul {
   font-weight: 700;
   cursor: pointer;
 }
-.contacts .contacts_line {
-  position: absolute;
+.contacts_line {
+  position: relative;
   width: 100%;
+  height: 55px;
+  line-height: 55px;
   display: block;
   bottom: 0;
   background-color: #ffffff;
   box-shadow: 0 3px 3px 1px rgba(0, 0, 0, 0.05);
+  overflow: hidden;
 }
-.contacts .contacts_tel p {
-  display: inline-block;
-}
-.contacts_tel {
-  position: relative;
-  background-color: #ffffff;
-  box-shadow: 0 3px 3px 1px rgba(0, 0, 0, 0.05);
+.contacts_line .contacts_tel {
   width: 100%;
-  height: 55px;
-  line-height: 55px;
-  text-align: center;
 }
-.contacts_tel p {
+.contacts_line .contacts_tel p {
   display: inline-block;
   font-size: 22px;
   font-family: 'MyriadPro', sans-serif;
@@ -456,26 +450,23 @@ ul {
   color: #221511;
   padding-right: 15px;
 }
-.contacts .map_mark {
-  position: relative;
+.contacts_line .map_mark {
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  width: 100%;
-  height: 55px;
   color: #221511;
   text-decoration: none;
 }
-.contacts .map_mark:hover {
+.contacts_line .map_mark:hover {
   color: #221511;
   text-decoration: none;
 }
-.contacts .map_mark img {
+.contacts_line .map_mark img {
   width: 20px;
   height: 30px;
   display: inline-block;
 }
-.contacts .map_mark p {
+.contacts_line .map_mark p {
   display: inline-block;
   font-size: 22px;
   font-family: 'MyriadPro', sans-serif;
