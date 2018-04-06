@@ -1,0 +1,212 @@
+@font-face {
+	font-family: 'MyriadPro';
+	src: url('../fonts/MyriadPro-Bold.otf') format('truetype');
+	font-weight: 700;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'MyriadPro';
+	src: url('../fonts/MyriadPro-BoldIt.otf') format('truetype');
+	font-weight: 700;
+	font-style: italic;
+}
+@font-face {
+	font-family: 'MyriadPro';
+	src: url('../fonts/MyriadPro-It.otf') format('truetype');
+	font-weight: 400;
+	font-style: italic;
+}
+@font-face {
+	font-family: 'MyriadPro';
+	src: url('../fonts/MyriadPro-Regular.otf') format('truetype');
+	font-weight: 400;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'AvantGardeCTT';
+	src: url('../fonts/AvantGardeCTT-Regular.ttf') format('truetype');
+	font-weight: 400;
+	font-style: normal;
+}
+
+
+/* Fonts files */
+.opn-regA {
+	font-family: 'AvantGardeCTT', sans-serif;
+	font-weight: 400;	
+}
+.opn-regM {
+	font-family: 'MyriadPro', sans-serif;
+	font-weight: 400;	
+}
+.opn-bold {
+	font-family: 'MyriadPro', sans-serif;
+	font-weight: 700;
+}
+
+/* Base colors */
+@main-brown: #58332b;
+@white: #ffffff;
+@dark-brown: #221511;
+@main-bgc: ##360a00;
+@grey: #565656;
+@black: #000000;
+@light-grey: #acacac;
+
+/* Base setting */
+ol, ul {
+    list-style: none;
+}
+.main_wrapper {
+	overflow: hidden;
+}
+
+
+
+
+
+
+
+
+
+
+/* MAIN SECTION */
+.main {
+	position: relative;
+	width: 100%;
+	height: 100vh;
+	background-image: url(../img/main.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	color: @white;
+	.opn-regA;
+	z-index: 100;
+	&_block_wrapper {
+		text-align: center;
+	}
+	&_block {
+		position: relative;
+		width: 100%;
+		height: 62vh;
+		background-color: rgba(54, 10, 0, 0.5);
+		margin-top: 18vh;
+		text-align: center;
+	}
+	&_libra {
+		position: absolute;
+		width: 75%;
+		height: 25vh;
+		top: 0;
+		left: 12.5%;
+		text-align: center;
+		background-color: rgba(0, 0, 0, 0.5);
+		z-index: 10;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		img {
+			width: 20%;
+			height: auto;
+
+		}
+	}
+	.text_notarius {
+		font-size: 30px;
+		text-transform: uppercase;
+		position: absolute;
+		bottom: 10px;
+		width: 100%;
+		text-align: center;
+	}
+	&_header {
+		text-shadow: 1px 5px 13px rgba(0, 1, 5, 0.8);
+		padding-top: 75px;
+	}
+	&_header p:nth-child(1) {
+		font-size: 54px;
+	}
+	&_header p:nth-child(2) {
+		font-size: 33px;
+	}
+	.about_flex {
+		position: relative;
+		height: 70%;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		
+	}
+	.text_about {
+		font-size: 19px;
+		margin: 0 25px;
+	}
+	&_btn {
+		width: 75%;
+		height: 65px;
+		line-height: 61px;
+		display: block;
+		margin: 25% auto 0 auto;
+		border-radius: 8px;
+		border: 2px solid @light-grey;
+		background-color: rgba(0, 0, 0, 0.5);
+		font-size: 24px;
+		.opn-regM;
+		text-decoration: none;
+		color: @white;
+		&:hover {
+			text-decoration: none;
+			color: @white;
+		}		
+	}
+	&_line {
+		position: absolute;
+		top: 80vh;
+		width: 100%;
+		height: 55px;
+		background-color: rgba(255, 255, 255, 0.6);
+		box-shadow: 0 3px 3px 1px rgba(0, 0, 0, 0.05);
+	}
+	&_tel {
+		position: relative;
+		background-color: @white;
+		box-shadow: 0 3px 3px 1px rgba(0, 0, 0, 0.05);
+		width: 100%;
+		height: 55px;
+		line-height: 55px;
+		text-align: center;
+		p {
+			display: inline-block;
+			font-size: 22px;
+			.opn-bold;
+			color: @dark-brown;
+		}
+	}
+	&_tel p:nth-child(1) {
+		padding-right: 15px;
+	}
+	.map_mark {
+		position: relative;
+		display: flex;
+		justify-content: flex-end;
+		align-items: center;
+		width: 100%;
+		height: 55px;
+		color: @dark-brown;		
+		text-decoration: none;		
+		&:hover {
+			color: @dark-brown;
+			text-decoration: none;
+		}
+		img {
+			width: 20px;
+			height: 30px;
+			display: inline-block;
+		}
+		p {
+			display: inline-block;
+			font-size: 22px;
+			.opn-bold;
+			margin-right: 20px;
+		}
+	}
+}
