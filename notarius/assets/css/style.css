@@ -80,9 +80,15 @@ ul {
   position: relative;
   width: 100%;
   height: 62vh;
+  display: block;
+  opacity: 0;
   background-color: rgba(54, 10, 0, 0.5);
-  margin-top: 18vh;
   text-align: center;
+  margin-top: 18vh;
+  transition: opacity 1.2s;
+}
+.main .show_main_block {
+  opacity: 1;
 }
 .main_libra {
   position: absolute;
@@ -96,10 +102,15 @@ ul {
   display: flex;
   justify-content: center;
   align-items: center;
+  transform: rotate3d(1, 0, 0, 90deg);
+  transition: transform 1.7s;
 }
 .main_libra img {
   width: 20%;
   height: auto;
+}
+.main .rotate_libra {
+  transform: rotate3d(1, 0, 0, 0);
 }
 .main .text_notarius {
   font-size: 30px;
@@ -156,6 +167,7 @@ ul {
   height: 55px;
   background-color: rgba(255, 255, 255, 0.6);
   box-shadow: 0 3px 3px 1px rgba(0, 0, 0, 0.05);
+  right: 100%;
 }
 .main_tel {
   position: relative;
@@ -189,9 +201,11 @@ ul {
   text-decoration: none;
 }
 .main .map_mark img {
-  width: 20px;
-  height: 30px;
-  display: inline-block;
+  position: absolute;
+  width: 60px;
+  right: -20px;
+  top: -60px;
+  display: none;
 }
 .main .map_mark p {
   display: inline-block;
@@ -203,7 +217,7 @@ ul {
 /* ABOUT SECTION */
 .about {
   position: relative;
-  width: 100%;
+  width: 0;
   margin: 25vh 0 15vh;
   background-color: rgba(54, 10, 0, 0.8);
   overflow: hidden;
@@ -214,6 +228,7 @@ ul {
   padding-top: 50px;
   padding-bottom: 50px;
   text-align: center;
+  opacity: 0;
 }
 .about_head p {
   color: #ffffff;
@@ -234,6 +249,7 @@ ul {
   width: 48%;
   float: left;
   margin-top: 30px;
+  opacity: 0;
 }
 .service_list img {
   width: 43px;
@@ -249,18 +265,22 @@ ul {
   font-size: 27px;
 }
 .service_list li:nth-child(-n+3) {
+  opacity: 1;
+  height: auto;
+  display: inline-block;
   width: 33%;
   text-align: center;
   margin-bottom: 50px;
 }
 .service_list li:nth-child(-n+3) img {
-  width: 160px;
-  height: auto;
+  height: 0;
+  width: auto;
   display: block;
   margin: 0 auto 40px auto;
 }
 .service_list li:nth-child(-n+3) p {
   font-size: 36px;
+  opacity: 0;
 }
 /* CERTIFICATES SECTION */
 .certificates {
@@ -300,10 +320,9 @@ ul {
   margin-top: 30px;
   padding-top: 25px;
   padding-bottom: 25px;
-}
-.certificates_head p {
   font-size: 57px;
   color: #58332b;
+  line-height: 65px;
 }
 .certificates .about_notarius {
   position: relative;
