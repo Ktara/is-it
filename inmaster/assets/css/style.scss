@@ -1,0 +1,231 @@
+@import "legend";
+
+.main_wrapper {
+  @extend .wrapper;
+ }
+.fix {
+  padding-left: 0;
+}
+
+
+/*HEADER*/
+.nav_header {
+  position: fixed;
+  width: 100%;
+  height: 50px;
+  z-index: 101;
+  margin-top: 30px;
+  .logo {
+    width: 80px;
+    height: auto;
+    img {
+      width: 100%;
+    }
+  }
+  .nav_wrapper {
+    position: relative;
+    .nav_header_menu {
+      display: flex;
+      justify-content: space-between;
+      line-height: 50px;
+      a {
+        @extend .tm_link;
+      }
+      .active_nav_punct {
+        @extend .tm_link_active;
+      }
+      a:hover {
+        @extend .tm_link:hover;
+      }
+    }
+  }
+  .lang_wrapper {
+    .lang_list {
+      line-height: 50px;
+      float: right;
+    }
+    .lang_list li {
+      display: block;
+      cursor: pointer;
+      margin-bottom: 10px;
+      color: $main-black;
+    }
+    .lang_list li:nth-child(n+2) {
+      height: 0;
+      overflow: hidden;
+    }
+    .lang_list:hover li {
+      height: 20px;
+      overflow: visible;
+    }
+    .lang_list li:hover {
+      color: $main-blue;
+    }
+    .lang_punct_active {
+      text-decoration: underline;
+    }
+  }
+}
+
+
+
+
+
+
+
+/*SCHOOL_MAIN*/
+.school_main {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  .main_header {
+    width: 55%;
+    font-size: 48px;
+    @extend .font-bold;
+    color: $main-blue;
+    margin-top: 30vh;
+  }
+  .main_btn {
+    @extend .fill_btn;
+    margin-top: 10vh;
+  }
+  .main_btn:hover {
+    text-decoration: none;
+    opacity: 0.8;
+    color: $main-white;
+  }
+  .sub_btn {
+    @extend .btn;
+    margin-top: 10vh;
+  }
+  .sub_btn:hover {
+    text-decoration: underline;
+    color: $main-blue;
+  }
+}
+
+
+
+
+
+
+
+
+
+/*SCHOOL_ABOUT*/
+.school_about {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  img {
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: auto;
+  }
+  .school_about_text_wrapper {
+    margin-top: 40px;
+    span {
+      color: $main-blue;
+      @extend .font-bold;
+    }
+    p {
+      margin-bottom: 20px;
+      @extend .font-light;
+    }
+    .school_about_btn {
+      @extend .btn;
+      margin-top: 20px;
+    }
+  }
+}
+
+
+
+
+
+
+
+
+/*SCHOOL_ADVANTAGE*/
+.school_advantage {
+  position: relative;
+  width: 100%;
+  height: 40vh;
+  margin-top: 140px;
+  overflow: hidden;
+  background-repeat: no-repeat;
+  background-size: cover;
+  &:after {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  .school_advantage_slider_wrapper {
+    position: relative;
+    width: 100%;
+    height: 40vh;
+    z-index: 101;
+    overflow: hidden;
+    .school_advantage_header {
+      @extend .header;
+      color: $main-white;
+      text-align: center;
+      margin-top: 60px;
+    }
+    .school_advantage_slider {
+      width: 100%;
+      height: auto;
+      margin-top: 5vh;
+      .school_advantage_slide {
+        width: 25%;
+        display: inline-block;
+        text-align: center;
+        vertical-align: top;
+        img {
+          width: auto;
+          height: 60px;
+          display: inline-block;
+        }
+        p {
+          color: $main-white;
+          width: 70%;
+          display: block;
+          margin: 20px auto 0 auto;
+        }
+      }
+    }
+  }
+  .slick-dots {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    li {
+      position: relative;
+      z-index: 110;
+      width: 13px;
+      height: 13px;
+      border: 1px solid $main-white;
+      border-radius: 25px;
+      display: inline-block;
+      margin-right: 10px;
+      bottom: 20px;
+    }
+    .slick-active {
+      background-color: $main-white;
+    }
+    li button {
+      display: none;
+    }
+  }
+}
