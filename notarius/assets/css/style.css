@@ -287,6 +287,7 @@ ul {
   position: relative;
   width: 100%;
   z-index: 100;
+  padding-bottom: 50px;
 }
 .certificates:after {
   position: absolute;
@@ -323,6 +324,7 @@ ul {
   font-size: 57px;
   color: #58332b;
   line-height: 65px;
+  height: 105px;
 }
 .certificates .about_notarius {
   position: relative;
@@ -362,9 +364,59 @@ ul {
 }
 .certificates_document_image {
   width: 100%;
+  padding: 10% 5% 0 5%;
 }
 .certificates_document_image img {
+  cursor: pointer;
   width: 100%;
+  -webkit-box-shadow: 10px -6px 5px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 10px -6px 5px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 10px -6px 5px 0px rgba(0, 0, 0, 0.75);
+}
+.certificates_slider {
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.5);
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  display: none;
+  top: 0;
+  right: 0;
+  z-index: 1000;
+}
+.certificates_slider img {
+  width: 100%;
+  height: auto;
+  cursor: default;
+}
+.certificates_slider span {
+  cursor: pointer;
+  display: block;
+  position: absolute;
+  z-index: 10;
+  top: 50%;
+  width: 33px;
+  height: 33px;
+  background-image: cover;
+  background-image: url("../img/fancybox_sprite.png");
+}
+.certificates_slider .left_arrow {
+  left: 18%;
+  background-position: 0 -36px;
+}
+.certificates_slider .right_arrow {
+  right: 18%;
+  background-position: 0 -72px;
+}
+.certificates_slider .close_arrow {
+  top: calc(10vh - 25px);
+  right: 18%;
+}
+.certificates_slider .certificates_document_image {
+  padding: 0;
+  margin-top: 10vh;
+  width: 60%;
+  display: inline-block;
 }
 /* CONTACTS SECTION */
 .contacts {
@@ -396,7 +448,8 @@ ul {
   margin-top: 25px;
 }
 .contacts .contacts_info .adress {
-  font-size: 16px;
+  font-size: 18px;
+  line-height: 21px;
   font-family: 'MyriadPro', sans-serif;
   font-weight: 400;
   margin-top: 15px;
@@ -470,6 +523,7 @@ ul {
   padding-right: 15px;
 }
 .contacts_line .map_mark {
+  cursor: pointer;
   display: flex;
   justify-content: flex-end;
   align-items: center;

@@ -349,6 +349,7 @@ ol, ul {
 	position: relative;
 	width: 100%;
 	z-index: 100;
+	padding-bottom: 50px;
 	&:after {
 		position: absolute;
 		content: '';
@@ -384,6 +385,7 @@ ol, ul {
 			font-size: 57px;
 			color: @main-brown;
 		line-height: 65px;
+		height: 105px;
 	}
 	.about_notarius {
 		position: relative;
@@ -421,13 +423,63 @@ ol, ul {
 	}
 	&_document_image {
 		width: 100%;
+		padding: 10% 5% 0 5%;
 		img {
+			cursor: pointer;
 			width: 100%;
+			-webkit-box-shadow: 10px -6px 5px 0px rgba(0,0,0,0.75);
+			-moz-box-shadow: 10px -6px 5px 0px rgba(0,0,0,0.75);
+			box-shadow: 10px -6px 5px 0px rgba(0,0,0,0.75);
 		}
 	}
 }
 
+.certificates_slider {
+	position: fixed;
+	background-color: rgba(0, 0, 0, 0.5);
+	text-align: center;
+	width: 100%;
+	height: 100%;
+	display: none;
+	top: 0;
+	right: 0;
+	z-index: 1000;
+	img {
+		width: 100%;
+		height: auto;
+		cursor: default;
 
+	}
+	span {
+		cursor: pointer;
+		display: block;
+		position: absolute;
+		z-index: 10;
+		top: 50%;
+		width: 33px;
+		height: 33px;
+		background-image: cover;
+		background-image: url("../img/fancybox_sprite.png");
+	}
+	.left_arrow {
+		left: 18%;
+		background-position: 0 -36px;
+	}
+	.right_arrow {
+		right: 18%;
+		background-position: 0 -72px;
+	}
+	.close_arrow {
+		top:calc(10vh - 25px);
+		right: 18%;
+	}
+	.certificates_document_image {
+		padding: 0;
+		margin-top: 10vh;
+		width:60%;
+		display: inline-block;
+	}
+}
 
 
 
@@ -462,7 +514,8 @@ ol, ul {
 			margin-top: 25px;
 		}
 		.adress {
-			font-size: 16px;
+			font-size: 18px;
+			line-height: 21px;
 			.opn-regM;
 			margin-top: 15px;
 			color: @grey;
@@ -541,6 +594,7 @@ ol, ul {
 		}
 	}
 	.map_mark {
+		cursor: pointer;
 		display: flex;
 		justify-content: flex-end;
 		align-items: center;

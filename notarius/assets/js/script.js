@@ -18,16 +18,12 @@ $(document).ready(function(){
 
 $(document).ready(function(){
 var certHeight = $(".certificates_document_wrapper").css("height");
-console.log(certHeight);
 $(".about_notarius").css("height", certHeight);
 
 
 function showStartAnimation() {
 
     $('.main_block').addClass('show_main_block');
-    // $('.main_block').velocity({
-    //     'margin-top' : '20vh'
-    // }, 1000);
     setTimeout(function () {
         $('.main_libra').addClass('rotate_libra');
         $('.main_line').velocity({
@@ -120,4 +116,52 @@ showStartAnimation();
 
     }
 })();
+var nextSlider;
+$('.certificates_document_image').click(function(){
+         nextSlider = $(this).clone();
+        $('.certificates_slider').css('display', 'block');
+        $('.cer_slider_wrapper').html(nextSlider);
+        nextSlider = $(this);
+});
+$('.close_arrow').click(function(){
+    $('.certificates_slider').css('display', 'none');
+});
+$('.right_arrow').click(function () {
+    var el = nextSlider.parent().next().children().clone().css('opacity', '0');
+    nextSlider = nextSlider.parent().next().children();
+    console.log(nextSlider.length);
+    if(nextSlider.length == 0) {
+        el = $('.certificates_document_image')[0];
+        nextSlider = $(el);
+        el = $(el).clone().css('opacity', '0');
+    }
+
+   $('.cer_slider_wrapper').html(el) ;
+   el.velocity({
+       opacity: 1
+   }, 300);
+});
+    $('.left_arrow').click(function () {
+        var el = nextSlider.parent().prev().children().clone().css('opacity', '0');
+        nextSlider = nextSlider.parent().prev().children();
+        console.log(nextSlider.length);
+        if(nextSlider.length == 0) {
+            el = $('.certificates_document_image')[5];
+            nextSlider = $(el);
+            el = $(el).clone().css('opacity', '0');
+        }
+
+        $('.cer_slider_wrapper').html(el) ;
+        el.velocity({
+            opacity: 1
+        }, 300);
+    });
+
+
+});
+$('.contacts_btn').click(function () {
+   $('.contacts_info').css('display', 'none');
+});
+$('.map_mark').click(function () {
+    $('.contacts_info').css('display', 'inline-block');
 });
