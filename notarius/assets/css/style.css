@@ -73,6 +73,19 @@ ul {
   font-weight: 400;
   z-index: 100;
 }
+.main .serv_link {
+  font-size: 22px;
+  font-weight: 600;
+  margin-top: 5%;
+  text-decoration: underline;
+  color: #ffffff;
+}
+.main .serv_link:hover {
+  color: #ffffff;
+}
+.main .serv_link:focus {
+  color: #ffffff;
+}
 .main_block_wrapper {
   text-align: center;
 }
@@ -139,14 +152,19 @@ ul {
 }
 .main .text_about {
   font-size: 19px;
+  line-height: 27px;
   margin: 0 25px;
+}
+.main .text_about b {
+  font-weight: 600;
+  letter-spacing: 0.7px;
 }
 .main_btn {
   width: 75%;
   height: 65px;
   line-height: 61px;
   display: block;
-  margin: 25% auto 0 auto;
+  margin: 20% auto 0 auto;
   border-radius: 8px;
   border: 2px solid #acacac;
   background-color: rgba(0, 0, 0, 0.5);
@@ -157,6 +175,10 @@ ul {
   color: #ffffff;
 }
 .main_btn:hover {
+  text-decoration: none;
+  color: #ffffff;
+}
+.main_btn:focus {
   text-decoration: none;
   color: #ffffff;
 }

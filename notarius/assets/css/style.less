@@ -98,6 +98,19 @@ ol, ul {
 	color: @white;
 	.opn-regA;
 	z-index: 100;
+	.serv_link {
+		font-size: 22px;
+		font-weight: 600;
+		margin-top: 5%;
+		text-decoration: underline;
+		color: @white;
+		&:hover {
+			color: @white;
+		}
+		&:focus {
+			color: @white;
+		}
+	}
 	&_block_wrapper {
 		text-align: center;
 	}
@@ -167,14 +180,19 @@ ol, ul {
 	}
 	.text_about {
 		font-size: 19px;
+		line-height: 27px;
 		margin: 0 25px;
+		b {
+			font-weight: 600;
+			letter-spacing: 0.7px;
+		}
 	}
 	&_btn {
 		width: 75%;
 		height: 65px;
 		line-height: 61px;
 		display: block;
-		margin: 25% auto 0 auto;
+		margin: 20% auto 0 auto;
 		border-radius: 8px;
 		border: 2px solid @light-grey;
 		background-color: rgba(0, 0, 0, 0.5);
@@ -185,7 +203,11 @@ ol, ul {
 		&:hover {
 			text-decoration: none;
 			color: @white;
-		}		
+		}
+		&:focus {
+			text-decoration: none;
+			color: @white;
+		}
 	}
 	&_line {
 		position: absolute;
