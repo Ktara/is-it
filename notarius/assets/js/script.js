@@ -17,8 +17,8 @@ $(document).ready(function(){
 
 
 $(document).ready(function(){
-var certHeight = $(".certificates_document_wrapper").css("height");
-$(".about_notarius").css("height", certHeight);
+    // var certHeight = $(".certificates_document_wrapper").css("height");
+    // $(".about_notarius").css("height", certHeight);
 
 
 function showStartAnimation() {
@@ -89,7 +89,6 @@ showStartAnimation();
                 active2 = false;
                 var puncts = $('.service_block li');
                 for(var i = 0; i < 3; i++){
-                    console.log(puncts[1]);
                     $(puncts[i]).find('img').velocity({
                         'height' : '160px'
                     }, 1000);
