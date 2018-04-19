@@ -365,3 +365,107 @@
     clear: both;
   }
 }
+
+
+
+
+
+
+/*SCHOOL_PUBLICATION*/
+.school_publication {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  padding-top: 140px;
+  .school_publication_header {
+    @extend .header;
+    text-align: center;
+  }
+  img {
+    width: 100%;
+  }
+  .school_publication_text {
+    display: block;
+    padding-top: 24px;
+    p {
+      @extend .font-light;
+      line-height: 20px;
+      padding-top: 10px;
+    }
+    strong {
+      padding-top: 20px;
+      @extend .font_reg;
+    }
+  }
+  .school_publication_link {
+    @extend .tm_link_active;
+    display: block;
+    margin-top: 40px;
+  }
+  .school_publication_btn {
+    @extend .fill_btn;
+    width: 220px;
+    margin: 60px auto 0 auto;
+  }
+}
+
+
+
+
+
+
+
+/*CONTACTS*/
+.contacts {
+  position: relative;
+  width: 100%;
+  padding-top: 140px;
+  .contacts_header {
+    @extend .header;
+  }
+  .contacts_form {
+    @extend .form;
+  }
+  input:focus {
+    @extend .font_reg;
+    outline: none;
+    color: $main-blue;
+    opacity: 1;
+  }
+  .contacts_info {
+    p {
+      @extend .font-light;
+      line-height: 24px;
+    }
+  }
+  .contacts_social {
+    padding-top: 20px;
+    a:hover {
+      text-decoration: none;
+    }
+    img {
+      width: 20px;
+      margin-right: 10px;
+    }
+  }
+}
+
+
+
+
+
+
+
+
+/*FOOTER*/
+footer {
+  position: relative;
+  width: 100%;
+  padding-top: 90px;
+  padding-bottom: 20px;
+  .company {
+    a {
+      color: $light-blue;
+    }
+  }
+}

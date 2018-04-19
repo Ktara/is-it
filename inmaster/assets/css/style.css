@@ -14,22 +14,22 @@
   font-weight: 300;
   font-style: normal; }
 /*BODY*/
-.font_reg, .wrapper, .main_wrapper, input:focus, .school_teach .school_teach_text strong {
+.font_reg, .wrapper, .main_wrapper, input:focus, .school_teach .school_teach_text strong, .school_publication .school_publication_text strong, .contacts input:focus {
   font-family: 'Roboto', sans-serif;
   font-weight: 400; }
 
-.font-bold, .header, .school_advantage .school_advantage_slider_wrapper .school_advantage_header, .school_teach .school_teach_header, .school_certificates .school_certificates_header, .school_main .main_header, .school_about .school_about_text_wrapper span {
+.font-bold, .header, .school_advantage .school_advantage_slider_wrapper .school_advantage_header, .school_teach .school_teach_header, .school_certificates .school_certificates_header, .school_publication .school_publication_header, .contacts .contacts_header, .school_main .main_header, .school_about .school_about_text_wrapper span {
   font-family: 'Roboto', sans-serif;
   font-weight: 700; }
 
-.font-light, .school_about .school_about_text_wrapper p, .school_teach .school_teach_text p {
+.font-light, .school_about .school_about_text_wrapper p, .school_teach .school_teach_text p, .school_publication .school_publication_text p, .contacts .contacts_info p {
   font-family: 'Roboto', sans-serif;
   font-weight: 300; }
 
 .wrapper, .main_wrapper {
   font-size: 16px; }
 
-.header, .school_advantage .school_advantage_slider_wrapper .school_advantage_header, .school_teach .school_teach_header, .school_certificates .school_certificates_header {
+.header, .school_advantage .school_advantage_slider_wrapper .school_advantage_header, .school_teach .school_teach_header, .school_certificates .school_certificates_header, .school_publication .school_publication_header, .contacts .contacts_header {
   font-size: 36px;
   color: #4b82b3;
   margin-bottom: 40px; }
@@ -38,7 +38,7 @@
 .tm_link, .nav_header .nav_wrapper .nav_header_menu a {
   color: #000000; }
 
-.tm_link_active, .nav_header .nav_wrapper .nav_header_menu .active_nav_punct {
+.tm_link_active, .nav_header .nav_wrapper .nav_header_menu .active_nav_punct, .school_publication .school_publication_link {
   color: #4b82b3; }
 
 .tm_link:hover, .nav_header .nav_wrapper .nav_header_menu a:hover {
@@ -62,7 +62,7 @@
   text-decoration: underline;
   color: #4b82b3; }
 
-.fill_btn, .school_main .main_btn, .school_teach .school_teach_btn, .school_certificates .school_certificates_btn {
+.fill_btn, .school_main .main_btn, .school_teach .school_teach_btn, .school_certificates .school_certificates_btn, .school_publication .school_publication_btn {
   display: block;
   width: auto;
   height: 50px;
@@ -75,13 +75,13 @@
   background-color: #4b82b3;
   color: #ffffff; }
 
-.fill_btn:hover, .school_main .main_btn:hover, .school_teach .school_teach_btn:hover, .school_certificates .school_certificates_btn:hover {
+.fill_btn:hover, .school_main .main_btn:hover, .school_teach .school_teach_btn:hover, .school_certificates .school_certificates_btn:hover, .school_publication .school_publication_btn:hover {
   text-decoration: none;
   opacity: 0.8;
   color: #ffffff; }
 
 /*FORM*/
-.contacts_form input {
+.form input, .contacts .contacts_form input {
   width: 100%;
   height: 40px;
   line-height: 38px;
@@ -91,7 +91,7 @@
   opacity: 0.5;
   text-indent: 20px; }
 
-.contacts_form .btn, .contacts_form .school_main .sub_btn, .school_main .contacts_form .sub_btn, .contacts_form .school_about .school_about_text_wrapper .school_about_btn, .school_about .school_about_text_wrapper .contacts_form .school_about_btn, .contacts_form .school_teach .school_teach_text_btn, .school_teach .contacts_form .school_teach_text_btn {
+.form .btn, .contacts .contacts_form .btn, .form .school_main .sub_btn, .school_main .form .sub_btn, .contacts .contacts_form .school_main .sub_btn, .school_main .contacts .contacts_form .sub_btn, .form .school_about .school_about_text_wrapper .school_about_btn, .school_about .school_about_text_wrapper .form .school_about_btn, .contacts .contacts_form .school_about .school_about_text_wrapper .school_about_btn, .school_about .school_about_text_wrapper .contacts .contacts_form .school_about_btn, .form .school_teach .school_teach_text_btn, .school_teach .form .school_teach_text_btn, .contacts .contacts_form .school_teach .school_teach_text_btn, .school_teach .contacts .contacts_form .school_teach_text_btn {
   height: 40px;
   line-height: 38px; }
 
@@ -358,5 +358,58 @@ input:focus {
     margin: 60px auto 0 auto;
     width: 220px;
     clear: both; }
+
+/*SCHOOL_PUBLICATION*/
+.school_publication {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  padding-top: 140px; }
+  .school_publication .school_publication_header {
+    text-align: center; }
+  .school_publication img {
+    width: 100%; }
+  .school_publication .school_publication_text {
+    display: block;
+    padding-top: 24px; }
+    .school_publication .school_publication_text p {
+      line-height: 20px;
+      padding-top: 10px; }
+    .school_publication .school_publication_text strong {
+      padding-top: 20px; }
+  .school_publication .school_publication_link {
+    display: block;
+    margin-top: 40px; }
+  .school_publication .school_publication_btn {
+    width: 220px;
+    margin: 60px auto 0 auto; }
+
+/*CONTACTS*/
+.contacts {
+  position: relative;
+  width: 100%;
+  padding-top: 140px; }
+  .contacts input:focus {
+    outline: none;
+    color: #4b82b3;
+    opacity: 1; }
+  .contacts .contacts_info p {
+    line-height: 24px; }
+  .contacts .contacts_social {
+    padding-top: 20px; }
+    .contacts .contacts_social a:hover {
+      text-decoration: none; }
+    .contacts .contacts_social img {
+      width: 20px;
+      margin-right: 10px; }
+
+/*FOOTER*/
+footer {
+  position: relative;
+  width: 100%;
+  padding-top: 90px;
+  padding-bottom: 20px; }
+  footer .company a {
+    color: #6690b8; }
 
 /*# sourceMappingURL=style.css.map */
