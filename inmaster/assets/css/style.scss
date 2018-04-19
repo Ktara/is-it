@@ -120,11 +120,7 @@
   width: 100%;
   overflow: hidden;
   img {
-    position: absolute;
-    display: block;
-    top: 0;
-    left: 0;
-    width: 50%;
+    width: 100%;
     height: auto;
   }
   .school_about_text_wrapper {
@@ -136,6 +132,7 @@
     p {
       margin-bottom: 20px;
       @extend .font-light;
+      line-height: 24px;
     }
     .school_about_btn {
       @extend .btn;
@@ -155,7 +152,7 @@
 .school_advantage {
   position: relative;
   width: 100%;
-  height: 40vh;
+  height: 50vh;
   margin-top: 140px;
   overflow: hidden;
   background-repeat: no-repeat;
@@ -173,7 +170,7 @@
   .school_advantage_slider_wrapper {
     position: relative;
     width: 100%;
-    height: 40vh;
+    height: 50vh;
     z-index: 101;
     overflow: hidden;
     .school_advantage_header {
@@ -201,6 +198,7 @@
           width: 70%;
           display: block;
           margin: 20px auto 0 auto;
+          line-height: 20px;
         }
       }
     }
@@ -227,5 +225,143 @@
     li button {
       display: none;
     }
+  }
+}
+
+
+
+
+
+
+
+
+/*SCHOOL_TEACH*/
+.school_teach {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  padding-top: 140px;
+  .school_teach_header {
+    @extend .header;
+    text-align: center;
+  }
+  img {
+    width: 100%;
+  }
+  .school_teach_text {
+    display: block;
+    padding-top: 24px;
+    p {
+      @extend .font-light;
+      line-height: 20px;
+      padding-top: 10px;
+    }
+    strong {
+      padding-top: 20px;
+      @extend .font_reg;
+    }
+  }
+  .school_teach_text_btn {
+    @extend .btn;
+    margin-top: 40px;
+  }
+  .school_teach_btn {
+    @extend .fill_btn;
+    width: 220px;
+    margin: 60px auto 0 auto;
+  }
+}
+
+
+
+
+
+
+
+
+/*SCHOOL_GALLERY*/
+.school_gallery {
+  position: relative;
+  padding-top: 140px;
+  width: 100%;
+  .container {
+    position: relative;
+  }
+  .school_gallery_slider_wrapper {
+    overflow: hidden;
+    width: 100%;
+    .school_gallery_slide {
+      img {
+        width: 100%;
+      }
+    }
+  }
+  .school_gallery_next_arrow {
+    cursor: pointer;
+    position: absolute;
+    top: 45%;
+    right: 0;
+    background-image: url("../img/next_arrow.png");
+    width: 20px;
+    height: 36px;
+    z-index: 101;
+  }
+  .school_gallery_prev_arrow {
+    cursor: pointer;
+    position: absolute;
+    display: block;
+    top: 45%;
+    left: 0;
+    background-image: url("../img/prew_arrow.png");
+    width: 20px;
+    height: 36px;
+    z-index: 101;
+  }
+}
+
+
+
+
+
+
+
+/*SCHOOL_CERTIFICATES*/
+.school_certificates {
+  position: relative;
+  width: 100%;
+  padding-top: 140px;
+  overflow: hidden;
+  .school_certificates_header {
+    @extend .header;
+    text-align: center;
+  }
+  .school_certificates_wrapper {
+    overflow: hidden;
+  }
+  .school_certificates_block {
+    position: relative;
+    width: 100%;
+    display: block;
+    img {
+      width: 100%;
+    }
+    .school_certificates_text_block {
+      position: absolute;
+      width: 100%;
+      height: auto;
+      top: 33%;
+      left: 0;
+      padding: 35px 0;
+      text-align: center;
+      background-color: rgba(216, 217, 219, 0.5);
+      color: $main-black;
+      z-index: 100;
+    }
+  }
+  .school_certificates_btn {
+    @extend .fill_btn;
+    margin: 60px auto 0 auto;
+    width: 220px;
+    clear: both;
   }
 }
