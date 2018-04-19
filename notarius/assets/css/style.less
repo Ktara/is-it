@@ -43,12 +43,11 @@
 	font-family: 'MyriadPro', sans-serif;
 	font-weight: 700;
 }
-
 /* Base colors */
 @main-brown: #58332b;
 @white: #ffffff;
 @dark-brown: #221511;
-@main-bgc: ##360a00;
+@main-bgc: #360a00;
 @grey: #565656;
 @black: #000000;
 @light-grey: #acacac;
@@ -99,17 +98,37 @@ ol, ul {
 	color: @white;
 	.opn-regA;
 	z-index: 100;
+	.serv_link {
+		font-size: 22px;
+		font-weight: 600;
+		margin-top: 5%;
+		text-decoration: underline;
+		color: @white;
+		&:hover {
+			color: @white;
+		}
+		&:focus {
+			color: @white;
+		}
+	}
 	&_block_wrapper {
 		text-align: center;
 	}
 	&_block {
 		position: relative;
 		width: 100%;
-		height: 62vh;
+      height: 62vh;
+      display: block;
+      opacity: 0;
 		background-color: rgba(54, 10, 0, 0.5);
-		margin-top: 18vh;
 		text-align: center;
+        margin-top: 18vh;
+        transition: opacity 1.2s;
+
 	}
+    .show_main_block {
+      opacity: 1;
+    }
 	&_libra {
 		position: absolute;
 		width: 75%;
@@ -122,12 +141,17 @@ ol, ul {
 		display: flex;
 		justify-content: center;
 		align-items: center;
+        transform: rotate3d(1, 0, 0, 90deg);
+        transition: transform 1.7s;
 		img {
 			width: 20%;
 			height: auto;
 
 		}
 	}
+  .rotate_libra {
+    transform: rotate3d(1, 0, 0, 0);
+  }
 	.text_notarius {
 		font-size: 30px;
 		text-transform: uppercase;
@@ -156,14 +180,19 @@ ol, ul {
 	}
 	.text_about {
 		font-size: 19px;
+		line-height: 27px;
 		margin: 0 25px;
+		b {
+			font-weight: 600;
+			letter-spacing: 0.7px;
+		}
 	}
 	&_btn {
 		width: 75%;
 		height: 65px;
 		line-height: 61px;
 		display: block;
-		margin: 25% auto 0 auto;
+		margin: 20% auto 0 auto;
 		border-radius: 8px;
 		border: 2px solid @light-grey;
 		background-color: rgba(0, 0, 0, 0.5);
@@ -174,7 +203,11 @@ ol, ul {
 		&:hover {
 			text-decoration: none;
 			color: @white;
-		}		
+		}
+		&:focus {
+			text-decoration: none;
+			color: @white;
+		}
 	}
 	&_line {
 		position: absolute;
@@ -183,6 +216,7 @@ ol, ul {
 		height: 55px;
 		background-color: rgba(255, 255, 255, 0.6);
 		box-shadow: 0 3px 3px 1px rgba(0, 0, 0, 0.05);
+      right: 100%;
 	}
 	&_tel {
 		position: relative;
@@ -214,9 +248,12 @@ ol, ul {
 			text-decoration: none;
 		}
 		img {
-			width: 20px;
-			height: 30px;
-			display: inline-block;
+          position: absolute;
+			width: 60px;
+            right: -20px;
+            top: -60px;
+			//height: 30px;
+			display: none;
 		}
 		p {
 			display: inline-block;
@@ -239,7 +276,7 @@ ol, ul {
 /* ABOUT SECTION */
 .about {
 	position: relative;
-	width: 100%;
+	width: 0;
 	margin: 25vh 0 15vh;
 	background-color: rgba(54, 10, 0, 0.8);
 	overflow: hidden;
@@ -249,6 +286,7 @@ ol, ul {
 		padding-top: 50px;
 		padding-bottom: 50px;
 		text-align: center;
+        opacity: 0;
 
 		p {
 			color: @white;
@@ -279,6 +317,7 @@ ol, ul {
 			width: 48%;
 			float: left;
 			margin-top: 30px;
+			opacity:0;
 		}
 		img {
 			width: 43px;
@@ -294,18 +333,25 @@ ol, ul {
 		}
 	}
 	&_list li:nth-child(-n+3) {
+		opacity: 1;
+		height: auto;
+      display: inline-block;
 		width: 33%;
 		text-align: center;
 		margin-bottom: 50px;
 		img {
-			width: 160px;
-			height: auto;
+            //height: 160px;
+			height: 0;
+            width:auto;
 			display: block;
 			margin: 0 auto 40px auto;
 		}
 		p {
-			font-size: 36px;
+			//font-size: 36px;
+          font-size: 36px;
+          opacity: 0;
 		}
+
 	}
 }
 
@@ -325,6 +371,7 @@ ol, ul {
 	position: relative;
 	width: 100%;
 	z-index: 100;
+	padding-bottom: 50px;
 	&:after {
 		position: absolute;
 		content: '';
@@ -357,17 +404,17 @@ ol, ul {
 		margin-top: 30px;
 		padding-top: 25px;
 		padding-bottom: 25px;
-		p {
 			font-size: 57px;
 			color: @main-brown;
-		}
+		line-height: 65px;
+		height: 105px;
 	}
 	.about_notarius {
 		position: relative;
 		z-index: 101;
 		background-color: rgba(54, 10, 0, 0.8);
 		width: 100%;
-		height: 80vh;
+		height: 65vh;
 		text-align: center;
 		color: @white;
 		margin-top: 20px;
@@ -398,13 +445,63 @@ ol, ul {
 	}
 	&_document_image {
 		width: 100%;
+		padding: 10% 5% 0 5%;
 		img {
+			cursor: pointer;
 			width: 100%;
+			-webkit-box-shadow: 10px -6px 5px 0px rgba(0,0,0,0.75);
+			-moz-box-shadow: 10px -6px 5px 0px rgba(0,0,0,0.75);
+			box-shadow: 10px -6px 5px 0px rgba(0,0,0,0.75);
 		}
 	}
 }
 
+.certificates_slider {
+	position: fixed;
+	background-color: rgba(0, 0, 0, 0.5);
+	text-align: center;
+	width: 100%;
+	height: 100%;
+	display: none;
+	top: 0;
+	right: 0;
+	z-index: 1000;
+	img {
+		width: 100%;
+		height: auto;
+		cursor: default;
 
+	}
+	span {
+		cursor: pointer;
+		display: block;
+		position: absolute;
+		z-index: 10;
+		top: 50%;
+		width: 33px;
+		height: 33px;
+		background-image: cover;
+		background-image: url("../img/fancybox_sprite.png");
+	}
+	.left_arrow {
+		left: 20%;
+		background-position: 0 -36px;
+	}
+	.right_arrow {
+		right: 20%;
+		background-position: 0 -72px;
+	}
+	.close_arrow {
+		top:calc(10vh - 30px);
+		right: 20%;
+	}
+	.certificates_document_image {
+		padding: 0;
+		margin-top: 10vh;
+		width: 55%;
+		display: inline-block;
+	}
+}
 
 
 
@@ -439,7 +536,8 @@ ol, ul {
 			margin-top: 25px;
 		}
 		.adress {
-			font-size: 16px;
+			font-size: 18px;
+			line-height: 21px;
 			.opn-regM;
 			margin-top: 15px;
 			color: @grey;
@@ -518,6 +616,7 @@ ol, ul {
 		}
 	}
 	.map_mark {
+		cursor: pointer;
 		display: flex;
 		justify-content: flex-end;
 		align-items: center;

@@ -4,10 +4,7 @@ function initMap() {
 	    var map = new google.maps.Map(document.getElementById('contacts_map'), {
 	    	zoom: 14,
 		    center: uluru,
-		    styles:
-		    
-
-[
+		    styles:[
     {
         "featureType": "administrative",
         "elementType": "all",
@@ -132,13 +129,14 @@ function initMap() {
         ]
     }
 ]
-
-
-
-
-
-
-
 	    });
-	};
+        var image = 'assets/img/map_mark.png';
+        var marker = new google.maps.Marker({
+            position: {lat: 50.450622, lng: 30.497383},
+            map: map,
+            icon: image,
+            title: 'some text'
+        });
+        marker.setMap(map);
+    };
 };
