@@ -73,8 +73,8 @@
 
 
 
-/*SCHOOL_MAIN*/
-.school_main {
+/*MAIN*/
+.main {
   position: relative;
   width: 100%;
   height: 100vh;
@@ -114,8 +114,8 @@
 
 
 
-/*SCHOOL_ABOUT*/
-.school_about {
+/*ABOUT*/
+.main_about {
   position: relative;
   width: 100%;
   overflow: hidden;
@@ -123,7 +123,7 @@
     width: 100%;
     height: auto;
   }
-  .school_about_text_wrapper {
+  .main_about_text_wrapper {
     margin-top: 40px;
     span {
       color: $main-blue;
@@ -134,7 +134,7 @@
       @extend .font-light;
       line-height: 24px;
     }
-    .school_about_btn {
+    .main_about_btn {
       @extend .btn;
       margin-top: 20px;
     }
@@ -149,7 +149,7 @@
 
 
 /*SCHOOL_ADVANTAGE*/
-.school_advantage {
+.main_advantage {
   position: relative;
   width: 100%;
   height: 50vh;
@@ -167,23 +167,23 @@
     left: 0;
     background-color: rgba(0, 0, 0, 0.5);
   }
-  .school_advantage_slider_wrapper {
+  .main_advantage_slider_wrapper {
     position: relative;
     width: 100%;
     height: 50vh;
     z-index: 101;
     overflow: hidden;
-    .school_advantage_header {
+    .main_advantage_header {
       @extend .header;
       color: $main-white;
       text-align: center;
       margin-top: 60px;
     }
-    .school_advantage_slider {
+    .main_advantage_slider {
       width: 100%;
       height: auto;
       margin-top: 5vh;
-      .school_advantage_slide {
+      .main_advantage_slide {
         width: 25%;
         display: inline-block;
         text-align: center;
@@ -235,20 +235,20 @@
 
 
 
-/*SCHOOL_TEACH*/
-.school_teach {
+/*TEACH*/
+.main_teach {
   position: relative;
   width: 100%;
   overflow: hidden;
   padding-top: 140px;
-  .school_teach_header {
+  .main_teach_header {
     @extend .header;
     text-align: center;
   }
   img {
     width: 100%;
   }
-  .school_teach_text {
+  .main_teach_text {
     display: block;
     padding-top: 24px;
     p {
@@ -261,11 +261,11 @@
       @extend .font_reg;
     }
   }
-  .school_teach_text_btn {
+  .main_teach_text_btn {
     @extend .btn;
     margin-top: 40px;
   }
-  .school_teach_btn {
+  .main_teach_btn {
     @extend .fill_btn;
     width: 220px;
     margin: 60px auto 0 auto;
@@ -279,24 +279,24 @@
 
 
 
-/*SCHOOL_GALLERY*/
-.school_gallery {
+/*GALLERY*/
+.main_gallery {
   position: relative;
   padding-top: 140px;
   width: 100%;
   .container {
     position: relative;
   }
-  .school_gallery_slider_wrapper {
+  .main_gallery_slider_wrapper {
     overflow: hidden;
     width: 100%;
-    .school_gallery_slide {
+    .main_gallery_slide {
       img {
         width: 100%;
       }
     }
   }
-  .school_gallery_next_arrow {
+  .main_gallery_next_arrow {
     cursor: pointer;
     position: absolute;
     top: 45%;
@@ -306,7 +306,7 @@
     height: 36px;
     z-index: 101;
   }
-  .school_gallery_prev_arrow {
+  .main_gallery_prev_arrow {
     cursor: pointer;
     position: absolute;
     display: block;
@@ -325,27 +325,27 @@
 
 
 
-/*SCHOOL_CERTIFICATES*/
-.school_certificates {
+/*CERTIFICATES*/
+.main_certificates {
   position: relative;
   width: 100%;
   padding-top: 140px;
   overflow: hidden;
-  .school_certificates_header {
+  .main_certificates_header {
     @extend .header;
     text-align: center;
   }
-  .school_certificates_wrapper {
+  .main_certificates_wrapper {
     overflow: hidden;
   }
-  .school_certificates_block {
+  .main_certificates_block {
     position: relative;
     width: 100%;
     display: block;
     img {
       width: 100%;
     }
-    .school_certificates_text_block {
+    .main_certificates_text_block {
       position: absolute;
       width: 100%;
       height: auto;
@@ -358,7 +358,7 @@
       z-index: 100;
     }
   }
-  .school_certificates_btn {
+  .main_certificates_btn {
     @extend .fill_btn;
     margin: 60px auto 0 auto;
     width: 220px;
@@ -371,20 +371,20 @@
 
 
 
-/*SCHOOL_PUBLICATION*/
-.school_publication {
+/*PUBLICATION*/
+.main_publication {
   position: relative;
   width: 100%;
   overflow: hidden;
   padding-top: 140px;
-  .school_publication_header {
+  .main_publication_header {
     @extend .header;
     text-align: center;
   }
   img {
     width: 100%;
   }
-  .school_publication_text {
+  .main_publication_text {
     display: block;
     padding-top: 24px;
     p {
@@ -397,12 +397,12 @@
       @extend .font_reg;
     }
   }
-  .school_publication_link {
+  .main_publication_link {
     @extend .tm_link_active;
     display: block;
     margin-top: 40px;
   }
-  .school_publication_btn {
+  .main_publication_btn {
     @extend .fill_btn;
     width: 220px;
     margin: 60px auto 0 auto;

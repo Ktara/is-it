@@ -14,22 +14,22 @@
   font-weight: 300;
   font-style: normal; }
 /*BODY*/
-.font_reg, .wrapper, .main_wrapper, input:focus, .school_teach .school_teach_text strong, .school_publication .school_publication_text strong, .contacts input:focus {
+.font_reg, .wrapper, .main_wrapper, input:focus, .main_teach .main_teach_text strong, .main_publication .main_publication_text strong, .contacts input:focus {
   font-family: 'Roboto', sans-serif;
   font-weight: 400; }
 
-.font-bold, .header, .school_advantage .school_advantage_slider_wrapper .school_advantage_header, .school_teach .school_teach_header, .school_certificates .school_certificates_header, .school_publication .school_publication_header, .contacts .contacts_header, .school_main .main_header, .school_about .school_about_text_wrapper span {
+.font-bold, .header, .main_advantage .main_advantage_slider_wrapper .main_advantage_header, .main_teach .main_teach_header, .main_certificates .main_certificates_header, .main_publication .main_publication_header, .contacts .contacts_header, .main .main_header, .main_about .main_about_text_wrapper span {
   font-family: 'Roboto', sans-serif;
   font-weight: 700; }
 
-.font-light, .school_about .school_about_text_wrapper p, .school_teach .school_teach_text p, .school_publication .school_publication_text p, .contacts .contacts_info p {
+.font-light, .main_about .main_about_text_wrapper p, .main_teach .main_teach_text p, .main_publication .main_publication_text p, .contacts .contacts_info p {
   font-family: 'Roboto', sans-serif;
   font-weight: 300; }
 
 .wrapper, .main_wrapper {
   font-size: 16px; }
 
-.header, .school_advantage .school_advantage_slider_wrapper .school_advantage_header, .school_teach .school_teach_header, .school_certificates .school_certificates_header, .school_publication .school_publication_header, .contacts .contacts_header {
+.header, .main_advantage .main_advantage_slider_wrapper .main_advantage_header, .main_teach .main_teach_header, .main_certificates .main_certificates_header, .main_publication .main_publication_header, .contacts .contacts_header {
   font-size: 36px;
   color: #4b82b3;
   margin-bottom: 40px; }
@@ -38,7 +38,7 @@
 .tm_link, .nav_header .nav_wrapper .nav_header_menu a {
   color: #000000; }
 
-.tm_link_active, .nav_header .nav_wrapper .nav_header_menu .active_nav_punct, .school_publication .school_publication_link {
+.tm_link_active, .nav_header .nav_wrapper .nav_header_menu .active_nav_punct, .main_publication .main_publication_link {
   color: #4b82b3; }
 
 .tm_link:hover, .nav_header .nav_wrapper .nav_header_menu a:hover {
@@ -46,7 +46,7 @@
   text-decoration: underline; }
 
 /*BUTTONS*/
-.btn, .school_main .sub_btn, .school_about .school_about_text_wrapper .school_about_btn, .school_teach .school_teach_text_btn {
+.btn, .main .sub_btn, .main_about .main_about_text_wrapper .main_about_btn, .main_teach .main_teach_text_btn {
   display: block;
   width: auto;
   height: 50px;
@@ -58,11 +58,11 @@
   text-decoration: none;
   cursor: pointer; }
 
-.btn:hover, .school_main .sub_btn:hover, .school_about .school_about_text_wrapper .school_about_btn:hover, .school_teach .school_teach_text_btn:hover {
+.btn:hover, .main .sub_btn:hover, .main_about .main_about_text_wrapper .main_about_btn:hover, .main_teach .main_teach_text_btn:hover {
   text-decoration: underline;
   color: #4b82b3; }
 
-.fill_btn, .school_main .main_btn, .school_teach .school_teach_btn, .school_certificates .school_certificates_btn, .school_publication .school_publication_btn {
+.fill_btn, .main .main_btn, .main_teach .main_teach_btn, .main_certificates .main_certificates_btn, .main_publication .main_publication_btn {
   display: block;
   width: auto;
   height: 50px;
@@ -75,7 +75,7 @@
   background-color: #4b82b3;
   color: #ffffff; }
 
-.fill_btn:hover, .school_main .main_btn:hover, .school_teach .school_teach_btn:hover, .school_certificates .school_certificates_btn:hover, .school_publication .school_publication_btn:hover {
+.fill_btn:hover, .main .main_btn:hover, .main_teach .main_teach_btn:hover, .main_certificates .main_certificates_btn:hover, .main_publication .main_publication_btn:hover {
   text-decoration: none;
   opacity: 0.8;
   color: #ffffff; }
@@ -91,7 +91,7 @@
   opacity: 0.5;
   text-indent: 20px; }
 
-.form .btn, .contacts .contacts_form .btn, .form .school_main .sub_btn, .school_main .form .sub_btn, .contacts .contacts_form .school_main .sub_btn, .school_main .contacts .contacts_form .sub_btn, .form .school_about .school_about_text_wrapper .school_about_btn, .school_about .school_about_text_wrapper .form .school_about_btn, .contacts .contacts_form .school_about .school_about_text_wrapper .school_about_btn, .school_about .school_about_text_wrapper .contacts .contacts_form .school_about_btn, .form .school_teach .school_teach_text_btn, .school_teach .form .school_teach_text_btn, .contacts .contacts_form .school_teach .school_teach_text_btn, .school_teach .contacts .contacts_form .school_teach_text_btn {
+.form .btn, .contacts .contacts_form .btn, .form .main .sub_btn, .main .form .sub_btn, .contacts .contacts_form .main .sub_btn, .main .contacts .contacts_form .sub_btn, .form .main_about .main_about_text_wrapper .main_about_btn, .main_about .main_about_text_wrapper .form .main_about_btn, .contacts .contacts_form .main_about .main_about_text_wrapper .main_about_btn, .main_about .main_about_text_wrapper .contacts .contacts_form .main_about_btn, .form .main_teach .main_teach_text_btn, .main_teach .form .main_teach_text_btn, .contacts .contacts_form .main_teach .main_teach_text_btn, .main_teach .contacts .contacts_form .main_teach_text_btn {
   height: 40px;
   line-height: 38px; }
 
@@ -162,50 +162,50 @@ input:focus {
   .nav_header .lang_wrapper .lang_punct_active {
     text-decoration: underline; }
 
-/*SCHOOL_MAIN*/
-.school_main {
+/*MAIN*/
+.main {
   position: relative;
   width: 100%;
   height: 100vh;
   background-repeat: no-repeat;
   background-size: cover; }
-  .school_main .main_header {
+  .main .main_header {
     width: 55%;
     font-size: 48px;
     color: #4b82b3;
     margin-top: 30vh; }
-  .school_main .main_btn {
+  .main .main_btn {
     margin-top: 10vh; }
-  .school_main .main_btn:hover {
+  .main .main_btn:hover {
     text-decoration: none;
     opacity: 0.8;
     color: #ffffff; }
-  .school_main .sub_btn {
+  .main .sub_btn {
     margin-top: 10vh; }
-  .school_main .sub_btn:hover {
+  .main .sub_btn:hover {
     text-decoration: underline;
     color: #4b82b3; }
 
-/*SCHOOL_ABOUT*/
-.school_about {
+/*ABOUT*/
+.main_about {
   position: relative;
   width: 100%;
   overflow: hidden; }
-  .school_about img {
+  .main_about img {
     width: 100%;
     height: auto; }
-  .school_about .school_about_text_wrapper {
+  .main_about .main_about_text_wrapper {
     margin-top: 40px; }
-    .school_about .school_about_text_wrapper span {
+    .main_about .main_about_text_wrapper span {
       color: #4b82b3; }
-    .school_about .school_about_text_wrapper p {
+    .main_about .main_about_text_wrapper p {
       margin-bottom: 20px;
       line-height: 24px; }
-    .school_about .school_about_text_wrapper .school_about_btn {
+    .main_about .main_about_text_wrapper .main_about_btn {
       margin-top: 20px; }
 
 /*SCHOOL_ADVANTAGE*/
-.school_advantage {
+.main_advantage {
   position: relative;
   width: 100%;
   height: 50vh;
@@ -213,7 +213,7 @@ input:focus {
   overflow: hidden;
   background-repeat: no-repeat;
   background-size: cover; }
-  .school_advantage:after {
+  .main_advantage:after {
     content: '';
     position: absolute;
     display: block;
@@ -222,41 +222,41 @@ input:focus {
     top: 0;
     left: 0;
     background-color: rgba(0, 0, 0, 0.5); }
-  .school_advantage .school_advantage_slider_wrapper {
+  .main_advantage .main_advantage_slider_wrapper {
     position: relative;
     width: 100%;
     height: 50vh;
     z-index: 101;
     overflow: hidden; }
-    .school_advantage .school_advantage_slider_wrapper .school_advantage_header {
+    .main_advantage .main_advantage_slider_wrapper .main_advantage_header {
       color: #ffffff;
       text-align: center;
       margin-top: 60px; }
-    .school_advantage .school_advantage_slider_wrapper .school_advantage_slider {
+    .main_advantage .main_advantage_slider_wrapper .main_advantage_slider {
       width: 100%;
       height: auto;
       margin-top: 5vh; }
-      .school_advantage .school_advantage_slider_wrapper .school_advantage_slider .school_advantage_slide {
+      .main_advantage .main_advantage_slider_wrapper .main_advantage_slider .main_advantage_slide {
         width: 25%;
         display: inline-block;
         text-align: center;
         vertical-align: top; }
-        .school_advantage .school_advantage_slider_wrapper .school_advantage_slider .school_advantage_slide img {
+        .main_advantage .main_advantage_slider_wrapper .main_advantage_slider .main_advantage_slide img {
           width: auto;
           height: 60px;
           display: inline-block; }
-        .school_advantage .school_advantage_slider_wrapper .school_advantage_slider .school_advantage_slide p {
+        .main_advantage .main_advantage_slider_wrapper .main_advantage_slider .main_advantage_slide p {
           color: #ffffff;
           width: 70%;
           display: block;
           margin: 20px auto 0 auto;
           line-height: 20px; }
-  .school_advantage .slick-dots {
+  .main_advantage .slick-dots {
     position: absolute;
     bottom: 0;
     width: 100%;
     text-align: center; }
-    .school_advantage .slick-dots li {
+    .main_advantage .slick-dots li {
       position: relative;
       z-index: 110;
       width: 13px;
@@ -266,48 +266,48 @@ input:focus {
       display: inline-block;
       margin-right: 10px;
       bottom: 20px; }
-    .school_advantage .slick-dots .slick-active {
+    .main_advantage .slick-dots .slick-active {
       background-color: #ffffff; }
-    .school_advantage .slick-dots li button {
+    .main_advantage .slick-dots li button {
       display: none; }
 
-/*SCHOOL_TEACH*/
-.school_teach {
+/*TEACH*/
+.main_teach {
   position: relative;
   width: 100%;
   overflow: hidden;
   padding-top: 140px; }
-  .school_teach .school_teach_header {
+  .main_teach .main_teach_header {
     text-align: center; }
-  .school_teach img {
+  .main_teach img {
     width: 100%; }
-  .school_teach .school_teach_text {
+  .main_teach .main_teach_text {
     display: block;
     padding-top: 24px; }
-    .school_teach .school_teach_text p {
+    .main_teach .main_teach_text p {
       line-height: 20px;
       padding-top: 10px; }
-    .school_teach .school_teach_text strong {
+    .main_teach .main_teach_text strong {
       padding-top: 20px; }
-  .school_teach .school_teach_text_btn {
+  .main_teach .main_teach_text_btn {
     margin-top: 40px; }
-  .school_teach .school_teach_btn {
+  .main_teach .main_teach_btn {
     width: 220px;
     margin: 60px auto 0 auto; }
 
-/*SCHOOL_GALLERY*/
-.school_gallery {
+/*GALLERY*/
+.main_gallery {
   position: relative;
   padding-top: 140px;
   width: 100%; }
-  .school_gallery .container {
+  .main_gallery .container {
     position: relative; }
-  .school_gallery .school_gallery_slider_wrapper {
+  .main_gallery .main_gallery_slider_wrapper {
     overflow: hidden;
     width: 100%; }
-    .school_gallery .school_gallery_slider_wrapper .school_gallery_slide img {
+    .main_gallery .main_gallery_slider_wrapper .main_gallery_slide img {
       width: 100%; }
-  .school_gallery .school_gallery_next_arrow {
+  .main_gallery .main_gallery_next_arrow {
     cursor: pointer;
     position: absolute;
     top: 45%;
@@ -316,7 +316,7 @@ input:focus {
     width: 20px;
     height: 36px;
     z-index: 101; }
-  .school_gallery .school_gallery_prev_arrow {
+  .main_gallery .main_gallery_prev_arrow {
     cursor: pointer;
     position: absolute;
     display: block;
@@ -327,23 +327,23 @@ input:focus {
     height: 36px;
     z-index: 101; }
 
-/*SCHOOL_CERTIFICATES*/
-.school_certificates {
+/*CERTIFICATES*/
+.main_certificates {
   position: relative;
   width: 100%;
   padding-top: 140px;
   overflow: hidden; }
-  .school_certificates .school_certificates_header {
+  .main_certificates .main_certificates_header {
     text-align: center; }
-  .school_certificates .school_certificates_wrapper {
+  .main_certificates .main_certificates_wrapper {
     overflow: hidden; }
-  .school_certificates .school_certificates_block {
+  .main_certificates .main_certificates_block {
     position: relative;
     width: 100%;
     display: block; }
-    .school_certificates .school_certificates_block img {
+    .main_certificates .main_certificates_block img {
       width: 100%; }
-    .school_certificates .school_certificates_block .school_certificates_text_block {
+    .main_certificates .main_certificates_block .main_certificates_text_block {
       position: absolute;
       width: 100%;
       height: auto;
@@ -354,33 +354,33 @@ input:focus {
       background-color: rgba(216, 217, 219, 0.5);
       color: #000000;
       z-index: 100; }
-  .school_certificates .school_certificates_btn {
+  .main_certificates .main_certificates_btn {
     margin: 60px auto 0 auto;
     width: 220px;
     clear: both; }
 
-/*SCHOOL_PUBLICATION*/
-.school_publication {
+/*PUBLICATION*/
+.main_publication {
   position: relative;
   width: 100%;
   overflow: hidden;
   padding-top: 140px; }
-  .school_publication .school_publication_header {
+  .main_publication .main_publication_header {
     text-align: center; }
-  .school_publication img {
+  .main_publication img {
     width: 100%; }
-  .school_publication .school_publication_text {
+  .main_publication .main_publication_text {
     display: block;
     padding-top: 24px; }
-    .school_publication .school_publication_text p {
+    .main_publication .main_publication_text p {
       line-height: 20px;
       padding-top: 10px; }
-    .school_publication .school_publication_text strong {
+    .main_publication .main_publication_text strong {
       padding-top: 20px; }
-  .school_publication .school_publication_link {
+  .main_publication .main_publication_link {
     display: block;
     margin-top: 40px; }
-  .school_publication .school_publication_btn {
+  .main_publication .main_publication_btn {
     width: 220px;
     margin: 60px auto 0 auto; }
 
