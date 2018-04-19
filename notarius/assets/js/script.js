@@ -112,7 +112,7 @@ showStartAnimation();
 
         };
 
-        if(scrolled > garanty*0.6 && text_status === true){
+        if(scrolled > garanty*0.5 && text_status === true){
             text_status = false;
             var x = 0;
             setInterval(function () {
