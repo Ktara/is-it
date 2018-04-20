@@ -14,22 +14,22 @@
   font-weight: 300;
   font-style: normal; }
 /*BODY*/
-.font_reg, .wrapper, .main_wrapper, input:focus, .main_teach .main_teach_text strong, .main_publication .main_publication_text strong, .contacts input:focus {
+.font_reg, .wrapper, .main_wrapper, input:focus, .main_teach .main_teach_text strong, .main_publication .main_publication_text strong, .contacts input:focus, .about_reviews .about_reviews_slider_wrapper .about_reviews_slide .about_reviews_text strong, .teach_publications .teach_publications_text_block span, .learners .learners_text_block span {
   font-family: 'Roboto', sans-serif;
   font-weight: 400; }
 
-.font-bold, .header, .main_advantage .main_advantage_slider_wrapper .main_advantage_header, .main_teach .main_teach_header, .main_certificates .main_certificates_header, .main_publication .main_publication_header, .contacts .contacts_header, .main .main_header, .main_about .main_about_text_wrapper span {
+.font-bold, .header, .main_advantage .main_advantage_slider_wrapper .main_advantage_header, .main_teach .main_teach_header, .main_certificates .main_certificates_header, .main_publication .main_publication_header, .contacts .contacts_header, .about_certificates .about_certificates_header, .about_reviews .about_reviews_header, .teach_publications .teach_publications_header, .learners .learners_header, .main .main_header, .main_about .main_about_text_wrapper span {
   font-family: 'Roboto', sans-serif;
   font-weight: 700; }
 
-.font-light, .main_about .main_about_text_wrapper p, .main_teach .main_teach_text p, .main_publication .main_publication_text p, .contacts .contacts_info p {
+.font-light, .main_about .main_about_text_wrapper p, .main_teach .main_teach_text p, .main_publication .main_publication_text p, .contacts .contacts_info p, .about .about_text p, .about_reviews .about_reviews_slider_wrapper .about_reviews_slide .about_reviews_text p, .teach_publications .teach_publications_text_block p, .learners .learners_text_block p {
   font-family: 'Roboto', sans-serif;
   font-weight: 300; }
 
 .wrapper, .main_wrapper {
   font-size: 16px; }
 
-.header, .main_advantage .main_advantage_slider_wrapper .main_advantage_header, .main_teach .main_teach_header, .main_certificates .main_certificates_header, .main_publication .main_publication_header, .contacts .contacts_header {
+.header, .main_advantage .main_advantage_slider_wrapper .main_advantage_header, .main_teach .main_teach_header, .main_certificates .main_certificates_header, .main_publication .main_publication_header, .contacts .contacts_header, .about_certificates .about_certificates_header, .about_reviews .about_reviews_header, .teach_publications .teach_publications_header, .learners .learners_header {
   font-size: 36px;
   color: #4b82b3;
   margin-bottom: 40px; }
@@ -38,15 +38,18 @@
 .tm_link, .nav_header .nav_wrapper .nav_header_menu a {
   color: #000000; }
 
-.tm_link_active, .nav_header .nav_wrapper .nav_header_menu .active_nav_punct, .main_publication .main_publication_link {
-  color: #4b82b3; }
-
 .tm_link:hover, .nav_header .nav_wrapper .nav_header_menu a:hover {
   color: #4b82b3;
   text-decoration: underline; }
 
+.tm_link_active, .nav_header .nav_wrapper .nav_header_menu .active_nav_punct, .main_publication .main_publication_link, .about_reviews .about_reviews_slider_wrapper .about_reviews_slide .about_reviews_text a, .learners .learners_read_more {
+  color: #4b82b3; }
+  .tm_link_active:hover, .nav_header .nav_wrapper .nav_header_menu .active_nav_punct:hover, .main_publication .main_publication_link:hover, .about_reviews .about_reviews_slider_wrapper .about_reviews_slide .about_reviews_text a:hover, .learners .learners_read_more:hover {
+    color: #4b82b3;
+    text-decoration: underline; }
+
 /*BUTTONS*/
-.btn, .main .sub_btn, .main_about .main_about_text_wrapper .main_about_btn, .main_teach .main_teach_text_btn {
+.btn, .main .sub_btn, .main_about .main_about_text_wrapper .main_about_btn, .main_teach .main_teach_text_btn, .learners .learners_btn {
   display: block;
   width: auto;
   height: 50px;
@@ -58,7 +61,7 @@
   text-decoration: none;
   cursor: pointer; }
 
-.btn:hover, .main .sub_btn:hover, .main_about .main_about_text_wrapper .main_about_btn:hover, .main_teach .main_teach_text_btn:hover {
+.btn:hover, .main .sub_btn:hover, .main_about .main_about_text_wrapper .main_about_btn:hover, .main_teach .main_teach_text_btn:hover, .learners .learners_btn:hover {
   text-decoration: underline;
   color: #4b82b3; }
 
@@ -91,7 +94,7 @@
   opacity: 0.5;
   text-indent: 20px; }
 
-.form .btn, .contacts .contacts_form .btn, .form .main .sub_btn, .main .form .sub_btn, .contacts .contacts_form .main .sub_btn, .main .contacts .contacts_form .sub_btn, .form .main_about .main_about_text_wrapper .main_about_btn, .main_about .main_about_text_wrapper .form .main_about_btn, .contacts .contacts_form .main_about .main_about_text_wrapper .main_about_btn, .main_about .main_about_text_wrapper .contacts .contacts_form .main_about_btn, .form .main_teach .main_teach_text_btn, .main_teach .form .main_teach_text_btn, .contacts .contacts_form .main_teach .main_teach_text_btn, .main_teach .contacts .contacts_form .main_teach_text_btn {
+.form .btn, .contacts .contacts_form .btn, .form .main .sub_btn, .main .form .sub_btn, .contacts .contacts_form .main .sub_btn, .main .contacts .contacts_form .sub_btn, .form .main_about .main_about_text_wrapper .main_about_btn, .main_about .main_about_text_wrapper .form .main_about_btn, .contacts .contacts_form .main_about .main_about_text_wrapper .main_about_btn, .main_about .main_about_text_wrapper .contacts .contacts_form .main_about_btn, .form .main_teach .main_teach_text_btn, .main_teach .form .main_teach_text_btn, .contacts .contacts_form .main_teach .main_teach_text_btn, .main_teach .contacts .contacts_form .main_teach_text_btn, .form .learners .learners_btn, .learners .form .learners_btn, .contacts .contacts_form .learners .learners_btn, .learners .contacts .contacts_form .learners_btn {
   height: 40px;
   line-height: 38px; }
 
@@ -411,5 +414,173 @@ footer {
   padding-bottom: 20px; }
   footer .company a {
     color: #6690b8; }
+
+/*ABOUT*/
+.about {
+  position: relative;
+  width: 100%;
+  padding-top: 60px;
+  overflow: hidden; }
+  .about .row {
+    padding-top: 60px; }
+  .about img {
+    width: 100%; }
+  .about .about_text p {
+    line-height: 24px;
+    margin-bottom: 10px; }
+  .about .about_text strong {
+    color: #4b82b3; }
+
+/*ABOUT_CERTIFICATES*/
+.about_certificates {
+  position: relative;
+  width: 100%;
+  padding-top: 140px; }
+  .about_certificates .container {
+    position: relative; }
+  .about_certificates .about_certificates_slider_wrapper {
+    overflow: hidden;
+    width: 100%; }
+    .about_certificates .about_certificates_slider_wrapper .about_certificates_slide img {
+      width: 100%; }
+  .about_certificates .about_certificates_next_arrow {
+    cursor: pointer;
+    position: absolute;
+    top: 55%;
+    right: 0;
+    background-image: url("../img/next_arrow.png");
+    width: 20px;
+    height: 36px;
+    z-index: 101; }
+  .about_certificates .about_certificates_prev_arrow {
+    cursor: pointer;
+    position: absolute;
+    display: block;
+    top: 55%;
+    left: 0;
+    background-image: url("../img/prew_arrow.png");
+    width: 20px;
+    height: 36px;
+    z-index: 101; }
+
+/*ABOUT_REVIEWS*/
+.about_reviews {
+  position: relative;
+  width: 100%;
+  padding-top: 140px; }
+  .about_reviews .container {
+    position: relative; }
+  .about_reviews .about_reviews_slider_wrapper {
+    overflow: hidden;
+    width: 100%; }
+    .about_reviews .about_reviews_slider_wrapper .about_reviews_slide img {
+      width: 100%; }
+    .about_reviews .about_reviews_slider_wrapper .about_reviews_slide .about_reviews_text p {
+      line-height: 24px;
+      margin-bottom: 10px; }
+    .about_reviews .about_reviews_slider_wrapper .about_reviews_slide .about_reviews_text a {
+      margin-top: 20px;
+      display: block; }
+  .about_reviews .about_reviews_next_arrow {
+    cursor: pointer;
+    position: absolute;
+    top: 55%;
+    right: 0;
+    background-image: url("../img/next_arrow.png");
+    width: 20px;
+    height: 36px;
+    z-index: 101; }
+  .about_reviews .about_reviews_prev_arrow {
+    cursor: pointer;
+    position: absolute;
+    display: block;
+    top: 55%;
+    left: 0;
+    background-image: url("../img/prew_arrow.png");
+    width: 20px;
+    height: 36px;
+    z-index: 101; }
+
+/*TEACH*/
+.teach {
+  position: relative;
+  width: 100%;
+  padding-top: 120px; }
+  .teach img {
+    width: 100%;
+    margin-top: 20px;
+    position: relative; }
+  .teach .teach_text_block {
+    position: absolute;
+    width: 70%;
+    height: auto;
+    top: 40%;
+    left: 15%;
+    padding: 20px 0;
+    text-align: center;
+    background-color: rgba(216, 217, 219, 0.5);
+    color: #000000;
+    z-index: 100; }
+    .teach .teach_text_block a {
+      color: #000000; }
+      .teach .teach_text_block a:hover {
+        color: #4b82b3;
+        text-decoration: underline; }
+
+/*TEACH_PUBLICATIONS*/
+.teach_publications {
+  position: relative;
+  width: 100%;
+  padding-top: 140px; }
+  .teach_publications .teach_publications_header {
+    padding-left: 15px; }
+  .teach_publications img {
+    width: 100%; }
+  .teach_publications .teach_publications_text_block p {
+    line-height: 24px;
+    margin-top: 10px; }
+
+/*LEARNERS*/
+.learners {
+  position: relative;
+  width: 100%;
+  padding-top: 140px;
+  overflow: hidden; }
+  .learners .learners_img_block {
+    position: relative;
+    width: 100%;
+    cursor: pointer; }
+    .learners .learners_img_block:hover .learners_link_block {
+      position: absolute;
+      display: block;
+      width: 100%;
+      height: auto;
+      top: 0;
+      left: 0;
+      padding: 36% 0;
+      text-align: center;
+      background-color: rgba(255, 255, 255, 0.5);
+      z-index: 100; }
+  .learners .learners_foto {
+    width: 100%; }
+  .learners .learners_link_block {
+    display: none; }
+    .learners .learners_link_block .learners_facebook {
+      width: 20px; }
+  .learners .learners_text_block {
+    margin-top: 20px; }
+    .learners .learners_text_block p {
+      line-height: 24px;
+      color: #6b6b6b;
+      margin-top: 10px; }
+    .learners .learners_text_block span {
+      color: #6b6b6b; }
+  .learners .learners_read_more {
+    display: block;
+    margin: 40px 0 60px 0; }
+  .learners .learners_btn {
+    width: 220px;
+    margin: 20px auto 0 auto;
+    clear: both; }
 
 /*# sourceMappingURL=style.css.map */

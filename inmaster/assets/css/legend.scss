@@ -21,6 +21,7 @@
 /*BODY*/
 $main-blue: #4b82b3;
 $main-black: #000000;
+$grey: #6b6b6b;
 $main-white: #ffffff;
 $light-blue: #6690b8;
 .font_reg {
@@ -52,13 +53,21 @@ $light-blue: #6690b8;
 .tm_link {
   color: $main-black;
 }
-.tm_link_active {
-  color: $main-blue;
-}
 .tm_link:hover {
   color: $main-blue;
   text-decoration: underline;
 }
+.tm_link_active {
+  color: $main-blue;
+  &:hover {
+    color: $main-blue;
+    text-decoration: underline;
+  }
+}
+.tm_link_active:hover {
+
+}
+
 
 
 

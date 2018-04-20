@@ -469,3 +469,276 @@ footer {
     }
   }
 }
+
+
+
+
+
+
+
+
+/*ABOUT*/
+.about {
+  position: relative;
+  width: 100%;
+  padding-top: 60px;
+  overflow: hidden;
+  .row {
+    padding-top: 60px;
+  }
+  img {
+    width: 100%;
+  }
+  .about_text {
+    p {
+      @extend .font-light;
+      line-height: 24px;
+      margin-bottom: 10px;
+    }
+    strong {
+      color: $main-blue;
+    }
+  }
+}
+
+
+
+
+
+
+
+/*ABOUT_CERTIFICATES*/
+.about_certificates {
+  position: relative;
+  width: 100%;
+  padding-top: 140px;
+  .container {
+    position: relative;
+  }
+  .about_certificates_header {
+    @extend .header;
+  }
+  .about_certificates_slider_wrapper {
+    overflow: hidden;
+    width: 100%;
+    .about_certificates_slide {
+      img {
+        width: 100%;
+      }
+    }
+  }
+  .about_certificates_next_arrow {
+    cursor: pointer;
+    position: absolute;
+    top: 55%;
+    right: 0;
+    background-image: url("../img/next_arrow.png");
+    width: 20px;
+    height: 36px;
+    z-index: 101;
+  }
+  .about_certificates_prev_arrow {
+    cursor: pointer;
+    position: absolute;
+    display: block;
+    top: 55%;
+    left: 0;
+    background-image: url("../img/prew_arrow.png");
+    width: 20px;
+    height: 36px;
+    z-index: 101;
+  }
+}
+
+
+
+
+
+
+/*ABOUT_REVIEWS*/
+.about_reviews {
+  position: relative;
+  width: 100%;
+  padding-top: 140px;
+  .container {
+    position: relative;
+  }
+  .about_reviews_header {
+    @extend .header;
+  }
+  .about_reviews_slider_wrapper {
+    overflow: hidden;
+    width: 100%;
+    .about_reviews_slide {
+      img {
+        width: 100%;
+      }
+      .about_reviews_text {
+        p {
+          @extend .font-light;
+          line-height: 24px;
+          margin-bottom: 10px;
+        }
+        strong {
+          @extend .font_reg;
+        }
+        a {
+          @extend .tm_link_active;
+          margin-top: 20px;
+          display: block;
+        }
+      }
+    }
+  }
+  .about_reviews_next_arrow {
+    cursor: pointer;
+    position: absolute;
+    top: 55%;
+    right: 0;
+    background-image: url("../img/next_arrow.png");
+    width: 20px;
+    height: 36px;
+    z-index: 101;
+  }
+  .about_reviews_prev_arrow {
+    cursor: pointer;
+    position: absolute;
+    display: block;
+    top: 55%;
+    left: 0;
+    background-image: url("../img/prew_arrow.png");
+    width: 20px;
+    height: 36px;
+    z-index: 101;
+  }
+}
+
+
+
+
+
+
+/*TEACH*/
+.teach {
+  position: relative;
+  width: 100%;
+  padding-top: 120px;
+  img {
+    width: 100%;
+    margin-top: 20px;
+    position: relative;
+  }
+  .teach_text_block {
+    position: absolute;
+    width: 70%;
+    height: auto;
+    top: 40%;
+    left: 15%;
+    padding: 20px 0;
+    text-align: center;
+    background-color: rgba(216, 217, 219, 0.5);
+    color: $main-black;
+    z-index: 100;
+    a {
+      color: $main-black;
+      &:hover {
+        color: $main-blue;
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
+
+
+
+
+/*TEACH_PUBLICATIONS*/
+.teach_publications {
+  position: relative;
+  width: 100%;
+  padding-top: 140px;
+  .teach_publications_header {
+    @extend .header;
+    padding-left: 15px;
+  }
+  img {
+    width: 100%;
+  }
+  .teach_publications_text_block {
+    span {
+      @extend .font_reg;
+    }
+    p {
+      @extend .font-light;
+      line-height: 24px;
+      margin-top: 10px;
+    }
+  }
+}
+
+
+
+
+/*LEARNERS*/
+.learners {
+  position: relative;
+  width: 100%;
+  padding-top: 140px;
+  overflow: hidden;
+  .learners_header {
+    @extend .header;
+  }
+  .learners_img_block {
+    position: relative;
+    width: 100%;
+    cursor: pointer;
+    &:hover {
+      .learners_link_block {
+        position: absolute;
+        display: block;
+        width: 100%;
+        height: auto;
+        top: 0;
+        left: 0;
+        padding: 36% 0;
+        text-align: center;
+        background-color: rgba(255, 255, 255, 0.5);
+        z-index: 100;
+      }
+    }
+  }
+  .learners_foto {
+    width: 100%;
+  }
+  .learners_link_block {
+    display: none;
+    .learners_facebook {
+      width: 20px;
+    }
+  }
+  .learners_text_block {
+    margin-top: 20px;
+    p {
+      @extend .font-light;
+      line-height: 24px;
+      color: $grey;
+      margin-top: 10px;
+    }
+    span {
+      @extend .font_reg;
+      color: $grey;
+    }
+  }
+  .learners_read_more {
+    @extend .tm_link_active;
+    display: block;
+    margin: 40px 0 60px 0;
+  }
+  .learners_btn {
+    @extend .btn;
+    width: 220px;
+    margin: 20px auto 0 auto;
+    clear: both;
+  }
+}
