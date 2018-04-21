@@ -420,6 +420,7 @@
   position: relative;
   width: 100%;
   padding-top: 140px;
+  clear: both;
   .contacts_header {
     @extend .header;
   }
@@ -436,6 +437,7 @@
     p {
       @extend .font-light;
       line-height: 24px;
+      color: $grey;
     }
   }
   .contacts_social {
@@ -740,5 +742,125 @@ footer {
     width: 220px;
     margin: 20px auto 0 auto;
     clear: both;
+  }
+}
+
+
+
+
+
+/*BLOG*/
+.blog {
+  position: relative;
+  width: 100%;
+  padding-top: 100px;
+  .row {
+    overflow: hidden;
+  }
+  img {
+    width: 100%;
+    margin-top: 40px;
+  }
+  .blog_text_block {
+    p {
+      @extend .font-light;
+      color: $grey;
+      margin-top: 15px;
+      line-height: 24px;
+    }
+    .blog_link {
+      @extend .tm_link;
+      line-height: 20px;
+      display: block;
+      margin-top: 15px;
+    }
+  }
+  .blog_btn {
+    @extend .btn;
+    width: 220px;
+    margin: 60px auto 0 auto;
+    clear: both;
+  }
+}
+
+
+
+
+
+
+/*ARTICLE*/
+.article {
+  position: relative;
+  width: 100%;
+  padding-top: 140px;
+  img {
+    width: 100%;
+    margin-bottom: 25px;
+  }
+  .article_text_block {
+    p {
+      @extend .font-light;
+      color: $grey;
+      line-height: 24px;
+      margin-top: 15px;
+    }
+    span {
+      @extend .font_reg;
+      color: $main-black;
+    }
+  }
+}
+
+
+
+
+
+
+
+/*ARTICLE_OTHER*/
+.article_other {
+  position: relative;
+  width: 100%;
+  padding-top: 100px;
+  .article_other_header {
+    @extend .header;
+  }
+  .row {
+    overflow: hidden;
+  }
+  img {
+    width: 100%;
+  }
+  .article_other_text_block {
+    p {
+      @extend .font-light;
+      color: $grey;
+      margin-top: 15px;
+      line-height: 24px;
+    }
+    .article_other_link {
+      @extend .tm_link;
+      line-height: 20px;
+      display: block;
+      margin-top: 15px;
+    }
+  }
+}
+
+
+
+
+
+
+
+/*MAP*/
+.contact_map {
+  position: relative;
+  width: 100%;
+  padding-top: 140px;
+  overflow: hidden;
+  #contact_map {
+    width: 100%;
+    height: 45vh;
   }
 }
