@@ -230,11 +230,9 @@ input:focus {
   z-index: 10;
   padding: 0 40px;
   background-color: #ffffff; }
-  .main_about img {
-    width: 100%;
-    height: auto; }
   .main_about .main_about_text_wrapper {
-    margin-top: 40px; }
+    padding-top: 50px;
+    opacity: 0; }
     .main_about .main_about_text_wrapper span {
       color: #4b82b3; }
     .main_about .main_about_text_wrapper p {
@@ -242,6 +240,16 @@ input:focus {
       line-height: 24px; }
     .main_about .main_about_text_wrapper .main_about_btn {
       margin-top: 20px; }
+  .main_about .main_about_img_wrapper {
+    width: 100%;
+    overflow: hidden; }
+  .main_about .main_about_img_viewer {
+    position: relative;
+    left: 100%;
+    width: 100%; }
+    .main_about .main_about_img_viewer img {
+      width: 100%;
+      height: auto; }
 
 /*SCHOOL_ADVANTAGE*/
 .main_advantage {
@@ -352,6 +360,10 @@ input:focus {
       width: 100%;
       height: auto; }
 
+.smti_viewer {
+  left: auto !important;
+  right: 100%; }
+
 /*GALLERY*/
 .main_gallery {
   position: relative;
@@ -429,10 +441,14 @@ input:focus {
   z-index: 10;
   background-color: #ffffff; }
   .main_publication .main_publication_header {
-    text-align: center; }
+    text-align: center;
+    width: auto;
+    display: inline-block;
+    opacity: 0; }
   .main_publication .main_publication_text {
     display: block;
-    padding-top: 24px; }
+    padding-top: 54px;
+    opacity: 0; }
     .main_publication .main_publication_text p {
       line-height: 20px;
       padding-top: 10px; }
@@ -501,11 +517,14 @@ footer {
     width: auto;
     max-height: 500px;
     float: right; }
-  .about .about_text p {
-    line-height: 24px;
-    margin-bottom: 10px; }
-  .about .about_text strong {
-    color: #4b82b3; }
+  .about .about_text {
+    display: block;
+    opacity: 0; }
+    .about .about_text p {
+      line-height: 24px;
+      margin-bottom: 10px; }
+    .about .about_text strong {
+      color: #4b82b3; }
   .about .about_block_img_wrapper {
     width: 100%;
     overflow: hidden; }
@@ -759,16 +778,19 @@ footer {
   width: 100%;
   overflow: hidden;
   padding: 140px 40px 0 40px; }
+  .course_base .course_base_header {
+    width: auto;
+    display: inline-block;
+    opacity: 0; }
   .course_base .row {
     margin-bottom: 60px; }
-  .course_base .course_base_block:nth-child(2n) img {
-    float: left; }
   .course_base img {
     width: auto;
     max-height: 500px;
     float: right; }
   .course_base .course_base_text {
-    display: block; }
+    display: block;
+    opacity: 0; }
     .course_base .course_base_text p {
       line-height: 24px;
       padding-top: 15px;
