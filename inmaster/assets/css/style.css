@@ -85,7 +85,7 @@
 
 /*FORM*/
 .form input, .contacts .contacts_form input {
-  width: 100%;
+  width: 380px;
   height: 40px;
   line-height: 38px;
   border-radius: 20px;
@@ -95,6 +95,7 @@
   text-indent: 20px; }
 
 .form .btn, .contacts .contacts_form .btn, .form .main .sub_btn, .main .form .sub_btn, .contacts .contacts_form .main .sub_btn, .main .contacts .contacts_form .sub_btn, .form .main_about .main_about_text_wrapper .main_about_btn, .main_about .main_about_text_wrapper .form .main_about_btn, .contacts .contacts_form .main_about .main_about_text_wrapper .main_about_btn, .main_about .main_about_text_wrapper .contacts .contacts_form .main_about_btn, .form .main_teach .main_teach_text_btn, .main_teach .form .main_teach_text_btn, .contacts .contacts_form .main_teach .main_teach_text_btn, .main_teach .contacts .contacts_form .main_teach_text_btn, .form .learners .learners_btn, .learners .form .learners_btn, .contacts .contacts_form .learners .learners_btn, .learners .contacts .contacts_form .learners_btn, .form .blog .blog_btn, .blog .form .blog_btn, .contacts .contacts_form .blog .blog_btn, .blog .contacts .contacts_form .blog_btn, .form .timetable .timetable_btn, .timetable .form .timetable_btn, .contacts .contacts_form .timetable .timetable_btn, .timetable .contacts .contacts_form .timetable_btn {
+  width: 380px;
   height: 40px;
   line-height: 38px; }
 
@@ -322,12 +323,14 @@ input:focus {
   z-index: 10;
   background-color: #ffffff; }
   .main_teach .main_teach_header {
-    text-align: center; }
-  .main_teach img {
-    width: 100%; }
+    text-align: center;
+    width: auto;
+    display: inline-block;
+    opacity: 0; }
   .main_teach .main_teach_text {
     display: block;
-    padding-top: 24px; }
+    padding-top: 54px;
+    opacity: 0; }
     .main_teach .main_teach_text p {
       line-height: 20px;
       padding-top: 10px; }
@@ -338,6 +341,16 @@ input:focus {
   .main_teach .main_teach_btn {
     width: 220px;
     margin: 60px auto 0 auto; }
+  .main_teach .main_teach_img_wrapper {
+    width: 100%;
+    overflow: hidden; }
+  .main_teach .main_teach_img_viewer {
+    position: relative;
+    left: 100%;
+    width: 100%; }
+    .main_teach .main_teach_img_viewer img {
+      width: 100%;
+      height: auto; }
 
 /*GALLERY*/
 .main_gallery {
@@ -417,8 +430,6 @@ input:focus {
   background-color: #ffffff; }
   .main_publication .main_publication_header {
     text-align: center; }
-  .main_publication img {
-    width: 100%; }
   .main_publication .main_publication_text {
     display: block;
     padding-top: 24px; }
@@ -433,6 +444,16 @@ input:focus {
   .main_publication .main_publication_btn {
     width: 220px;
     margin: 60px auto 0 auto; }
+  .main_publication .main_publication_img_wrapper {
+    width: 100%;
+    overflow: hidden; }
+  .main_publication .main_publication_img_viewer {
+    position: relative;
+    left: 100%;
+    width: 100%; }
+    .main_publication .main_publication_img_viewer img {
+      width: 100%;
+      height: auto; }
 
 /*CONTACTS*/
 .contacts {
@@ -461,7 +482,8 @@ input:focus {
 footer {
   position: relative;
   width: 100%;
-  padding: 90px 40px 20px 40px; }
+  padding: 90px 40px 20px 40px;
+  overflow: hidden; }
   footer .company a {
     color: #6690b8; }
 
@@ -469,17 +491,28 @@ footer {
 .about {
   position: relative;
   width: 100%;
-  padding: 60px 40px 0 40px;
+  padding: 80px 40px 0 40px;
   overflow: hidden; }
   .about .row {
     padding-top: 60px; }
+  .about .about_block:nth-child(2n) img {
+    float: left; }
   .about img {
-    width: 100%; }
+    width: auto;
+    max-height: 500px;
+    float: right; }
   .about .about_text p {
     line-height: 24px;
     margin-bottom: 10px; }
   .about .about_text strong {
     color: #4b82b3; }
+  .about .about_block_img_wrapper {
+    width: 100%;
+    overflow: hidden; }
+  .about .about_block_img_viewer {
+    position: relative;
+    left: 100%;
+    width: 100%; }
 
 /*ABOUT_CERTIFICATES*/
 .about_certificates {
@@ -496,8 +529,8 @@ footer {
   .about_certificates .about_certificates_next_arrow {
     cursor: pointer;
     position: absolute;
-    top: 55%;
-    right: 0;
+    top: 70%;
+    right: 20px;
     background-image: url("../img/next_arrow.png");
     width: 20px;
     height: 36px;
@@ -506,8 +539,8 @@ footer {
     cursor: pointer;
     position: absolute;
     display: block;
-    top: 55%;
-    left: 0;
+    top: 70%;
+    left: 20px;
     background-image: url("../img/prew_arrow.png");
     width: 20px;
     height: 36px;
@@ -534,8 +567,8 @@ footer {
   .about_reviews .about_reviews_next_arrow {
     cursor: pointer;
     position: absolute;
-    top: 55%;
-    right: 0;
+    top: 70%;
+    right: 20px;
     background-image: url("../img/next_arrow.png");
     width: 20px;
     height: 36px;
@@ -544,8 +577,8 @@ footer {
     cursor: pointer;
     position: absolute;
     display: block;
-    top: 55%;
-    left: 0;
+    top: 70%;
+    left: 20px;
     background-image: url("../img/prew_arrow.png");
     width: 20px;
     height: 36px;
@@ -555,7 +588,8 @@ footer {
 .teach {
   position: relative;
   width: 100%;
-  padding: 120px 40px 0 40px; }
+  padding: 120px 40px 0 40px;
+  overflow: hidden; }
   .teach .teach_header {
     padding-left: 15px; }
   .teach img {
@@ -609,7 +643,7 @@ footer {
       height: auto;
       top: 0;
       left: 0;
-      padding: 36% 0;
+      padding: 38% 0;
       text-align: center;
       background-color: rgba(255, 255, 255, 0.5);
       z-index: 100; }
@@ -727,8 +761,12 @@ footer {
   padding: 140px 40px 0 40px; }
   .course_base .row {
     margin-bottom: 60px; }
+  .course_base .course_base_block:nth-child(2n) img {
+    float: left; }
   .course_base img {
-    width: 100%; }
+    width: auto;
+    max-height: 500px;
+    float: right; }
   .course_base .course_base_text {
     display: block; }
     .course_base .course_base_text p {
@@ -739,6 +777,13 @@ footer {
       color: #000000; }
   .course_base .course_base_text_btn {
     margin-top: 40px; }
+  .course_base .course_base_img_wrapper {
+    width: 100%;
+    overflow: hidden; }
+  .course_base .course_base_img_viewer {
+    position: relative;
+    left: 100%;
+    width: 100%; }
 
 /*COURSE_OTHER*/
 .course_other {

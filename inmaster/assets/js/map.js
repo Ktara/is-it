@@ -24,8 +24,16 @@ function initMap() {
                     ]
                 }
             ]
-
-
         });
+    var image = {
+        url: 'assets/img/marker.svg',
+        scaledSize: new google.maps.Size(50, 50),
+    };
+    var marker = new google.maps.Marker({
+        position: {lat: 50.455851, lng: 30.490049},
+        map: map,
+        icon: image,
+
+    });
 
 };

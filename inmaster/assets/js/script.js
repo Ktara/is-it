@@ -72,10 +72,30 @@ $('.timetable_slider_wrapper').slick({
 });
 
 
-var heightFirstBlock = window.clientHeight || document.documentElement.clientHeight;
+// var heightFirstBlock = window.clientHeight || document.documentElement.clientHeight;
+// var firstImgPosition = $('.main_teach_img_wrapper').offset();
+// var firstImgStatus = true;
+// console.log(firstImgPosition);
 
 window.onscroll = function() {
     var scrolled = window.pageYOffset || document.documentElement.scrollTop;
+    // if (scrolled > firstImgPosition.top*0.8 && firstImgStatus){
+    //     firstImgStatus = false;
+    //     $('.main_teach_img_viewer').velocity({
+    //         left : 0
+    //     },2000);
+    //     $('.main_teach_header').velocity({
+    //         width: '100%',
+    //         opacity: 1
+    //     }, 2000);
+    //     $('.main_teach_text').velocity({
+    //         'padding-top': '24px',
+    //         opacity: 1
+    //     }, 2000)
+    // }
+
+
+
     if (scrolled > 1){
         $('.nav_header').addClass('header_active');
     } else {

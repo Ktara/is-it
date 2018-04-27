@@ -115,7 +115,7 @@ $light-blue: #6690b8;
 /*FORM*/
 
 .form input {
-  width: 100%;
+  width: 380px;
   height: 40px;
   line-height: 38px;
   border-radius: 20px;
@@ -125,34 +125,10 @@ $light-blue: #6690b8;
   text-indent: 20px;
 }
 .form .btn {
+  width: 380px;
   height: 40px;
   line-height: 38px;
 }
-//input::-moz-placeholder {
-//  @extend .font_reg;
-//  color: $main-blue;
-//  opacity: 0.5;
-//}
-//input::-webkit-input-placeholder {
-//  @extend .font_reg;
-//  color: $main-blue;
-//  opacity: 0.5;
-//}
-//input:-ms-input-placeholder {
-//  @extend .font_reg;
-//  color: $main-blue;
-//  opacity: 0.5;
-//}
-//input::-ms-input-placeholder {
-//  @extend .font_reg;
-//  color: $main-blue;
-//  opacity: 0.5;
-//}
-//input::placeholder {
-//  @extend .font_reg;
-//  color: $main-blue;
-//  opacity: 0.5;
-//}
 input:focus {
   @extend .font_reg;
   outline: none;

@@ -293,13 +293,14 @@
   .main_teach_header {
     @extend .header;
     text-align: center;
-  }
-  img {
-    width: 100%;
+    width: auto;
+    display: inline-block;
+    opacity: 0;
   }
   .main_teach_text {
     display: block;
-    padding-top: 24px;
+    padding-top: 54px;
+    opacity: 0;
     p {
       @extend .font-light;
       line-height: 20px;
@@ -318,6 +319,19 @@
     @extend .fill_btn;
     width: 220px;
     margin: 60px auto 0 auto;
+  }
+  .main_teach_img_wrapper {
+    width: 100%;
+    overflow: hidden;
+  }
+  .main_teach_img_viewer {
+    position: relative;
+    left: 100%;
+    width: 100%;
+    img {
+      width: 100%;
+      height: auto;
+    }
   }
 }
 
@@ -436,9 +450,6 @@
     @extend .header;
     text-align: center;
   }
-  img {
-    width: 100%;
-  }
   .main_publication_text {
     display: block;
     padding-top: 24px;
@@ -461,6 +472,19 @@
     @extend .fill_btn;
     width: 220px;
     margin: 60px auto 0 auto;
+  }
+  .main_publication_img_wrapper {
+    width: 100%;
+    overflow: hidden;
+  }
+  .main_publication_img_viewer {
+    position: relative;
+    left: 100%;
+    width: 100%;
+    img {
+      width: 100%;
+      height: auto;
+    }
   }
 }
 
@@ -521,6 +545,7 @@ footer {
   position: relative;
   width: 100%;
   padding: 90px 40px 20px 40px;
+  overflow: hidden;
   //padding-top: 90px;
   //padding-bottom: 20px;
   .company {
@@ -541,13 +566,20 @@ footer {
 .about {
   position: relative;
   width: 100%;
-  padding: 60px 40px 0 40px;
+  padding: 80px 40px 0 40px;
   overflow: hidden;
   .row {
     padding-top: 60px;
   }
+  .about_block:nth-child(2n) {
+    img {
+      float: left;
+    }
+  }
   img {
-    width: 100%;
+    width: auto;
+    max-height: 500px;
+    float: right;
   }
   .about_text {
     p {
@@ -558,6 +590,19 @@ footer {
     strong {
       color: $main-blue;
     }
+  }
+  .about_block_img_wrapper {
+    width: 100%;
+    overflow: hidden;
+  }
+  .about_block_img_viewer {
+    position: relative;
+    left: 100%;
+    width: 100%;
+    //img {
+    //  width: 100%;
+    //  height: auto;
+    //}
   }
 }
 
@@ -590,8 +635,8 @@ footer {
   .about_certificates_next_arrow {
     cursor: pointer;
     position: absolute;
-    top: 55%;
-    right: 0;
+    top: 70%;
+    right: 20px;
     background-image: url("../img/next_arrow.png");
     width: 20px;
     height: 36px;
@@ -601,8 +646,8 @@ footer {
     cursor: pointer;
     position: absolute;
     display: block;
-    top: 55%;
-    left: 0;
+    top: 70%;
+    left: 20px;
     background-image: url("../img/prew_arrow.png");
     width: 20px;
     height: 36px;
@@ -653,8 +698,8 @@ footer {
   .about_reviews_next_arrow {
     cursor: pointer;
     position: absolute;
-    top: 55%;
-    right: 0;
+    top: 70%;
+    right: 20px;
     background-image: url("../img/next_arrow.png");
     width: 20px;
     height: 36px;
@@ -664,8 +709,8 @@ footer {
     cursor: pointer;
     position: absolute;
     display: block;
-    top: 55%;
-    left: 0;
+    top: 70%;
+    left: 20px;
     background-image: url("../img/prew_arrow.png");
     width: 20px;
     height: 36px;
@@ -683,6 +728,7 @@ footer {
   position: relative;
   width: 100%;
   padding: 120px 40px 0 40px;
+  overflow: hidden;
   .teach_header {
     @extend .header;
     padding-left: 15px;
@@ -765,7 +811,7 @@ footer {
         height: auto;
         top: 0;
         left: 0;
-        padding: 36% 0;
+        padding: 38% 0;
         text-align: center;
         background-color: rgba(255, 255, 255, 0.5);
         z-index: 100;
@@ -976,8 +1022,15 @@ footer {
   .row {
     margin-bottom: 60px;
   }
+  .course_base_block:nth-child(2n) {
+    img {
+      float: left;
+    }
+  }
   img {
-    width: 100%;
+    width: auto;
+    max-height: 500px;
+    float: right;
   }
   .course_base_text {
     display: block;
@@ -994,6 +1047,19 @@ footer {
   .course_base_text_btn {
     @extend .fill_btn;
     margin-top: 40px;
+  }
+  .course_base_img_wrapper {
+    width: 100%;
+    overflow: hidden;
+  }
+  .course_base_img_viewer {
+    position: relative;
+    left: 100%;
+    width: 100%;
+    //img {
+    //  width: 100%;
+    //  height: auto;
+    //}
   }
 }
 
