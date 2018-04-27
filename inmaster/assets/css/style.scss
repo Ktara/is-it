@@ -13,14 +13,24 @@
   position: fixed;
   width: 100%;
   height: 50px;
+  top: 0;
   z-index: 101;
   margin-top: 30px;
+  padding: 0 40px;
+  background-color: transparent;
+  transition: background-color 0.6s, margin-top 0.6s, height 0.6s;
   .logo {
-    display: block;
-    width: 80px;
+    display: inline-block;
+    width: 140px;
     height: auto;
+    line-height: 50px;
+    vertical-align: middle;
+    transition: width 0.6s, height 0.6s, line-height 0.6s;
     img {
       width: 100%;
+      line-height: 50px;
+      vertical-align: middle;
+      transition: line-height 0.6s;
     }
   }
   .nav_wrapper {
@@ -29,6 +39,7 @@
       display: flex;
       justify-content: space-between;
       line-height: 50px;
+      transition: line-height 0.6s;
       a {
         @extend .tm_link;
       }
@@ -44,6 +55,7 @@
     .lang_list {
       line-height: 50px;
       float: right;
+      transition: line-height 0.6s;
     }
     .lang_list li {
       display: block;
@@ -67,6 +79,29 @@
     }
   }
 }
+.header_active {
+  background-color: $main-white;
+  height: 100px;
+  margin-top: 0;
+  .logo {
+    width: 80px;
+    height: 100px;
+    line-height: 100px;
+    img {
+      line-height: 100px;
+    }
+  }
+  .nav_wrapper {
+    .nav_header_menu {
+      line-height: 100px;
+    }
+  }
+  .lang_wrapper {
+    .lang_list {
+      line-height: 100px;
+    }
+  }
+}
 
 
 
@@ -79,12 +114,15 @@
   position: relative;
   width: 100%;
   height: 100vh;
+  padding: 0 40px;
+  overflow: hidden;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center right;
   .main_header {
     width: 55%;
     font-size: 48px;
+    line-height: 60px;
     @extend .font-bold;
     color: $main-blue;
     margin-top: 30vh;
@@ -121,6 +159,9 @@
   position: relative;
   width: 100%;
   overflow: hidden;
+  z-index: 10;
+  padding: 0 40px;
+  background-color: $main-white;
   img {
     width: 100%;
     height: auto;
@@ -154,8 +195,10 @@
 .main_advantage {
   position: relative;
   width: 100%;
-  height: 50vh;
+  height: 45vh;
+  max-height: 400px;
   margin-top: 140px;
+  padding: 0 40px;
   overflow: hidden;
   background-repeat: no-repeat;
   background-size: cover;
@@ -172,7 +215,8 @@
   .main_advantage_slider_wrapper {
     position: relative;
     width: 100%;
-    height: 50vh;
+    height: 45vh;
+    max-height: 400px;
     z-index: 101;
     overflow: hidden;
     .main_advantage_header {
@@ -184,7 +228,7 @@
     .main_advantage_slider {
       width: 100%;
       height: auto;
-      margin-top: 5vh;
+      margin-top: 40px;
       .main_advantage_slide {
         width: 25%;
         display: inline-block;
@@ -194,6 +238,7 @@
           width: auto;
           height: 60px;
           display: inline-block;
+          stroke: $main-white;
         }
         p {
           color: $main-white;
@@ -242,7 +287,9 @@
   position: relative;
   width: 100%;
   overflow: hidden;
-  padding-top: 140px;
+  padding: 140px 40px 0 40px;
+  z-index: 10;
+  background-color: $main-white;
   .main_teach_header {
     @extend .header;
     text-align: center;
@@ -284,8 +331,10 @@
 /*GALLERY*/
 .main_gallery {
   position: relative;
-  padding-top: 140px;
+  padding: 140px 40px 0 40px;
   width: 100%;
+  z-index: 10;
+  background-color: $main-white;
   .container {
     position: relative;
   }
@@ -331,8 +380,10 @@
 .main_certificates {
   position: relative;
   width: 100%;
-  padding-top: 140px;
+  padding: 140px 40px 0 40px;
   overflow: hidden;
+  z-index: 10;
+  background-color: $main-white;
   .main_certificates_header {
     @extend .header;
     text-align: center;
@@ -378,7 +429,9 @@
   position: relative;
   width: 100%;
   overflow: hidden;
-  padding-top: 140px;
+  padding: 140px 40px 0 40px;
+  z-index: 10;
+  background-color: $main-white;
   .main_publication_header {
     @extend .header;
     text-align: center;
@@ -421,8 +474,10 @@
 .contacts {
   position: relative;
   width: 100%;
-  padding-top: 140px;
+  padding: 140px 40px 0 40px;
   clear: both;
+  z-index: 10;
+  background-color: $main-white;
   .contacts_header {
     @extend .header;
   }
@@ -465,8 +520,9 @@
 footer {
   position: relative;
   width: 100%;
-  padding-top: 90px;
-  padding-bottom: 20px;
+  padding: 90px 40px 20px 40px;
+  //padding-top: 90px;
+  //padding-bottom: 20px;
   .company {
     a {
       color: $light-blue;
@@ -485,7 +541,7 @@ footer {
 .about {
   position: relative;
   width: 100%;
-  padding-top: 60px;
+  padding: 60px 40px 0 40px;
   overflow: hidden;
   .row {
     padding-top: 60px;
@@ -515,7 +571,7 @@ footer {
 .about_certificates {
   position: relative;
   width: 100%;
-  padding-top: 140px;
+  padding: 140px 40px 0 40px;
   .container {
     position: relative;
   }
@@ -563,7 +619,7 @@ footer {
 .about_reviews {
   position: relative;
   width: 100%;
-  padding-top: 140px;
+  padding: 140px 40px 0 40px;
   .container {
     position: relative;
   }
@@ -626,7 +682,11 @@ footer {
 .teach {
   position: relative;
   width: 100%;
-  padding-top: 120px;
+  padding: 120px 40px 0 40px;
+  .teach_header {
+    @extend .header;
+    padding-left: 15px;
+  }
   img {
     width: 100%;
     margin-top: 20px;
@@ -661,7 +721,7 @@ footer {
 .teach_publications {
   position: relative;
   width: 100%;
-  padding-top: 140px;
+  padding: 140px 40px 0 40px;
   .teach_publications_header {
     @extend .header;
     padding-left: 15px;
@@ -688,7 +748,7 @@ footer {
 .learners {
   position: relative;
   width: 100%;
-  padding-top: 140px;
+  padding: 140px 40px 0 40px;
   overflow: hidden;
   .learners_header {
     @extend .header;
@@ -755,7 +815,7 @@ footer {
 .blog {
   position: relative;
   width: 100%;
-  padding-top: 100px;
+  padding: 100px 40px 0 40px;
   .row {
     overflow: hidden;
   }
@@ -794,7 +854,7 @@ footer {
 .article {
   position: relative;
   width: 100%;
-  padding-top: 140px;
+  padding: 140px 40px 0 40px;
   img {
     width: 100%;
     margin-bottom: 25px;
@@ -823,7 +883,7 @@ footer {
 .article_other {
   position: relative;
   width: 100%;
-  padding-top: 100px;
+  padding: 100px 40px 0 40px;
   .article_other_header {
     @extend .header;
   }
@@ -859,7 +919,7 @@ footer {
 .contact_map {
   position: relative;
   width: 100%;
-  padding-top: 140px;
+  padding: 140px 40px 0 40px;
   overflow: hidden;
   #contact_map {
     width: 100%;
@@ -877,7 +937,7 @@ footer {
 /*COURSE_MAIN*/
 .course_main {
   position: relative;
-  padding-top: 140px;
+  padding: 140px 40px 0 40px;
   width: 100%;
   .course_main_img_wrapper {
     img {
@@ -909,7 +969,7 @@ footer {
   position: relative;
   width: 100%;
   overflow: hidden;
-  padding-top: 140px;
+  padding: 140px 40px 0 40px;
   .course_base_header {
     @extend .header;
   }
@@ -946,7 +1006,7 @@ footer {
 .course_other {
   position: relative;
   width: 100%;
-  padding-top: 80px;
+  padding: 80px 40px 0 40px;
   .course_other_header {
     @extend .header;
   }
@@ -974,7 +1034,7 @@ footer {
 .course_spec {
   position: relative;
   width: 100%;
-  padding-top: 140px;
+  padding: 140px 40px 0 40px;
   .course_spec_header {
     @extend .header;
   }
@@ -1000,15 +1060,22 @@ footer {
 .timetable {
   position: relative;
   width: 100%;
-  padding-top: 140px;
+  padding: 140px 40px 0 40px;
   .timetable_header {
     @extend .header;
+  }
+  .timetable_slider_wrapper {
+    overflow: hidden;
+    position: relative;
   }
   .timetable_arrows_block {
     width: 100%;
     height: 80px;
     background-color: rgba(216, 217, 219, 0.2);
     margin-bottom: 40px;
+  }
+  .timetable_slide {
+    display: inline-block;
   }
   .table_body {
     color: $grey;
@@ -1017,12 +1084,6 @@ footer {
   td {
     padding: 15px 0;
   }
-  //.table_head {
-  //  padding-bottom: 25px;
-  //}
-  //.table_block {
-  //  padding-bottom: 40px;
-  //}
   .table_text {
     text-align: left;
     width: 30%;
@@ -1037,6 +1098,52 @@ footer {
     display: inline-block;
     width: 220px;
     float: right;
-
+  }
+  .timetable_text_block {
+    width: 100%;
+    height: 80px;
+    color: $grey;
+    @extend .font-light;
+    line-height: 80px;
+    text-align: center;
+    margin-top: 40px;
+    vertical-align: middle;
+    background-color: rgba(216, 217, 219, 0.2);
+  }
+  .timetable_next_arrow {
+    cursor: pointer;
+    position: absolute;
+    top: 29px;
+    right: 35%;
+    background-image: url("../img/tt-nextAr.png");
+    background-repeat: no-repeat;
+    width: 12px;
+    height: 22px;
+    z-index: 101;
+  }
+  .timetable_prev_arrow {
+    cursor: pointer;
+    position: absolute;
+    display: block;
+    top: 29px;
+    left: 43%;
+    background-image: url("../img/tt-prevAr.png");
+    background-repeat: no-repeat;
+    width: 12px;
+    height: 22px;
+    z-index: 101;
+  }
+  .slick-dots {
+    position: absolute;
+    top: 31px;
+    left: 44%;
+    width: 20%;
+    text-align: center;
+  }
+  .slick-dots li {
+    display: none;
+  }
+  .slick-dots .slick-active {
+    display: inline-block;
   }
 }
