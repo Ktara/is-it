@@ -76,7 +76,7 @@ var scrollTR = false;
 var firstImgPosition, secondImgPosition , thirdImgPosition;
 var firstImgStatus, secondImgStatus, thirdImgStatus;
 
-if($('.fmti_wrapper').length > 0) {
+if($('.fmti_wrapper').length > 0 || $('.fmtia_wrapper').length > 0) {
     scrollTR = true;
     firstImgPosition = $('.fmti_wrapper').offset();
     secondImgPosition = $('.smti_wrapper').offset();
@@ -84,13 +84,27 @@ if($('.fmti_wrapper').length > 0) {
     firstImgStatus = true;
     secondImgStatus = true;
     thirdImgStatus = true;
+    if($('.fmtia_wrapper').length > 0) {
+        firstImgStatus = false;
+    }
+        $('.fmtia_viewer').velocity({
+            left : 0
+        },2000);
+        $('.fmta_header').velocity({
+            width: '100%',
+            opacity: 1
+        }, 2000);
+        $('.fmta_text').velocity({
+            'padding-top': '24px',
+            opacity: 1
+        }, 2000)
 }
-var scrollTR = false;
+var scrollTR2 = false;
 var firstImagePosition, secondImagePosition;
 var firstImageStatus, secondImageStatus;
 
 if($('.fmpi_wrapper').length > 0) {
-    scrollTR = true;
+    scrollTR2 = true;
     firstImagePosition = $('.fmpi_wrapper').offset();
     secondImagePosition = $('.smpi_wrapper').offset();
     firstImageStatus = true;
@@ -102,7 +116,7 @@ if($('.fmpi_wrapper').length > 0) {
 window.onscroll = function() {
     var scrolled = window.pageYOffset || document.documentElement.scrollTop;
     if(scrollTR){
-    if (scrolled > firstImgPosition.top*0.7 && firstImgStatus){
+    if (scrolled > firstImgPosition.top*0.6 && firstImgStatus){
         firstImgStatus = false;
         $('.fmti_viewer').velocity({
             left : 0
@@ -130,7 +144,7 @@ window.onscroll = function() {
             opacity: 1
         }, 2000)
     }
-    if (scrolled > secondImgPosition.top*0.7 && secondImgStatus){
+    if (scrolled > secondImgPosition.top*0.6 && secondImgStatus){
         secondImgStatus = false;
         $('.smti_viewer').velocity({
             right : 0

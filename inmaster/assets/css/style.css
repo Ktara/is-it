@@ -248,8 +248,9 @@ input:focus {
     left: 100%;
     width: 100%; }
     .main_about .main_about_img_viewer img {
-      width: 100%;
-      height: auto; }
+      width: auto;
+      max-height: 500px;
+      float: right; }
 
 /*SCHOOL_ADVANTAGE*/
 .main_advantage {
@@ -335,6 +336,8 @@ input:focus {
     width: auto;
     display: inline-block;
     opacity: 0; }
+  .main_teach .main_teach_block:nth-child(2n) img {
+    float: left; }
   .main_teach .main_teach_text {
     display: block;
     padding-top: 54px;
@@ -357,8 +360,9 @@ input:focus {
     left: 100%;
     width: 100%; }
     .main_teach .main_teach_img_viewer img {
-      width: 100%;
-      height: auto; }
+      width: auto;
+      max-height: 500px;
+      float: right; }
 
 .smti_viewer {
   left: auto !important;
@@ -445,6 +449,11 @@ input:focus {
     width: auto;
     display: inline-block;
     opacity: 0; }
+  .main_publication .main_publication_block:nth-child(2n) img {
+    float: right; }
+  .main_publication .main_publication_block:nth-child(2n) .main_publication_img_viewer {
+    right: auto;
+    left: 100%; }
   .main_publication .main_publication_text {
     display: block;
     padding-top: 54px;
@@ -465,11 +474,12 @@ input:focus {
     overflow: hidden; }
   .main_publication .main_publication_img_viewer {
     position: relative;
-    left: 100%;
+    right: 100%;
     width: 100%; }
     .main_publication .main_publication_img_viewer img {
-      width: 100%;
-      height: auto; }
+      width: auto;
+      max-height: 500px;
+      float: left; }
 
 /*CONTACTS*/
 .contacts {
