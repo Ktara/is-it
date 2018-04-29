@@ -167,6 +167,10 @@
     @extend .font-bold;
     color: $main-blue;
     margin-top: 30vh;
+    @media screen and (max-width: 375px) {
+      font-size: 30px;
+      line-height: 36px;
+    }
   }
   .main_btn {
     @extend .fill_btn;
@@ -212,6 +216,10 @@
     @media screen and (max-width: 992px) {
       padding-top: 20px;
     }
+    @media screen and (max-width: 375px) {
+      height: 270px;
+      overflow: hidden;
+    }
     span {
       color: $main-blue;
       @extend .font-bold;
@@ -224,6 +232,28 @@
     .main_about_btn {
       @extend .btn;
       margin-top: 20px;
+      @media screen and (max-width: 375px) {
+        display: none;
+      }
+    }
+  }
+  .main_about_btn {
+    @media screen and (max-width: 375px) {
+      display: block;
+      width: auto;
+      height: 50px;
+      line-height: 48px;
+      border-radius: 20px;
+      border: 1px solid $main-blue;
+      color: $main-blue;
+      text-align: center;
+      text-decoration: none;
+      cursor: pointer;
+      margin-top: 40px;
+      &:hover {
+        text-decoration: underline;
+        color: $main-blue;
+      }
     }
   }
   .main_about_img_wrapper {
@@ -1060,6 +1090,23 @@ footer {
     @extend .tm_link_active;
     display: block;
     margin: 40px 0 60px 0;
+    @media screen and (max-width: 992px) {
+      display: inline-block;
+      margin-top: 40px;
+    }
+  }
+  .learners_link_facebook {
+    display: none;
+    @media screen and (max-width: 992px) {
+      display: inline-block;
+      float: right;
+      margin-top: 40px;
+      color: $main-blue;
+      &hover {
+        color: $main-blue;
+        text-decoration: underline;
+      }
+    }
   }
   .learners_btn {
     @extend .btn;
@@ -1078,6 +1125,9 @@ footer {
   position: relative;
   width: 100%;
   padding: 100px 40px 0 40px;
+  @media screen and (max-width: 992px) {
+    padding: 100px 25px 0 25px;
+  }
   .row {
     overflow: hidden;
   }
@@ -1117,11 +1167,18 @@ footer {
   position: relative;
   width: 100%;
   padding: 140px 40px 0 40px;
+  @media screen and (max-width: 992px) {
+    padding: 120px 25px 0 25px;
+  }
   img {
     width: 100%;
     margin-bottom: 25px;
   }
   .article_text_block {
+    @media screen and (max-width: 992px) {
+      height: 500px;
+      overflow: hidden;
+    }
     p {
       @extend .font-light;
       color: $grey;
@@ -1131,6 +1188,19 @@ footer {
     span {
       @extend .font_reg;
       color: $main-black;
+    }
+  }
+  .article_read_btn {
+    display: none;
+    @media screen and (max-width: 992px) {
+      display: block;
+      margin-top: 20px;
+      color: $main-blue;
+      cursor: pointer;
+      &hover {
+        color: $main-blue;
+        text-decoration: underline;
+      }
     }
   }
 }
@@ -1146,6 +1216,9 @@ footer {
   position: relative;
   width: 100%;
   padding: 100px 40px 0 40px;
+  @media screen and (max-width: 992px) {
+    padding: 100px 25px 0 25px;
+  }
   .article_other_header {
     @extend .header;
   }
@@ -1182,6 +1255,9 @@ footer {
   position: relative;
   width: 100%;
   padding: 140px 40px 0 40px;
+  @media screen and (max-width: 992px) {
+    padding: 120px 0 0 0;
+  }
   overflow: hidden;
   #contact_map {
     width: 100%;
@@ -1201,6 +1277,9 @@ footer {
   position: relative;
   padding: 140px 40px 0 40px;
   width: 100%;
+  @media screen and (max-width: 992px) {
+    padding: 120px 0 0 0;
+  }
   .course_main_img_wrapper {
     img {
       width: 100%;
@@ -1232,14 +1311,23 @@ footer {
   width: 100%;
   overflow: hidden;
   padding: 140px 40px 0 40px;
+  @media screen and (max-width: 992px) {
+    padding: 120px 25px 0 25px;
+  }
   .course_base_header {
     @extend .header;
     width: auto;
     display: inline-block;
     opacity: 0;
+    @media screen and (max-width: 992px) {
+      margin-bottom: 15px;
+    }
   }
   .row {
     margin-bottom: 60px;
+    @media screen and (max-width: 992px) {
+      margin-bottom: 15px;
+    }
   }
   //.course_base_block:nth-child(2n) {
   //  img {
@@ -1250,6 +1338,9 @@ footer {
     width: auto;
     max-height: 500px;
     float: right;
+    @media screen and (max-width: 992px) {
+      padding-top: 24px;
+    }
   }
   .course_base_text {
     display: block;
@@ -1294,6 +1385,10 @@ footer {
   position: relative;
   width: 100%;
   padding: 80px 40px 0 40px;
+  overflow: hidden;
+  @media screen and (max-width: 992px) {
+    padding: 80px 25px 0 25px;
+  }
   .course_other_header {
     @extend .header;
   }
@@ -1305,8 +1400,9 @@ footer {
   }
   .course_other_btn {
     @extend .fill_btn;
-    margin: 30px auto 0 auto;
+    margin: 45px auto 0 auto;
     width: 220px;
+    clear: both;
   }
 }
 
@@ -1322,6 +1418,9 @@ footer {
   position: relative;
   width: 100%;
   padding: 140px 40px 0 40px;
+  @media screen and (max-width: 992px) {
+    padding: 120px 25px 0 25px;
+  }
   .course_spec_header {
     @extend .header;
   }
@@ -1348,6 +1447,9 @@ footer {
   position: relative;
   width: 100%;
   padding: 140px 40px 0 40px;
+  @media screen and (max-width: 992px) {
+    padding: 120px 25px 0 25px;
+  }
   .timetable_header {
     @extend .header;
   }
@@ -1375,6 +1477,9 @@ footer {
     text-align: left;
     width: 30%;
     vertical-align: middle;
+    @media screen and (max-width: 992px) {
+      width: 60%;
+    }
   }
   .table_date {
     vertical-align: middle;
@@ -1385,6 +1490,9 @@ footer {
     display: inline-block;
     width: 220px;
     float: right;
+    @media screen and (max-width: 992px) {
+      display: none;
+    }
   }
   .timetable_text_block {
     width: 100%;
@@ -1407,6 +1515,9 @@ footer {
     width: 12px;
     height: 22px;
     z-index: 101;
+    @media screen and (max-width: 992px) {
+      right: 36%;
+    }
   }
   .timetable_prev_arrow {
     cursor: pointer;
@@ -1419,6 +1530,9 @@ footer {
     width: 12px;
     height: 22px;
     z-index: 101;
+    @media screen and (max-width: 992px) {
+      left: 40%;
+    }
   }
   .slick-dots {
     position: absolute;
@@ -1426,11 +1540,34 @@ footer {
     left: 44%;
     width: 20%;
     text-align: center;
+    @media screen and (max-width: 992px) {
+      left: 42%;
+    }
   }
   .slick-dots li {
     display: none;
   }
   .slick-dots .slick-active {
     display: inline-block;
+  }
+  .timetable_slide_btn {
+    display: none;
+    @media screen and (max-width: 992px) {
+      display: block;
+      width: 220px;
+      height: 50px;
+      line-height: 48px;
+      border-radius: 20px;
+      border: 1px solid $main-blue;
+      color: $main-blue;
+      text-align: center;
+      text-decoration: none;
+      cursor: pointer;
+      margin: 50px auto 0 auto;
+      &:hover {
+        text-decoration: underline;
+        color: $main-blue;
+      }
+    }
   }
 }

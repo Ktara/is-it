@@ -247,6 +247,10 @@ input:focus {
     line-height: 60px;
     color: #4b82b3;
     margin-top: 30vh; }
+    @media screen and (max-width: 375px) {
+      .main .main_header {
+        font-size: 30px;
+        line-height: 36px; } }
   .main .main_btn {
     margin-top: 10vh; }
   .main .main_btn:hover {
@@ -276,6 +280,10 @@ input:focus {
     @media screen and (max-width: 992px) {
       .main_about .main_about_text_wrapper {
         padding-top: 20px; } }
+    @media screen and (max-width: 375px) {
+      .main_about .main_about_text_wrapper {
+        height: 270px;
+        overflow: hidden; } }
     .main_about .main_about_text_wrapper span {
       color: #4b82b3; }
     .main_about .main_about_text_wrapper p {
@@ -283,6 +291,25 @@ input:focus {
       line-height: 24px; }
     .main_about .main_about_text_wrapper .main_about_btn {
       margin-top: 20px; }
+      @media screen and (max-width: 375px) {
+        .main_about .main_about_text_wrapper .main_about_btn {
+          display: none; } }
+  @media screen and (max-width: 375px) {
+    .main_about .main_about_btn {
+      display: block;
+      width: auto;
+      height: 50px;
+      line-height: 48px;
+      border-radius: 20px;
+      border: 1px solid #4b82b3;
+      color: #4b82b3;
+      text-align: center;
+      text-decoration: none;
+      cursor: pointer;
+      margin-top: 40px; }
+      .main_about .main_about_btn:hover {
+        text-decoration: underline;
+        color: #4b82b3; } }
   .main_about .main_about_img_wrapper {
     width: 100%;
     overflow: hidden; }
@@ -856,6 +883,21 @@ footer {
   .learners .learners_read_more {
     display: block;
     margin: 40px 0 60px 0; }
+    @media screen and (max-width: 992px) {
+      .learners .learners_read_more {
+        display: inline-block;
+        margin-top: 40px; } }
+  .learners .learners_link_facebook {
+    display: none; }
+    @media screen and (max-width: 992px) {
+      .learners .learners_link_facebook {
+        display: inline-block;
+        float: right;
+        margin-top: 40px;
+        color: #4b82b3; }
+        .learners .learners_link_facebookhover {
+          color: #4b82b3;
+          text-decoration: underline; } }
   .learners .learners_btn {
     width: 220px;
     margin: 20px auto 0 auto;
@@ -866,6 +908,9 @@ footer {
   position: relative;
   width: 100%;
   padding: 100px 40px 0 40px; }
+  @media screen and (max-width: 992px) {
+    .blog {
+      padding: 100px 25px 0 25px; } }
   .blog .row {
     overflow: hidden; }
   .blog img {
@@ -889,21 +934,42 @@ footer {
   position: relative;
   width: 100%;
   padding: 140px 40px 0 40px; }
+  @media screen and (max-width: 992px) {
+    .article {
+      padding: 120px 25px 0 25px; } }
   .article img {
     width: 100%;
     margin-bottom: 25px; }
+  @media screen and (max-width: 992px) {
+    .article .article_text_block {
+      height: 500px;
+      overflow: hidden; } }
   .article .article_text_block p {
     color: #6b6b6b;
     line-height: 24px;
     margin-top: 15px; }
   .article .article_text_block span {
     color: #000000; }
+  .article .article_read_btn {
+    display: none; }
+    @media screen and (max-width: 992px) {
+      .article .article_read_btn {
+        display: block;
+        margin-top: 20px;
+        color: #4b82b3;
+        cursor: pointer; }
+        .article .article_read_btnhover {
+          color: #4b82b3;
+          text-decoration: underline; } }
 
 /*ARTICLE_OTHER*/
 .article_other {
   position: relative;
   width: 100%;
   padding: 100px 40px 0 40px; }
+  @media screen and (max-width: 992px) {
+    .article_other {
+      padding: 100px 25px 0 25px; } }
   .article_other .row {
     overflow: hidden; }
   .article_other img {
@@ -923,6 +989,9 @@ footer {
   width: 100%;
   padding: 140px 40px 0 40px;
   overflow: hidden; }
+  @media screen and (max-width: 992px) {
+    .contact_map {
+      padding: 120px 0 0 0; } }
   .contact_map #contact_map {
     width: 100%;
     height: 45vh; }
@@ -932,6 +1001,9 @@ footer {
   position: relative;
   padding: 140px 40px 0 40px;
   width: 100%; }
+  @media screen and (max-width: 992px) {
+    .course_main {
+      padding: 120px 0 0 0; } }
   .course_main .course_main_img_wrapper img {
     width: 100%;
     height: auto; }
@@ -951,16 +1023,28 @@ footer {
   width: 100%;
   overflow: hidden;
   padding: 140px 40px 0 40px; }
+  @media screen and (max-width: 992px) {
+    .course_base {
+      padding: 120px 25px 0 25px; } }
   .course_base .course_base_header {
     width: auto;
     display: inline-block;
     opacity: 0; }
+    @media screen and (max-width: 992px) {
+      .course_base .course_base_header {
+        margin-bottom: 15px; } }
   .course_base .row {
     margin-bottom: 60px; }
+    @media screen and (max-width: 992px) {
+      .course_base .row {
+        margin-bottom: 15px; } }
   .course_base img {
     width: auto;
     max-height: 500px;
     float: right; }
+    @media screen and (max-width: 992px) {
+      .course_base img {
+        padding-top: 24px; } }
   .course_base .course_base_text {
     display: block;
     opacity: 0; }
@@ -984,20 +1068,28 @@ footer {
 .course_other {
   position: relative;
   width: 100%;
-  padding: 80px 40px 0 40px; }
+  padding: 80px 40px 0 40px;
+  overflow: hidden; }
+  @media screen and (max-width: 992px) {
+    .course_other {
+      padding: 80px 25px 0 25px; } }
   .course_other .course_other_text {
     line-height: 24px;
     padding-bottom: 30px;
     color: #6b6b6b; }
   .course_other .course_other_btn {
-    margin: 30px auto 0 auto;
-    width: 220px; }
+    margin: 45px auto 0 auto;
+    width: 220px;
+    clear: both; }
 
 /*COURSE_SPEC*/
 .course_spec {
   position: relative;
   width: 100%;
   padding: 140px 40px 0 40px; }
+  @media screen and (max-width: 992px) {
+    .course_spec {
+      padding: 120px 25px 0 25px; } }
   .course_spec .course_spec_text {
     line-height: 24px;
     color: #6b6b6b; }
@@ -1010,6 +1102,9 @@ footer {
   position: relative;
   width: 100%;
   padding: 140px 40px 0 40px; }
+  @media screen and (max-width: 992px) {
+    .timetable {
+      padding: 120px 25px 0 25px; } }
   .timetable .timetable_slider_wrapper {
     overflow: hidden;
     position: relative; }
@@ -1028,6 +1123,9 @@ footer {
     text-align: left;
     width: 30%;
     vertical-align: middle; }
+    @media screen and (max-width: 992px) {
+      .timetable .table_text {
+        width: 60%; } }
   .timetable .table_date {
     vertical-align: middle;
     text-align: center; }
@@ -1035,6 +1133,9 @@ footer {
     display: inline-block;
     width: 220px;
     float: right; }
+    @media screen and (max-width: 992px) {
+      .timetable .timetable_btn {
+        display: none; } }
   .timetable .timetable_text_block {
     width: 100%;
     height: 80px;
@@ -1054,6 +1155,9 @@ footer {
     width: 12px;
     height: 22px;
     z-index: 101; }
+    @media screen and (max-width: 992px) {
+      .timetable .timetable_next_arrow {
+        right: 36%; } }
   .timetable .timetable_prev_arrow {
     cursor: pointer;
     position: absolute;
@@ -1065,15 +1169,39 @@ footer {
     width: 12px;
     height: 22px;
     z-index: 101; }
+    @media screen and (max-width: 992px) {
+      .timetable .timetable_prev_arrow {
+        left: 40%; } }
   .timetable .slick-dots {
     position: absolute;
     top: 31px;
     left: 44%;
     width: 20%;
     text-align: center; }
+    @media screen and (max-width: 992px) {
+      .timetable .slick-dots {
+        left: 42%; } }
   .timetable .slick-dots li {
     display: none; }
   .timetable .slick-dots .slick-active {
     display: inline-block; }
+  .timetable .timetable_slide_btn {
+    display: none; }
+    @media screen and (max-width: 992px) {
+      .timetable .timetable_slide_btn {
+        display: block;
+        width: 220px;
+        height: 50px;
+        line-height: 48px;
+        border-radius: 20px;
+        border: 1px solid #4b82b3;
+        color: #4b82b3;
+        text-align: center;
+        text-decoration: none;
+        cursor: pointer;
+        margin: 50px auto 0 auto; }
+        .timetable .timetable_slide_btn:hover {
+          text-decoration: underline;
+          color: #4b82b3; } }
 
 /*# sourceMappingURL=style.css.map */
