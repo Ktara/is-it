@@ -24,6 +24,21 @@ $('.main_gallery_slider_wrapper').slick({
 
 
 
+$('.main_gallery_tablet_slider_wrapper').slick({
+    slidesToShow: 2,
+    slidesToScroll: 1,
+    dots: false,
+    arrows: true,
+    nextArrow: '<div class="main_gallery_next_arrow"></div>',
+    prevArrow: '<div class="main_gallery_prev_arrow"></div>',
+    zIndex: 100,
+    adaptiveHeight: true,
+    infinite: true
+});
+
+
+
+
 $('.about_certificates_slider_wrapper').slick({
     slidesToShow: 4,
     slidesToScroll: 1,
@@ -49,6 +64,21 @@ $('.about_reviews_slider_wrapper').slick({
     zIndex: 100,
     adaptiveHeight: true,
     infinite: true
+});
+
+
+
+
+$('.about_reviews_tablet_slider_wrapper').slick({
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    dots: false,
+    arrows: true,
+    nextArrow: '<div class="about_reviews_next_arrow"></div>',
+    prevArrow: '<div class="about_reviews_prev_arrow"></div>',
+    zIndex: 100,
+    adaptiveHeight: true,
+    infinite: true,
 });
 
 

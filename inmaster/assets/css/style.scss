@@ -19,6 +19,9 @@
   padding: 0 40px;
   background-color: transparent;
   transition: background-color 0.6s, margin-top 0.6s, height 0.6s;
+  @media screen and (max-width: 992px) {
+    padding: 0 25px;
+  }
   .logo {
     display: inline-block;
     width: 140px;
@@ -26,6 +29,9 @@
     line-height: 50px;
     vertical-align: middle;
     transition: width 0.6s, height 0.6s, line-height 0.6s;
+    @media screen and (max-width: 992px) {
+      width: 120px;
+    }
     img {
       width: 100%;
       line-height: 50px;
@@ -40,6 +46,35 @@
       justify-content: space-between;
       line-height: 50px;
       transition: line-height 0.6s;
+      @media screen and (max-width: 992px) {
+        display: block;
+        position: relative;
+        width: 40px;
+        height: 20px;
+        margin-top: 15px;
+        border-bottom: 3px solid $main-blue;
+        cursor: pointer;
+        float: right;
+        transition: margin-top 0.6s;
+        &:after,
+        &:before {
+          content: "";
+          display: block;
+          position: absolute;
+          top: -3px;
+          right: 0;
+          width: 40px;
+          height: 3px;
+          background-color: $main-blue;
+          transition: transform 0.6s , top 0.6s;
+        }
+        &:after {
+          top: 6px;
+        }
+        li {
+          display: none;
+        }
+      }
       a {
         @extend .tm_link;
       }
@@ -94,6 +129,9 @@
   .nav_wrapper {
     .nav_header_menu {
       line-height: 100px;
+      @media screen and (max-width: 992px) {
+        margin-top: 40px;
+      }
     }
   }
   .lang_wrapper {
@@ -119,6 +157,9 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center right;
+  @media screen and (max-width: 992px) {
+    padding: 0 25px;
+  }
   .main_header {
     width: 55%;
     font-size: 48px;
@@ -162,9 +203,15 @@
   z-index: 10;
   padding: 0 40px;
   background-color: $main-white;
+  @media screen and (max-width: 992px) {
+    padding: 0 25px;
+  }
   .main_about_text_wrapper {
     padding-top: 50px;
     opacity: 0;
+    @media screen and (max-width: 992px) {
+      padding-top: 20px;
+    }
     span {
       color: $main-blue;
       @extend .font-bold;
@@ -191,6 +238,9 @@
       width: auto;
       max-height: 500px;
       float: right;
+      @media screen and (max-width: 992px) {
+        width: 100%;
+      }
     }
   }
 }
@@ -213,6 +263,10 @@
   overflow: hidden;
   background-repeat: no-repeat;
   background-size: cover;
+  @media screen and (max-width: 992px) {
+    padding: 0 25px;
+    margin-top: 120px;
+  }
   &:after {
     content: '';
     position: absolute;
@@ -257,6 +311,9 @@
           display: block;
           margin: 20px auto 0 auto;
           line-height: 20px;
+          @media screen and (max-width: 992px) {
+            width: 100%;
+          }
         }
       }
     }
@@ -301,6 +358,9 @@
   padding: 140px 40px 0 40px;
   z-index: 10;
   background-color: $main-white;
+  @media screen and (max-width: 992px) {
+    padding: 120px 25px 0 25px;
+  }
   .main_teach_header {
     @extend .header;
     text-align: center;
@@ -317,6 +377,9 @@
     display: block;
     padding-top: 54px;
     opacity: 0;
+    @media screen and (max-width: 992px) {
+      padding-top: 40px;
+    }
     p {
       @extend .font-light;
       line-height: 20px;
@@ -330,6 +393,9 @@
   .main_teach_text_btn {
     @extend .btn;
     margin-top: 40px;
+    @media screen and (max-width: 992px) {
+      margin-bottom: 15px;
+    }
   }
   .main_teach_btn {
     @extend .fill_btn;
@@ -348,6 +414,9 @@
       width: auto;
       max-height: 500px;
       float: right;
+      @media screen and (max-width: 992px) {
+        width: 100%;
+      }
     }
   }
 }
@@ -370,10 +439,22 @@
   width: 100%;
   z-index: 10;
   background-color: $main-white;
+  @media screen and (max-width: 992px) {
+    padding: 120px 25px 0 25px;
+  }
   .container {
     position: relative;
   }
   .main_gallery_slider_wrapper {
+    overflow: hidden;
+    width: 100%;
+    .main_gallery_slide {
+      img {
+        width: 100%;
+      }
+    }
+  }
+  .main_gallery_tablet_slider_wrapper {
     overflow: hidden;
     width: 100%;
     .main_gallery_slide {
@@ -391,6 +472,10 @@
     width: 20px;
     height: 36px;
     z-index: 101;
+    @media screen and (max-width: 992px) {
+      top: 60%;
+      right: 15px;
+    }
   }
   .main_gallery_prev_arrow {
     cursor: pointer;
@@ -402,6 +487,10 @@
     width: 20px;
     height: 36px;
     z-index: 101;
+    @media screen and (max-width: 992px) {
+      top: 60%;
+      left: 15px;
+    }
   }
 }
 
@@ -419,6 +508,9 @@
   overflow: hidden;
   z-index: 10;
   background-color: $main-white;
+  @media screen and (max-width: 992px) {
+    padding: 120px 25px 0 25px;
+  }
   .main_certificates_header {
     @extend .header;
     text-align: center;
@@ -467,6 +559,9 @@
   padding: 140px 40px 0 40px;
   z-index: 10;
   background-color: $main-white;
+  @media screen and (max-width: 992px) {
+    padding: 120px 25px 0 25px;
+  }
   .main_publication_header {
     @extend .header;
     text-align: center;
@@ -487,6 +582,9 @@
     display: block;
     padding-top: 54px;
     opacity: 0;
+    @media screen and (max-width: 992px) {
+      margin-top: 40px;
+    }
     p {
       @extend .font-light;
       line-height: 20px;
@@ -501,6 +599,9 @@
     @extend .tm_link_active;
     display: block;
     margin-top: 40px;
+    @media screen and (max-width: 992px) {
+      margin-bottom: 15px;
+    }
   }
   .main_publication_btn {
     @extend .fill_btn;
@@ -519,6 +620,9 @@
       width: auto;
       max-height: 500px;
       float: left;
+      @media screen and (max-width: 992px) {
+        width: 100%;
+      }
     }
   }
 }
@@ -537,11 +641,18 @@
   clear: both;
   z-index: 10;
   background-color: $main-white;
+  @media screen and (max-width: 992px) {
+    padding: 120px 25px 0 25px;
+  }
   .contacts_header {
     @extend .header;
   }
   .contacts_form {
     @extend .form;
+    width: 380px;
+    @media screen and (max-width: 992px) {
+      width: 100%;
+    }
   }
   input:focus {
     @extend .font_reg;
@@ -581,9 +692,13 @@ footer {
   width: 100%;
   padding: 90px 40px 20px 40px;
   overflow: hidden;
-  //padding-top: 90px;
-  //padding-bottom: 20px;
+  @media screen and (max-width: 992px) {
+    padding: 40px 25px 20px 25px;
+  }
   .company {
+    @media screen and (max-width: 992px) {
+      float: right;
+    }
     a {
       color: $light-blue;
     }
@@ -603,6 +718,9 @@ footer {
   width: 100%;
   padding: 80px 40px 0 40px;
   overflow: hidden;
+  @media screen and (max-width: 992px) {
+    padding: 55px 25px 0 25px;
+  }
   .row {
     padding-top: 60px;
   }
@@ -611,15 +729,13 @@ footer {
       float: left;
     }
   }
-  img {
-    width: auto;
-    max-height: 500px;
-    float: right;
-  }
   .about_text {
     display: block;
-    //padding-top: 54px;
     opacity: 0;
+    @media screen and (max-width: 992px) {
+      height: 200px;
+      overflow: hidden;
+    }
     p {
       @extend .font-light;
       line-height: 24px;
@@ -629,6 +745,10 @@ footer {
       color: $main-blue;
     }
   }
+  .about_text_link_btn {
+    @extend .tm_link_active;
+    padding-top: 40px;
+  }
   .about_block_img_wrapper {
     width: 100%;
     overflow: hidden;
@@ -637,10 +757,15 @@ footer {
     position: relative;
     left: 100%;
     width: 100%;
-    //img {
-    //  width: 100%;
-    //  height: auto;
-    //}
+    img {
+      width: auto;
+      max-height: 500px;
+      float: right;
+      @media screen and (max-width: 992px) {
+        padding-top: 24px;
+        width: 100%;
+      }
+    }
   }
 }
 
@@ -655,8 +780,8 @@ footer {
   position: relative;
   width: 100%;
   padding: 140px 40px 0 40px;
-  .container {
-    position: relative;
+  @media screen and (max-width: 992px) {
+    padding: 120px 25px 0 25px;
   }
   .about_certificates_header {
     @extend .header;
@@ -679,6 +804,10 @@ footer {
     width: 20px;
     height: 36px;
     z-index: 101;
+    @media screen and (max-width: 992px) {
+      top: 75%;
+      right: 15px;
+    }
   }
   .about_certificates_prev_arrow {
     cursor: pointer;
@@ -690,6 +819,10 @@ footer {
     width: 20px;
     height: 36px;
     z-index: 101;
+    @media screen and (max-width: 992px) {
+      top: 75%;
+      left: 15px;
+    }
   }
 }
 
@@ -703,6 +836,9 @@ footer {
   position: relative;
   width: 100%;
   padding: 140px 40px 0 40px;
+  @media screen and (max-width: 992px) {
+    padding: 120px 25px 0 25px;
+  }
   .container {
     position: relative;
   }
@@ -733,6 +869,33 @@ footer {
       }
     }
   }
+  .about_reviews_tablet_slider_wrapper {
+    overflow: hidden;
+    width: 100%;
+    .about_reviews_slide {
+      img {
+        width: 100%;
+      }
+      .about_reviews_text {
+        p {
+          @extend .font-light;
+          line-height: 24px;
+          margin-bottom: 10px;
+        }
+        strong {
+          @extend .font_reg;
+        }
+        a {
+          @extend .tm_link_active;
+          margin-top: 20px;
+          display: block;
+        }
+      }
+    }
+    .fixed {
+      padding: 0;
+    }
+  }
   .about_reviews_next_arrow {
     cursor: pointer;
     position: absolute;
@@ -742,6 +905,9 @@ footer {
     width: 20px;
     height: 36px;
     z-index: 101;
+    @media screen and (max-width: 992px) {
+      right: 15px;
+    }
   }
   .about_reviews_prev_arrow {
     cursor: pointer;
@@ -753,6 +919,9 @@ footer {
     width: 20px;
     height: 36px;
     z-index: 101;
+    @media screen and (max-width: 992px) {
+      left: 15px;
+    }
   }
 }
 
@@ -767,6 +936,9 @@ footer {
   width: 100%;
   padding: 120px 40px 0 40px;
   overflow: hidden;
+  @media screen and (max-width: 992px) {
+    padding: 120px 25px 0 25px;
+  }
   .teach_header {
     @extend .header;
     padding-left: 15px;
@@ -806,6 +978,9 @@ footer {
   position: relative;
   width: 100%;
   padding: 140px 40px 0 40px;
+  @media screen and (max-width: 992px) {
+    padding: 120px 25px 0 25px;
+  }
   .teach_publications_header {
     @extend .header;
     padding-left: 15px;
@@ -834,6 +1009,9 @@ footer {
   width: 100%;
   padding: 140px 40px 0 40px;
   overflow: hidden;
+  @media screen and (max-width: 992px) {
+    padding: 120px 25px 0 25px;
+  }
   .learners_header {
     @extend .header;
   }
