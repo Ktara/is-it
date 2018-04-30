@@ -45,6 +45,15 @@ $light-blue: #6690b8;
   @extend .font-bold;
   color: $main-blue;
   margin-bottom: 40px;
+  @media screen and (max-width: 992px) {
+    line-height: 60px;
+  }
+  @media screen and (max-width: 375px) {
+    font-size: 24px;
+    line-height: 30px;
+    text-align: center;
+    margin-bottom: 0;
+  }
 }
 
 

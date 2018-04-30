@@ -14,25 +14,34 @@
   font-weight: 300;
   font-style: normal; }
 /*BODY*/
-.font_reg, .wrapper, .main_wrapper, input:focus, .main_teach .main_teach_text strong, .main_publication .main_publication_text strong, .contacts input:focus, .about_reviews .about_reviews_slider_wrapper .about_reviews_slide .about_reviews_text strong, .about_reviews .about_reviews_tablet_slider_wrapper .about_reviews_slide .about_reviews_text strong, .teach_publications .teach_publications_text_block span, .learners .learners_text_block span, .article .article_text_block span {
+.font_reg, .wrapper, .main_wrapper, input:focus, .main_teach .main_teach_text strong, .main_publication .main_publication_text strong, .contacts input:focus, .about_reviews .about_reviews_slider_wrapper .about_reviews_slide .about_reviews_text strong, .about_reviews .about_reviews_tablet_slider_wrapper .about_reviews_slide .about_reviews_text strong, .about_reviews .about_reviews_mob_slider_wrapper .about_reviews_slide .about_reviews_text strong, .teach_publications .teach_publications_text_block span, .learners .learners_text_block span, .article .article_text_block span {
   font-family: 'Roboto', sans-serif;
   font-weight: 400; }
 
-.font-bold, .header, .main_advantage .main_advantage_slider_wrapper .main_advantage_header, .main_teach .main_teach_header, .main_certificates .main_certificates_header, .main_publication .main_publication_header, .contacts .contacts_header, .about_certificates .about_certificates_header, .about_reviews .about_reviews_header, .teach .teach_header, .teach_publications .teach_publications_header, .learners .learners_header, .article_other .article_other_header, .course_base .course_base_header, .course_other .course_other_header, .course_spec .course_spec_header, .timetable .timetable_header, .main .main_header, .main_about .main_about_text_wrapper span, .course_main .course_main_text {
+.font-bold, .header, .main_about .main_about, .main_advantage .main_advantage_slider_wrapper .main_advantage_header, .main_advantage_mob .main_advantage_mob_header, .main_teach .main_teach_header, .main_certificates .main_certificates_header, .main_publication .main_publication_header, .contacts .contacts_header, .about_certificates .about_certificates_header, .about_certificates_mob .about_certificates_mob_header, .about_reviews .about_reviews_header, .teach .teach_header, .teach_publications .teach_publications_header, .learners .learners_header, .article_other .article_other_header, .course_base .course_base_header, .course_other .course_other_header, .course_spec .course_spec_header, .timetable .timetable_header, .main .main_header, .main_about .main_about_text_wrapper span, .course_main .course_main_text {
   font-family: 'Roboto', sans-serif;
   font-weight: 700; }
 
-.font-light, .main_about .main_about_text_wrapper p, .main_teach .main_teach_text p, .main_publication .main_publication_text p, .contacts .contacts_info p, .about .about_text p, .about_reviews .about_reviews_slider_wrapper .about_reviews_slide .about_reviews_text p, .about_reviews .about_reviews_tablet_slider_wrapper .about_reviews_slide .about_reviews_text p, .teach_publications .teach_publications_text_block p, .learners .learners_text_block p, .blog .blog_text_block p, .article .article_text_block p, .article_other .article_other_text_block p, .course_base .course_base_text p, .course_other .course_other_text, .course_spec .course_spec_text, .timetable .table_body, .timetable .timetable_text_block {
+.font-light, .main_about .main_about_text_wrapper p, .main_about .mob_text, .main_teach .main_teach_text p, .main_publication .main_publication_text p, .contacts .contacts_info p, .about .about_text p, .about_reviews .about_reviews_slider_wrapper .about_reviews_slide .about_reviews_text p, .about_reviews .about_reviews_tablet_slider_wrapper .about_reviews_slide .about_reviews_text p, .about_reviews .about_reviews_mob_slider_wrapper .about_reviews_slide .about_reviews_text p, .teach_publications .teach_publications_text_block p, .learners .learners_text_block p, .blog .blog_text_block p, .article .article_text_block p, .article_other .article_other_text_block p, .course_base .course_base_text p, .course_other .course_other_text, .course_spec .course_spec_text, .timetable .table_body, .timetable .timetable_text_block {
   font-family: 'Roboto', sans-serif;
   font-weight: 300; }
 
 .wrapper, .main_wrapper {
   font-size: 16px; }
 
-.header, .main_advantage .main_advantage_slider_wrapper .main_advantage_header, .main_teach .main_teach_header, .main_certificates .main_certificates_header, .main_publication .main_publication_header, .contacts .contacts_header, .about_certificates .about_certificates_header, .about_reviews .about_reviews_header, .teach .teach_header, .teach_publications .teach_publications_header, .learners .learners_header, .article_other .article_other_header, .course_base .course_base_header, .course_other .course_other_header, .course_spec .course_spec_header, .timetable .timetable_header {
+.header, .main_about .main_about, .main_advantage .main_advantage_slider_wrapper .main_advantage_header, .main_advantage_mob .main_advantage_mob_header, .main_teach .main_teach_header, .main_certificates .main_certificates_header, .main_publication .main_publication_header, .contacts .contacts_header, .about_certificates .about_certificates_header, .about_certificates_mob .about_certificates_mob_header, .about_reviews .about_reviews_header, .teach .teach_header, .teach_publications .teach_publications_header, .learners .learners_header, .article_other .article_other_header, .course_base .course_base_header, .course_other .course_other_header, .course_spec .course_spec_header, .timetable .timetable_header {
   font-size: 36px;
   color: #4b82b3;
   margin-bottom: 40px; }
+  @media screen and (max-width: 992px) {
+    .header, .main_about .main_about, .main_advantage .main_advantage_slider_wrapper .main_advantage_header, .main_advantage_mob .main_advantage_mob_header, .main_teach .main_teach_header, .main_certificates .main_certificates_header, .main_publication .main_publication_header, .contacts .contacts_header, .about_certificates .about_certificates_header, .about_certificates_mob .about_certificates_mob_header, .about_reviews .about_reviews_header, .teach .teach_header, .teach_publications .teach_publications_header, .learners .learners_header, .article_other .article_other_header, .course_base .course_base_header, .course_other .course_other_header, .course_spec .course_spec_header, .timetable .timetable_header {
+      line-height: 60px; } }
+  @media screen and (max-width: 375px) {
+    .header, .main_about .main_about, .main_advantage .main_advantage_slider_wrapper .main_advantage_header, .main_advantage_mob .main_advantage_mob_header, .main_teach .main_teach_header, .main_certificates .main_certificates_header, .main_publication .main_publication_header, .contacts .contacts_header, .about_certificates .about_certificates_header, .about_certificates_mob .about_certificates_mob_header, .about_reviews .about_reviews_header, .teach .teach_header, .teach_publications .teach_publications_header, .learners .learners_header, .article_other .article_other_header, .course_base .course_base_header, .course_other .course_other_header, .course_spec .course_spec_header, .timetable .timetable_header {
+      font-size: 24px;
+      line-height: 30px;
+      text-align: center;
+      margin-bottom: 0; } }
 
 /*LINKS*/
 .tm_link, .nav_header .nav_wrapper .nav_header_menu a, .blog .blog_text_block .blog_link, .article_other .article_other_text_block .article_other_link {
@@ -42,14 +51,14 @@
   color: #4b82b3;
   text-decoration: underline; }
 
-.tm_link_active, .nav_header .nav_wrapper .nav_header_menu .active_nav_punct, .main_publication .main_publication_link, .about .about_text_link_btn, .about_reviews .about_reviews_slider_wrapper .about_reviews_slide .about_reviews_text a, .about_reviews .about_reviews_tablet_slider_wrapper .about_reviews_slide .about_reviews_text a, .learners .learners_read_more {
+.tm_link_active, .nav_header .nav_wrapper .nav_header_menu .active_nav_punct, .main_publication .main_publication_link, .about .about_text_link_btn, .about_reviews .about_reviews_slider_wrapper .about_reviews_slide .about_reviews_text a, .about_reviews .about_reviews_tablet_slider_wrapper .about_reviews_slide .about_reviews_text a, .about_reviews .about_reviews_mob_slider_wrapper .about_reviews_slide .about_reviews_text a, .learners .learners_read_more, .course_base .course_base_read_btn {
   color: #4b82b3; }
-  .tm_link_active:hover, .nav_header .nav_wrapper .nav_header_menu .active_nav_punct:hover, .main_publication .main_publication_link:hover, .about .about_text_link_btn:hover, .about_reviews .about_reviews_slider_wrapper .about_reviews_slide .about_reviews_text a:hover, .about_reviews .about_reviews_tablet_slider_wrapper .about_reviews_slide .about_reviews_text a:hover, .learners .learners_read_more:hover {
+  .tm_link_active:hover, .nav_header .nav_wrapper .nav_header_menu .active_nav_punct:hover, .main_publication .main_publication_link:hover, .about .about_text_link_btn:hover, .about_reviews .about_reviews_slider_wrapper .about_reviews_slide .about_reviews_text a:hover, .about_reviews .about_reviews_tablet_slider_wrapper .about_reviews_slide .about_reviews_text a:hover, .about_reviews .about_reviews_mob_slider_wrapper .about_reviews_slide .about_reviews_text a:hover, .learners .learners_read_more:hover, .course_base .course_base_read_btn:hover {
     color: #4b82b3;
     text-decoration: underline; }
 
 /*BUTTONS*/
-.btn, .main .sub_btn, .main_about .main_about_text_wrapper .main_about_btn, .main_teach .main_teach_text_btn, .learners .learners_btn, .blog .blog_btn, .timetable .timetable_btn {
+.btn, .main .sub_btn, .main_about .main_about_btn, .main_teach .main_teach_text_btn, .teach_btn, .learners_btn, .blog_btn, .timetable .timetable_btn {
   display: block;
   width: auto;
   height: 50px;
@@ -61,7 +70,7 @@
   text-decoration: none;
   cursor: pointer; }
 
-.btn:hover, .main .sub_btn:hover, .main_about .main_about_text_wrapper .main_about_btn:hover, .main_teach .main_teach_text_btn:hover, .learners .learners_btn:hover, .blog .blog_btn:hover, .timetable .timetable_btn:hover {
+.btn:hover, .main .sub_btn:hover, .main_about .main_about_btn:hover, .main_teach .main_teach_text_btn:hover, .teach_btn:hover, .learners_btn:hover, .blog_btn:hover, .timetable .timetable_btn:hover {
   text-decoration: underline;
   color: #4b82b3; }
 
@@ -94,7 +103,7 @@
   opacity: 0.5;
   text-indent: 20px; }
 
-.form .btn, .contacts .contacts_form .btn, .form .main .sub_btn, .main .form .sub_btn, .contacts .contacts_form .main .sub_btn, .main .contacts .contacts_form .sub_btn, .form .main_about .main_about_text_wrapper .main_about_btn, .main_about .main_about_text_wrapper .form .main_about_btn, .contacts .contacts_form .main_about .main_about_text_wrapper .main_about_btn, .main_about .main_about_text_wrapper .contacts .contacts_form .main_about_btn, .form .main_teach .main_teach_text_btn, .main_teach .form .main_teach_text_btn, .contacts .contacts_form .main_teach .main_teach_text_btn, .main_teach .contacts .contacts_form .main_teach_text_btn, .form .learners .learners_btn, .learners .form .learners_btn, .contacts .contacts_form .learners .learners_btn, .learners .contacts .contacts_form .learners_btn, .form .blog .blog_btn, .blog .form .blog_btn, .contacts .contacts_form .blog .blog_btn, .blog .contacts .contacts_form .blog_btn, .form .timetable .timetable_btn, .timetable .form .timetable_btn, .contacts .contacts_form .timetable .timetable_btn, .timetable .contacts .contacts_form .timetable_btn {
+.form .btn, .contacts .contacts_form .btn, .form .main .sub_btn, .main .form .sub_btn, .contacts .contacts_form .main .sub_btn, .main .contacts .contacts_form .sub_btn, .form .main_about .main_about_btn, .main_about .form .main_about_btn, .contacts .contacts_form .main_about .main_about_btn, .main_about .contacts .contacts_form .main_about_btn, .form .main_teach .main_teach_text_btn, .main_teach .form .main_teach_text_btn, .contacts .contacts_form .main_teach .main_teach_text_btn, .main_teach .contacts .contacts_form .main_teach_text_btn, .form .teach_btn, .contacts .contacts_form .teach_btn, .form .learners_btn, .contacts .contacts_form .learners_btn, .form .blog_btn, .contacts .contacts_form .blog_btn, .form .timetable .timetable_btn, .timetable .form .timetable_btn, .contacts .contacts_form .timetable .timetable_btn, .timetable .contacts .contacts_form .timetable_btn {
   width: 100%;
   height: 40px;
   line-height: 38px; }
@@ -126,8 +135,14 @@ input:focus {
 .lang_list_active {
   text-decoration: underline; }
 
+.main_wrapper {
+  position: relative; }
+
 .fix {
   padding-left: 0; }
+  @media screen and (max-width: 375px) {
+    .fix {
+      padding-left: 15px; } }
 
 /*HEADER*/
 .nav_header {
@@ -249,8 +264,12 @@ input:focus {
     margin-top: 30vh; }
     @media screen and (max-width: 375px) {
       .main .main_header {
+        display: inline-block;
+        width: 100%;
         font-size: 30px;
-        line-height: 36px; } }
+        line-height: 36px;
+        text-align: center;
+        padding-left: 15px; } }
   .main .main_btn {
     margin-top: 10vh; }
   .main .main_btn:hover {
@@ -282,34 +301,20 @@ input:focus {
         padding-top: 20px; } }
     @media screen and (max-width: 375px) {
       .main_about .main_about_text_wrapper {
-        height: 270px;
-        overflow: hidden; } }
+        display: none; } }
     .main_about .main_about_text_wrapper span {
       color: #4b82b3; }
     .main_about .main_about_text_wrapper p {
       margin-bottom: 20px;
       line-height: 24px; }
-    .main_about .main_about_text_wrapper .main_about_btn {
-      margin-top: 20px; }
-      @media screen and (max-width: 375px) {
-        .main_about .main_about_text_wrapper .main_about_btn {
-          display: none; } }
-  @media screen and (max-width: 375px) {
-    .main_about .main_about_btn {
-      display: block;
-      width: auto;
-      height: 50px;
-      line-height: 48px;
-      border-radius: 20px;
-      border: 1px solid #4b82b3;
-      color: #4b82b3;
-      text-align: center;
-      text-decoration: none;
-      cursor: pointer;
-      margin-top: 40px; }
-      .main_about .main_about_btn:hover {
-        text-decoration: underline;
-        color: #4b82b3; } }
+    @media screen and (max-width: 375px) {
+      .main_about .main_about_text_wrapper p:nth-child(2) {
+        display: none; } }
+  .main_about .main_about_btn {
+    margin-top: 20px; }
+    @media screen and (max-width: 375px) {
+      .main_about .main_about_btn {
+        margin-top: 40px; } }
   .main_about .main_about_img_wrapper {
     width: 100%;
     overflow: hidden; }
@@ -324,6 +329,19 @@ input:focus {
       @media screen and (max-width: 992px) {
         .main_about .main_about_img_viewer img {
           width: 100%; } }
+  .main_about .main_about {
+    text-align: center;
+    margin-top: 100px;
+    display: none; }
+    @media screen and (max-width: 992px) {
+      .main_about .main_about {
+        display: block; } }
+  .main_about .mob_text {
+    margin-top: 10px;
+    line-height: 24px; }
+  @media screen and (max-width: 375px) {
+    .main_about .fixed {
+      padding: 0; } }
 
 /*SCHOOL_ADVANTAGE*/
 .main_advantage {
@@ -340,6 +358,9 @@ input:focus {
     .main_advantage {
       padding: 0 25px;
       margin-top: 120px; } }
+  @media screen and (max-width: 375px) {
+    .main_advantage {
+      display: none; } }
   .main_advantage:after {
     content: '';
     position: absolute;
@@ -403,6 +424,88 @@ input:focus {
     .main_advantage .slick-dots li button {
       display: none; }
 
+/*MAIN_ADVANTAGE_MOB*/
+.main_advantage_mob {
+  display: none; }
+  .main_advantage_mob .main_advantage_mob_header {
+    color: #ffffff;
+    text-align: center;
+    margin-top: 55px;
+    margin-bottom: 0; }
+  @media screen and (max-width: 375px) {
+    .main_advantage_mob {
+      display: block;
+      position: relative;
+      width: 100%;
+      height: 80vh;
+      max-height: 480px;
+      margin-top: 120px;
+      padding: 0 25px;
+      overflow: hidden;
+      background-repeat: no-repeat;
+      background-size: cover; }
+      .main_advantage_mob:after {
+        content: '';
+        position: absolute;
+        display: block;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background-color: rgba(0, 0, 0, 0.5); }
+      .main_advantage_mob .main_advantage_mob_slider_wrapper {
+        position: relative;
+        width: 100%;
+        height: 80vh;
+        max-height: 460px;
+        z-index: 101;
+        overflow: hidden; }
+        .main_advantage_mob .main_advantage_mob_slider_wrapper .main_advantage_mob_slider {
+          width: 100%;
+          height: auto; }
+          .main_advantage_mob .main_advantage_mob_slider_wrapper .main_advantage_mob_slider .main_advantage_mob_slide {
+            width: 100%;
+            height: auto;
+            display: inline-block;
+            text-align: center;
+            vertical-align: top; }
+            .main_advantage_mob .main_advantage_mob_slider_wrapper .main_advantage_mob_slider .main_advantage_mob_slide .main_advantage_mob_block {
+              margin-top: 35px;
+              display: block; }
+            .main_advantage_mob .main_advantage_mob_slider_wrapper .main_advantage_mob_slider .main_advantage_mob_slide img {
+              width: auto;
+              height: 42px;
+              display: inline-block; }
+            .main_advantage_mob .main_advantage_mob_slider_wrapper .main_advantage_mob_slider .main_advantage_mob_slide p {
+              color: #ffffff;
+              width: 70%;
+              display: block;
+              margin: 20px auto 0 auto;
+              line-height: 20px; } }
+          @media screen and (max-width: 375px) and (max-width: 992px) {
+            .main_advantage_mob .main_advantage_mob_slider_wrapper .main_advantage_mob_slider .main_advantage_mob_slide p {
+              width: 100%; } }
+  @media screen and (max-width: 375px) {
+      .main_advantage_mob .slick-dots {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        text-align: center; }
+        .main_advantage_mob .slick-dots li {
+          position: relative;
+          z-index: 110;
+          width: 13px;
+          height: 13px;
+          border: 1px solid #ffffff;
+          border-radius: 25px;
+          display: inline-block;
+          margin-right: 10px;
+          bottom: 20px; }
+        .main_advantage_mob .slick-dots .slick-active {
+          background-color: #ffffff; }
+        .main_advantage_mob .slick-dots li button {
+          display: none; } }
+
 /*TEACH*/
 .main_teach {
   position: relative;
@@ -419,6 +522,12 @@ input:focus {
     width: auto;
     display: inline-block;
     opacity: 0; }
+    @media screen and (max-width: 375px) {
+      .main_teach .main_teach_header {
+        margin-bottom: 0; } }
+  @media screen and (max-width: 375px) {
+    .main_teach .main_teach_block {
+      margin-top: 35px; } }
   .main_teach .main_teach_block:nth-child(2n) img {
     float: left; }
   .main_teach .main_teach_text {
@@ -441,6 +550,10 @@ input:focus {
   .main_teach .main_teach_btn {
     width: 220px;
     margin: 60px auto 0 auto; }
+    @media screen and (max-width: 375px) {
+      .main_teach .main_teach_btn {
+        margin-top: 0;
+        width: 100%; } }
   .main_teach .main_teach_img_wrapper {
     width: 100%;
     overflow: hidden; }
@@ -455,6 +568,9 @@ input:focus {
       @media screen and (max-width: 992px) {
         .main_teach .main_teach_img_viewer img {
           width: 100%; } }
+  @media screen and (max-width: 375px) {
+    .main_teach .fixed {
+      padding: 0; } }
 
 .smti_viewer {
   left: auto !important;
@@ -482,6 +598,13 @@ input:focus {
     width: 100%; }
     .main_gallery .main_gallery_tablet_slider_wrapper .main_gallery_slide img {
       width: 100%; }
+  .main_gallery .main_gallery_mob_slider_wrapper {
+    overflow: hidden;
+    width: 100%; }
+    .main_gallery .main_gallery_mob_slider_wrapper .main_gallery_slide {
+      display: inline-block; }
+      .main_gallery .main_gallery_mob_slider_wrapper .main_gallery_slide img {
+        width: 100%; }
   .main_gallery .main_gallery_next_arrow {
     cursor: pointer;
     position: absolute;
@@ -495,6 +618,9 @@ input:focus {
       .main_gallery .main_gallery_next_arrow {
         top: 60%;
         right: 15px; } }
+    @media screen and (max-width: 375px) {
+      .main_gallery .main_gallery_next_arrow {
+        right: 0; } }
   .main_gallery .main_gallery_prev_arrow {
     cursor: pointer;
     position: absolute;
@@ -509,6 +635,9 @@ input:focus {
       .main_gallery .main_gallery_prev_arrow {
         top: 60%;
         left: 15px; } }
+    @media screen and (max-width: 375px) {
+      .main_gallery .main_gallery_prev_arrow {
+        left: 0; } }
 
 /*CERTIFICATES*/
 .main_certificates {
@@ -529,6 +658,9 @@ input:focus {
     position: relative;
     width: 100%;
     display: block; }
+    @media screen and (max-width: 375px) {
+      .main_certificates .main_certificates_block {
+        margin-top: 20px; } }
     .main_certificates .main_certificates_block img {
       width: 100%; }
     .main_certificates .main_certificates_block .main_certificates_text_block {
@@ -575,6 +707,9 @@ input:focus {
     @media screen and (max-width: 992px) {
       .main_publication .main_publication_text {
         margin-top: 40px; } }
+    @media screen and (max-width: 992px) {
+      .main_publication .main_publication_text {
+        margin-top: 0; } }
     .main_publication .main_publication_text p {
       line-height: 20px;
       padding-top: 10px; }
@@ -586,9 +721,17 @@ input:focus {
     @media screen and (max-width: 992px) {
       .main_publication .main_publication_link {
         margin-bottom: 15px; } }
+    @media screen and (max-width: 375px) {
+      .main_publication .main_publication_link {
+        margin-top: 30px;
+        margin-bottom: 40px; } }
   .main_publication .main_publication_btn {
     width: 220px;
     margin: 60px auto 0 auto; }
+    @media screen and (max-width: 375px) {
+      .main_publication .main_publication_btn {
+        width: 100%;
+        margin-top: 0; } }
   .main_publication .main_publication_img_wrapper {
     width: 100%;
     overflow: hidden; }
@@ -615,6 +758,9 @@ input:focus {
   @media screen and (max-width: 992px) {
     .contacts {
       padding: 120px 25px 0 25px; } }
+  @media screen and (max-width: 375px) {
+    .contacts .contacts_header {
+      margin-bottom: 40px; } }
   .contacts .contacts_form {
     width: 380px; }
     @media screen and (max-width: 992px) {
@@ -624,6 +770,9 @@ input:focus {
     outline: none;
     color: #4b82b3;
     opacity: 1; }
+  @media screen and (max-width: 375px) {
+    .contacts .contacts_info {
+      margin-top: 40px; } }
   .contacts .contacts_info p {
     line-height: 24px;
     color: #6b6b6b; }
@@ -634,6 +783,9 @@ input:focus {
     .contacts .contacts_social img {
       width: 20px;
       margin-right: 10px; }
+  @media screen and (max-width: 375px) {
+    .contacts .fixed {
+      padding: 0; } }
 
 /*FOOTER*/
 footer {
@@ -647,8 +799,15 @@ footer {
   @media screen and (max-width: 992px) {
     footer .company {
       float: right; } }
+  @media screen and (max-width: 992px) {
+    footer .company {
+      float: none;
+      margin-top: 40px; } }
   footer .company a {
     color: #6690b8; }
+  @media screen and (max-width: 375px) {
+    footer .fixed {
+      padding: 0; } }
 
 /*ABOUT*/
 .about {
@@ -669,6 +828,10 @@ footer {
     @media screen and (max-width: 992px) {
       .about .about_text {
         height: 200px;
+        overflow: hidden; } }
+    @media screen and (max-width: 992px) {
+      .about .about_text {
+        height: 230px;
         overflow: hidden; } }
     .about .about_text p {
       line-height: 24px;
@@ -701,6 +864,9 @@ footer {
   @media screen and (max-width: 992px) {
     .about_certificates {
       padding: 120px 25px 0 25px; } }
+  @media screen and (max-width: 375px) {
+    .about_certificates {
+      display: none; } }
   .about_certificates .about_certificates_slider_wrapper {
     overflow: hidden;
     width: 100%; }
@@ -733,6 +899,56 @@ footer {
       .about_certificates .about_certificates_prev_arrow {
         top: 75%;
         left: 15px; } }
+
+/*ABOUT_CERTIFICATES_MOB*/
+.about_certificates_mob {
+  position: relative;
+  width: 100%;
+  padding: 120px 25px 0 25px; }
+  .about_certificates_mob .about_certificates_mob_slider_wrapper {
+    overflow: hidden;
+    width: 100%;
+    display: inline-block;
+    margin-top: -20px; }
+    .about_certificates_mob .about_certificates_mob_slider_wrapper .about_certificates_slide {
+      display: inline-block; }
+      .about_certificates_mob .about_certificates_mob_slider_wrapper .about_certificates_slide img {
+        width: 100%; }
+  .about_certificates_mob .about_certificates_next_arrow {
+    cursor: pointer;
+    position: absolute;
+    top: 70%;
+    right: 20px;
+    background-image: url("../img/next_arrow.png");
+    width: 20px;
+    height: 36px;
+    z-index: 101; }
+    @media screen and (max-width: 992px) {
+      .about_certificates_mob .about_certificates_next_arrow {
+        top: 75%;
+        right: 15px; } }
+    @media screen and (max-width: 375px) {
+      .about_certificates_mob .about_certificates_next_arrow {
+        top: 70%;
+        right: 0; } }
+  .about_certificates_mob .about_certificates_prev_arrow {
+    cursor: pointer;
+    position: absolute;
+    display: block;
+    top: 70%;
+    left: 20px;
+    background-image: url("../img/prew_arrow.png");
+    width: 20px;
+    height: 36px;
+    z-index: 101; }
+    @media screen and (max-width: 992px) {
+      .about_certificates_mob .about_certificates_prev_arrow {
+        top: 75%;
+        left: 15px; } }
+    @media screen and (max-width: 375px) {
+      .about_certificates_mob .about_certificates_prev_arrow {
+        top: 70%;
+        left: 0; } }
 
 /*ABOUT_REVIEWS*/
 .about_reviews {
@@ -768,6 +984,24 @@ footer {
       display: block; }
     .about_reviews .about_reviews_tablet_slider_wrapper .fixed {
       padding: 0; }
+  .about_reviews .about_reviews_mob_slider_wrapper {
+    overflow: hidden;
+    width: 100%;
+    display: inline-block;
+    margin-top: 20px; }
+    .about_reviews .about_reviews_mob_slider_wrapper .about_reviews_slide {
+      display: inline-block; }
+      .about_reviews .about_reviews_mob_slider_wrapper .about_reviews_slide img {
+        width: 100%;
+        margin-bottom: 20px; }
+      .about_reviews .about_reviews_mob_slider_wrapper .about_reviews_slide .about_reviews_text {
+        width: 100%; }
+        .about_reviews .about_reviews_mob_slider_wrapper .about_reviews_slide .about_reviews_text p {
+          line-height: 24px;
+          margin-bottom: 10px; }
+        .about_reviews .about_reviews_mob_slider_wrapper .about_reviews_slide .about_reviews_text a {
+          margin-top: 20px;
+          display: block; }
   .about_reviews .about_reviews_next_arrow {
     cursor: pointer;
     position: absolute;
@@ -780,6 +1014,9 @@ footer {
     @media screen and (max-width: 992px) {
       .about_reviews .about_reviews_next_arrow {
         right: 15px; } }
+    @media screen and (max-width: 375px) {
+      .about_reviews .about_reviews_next_arrow {
+        right: 0; } }
   .about_reviews .about_reviews_prev_arrow {
     cursor: pointer;
     position: absolute;
@@ -793,6 +1030,9 @@ footer {
     @media screen and (max-width: 992px) {
       .about_reviews .about_reviews_prev_arrow {
         left: 15px; } }
+    @media screen and (max-width: 375px) {
+      .about_reviews .about_reviews_prev_arrow {
+        left: 0; } }
 
 /*TEACH*/
 .teach {
@@ -803,6 +1043,10 @@ footer {
   @media screen and (max-width: 992px) {
     .teach {
       padding: 120px 25px 0 25px; } }
+  @media screen and (max-width: 375px) {
+    .teach {
+      height: 750px;
+      overflow: hidden; } }
   .teach .teach_header {
     padding-left: 15px; }
   .teach img {
@@ -825,6 +1069,16 @@ footer {
       .teach .teach_text_block a:hover {
         color: #4b82b3;
         text-decoration: underline; }
+  @media screen and (max-width: 375px) {
+    .teach .fixed {
+      padding: 0; } }
+
+.teach_btn {
+  display: none; }
+  @media screen and (max-width: 375px) {
+    .teach_btn {
+      display: block;
+      margin: 40px 25px 0 25px; } }
 
 /*TEACH_PUBLICATIONS*/
 .teach_publications {
@@ -838,6 +1092,9 @@ footer {
     padding-left: 15px; }
   .teach_publications img {
     width: 100%; }
+    @media screen and (max-width: 992px) {
+      .teach_publications img {
+        margin-top: 25px; } }
   .teach_publications .teach_publications_text_block p {
     line-height: 24px;
     margin-top: 10px; }
@@ -851,6 +1108,12 @@ footer {
   @media screen and (max-width: 992px) {
     .learners {
       padding: 120px 25px 0 25px; } }
+  @media screen and (max-width: 992px) {
+    .learners {
+      height: 1500px; } }
+  @media screen and (max-width: 375px) {
+    .learners .learners_header {
+      margin-bottom: 25px; } }
   .learners .learners_img_block {
     position: relative;
     width: 100%;
@@ -898,10 +1161,14 @@ footer {
         .learners .learners_link_facebookhover {
           color: #4b82b3;
           text-decoration: underline; } }
-  .learners .learners_btn {
-    width: 220px;
-    margin: 20px auto 0 auto;
-    clear: both; }
+
+.learners_btn {
+  width: 220px;
+  margin: 20px 40px 0 40px;
+  clear: both; }
+  @media screen and (max-width: 992px) {
+    .learners_btn {
+      margin: 20px auto 0 auto; } }
 
 /*BLOG*/
 .blog {
@@ -911,6 +1178,10 @@ footer {
   @media screen and (max-width: 992px) {
     .blog {
       padding: 100px 25px 0 25px; } }
+  @media screen and (max-width: 375px) {
+    .blog {
+      height: 1500px;
+      overflow: hidden; } }
   .blog .row {
     overflow: hidden; }
   .blog img {
@@ -924,10 +1195,11 @@ footer {
     line-height: 20px;
     display: block;
     margin-top: 15px; }
-  .blog .blog_btn {
-    width: 220px;
-    margin: 60px auto 0 auto;
-    clear: both; }
+
+.blog_btn {
+  width: 220px;
+  margin: 60px auto 0 auto;
+  clear: both; }
 
 /*ARTICLE*/
 .article {
@@ -944,6 +1216,9 @@ footer {
     .article .article_text_block {
       height: 500px;
       overflow: hidden; } }
+  @media screen and (max-width: 992px) {
+    .article .article_text_block {
+      height: 400px; } }
   .article .article_text_block p {
     color: #6b6b6b;
     line-height: 24px;
@@ -974,6 +1249,9 @@ footer {
     overflow: hidden; }
   .article_other img {
     width: 100%; }
+    @media screen and (max-width: 375px) {
+      .article_other img {
+        margin-top: 20px; } }
   .article_other .article_other_text_block p {
     color: #6b6b6b;
     margin-top: 15px;
@@ -1016,6 +1294,10 @@ footer {
     text-align: center;
     font-size: 36px;
     color: #000000; }
+    @media screen and (max-width: 375px) {
+      .course_main .course_main_text {
+        font-size: 24px;
+        top: 70%; } }
 
 /*COURSE_BASE*/
 .course_base {
@@ -1026,6 +1308,9 @@ footer {
   @media screen and (max-width: 992px) {
     .course_base {
       padding: 120px 25px 0 25px; } }
+  @media screen and (max-width: 375px) {
+    .course_base {
+      padding: 40px 25px 0 25px; } }
   .course_base .course_base_header {
     width: auto;
     display: inline-block;
@@ -1045,9 +1330,16 @@ footer {
     @media screen and (max-width: 992px) {
       .course_base img {
         padding-top: 24px; } }
+    @media screen and (max-width: 375px) {
+      .course_base img {
+        width: 100%; } }
   .course_base .course_base_text {
     display: block;
     opacity: 0; }
+    @media screen and (max-width: 375px) {
+      .course_base .course_base_text {
+        height: 220px;
+        overflow: hidden; } }
     .course_base .course_base_text p {
       line-height: 24px;
       padding-top: 15px;
@@ -1056,6 +1348,9 @@ footer {
       color: #000000; }
   .course_base .course_base_text_btn {
     margin-top: 40px; }
+    @media screen and (max-width: 375px) {
+      .course_base .course_base_text_btn {
+        width: 100%; } }
   .course_base .course_base_img_wrapper {
     width: 100%;
     overflow: hidden; }
@@ -1063,6 +1358,14 @@ footer {
     position: relative;
     left: 100%;
     width: 100%; }
+  .course_base .course_base_read_btn {
+    display: none; }
+    @media screen and (max-width: 375px) {
+      .course_base .course_base_read_btn {
+        display: block;
+        margin-top: 20px; } }
+  .course_base .fixed {
+    padding: 0; }
 
 /*COURSE_OTHER*/
 .course_other {
@@ -1073,6 +1376,9 @@ footer {
   @media screen and (max-width: 992px) {
     .course_other {
       padding: 80px 25px 0 25px; } }
+  @media screen and (max-width: 375px) {
+    .course_other .course_other_header {
+      margin-bottom: 40px; } }
   .course_other .course_other_text {
     line-height: 24px;
     padding-bottom: 30px;
@@ -1090,6 +1396,9 @@ footer {
   @media screen and (max-width: 992px) {
     .course_spec {
       padding: 120px 25px 0 25px; } }
+  @media screen and (max-width: 375px) {
+    .course_spec .course_spec_header {
+      margin-bottom: 40px; } }
   .course_spec .course_spec_text {
     line-height: 24px;
     color: #6b6b6b; }
@@ -1105,6 +1414,9 @@ footer {
   @media screen and (max-width: 992px) {
     .timetable {
       padding: 120px 25px 0 25px; } }
+  @media screen and (max-width: 375px) {
+    .timetable .timetable_header {
+      margin-bottom: 40px; } }
   .timetable .timetable_slider_wrapper {
     overflow: hidden;
     position: relative; }
@@ -1115,8 +1427,14 @@ footer {
     margin-bottom: 40px; }
   .timetable .timetable_slide {
     display: inline-block; }
+  @media screen and (max-width: 375px) {
+    .timetable .table_head {
+      width: 100%; } }
   .timetable .table_body {
     color: #6b6b6b; }
+  @media screen and (max-width: 375px) {
+    .timetable tr {
+      width: 100%; } }
   .timetable td {
     padding: 15px 0; }
   .timetable .table_text {
@@ -1126,6 +1444,9 @@ footer {
     @media screen and (max-width: 992px) {
       .timetable .table_text {
         width: 60%; } }
+    @media screen and (max-width: 375px) {
+      .timetable .table_text {
+        width: 100%; } }
   .timetable .table_date {
     vertical-align: middle;
     text-align: center; }
@@ -1158,6 +1479,9 @@ footer {
     @media screen and (max-width: 992px) {
       .timetable .timetable_next_arrow {
         right: 36%; } }
+    @media screen and (max-width: 375px) {
+      .timetable .timetable_next_arrow {
+        right: 0; } }
   .timetable .timetable_prev_arrow {
     cursor: pointer;
     position: absolute;
@@ -1172,6 +1496,9 @@ footer {
     @media screen and (max-width: 992px) {
       .timetable .timetable_prev_arrow {
         left: 40%; } }
+    @media screen and (max-width: 375px) {
+      .timetable .timetable_prev_arrow {
+        left: 0; } }
   .timetable .slick-dots {
     position: absolute;
     top: 31px;
@@ -1181,6 +1508,10 @@ footer {
     @media screen and (max-width: 992px) {
       .timetable .slick-dots {
         left: 42%; } }
+    @media screen and (max-width: 375px) {
+      .timetable .slick-dots {
+        width: 50%;
+        left: 25%; } }
   .timetable .slick-dots li {
     display: none; }
   .timetable .slick-dots .slick-active {
