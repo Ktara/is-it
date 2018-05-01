@@ -152,7 +152,24 @@ $('.timetable_slider_wrapper').slick({
     adaptiveHeight: true,
     dots: true,
     customPaging : function(slider, i) {
-       // var length = slider.$slides.length;
+        // var length = slider.$slides.length;
+        return $dataTitles[i].dataset.title;
+    }
+});
+
+
+$('.timetable_mob_slider_wrapper').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: true,
+    nextArrow: '<div class="timetable_next_arrow"></div>',
+    prevArrow: '<div class="timetable_prev_arrow"></div>',
+    zIndex: 100,
+    fade: true,
+    adaptiveHeight: true,
+    dots: true,
+    customPaging : function(slider, i) {
+        // var length = slider.$slides.length;
         return $dataTitles[i].dataset.title;
     }
 });
@@ -282,4 +299,19 @@ window.onscroll = function() {
     } else {
         $('.nav_header').removeClass('header_active');
     }
-}
+};
+
+
+
+
+
+    $('.nav_header_menu').click(function(){
+        $('.nav_wrapper').addClass('nav_header_active');
+        $('.logo').addClass('nav_active_logo');
+    });
+
+
+$('.nav_close_btn').click(function(){
+    $('.nav_wrapper').removeClass('nav_header_active');
+    $('.logo').removeClass('nav_active_logo');
+});
