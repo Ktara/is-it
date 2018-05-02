@@ -2110,3 +2110,139 @@ footer {
     margin-top: 60px;
   }
 }
+
+
+
+
+
+.timetable_popup_wrapper {
+  position: fixed;
+  display: none;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  background-color: rgba(255, 255, 255, 0.6);
+  z-index: 1100;
+  .timetable_popup {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    background-color: $main-white;
+    padding: 40px 40px 0 40px;
+    margin-top: 25vh;
+    z-index: 1100;
+    @media screen and (max-width: 375px) {
+      margin-top: 0;
+    }
+  }
+  .timetable_popup_header {
+    @extend .header;
+    text-align: center;
+    @media screen and (max-width: 375px) {
+      margin-bottom: 40px;
+      margin-top: 30%;
+    }
+  }
+  .timetable_popup_form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    input {
+      width: 380px;
+      height: 40px;
+      display: block;
+      line-height: 38px;
+      border-radius: 20px;
+      border: 1px solid $main-blue;
+      margin-bottom: 20px;
+      opacity: 0.5;
+      text-indent: 20px;
+      @media screen and (max-width: 375px) {
+        width: 100%;
+      }
+    }
+    input:focus {
+      @extend .font_reg;
+      outline: none;
+      color: $main-blue;
+      opacity: 1;
+    }
+    option:focus {
+      @extend .font_reg;
+      outline: none;
+      color: $main-blue;
+      opacity: 1;
+    }
+    .timetable_popup_btn {
+      @extend .fill_btn;
+      width: 380px;
+      height: 40px;
+      line-height: 38px;
+      @media screen and (max-width: 375px) {
+        width: 100%;
+      }
+    }
+  }
+  .timetable_popup_course {
+    position: relative;
+    display: block;
+    border: none;
+    width: 380px;
+    height: 40px;
+    line-height: 38px;
+    @extend .font_reg;
+    border-radius: 20px;
+    border: 1px solid $main-blue;
+    margin-bottom: 20px;
+    opacity: 0.4;
+    text-indent: 8px;
+    //color: $main-blue;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-image: url(../img/popupAr.png);
+    background-repeat: no-repeat;
+    background-position: 95% center;
+    cursor: pointer;
+    @media screen and (max-width: 375px) {
+      width: 100%;
+    }
+  }
+  .timetable_popup_close {
+    position: absolute;
+    display: block;
+    width: 40px;
+    height: 40px;
+    top: 25px;
+    right: 25px;
+    z-index: 1001;
+    cursor: pointer;
+    @media screen and (max-width: 375px) {
+      top: 40px;
+    }
+    &:before {
+      content: "";
+      display: block;
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 30px;
+      height: 3px;
+      transform: rotate(-45deg);
+      background-color: $main-blue;
+    }
+    &:after {
+      content: "";
+      display: block;
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 30px;
+      height: 3px;
+      transform: rotate(45deg);
+      background-color: $main-blue;
+    }
+  }
+}

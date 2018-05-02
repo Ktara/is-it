@@ -315,3 +315,28 @@ $('.nav_close_btn').click(function(){
     $('.nav_wrapper').removeClass('nav_header_active');
     $('.logo').removeClass('nav_active_logo');
 });
+
+
+
+$('.timetable_btn').click(function(){
+    $('.timetable_popup_wrapper').css('display', 'block').velocity({
+        opacity: 1
+    }, 600);
+});
+
+
+$('.timetable_slide_btn').click(function(){
+    $('.timetable_popup_wrapper').css('display', 'block').velocity({
+        opacity: 1
+    }, 600);
+});
+
+
+$('.timetable_popup_close').click(function(){
+    $('.timetable_popup_wrapper').velocity({
+        opacity: 0
+    }, 600)
+        setTimeout(function(){
+            $('.timetable_popup_wrapper').css('display', 'none');
+        }, 600);
+});
