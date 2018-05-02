@@ -1055,6 +1055,12 @@ footer {
     width: 100%;
     overflow: hidden;
   }
+  .about_block:nth-child(2n) {
+    .about_block_img_viewer{
+      right: 100%;
+      left: auto;
+    }
+  }
   .about_block_img_viewer {
     position: relative;
     left: 100%;
@@ -1069,6 +1075,7 @@ footer {
       }
     }
   }
+
 }
 
 

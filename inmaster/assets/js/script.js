@@ -202,6 +202,18 @@ if($('.fmti_wrapper').length > 0 || $('.fmtia_wrapper').length > 0) {
             opacity: 1
         }, 2000)
 }
+
+if ($('.fabi_wrapper').length > 0){
+    firstImagStatus = false;
+    $('.fabi_viewer').velocity({
+        left : 0
+    },2000);
+    $('.fab_text').velocity({
+        'padding-top': '24px',
+        opacity: 1
+    }, 2000)
+}
+
 var scrollTR2 = false;
 var firstImagePosition, secondImagePosition;
 var firstImageStatus, secondImageStatus;
@@ -212,6 +224,22 @@ if($('.fmpi_wrapper').length > 0) {
     secondImagePosition = $('.smpi_wrapper').offset();
     firstImageStatus = true;
     secondImageStatus = true;
+}
+
+
+
+var scrollTR3 = false;
+var firstImagPosition, secondImagPosition, thirdImagPosition;
+var firstImagStatus, secondImagStatus, thirdImagStatus;
+
+if($('.fabi_wrapper').length > 0) {
+    scrollTR3 = true;
+    firstImagPosition = $('.fabi_wrapper').offset();
+    secondImagPosition = $('.sabi_wrapper').offset();
+    thirdImagPosition = $('.thmti_wrapper').offset();
+    firstImagStatus = true;
+    secondImagStatus = true;
+    thirdImagStatus = true;
 }
 
 
@@ -286,6 +314,30 @@ window.onscroll = function() {
             //     opacity: 1
             // }, 2000);
             $('.smp_text').velocity({
+                'padding-top': '24px',
+                opacity: 1
+            }, 2000)
+        }
+
+
+    }
+    if(scrollTR3) {
+        if (scrolled > secondImagPosition.top*0.4 && secondImagStatus){
+            secondImagStatus = false;
+            $('.sabi_viewer').velocity({
+                right : 0
+            },2000);
+            $('.sab_text').velocity({
+                'padding-top': '24px',
+                opacity: 1
+            }, 2000)
+        }
+        if (scrolled > thirdImagPosition.top*0.4 && thirdImagStatus){
+            thirdImagStatus = false;
+            $('.thmti_viewer').velocity({
+                left : 0
+            },2000);
+            $('.thab_text').velocity({
                 'padding-top': '24px',
                 opacity: 1
             }, 2000)
