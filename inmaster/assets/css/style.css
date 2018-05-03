@@ -197,13 +197,13 @@ input:focus {
       height: 40px;
       top: 40px;
       left: 25px;
-      z-index: 1001;
+      z-index: 1110;
       cursor: pointer; }
       .nav_header .nav_header_active .nav_close_btn:before {
         content: "";
         display: block;
         position: absolute;
-        top: 0;
+        top: 20px;
         left: 0;
         width: 30px;
         height: 3px;
@@ -213,7 +213,7 @@ input:focus {
         content: "";
         display: block;
         position: absolute;
-        top: 0;
+        top: 20px;
         left: 0;
         width: 30px;
         height: 3px;
@@ -1599,8 +1599,7 @@ footer {
     background-image: url("../img/tt-nextAr.png");
     background-repeat: no-repeat;
     width: 12px;
-    height: 22px;
-    z-index: 101; }
+    height: 22px; }
     @media screen and (max-width: 992px) {
       .timetable .timetable_next_arrow {
         right: 36%; } }
@@ -1616,8 +1615,7 @@ footer {
     background-image: url("../img/tt-prevAr.png");
     background-repeat: no-repeat;
     width: 12px;
-    height: 22px;
-    z-index: 101; }
+    height: 22px; }
     @media screen and (max-width: 992px) {
       .timetable .timetable_prev_arrow {
         left: 40%; } }

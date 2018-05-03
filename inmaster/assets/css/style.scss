@@ -65,13 +65,13 @@
       height: 40px;
       top: 40px;
       left: 25px;
-      z-index: 1001;
+      z-index: 1110;
       cursor: pointer;
       &:before {
         content: "";
         display: block;
         position: absolute;
-        top: 0;
+        top: 20px;
         left: 0;
         width: 30px;
         height: 3px;
@@ -82,7 +82,7 @@
         content: "";
         display: block;
         position: absolute;
-        top: 0;
+        top: 20px;
         left: 0;
         width: 30px;
         height: 3px;
@@ -2040,7 +2040,6 @@ footer {
     background-repeat: no-repeat;
     width: 12px;
     height: 22px;
-    z-index: 101;
     @media screen and (max-width: 992px) {
       right: 36%;
     }
@@ -2058,7 +2057,6 @@ footer {
     background-repeat: no-repeat;
     width: 12px;
     height: 22px;
-    z-index: 101;
     @media screen and (max-width: 992px) {
       left: 40%;
     }
