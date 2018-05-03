@@ -1245,7 +1245,7 @@ footer {
 
 .learners_btn {
   width: 220px;
-  margin: 20px 40px 0 40px;
+  margin: 20px auto 0 auto;
   clear: both; }
   @media screen and (max-width: 992px) {
     .learners_btn {
