@@ -1360,12 +1360,13 @@ footer {
     padding: 120px 25px 0 25px;
   }
   @media screen and (max-width: 375px) {
-    height: 740px;
+    height: 800px;
     overflow: hidden;
   }
   .teach_wrapper {
     @media screen and (max-width: 375px) {
       padding-bottom: 120px;
+      overflow: hidden;
     }
   }
   .teach_header {

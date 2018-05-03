@@ -1134,11 +1134,12 @@ footer {
       padding: 120px 25px 0 25px; } }
   @media screen and (max-width: 375px) {
     .teach {
-      height: 740px;
+      height: 800px;
       overflow: hidden; } }
   @media screen and (max-width: 375px) {
     .teach .teach_wrapper {
-      padding-bottom: 120px; } }
+      padding-bottom: 120px;
+      overflow: hidden; } }
   .teach .teach_header {
     padding-left: 15px; }
   .teach img {

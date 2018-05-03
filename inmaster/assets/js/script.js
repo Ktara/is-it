@@ -166,7 +166,6 @@ $('.timetable_mob_slider_wrapper').slick({
     prevArrow: '<div class="timetable_prev_arrow"></div>',
     zIndex: 100,
     fade: true,
-    adaptiveHeight: true,
     dots: true,
     customPaging : function(slider, i) {
         // var length = slider.$slides.length;
@@ -455,6 +454,16 @@ $('.timetable_popup_close').click(function(){
 
 (function(){
     $(".timetable_mob_slide_button").click(function(e){
+        $(e.target).css("display" , "none");
+        var trHeight = $(e.target).prev().children().css("height");
+        $(e.target).prev().animate({"height" : trHeight}, 600);
+    });
+})();
+
+
+
+(function(){
+    $(".teach_btn").click(function(e){
         $(e.target).css("display" , "none");
         var trHeight = $(e.target).prev().children().css("height");
         $(e.target).prev().animate({"height" : trHeight}, 600);
