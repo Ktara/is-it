@@ -45,15 +45,17 @@
 
 /*LINKS*/
 .tm_link, .nav_wrapper .nav_header_menu a, .blog .blog_text_block .blog_link, .article_other .article_other_text_block .article_other_link {
-  color: #000000; }
+  color: #000000;
+  cursor: pointer; }
 
 .tm_link:hover, .nav_wrapper .nav_header_menu a:hover, .blog .blog_text_block .blog_link:hover, .article_other .article_other_text_block .article_other_link:hover {
   color: #4b82b3;
   text-decoration: underline; }
 
-.tm_link_active, .nav_wrapper .nav_header_menu .active_nav_punct, .main_publication .main_publication_link, .about .about_text_link_btn, .about_reviews .about_reviews_slider_wrapper .about_reviews_slide .about_reviews_text a, .about_reviews .about_reviews_tablet_slider_wrapper .about_reviews_slide .about_reviews_text a, .about_reviews .about_reviews_mob_slider_wrapper .about_reviews_slide .about_reviews_text a, .learners .learners_read_more, .course_base .course_base_read_btn {
-  color: #4b82b3; }
-  .tm_link_active:hover, .nav_wrapper .nav_header_menu .active_nav_punct:hover, .main_publication .main_publication_link:hover, .about .about_text_link_btn:hover, .about_reviews .about_reviews_slider_wrapper .about_reviews_slide .about_reviews_text a:hover, .about_reviews .about_reviews_tablet_slider_wrapper .about_reviews_slide .about_reviews_text a:hover, .about_reviews .about_reviews_mob_slider_wrapper .about_reviews_slide .about_reviews_text a:hover, .learners .learners_read_more:hover, .course_base .course_base_read_btn:hover {
+.tm_link_active, .nav_wrapper .nav_header_menu .active_nav_punct, .main_publication .main_publication_link, .about .about_text_link_btn, .about_reviews .about_reviews_slider_wrapper .about_reviews_slide .about_reviews_text a, .about_reviews .about_reviews_tablet_slider_wrapper .about_reviews_slide .about_reviews_text a, .about_reviews .about_reviews_mob_slider_wrapper .about_reviews_slide .about_reviews_text a, .learners .learners_read_more, .article .article_read_btn, .course_base .course_base_read_btn {
+  color: #4b82b3;
+  cursor: pointer; }
+  .tm_link_active:hover, .nav_wrapper .nav_header_menu .active_nav_punct:hover, .main_publication .main_publication_link:hover, .about .about_text_link_btn:hover, .about_reviews .about_reviews_slider_wrapper .about_reviews_slide .about_reviews_text a:hover, .about_reviews .about_reviews_tablet_slider_wrapper .about_reviews_slide .about_reviews_text a:hover, .about_reviews .about_reviews_mob_slider_wrapper .about_reviews_slide .about_reviews_text a:hover, .learners .learners_read_more:hover, .article .article_read_btn:hover, .course_base .course_base_read_btn:hover {
     color: #4b82b3;
     text-decoration: underline; }
 
@@ -602,7 +604,7 @@ input:focus {
   @media screen and (max-width: 375px) {
     .main_teach .main_teach_block {
       margin-top: 35px; } }
-  .main_teach .main_teach_block:nth-child(2n) img {
+  .main_teach .main_teach_block:nth-child(n+3):nth-child(odd) img {
     float: left; }
   .main_teach .main_teach_text {
     display: block;
@@ -873,7 +875,7 @@ footer {
   @media screen and (max-width: 992px) {
     footer .company {
       float: right; } }
-  @media screen and (max-width: 992px) {
+  @media screen and (max-width: 375px) {
     footer .company {
       float: none;
       margin-top: 40px; } }
@@ -901,19 +903,29 @@ footer {
     opacity: 0; }
     @media screen and (max-width: 992px) {
       .about .about_text {
-        height: 200px;
+        height: 222px;
         overflow: hidden; } }
-    @media screen and (max-width: 992px) {
+    @media screen and (max-width: 375px) {
       .about .about_text {
-        height: 230px;
+        height: 225px;
         overflow: hidden; } }
+    .about .about_text .about_text_block {
+      padding-bottom: 24px; }
     .about .about_text p {
       line-height: 24px;
       margin-bottom: 10px; }
     .about .about_text strong {
       color: #4b82b3; }
   .about .about_text_link_btn {
+    display: none;
+    cursor: pointer;
     padding-top: 40px; }
+    @media screen and (max-width: 992px) {
+      .about .about_text_link_btn {
+        display: block; } }
+    @media screen and (max-width: 375px) {
+      .about .about_text_link_btn {
+        display: block; } }
   .about .about_block_img_wrapper {
     width: 100%;
     overflow: hidden; }
@@ -1124,6 +1136,9 @@ footer {
     .teach {
       height: 740px;
       overflow: hidden; } }
+  @media screen and (max-width: 375px) {
+    .teach .teach_wrapper {
+      padding-bottom: 120px; } }
   .teach .teach_header {
     padding-left: 15px; }
   .teach img {
@@ -1188,10 +1203,15 @@ footer {
   overflow: hidden; }
   @media screen and (max-width: 992px) {
     .learners {
-      padding: 120px 25px 0 25px; } }
-  @media screen and (max-width: 992px) {
+      padding: 120px 25px 0 25px;
+      height: 1150px; } }
+  @media screen and (max-width: 375px) {
     .learners {
       height: 1500px; } }
+  @media screen and (max-width: 992px) {
+    .learners .learners_wrapper {
+      padding-bottom: 140px;
+      overflow: hidden; } }
   @media screen and (max-width: 375px) {
     .learners .learners_header {
       margin-bottom: 25px; } }
@@ -1263,6 +1283,9 @@ footer {
     .blog {
       height: 1500px;
       overflow: hidden; } }
+  @media screen and (max-width: 375px) {
+    .blog .blog_wrapper {
+      padding-bottom: 100px; } }
   .blog .row {
     overflow: hidden; }
   .blog img {
@@ -1290,6 +1313,9 @@ footer {
   @media screen and (max-width: 992px) {
     .article {
       padding: 120px 25px 0 25px; } }
+  @media screen and (max-width: 992px) {
+    .article .article_text_wrapper {
+      padding-bottom: 120px; } }
   .article img {
     width: 100%;
     margin-bottom: 25px; }
@@ -1297,9 +1323,9 @@ footer {
     .article .article_text_block {
       height: 500px;
       overflow: hidden; } }
-  @media screen and (max-width: 992px) {
+  @media screen and (max-width: 375px) {
     .article .article_text_block {
-      height: 400px; } }
+      height: 335px; } }
   .article .article_text_block p {
     color: #6b6b6b;
     line-height: 24px;
@@ -1312,11 +1338,7 @@ footer {
       .article .article_read_btn {
         display: block;
         margin-top: 20px;
-        color: #4b82b3;
-        cursor: pointer; }
-        .article .article_read_btnhover {
-          color: #4b82b3;
-          text-decoration: underline; } }
+        cursor: pointer; } }
 
 /*ARTICLE_OTHER*/
 .article_other {
@@ -1416,6 +1438,9 @@ footer {
     @media screen and (max-width: 375px) {
       .course_base img {
         width: 100%; } }
+  @media screen and (max-width: 375px) {
+    .course_base .course_base_text_wrapper {
+      padding-bottom: 24px; } }
   .course_base .course_base_text {
     display: block;
     opacity: 0; }
@@ -1634,20 +1659,26 @@ footer {
           text-decoration: underline;
           color: #4b82b3; } }
   .timetable .timetable_mob_slider_wrapper {
+    display: none;
     position: relative;
     width: 100%;
     height: auto;
     overflow: hidden; }
+    @media screen and (max-width: 375px) {
+      .timetable .timetable_mob_slider_wrapper {
+        display: block; } }
   .timetable .timetable_mob_slide {
     width: 100%;
-    height: 950px;
     overflow: hidden;
     display: inline-block; }
   .timetable .timetable_mob_slide_text_block {
+    height: 900px;
     overflow: hidden; }
     .timetable .timetable_mob_slide_text_block h6 {
       margin-top: 40px;
       clear: both; }
+    .timetable .timetable_mob_slide_text_block .timetable_mob_slide_text_wrapper {
+      overflow: hidden; }
     .timetable .timetable_mob_slide_text_block .timetable_mob_slide_course {
       margin-top: 20px;
       margin-bottom: 20px; }
@@ -1664,7 +1695,7 @@ footer {
       margin-bottom: 10px; }
   .timetable .timetable_mob_slide_button {
     width: 100%;
-    margin-top: 60px; }
+    margin-top: 40px; }
 
 .timetable_popup_wrapper {
   position: fixed;
@@ -1678,11 +1709,11 @@ footer {
   z-index: 1100; }
   .timetable_popup_wrapper .timetable_popup {
     width: 100%;
-    height: 100vh;
+    height: 30vh;
     position: relative;
     background-color: #ffffff;
-    padding: 40px 40px 0 40px;
-    margin-top: 25vh;
+    padding: 0 40px 0 40px;
+    margin-top: 16vh;
     z-index: 1100; }
     @media screen and (max-width: 375px) {
       .timetable_popup_wrapper .timetable_popup {

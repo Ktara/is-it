@@ -607,7 +607,7 @@
       margin-top: 35px;
     }
   }
-  .main_teach_block:nth-child(2n) {
+  .main_teach_block:nth-child(n+3):nth-child(odd) {
     img {
       float: left;
     }
@@ -988,7 +988,7 @@ footer {
     @media screen and (max-width: 992px) {
       float: right;
     }
-    @media screen and (max-width: 992px) {
+    @media screen and (max-width: 375px) {
       float: none;
       margin-top: 40px;
     }
@@ -1031,12 +1031,15 @@ footer {
     display: block;
     opacity: 0;
     @media screen and (max-width: 992px) {
-      height: 200px;
+      height: 222px;
       overflow: hidden;
     }
-    @media screen and (max-width: 992px) {
-      height: 230px;
+    @media screen and (max-width: 375px) {
+      height: 225px;
       overflow: hidden;
+    }
+    .about_text_block {
+      padding-bottom: 24px;
     }
     p {
       @extend .font-light;
@@ -1048,8 +1051,16 @@ footer {
     }
   }
   .about_text_link_btn {
+    display: none;
     @extend .tm_link_active;
+    cursor: pointer;
     padding-top: 40px;
+    @media screen and (max-width: 992px) {
+      display: block;
+    }
+    @media screen and (max-width: 375px) {
+      display: block;
+    }
   }
   .about_block_img_wrapper {
     width: 100%;
@@ -1352,6 +1363,11 @@ footer {
     height: 740px;
     overflow: hidden;
   }
+  .teach_wrapper {
+    @media screen and (max-width: 375px) {
+      padding-bottom: 120px;
+    }
+  }
   .teach_header {
     @extend .header;
     padding-left: 15px;
@@ -1445,9 +1461,16 @@ footer {
   overflow: hidden;
   @media screen and (max-width: 992px) {
     padding: 120px 25px 0 25px;
+    height: 1150px;
   }
-  @media screen and (max-width: 992px) {
+  @media screen and (max-width: 375px) {
     height: 1500px;
+  }
+  .learners_wrapper {
+    @media screen and (max-width: 992px) {
+      padding-bottom: 140px;
+      overflow: hidden;
+    }
   }
   .learners_header {
     @extend .header;
@@ -1547,6 +1570,11 @@ footer {
     height: 1500px;
     overflow: hidden;
   }
+  .blog_wrapper {
+    @media screen and (max-width: 375px) {
+      padding-bottom: 100px;
+    }
+  }
   .row {
     overflow: hidden;
   }
@@ -1589,6 +1617,11 @@ footer {
   @media screen and (max-width: 992px) {
     padding: 120px 25px 0 25px;
   }
+  .article_text_wrapper {
+    @media screen and (max-width: 992px) {
+      padding-bottom: 120px;
+    }
+  }
   img {
     width: 100%;
     margin-bottom: 25px;
@@ -1598,8 +1631,8 @@ footer {
       height: 500px;
       overflow: hidden;
     }
-    @media screen and (max-width: 992px) {
-      height: 400px;
+    @media screen and (max-width: 375px) {
+      height: 335px;
     }
     p {
       @extend .font-light;
@@ -1614,15 +1647,11 @@ footer {
   }
   .article_read_btn {
     display: none;
+    @extend .tm_link_active;
     @media screen and (max-width: 992px) {
       display: block;
       margin-top: 20px;
-      color: $main-blue;
       cursor: pointer;
-      &hover {
-        color: $main-blue;
-        text-decoration: underline;
-      }
     }
   }
 }
@@ -1777,9 +1806,14 @@ footer {
       width: 100%;
     }
   }
+  .course_base_text_wrapper {
+    @media screen and (max-width: 375px) {
+      padding-bottom: 24px;
+    }
+  }
+
   .course_base_text {
     display: block;
-    //padding-top: 54px;
     opacity: 0;
     @media screen and (max-width: 375px) {
       height: 220px;
@@ -2072,22 +2106,29 @@ footer {
     }
   }
   .timetable_mob_slider_wrapper {
+    display: none;
     position: relative;
     width: 100%;
     height: auto;
     overflow: hidden;
+    @media screen and (max-width: 375px) {
+      display: block;
+    }
   }
   .timetable_mob_slide {
     width: 100%;
-    height: 950px;
     overflow: hidden;
     display: inline-block;
   }
   .timetable_mob_slide_text_block {
+    height: 900px;
     overflow: hidden;
     h6 {
       margin-top: 40px;
       clear: both;
+    }
+    .timetable_mob_slide_text_wrapper {
+      overflow: hidden;
     }
     .timetable_mob_slide_course {
       margin-top: 20px;
@@ -2114,7 +2155,7 @@ footer {
   .timetable_mob_slide_button {
     @extend .fill_btn;
     width: 100%;
-    margin-top: 60px;
+    margin-top: 40px;
   }
 }
 
@@ -2134,11 +2175,11 @@ footer {
   z-index: 1100;
   .timetable_popup {
     width: 100%;
-    height: 100vh;
+    height: 30vh;
     position: relative;
     background-color: $main-white;
-    padding: 40px 40px 0 40px;
-    margin-top: 25vh;
+    padding: 0 40px 0 40px;
+    margin-top: 16vh;
     z-index: 1100;
     @media screen and (max-width: 375px) {
       margin-top: 0;

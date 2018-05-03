@@ -303,9 +303,8 @@ window.onscroll = function() {
                 opacity: 1
             }, 2000)
         }
-        if (scrolled > secondImagePosition.top*0.9 && secondImageStatus){
+        if (scrolled > secondImagePosition.top*0.7 && secondImageStatus){
             secondImageStatus = false;
-            console.log('sec');
             $('.smpi_viewer').velocity({
                 right : 0
             },2000);
@@ -358,6 +357,7 @@ window.onscroll = function() {
 
 
     $('.nav_header_menu').click(function(){
+        if ( window.innerWidth > 992) return;
         $('.nav_wrapper').addClass('nav_header_active');
         $('.logo').addClass('nav_active_logo');
     });
@@ -392,3 +392,71 @@ $('.timetable_popup_close').click(function(){
             $('.timetable_popup_wrapper').css('display', 'none');
         }, 600);
 });
+
+
+
+
+(function(){
+    $(".about_text_link_btn").click(function(e){
+        $(e.target).css("display" , "none");
+        var trHeight = $(e.target).prev().children().css("height");
+        $(e.target).prev().animate({"height" : trHeight}, 600);
+    });
+})();
+
+
+(function(){
+    $(".teach_btn").click(function(e){
+        $(e.target).css("display" , "none");
+        var trHeight = $(e.target).prev().children().css("height");
+        $(e.target).prev().animate({"height" : trHeight}, 600);
+    });
+})();
+
+
+
+(function(){
+    $(".learners_btn").click(function(e){
+        $(e.target).css("display" , "none");
+        var trHeight = $(e.target).prev().children().css("height");
+        $(e.target).prev().animate({"height" : trHeight}, 600);
+    });
+})();
+
+
+
+(function(){
+    $(".blog_btn").click(function(e){
+        $(e.target).css("display" , "none");
+        var trHeight = $(e.target).prev().children().css("height");
+        $(e.target).prev().animate({"height" : trHeight}, 600);
+    });
+})();
+
+
+(function(){
+    $(".article_read_btn").click(function(e){
+        $(e.target).css("display" , "none");
+        var trHeight = $(e.target).prev().children().css("height");
+        $(e.target).prev().animate({"height" : trHeight}, 600);
+    });
+})();
+
+
+(function(){
+    $(".course_base_read_btn").click(function(e){
+        $(e.target).css("display" , "none");
+        var trHeight = $(e.target).prev().children().css("height");
+        $(e.target).prev().animate({"height" : trHeight}, 600);
+    });
+})();
+
+
+
+(function(){
+    $(".timetable_mob_slide_button").click(function(e){
+        $(e.target).css("display" , "none");
+        var trHeight = $(e.target).prev().children().css("height");
+        $(e.target).prev().animate({"height" : trHeight}, 600);
+    });
+})();
