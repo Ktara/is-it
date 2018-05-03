@@ -307,10 +307,6 @@ window.onscroll = function() {
             $('.smpi_viewer').velocity({
                 right : 0
             },2000);
-            // $('.smt_header').velocity({
-            //     width: '100%',
-            //     opacity: 1
-            // }, 2000);
             $('.smp_text').velocity({
                 'padding-top': '24px',
                 opacity: 1
