@@ -1382,7 +1382,7 @@ footer {
     position: absolute;
     width: 70%;
     height: auto;
-    top: 40%;
+    top: 48%;
     left: 15%;
     padding: 20px 0;
     text-align: center;
@@ -1433,6 +1433,14 @@ footer {
     @extend .header;
     padding-left: 15px;
   }
+  .teach_publications_link_block {
+    text-decoration: none;
+    color: $main-black;
+    &:hover {
+      text-decoration: none;
+      color: inherit;
+    }
+  }
   img {
     width: 100%;
     @media screen and (max-width: 992px) {
@@ -1441,6 +1449,7 @@ footer {
   }
   .teach_publications_text_block {
     span {
+      @extend .tm_link;
       @extend .font_reg;
     }
     p {
@@ -1983,6 +1992,13 @@ footer {
   td {
     padding: 15px 0;
   }
+  .table_link {
+    color: $grey;
+    &:hover {
+      color: $main-blue;
+      text-decoration: underline;
+    }
+  }
   .table_text {
     text-align: left;
     width: 30%;
@@ -2040,6 +2056,7 @@ footer {
     background-repeat: no-repeat;
     width: 12px;
     height: 22px;
+    z-index: 100;
     @media screen and (max-width: 992px) {
       right: 36%;
     }
@@ -2057,6 +2074,7 @@ footer {
     background-repeat: no-repeat;
     width: 12px;
     height: 22px;
+    z-index: 100;
     @media screen and (max-width: 992px) {
       left: 40%;
     }
@@ -2174,14 +2192,21 @@ footer {
   z-index: 1100;
   .timetable_popup {
     width: 100%;
-    height: 30vh;
+    height: 50vh;
     position: relative;
     background-color: $main-white;
     padding: 0 40px 0 40px;
-    margin-top: 16vh;
+    margin-top: 26vh;
     z-index: 1100;
+    @media screen and (max-width: 992px) {
+      height: 35vh;
+      margin-top: 21vh;
+    }
     @media screen and (max-width: 375px) {
+      width: 100vw;
+      height: 80vh;
       margin-top: 0;
+      padding: 20% 40px 0 10px;
     }
   }
   .timetable_popup_header {
@@ -2189,7 +2214,6 @@ footer {
     text-align: center;
     @media screen and (max-width: 375px) {
       margin-bottom: 40px;
-      margin-top: 30%;
     }
   }
   .timetable_popup_form {

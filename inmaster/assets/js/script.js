@@ -3,7 +3,9 @@ $('.main_advantage_slider').slick({
     slidesToScroll: 4,
     dots: true,
     arrows: false,
-    zIndex: 100
+    zIndex: 100,
+    autoplay: true,
+    autoplaySpeed: 10000,
 });
 
 
@@ -16,6 +18,8 @@ $('.main_advantage_mob_slider').slick({
     arrows: false,
     zIndex: 100,
     adaptiveHeight: true,
+    autoplay: true,
+    autoplaySpeed: 10000,
 });
 
 

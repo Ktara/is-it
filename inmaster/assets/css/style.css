@@ -44,11 +44,11 @@
       margin-bottom: 0; } }
 
 /*LINKS*/
-.tm_link, .nav_wrapper .nav_header_menu a, .blog .blog_text_block .blog_link, .article_other .article_other_text_block .article_other_link {
+.tm_link, .nav_wrapper .nav_header_menu a, .teach_publications .teach_publications_text_block span, .blog .blog_text_block .blog_link, .article_other .article_other_text_block .article_other_link {
   color: #000000;
   cursor: pointer; }
 
-.tm_link:hover, .nav_wrapper .nav_header_menu a:hover, .blog .blog_text_block .blog_link:hover, .article_other .article_other_text_block .article_other_link:hover {
+.tm_link:hover, .nav_wrapper .nav_header_menu a:hover, .teach_publications .teach_publications_text_block span:hover, .blog .blog_text_block .blog_link:hover, .article_other .article_other_text_block .article_other_link:hover {
   color: #4b82b3;
   text-decoration: underline; }
 
@@ -1150,7 +1150,7 @@ footer {
     position: absolute;
     width: 70%;
     height: auto;
-    top: 40%;
+    top: 48%;
     left: 15%;
     padding: 20px 0;
     text-align: center;
@@ -1187,6 +1187,12 @@ footer {
       padding: 120px 25px 0 25px; } }
   .teach_publications .teach_publications_header {
     padding-left: 15px; }
+  .teach_publications .teach_publications_link_block {
+    text-decoration: none;
+    color: #000000; }
+    .teach_publications .teach_publications_link_block:hover {
+      text-decoration: none;
+      color: inherit; }
   .teach_publications img {
     width: 100%; }
     @media screen and (max-width: 992px) {
@@ -1549,6 +1555,11 @@ footer {
       width: 100%; } }
   .timetable td {
     padding: 15px 0; }
+  .timetable .table_link {
+    color: #6b6b6b; }
+    .timetable .table_link:hover {
+      color: #4b82b3;
+      text-decoration: underline; }
   .timetable .table_text {
     text-align: left;
     width: 30%;
@@ -1599,7 +1610,8 @@ footer {
     background-image: url("../img/tt-nextAr.png");
     background-repeat: no-repeat;
     width: 12px;
-    height: 22px; }
+    height: 22px;
+    z-index: 100; }
     @media screen and (max-width: 992px) {
       .timetable .timetable_next_arrow {
         right: 36%; } }
@@ -1615,7 +1627,8 @@ footer {
     background-image: url("../img/tt-prevAr.png");
     background-repeat: no-repeat;
     width: 12px;
-    height: 22px; }
+    height: 22px;
+    z-index: 100; }
     @media screen and (max-width: 992px) {
       .timetable .timetable_prev_arrow {
         left: 40%; } }
@@ -1708,21 +1721,27 @@ footer {
   z-index: 1100; }
   .timetable_popup_wrapper .timetable_popup {
     width: 100%;
-    height: 30vh;
+    height: 50vh;
     position: relative;
     background-color: #ffffff;
     padding: 0 40px 0 40px;
-    margin-top: 16vh;
+    margin-top: 26vh;
     z-index: 1100; }
+    @media screen and (max-width: 992px) {
+      .timetable_popup_wrapper .timetable_popup {
+        height: 35vh;
+        margin-top: 21vh; } }
     @media screen and (max-width: 375px) {
       .timetable_popup_wrapper .timetable_popup {
-        margin-top: 0; } }
+        width: 100vw;
+        height: 80vh;
+        margin-top: 0;
+        padding: 20% 40px 0 10px; } }
   .timetable_popup_wrapper .timetable_popup_header {
     text-align: center; }
     @media screen and (max-width: 375px) {
       .timetable_popup_wrapper .timetable_popup_header {
-        margin-bottom: 40px;
-        margin-top: 30%; } }
+        margin-bottom: 40px; } }
   .timetable_popup_wrapper .timetable_popup_form {
     display: flex;
     flex-direction: column;
