@@ -209,6 +209,7 @@
       line-height: 100px;
       @media screen and (max-width: 992px) {
         margin-top: 40px;
+        line-height: 50px;
       }
     }
   }
@@ -288,12 +289,15 @@
     padding: 0 25px;
   }
   .main_header {
-    width: 55%;
+    width: 40%;
     font-size: 48px;
     line-height: 60px;
     @extend .font-bold;
     color: $main-blue;
     margin-top: 30vh;
+    @media screen and (max-width: 992px) {
+      width: 75%;
+    }
     @media screen and (max-width: 375px) {
       display: inline-block;
       width: 100%;
@@ -315,6 +319,12 @@
   .sub_btn {
     @extend .btn;
     margin-top: 10vh;
+    @media screen and (max-width: 450px) {
+      margin-top: 20px;
+    }
+    @media screen and (max-width: 375px) {
+      margin-top: 20px;
+    }
   }
   .sub_btn:hover {
     text-decoration: underline;
@@ -340,6 +350,15 @@
   background-color: $main-white;
   @media screen and (max-width: 992px) {
     padding: 0 25px;
+  }
+  .main_about_header {
+    @extend .header;
+    display: none;
+    @media screen and (max-width: 375px) {
+      display: inline-block;
+      margin-top: 100px;
+      margin-bottom: 20px;
+    }
   }
   .main_about_text_wrapper {
     padding-top: 50px;
@@ -831,13 +850,21 @@
       position: absolute;
       width: 100%;
       height: auto;
-      top: 33%;
+      top: calc(50% - 45px);
       left: 0;
       padding: 35px 0;
       text-align: center;
       background-color: rgba(216, 217, 219, 0.5);
       color: $main-black;
       z-index: 100;
+      @media screen and (max-width: 375px) {
+        padding: 15px 0;
+        top: calc(50% - 25px);
+      }
+      .main_certificates_text {
+        line-height: 20px;
+        @extend .tm_link;
+      }
     }
   }
   .main_certificates_btn {
@@ -905,7 +932,7 @@
     display: block;
     margin-top: 40px;
     @media screen and (max-width: 992px) {
-      margin-bottom: 40px;
+      margin-bottom: 50px;
     }
     @media screen and (max-width: 375px) {
       margin-top: 30px;
@@ -1417,7 +1444,7 @@ footer {
     position: absolute;
     width: 70%;
     height: auto;
-    top: 48%;
+    top: calc(50% - 20px);
     left: 15%;
     padding: 20px 0;
     text-align: center;
@@ -1427,6 +1454,8 @@ footer {
     @media screen and (max-width: 375px) {
       width: 100%;
       left: 0;
+      top: calc(50% - 25px);
+      padding: 15px 0;
     }
     a {
       color: $main-black;
@@ -1548,7 +1577,7 @@ footer {
   .learners_link_block {
     display: none;
     .learners_facebook {
-      width: 20px;
+      width: 40px;
     }
   }
   .learners_text_block {
