@@ -14,7 +14,7 @@
   font-weight: 300;
   font-style: normal; }
 /*BODY*/
-.font_reg, .wrapper, .main_wrapper, input:focus, .main_teach .main_teach_text strong, .main_publication .main_publication_text strong, .contacts input:focus, .about_reviews .about_reviews_slider_wrapper .about_reviews_slide .about_reviews_text strong, .about_reviews .about_reviews_tablet_slider_wrapper .about_reviews_slide .about_reviews_text strong, .about_reviews .about_reviews_mob_slider_wrapper .about_reviews_slide .about_reviews_text strong, .teach_publications .teach_publications_text_block span, .blog .blog_text_block .blog_link, .article .article_text_block span, .timetable_popup_wrapper .timetable_popup_form input:focus, .timetable_popup_wrapper .timetable_popup_form option:focus, .timetable_popup_wrapper .timetable_popup_course {
+.font_reg, .wrapper, .main_wrapper, input:focus, .main_teach .main_teach_text strong, .main_publication .main_publication_text strong, .contacts input:focus, .about_reviews .about_reviews_slider_wrapper .about_reviews_slide .about_reviews_text strong, .about_reviews .about_reviews_tablet_slider_wrapper .about_reviews_slide .about_reviews_text strong, .about_reviews .about_reviews_mob_slider_wrapper .about_reviews_slide .about_reviews_text strong, .teach_publications .teach_publications_text_block span, .blog .blog_text_block .blog_link, .article .article_text_block span, .article_other .article_other_text_block .article_other_text_head, .timetable_popup_wrapper .timetable_popup_form input:focus, .timetable_popup_wrapper .timetable_popup_form option:focus, .timetable_popup_wrapper .timetable_popup_course {
   font-family: 'Roboto', sans-serif;
   font-weight: 400; }
 
@@ -44,11 +44,11 @@
       margin-bottom: 0; } }
 
 /*LINKS*/
-.tm_link, .nav_wrapper .nav_header_menu a, .main_certificates .main_certificates_block .main_certificates_text_block .main_certificates_text, .teach_publications .teach_publications_text_block span, .blog .blog_text_block .blog_link, .article_other .article_other_text_block .article_other_link {
+.tm_link, .nav_wrapper .nav_header_menu a, .main_certificates .main_certificates_block .main_certificates_text_block .main_certificates_text, .teach_publications .teach_publications_text_block span, .blog .blog_text_block .blog_link, .article_other .article_other_text_block .article_other_text_head {
   color: #000000;
   cursor: pointer; }
 
-.tm_link:hover, .nav_wrapper .nav_header_menu a:hover, .main_certificates .main_certificates_block .main_certificates_text_block .main_certificates_text:hover, .teach_publications .teach_publications_text_block span:hover, .blog .blog_text_block .blog_link:hover, .article_other .article_other_text_block .article_other_link:hover {
+.tm_link:hover, .nav_wrapper .nav_header_menu a:hover, .main_certificates .main_certificates_block .main_certificates_text_block .main_certificates_text:hover, .teach_publications .teach_publications_text_block span:hover, .blog .blog_text_block .blog_link:hover, .article_other .article_other_text_block .article_other_text_head:hover {
   color: #4b82b3;
   text-decoration: underline; }
 
@@ -184,7 +184,7 @@ input:focus {
     transition: width 0.6s, height 0.6s, line-height 0.6s; }
     @media screen and (max-width: 992px) {
       .nav_header .logo_tb {
-        width: 120px;
+        width: 100px;
         display: inline-block; } }
     .nav_header .logo_tb img {
       width: 100%;
@@ -296,6 +296,9 @@ input:focus {
     height: 100px;
     line-height: 100px;
     display: inline-block; }
+    @media screen and (max-width: 992px) {
+      .header_active .logo_tb {
+        width: 100px; } }
     .header_active .logo_tb img {
       line-height: 100px; }
   .header_active .nav_wrapper .nav_header_menu {
@@ -550,8 +553,7 @@ input:focus {
       display: block;
       position: relative;
       width: 100%;
-      height: 80vh;
-      max-height: 480px;
+      height: 480px;
       margin-top: 120px;
       padding: 0 25px;
       overflow: hidden;
@@ -569,8 +571,7 @@ input:focus {
       .main_advantage_mob .main_advantage_mob_slider_wrapper {
         position: relative;
         width: 100%;
-        height: 80vh;
-        max-height: 460px;
+        height: 480px;
         z-index: 101;
         overflow: hidden; }
         .main_advantage_mob .main_advantage_mob_slider_wrapper .main_advantage_mob_slider {
@@ -721,8 +722,8 @@ input:focus {
   .main_gallery .main_gallery_next_arrow {
     cursor: pointer;
     position: absolute;
-    top: 45%;
-    right: 0;
+    top: 63%;
+    right: 15px;
     background-image: url("../img/next_arrow.png");
     width: 20px;
     height: 36px;
@@ -738,8 +739,8 @@ input:focus {
     cursor: pointer;
     position: absolute;
     display: block;
-    top: 45%;
-    left: 0;
+    top: 63%;
+    left: 15px;
     background-image: url("../img/prew_arrow.png");
     width: 20px;
     height: 36px;
@@ -1251,6 +1252,7 @@ footer {
 .learners {
   position: relative;
   width: 100%;
+  height: 1560px;
   padding: 140px 40px 0 40px;
   overflow: hidden; }
   @media screen and (max-width: 992px) {
@@ -1260,10 +1262,13 @@ footer {
   @media screen and (max-width: 375px) {
     .learners {
       height: 1500px; } }
-  @media screen and (max-width: 992px) {
-    .learners .learners_wrapper {
-      padding-bottom: 140px;
-      overflow: hidden; } }
+  .learners .learners_wrapper {
+    overflow: hidden;
+    padding-bottom: 140px; }
+    @media screen and (max-width: 992px) {
+      .learners .learners_wrapper {
+        padding-bottom: 140px;
+        overflow: hidden; } }
   @media screen and (max-width: 375px) {
     .learners .learners_header {
       margin-bottom: 25px; } }
@@ -1278,7 +1283,7 @@ footer {
       height: auto;
       top: 0;
       left: 0;
-      padding: 38% 0;
+      padding: 35% 0;
       text-align: center;
       background-color: rgba(255, 255, 255, 0.5);
       z-index: 100; }
@@ -1316,8 +1321,7 @@ footer {
 .learners_btn {
   width: 220px;
   margin: 20px auto 0 auto;
-  clear: both;
-  display: none; }
+  clear: both; }
   @media screen and (max-width: 992px) {
     .learners_btn {
       display: block;
@@ -1327,7 +1331,9 @@ footer {
 .blog {
   position: relative;
   width: 100%;
-  padding: 100px 40px 0 40px; }
+  height: 1830px;
+  padding: 100px 40px 0 40px;
+  overflow: hidden; }
   @media screen and (max-width: 992px) {
     .blog {
       padding: 100px 25px 0 25px; } }
@@ -1335,9 +1341,12 @@ footer {
     .blog {
       height: 1500px;
       overflow: hidden; } }
-  @media screen and (max-width: 375px) {
-    .blog .blog_wrapper {
-      padding-bottom: 100px; } }
+  .blog .blog_wrapper {
+    padding-bottom: 100px;
+    overflow: hidden; }
+    @media screen and (max-width: 375px) {
+      .blog .blog_wrapper {
+        padding-bottom: 100px; } }
   .blog .row {
     overflow: hidden; }
   .blog .blog_link_wrapper {
@@ -1361,8 +1370,7 @@ footer {
 .blog_btn {
   width: 220px;
   margin: 60px auto 0 auto;
-  clear: both;
-  display: none; }
+  clear: both; }
   @media screen and (max-width: 992px) {
     .blog_btn {
       display: block; } }
@@ -1421,10 +1429,12 @@ footer {
     color: #6b6b6b;
     margin-top: 15px;
     line-height: 24px; }
-  .article_other .article_other_text_block .article_other_link {
+  .article_other .article_other_text_block .article_other_text_head {
     line-height: 20px;
-    display: block;
-    margin-top: 15px; }
+    margin-top: 15px;
+    color: #000000; }
+  .article_other .article_other_text_block .article_other_link {
+    text-decoration: none; }
 
 /*MAP*/
 .contact_map {
@@ -1597,7 +1607,8 @@ footer {
     margin-bottom: 40px; }
     @media screen and (max-width: 375px) {
       .timetable .timetable_arrows_block {
-        margin-bottom: 0; } }
+        margin-bottom: 0;
+        position: relative; } }
   .timetable .timetable_slide {
     display: inline-block; }
   @media screen and (max-width: 375px) {
@@ -1739,7 +1750,7 @@ footer {
     overflow: hidden;
     display: inline-block; }
   .timetable .timetable_mob_slide_text_block {
-    height: 900px;
+    height: 920px;
     overflow: hidden; }
     .timetable .timetable_mob_slide_text_block h6 {
       margin-top: 40px;
@@ -1774,23 +1785,33 @@ footer {
   opacity: 0;
   background-color: rgba(255, 255, 255, 0.6);
   z-index: 1100; }
+  .timetable_popup_wrapper .timetable_popup_viewer {
+    width: 100%;
+    height: 50vh;
+    background-color: #ffffff;
+    margin-top: 26vh; }
+    @media screen and (max-width: 992px) {
+      .timetable_popup_wrapper .timetable_popup_viewer {
+        height: 35vh;
+        margin-top: 21vh; } }
+    @media screen and (max-width: 375px) {
+      .timetable_popup_wrapper .timetable_popup_viewer {
+        width: 100vw;
+        height: 100vh;
+        margin-top: 0; } }
   .timetable_popup_wrapper .timetable_popup {
     width: 100%;
     height: 50vh;
     position: relative;
-    background-color: #ffffff;
     padding: 0 40px 0 40px;
-    margin-top: 26vh;
     z-index: 1100; }
     @media screen and (max-width: 992px) {
       .timetable_popup_wrapper .timetable_popup {
-        height: 35vh;
-        margin-top: 21vh; } }
+        height: 35vh; } }
     @media screen and (max-width: 375px) {
       .timetable_popup_wrapper .timetable_popup {
         width: 100vw;
-        height: 80vh;
-        margin-top: 0;
+        height: 100vh;
         padding: 20% 40px 0 10px; } }
   .timetable_popup_wrapper .timetable_popup_header {
     text-align: center;
