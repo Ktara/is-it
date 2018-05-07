@@ -730,6 +730,9 @@
 .smti_viewer {
   left: auto !important;
   right: 100%;
+}.smtid_viewer {
+  left: auto !important;
+  right: 120%;
 }
 
 
@@ -1576,8 +1579,12 @@ footer {
         text-align: center;
         background-color: rgba(255, 255, 255, 0.5);
         z-index: 100;
+        @media screen and (max-width: 992px) {
+          display: none;
+        }
       }
     }
+
   }
   .learners_foto {
     width: 100%;
