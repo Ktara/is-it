@@ -1287,27 +1287,30 @@ footer {
   .learners .learners_img_block {
     position: relative;
     width: 100%;
-    cursor: pointer; }
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
     .learners .learners_img_block:hover .learners_link_block {
       position: absolute;
-      display: block;
+      display: flex;
+      justify-content: center;
+      align-items: center;
       width: 100%;
-      height: auto;
+      height: 100%;
       top: 0;
       left: 0;
-      padding: 35% 0;
-      text-align: center;
       background-color: rgba(255, 255, 255, 0.5);
       z-index: 100; }
   .learners .learners_link_block_hover .learners_link_block {
     position: absolute;
-    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 100%;
-    height: auto;
+    height: 100%;
     top: 0;
     left: 0;
-    padding: 35% 0;
-    text-align: center;
     background-color: rgba(255, 255, 255, 0.5);
     z-index: 100; }
   .learners .learners_foto {
