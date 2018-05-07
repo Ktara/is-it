@@ -493,3 +493,11 @@ $('.timetable_popup_close').click(function(){
         $(e.target).prev().animate({"height" : trHeight}, 600);
     });
 })();
+
+
+
+(function(){
+    $(".learners_img_block").mouseover(function(){
+        $(".learners_img_block").removeClass('learners_link_block_hover');
+    })
+})();

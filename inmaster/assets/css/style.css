@@ -138,14 +138,17 @@ input:focus {
   text-decoration: underline; }
 
 .main_wrapper {
-  position: relative;
-  max-width: 1400px; }
+  position: relative; }
 
 .fix {
   padding-left: 0; }
   @media screen and (max-width: 375px) {
     .fix {
       padding-left: 15px; } }
+
+.main_container {
+  max-width: 1400px;
+  margin: 0 auto; }
 
 /*HEADER*/
 .nav_header {

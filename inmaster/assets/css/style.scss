@@ -3,13 +3,17 @@
 .main_wrapper {
   @extend .wrapper;
   position: relative;
-  max-width: 1400px;
  }
 .fix {
   padding-left: 0;
   @media screen and (max-width: 375px) {
     padding-left: 15px;
   }
+}
+.main_container {
+  //display: block;
+  max-width: 1400px;
+  margin: 0 auto;
 }
 
 
