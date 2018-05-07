@@ -3,6 +3,7 @@
 .main_wrapper {
   @extend .wrapper;
   position: relative;
+  max-width: 1400px;
  }
 .fix {
   padding-left: 0;
@@ -54,6 +55,9 @@
     @media screen and (max-width: 992px) {
       width: 100px;
       display: inline-block;
+    }
+    @media screen and (max-width: 375px) {
+      width: 80px;
     }
     img {
       width: 100%;
@@ -135,18 +139,21 @@
 
     }
   }
-  .nav_active_logo {
-    position: absolute;
-    display: block;
-    top: 0;
-    left: 0;
-    width: 100%;
-    @media screen and (max-width: 375px) {
-      left: 0;
-      z-index: 1002;
-      width: 80px;
-    }
-  }
+  //.nav_active_logo {
+  //  position: absolute;
+  //  display: block;
+  //  top: 0;
+  //  left: 0;
+  //  width: 100%;
+  //  @media screen and (max-width: 992px) {
+  //    width: 100px;
+  //  }
+  //  @media screen and (max-width: 375px) {
+  //    left: 0;
+  //    z-index: 1002;
+  //    width: 80px;
+  //  }
+  //}
   .lang_wrapper {
     .lang_list {
       line-height: 50px;
@@ -193,24 +200,24 @@
       width: 100px;
       //line-height: 50px;
     }
+    @media screen and (max-width: 375px) {
+      width: 80px;
+    }
     img {
       line-height: 100px;
-      @media screen and (max-width: 992px) {
-        //line-height: 50px;
-      }
     }
   }
-  //.logo {
-  //  width: 80px;
-  //  height: 100px;
-  //  line-height: 100px;
-  //  @media screen and (max-width: 992px) {
-  //    display: none;
-  //  }
-  //  img {
-  //    line-height: 100px;
-  //  }
-  //}
+  .logo {
+    width: 80px;
+    height: 100px;
+    line-height: 100px;
+    @media screen and (max-width: 992px) {
+      display: none;
+    }
+    img {
+      line-height: 100px;
+    }
+  }
   .nav_wrapper {
     .nav_header_menu {
       line-height: 100px;
@@ -1579,12 +1586,24 @@ footer {
         text-align: center;
         background-color: rgba(255, 255, 255, 0.5);
         z-index: 100;
-        @media screen and (max-width: 992px) {
-          display: none;
-        }
       }
     }
 
+
+  }
+  .learners_link_block_hover {
+    .learners_link_block {
+      position: absolute;
+      display: block;
+      width: 100%;
+      height: auto;
+      top: 0;
+      left: 0;
+      padding: 35% 0;
+      text-align: center;
+      background-color: rgba(255, 255, 255, 0.5);
+      z-index: 100;
+    }
   }
   .learners_foto {
     width: 100%;
