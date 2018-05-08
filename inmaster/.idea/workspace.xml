@@ -24,7 +24,7 @@
     <select />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.5915105">
+    <splitter split-orientation="horizontal" split-proportion="0.54024255">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
           <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
@@ -68,8 +68,8 @@
           <file leaf-file-name="article.html" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/article.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="550">
-                  <caret line="159" column="24" selection-start-line="159" selection-start-column="24" selection-end-line="159" selection-end-column="24" />
+                <state relative-caret-position="264">
+                  <caret line="179" column="9" selection-start-line="179" selection-start-column="9" selection-end-line="179" selection-end-column="9" />
                 </state>
               </provider>
             </entry>
@@ -92,7 +92,7 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="course.html" pinned="false" current-in-tab="false">
+          <file leaf-file-name="course.html" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/course.html">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="946">
@@ -110,7 +110,7 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="teach.html" pinned="false" current-in-tab="true">
+          <file leaf-file-name="teach.html" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/teach.html">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="726">
@@ -143,8 +143,8 @@
           <file leaf-file-name="style.scss" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/assets/css/style.scss">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="620">
-                  <caret line="1559" column="23" selection-start-line="1559" selection-start-column="23" selection-end-line="1559" selection-end-column="23" />
+                <state relative-caret-position="528">
+                  <caret line="267" column="23" selection-start-line="267" selection-start-column="23" selection-end-line="267" selection-end-column="23" />
                 </state>
               </provider>
             </entry>
@@ -153,7 +153,7 @@
             <entry file="file://$PROJECT_DIR$/assets/css/style.css">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="33242">
-                  <caret line="1515" selection-start-line="1515" selection-end-line="1515" />
+                  <caret line="1513" selection-start-line="1513" selection-end-line="1513" />
                 </state>
               </provider>
             </entry>
@@ -219,10 +219,10 @@
         <option value="$PROJECT_DIR$/assets/css/legend.scss" />
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/blog.html" />
-        <option value="$PROJECT_DIR$/article.html" />
         <option value="$PROJECT_DIR$/assets/js/script.js" />
         <option value="$PROJECT_DIR$/timetable.html" />
         <option value="$PROJECT_DIR$/teach.html" />
+        <option value="$PROJECT_DIR$/article.html" />
         <option value="$PROJECT_DIR$/assets/css/style.scss" />
       </list>
     </option>
@@ -327,12 +327,12 @@
       <workItem from="1525503494622" duration="15242000" />
       <workItem from="1525676082137" duration="14064000" />
       <workItem from="1525698928352" duration="5149000" />
-      <workItem from="1525756620734" duration="4896000" />
+      <workItem from="1525756620734" duration="5507000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="209349000" />
+    <option name="totallyTimeSpent" value="209960000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1176" extended-state="6" />
@@ -732,7 +732,7 @@
     <entry file="file://$PROJECT_DIR$/assets/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="33242">
-          <caret line="1515" selection-start-line="1515" selection-end-line="1515" />
+          <caret line="1513" selection-start-line="1513" selection-end-line="1513" />
         </state>
       </provider>
     </entry>
@@ -777,27 +777,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/blog.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="946">
-          <caret line="282" column="6" selection-start-line="282" selection-start-column="6" selection-end-line="282" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/course.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="946">
-          <caret line="57" column="41" selection-start-line="57" selection-start-column="41" selection-end-line="57" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/article.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="550">
-          <caret line="159" column="24" selection-start-line="159" selection-start-column="24" selection-end-line="159" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/assets/js/script.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-4172">
@@ -827,10 +806,31 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/article.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="179" column="9" selection-start-line="179" selection-start-column="9" selection-end-line="179" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blog.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="946">
+          <caret line="282" column="6" selection-start-line="282" selection-start-column="6" selection-end-line="282" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/course.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="946">
+          <caret line="57" column="41" selection-start-line="57" selection-start-column="41" selection-end-line="57" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/assets/css/style.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="620">
-          <caret line="1559" column="23" selection-start-line="1559" selection-start-column="23" selection-end-line="1559" selection-end-column="23" />
+        <state relative-caret-position="528">
+          <caret line="267" column="23" selection-start-line="267" selection-start-column="23" selection-end-line="267" selection-end-column="23" />
         </state>
       </provider>
     </entry>
