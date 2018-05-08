@@ -125,8 +125,8 @@
           <file leaf-file-name="timetable.html" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/timetable.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="286">
-                  <caret line="381" column="69" selection-start-line="381" selection-start-column="69" selection-end-line="381" selection-end-column="69" />
+                <state relative-caret-position="272">
+                  <caret line="775" column="52" selection-start-line="775" selection-start-column="52" selection-end-line="775" selection-end-column="52" />
                   <folding>
                     <element signature="n#div#0;n#div#1;n#div#1;n#section#0;n#div#0;n#body#0;n#html#0;n#!!top" />
                     <element signature="n#div#0;n#div#2;n#div#1;n#section#0;n#div#0;n#body#0;n#html#0;n#!!top" />
@@ -143,8 +143,8 @@
           <file leaf-file-name="style.scss" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/assets/css/style.scss">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="484">
-                  <caret line="175" column="5" lean-forward="true" selection-start-line="172" selection-start-column="4" selection-end-line="175" selection-end-column="5" />
+                <state relative-caret-position="412">
+                  <caret line="68" column="25" selection-start-line="68" selection-start-column="25" selection-end-line="68" selection-end-column="25" />
                   <folding>
                     <element signature="e#14515#15983#0" />
                   </folding>
@@ -217,7 +217,6 @@
         <option value="$PROJECT_DIR$/assets/img/9.svg" />
         <option value="$PROJECT_DIR$/about.html" />
         <option value="$PROJECT_DIR$/contact.html" />
-        <option value="$PROJECT_DIR$/timetable.html" />
         <option value="$PROJECT_DIR$/teach.html" />
         <option value="$PROJECT_DIR$/article.html" />
         <option value="$PROJECT_DIR$/assets/css/legend.scss" />
@@ -227,6 +226,7 @@
         <option value="$PROJECT_DIR$/learners.html" />
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/assets/js/script.js" />
+        <option value="$PROJECT_DIR$/timetable.html" />
         <option value="$PROJECT_DIR$/assets/css/style.scss" />
       </list>
     </option>
@@ -331,12 +331,12 @@
       <workItem from="1525503494622" duration="15242000" />
       <workItem from="1525676082137" duration="14064000" />
       <workItem from="1525698928352" duration="5149000" />
-      <workItem from="1525756620734" duration="17416000" />
+      <workItem from="1525756620734" duration="17704000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="221869000" />
+    <option name="totallyTimeSpent" value="222157000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1176" extended-state="6" />
@@ -819,24 +819,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/assets/css/style.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="484">
-          <caret line="175" column="5" lean-forward="true" selection-start-line="172" selection-start-column="4" selection-end-line="175" selection-end-column="5" />
-          <folding>
-            <element signature="e#14515#15983#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/timetable.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="381" column="69" selection-start-line="381" selection-start-column="69" selection-end-line="381" selection-end-column="69" />
+        <state relative-caret-position="272">
+          <caret line="775" column="52" selection-start-line="775" selection-start-column="52" selection-end-line="775" selection-end-column="52" />
           <folding>
             <element signature="n#div#0;n#div#1;n#div#1;n#section#0;n#div#0;n#body#0;n#html#0;n#!!top" />
             <element signature="n#div#0;n#div#2;n#div#1;n#section#0;n#div#0;n#body#0;n#html#0;n#!!top" />
             <element signature="n#div#0;n#div#1;n#div#2;n#div#1;n#section#0;n#div#0;n#body#0;n#html#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/css/style.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="412">
+          <caret line="68" column="25" selection-start-line="68" selection-start-column="25" selection-end-line="68" selection-end-column="25" />
+          <folding>
+            <element signature="e#14515#15983#0" />
           </folding>
         </state>
       </provider>

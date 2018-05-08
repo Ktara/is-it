@@ -191,12 +191,14 @@ input:focus {
     @media screen and (max-width: 992px) {
       .nav_header .logo_tb {
         width: 100px;
-        display: inline-block; } }
+        display: block;
+        margin: 0 auto; } }
     @media screen and (max-width: 767px) {
       .nav_header .logo_tb {
         width: 80px; } }
     .nav_header .logo_tb img {
       width: 100%;
+      text-align: center;
       line-height: 100px;
       vertical-align: middle;
       transition: line-height 0.6s; }
