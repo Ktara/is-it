@@ -1014,8 +1014,9 @@
     right: 100%;
     width: 100%;
     img {
-      width: auto;
-      max-height: 500px;
+      width: 100%;
+      //width: auto;
+      //max-height: 500px;
       float: left;
       @media screen and (max-width: 992px) {
         width: 100%;

@@ -889,8 +889,7 @@ input:focus {
     right: 100%;
     width: 100%; }
     .main_publication .main_publication_img_viewer img {
-      width: auto;
-      max-height: 500px;
+      width: 100%;
       float: left; }
       @media screen and (max-width: 992px) {
         .main_publication .main_publication_img_viewer img {
