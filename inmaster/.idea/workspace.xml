@@ -24,7 +24,7 @@
     <select />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.6979543">
+    <splitter split-orientation="horizontal" split-proportion="0.46855012">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
           <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
@@ -132,10 +132,10 @@
           <file leaf-file-name="style.scss" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/assets/css/style.scss">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="555">
-                  <caret line="1016" column="18" selection-start-line="1016" selection-start-column="18" selection-end-line="1016" selection-end-column="18" />
+                <state relative-caret-position="418">
+                  <caret line="20" column="3" lean-forward="true" selection-start-line="20" selection-start-column="3" selection-end-line="20" selection-end-column="3" />
                   <folding>
-                    <marker date="1525786112737" expanded="true" signature="19460:19478" ph="..." />
+                    <marker date="1525786564293" expanded="true" signature="19485:19503" ph="..." />
                   </folding>
                 </state>
               </provider>
@@ -145,7 +145,7 @@
             <entry file="file://$PROJECT_DIR$/assets/css/style.css">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="33726">
-                  <caret line="1533" selection-start-line="1533" selection-end-line="1533" />
+                  <caret line="1535" selection-start-line="1535" selection-end-line="1535" />
                 </state>
               </provider>
             </entry>
@@ -215,8 +215,8 @@
         <option value="$PROJECT_DIR$/learners.html" />
         <option value="$PROJECT_DIR$/assets/js/script.js" />
         <option value="$PROJECT_DIR$/timetable.html" />
-        <option value="$PROJECT_DIR$/assets/css/style.scss" />
         <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/assets/css/style.scss" />
       </list>
     </option>
   </component>
@@ -321,18 +321,18 @@
       <workItem from="1525676082137" duration="14064000" />
       <workItem from="1525698928352" duration="5149000" />
       <workItem from="1525756620734" duration="18477000" />
-      <workItem from="1525786037501" duration="276000" />
+      <workItem from="1525786037501" duration="527000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="223206000" />
+    <option name="totallyTimeSpent" value="223457000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1176" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.114072494" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.0" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="12" side_tool="true" weight="0.32947975" />
@@ -650,7 +650,7 @@
     <entry file="file://$PROJECT_DIR$/assets/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="33726">
-          <caret line="1533" selection-start-line="1533" selection-end-line="1533" />
+          <caret line="1535" selection-start-line="1535" selection-end-line="1535" />
         </state>
       </provider>
     </entry>
@@ -734,16 +734,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/assets/css/style.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="555">
-          <caret line="1016" column="18" selection-start-line="1016" selection-start-column="18" selection-end-line="1016" selection-end-column="18" />
-          <folding>
-            <marker date="1525786112737" expanded="true" signature="19460:19478" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/blog.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="4628">
@@ -762,6 +752,16 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="264">
           <caret line="83" column="34" selection-start-line="83" selection-start-column="34" selection-end-line="83" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/css/style.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="418">
+          <caret line="20" column="3" lean-forward="true" selection-start-line="20" selection-start-column="3" selection-end-line="20" selection-end-column="3" />
+          <folding>
+            <marker date="1525786564293" expanded="true" signature="19485:19503" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>

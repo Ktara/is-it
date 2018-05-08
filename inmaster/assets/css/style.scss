@@ -15,6 +15,10 @@
   //display: block;
   max-width: 1400px;
   margin: 0 auto;
+  .nav_header {
+    max-width: 1400px;
+    margin: 0 auto;
+  }
 }
 
 
@@ -22,8 +26,7 @@
 .nav_header {
   position: fixed;
   width: 100%;
-  max-width: 1400px;
-  margin: 0 auto;
+
   //height: 50px;
   height: 100px;
   top: 0;
