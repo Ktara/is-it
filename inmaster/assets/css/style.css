@@ -36,7 +36,7 @@
   @media screen and (max-width: 992px) {
     .header, .main_about .main_about_header, .main_about .main_about, .main_advantage .main_advantage_slider_wrapper .main_advantage_header, .main_advantage_mob .main_advantage_mob_header, .main_teach .main_teach_header, .main_certificates .main_certificates_header, .main_publication .main_publication_header, .contacts .contacts_header, .about_certificates .about_certificates_header, .about_certificates_mob .about_certificates_mob_header, .about_reviews .about_reviews_header, .teach .teach_header, .teach_publications .teach_publications_header, .learners .learners_header, .article_other .article_other_header, .course_base .course_base_header, .course_other .course_other_header, .course_spec .course_spec_header, .timetable .timetable_header, .timetable_popup_wrapper .timetable_popup_header {
       line-height: 40px; } }
-  @media screen and (max-width: 375px) {
+  @media screen and (max-width: 767px) {
     .header, .main_about .main_about_header, .main_about .main_about, .main_advantage .main_advantage_slider_wrapper .main_advantage_header, .main_advantage_mob .main_advantage_mob_header, .main_teach .main_teach_header, .main_certificates .main_certificates_header, .main_publication .main_publication_header, .contacts .contacts_header, .about_certificates .about_certificates_header, .about_certificates_mob .about_certificates_mob_header, .about_reviews .about_reviews_header, .teach .teach_header, .teach_publications .teach_publications_header, .learners .learners_header, .article_other .article_other_header, .course_base .course_base_header, .course_other .course_other_header, .course_spec .course_spec_header, .timetable .timetable_header, .timetable_popup_wrapper .timetable_popup_header {
       font-size: 24px;
       line-height: 30px;
@@ -52,10 +52,10 @@
   color: #4b82b3;
   text-decoration: underline; }
 
-.tm_link_active, .nav_wrapper .nav_header_menu .active_nav_punct, .main_publication .main_publication_link, .about .about_text_link_btn, .about_reviews .about_reviews_slider_wrapper .about_reviews_slide .about_reviews_text a, .about_reviews .about_reviews_tablet_slider_wrapper .about_reviews_slide .about_reviews_text a, .about_reviews .about_reviews_mob_slider_wrapper .about_reviews_slide .about_reviews_text a, .teach_publications .teach_publications_text_block .teach_publications_read_more, .learners .learners_read_more, .article .article_read_btn, .article_other .article_other_text_block .article_other_read_more, .course_base .course_base_read_btn {
+.tm_link_active, .nav_wrapper .nav_header_menu .active_nav_punct, .main_publication .main_publication_link, .about .about_text_link_btn, .about_reviews .about_reviews_slider_wrapper .about_reviews_slide .about_reviews_text a, .about_reviews .about_reviews_tablet_slider_wrapper .about_reviews_slide .about_reviews_text a, .about_reviews .about_reviews_mob_slider_wrapper .about_reviews_slide .about_reviews_text a, .teach_publications .teach_publications_text_block .teach_publications_read_more, .learners .learners_read_more, .blog .blog_read_more, .article .article_read_btn, .article_other .article_other_text_block .article_other_read_more, .course_base .course_base_read_btn {
   color: #4b82b3;
   cursor: pointer; }
-  .tm_link_active:hover, .nav_wrapper .nav_header_menu .active_nav_punct:hover, .main_publication .main_publication_link:hover, .about .about_text_link_btn:hover, .about_reviews .about_reviews_slider_wrapper .about_reviews_slide .about_reviews_text a:hover, .about_reviews .about_reviews_tablet_slider_wrapper .about_reviews_slide .about_reviews_text a:hover, .about_reviews .about_reviews_mob_slider_wrapper .about_reviews_slide .about_reviews_text a:hover, .teach_publications .teach_publications_text_block .teach_publications_read_more:hover, .learners .learners_read_more:hover, .article .article_read_btn:hover, .article_other .article_other_text_block .article_other_read_more:hover, .course_base .course_base_read_btn:hover {
+  .tm_link_active:hover, .nav_wrapper .nav_header_menu .active_nav_punct:hover, .main_publication .main_publication_link:hover, .about .about_text_link_btn:hover, .about_reviews .about_reviews_slider_wrapper .about_reviews_slide .about_reviews_text a:hover, .about_reviews .about_reviews_tablet_slider_wrapper .about_reviews_slide .about_reviews_text a:hover, .about_reviews .about_reviews_mob_slider_wrapper .about_reviews_slide .about_reviews_text a:hover, .teach_publications .teach_publications_text_block .teach_publications_read_more:hover, .learners .learners_read_more:hover, .blog .blog_read_more:hover, .article .article_read_btn:hover, .article_other .article_other_text_block .article_other_read_more:hover, .course_base .course_base_read_btn:hover {
     color: #4b82b3;
     text-decoration: underline; }
 
@@ -147,6 +147,7 @@ input:focus {
       padding-left: 15px; } }
 
 .main_container {
+  position: relative;
   max-width: 1400px;
   margin: 0 auto; }
 
@@ -154,6 +155,8 @@ input:focus {
 .nav_header {
   position: fixed;
   width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
   height: 100px;
   top: 0;
   z-index: 101;
@@ -277,6 +280,10 @@ input:focus {
     color: #4b82b3; }
   .nav_header .lang_wrapper .lang_punct_active {
     text-decoration: underline; }
+  @media screen and (max-width: 992px) {
+    .nav_header .lang_wrapper .langs_hover li {
+      height: 20px !important;
+      overflow: visible !important; } }
   @media screen and (max-width: 767px) {
     .nav_header .fixes {
       padding-right: 0; } }
@@ -432,6 +439,9 @@ input:focus {
       line-height: 24px; }
     @media screen and (max-width: 767px) {
       .main_about .main_about_text_wrapper p:nth-child(2) {
+        display: none; } }
+    @media screen and (max-width: 992px) {
+      .main_about .main_about_text_wrapper p:nth-child(2n) {
         display: none; } }
   .main_about .main_about_btn {
     margin-top: 20px; }
@@ -809,6 +819,9 @@ input:focus {
     margin: 60px auto 0 auto;
     width: 220px;
     clear: both; }
+  @media screen and (max-width: 767px) {
+    .main_certificates .fixes {
+      padding: 0; } }
 
 /*PUBLICATION*/
 .main_publication {
@@ -1276,7 +1289,7 @@ footer {
 .learners {
   position: relative;
   width: 100%;
-  height: 1560px;
+  height: 1100px;
   padding: 140px 40px 0 40px;
   overflow: hidden; }
   @media screen and (max-width: 992px) {
@@ -1358,12 +1371,12 @@ footer {
 
 .learners_btn {
   width: 220px;
-  margin: 20px auto 0 auto;
+  margin: 60px auto 0 auto;
   clear: both; }
   @media screen and (max-width: 992px) {
     .learners_btn {
       display: block;
-      margin: 20px auto 0 auto; } }
+      margin: 60px auto 0 auto; } }
 
 /*BLOG*/
 .blog {
@@ -1404,6 +1417,9 @@ footer {
     line-height: 20px;
     display: block;
     margin-top: 15px; }
+  .blog .blog_read_more {
+    display: block;
+    margin-top: 25px; }
 
 .blog_btn {
   width: 220px;
@@ -1550,6 +1566,9 @@ footer {
       .course_base img {
         width: 95%;
         padding-top: 24px; } }
+    @media screen and (max-width: 767px) {
+      .course_base img {
+        width: 100%; } }
   @media screen and (max-width: 767px) {
     .course_base .course_base_text_wrapper {
       padding-bottom: 24px; } }
@@ -1607,6 +1626,12 @@ footer {
     margin: 45px auto 0 auto;
     width: 220px;
     clear: both; }
+    @media screen and (max-width: 767px) {
+      .course_other .course_other_btn {
+        width: 100%; } }
+  @media screen and (max-width: 767px) {
+    .course_other .fixes {
+      padding-left: 0; } }
 
 /*COURSE_SPEC*/
 .course_spec {
@@ -1625,6 +1650,9 @@ footer {
   .course_spec .course_spec_btn {
     margin: 60px auto 0 auto;
     width: 220px; }
+    @media screen and (max-width: 767px) {
+      .course_spec .course_spec_btn {
+        width: 100%; } }
 
 /*TIMETABLE*/
 .timetable {

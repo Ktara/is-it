@@ -11,6 +11,7 @@
   }
 }
 .main_container {
+  position: relative;
   //display: block;
   max-width: 1400px;
   margin: 0 auto;
@@ -21,6 +22,8 @@
 .nav_header {
   position: fixed;
   width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
   //height: 50px;
   height: 100px;
   top: 0;
@@ -150,21 +153,6 @@
 
     }
   }
-  //.nav_active_logo {
-  //  position: absolute;
-  //  display: block;
-  //  top: 0;
-  //  left: 0;
-  //  width: 100%;
-  //  @media screen and (max-width: 992px) {
-  //    width: 100px;
-  //  }
-  //  @media screen and (max-width: 375px) {
-  //    left: 0;
-  //    z-index: 1002;
-  //    width: 80px;
-  //  }
-  //}
   .lang_wrapper {
     .lang_list {
       //line-height: 50px;
@@ -192,7 +180,19 @@
     .lang_punct_active {
       text-decoration: underline;
     }
+    .langs_hover {
+
+        li {
+          @media screen and (max-width: 992px) {
+          height: 20px !important;
+          overflow: visible !important;
+        }
+      }
+
+    }
   }
+
+
   .fixes {
     @media screen and (max-width: 767px) {
       padding-right: 0;
@@ -239,7 +239,6 @@
   .nav_wrapper {
     .nav_header_menu {
       line-height: 100px;
-
       @media screen and (max-width: 992px) {
         margin-top: 40px;
         line-height: 50px;
@@ -421,6 +420,11 @@
     }
     @media screen and (max-width: 767px) {
       p:nth-child(2){
+        display: none;
+      }
+    }
+    @media screen and (max-width: 992px) {
+      p:nth-child(2n){
         display: none;
       }
     }
@@ -908,12 +912,18 @@
         @extend .tm_link;
       }
     }
+
   }
   .main_certificates_btn {
     @extend .fill_btn;
     margin: 60px auto 0 auto;
     width: 220px;
     clear: both;
+  }
+  .fixes {
+    @media screen and (max-width: 767px) {
+      padding: 0;
+    }
   }
 }
 
@@ -1588,7 +1598,7 @@ footer {
 .learners {
   position: relative;
   width: 100%;
-  height: 1560px;
+  height: 1100px;
   padding: 140px 40px 0 40px;
   overflow: hidden;
   @media screen and (max-width: 992px) {
@@ -1704,12 +1714,12 @@ footer {
 .learners_btn {
   @extend .btn;
   width: 220px;
-  margin: 20px auto 0 auto;
+  margin: 60px auto 0 auto;
   clear: both;
   //display: none;
   @media screen and (max-width: 992px) {
     display: block;
-    margin: 20px auto 0 auto;
+    margin: 60px auto 0 auto;
   }
 }
 
@@ -1768,7 +1778,11 @@ footer {
       margin-top: 15px;
     }
   }
-
+  .blog_read_more {
+    @extend .tm_link_active;
+    display: block;
+    margin-top: 25px;
+  }
 }
 .blog_btn {
   @extend .btn;
@@ -1779,6 +1793,7 @@ footer {
   @media screen and (max-width: 992px) {
     display: block;
   }
+
 }
 
 
@@ -1991,6 +2006,9 @@ footer {
       width: 95%;
       padding-top: 24px;
     }
+    @media screen and (max-width: 767px) {
+      width: 100%;
+    }
   }
   .course_base_text_wrapper {
     @media screen and (max-width: 767px) {
@@ -2046,6 +2064,11 @@ footer {
   .fixed {
     padding: 0;
   }
+  //.fixes {
+  //  @media screen and (max-width: 767px) {
+  //    padding: 0;
+  //  }
+  //}
 }
 
 
@@ -2079,6 +2102,14 @@ footer {
     margin: 45px auto 0 auto;
     width: 220px;
     clear: both;
+    @media screen and (max-width: 767px) {
+      width: 100%;
+    }
+  }
+  .fixes {
+    @media screen and (max-width: 767px) {
+      padding-left: 0;
+    }
   }
 }
 
@@ -2112,6 +2143,9 @@ footer {
     @extend .fill_btn;
     margin: 60px auto 0 auto;
     width: 220px;
+    @media screen and (max-width: 767px) {
+      width: 100%;
+    }
   }
 }
 

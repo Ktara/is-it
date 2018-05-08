@@ -1,15 +1,3 @@
-// $('.main_certificates_btn').on('click', 'a', function (event) {
-//     console.log('dddd');
-//     event.preventDefault();
-//
-//     var id = $(this).attr('href'),
-//         top = $(id).offset().top - 150;
-//     $('body,html').animate({
-//         scrollTop: top
-//     }, 1200);
-// });
-
-
 $('.main_certificates_btn').click(function (event) {
     event.preventDefault();
 
@@ -18,7 +6,20 @@ $('.main_certificates_btn').click(function (event) {
     $('body,html').animate({
         scrollTop: top
     }, 1200);
-})
+});
+
+
+
+
+$('.course_scroll_link').click(function (event) {
+    event.preventDefault();
+
+    var id = $(this).attr('href'),
+        top = $(id).offset().top - 150;
+    $('body,html').animate({
+        scrollTop: top
+    }, 1200);
+});
 
 
 
@@ -323,7 +324,7 @@ window.onscroll = function() {
             opacity: 1
         }, 2000)
     }
-    if ( $('.smtid_wrapper').length > 0 && scrolled > secondImgPositionD.top*0.9 && secondImgStatusD){
+    if ( $('.smtid_wrapper').length > 0 && scrolled > secondImgPositionD.top*0.6 && secondImgStatusD){
         secondImgStatusD = false;
         $('.smtid_viewer').velocity({
             right : 0
@@ -409,7 +410,7 @@ window.onscroll = function() {
 
 if (scrolled > 1){
     $('.nav_header').addClass('header_active');
-    console.log('ssss');
+
 } else {
     $('.nav_header').removeClass('header_active');
 }
@@ -538,6 +539,13 @@ $('.timetable_popup_close').click(function(){
 (function(){
     $(".learners_img_block").mouseover(function(){
         $(".learners_img_block").removeClass('learners_link_block_hover');
+    })
+})();
+
+
+(function () {
+    $(".lang_list").click(function () {
+        $(".lang_list").toggleClass("langs_hover");
     })
 })();
 
