@@ -1,3 +1,20 @@
+
+    $('.main_certificates_btn').on('click', 'a', function (e) {
+        console.log('dddd');
+        event.preventDefault();
+
+        var id = $(this).attr('href'),
+            top = $(id).offset().top - 150;
+        $('body,html').animate({
+            scrollTop: top
+        }, 1200);
+    });
+
+
+
+
+
+
 $('.main_advantage_slider').slick({
     slidesToShow: 4,
     slidesToScroll: 4,
@@ -153,7 +170,7 @@ $('.timetable_slider_wrapper').slick({
     prevArrow: '<div class="timetable_prev_arrow"></div>',
     zIndex: 100,
     fade: true,
-    adaptiveHeight: true,
+    // adaptiveHeight: true,
     dots: true,
     customPaging : function(slider, i) {
         // var length = slider.$slides.length;
@@ -332,7 +349,6 @@ window.onscroll = function() {
         }
         if (scrolled > secondImagePositionD.top*0.8 && secondImageStatusD){
             secondImageStatusD = false;
-            console.log(secondImagePositionD);
             $('.smpid_viewer').velocity({
                 right : 0
             },2000);
@@ -501,3 +517,5 @@ $('.timetable_popup_close').click(function(){
         $(".learners_img_block").removeClass('learners_link_block_hover');
     })
 })();
+
+

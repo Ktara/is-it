@@ -195,6 +195,7 @@
   background-color: $main-white;
   height: 100px;
   margin-top: 0;
+
   .logo_tb {
     width: 80px;
     height: 100px;
@@ -206,10 +207,14 @@
     }
     @media screen and (max-width: 767px) {
       width: 80px;
-
+      //line-height: 50px;
     }
     img {
       line-height: 100px;
+      //@media screen and (max-width: 767px) {
+      //
+      //  line-height: 50px;
+      //}
     }
   }
   .logo {
@@ -226,6 +231,7 @@
   .nav_wrapper {
     .nav_header_menu {
       line-height: 100px;
+
       @media screen and (max-width: 992px) {
         margin-top: 40px;
         line-height: 50px;
@@ -1262,7 +1268,7 @@ footer {
     background-image: url("../img/next_arrow.png");
     width: 20px;
     height: 36px;
-    z-index: 101;
+    z-index: 100;
     @media screen and (max-width: 992px) {
       top: 80%;
       right: 15px;
@@ -1281,7 +1287,7 @@ footer {
     background-image: url("../img/prew_arrow.png");
     width: 20px;
     height: 36px;
-    z-index: 101;
+    z-index: 100;
     @media screen and (max-width: 992px) {
       top: 80%;
       left: 15px;
@@ -1400,12 +1406,14 @@ footer {
     background-image: url("../img/next_arrow.png");
     width: 20px;
     height: 36px;
-    z-index: 101;
+    z-index: 100;
     @media screen and (max-width: 992px) {
       right: 15px;
+      top: 45%;
     }
     @media screen and (max-width: 767px) {
       right: 0;
+      top: 50%;
     }
   }
   .about_reviews_prev_arrow {
@@ -1417,12 +1425,14 @@ footer {
     background-image: url("../img/prew_arrow.png");
     width: 20px;
     height: 36px;
-    z-index: 101;
+    z-index: 100;
     @media screen and (max-width: 992px) {
       left: 15px;
+      top: 45%;
     }
     @media screen and (max-width: 767px) {
       left: 0;
+      top: 50%;
     }
   }
 }
@@ -1442,7 +1452,7 @@ footer {
     padding: 120px 25px 0 25px;
   }
   @media screen and (max-width: 767px) {
-    height: 800px;
+    height: 750px;
     overflow: hidden;
   }
   .teach_wrapper {
@@ -1459,6 +1469,9 @@ footer {
     width: 100%;
     margin-top: 20px;
     position: relative;
+    @media screen and (max-width: 767px) {
+      max-height: 290px;
+    }
   }
   .teach_text_block {
     position: absolute;
@@ -1540,6 +1553,11 @@ footer {
       @extend .font-light;
       line-height: 24px;
       margin-top: 10px;
+    }
+    .teach_publications_read_more {
+      @extend .tm_link_active;
+      display: block;
+      margin-top: 25px;
     }
   }
 }
@@ -1764,6 +1782,7 @@ footer {
   img {
     width: 100%;
     margin-bottom: 25px;
+
   }
   .article_text_block {
     @media screen and (max-width: 992px) {
@@ -1811,15 +1830,17 @@ footer {
   }
   .article_other_header {
     @extend .header;
+    @media screen and (max-width: 767px) {
+      margin-bottom: 0;
+    }
   }
   .row {
     overflow: hidden;
   }
   img {
     width: 100%;
-    @media screen and (max-width: 767px) {
-      margin-top: 20px;
-    }
+    margin-top: 40px;
+
   }
   .article_other_text_block {
     p {
@@ -1837,6 +1858,11 @@ footer {
     }
     .article_other_link {
       text-decoration: none;
+    }
+    .article_other_read_more {
+      @extend .tm_link_active;
+      display: block;
+      margin-top: 25px;
     }
   }
 }
