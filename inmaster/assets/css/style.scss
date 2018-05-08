@@ -300,7 +300,10 @@
       @extend .tm_link:hover;
     }
     .nav_menu_punct {
-      line-height: 50px;
+      @media screen and (max-width: 992px) {
+        line-height: 50px;
+      }
+
     }
   }
 }
@@ -940,6 +943,9 @@
   .main_publication_block:nth-child(2n) {
     img {
       float: right;
+      @media screen and (max-width: 992px) {
+        margin-top: 40px;
+      }
     }
     .main_publication_img_viewer {
       right: auto;
@@ -1982,10 +1988,8 @@ footer {
     max-height: 500px;
     float: right;
     @media screen and (max-width: 992px) {
+      width: 95%;
       padding-top: 24px;
-    }
-    @media screen and (max-width: 767px) {
-      width: 100%;
     }
   }
   .course_base_text_wrapper {
