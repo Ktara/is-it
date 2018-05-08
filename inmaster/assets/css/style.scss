@@ -1538,7 +1538,7 @@ footer {
   @extend .btn;
   display: none;
   @media screen and (max-width: 767px) {
-    display: block;
+    //display: block;
     margin: 40px 25px 0 25px;
   }
 }

@@ -1254,7 +1254,6 @@ footer {
   display: none; }
   @media screen and (max-width: 767px) {
     .teach_btn {
-      display: block;
       margin: 40px 25px 0 25px; } }
 
 /*TEACH_PUBLICATIONS*/

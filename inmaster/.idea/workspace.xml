@@ -27,7 +27,7 @@
     <splitter split-orientation="horizontal" split-proportion="0.53678036">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+          <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/index.html">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="594">
@@ -122,7 +122,7 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="timetable.html" pinned="false" current-in-tab="false">
+          <file leaf-file-name="timetable.html" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/timetable.html">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="286">
@@ -143,8 +143,8 @@
           <file leaf-file-name="style.scss" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/assets/css/style.scss">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="704">
-                  <caret line="185" column="48" selection-start-line="185" selection-start-column="48" selection-end-line="185" selection-end-column="48" />
+                <state relative-caret-position="484">
+                  <caret line="175" column="5" lean-forward="true" selection-start-line="172" selection-start-column="4" selection-end-line="175" selection-end-column="5" />
                   <folding>
                     <element signature="e#14515#15983#0" />
                   </folding>
@@ -156,7 +156,7 @@
             <entry file="file://$PROJECT_DIR$/assets/css/style.css">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="33396">
-                  <caret line="1530" selection-start-line="1530" selection-end-line="1530" />
+                  <caret line="1533" selection-start-line="1533" selection-end-line="1533" />
                 </state>
               </provider>
             </entry>
@@ -331,12 +331,12 @@
       <workItem from="1525503494622" duration="15242000" />
       <workItem from="1525676082137" duration="14064000" />
       <workItem from="1525698928352" duration="5149000" />
-      <workItem from="1525756620734" duration="17164000" />
+      <workItem from="1525756620734" duration="17416000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="221617000" />
+    <option name="totallyTimeSpent" value="221869000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1176" extended-state="6" />
@@ -715,7 +715,7 @@
     <entry file="file://$PROJECT_DIR$/assets/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="33396">
-          <caret line="1530" selection-start-line="1530" selection-end-line="1530" />
+          <caret line="1533" selection-start-line="1533" selection-end-line="1533" />
         </state>
       </provider>
     </entry>
@@ -731,18 +731,6 @@
             <element signature="n#section#3;n#div#0;n#body#0;n#html#0;n#!!top" />
             <element signature="n#div#3;n#div#0;n#section#3;n#div#0;n#body#0;n#html#0;n#!!top" />
             <element signature="n#div#4;n#div#0;n#section#3;n#div#0;n#body#0;n#html#0;n#!!top" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/timetable.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="381" column="69" selection-start-line="381" selection-start-column="69" selection-end-line="381" selection-end-column="69" />
-          <folding>
-            <element signature="n#div#0;n#div#1;n#div#1;n#section#0;n#div#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#div#0;n#div#2;n#div#1;n#section#0;n#div#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#div#0;n#div#1;n#div#2;n#div#1;n#section#0;n#div#0;n#body#0;n#html#0;n#!!top" />
           </folding>
         </state>
       </provider>
@@ -833,10 +821,22 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/assets/css/style.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="704">
-          <caret line="185" column="48" selection-start-line="185" selection-start-column="48" selection-end-line="185" selection-end-column="48" />
+        <state relative-caret-position="484">
+          <caret line="175" column="5" lean-forward="true" selection-start-line="172" selection-start-column="4" selection-end-line="175" selection-end-column="5" />
           <folding>
             <element signature="e#14515#15983#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/timetable.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="286">
+          <caret line="381" column="69" selection-start-line="381" selection-start-column="69" selection-end-line="381" selection-end-column="69" />
+          <folding>
+            <element signature="n#div#0;n#div#1;n#div#1;n#section#0;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#0;n#div#2;n#div#1;n#section#0;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#0;n#div#1;n#div#2;n#div#1;n#section#0;n#div#0;n#body#0;n#html#0;n#!!top" />
           </folding>
         </state>
       </provider>
