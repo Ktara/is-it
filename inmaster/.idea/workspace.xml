@@ -126,11 +126,11 @@
           <file leaf-file-name="style.scss" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/assets/css/style.scss">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="464">
-                  <caret line="2027" column="23" lean-forward="true" selection-start-line="2027" selection-start-column="23" selection-end-line="2027" selection-end-column="23" />
+                <state relative-caret-position="492">
+                  <caret line="427" column="24" lean-forward="true" selection-start-line="427" selection-start-column="6" selection-end-line="427" selection-end-column="24" />
                   <folding>
                     <element signature="e#11096#13130#0" />
-                    <marker date="1525950325006" expanded="true" signature="18878:18896" ph="..." />
+                    <marker date="1525951084581" expanded="true" signature="18876:18894" ph="..." />
                   </folding>
                 </state>
               </provider>
@@ -209,9 +209,9 @@
         <option value="$PROJECT_DIR$/contact.html" />
         <option value="$PROJECT_DIR$/assets/js/script.js" />
         <option value="$PROJECT_DIR$/timetable.html" />
-        <option value="$PROJECT_DIR$/assets/css/style.scss" />
         <option value="$PROJECT_DIR$/course.html" />
         <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/assets/css/style.scss" />
       </list>
     </option>
   </component>
@@ -319,12 +319,12 @@
       <workItem from="1525786037501" duration="1800000" />
       <workItem from="1525930209800" duration="2086000" />
       <workItem from="1525937502441" duration="50000" />
-      <workItem from="1525948628930" duration="1847000" />
+      <workItem from="1525948628930" duration="2429000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="228713000" />
+    <option name="totallyTimeSpent" value="229295000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1176" extended-state="6" />
@@ -728,17 +728,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/assets/css/style.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="464">
-          <caret line="2027" column="23" lean-forward="true" selection-start-line="2027" selection-start-column="23" selection-end-line="2027" selection-end-column="23" />
-          <folding>
-            <element signature="e#11096#13130#0" />
-            <marker date="1525950325006" expanded="true" signature="18878:18896" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/course.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="361">
@@ -754,6 +743,17 @@
             <element signature="n#header#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
             <element signature="n#section#1;n#div#0;n#body#0;n#html#0;n#!!top" />
             <element signature="n#section#2;n#div#0;n#body#0;n#html#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/css/style.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="492">
+          <caret line="427" column="24" lean-forward="true" selection-start-line="427" selection-start-column="6" selection-end-line="427" selection-end-column="24" />
+          <folding>
+            <element signature="e#11096#13130#0" />
+            <marker date="1525951084581" expanded="true" signature="18876:18894" ph="..." />
           </folding>
         </state>
       </provider>

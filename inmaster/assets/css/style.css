@@ -454,10 +454,11 @@ input:focus {
     overflow: hidden; }
   .main_about .main_about_img_viewer {
     position: relative;
-    left: 100%;
+    left: 120%;
     width: 100%; }
     .main_about .main_about_img_viewer img {
       width: auto;
+      max-height: 500px;
       float: right; }
       @media screen and (max-width: 992px) {
         .main_about .main_about_img_viewer img {
