@@ -187,12 +187,11 @@ input:focus {
     display: none;
     height: auto;
     line-height: 100px;
-    vertical-align: middle;
-    transition: width 0.6s, height 0.6s, line-height 0.6s; }
+    vertical-align: middle; }
     @media screen and (max-width: 992px) {
       .nav_header .logo_tb {
         width: 100px;
-        display: block;
+        display: inline-block;
         margin: 0 auto; } }
     @media screen and (max-width: 767px) {
       .nav_header .logo_tb {
@@ -321,7 +320,6 @@ input:focus {
     line-height: 100px; }
     @media screen and (max-width: 992px) {
       .header_active .nav_wrapper .nav_header_menu {
-        margin-top: 40px;
         line-height: 50px; } }
   .header_active .lang_wrapper .lang_list {
     line-height: 100px; }
@@ -460,7 +458,6 @@ input:focus {
     width: 100%; }
     .main_about .main_about_img_viewer img {
       width: auto;
-      max-height: 500px;
       float: right; }
       @media screen and (max-width: 992px) {
         .main_about .main_about_img_viewer img {
@@ -1596,7 +1593,7 @@ footer {
     overflow: hidden; }
   .course_base .course_base_img_viewer {
     position: relative;
-    left: 100%;
+    left: 125%;
     width: 100%; }
   .course_base .course_base_read_btn {
     display: none; }
