@@ -282,7 +282,7 @@ window.onscroll = function() {
 
     var scrolled = window.pageYOffset || document.documentElement.scrollTop;
     if(scrollTR){
-    if (scrolled > firstImgPosition.top*0.4 && firstImgStatus){
+    if (scrolled > firstImgPosition.top*0.3 && firstImgStatus){
         firstImgStatus = false;
         $('.fmti_viewer').velocity({
             left : 0
@@ -310,7 +310,7 @@ window.onscroll = function() {
             opacity: 1
         }, 2000)
     }
-    if (scrolled > secondImgPosition.top*0.6 && secondImgStatus){
+    if (scrolled > secondImgPosition.top*0.7 && secondImgStatus){
         secondImgStatus = false;
         $('.smti_viewer').velocity({
             right : 0
