@@ -14,7 +14,7 @@
   font-weight: 300;
   font-style: normal; }
 /*BODY*/
-.font_reg, .wrapper, .main_wrapper, input:focus, .main_teach .main_teach_text strong, .main_publication .main_publication_text strong, .contacts input:focus, .about_reviews .about_reviews_slider_wrapper .about_reviews_slide .about_reviews_text strong, .about_reviews .about_reviews_tablet_slider_wrapper .about_reviews_slide .about_reviews_text strong, .about_reviews .about_reviews_mob_slider_wrapper .about_reviews_slide .about_reviews_text strong, .teach_publications .teach_publications_text_block span, .blog .blog_text_block .blog_link, .article .article_text_block span, .article_other .article_other_text_block .article_other_text_head, .timetable_popup_wrapper .timetable_popup_form input:focus, .timetable_popup_wrapper .timetable_popup_form option:focus, .timetable_popup_wrapper .timetable_popup_course {
+.font_reg, .wrapper, .main_wrapper, input:focus, .main_advantage .main_advantage_slider_wrapper .main_advantage_slider .main_advantage_slide p, .main_teach .main_teach_text strong, .main_certificates .main_certificates_block .main_certificates_text_block .main_certificates_text, .main_publication .main_publication_text strong, .contacts input:focus, .about_reviews .about_reviews_slider_wrapper .about_reviews_slide .about_reviews_text strong, .about_reviews .about_reviews_tablet_slider_wrapper .about_reviews_slide .about_reviews_text strong, .about_reviews .about_reviews_mob_slider_wrapper .about_reviews_slide .about_reviews_text strong, .teach_publications .teach_publications_text_block span, .blog .blog_text_block .blog_link, .article .article_text_block span, .article_other .article_other_text_block .article_other_text_head, .timetable_popup_wrapper .timetable_popup_form input:focus, .timetable_popup_wrapper .timetable_popup_form option:focus, .timetable_popup_wrapper .timetable_popup_course {
   font-family: 'Roboto', sans-serif;
   font-weight: 400; }
 
@@ -149,7 +149,8 @@ input:focus {
 .main_container {
   position: relative;
   max-width: 1360px;
-  margin: 0 auto; }
+  margin: 0 auto;
+  overflow: hidden; }
   .main_container .nav_header {
     max-width: 1360px;
     margin: 0 auto; }
@@ -160,7 +161,7 @@ input:focus {
   width: 100%;
   height: 100px;
   top: 0;
-  z-index: 101;
+  z-index: 1001;
   padding: 0 40px;
   background-color: transparent;
   transition: background-color 0.6s, margin-top 0.6s, height 0.6s; }
@@ -1367,6 +1368,8 @@ footer {
         .learners .learners_link_facebookhover {
           color: #4b82b3;
           text-decoration: underline; } }
+  .learners .fix {
+    padding-left: 0; }
 
 .learners_btn {
   width: 220px;
