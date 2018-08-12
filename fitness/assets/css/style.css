@@ -234,6 +234,21 @@ body {
   margin-left: 60%;
   line-height: 60px;
 }
+.program_first_block_btn {
+  position: absolute;
+  display: block;
+  width: 135px;
+  height: 45px;
+  top: calc(50% - 22.5px);
+  left: calc(50% - 67.5px);
+  background-color: #ffffff;
+  color: #ec835b;
+  border: 1px solid #ffffff;
+  border-radius: 15px;
+  line-height: 43px;
+  text-align: center;
+  cursor: pointer;
+}
 .program_wrapper {
   position: relative;
   width: 100%;
@@ -282,4 +297,55 @@ body {
   line-height: 43px;
   text-align: center;
   cursor: pointer;
+}
+/* HIT_FOTO */
+.hit_foto {
+  position: relative;
+  width: 100%;
+  height: 30vh;
+  margin-top: 140px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center right;
+}
+.hit_foto_title {
+  font-size: 36px;
+  font-family: 'PT Sans', sans-serif;
+  font-weight: 700;
+  text-align: center;
+  color: #ffffff;
+  padding-top: 50px;
+  z-index: 10;
+}
+.hit_foto_slider_wrapper {
+  position: relative;
+  width: 100%;
+  margin-top: 50px;
+}
+.hit_foto_slider_wrapper img {
+  width: 100%;
+}
+.hit_foto .hit_foto_next_arrow {
+  cursor: pointer;
+  position: absolute;
+  width: 20px;
+  height: 32px;
+  z-index: 1000;
+  top: 50%;
+  right: -8%;
+  background-image: url("../img/icon/nextA.svg");
+}
+.hit_foto .hit_foto_prew_arrow {
+  cursor: pointer;
+  position: absolute;
+  width: 20px;
+  height: 32px;
+  z-index: 1000;
+  top: 50%;
+  left: -8%;
+  background-image: url("../img/icon/nextA.svg");
+  -webkit-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  transform: rotate(180deg);
 }
