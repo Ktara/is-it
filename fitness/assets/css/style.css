@@ -124,11 +124,13 @@ body {
   overflow: none;
   background-color: #ffffff;
 }
-.nav_header_logo {
+.nav_header_logo a {
+  text-decoration: none;
   font-family: 'PT Sans', sans-serif;
   font-weight: 700;
   font-size: 30px;
   line-height: 100px;
+  color: #000000;
 }
 .nav_header_sign_in {
   display: inline-block;
@@ -629,4 +631,44 @@ footer .copy p {
 footer .copy a {
   text-decoration: none;
   color: #ec835b;
+}
+/* OFERTA PAGE */
+.oferta_text {
+  position: relative;
+  margin-top: 50px;
+}
+.oferta_text .oferta_header {
+  font-size: 30px;
+  text-align: center;
+}
+.oferta_text .oferta_sub_header {
+  font-size: 18px;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+.oferta_text .oferta_list {
+  list-style-type: decimal;
+  margin-top: 50px;
+}
+.oferta_text .oferta_list li {
+  margin-bottom: 5px;
+}
+.oferta_text .oferta_list li a {
+  text-decoration: none;
+  color: #000000;
+  line-height: 20px;
+}
+.oferta_text_title {
+  margin-top: 50px;
+  font-size: 30px;
+}
+.oferta_text_wrapper p {
+  margin-top: 30px;
+  font-size: 18px;
+  line-height: 24px;
+}
+.oferta_text_wrapper img {
+  width: auto;
+  height: 55px;
 }

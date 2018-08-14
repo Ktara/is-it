@@ -140,10 +140,14 @@ body {
     overflow: none;
     background-color: @white;    
   }
-  &_logo {
-    .opn-bold;
-    font-size: 30px;
-    line-height: 100px;
+  &_logo {    
+    a {
+      text-decoration: none;
+      .opn-bold;
+      font-size: 30px;
+      line-height: 100px;
+      color: @black;
+    }
   }
   &_sign_in {
     display: inline-block;
@@ -705,6 +709,63 @@ footer {
     a {
       text-decoration: none;
       color: @main-orange;
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* OFERTA PAGE */
+.oferta_text {
+  position: relative;
+  margin-top: 50px;
+  .oferta_header {
+    font-size: 30px;
+    text-align: center;
+  }
+  .oferta_sub_header {
+    font-size: 18px;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 30px;
+  }
+  .oferta_list {
+    list-style-type: decimal;
+    margin-top: 50px;
+    li {
+      margin-bottom: 5px;
+      a {
+        text-decoration: none;
+        color: @black;
+        line-height: 20px;
+      }
+    }    
+  }
+  &_title {
+    margin-top: 50px;
+    font-size: 30px;
+  }
+  &_wrapper {
+    p {
+      margin-top: 30px;
+      font-size: 18px;
+      line-height: 24px;
+    }
+    img {
+      width: auto;
+      height: 55px;
     }
   }
 }
