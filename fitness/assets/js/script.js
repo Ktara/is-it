@@ -46,3 +46,15 @@ $('.popular_slider_wrapper').slick({
     adaptiveHeight: true,
     infinite: true
 });
+
+
+
+
+
+
+
+
+
+$('.nav_header_log_out').click(function(){
+	$('.popup_log_out').css('display', 'block');
+});
