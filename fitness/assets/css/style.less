@@ -209,13 +209,55 @@ body {
   100% {
     top: 0;
   }
-
+}
+@keyframes show_item {
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes show_name {
+  100% {
+    opacity: 1;
+    right: 0;
+  }
+}
+@keyframes show_content {
+  100% {
+    opacity: 1;
+    top: 0;
+  }
 }
 .animate_nav_header {
   top: -103px;
-  // animation: show_header 1s 1s forwards;
+  background-color: transparent;
+  animation: show_header 1s 0.5s forwards;
 }
-
+.popular:before {
+  animation: show_header 1.5s 1s forwards;
+}
+.popular_arrow_animate {
+  opacity: 0;
+  animation: show_item 1s 2.5s forwards;
+}
+.popular_slide:nth-child(2) .popular_name_animate {
+  position: relative;
+  display: inline-block;
+  right: 100%; 
+  opacity: 0;
+  animation: show_name 1s 2.5s forwards;
+}
+.blog_page_sorting {
+  opacity: 0;
+  top: 20px;
+  position: relative;
+  animation: show_content 1s 3.5s forwards;
+}
+.blog_article_animate {
+  opacity: 0;
+  top: 20px;
+  position: relative;
+  animation: show_content 1s 4.5s forwards;
+}
 
 
 
@@ -873,26 +915,38 @@ footer {
 .popular {
   position: relative;
   width: 100%;  
-  background-color: @bgc-white;
+  // background-color: @bgc-white;
+  box-sizing: content-box;
+  padding-top: 103px;
+  margin-top: -103px;
+  &:before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: -100%;
+    left: 0;
+    background-color: @bgc-white;
+  }
   &_slider_wrapper {
     position: relative;
     display: inline-block;
     width: 100%;
-    height: 45vh;
+    height: 50vh;
     overflow: hidden;
     padding-top: 40px;
     @media screen and (max-width: 1440px) {
-      height: 50vh;
+      height: 55vh;
     }
   }
   &_slide {
     &_img_block {
       position: relative;
       width: 100%;
-      height: 30vh;
+      height: 35vh;
       overflow: hidden;
       @media screen and (max-width: 1440px) {
-        height: 35vh;
+        height: 40vh;
       }
       img {      
         position: absolute;
@@ -903,12 +957,17 @@ footer {
         min-height: 100%;
       }
     }
+    &_text_block {
+      text-align: left;
+    }
     &_sub_header {
+      display: inline-block;
       margin-top: 10px;
       font-size: 14px;
       color: @grey;
     }
     &_header {
+      display: inline-block;
       margin-top: 20px;
       a {
         font-size: 18px;

@@ -186,8 +186,53 @@ body {
     top: 0;
   }
 }
+@keyframes show_item {
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes show_name {
+  100% {
+    opacity: 1;
+    right: 0;
+  }
+}
+@keyframes show_content {
+  100% {
+    opacity: 1;
+    top: 0;
+  }
+}
 .animate_nav_header {
   top: -103px;
+  background-color: transparent;
+  animation: show_header 1s 0.5s forwards;
+}
+.popular:before {
+  animation: show_header 1.5s 1s forwards;
+}
+.popular_arrow_animate {
+  opacity: 0;
+  animation: show_item 1s 2.5s forwards;
+}
+.popular_slide:nth-child(2) .popular_name_animate {
+  position: relative;
+  display: inline-block;
+  right: 100%;
+  opacity: 0;
+  animation: show_name 1s 2.5s forwards;
+}
+.blog_page_sorting {
+  opacity: 0;
+  top: 20px;
+  position: relative;
+  animation: show_content 1s 3.5s forwards;
+}
+.blog_article_animate {
+  opacity: 0;
+  top: 20px;
+  position: relative;
+  animation: show_content 1s 4.5s forwards;
 }
 /*MAIN*/
 .main {
@@ -757,30 +802,41 @@ footer .copy a {
 .popular {
   position: relative;
   width: 100%;
+  box-sizing: content-box;
+  padding-top: 103px;
+  margin-top: -103px;
+}
+.popular:before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: -100%;
+  left: 0;
   background-color: #f5f5f5;
 }
 .popular_slider_wrapper {
   position: relative;
   display: inline-block;
   width: 100%;
-  height: 45vh;
+  height: 50vh;
   overflow: hidden;
   padding-top: 40px;
 }
 @media screen and (max-width: 1440px) {
   .popular_slider_wrapper {
-    height: 50vh;
+    height: 55vh;
   }
 }
 .popular_slide_img_block {
   position: relative;
   width: 100%;
-  height: 30vh;
+  height: 35vh;
   overflow: hidden;
 }
 @media screen and (max-width: 1440px) {
   .popular_slide_img_block {
-    height: 35vh;
+    height: 40vh;
   }
 }
 .popular_slide_img_block img {
@@ -791,12 +847,17 @@ footer .copy a {
   min-width: 100%;
   min-height: 100%;
 }
+.popular_slide_text_block {
+  text-align: left;
+}
 .popular_slide_sub_header {
+  display: inline-block;
   margin-top: 10px;
   font-size: 14px;
   color: #b1b1b1;
 }
 .popular_slide_header {
+  display: inline-block;
   margin-top: 20px;
 }
 .popular_slide_header a {

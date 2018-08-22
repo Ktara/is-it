@@ -36,9 +36,9 @@ $(document).ready(function () {
     });
 
 
-    $('.animate_nav_header').animate({
-		top: 0
-	}, 800);
+ //    $('.animate_nav_header').animate({
+	// 	top: 0
+	// }, 800);
 });
 
 
@@ -73,10 +73,11 @@ $('.popular_slider_wrapper').slick({
     slidesToScroll: 1,
     dots: false,
     arrows: true,
-    nextArrow: '<div class="popular_next_arrow"></div>',
-    prevArrow: '<div class="popular_prew_arrow"></div>',    
+    nextArrow: '<div class="popular_next_arrow popular_arrow_animate"></div>',
+    prevArrow: '<div class="popular_prew_arrow popular_arrow_animate"></div>',    
     adaptiveHeight: true,
-    infinite: true
+    infinite: true,
+    rtl: true
 });
 
 
