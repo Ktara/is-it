@@ -8,10 +8,10 @@ $(document).ready(function () {
         }, 1200);
     });
 
-    $(".nav_header_menu").on("click", "a", function (event) {
+    $(".nav_header_menu .nav_main_link").click(function (event) {
         event.preventDefault();
         var id = $(this).attr('href')
-            , top = $(id).offset().top - 0;
+            , top = $(id).offset().top - 150;
         $('body,html').animate({
             scrollTop: top
         }, 1200);
@@ -26,15 +26,19 @@ $(document).ready(function () {
         }, 1200);
     });
 
-    $(".link_menu a").click(function (event) {
+    $(".link_menu .main_link").click(function (event) {
         event.preventDefault();
         var id = $(this).attr('href')
-            , top = $(id).offset().top - 100;
-            console.log(id);
+            , top = $(id).offset().top - 100;            
         $('body,html').animate({
             scrollTop: top
         }, 1200);
     });
+
+
+    $('.animate_nav_header').animate({
+		top: 0
+	}, 800);
 });
 
 
@@ -101,6 +105,8 @@ $('.popup_log_out').click(function(event){
 
 
 
+
+
 $('.nav_header_sign_in').click(function(){
 	$('.popup_sign_in').addClass('popup_sign_in_active').velocity({
 		opacity: 1
@@ -117,6 +123,44 @@ $('.popup_sign_in').click(function(event){
 		}, 600);
 	};
 });
+
+var target = $('.oferta_list');
+if(target[0] != undefined){
+
+var height = $(document).height();
+
+var targetPosition = parseInt(target.css('top'), 10);
+
+var textPosition = $('.oferta_text_positi');
+var listPosition = $('.oferta_list li');
+var startPos = $(textPosition[0]).offset().top;
+$(window).scroll(function(){
+	var position = $(window).scrollTop();	
+	// var procent = position / height;
+	// var newPosition = targetPosition * (1 - procent);
+	// target.css({
+	// 	top: newPosition * 0.85
+	// });
+	if(startPos < position){		
+		target.addClass('oferta_list_up');
+		// $('.oferta_list').animate({
+		// 	top: '20px'
+		// }, 100);
+	}else{
+		target.removeClass('oferta_list_up');
+		// $('.oferta_list').animate({
+		// 	top: targetPosition
+		// }, 100);
+	};
+	for(var i = 0; i < textPosition.length; i++){
+		if($(textPosition[i]).offset().top < position + 200 ){
+			listPosition.removeClass('active_oferta_list');
+			$(listPosition[i]).addClass('active_oferta_list');
+		}
+	};
+});
+
+};
 
 
 
