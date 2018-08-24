@@ -85,6 +85,27 @@ $('.popular_slider_wrapper').slick({
 
 
 
+$('.photo_slider_wrapper').slick({
+    infinite: true,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    nextArrow: '<div class="photo_next_arrow photo_arrow_animate"></div>',
+    prevArrow: '<div class="photo_prew_arrow photo_arrow_animate"></div>',
+    dots: true,
+    arrows: true,    
+    zIndex: 100,
+    customPaging : function(slider, i) {
+        var length = slider.$slides.length;
+        $('.photo_count').text(length);
+        return i + 1 + '/' + length;
+        }
+});
+
+
+
+
+
+
 
 $('.nav_header_log_out').click(function(){
 	$('.popup_log_out').addClass('popup_log_out_active').velocity({
