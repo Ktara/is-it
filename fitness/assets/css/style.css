@@ -22,6 +22,24 @@
   font-weight: 700;
   font-style: italic;
 }
+@font-face {
+  font-family: 'ProximaNova';
+  src: url('../fonts/ProximaNova-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'ProximaNova';
+  src: url('../fonts/ProximaNova-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'ProximaNova';
+  src: url('../fonts/ProximaNova-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
 /* Fonts files */
 .opn-reg {
   font-family: 'PT Sans', sans-serif;
@@ -30,6 +48,18 @@
 .opn-bold {
   font-family: 'PT Sans', sans-serif;
   font-weight: 700;
+}
+.proxi-reg {
+  font-family: 'ProximaNova', sans-serif;
+  font-weight: 400;
+}
+.proxi-bold {
+  font-family: 'ProximaNova', sans-serif;
+  font-weight: 700;
+}
+.proxi-light {
+  font-family: 'ProximaNova', sans-serif;
+  font-weight: 300;
 }
 /* Base colors */
 /* Base setting */
@@ -48,6 +78,10 @@ body {
   top: -100%;
   left: 0;
   background-color: #f5f5f5;
+}
+.main_wrapper .nav_header_other {
+  height: 90px;
+  line-height: 90px;
 }
 .nav_header {
   position: relative;
@@ -146,6 +180,9 @@ body {
   line-height: 100px;
   color: #000000;
 }
+.nav_header_logo_white a {
+  color: #ffffff;
+}
 .nav_header_sign_in {
   display: inline-block;
   width: 95px;
@@ -167,11 +204,28 @@ body {
   background-color: #ec835b;
   color: #ffffff;
 }
+.nav_header_sign_in_color {
+  height: 50px;
+  line-height: 46px;
+  margin-top: 20px;
+  margin-right: 30px;
+  border: 2px solid #e690bc;
+  border-radius: 10px;
+  color: #ffffff;
+}
+.nav_header_sign_in_color:hover {
+  background-color: #e690bc;
+  color: #ffffff;
+}
 .nav_header_log_out {
   display: inline-block;
   float: right;
   line-height: 100px;
   cursor: pointer;
+}
+.nav_header_log_out_white {
+  line-height: 90px;
+  color: #ffffff;
 }
 .nav_header .cabinet {
   float: right;
@@ -2220,4 +2274,115 @@ footer .copy a {
 .photo_slider_wrapper .slick-dots .slick-active {
   display: inline-block;
   font-size: 24px;
+}
+/*STRETCHING PAGE*/
+.stretching_main {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  margin-top: -90px;
+  overflow: hidden;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.stretching_main_header {
+  font-family: 'PT Sans', sans-serif;
+  font-weight: 700;
+  font-size: 60px;
+  margin-top: 25vh;
+  color: #ffffff;
+}
+.stretching_main_sub_header {
+  font-family: 'PT Sans', sans-serif;
+  font-weight: 700;
+  font-size: 36px;
+  color: #ffffff;
+  margin-top: 40px;
+  line-height: 60px;
+}
+.stretching_main_program_btn {
+  display: block;
+  width: 100%;
+  height: 50px;
+  line-height: 46px;
+  margin-top: 80px;
+  color: #ffffff;
+  text-decoration: none;
+  border: 2px solid #e690bc;
+  border-radius: 10px;
+  background-color: #e690bc;
+  text-align: center;
+  cursor: pointer;
+  font-family: 'ProximaNova', sans-serif;
+  font-weight: 400;
+}
+.stretching_main_sub_btn {
+  display: block;
+  width: 100%;
+  height: 50px;
+  line-height: 46px;
+  margin-top: 80px;
+  color: #ffffff;
+  text-decoration: none;
+  border: 2px solid #ffffff;
+  border-radius: 10px;
+  text-align: center;
+  cursor: pointer;
+  font-family: 'ProximaNova', sans-serif;
+  font-weight: 400;
+}
+/* STRETCHING_TRAINING SECTION */
+.stretching_training {
+  position: relative;
+  width: 100%;
+  background-color: #f5f5f5;
+  padding-bottom: 80px;
+}
+.stretching_training_header {
+  padding-top: 80px;
+  font-family: 'ProximaNova', sans-serif;
+  font-weight: 700;
+  font-size: 35px;
+  color: #e690bc;
+}
+.stretching_training_img img {
+  width: 100%;
+  max-height: 35vh;
+  margin-top: 50px;
+}
+.stretching_training_number {
+  font-family: 'ProximaNova', sans-serif;
+  font-weight: 700;
+  font-size: 300px;
+  color: #ffffff;
+  text-align: center;
+  margin-top: 65px;
+}
+.stretching_training_text {
+  position: relative;
+  margin-top: 115px;
+}
+.stretching_training_text_image {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 325px;
+  height: 120px;
+  bottom: -50%;
+  right: -60%;
+}
+.stretching_training_text_image img {
+  width: 100%;
+}
+.stretching_training_text p {
+  font-family: 'ProximaNova', sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 20px;
+}
+.stretching_training_sub_title {
+  font-size: 24px;
+  font-family: 'ProximaNova', sans-serif;
+  font-weight: 400;
+  margin-bottom: 30px;
 }
