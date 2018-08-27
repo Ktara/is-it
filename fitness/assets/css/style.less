@@ -40,6 +40,13 @@
   font-weight: 300;
   font-style: normal;
 }
+@font-face {
+  font-family: 'ProximaNova';
+  src: url('../fonts/ProximaNova-LightIt.ttf') format('truetype');
+  font-weight: 300;
+  font-style: italic;
+}
+
 
 
 
@@ -64,6 +71,11 @@
   font-family: 'ProximaNova', sans-serif;
   font-weight: 300; 
 }
+.proxi-light-it {
+  font-family: 'ProximaNova', sans-serif;
+  font-weight: 300;
+  font-style: italic;
+}
 
 
 /* Base colors */
@@ -74,10 +86,10 @@
 @dark-grey: #808080;
 @light-grey: #c3c2c2;
 @dark-blue: #2d3947;
-@bgc-white: #f5f5f5;
+@back-white: #f4f4f4;
 @dark-white: #dbdbdb;
 @pink: #e690bc;
-
+@green: #93b867;
 
 /* Base setting */
 body {
@@ -101,12 +113,40 @@ body {
     height: 100%;
     top: -100%;
     left: 0;
-    background-color: @bgc-white;
+    background-color: @back-white;
   }
 }
 .main_wrapper .nav_header_other {
   height: 90px;
-  line-height: 90px;
+  line-height: 90px;  
+}
+.main_wrapper .nav_header {
+  &_sign_in_pink {
+    height: 50px;
+    line-height: 46px;
+    margin-top: 20px;
+    margin-right: 30px;
+    border: 2px solid @pink;
+    border-radius: 10px;
+    color: @white;
+    &:hover {
+      background-color: @pink;
+      color: @white;
+    }
+  }
+  &_sign_in_green {
+    height: 50px;
+    line-height: 46px;
+    margin-top: 20px;
+    margin-right: 30px;
+    border: 2px solid @green;
+    border-radius: 10px;
+    color: @white;
+    &:hover {
+      background-color: @green;
+      color: @white;
+    }
+  }
 }
 .nav_header {
   position: relative;
@@ -230,19 +270,7 @@ body {
       color: @white;
     }
   }
-  &_sign_in_color {
-    height: 50px;
-    line-height: 46px;
-    margin-top: 20px;
-    margin-right: 30px;
-    border: 2px solid @pink;
-    border-radius: 10px;
-    color: @white;
-    &:hover {
-      background-color: @pink;
-      color: @white;
-    }
-  }
+  
   &_log_out {
     display: inline-block;
     float: right;
@@ -296,6 +324,17 @@ body {
   100% {
     opacity: 1;
     top: 0;
+  }
+}
+@keyframes mouse_down {
+  0% {
+    bottom: 30px;
+  }
+  50% {
+    bottom: 15px;
+  }
+  100% {
+    bottom: 30px;
   }
 }
 .animate_nav_header {
@@ -452,6 +491,9 @@ animation: show_header 1s 1.5s forwards;
   position: relative;
   animation: show_content 1s 4s forwards;
 }
+.mouse_animate {  
+  animation: mouse_down 1s 0.5s infinite;
+}
 
 
 
@@ -499,6 +541,54 @@ animation: show_header 1s 1.5s forwards;
 
 
 /* PROGRAM */
+.main_wrapper .stretching_page_program {
+  margin-top: 120px;
+  &_header {
+    font-size: 36px;
+    .proxi-bold;
+    color: @pink;
+    padding-bottom: 25px;
+  }
+  .program_main_wrapper {
+    .program_wrapper {
+      .stretching_page_top_text_block {
+        background-color: @pink;
+        .top_text {
+          color: @white;
+          .proxi-bold;
+        }
+      }
+      .stretching_page_bottom_text_block {
+        background-color: @pink;
+        .bottom_text {
+          color: @white;
+          .proxi-bold;
+        }
+      }
+      .stretching_page_block_btn {
+        background-color: @pink;
+        color: @white;
+        border: 1px solid @pink;
+        border-radius: 10px;
+        .proxi-reg;
+        &:hover {
+          background-color: inherit;
+          border: 1px solid @pink;
+          color: @pink;
+        }
+      }
+    }
+  }
+}
+.main_wrapper .stretching_page_program_btn {
+  color: @pink;
+  border: 1px solid @pink;
+  border-radius: 15px;
+  &:hover {
+    background-color: @pink;
+    color: @white;
+  } 
+}
 .program {
   position: relative;
   width: 100%;
@@ -782,7 +872,7 @@ animation: show_header 1s 1.5s forwards;
     width: 100%;
     height: 40vh;
     margin-top: -300px;
-    background-color: @bgc-white;
+    background-color: @back-white;
     z-index: 100;
     @media screen and (max-width: 1280px) {
       margin-top: -270px;
@@ -853,7 +943,7 @@ animation: show_header 1s 1.5s forwards;
     position: relative;
     width: 100%;
     height: 20vh;
-    background-color: @bgc-white;
+    background-color: @back-white;
     @media screen and (max-width: 1440px) {
       height: 25vh;
     }
@@ -969,7 +1059,7 @@ footer {
   width: 100%;
   // height: 37vh;
   margin-top: 120px;
-  background-color: @bgc-white;
+  background-color: @back-white;
   padding-bottom: 70px;
   @media screen and (max-width: 1024px) {
     padding-bottom: 50px;
@@ -1005,6 +1095,46 @@ footer {
     margin-top: 30px;
     border-bottom: 1px solid @black;
   }
+  .footer_blog {
+    position: relative;
+    margin-top: 50px;
+    &_header {
+      font-size: 30px;
+      margin-bottom: 30px;
+      text-align: center;
+    }
+    &_articles {
+      display: flex;
+      justify-content: center;
+      position: relative;
+      a {
+        position: relative;
+        overflow: hidden;
+        text-decoration: none;
+        width: 16%;
+        height: 11vh;        
+        @media screen and (max-width: 1440px) {
+          height: 13vh;
+        }
+        @media screen and (max-width: 1280px) {
+          height: 14vh;
+        }
+        @media screen and (max-width: 1024px) {
+          height: 12vh;
+        }
+      }
+      img {
+        position: absolute;
+        width: 100%;
+        top: 0;
+        left: 0;
+        min-width: 100%;
+        min-height: 100%;
+        padding: 0 15px;
+      }
+    }
+    
+  }
   .link_menu_wrapper {
     position: relative;
     &:after {
@@ -1033,6 +1163,52 @@ footer {
     text-align: center;
     p {
       margin-top: 20px;
+    }
+    .stretching_page_it_ag_pink {
+      color: @pink;
+      position: relative;
+      &:after {
+      content: '';
+      position: absolute;
+      display: block;
+      width: 0;
+      height: 1px;
+      bottom: -3px;
+      left: 0;
+      color: @pink;
+      background-color: @pink;
+      -webkit-transition: width 0.6s;
+      -o-transition: width 0.6s;
+      transition: width 0.6s;      
+      }
+      &:hover {
+        &:after {
+          width: 100%;
+        }
+      }
+    }
+    .gym_it_ag_green {
+      color: @green;
+      position: relative;
+      &:after {
+      content: '';
+      position: absolute;
+      display: block;
+      width: 0;
+      height: 1px;
+      bottom: -3px;
+      left: 0;
+      color: @green;
+      background-color: @green;
+      -webkit-transition: width 0.6s;
+      -o-transition: width 0.6s;
+      transition: width 0.6s;      
+      }
+      &:hover {
+        &:after {
+          width: 100%;
+        }
+      }
     }
     a {
       text-decoration: none;
@@ -1145,7 +1321,7 @@ footer {
 .popular {
   position: relative;
   width: 100%;  
-  // background-color: @bgc-white;
+  // background-color: @back-white;
   box-sizing: content-box;
   padding-top: 103px;
   margin-top: -103px;
@@ -1156,7 +1332,7 @@ footer {
     height: 100%;
     top: -100%;
     left: 0;
-    background-color: @bgc-white;
+    background-color: @back-white;
   }
   &_slider_wrapper {
     position: relative;
@@ -1308,9 +1484,9 @@ footer {
     height: 2px;
     bottom: -5px;
     left: 0;
-    border: 1px solid @bgc-white;
+    border: 1px solid @back-white;
     border-radius: 15px;
-    background-color: @bgc-white;
+    background-color: @back-white;
   }
   &_img_block {
     position: relative;
@@ -1338,7 +1514,7 @@ footer {
     width: 100%;
     margin-top: -1px;
     padding-bottom: 35px;
-    background-color: @bgc-white;
+    background-color: @back-white;
      @media screen and (max-width: 1280px) {
       padding-bottom: 20px;
     }
@@ -2299,7 +2475,7 @@ footer {
       font-size: 24px;
       text-align: center;
       line-height: 120px;
-      background-color: @bgc-white;
+      background-color: @back-white;
       padding-top: 2px;
     }
   }
@@ -2440,6 +2616,17 @@ footer {
     cursor: pointer;
     .proxi-reg;
   }
+  .mouse {
+    position: absolute;
+    display: block;
+    width: 30px;
+    height: 60px;
+    bottom: 30px;
+    left: ~'calc(50% - 15px)';
+    img {
+      width: 100%;
+    }
+  }
 }
 
 
@@ -2453,19 +2640,74 @@ footer {
 .stretching_training {
   position: relative;
   width: 100%;
-  background-color: @bgc-white;
-  padding-bottom: 80px;
+  background-color: @back-white;
+  padding-bottom: 30px;
   &_header {
     padding-top: 80px;
     .proxi-bold;
     font-size: 35px;
     color: @pink;
   }
+  &_first_block {
+    .stretching_training_text_image {
+      content: '';
+      display: block;
+      position: absolute;
+      width: 325px;
+      height: 120px;
+      bottom: -50%;
+      right: -60%;
+      @media screen and (max-width: 1024px) {
+        width: 300px;
+        bottom: -35%;
+      }
+      img {
+        width: 100%;
+      }
+    }
+  }
+  &_second_block {
+    .stretching_training_text_image {
+      content: '';
+      display: block;
+      position: absolute;
+      width: 170px;
+      height: 230px;
+      bottom: 0;
+      right: -30%;
+      @media screen and (max-width: 1024px) {
+        height: 210px;
+        top: -7%;
+        right: -40%;
+      }
+      img {
+        width: 100%;
+      }
+    }
+  }
+  &_third_block {
+    .stretching_training_text_image {
+      content: '';
+      display: block;
+      position: absolute;
+      width: 240px;
+      height: 155px;
+      bottom: -50%;
+      right: -60%;
+      @media screen and (max-width: 1024px) {        
+        bottom: -30%;
+      }
+      img {
+        width: 100%;
+      }
+    }
+  }
   &_img {
     img {
       width: 100%;
       max-height: 35vh;
       margin-top: 50px;
+      margin-bottom: 50px;
     }
   }
   &_number {
@@ -2474,21 +2716,15 @@ footer {
     color: @white;
     text-align: center;
     margin-top: 65px;
+    @media screen and (max-width: 1024px) {
+      font-size: 250px;
+    }
   }
   &_text {
     position: relative;
     margin-top: 115px;
-    &_image {
-      content: '';
-      display: block;
-      position: absolute;
-      width: 325px;
-      height: 120px;
-      bottom: -50%;
-      right: -60%;
-      img {
-        width: 100%;
-      }
+    @media screen and (max-width: 1024px) {
+      margin-top: 75px;
     }
     p {
       .proxi-light;
@@ -2500,5 +2736,490 @@ footer {
     font-size: 24px;
     .proxi-reg;
     margin-bottom: 30px;
+  }
+}
+
+
+
+
+
+
+
+
+/* STRETCHING_PROGRAM_SECTION */
+.stretching_program {
+  position: relative;
+  margin-top: 120px;
+  &_header {
+    font-size: 36px;
+    .proxi-bold;
+    color: @pink;
+  }
+  &_text_block {
+    margin-top: 50px;
+    p {
+      margin-bottom: 20px;
+      font-size: 18px;
+      line-height: 24px;
+      .proxi-reg;      
+    }
+  }
+  &_video_block {
+    margin-top: 50px;
+    img {
+      width: 100%;
+    }
+    .play_block {
+      position: absolute;
+      display: block;
+      width: 62px;
+      height: 62px;
+      top: ~'calc(50% - 31px)';
+      left: ~'calc(50% - 31px)';
+      cursor: pointer;
+    }
+  }
+}
+
+
+
+
+
+
+
+
+/* STRETCHING_TRAINER SECTION */
+.stretching_trainer {
+  position: relative;
+  width: 100%;
+  background-color: @back-white;
+  margin-top: 120px;
+  padding-bottom: 80px;
+  &_image {
+    padding-top: 80px;
+    img {
+      width: 100%;
+    }
+  }
+  &_text_block {
+    p {
+      font-size: 18px;
+      line-height: 24px;
+      .proxi-reg;
+    }
+  }
+  &_name {
+    font-size: 36px;
+    .proxi-bold;
+    padding-top: 200px;
+    margin-bottom: 50px;
+  }
+}
+
+
+
+
+
+
+/* STRETCHING PAGE PROGRAM PRICE */
+.stretching_page_program_price {
+  position: relative;
+  width: 100%;
+  margin-top: 110px;  
+  &_header {
+    font-size: 36px;
+    .proxi-bold;
+    color: @pink;
+    span {
+      color: @black;
+      .proxi-reg;
+      font-size: 24px;
+      text-transform: uppercase;
+    }
+  }
+  &_wrapper {
+    position: relative;
+    width: 100%;
+    height: 20vh;
+    background-color: @back-white;
+    margin-top: 30px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* GYM PAGE */
+.gym_main {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  margin-top: -90px;
+  overflow: hidden;
+  background-repeat: no-repeat;
+  background-size: cover;
+  &_header {
+    .proxi-reg;
+    font-size: 72px;
+    line-height: 88px;
+    margin-top: 20px;
+    color: @white;
+  }
+  &_sub_header {
+    .proxi-reg;
+    font-size: 16px;
+    color: @white;
+    margin-top: 30vh;
+  }
+  &_program_btn {
+    display: block;   
+    width: 100%;
+    height: 50px;
+    line-height: 46px;
+    margin-top: 80px;
+    color: @white;
+    text-decoration: none;
+    border: 2px solid @green;
+    border-radius: 10px;
+    background-color: @green;
+    text-align: center;
+    cursor: pointer;
+    .proxi-reg;
+  }
+  &_sub_btn {
+    display: block;   
+    width: 100%;
+    height: 50px;
+    line-height: 46px;
+    margin-top: 80px;
+    color: @white;
+    text-decoration: none;
+    border: 2px solid @white;
+    border-radius: 10px;   
+    text-align: center;
+    cursor: pointer;
+    .proxi-reg;
+  }
+  .mouse {
+    position: absolute;
+    display: block;
+    width: 30px;
+    height: 60px;
+    bottom: 30px;
+    left: ~'calc(50% - 15px)';
+    img {
+      width: 100%;
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+/* GYM_MAN_WOMAN SECTION */
+.gym_man_woman {
+  position: relative;
+  width: 100%;
+  background-color: @black;  
+  &_sub_title {
+    .proxi-reg;
+    font-size: 30px;
+    color: @white;
+    margin-top: 85px;
+    text-align: center;
+  }
+  p {
+    font-size: 18px;
+    line-height: 24px;
+    margin-top: 30px;
+    text-align: center;
+    color: @white;
+  }
+  &_image {
+    img {
+      width: 100%;
+      margin-top: 50px;
+      margin-bottom: 45px;
+    }
+  }
+  .fix {
+    padding-right: 0;
+  }
+  .fixed {
+    padding-left: 0;
+  }
+}
+
+
+
+
+
+
+
+
+/* GYM_MOTIVASION SECTION */
+.gym_motivation {
+  position: relative;
+  width: 100%;
+  box-shadow: 0 0 16px rgba(0, 0, 0, 0.2);
+  border-radius: 0 0 20px 20px;
+  background-color: @green;
+  padding: 100px 0;
+  &_text {
+    font-size: 24px;
+    .proxi-reg;
+    color: @white;
+    text-align: center;
+  }
+}
+
+
+
+
+
+
+
+/* GYM_BLOCK_SECTION */
+.gym_block {
+  position: relative;
+  width: 100%;
+  margin-top: 130px;
+  &_header {
+    font-size: 48px;
+    .proxi-bold;
+    color: @green;
+    margin-top: 40px;
+    margin-bottom: 50px;
+  }
+  p {
+    font-size: 18px;
+    line-height: 24px;
+    .proxi-reg;
+  }
+  &_video {
+    position: relative;
+    overflow: hidden;
+    border-radius: 15px;
+    img {
+      width: 100%;
+    }
+    .play_block {
+      position: absolute;
+      display: block;
+      width: 62px;
+      height: 62px;
+      top: ~'calc(50% - 31px)';
+      left: ~'calc(50% - 31px)';
+      cursor: pointer;
+    }
+  }
+}
+
+
+
+
+
+
+
+
+/* GYM_ADVANTAGE SECTION */
+.gym_advantage {
+  position: relative;
+  width: 100%;
+  margin-top: 120px;
+  &_header {
+    font-size: 48px;
+    .proxi-bold;
+    color: @green;
+  }
+  &_image_block {
+    position: relative;
+    width: 100%;
+    height: 70vh;
+    margin-top: 25px;
+    overflow: hidden;
+    border-radius: 15px;
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+  &_circle_block {    
+    .first_circle {
+      position: absolute;
+      display: inline-block;
+      content: '';
+      width: 25px;
+      height: 25px;
+      top: 115px;
+      right: 460px;
+      color: @green;
+      border: 10px solid @green;
+      border-radius: 50px;
+      cursor: pointer;
+      -webkit-transition: all 0.6s;
+      -o-transition: all 0.6s;
+      transition: all 0.6s;
+    }
+    .second_circle {
+      position: absolute;
+      display: inline-block;
+      content: '';
+      width: 33px;
+      height: 33px;
+      top: 111px;
+      right: 456px;
+      color: @green;
+      border: 1px solid @green;
+      border-radius: 50px;
+      cursor: pointer;
+      -webkit-transition: all 0.6s;
+      -o-transition: all 0.6s;
+      transition: all 0.6s;
+    }
+    .third_circle {
+      position: absolute;
+      display: inline-block;
+      content: '';
+      width: 41px;
+      height: 41px;
+      top: 107px;
+      right: 452px;
+      color: @green;
+      border: 1px solid @green;
+      border-radius: 50px;
+      cursor: pointer;
+      -webkit-transition: all 0.6s;
+      -o-transition: all 0.6s;
+      transition: all 0.6s;
+    }
+    .forth_circle {
+      position: absolute;
+      display: inline-block;
+      content: '';
+      width: 49px;
+      height: 49px;
+      top: 103px;
+      right: 448px;
+      color: @green;
+      border: 1px solid @green;
+      border-radius: 50px;
+      cursor: pointer;
+      -webkit-transition: all 0.6s;
+      -o-transition: all 0.6s;
+      transition: all 0.6s;
+    }
+  }
+  .circle_active {
+    &:hover {
+      .first_circle {
+        border: 7px solid @green;
+      }
+      .second_circle {
+        width: 45px;
+        height: 45px;
+        top: 105px;
+        right: 450px;
+      }
+      .third_circle {
+        width: 65px;
+        height: 65px;
+        top: 95px;
+        right: 440px;
+      }
+      .forth_circle {
+        width: 85px;
+        height: 85px;
+        top: 85px;
+        right: 430px;
+      }
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+/* GYM_TRAINER SECTION */
+.gym_trainer {
+  position: relative;
+  width: 100%;
+  margin-top: 120px;
+  &_image {
+    position: relative;
+    width: 100%;
+    height: 40vh;
+    overflow: hidden;
+    border-radius: 15px;
+    z-index: 10;
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+  &_text_block {
+    position: relative;
+    padding-right: 40px;
+    &:before {
+      content: '';
+      position: absolute;
+      display: inline-block;
+      width: 130%;
+      // height: 50vh;
+      top: -40px;
+      right: 0;
+      bottom: -50px;      
+      color: @green;
+      border: 2px solid @green;
+    }
+  }
+  .name {
+    font-size: 48px;
+    .proxi-reg;
+    margin-top: 85px;
+    margin-bottom: 25px;
+    text-align: center;    
+  }
+  &_sub_title {
+    font-size: 18px;
+    line-height: 24px;
+    .proxi-light-it;
+    text-align: center;
+  }
+  &_line {
+    display: block;
+    width: 160px;
+    height: 2px;
+    border: 2px solid @green;
+    margin: 5px auto 0 auto;
+  }
+  &_text {
+    font-size: 18px;
+    line-height: 24px;
+    .proxi-reg;
+    margin-top: 40px;
   }
 }
