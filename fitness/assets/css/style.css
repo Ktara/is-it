@@ -475,6 +475,262 @@ body {
 .mouse_animate {
   animation: mouse_down 1s 0.5s infinite;
 }
+.animate_main_header {
+  opacity: 0;
+  animation: show_item 1s 1s forwards;
+}
+.animate_sub_main_header {
+  opacity: 0;
+  animation: show_item 1s 1.5s forwards;
+}
+.animate_main_btn {
+  opacity: 0;
+  animation: show_item 1s 2s forwards;
+}
+.animate_sub_main_btn {
+  opacity: 0;
+  animation: show_item 1s 2.5s forwards;
+}
+.animate_first {
+  opacity: 0;
+  top: 20px;
+  position: relative;
+  animation: show_content 1s 3.5s forwards;
+}
+.animate_second {
+  opacity: 0;
+  top: 20px;
+  position: relative;
+  animation: show_content 1s 4s forwards;
+}
+.animate_third {
+  opacity: 0;
+  top: 20px;
+  position: relative;
+  animation: show_content 1s 5s forwards;
+}
+.animate_3 {
+  opacity: 0;
+  top: 20px;
+  position: relative;
+  animation: show_content 1s 4.5s forwards;
+}
+.animate_forth {
+  opacity: 0;
+  top: 20px;
+  position: relative;
+  animation: show_content 1s 6s forwards;
+}
+.animate_4 {
+  opacity: 0;
+  top: 20px;
+  position: relative;
+  animation: show_content 1s 5s forwards;
+}
+.anime_4 {
+  opacity: 0;
+  top: 20px;
+  position: relative;
+  animation: show_content 1s 5.5s forwards;
+}
+.animate_fifth {
+  opacity: 0;
+  top: 20px;
+  position: relative;
+  animation: show_content 1s 6.5s forwards;
+}
+.animate_5 {
+  opacity: 0;
+  top: 20px;
+  position: relative;
+  animation: show_content 1s 6s forwards;
+}
+.animate_seventh {
+  opacity: 0;
+  top: 20px;
+  position: relative;
+  animation: show_content 1s 7s forwards;
+}
+.animate_eighth {
+  opacity: 0;
+  top: 20px;
+  position: relative;
+  animation: show_content 1s 7.5s forwards;
+}
+.animate_ninth {
+  opacity: 0;
+  top: 20px;
+  position: relative;
+  animation: show_content 1s 8.5s forwards;
+}
+.animate_9 {
+  opacity: 0;
+  top: 20px;
+  position: relative;
+  animation: show_content 1s 9s forwards;
+}
+.animate_tenth {
+  opacity: 0;
+  top: 20px;
+  position: relative;
+  animation: show_content 1s 9s forwards;
+}
+.animate_10 {
+  opacity: 0;
+  top: 20px;
+  position: relative;
+  animation: show_content 1s 10s forwards;
+}
+.animate_eleventh {
+  opacity: 0;
+  top: 20px;
+  position: relative;
+  animation: show_content 1s 10s forwards;
+}
+.animate_11 {
+  opacity: 0;
+  top: 20px;
+  position: relative;
+  animation: show_content 1s 11.5s forwards;
+}
+.animate_twelfth {
+  opacity: 0;
+  top: 20px;
+  position: relative;
+  animation: show_content 1s 10.5s forwards;
+}
+.animate_12 {
+  opacity: 0;
+  top: 20px;
+  position: relative;
+  animation: show_content 1s 12s forwards;
+}
+.animate_thirteenth {
+  opacity: 0;
+  top: 20px;
+  position: relative;
+  animation: show_content 1s 11s forwards;
+}
+.animate_fourteenth {
+  opacity: 0;
+  top: 20px;
+  position: relative;
+  animation: show_content 1s 11.5s forwards;
+}
+.animate_fifteenth {
+  opacity: 0;
+  top: 20px;
+  position: relative;
+  animation: show_content 1s 12.5s forwards;
+}
+.animate_15 {
+  opacity: 0;
+  top: 20px;
+  position: relative;
+  animation: show_content 1s 13s forwards;
+}
+.animate_sixteenth {
+  opacity: 0;
+  top: 20px;
+  position: relative;
+  animation: show_content 1s 13s forwards;
+}
+.animate_16 {
+  opacity: 0;
+  top: 20px;
+  position: relative;
+  animation: show_content 1s 13.5s forwards;
+}
+.animate_seventeenth {
+  opacity: 0;
+  top: 20px;
+  position: relative;
+  animation: show_content 1s 13.5s forwards;
+}
+.animate_17 {
+  opacity: 0;
+  top: 20px;
+  position: relative;
+  animation: show_content 1s 14.5s forwards;
+}
+.animate_eighteenth {
+  opacity: 0;
+  top: 20px;
+  position: relative;
+  animation: show_content 1s 14.5s forwards;
+}
+.animate_18 {
+  opacity: 0;
+  top: 20px;
+  position: relative;
+  animation: show_content 1s 15.5s forwards;
+}
+.animate_nineteenth {
+  opacity: 0;
+  top: 20px;
+  position: relative;
+  animation: show_content 1s 15s forwards;
+}
+.animate_19 {
+  opacity: 0;
+  top: 20px;
+  position: relative;
+  animation: show_content 1s 16s forwards;
+}
+.animate_20 {
+  opacity: 0;
+  top: 20px;
+  position: relative;
+  animation: show_content 1s 16.5s forwards;
+}
+.animate_21 {
+  opacity: 0;
+  top: 20px;
+  position: relative;
+  animation: show_content 1s 17s forwards;
+}
+.animate_22 {
+  opacity: 0;
+  top: 20px;
+  position: relative;
+  animation: show_content 1s 17.5s forwards;
+}
+.animate_23 {
+  opacity: 0;
+  top: 20px;
+  position: relative;
+  animation: show_content 1s 18s forwards;
+}
+.animate_24 {
+  opacity: 0;
+  top: 20px;
+  position: relative;
+  animation: show_content 1s 18.5s forwards;
+}
+.animate_25 {
+  opacity: 0;
+  top: 20px;
+  position: relative;
+  animation: show_content 1s 19.5s forwards;
+}
+.animate_26 {
+  opacity: 0;
+  top: 20px;
+  position: relative;
+  animation: show_content 1s 20s forwards;
+}
+.animate_27 {
+  opacity: 0;
+  top: 20px;
+  position: relative;
+  animation: show_content 1s 20.5s forwards;
+}
+.animate_28 {
+  opacity: 0;
+  top: 20px;
+  position: relative;
+  animation: show_content 1s 21.5s forwards;
+}
 /*MAIN*/
 .main {
   position: relative;
@@ -673,6 +929,12 @@ body {
   width: 100%;
   height: 30vh;
   overflow: hidden;
+  -webkit-transition: height 1s;
+  -o-transition: height 1s;
+  transition: height 1s;
+}
+.program_show_wrapper {
+  height: auto;
 }
 .program img {
   width: 100%;
@@ -816,6 +1078,7 @@ body {
   -webkit-transition: all 0.5s;
   -o-transition: all 0.5s;
   transition: all 0.5s;
+  overflow: hidden;
 }
 .program_btn:hover {
   background-color: #ec835b;
@@ -1882,13 +2145,20 @@ footer .copy a {
   width: 160px;
   height: 40px;
   line-height: 38px;
-  border: #ec835b;
+  border: 1px solid #ec835b;
   border-radius: 15px;
   background-color: #ec835b;
   color: #ffffff;
   float: right;
   margin-top: 20px;
   cursor: pointer;
+  -webkit-transition: all 0.6s;
+  -o-transition: all 0.6s;
+  transition: all 0.6s;
+}
+.article_comment_form .article_comment_btn:hover {
+  background-color: inherit;
+  color: #ec835b;
 }
 .article_comment_text_wrapper {
   position: relative;
@@ -2627,6 +2897,13 @@ footer .copy a {
   cursor: pointer;
   font-family: 'ProximaNova', sans-serif;
   font-weight: 400;
+  -webkit-transition: all 0.6s;
+  -o-transition: all 0.6s;
+  transition: all 0.6s;
+}
+.stretching_main_program_btn:hover {
+  color: #e690bc;
+  background-color: inherit;
 }
 .stretching_main_sub_btn {
   display: block;
@@ -2642,6 +2919,13 @@ footer .copy a {
   cursor: pointer;
   font-family: 'ProximaNova', sans-serif;
   font-weight: 400;
+  -webkit-transition: all 0.6s;
+  -o-transition: all 0.6s;
+  transition: all 0.6s;
+}
+.stretching_main_sub_btn:hover {
+  color: #e690bc;
+  background-color: #ffffff;
 }
 .stretching_main .mouse {
   position: absolute;
@@ -2935,12 +3219,19 @@ footer .copy a {
   font-family: 'ProximaNova', sans-serif;
   font-weight: 700;
   font-size: 24px;
-  color: white;
+  color: #ffffff;
   height: 50px;
   line-height: 50px;
   vertical-align: middle;
   padding: 0 60px;
   cursor: pointer;
+  -webkit-transition: all 0.6s;
+  -o-transition: all 0.6s;
+  transition: all 0.6s;
+}
+.stretching_price_program_btn:hover {
+  color: #e690bc;
+  background-color: #ffffff;
 }
 /* GYM PAGE */
 .gym_main {
@@ -2982,6 +3273,12 @@ footer .copy a {
   cursor: pointer;
   font-family: 'ProximaNova', sans-serif;
   font-weight: 400;
+  -webkit-transition: all 0.6s;
+  -o-transition: all 0.6s;
+  transition: all 0.6s;
+}
+.gym_main_program_btn:hover {
+  background-color: inherit;
 }
 .gym_main_sub_btn {
   display: block;
@@ -2997,6 +3294,13 @@ footer .copy a {
   cursor: pointer;
   font-family: 'ProximaNova', sans-serif;
   font-weight: 400;
+  -webkit-transition: all 0.6s;
+  -o-transition: all 0.6s;
+  transition: all 0.6s;
+}
+.gym_main_sub_btn:hover {
+  color: #93b867;
+  background-color: #ffffff;
 }
 .gym_main .mouse {
   position: absolute;
@@ -3471,4 +3775,11 @@ footer .copy a {
   vertical-align: middle;
   padding: 0 60px;
   cursor: pointer;
+  -webkit-transition: all 0.6s;
+  -o-transition: all 0.6s;
+  transition: all 0.6s;
+}
+.gym_price_program_btn:hover {
+  color: #93b867;
+  background-color: #ffffff;
 }

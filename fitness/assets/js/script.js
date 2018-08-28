@@ -24,6 +24,19 @@ $(document).ready(function () {
         $('body,html').animate({
             scrollTop: top
         }, 1200);
+        var newHeight = $('.program_main_viewer').css('height');
+        $('.program_main_wrapper').animate({
+        	height : newHeight
+        }, 1000);
+        // $('.program_btn').animate({
+        // 	opacity: 0
+        // }, 500);
+        // setTimeout(function(){
+        	$('.program_btn').css({
+        		visibility: 'hidden'
+        	})
+        // }, 500);
+        // $('.program_main_wrapper').addClass('program_show_wrapper');
     });
 
     $(".link_menu .main_link").click(function (event) {

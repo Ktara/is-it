@@ -83,6 +83,9 @@
     display: inline-block;
     position: relative;
     text-transform: uppercase;
+    @media screen and (max-width: 1024px) {
+      font-size: 50px;
+    }
     &:after {
       content: '';
       display: block;
@@ -118,6 +121,9 @@
     padding-top: 7px;
     opacity: 0;
     animation: show_hidden 1.5s 0.8s forwards;
+    @media screen and (max-width: 1024px) {
+      font-size: 25px;
+    }
   }
   &_btns {
     margin-top: 10vh;
@@ -136,9 +142,23 @@
     cursor: pointer;
     opacity: 0;
     animation: show_hidden 1.5s 1.5s forwards;
+    -webkit-transition: all 0.6s;
+    -o-transition: all 0.6s;
+    transition: all 0.6s;
+    &:hover {
+      color: @home_color;
+      background-color: white;
+    }
     &:nth-child(1) {
       background-color: @home_color;
       margin-right: 50px;
+      -webkit-transition: all 0.6s;
+      -o-transition: all 0.6s;
+      transition: all 0.6s;
+      &:hover {
+        color: @home_color;
+        background-color: inherit;
+      }
     }
   }
   &_mouse {
@@ -341,6 +361,9 @@
     font-size: 18px;
     line-height: 24px;
     width: 40vw;
+    @media screen and (max-width: 1024px) {
+      padding-top: 30%;
+    }
     p {
       margin-bottom: 25px;
     }
@@ -450,5 +473,12 @@
     vertical-align: middle;
     padding: 0 60px;
     cursor: pointer;
+    -webkit-transition: all 0.6s;
+    -o-transition: all 0.6s;
+    transition: all 0.6s;
+    &:hover {
+      background-color: white;
+      color: @home_color;
+    }
   }
 }
