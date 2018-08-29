@@ -1,0 +1,215 @@
+@font-face {
+  font-family: 'PT Sans';
+  src: url('../fonts/PT_Sans-Web-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'PT Sans';
+  src: url('../fonts/PT_Sans-Web-Italic.ttf') format('truetype');
+  font-weight: 400;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'PT Sans';
+  src: url('../fonts/PT_Sans-Web-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'PT Sans';
+  src: url('../fonts/PT_Sans-Web-BoldItalic.ttf') format('truetype');
+  font-weight: 700;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'ProximaNova';
+  src: url('../fonts/ProximaNova-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'ProximaNova';
+  src: url('../fonts/ProximaNova-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'ProximaNova';
+  src: url('../fonts/ProximaNova-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+.main_cross_wrapper {
+  width: 100%;
+  height: auto;
+  display: block;
+  overflow: hidden;
+  position: relative;
+  background-color: #191a1e;
+}
+.cross_about {
+  width: 100%;
+  height: auto;
+  padding-bottom: 120px;
+}
+.cross_about_header {
+  display: block;
+  margin-top: 110px;
+  margin-bottom: 20px;
+  text-align: center;
+  font-family: ProximaNova;
+  font-size: 36px;
+  color: #fffffe;
+}
+.cross_about_subheader {
+  display: block;
+  width: 30%;
+  margin: 0 auto 50px auto;
+  text-align: center;
+  font-family: ProximaNova;
+  font-size: 18px;
+  line-height: 24px;
+  color: #fffffe;
+}
+.cross_about_block {
+  width: 100%;
+  height: 25vh;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  background-color: #547ef4;
+  overflow: hidden;
+}
+.cross_about_text {
+  text-align: center;
+  display: block;
+  width: 70%;
+  font-family: ProximaNova;
+  font-size: 18px;
+  line-height: 24px;
+  color: #fffffe;
+}
+.cross_about_image {
+  width: 100%;
+  height: 100%;
+}
+.cross_about_image img {
+  min-width: 100%;
+  min-height: 100%;
+}
+.cross_steps {
+  width: 100%;
+}
+.cross_steps_image {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.cross_steps_image img {
+  min-width: 100%;
+  min-height: 100%;
+}
+.cross_steps_header {
+  font-family: ProximaNova;
+  font-size: 36px;
+  line-height: 36px;
+  color: #fffffe;
+  font-weight: 700;
+  display: block;
+  width: 100%;
+  padding-bottom: 50px;
+}
+.cross_steps_wrapper {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.cross_steps_text {
+  width: 100%;
+  height: 35%;
+  border-radius: 5px;
+  border: 5px solid #547ef4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  font-family: ProximaNova;
+  font-size: 18px;
+  line-height: 24px;
+  color: #fffffe;
+  font-weight: 400;
+}
+.cross_steps_text p {
+  width: 85%;
+  display: inline-block;
+  text-align: center;
+}
+.cross_consist {
+  width: 100%;
+  margin-top: 120px;
+}
+.cross_consist_header {
+  font-family: ProximaNova;
+  font-size: 36px;
+  line-height: 36px;
+  color: #fffffe;
+  font-weight: 700;
+  padding-bottom: 20px;
+}
+.cross_consist_subheader {
+  font-family: ProximaNova;
+  font-size: 18px;
+  line-height: 24px;
+  color: #fffffe;
+  font-weight: 400;
+  padding-bottom: 50px;
+}
+.cross_consist_block {
+  clear: both;
+  height: 26vh;
+  border-radius: 5px;
+  border: 5px solid rgba(84, 126, 244, 0.5);
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  position: relative;
+}
+.cross_consist_block p {
+  font-family: ProximaNova;
+  font-size: 18px;
+  line-height: 24px;
+  color: #fffffe;
+  font-weight: 400;
+  display: inline-block;
+  width: 75%;
+  text-align: center;
+}
+.cross_consist_block span {
+  position: absolute;
+  opacity: 0.2;
+  color: #fffffe;
+  font-family: ProximaNova;
+  font-size: 200px;
+  font-weight: 300;
+  line-height: 24px;
+  top: 100%;
+  left: -3%;
+}
+.cross_consist_elem:nth-child(n+2) .cross_consist_block span {
+  left: auto;
+  right: -6%;
+}
+.cross_consist_elem:nth-child(2) .cross_consist_block {
+  margin-top: 15vh;
+}
+.cross_consist_image {
+  width: 100%;
+}
+.cross_consist_image img {
+  width: 100%;
+}
