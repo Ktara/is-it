@@ -362,15 +362,7 @@ body {
   opacity: 0;
   animation: show_item 1s 2s forwards;
 }
-.popular_arrow_animate {
-  opacity: 0;
-  animation: show_item 1s 3s forwards;
-}
-.white_block {
-  opacity: 0;
-  animation: show_item 1s 2.5s forwards;
-}
-.popular_slide:nth-child(2) .popular_name_animate {
+.popular_slide:nth-child(3) .popular_name_animate {
   position: relative;
   display: inline-block;
   right: 100%;
@@ -1177,8 +1169,8 @@ body {
 }
 .program_wrapper img {
   position: absolute;
-  top: 0;
-  left: 0;
+  bottom: 0;
+  right: 0;
   min-width: 100%;
   min-height: 100%;
 }
@@ -1628,8 +1620,8 @@ footer .footer_blog_articles a {
 footer .footer_blog_articles img {
   position: absolute;
   width: 100%;
-  top: 0;
-  left: 0;
+  bottom: 0;
+  right: 0;
   min-width: 100%;
   min-height: 100%;
   padding: 0 15px;
@@ -1833,8 +1825,9 @@ footer .copy a {
   position: relative;
   width: 100%;
   box-sizing: content-box;
-  padding-top: 103px;
-  margin-top: -103px;
+  padding-top: 107px;
+  margin-top: -107px;
+  padding-bottom: 30px;
 }
 .popular:before {
   content: '';
@@ -1849,44 +1842,20 @@ footer .copy a {
   position: relative;
   display: inline-block;
   width: 100%;
-  height: 50vh;
+  height: calc(45vh + 125px);
   overflow: hidden;
   padding-top: 40px;
 }
-@media screen and (max-width: 1440px) {
-  .popular_slider_wrapper {
-    height: 55vh;
-  }
-}
-@media screen and (max-width: 1024px) {
-  .popular_slider_wrapper {
-    height: 60vh;
-  }
-}
 .popular_slide {
   position: relative;
-  height: 50vh;
-}
-@media screen and (max-width: 1440px) {
-  .popular_slide {
-    height: 55vh;
-  }
-}
-@media screen and (max-width: 1024px) {
-  .popular_slide {
-    height: 60vh;
-  }
+  height: calc(45vh + 125px);
 }
 .popular_slide_img_block {
   position: relative;
   width: 100%;
-  height: 35vh;
+  height: 45vh;
   overflow: hidden;
-}
-@media screen and (max-width: 1440px) {
-  .popular_slide_img_block {
-    height: 40vh;
-  }
+  display: block;
 }
 .popular_slide_img_block img {
   position: absolute;
@@ -1919,40 +1888,30 @@ footer .copy a {
 .popular_slide_header a:focus {
   outline: none;
 }
-.popular_slide .white_block {
+.popular .white_block {
   position: absolute;
   width: 170px;
-  height: 7vh;
-  bottom: 7vh;
+  height: 66px;
+  top: calc(45vh + 10px);
   right: 0;
   background-color: #ffffff;
-}
-@media screen and (max-width: 1280px) {
-  .popular_slide .white_block {
-    bottom: 8vh;
-  }
 }
 .popular .popular_next_arrow {
   cursor: pointer;
   position: absolute;
   width: 20px;
   height: 36px;
-  bottom: 5vh;
+  top: calc(45vh + 65px);
   right: 20px;
   z-index: 10;
   background-image: url("../img/icon/LArrow.png");
-}
-@media screen and (max-width: 1440px) {
-  .popular .popular_next_arrow {
-    bottom: 4vh;
-  }
 }
 .popular .popular_prew_arrow {
   cursor: pointer;
   position: absolute;
   width: 20px;
   height: 36px;
-  bottom: 5vh;
+  top: calc(45vh + 65px);
   right: 130px;
   z-index: 10;
   background-image: url("../img/icon/LArrow.png");
@@ -1960,11 +1919,6 @@ footer .copy a {
   -ms-transform: rotate(180deg);
   -o-transform: rotate(180deg);
   transform: rotate(180deg);
-}
-@media screen and (max-width: 1440px) {
-  .popular .popular_prew_arrow {
-    bottom: 4vh;
-  }
 }
 .blog_page {
   position: relative;
@@ -2240,8 +2194,8 @@ footer .copy a {
 .article .other_article_img_block img {
   position: absolute;
   width: 100%;
-  top: 0;
-  left: 0;
+  bottom: 0;
+  right: 0;
   min-width: 100%;
   min-height: 100%;
 }
@@ -3221,7 +3175,7 @@ footer .copy a {
   width: 100%;
 }
 .stretching_training_img img {
-  width: 100%;
+  min-width: 100%;
   max-height: 35vh;
   margin-top: 50px;
   margin-bottom: 50px;
@@ -3817,8 +3771,8 @@ footer .copy a {
   z-index: 10;
 }
 .gym_trainer_image img {
-  width: 100%;
-  height: auto;
+  min-width: 100%;
+  height: 100%;
 }
 .gym_trainer_text_block {
   position: relative;
@@ -3933,17 +3887,7 @@ footer .copy a {
 .gym_other_text_viewer {
   position: relative;
   margin: 155px 0 35px 0;
-  padding: 0 30px;
-}
-.gym_other_text_viewer:before {
-  content: '';
-  position: absolute;
-  display: inline-block;
-  width: 100%;
-  top: -35px;
-  right: 0;
-  bottom: -50px;
-  color: #93b867;
+  padding: 30px;
   border: 2px solid #93b867;
 }
 .gym_other_text_viewer_sub_header {
