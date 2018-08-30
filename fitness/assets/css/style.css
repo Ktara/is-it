@@ -1403,6 +1403,7 @@ body {
 @media screen and (max-width: 1440px) {
   .about {
     height: 50vh;
+    min-height: 375px;
   }
 }
 .about:after {
