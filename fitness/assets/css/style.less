@@ -1948,8 +1948,28 @@ footer {
       }
     }
     a {
+      position: relative;
       text-decoration: none;
       color: @main-orange;
+      &:after {
+      content: '';
+      position: absolute;
+      display: block;
+      width: 0;
+      height: 1px;
+      bottom: -3px;
+      left: 0;
+      color: @main-orange;
+      background-color: @main-orange;
+      -webkit-transition: width 0.6s;
+      -o-transition: width 0.6s;
+      transition: width 0.6s;      
+      }
+      &:hover {
+        &:after {
+          width: 100%;
+        }
+      }
     }
   }
 }

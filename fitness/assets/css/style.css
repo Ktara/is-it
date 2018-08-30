@@ -1787,8 +1787,26 @@ footer .copy .cross_page_it_ag_blue:hover:after {
   width: 100%;
 }
 footer .copy a {
+  position: relative;
   text-decoration: none;
   color: #ec835b;
+}
+footer .copy a:after {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 0;
+  height: 1px;
+  bottom: -3px;
+  left: 0;
+  color: #ec835b;
+  background-color: #ec835b;
+  -webkit-transition: width 0.6s;
+  -o-transition: width 0.6s;
+  transition: width 0.6s;
+}
+footer .copy a:hover:after {
+  width: 100%;
 }
 /* OFERTA PAGE */
 .oferta_text {
