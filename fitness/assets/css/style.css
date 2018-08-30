@@ -352,6 +352,11 @@ body {
   background-color: transparent;
   animation: show_header 1s 0.5s forwards;
 }
+.nav_anime {
+  top: -103px;
+  background-color: transparent;
+  animation: show_header 1s 0.5s forwards;
+}
 .animate_nav_header:before {
   content: '';
   display: inline-block;
@@ -930,6 +935,14 @@ body {
   background-color: #ec835b;
   line-height: 43px;
   text-align: center;
+  -webkit-transition: all 0.9s;
+  -o-transition: all 0.9s;
+  transition: all 0.9s;
+}
+.main_btn:hover {
+  color: #ec835b;
+  background-color: inherit;
+  border: 1px solid #ec835b;
 }
 /* PROGRAM */
 .main_wrapper .stretching_page_program {
@@ -1336,6 +1349,7 @@ body {
   position: relative;
   width: 100%;
   height: 30vh;
+  min-height: 275px;
   margin-top: 140px;
   background-repeat: no-repeat;
   background-size: cover;
