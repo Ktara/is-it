@@ -362,6 +362,14 @@ body {
   opacity: 0;
   animation: show_item 1s 2s forwards;
 }
+.popular_arrow_animate {
+  opacity: 0;
+  animation: show_item 1s 3s forwards;
+}
+.white_block {
+  opacity: 0;
+  animation: show_item 1s 2.5s forwards;
+}
 .popular_slide:nth-child(3) .popular_name_animate {
   position: relative;
   display: inline-block;
@@ -1824,10 +1832,8 @@ footer .copy a {
 .popular {
   position: relative;
   width: 100%;
-  box-sizing: content-box;
   padding-top: 107px;
   margin-top: -107px;
-  padding-bottom: 30px;
 }
 .popular:before {
   content: '';
@@ -2497,35 +2503,14 @@ footer .copy a {
   z-index: 1;
   border-radius: 10px;
 }
-@media screen and (max-width: 1440px) {
-  .popup_log_out_wrapper {
-    width: 80%;
-    margin-left: 10%;
-  }
-}
-@media screen and (max-width: 1024px) {
-  .popup_log_out_wrapper {
-    width: 100%;
-    margin-left: 0;
-  }
-}
 .popup_log_out_logo_block {
   position: relative;
   width: 100%;
   height: 50vh;
+  min-height: 540px;
   z-index: 1;
   background-repeat: no-repeat;
   background-size: cover;
-}
-@media screen and (max-width: 1440px) {
-  .popup_log_out_logo_block {
-    height: 60vh;
-  }
-}
-@media screen and (max-width: 1280px) {
-  .popup_log_out_logo_block {
-    height: 70vh;
-  }
 }
 .popup_log_out_logo_block:before {
   content: '';
@@ -2586,18 +2571,9 @@ footer .copy a {
   position: relative;
   width: 100%;
   height: 50vh;
+  min-height: 540px;
   background-color: #ffffff;
   z-index: 1;
-}
-@media screen and (max-width: 1440px) {
-  .popup_log_out_registration {
-    height: 60vh;
-  }
-}
-@media screen and (max-width: 1280px) {
-  .popup_log_out_registration {
-    height: 70vh;
-  }
 }
 .popup_log_out_registration_header {
   font-size: 30px;
@@ -2669,6 +2645,13 @@ footer .copy a {
   text-align: center;
   cursor: pointer;
   float: left;
+  -webkit-transition: all 0.6s;
+  -o-transition: all 0.6s;
+  transition: all 0.6s;
+}
+.popup_log_out_registration_btn:hover {
+  color: #ffffff;
+  background-color: #ec835b;
 }
 .popup_log_out_registration_come_in {
   display: inline-block;
@@ -2678,9 +2661,9 @@ footer .copy a {
   color: #b1b1b1;
   margin: 20px 10px 0 70px;
 }
-@media screen and (max-width: 1280px) {
+@media screen and (max-width: 1200px) {
   .popup_log_out_registration_come_in {
-    margin-left: 50px;
+    margin-left: 20px;
   }
 }
 .popup_log_out_registration_img {
@@ -2732,35 +2715,14 @@ footer .copy a {
   z-index: 1;
   border-radius: 10px;
 }
-@media screen and (max-width: 1440px) {
-  .popup_sign_in_wrapper {
-    width: 80%;
-    margin-left: 10%;
-  }
-}
-@media screen and (max-width: 1024px) {
-  .popup_sign_in_wrapper {
-    width: 100%;
-    margin-left: 0;
-  }
-}
 .popup_sign_in_logo_block {
   position: relative;
   width: 100%;
   height: 50vh;
+  min-height: 540px;
   z-index: 1;
   background-repeat: no-repeat;
   background-size: cover;
-}
-@media screen and (max-width: 1440px) {
-  .popup_sign_in_logo_block {
-    height: 60vh;
-  }
-}
-@media screen and (max-width: 1280px) {
-  .popup_sign_in_logo_block {
-    height: 70vh;
-  }
 }
 .popup_sign_in_logo_block:before {
   content: '';
@@ -2821,18 +2783,9 @@ footer .copy a {
   position: relative;
   width: 100%;
   height: 50vh;
+  min-height: 540px;
   background-color: #ffffff;
   z-index: 1;
-}
-@media screen and (max-width: 1440px) {
-  .popup_sign_in_registration {
-    height: 60vh;
-  }
-}
-@media screen and (max-width: 1280px) {
-  .popup_sign_in_registration {
-    height: 70vh;
-  }
 }
 .popup_sign_in_registration_header {
   font-size: 30px;
@@ -2900,6 +2853,13 @@ footer .copy a {
   text-align: center;
   cursor: pointer;
   float: left;
+  -webkit-transition: all 0.6s;
+  -o-transition: all 0.6s;
+  transition: all 0.6s;
+}
+.popup_sign_in_registration_btn:hover {
+  color: #ffffff;
+  background-color: #ec835b;
 }
 .popup_sign_in_registration_come_in {
   display: inline-block;
@@ -2909,9 +2869,9 @@ footer .copy a {
   color: #b1b1b1;
   margin: 105px 10px 0 70px;
 }
-@media screen and (max-width: 1280px) {
+@media screen and (max-width: 1200px) {
   .popup_sign_in_registration_come_in {
-    margin-left: 50px;
+    margin-left: 20px;
   }
 }
 .popup_sign_in_registration_img {

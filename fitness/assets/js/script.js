@@ -85,7 +85,7 @@ $('.hit_foto_slider_wrapper').slick({
     arrows: true,
     nextArrow: '<div class="hit_foto_next_arrow"></div>',
     prevArrow: '<div class="hit_foto_prew_arrow"></div>',    
-    adaptiveHeight: true,
+    // adaptiveHeight: true,
     infinite: true
 });
 
