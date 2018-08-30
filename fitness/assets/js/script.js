@@ -8,14 +8,14 @@ $(document).ready(function () {
         }, 1200);
     });
 
-    $(".nav_header_menu .nav_main_link").click(function (event) {
-        event.preventDefault();
-        var id = $(this).attr('href')
-            , top = $(id).offset().top - 150;
-        $('body,html').animate({
-            scrollTop: top
-        }, 1200);
-    });
+    // $(".nav_header_menu .nav_main_link").click(function (event) {
+    //     event.preventDefault();
+    //     var id = $(this).attr('href')
+    //         , top = $(id).offset().top - 150;
+    //     $('body,html').animate({
+    //         scrollTop: top
+    //     }, 1200);
+    // });
 
     $(".main_btn").click(function (event) {
         event.preventDefault();
