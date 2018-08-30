@@ -565,8 +565,9 @@ body {
   position: relative;
   animation: show_content 1s 4s forwards;
 }
-.mouse_animate {  
-  animation: mouse_down 1s 0.5s infinite;
+.mouse_animate {
+  opacity: 0;
+  animation: mouse_down 1s 0.5s infinite, show_item 1.5s 3s forwards;
 }
 .animate_main_header {
   opacity: 0;
@@ -1211,7 +1212,7 @@ body {
   }
 }
 .main_wrapper .cross_page_program_btn {
-  color: @blue;
+  color: @white;
   border: 1px solid @blue;
   border-radius: 5px;
   -webkit-transition: all 0.9s;
@@ -1238,8 +1239,7 @@ body {
   &_main_wrapper {
     position: relative;
     width: 100%;
-    height: 30vh;
-    min-height: 250px;
+    height: 30vh;    
     overflow: hidden;
     -webkit-transition: height 1s;
     -o-transition: height 1s;
@@ -1257,8 +1257,7 @@ body {
   &_wrapper {
     position: relative;
     width: 100%;
-    height: 30vh;
-    min-height: 300px;
+    height: 30vh;    
     overflow: hidden;
     -webkit-transition: all 0.9s0.9s;
     -o-transition: all 0.9s0.9s;
@@ -2127,8 +2126,9 @@ footer {
     height: 36px;    
     bottom: 25px;
     right: 20px;
-    z-index: 10;
+    z-index: 100;
     background-image: url("../img/icon/LArrow.png");
+    
     // @media screen and (max-width: 1440px) {
     //   bottom: 4vh;
     // }
@@ -2140,7 +2140,7 @@ footer {
     height: 36px;    
     bottom: 25px;
     right: 130px;
-    z-index: 10;
+    z-index: 100;
     background-image: url("../img/icon/LArrow.png");    
     -webkit-transform: rotate(180deg);
     -ms-transform: rotate(180deg);
@@ -2149,6 +2149,16 @@ footer {
     // @media screen and (max-width: 1440px) {
     //   bottom: 4vh;
     // }
+    span {
+      content: '';
+      position: absolute;
+    width: 170px;
+    height: 66px;
+    bottom: -20px;
+    right: -20px;
+    z-index: -1;
+    background-color: @white;
+    }
   }  
 }
 
@@ -2533,7 +2543,8 @@ footer {
       outline: none;
       -moz-appearance: none;
       border-radius: 20px;
-      border: 2px solid @main-orange;      
+      border: 2px solid @main-orange;
+      padding: 0 15px;
     }
     textarea:-moz-placeholder {
         .opn-reg;
@@ -3357,7 +3368,7 @@ footer {
     margin-top: 80px;
     color: @white;
     text-decoration: none;
-    border: 2px solid @white;
+    border: 2px solid @pink;
     border-radius: 10px;   
     text-align: center;
     cursor: pointer;
@@ -3560,6 +3571,16 @@ footer {
       line-height: 24px;
       .proxi-reg;
     }
+    &_illust {
+      position: absolute;      
+      width: 345px;
+      height: 215px;
+      bottom: 100px;
+      right: 20%;
+      img {
+        width: 100%;
+      }
+    }
   }
   &_name {
     font-size: 36px;
@@ -3609,12 +3630,15 @@ footer {
     //justify-content: center;
     align-content: center;
     position: relative;
+    span {
+      z-index: 1;
+    }
     &:before {
       content: '';
       width: 1000px;
       background-color: @pink;
       top: 0;
-      left: -1000px;
+      left: -990px;
       height: 100%;
       position: absolute;
     }
@@ -3765,7 +3789,7 @@ footer {
     margin-top: 80px;
     color: @white;
     text-decoration: none;
-    border: 2px solid @white;
+    border: 2px solid @green;
     border-radius: 10px;   
     text-align: center;
     cursor: pointer;
@@ -4466,7 +4490,7 @@ footer {
     margin: 45px auto 0 auto;
     color: @white;
     text-decoration: none;
-    border: 2px solid @white;
+    border: 2px solid @blue;
     border-radius: 5px;   
     text-align: center;
     cursor: pointer;
@@ -4503,7 +4527,10 @@ footer {
   width: 100%;
   margin-top: 200px;
   border-radius: 5px;
-  border: 5px solid @blue;
+  
+  .container {
+    border: 5px solid @blue;
+  }
   &_video {
     img {
       width: 100%;
@@ -4548,7 +4575,10 @@ footer {
   width: 100%;
   margin-top: 120px;
   border-radius: 5px;
-  border: 5px solid @blue;
+  .container {
+    border: 5px solid @blue;
+  }
+  
   &_block {
     padding: 90px 0 85px 0;
     font-size: 36px;

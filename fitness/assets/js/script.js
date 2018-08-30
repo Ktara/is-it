@@ -115,7 +115,7 @@ $('.hit_foto_slider_wrapper').slick({
 $('.popular_slider_wrapper').slick({
     slidesToShow: 1,
     slidesToScroll: 1,
-    dots: false,
+    dots: true,
     arrows: true,
     nextArrow: '<div class="popular_next_arrow popular_arrow_animate"></div>',
     prevArrow: '<div class="popular_prew_arrow popular_arrow_animate"></div>',    
@@ -232,8 +232,7 @@ if(scroll_targets[0] != undefined) {
 $(window).scroll(function(){	
 	for(var i = 0; i < scroll_targets.length; i++){		
 		var position = $(scroll_targets[i]).offset().top - $(window).height()*0.7;
-			if(position < $(window).scrollTop()){
-				console.log(scroll_targets[i]);
+			if(position < $(window).scrollTop()){				
 				$(scroll_targets[i]).animate({
 					top: 0,
 					opacity: 1

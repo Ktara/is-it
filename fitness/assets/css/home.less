@@ -397,12 +397,15 @@
     //justify-content: center;
     align-content: center;
     position: relative;
+    span {
+      z-index: 1;
+    }
     &:before {
       content: '';
       width: 1000px;
       background-color: @home_color;
       top: 0;
-      left: -1000px;
+      left: -990px;
       height: 100%;
       position: absolute;
     }

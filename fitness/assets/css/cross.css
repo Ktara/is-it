@@ -72,6 +72,10 @@
   line-height: 24px;
   color: #fffffe;
 }
+.cross_about_border {
+  border-radius: 10px;
+  overflow: hidden;
+}
 .cross_about_block {
   width: 100%;
   height: 25vh;

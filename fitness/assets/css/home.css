@@ -435,12 +435,15 @@
   align-content: center;
   position: relative;
 }
+.home_program_title span {
+  z-index: 1;
+}
 .home_program_title:before {
   content: '';
   width: 1000px;
   background-color: #e38b2f;
   top: 0;
-  left: -1000px;
+  left: -990px;
   height: 100%;
   position: absolute;
 }
