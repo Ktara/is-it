@@ -206,21 +206,21 @@ body {
     }
     .active_nav_list {
       position: relative;      
-      &:after,
-      &:before {
-        content: "";
-        display: block;
-        position: absolute;
-        top: -30px;
-        left: 15px;
-        width: 28px;
-        height: 2px;
-        background-color: @main-orange;
-      }
-      &:after {
-        top: auto;
-        bottom: -30px;
-      }
+      // &:after,
+      // &:before {
+      //   content: "";
+      //   display: block;
+      //   position: absolute;
+      //   top: -30px;
+      //   left: 15px;
+      //   width: 28px;
+      //   height: 2px;
+      //   background-color: @main-orange;
+      // }
+      // &:after {
+      //   top: auto;
+      //   bottom: -30px;
+      // }
       a {
         color: @main-orange;
       }
@@ -253,22 +253,39 @@ body {
     // &:after {
     //   top: 8px;
     // }
+    
     li {
-        writing-mode: vertical-rl;
-        text-orientation: upright;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: auto;
-        text-align: center;  
-        margin: 0 auto 60px 0; 
-        vertical-align: middle;
-        line-height: 16px;
-        width: 100%;
-        color: @black;
-        // &:nth-child(1) a {
-          
-        // }
+      position: relative;
+      writing-mode: vertical-rl;
+      text-orientation: upright;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: auto;
+      text-align: center;  
+      margin: 0 auto 60px 0; 
+      vertical-align: middle;
+      line-height: 16px;
+      width: 100%;
+      color: @black;
+      &:nth-child(1) {
+        &:after,
+        &:before {
+          content: "";
+          display: block;
+          position: absolute;
+          top: -30px;
+          left: 15px;
+          width: 28px;
+          height: 2px;
+          background-color: @main-orange;
+        }
+        &:after {
+          top: auto;
+          bottom: -30px;
+        }
+      }
+        
         // &:nth-child(2) a {
         //   color: @black;
         //   &:visited {
@@ -282,6 +299,12 @@ body {
         vertical-align: middle;
         text-decoration: none;        
         word-wrap: break-word;
+        -webkit-transition: color 0.4s;
+        -o-transition: color 0.4s;
+        transition: color 0.4s;
+        &:hover {
+          color: @main-orange;
+        }
       }
     }    
   }
@@ -2126,6 +2149,9 @@ footer {
     // @media screen and (max-width: 1280px) {
     //  bottom: 8vh;
     // }
+    li {
+      display: none;
+    }
   }
   .popular_next_arrow {
     cursor: pointer;
