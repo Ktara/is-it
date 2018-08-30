@@ -175,9 +175,31 @@ body {
   height: 4px;
   background-color: #000000;
 }
+.nav_header_menu_wrapper .active_nav_list {
+  position: relative;
+}
+.nav_header_menu_wrapper .active_nav_list:after,
+.nav_header_menu_wrapper .active_nav_list:before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: -30px;
+  left: 15px;
+  width: 28px;
+  height: 2px;
+  background-color: #ec835b;
+}
+.nav_header_menu_wrapper .active_nav_list:after {
+  top: auto;
+  bottom: -30px;
+}
+.nav_header_menu_wrapper .active_nav_list a {
+  color: #ec835b;
+}
 .nav_header_menu {
   position: absolute;
   display: inline-block;
+  padding-bottom: 10px;
   text-align: center;
   height: auto;
   width: 100%;
@@ -197,33 +219,10 @@ body {
   vertical-align: middle;
   line-height: 16px;
   width: 100%;
-}
-.nav_header_menu li:nth-child(1) a {
-  position: relative;
-  color: #ec835b;
-}
-.nav_header_menu li:nth-child(1) a:after,
-.nav_header_menu li:nth-child(1) a:before {
-  content: "";
-  display: block;
-  position: absolute;
-  top: -30px;
-  left: -5px;
-  width: 28px;
-  height: 2px;
-  background-color: #ec835b;
-}
-.nav_header_menu li:nth-child(1) a:after {
-  top: auto;
-  bottom: -30px;
-}
-.nav_header_menu li:nth-child(2) a {
-  color: #000000;
-}
-.nav_header_menu li:nth-child(2) a:visited {
   color: #000000;
 }
 .nav_header_menu li a {
+  color: #000000;
   display: inline-block;
   text-align: center;
   vertical-align: middle;
@@ -1933,8 +1932,8 @@ footer .copy a {
   position: absolute;
   width: 170px;
   height: 66px;
-  bottom: 50px;
-  right: 0;
+  bottom: 12px;
+  right: 15px;
   background-color: #ffffff;
 }
 .popular .popular_next_arrow {
@@ -3043,6 +3042,7 @@ footer .copy a {
   overflow: hidden;
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: 0 100%;
 }
 .stretching_main_header {
   font-family: 'PT Sans', sans-serif;
