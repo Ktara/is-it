@@ -103,7 +103,7 @@ $('.popular_slider_wrapper').slick({
     prevArrow: '<div class="popular_prew_arrow popular_arrow_animate"></div>',    
     // adaptiveHeight: true,
     // infinite: true,
-    // rtl: true
+    rtl: true
 });
 
 

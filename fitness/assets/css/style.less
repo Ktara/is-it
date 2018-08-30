@@ -431,12 +431,12 @@ animation: show_header 1s 1.5s forwards;
   opacity: 0;
   animation: show_item 1s 2.5s forwards;
 }
-.popular_slide:nth-child(3) .popular_name_animate {
+.popular_slide:nth-child(2) .popular_name_animate {
   position: relative;
-  display: inline-block;
+  display:block;
   right: 100%; 
   opacity: 0;
-  animation: show_name 1s 2.5s forwards;
+  animation: show_name 1s 2s forwards;
 }
 .blog_page_sorting_wrapper {
   opacity: 0;
@@ -1405,6 +1405,7 @@ animation: show_header 1s 1.5s forwards;
 .section_wrapper {
   width: 100%;
   height: 85vh;
+  min-height: 750px;
   overflow: hidden;
   @media screen and (max-width: 1440px) {
     height: 100vh;
@@ -1480,14 +1481,15 @@ animation: show_header 1s 1.5s forwards;
 .about {
   position: relative;  
   width: 100%;
-  height: 50vh;  
+  height: 35vh;  
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: 0 100%;
+  background-position: 0 -100%;
   background-attachment: fixed;
-  // @media screen and (max-width: 1024px) {
-  //   height: 40vh;
-  // }
+  background-color: @black;
+  @media screen and (max-width: 1440px) {
+    height: 50vh;
+  }
   &:after {
     content: '';
     position: absolute;
@@ -1593,11 +1595,14 @@ animation: show_header 1s 1.5s forwards;
     }    
   }
   &_sub_title {
+    display: block;
+    color: @black;
+    text-decoration: none;
     .opn-bold;
     padding-top: 60px;
     margin-left: 30px;
     margin-right: 30px;
-    cursor: default;
+    cursor: pointer;
     @media screen and (max-width: 1024px) {
       padding-top: 30px;
     }    
@@ -2018,6 +2023,7 @@ footer {
     position: relative;
     display: inline-block;
     width: 100%;
+    min-height: 500px;
     height: ~'calc(45vh + 125px)';
     overflow: hidden;
     padding-top: 40px;
@@ -2030,6 +2036,7 @@ footer {
   }
   &_slide {
     position: relative;
+    min-height: 500px;
     height: ~'calc(45vh + 125px)';
     // @media screen and (max-width: 1440px) {
     //   height: 55vh;
@@ -2041,6 +2048,7 @@ footer {
       position: relative;
       width: 100%;
       height: 45vh;
+      min-height: 370px;
       overflow: hidden;
       display: block;
       // @media screen and (max-width: 1440px) {
@@ -2082,7 +2090,7 @@ footer {
     position: absolute;
     width: 170px;
     height: 66px;
-    top: ~'calc(45vh + 10px)';
+    bottom: 50px;
     right: 0;
     background-color: @white;
     // @media screen and (max-width: 1280px) {
@@ -2094,7 +2102,7 @@ footer {
     position: absolute;
     width: 20px;
     height: 36px;    
-    top: ~'calc(45vh + 65px)';
+    bottom: 25px;
     right: 20px;
     z-index: 10;
     background-image: url("../img/icon/LArrow.png");
@@ -2107,7 +2115,7 @@ footer {
     position: absolute;
     width: 20px;
     height: 36px;    
-    top: ~'calc(45vh + 65px)';
+    bottom: 25px;
     right: 130px;
     z-index: 10;
     background-image: url("../img/icon/LArrow.png");    
@@ -2296,6 +2304,7 @@ footer {
     position: relative;
     width: 100%;
     height: 40vh;
+    min-height: 350px;
     overflow: hidden;
     margin-top: 30px;
     img {
@@ -2384,7 +2393,8 @@ footer {
       position: relative;
       display: block;
       width: 100%;
-      height: 30vh;
+      height: 25vh;
+      min-height: 250px;
       overflow: hidden;
       margin-top: 30px;
       text-decoration: none;
@@ -4100,13 +4110,13 @@ footer {
   &_image {
     position: relative;
     width: 100%;
-    height: 40vh;
+    height: auto;
     overflow: hidden;
     border-radius: 15px;
     z-index: 10;
     img {
-      min-width: 100%;
-      height: 100%;
+      width: 100%;
+      display: block;
     }
   }
   &_text_block {
