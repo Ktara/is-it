@@ -103,12 +103,12 @@ body {
   line-height: 46px;
   margin-top: 20px;
   margin-right: 30px;
-  border: 2px solid #93b867;
+  border: 2px solid #7cd368;
   border-radius: 10px;
   color: #ffffff;
 }
 .main_wrapper .nav_header_sign_in_green:hover {
-  background-color: #93b867;
+  background-color: #7cd368;
   color: #ffffff;
 }
 .main_wrapper .nav_header_sign_in_yellow {
@@ -1064,11 +1064,11 @@ body {
   font-size: 36px;
   font-family: 'ProximaNova', sans-serif;
   font-weight: 700;
-  color: #93b867;
+  color: #7cd368;
   padding-bottom: 25px;
 }
 .main_wrapper .gym_page_program .program_main_wrapper .program_wrapper .gym_page_top_text_block {
-  background-color: #93b867;
+  background-color: #7cd368;
 }
 .main_wrapper .gym_page_program .program_main_wrapper .program_wrapper .gym_page_top_text_block .top_text {
   color: #ffffff;
@@ -1076,7 +1076,7 @@ body {
   font-weight: 700;
 }
 .main_wrapper .gym_page_program .program_main_wrapper .program_wrapper .gym_page_bottom_text_block {
-  background-color: #93b867;
+  background-color: #7cd368;
 }
 .main_wrapper .gym_page_program .program_main_wrapper .program_wrapper .gym_page_bottom_text_block .bottom_text {
   color: #ffffff;
@@ -1084,28 +1084,28 @@ body {
   font-weight: 700;
 }
 .main_wrapper .gym_page_program .program_main_wrapper .program_wrapper .gym_page_block_btn {
-  background-color: #93b867;
+  background-color: #7cd368;
   color: #ffffff;
-  border: 1px solid #93b867;
+  border: 1px solid #7cd368;
   border-radius: 10px;
   font-family: 'ProximaNova', sans-serif;
   font-weight: 400;
 }
 .main_wrapper .gym_page_program .program_main_wrapper .program_wrapper .gym_page_block_btn:hover {
   background-color: inherit;
-  border: 1px solid #93b867;
-  color: #93b867;
+  border: 1px solid #7cd368;
+  color: #7cd368;
 }
 .main_wrapper .gym_page_program_btn {
-  color: #93b867;
-  border: 1px solid #93b867;
+  color: #7cd368;
+  border: 1px solid #7cd368;
   border-radius: 15px;
   -webkit-transition: all 0.9s;
   -o-transition: all 0.9s;
   transition: all 0.9s;
 }
 .main_wrapper .gym_page_program_btn:hover {
-  background-color: #93b867;
+  background-color: #7cd368;
   color: #ffffff;
 }
 .main_wrapper .cross_page_program {
@@ -1419,7 +1419,7 @@ body {
   height: 35vh;
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: 0 -150%;
+  background-position: 0 -100%;
   background-attachment: fixed;
   background-color: #000000;
 }
@@ -1727,7 +1727,7 @@ footer .copy .stretching_page_it_ag_pink:hover:after {
   width: 100%;
 }
 footer .copy .gym_it_ag_green {
-  color: #93b867;
+  color: #7cd368;
   position: relative;
 }
 footer .copy .gym_it_ag_green:after {
@@ -1738,8 +1738,8 @@ footer .copy .gym_it_ag_green:after {
   height: 1px;
   bottom: -3px;
   left: 0;
-  color: #93b867;
-  background-color: #93b867;
+  color: #7cd368;
+  background-color: #7cd368;
   -webkit-transition: width 0.6s;
   -o-transition: width 0.6s;
   transition: width 0.6s;
@@ -3486,9 +3486,9 @@ footer .copy a:hover:after {
   margin-top: 80px;
   color: #ffffff;
   text-decoration: none;
-  border: 2px solid #93b867;
+  border: 2px solid #7cd368;
   border-radius: 10px;
-  background-color: #93b867;
+  background-color: #7cd368;
   text-align: center;
   cursor: pointer;
   font-family: 'ProximaNova', sans-serif;
@@ -3508,7 +3508,7 @@ footer .copy a:hover:after {
   margin-top: 80px;
   color: #ffffff;
   text-decoration: none;
-  border: 2px solid #93b867;
+  border: 2px solid #7cd368;
   border-radius: 10px;
   text-align: center;
   cursor: pointer;
@@ -3519,7 +3519,7 @@ footer .copy a:hover:after {
   transition: all 0.6s;
 }
 .gym_main_sub_btn:hover {
-  color: #93b867;
+  color: #7cd368;
   background-color: #ffffff;
 }
 .gym_main .mouse {
@@ -3571,7 +3571,7 @@ footer .copy a:hover:after {
   width: 100%;
   box-shadow: 0 0 16px rgba(0, 0, 0, 0.2);
   border-radius: 0 0 20px 20px;
-  background-color: #93b867;
+  background-color: #7cd368;
   padding: 100px 0;
 }
 .gym_motivation_text {
@@ -3591,7 +3591,7 @@ footer .copy a:hover:after {
   font-size: 48px;
   font-family: 'ProximaNova', sans-serif;
   font-weight: 700;
-  color: #93b867;
+  color: #7cd368;
   margin-top: 40px;
   margin-bottom: 50px;
 }
@@ -3644,7 +3644,7 @@ footer .copy a:hover:after {
   font-size: 48px;
   font-family: 'ProximaNova', sans-serif;
   font-weight: 700;
-  color: #93b867;
+  color: #7cd368;
 }
 .gym_advantage_image_block {
   position: relative;
@@ -3696,7 +3696,7 @@ footer .copy a:hover:after {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  border: 1px solid #93b867;
+  border: 1px solid #7cd368;
   border-radius: 20px;
   position: absolute;
   background-color: black;
@@ -3710,7 +3710,7 @@ footer .copy a:hover:after {
   content: '';
   width: 0;
   height: 1px;
-  background-color: #93b867;
+  background-color: #7cd368;
   position: absolute;
   top: 50%;
   left: -19px;
@@ -3719,7 +3719,7 @@ footer .copy a:hover:after {
   content: '';
   width: 1px;
   height: 0;
-  background-color: #93b867;
+  background-color: #7cd368;
   position: absolute;
   top: -47px;
   left: -19px;
@@ -3745,8 +3745,8 @@ footer .copy a:hover:after {
   height: 44%;
   top: 28%;
   right: 28%;
-  color: #93b867;
-  border: 10px solid #93b867;
+  color: #7cd368;
+  border: 10px solid #7cd368;
   border-radius: 50px;
   cursor: pointer;
   -webkit-transition: all 0.6s;
@@ -3761,8 +3761,8 @@ footer .copy a:hover:after {
   height: 64%;
   top: 18%;
   right: 18%;
-  color: #93b867;
-  border: 1px solid #93b867;
+  color: #7cd368;
+  border: 1px solid #7cd368;
   border-radius: 50px;
   cursor: pointer;
   -webkit-transition: all 0.6s;
@@ -3777,8 +3777,8 @@ footer .copy a:hover:after {
   height: 80%;
   top: 10%;
   right: 10%;
-  color: #93b867;
-  border: 1px solid #93b867;
+  color: #7cd368;
+  border: 1px solid #7cd368;
   border-radius: 50px;
   cursor: pointer;
   -webkit-transition: all 0.6s;
@@ -3793,8 +3793,8 @@ footer .copy a:hover:after {
   height: 100%;
   top: 0;
   right: 0;
-  color: #93b867;
-  border: 1px solid #93b867;
+  color: #7cd368;
+  border: 1px solid #7cd368;
   border-radius: 50px;
   cursor: pointer;
   -webkit-transition: all 0.6s;
@@ -3806,7 +3806,7 @@ footer .copy a:hover:after {
   height: 75px;
 }
 .gym_advantage .circle_active .first_circle {
-  border: 7px solid #93b867;
+  border: 7px solid #7cd368;
 }
 /* GYM_TRAINER SECTION */
 .gym_trainer {
@@ -3838,8 +3838,8 @@ footer .copy a:hover:after {
   top: -40px;
   right: 0;
   bottom: -50px;
-  color: #93b867;
-  border: 2px solid #93b867;
+  color: #7cd368;
+  border: 2px solid #7cd368;
 }
 .gym_trainer .name {
   font-size: 48px;
@@ -3861,7 +3861,7 @@ footer .copy a:hover:after {
   display: block;
   width: 160px;
   height: 2px;
-  border: 2px solid #93b867;
+  border: 2px solid #7cd368;
   margin: 5px auto 0 auto;
 }
 .gym_trainer_text {
@@ -3893,7 +3893,7 @@ footer .copy a:hover:after {
   height: 100%;
   top: 0;
   left: 0;
-  background-color: #93b867;
+  background-color: #7cd368;
   opacity: 0.9;
 }
 .gym_other_image img {
@@ -3925,7 +3925,7 @@ footer .copy a:hover:after {
   width: 33%;
   height: 50px;
   line-height: 48px;
-  color: #93b867;
+  color: #7cd368;
   background-color: #ffffff;
   border: 1px solid #ffffff;
   border-radius: 10px;
@@ -3941,7 +3941,7 @@ footer .copy a:hover:after {
   position: relative;
   margin: 155px 0 35px 0;
   padding: 30px;
-  border: 2px solid #93b867;
+  border: 2px solid #7cd368;
 }
 .gym_other_text_viewer_sub_header {
   font-size: 24px;
@@ -3967,7 +3967,7 @@ footer .copy a:hover:after {
   font-family: 'ProximaNova', sans-serif;
   font-weight: 700;
   text-transform: uppercase;
-  color: #93b867;
+  color: #7cd368;
 }
 .gym_price_name span {
   font-family: 'ProximaNova', sans-serif;
@@ -3983,7 +3983,7 @@ footer .copy a:hover:after {
 .gym_price_program_title {
   width: 100%;
   height: 100%;
-  background-color: #93b867;
+  background-color: #7cd368;
   font-family: 'ProximaNova', sans-serif;
   font-weight: 400;
   text-transform: uppercase;
@@ -4023,7 +4023,7 @@ footer .copy a:hover:after {
   bottom: 5px;
   width: calc(100% + 25px);
   height: 1px;
-  background-color: #93b867;
+  background-color: #7cd368;
 }
 .gym_price_program_order {
   display: flex;
@@ -4040,7 +4040,7 @@ footer .copy a:hover:after {
   display: block;
   width: 2px;
   height: 50%;
-  background-color: #93b867;
+  background-color: #7cd368;
   position: absolute;
   left: 7px;
   top: 25%;
@@ -4055,8 +4055,8 @@ footer .copy a:hover:after {
 }
 .gym_price_program_btn {
   display: block;
-  border: 1px solid #93b867;
-  background-color: #93b867;
+  border: 1px solid #7cd368;
+  background-color: #7cd368;
   border-radius: 10px;
   font-family: 'ProximaNova', sans-serif;
   font-weight: 700;
@@ -4072,7 +4072,7 @@ footer .copy a:hover:after {
   transition: all 0.6s;
 }
 .gym_price_program_btn:hover {
-  color: #93b867;
+  color: #7cd368;
   background-color: #ffffff;
 }
 /* CROSSFYT PAGE */
