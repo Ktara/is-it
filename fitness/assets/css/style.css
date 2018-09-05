@@ -147,6 +147,12 @@ body {
   left: 0;
   z-index: 20;
 }
+.nav_header .nav_text_black {
+  color: #000000;
+}
+.nav_header .nav_text_black a {
+  color: #000000;
+}
 .nav_header_menu_wrapper {
   width: 60px;
   height: 103px;
@@ -2375,10 +2381,22 @@ footer .copy a:hover:after {
     left: 10%;
   }
 }
+.article .other_article .fix {
+  padding-left: 0;
+  float: left;
+}
+.article .other_article .fixed {
+  float: left;
+}
 .article_advice {
   position: relative;
   width: 100%;
   margin-top: 120px;
+}
+@media screen and (max-width: 768px) {
+  .article_advice {
+    margin-top: 60px;
+  }
 }
 .article_advice_header {
   font-size: 24px;
