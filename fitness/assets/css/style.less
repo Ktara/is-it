@@ -1005,6 +1005,11 @@ body {
   overflow: hidden;
   background-repeat: no-repeat;
   background-size: cover;
+  @media screen and (max-width: 768px) {
+    background-size: 100%;
+    background-color: @black;
+    background-position: 20% 50%;
+  }
   &_header {
     .opn-bold;
     font-size: 60px;
@@ -1012,6 +1017,9 @@ body {
     margin-top: 40vh;
     color: @white;
     text-shadow: 3px 3px 19px rgb(117, 117, 117);
+    @media screen and (max-width: 768px) {
+      font-size: 48px;
+    }
   }
   &_btn {
     width: 220px;
@@ -1281,6 +1289,9 @@ body {
     @media screen and (max-width: 1440px) {
       height: 35vh;
     }
+    @media screen and (max-width: 768px) {
+      height: 30vh;
+    }
   }
   &_show_wrapper {
     height: auto;
@@ -1298,6 +1309,9 @@ body {
     transition: all 0.9s0.9s;
     @media screen and (max-width: 1440px) {
       height: 35vh;
+    }
+    @media screen and (max-width: 768px) {
+      height: 30vh;
     }
     &:hover {
       .top_text_block {
@@ -1472,7 +1486,10 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 100% 0%;
-  background-attachment: fixed;  
+  background-attachment: fixed;
+  @media screen and (max-width: 768px) {
+    background-position: 50%;
+  }
   &_title {
     font-size: 36px;
     .opn-bold;
@@ -1531,6 +1548,9 @@ body {
   position: relative;
   width: 100%;
   padding-top: 400px;
+  @media screen and (max-width: 768px) {
+    padding-top: 0;
+  }
 }
 .about {
   position: relative;  
@@ -1544,6 +1564,10 @@ body {
   @media screen and (max-width: 1440px) {
     height: 50vh;
     min-height: 375px;
+  }
+  @media screen and (max-width: 768px) {
+    background-size: 120%;
+    background-position: 50% 100%;
   }
   &:after {
     content: '';
@@ -1577,7 +1601,7 @@ body {
   &_title {
     font-size: 36px;
     margin-top: 50px;
-    margin-bottom: 10px;
+    margin-bottom: 10px;    
   }
   &_text_block {
     p {
@@ -1637,6 +1661,9 @@ body {
     @media screen and (max-width: 1440px) {
       height: 25vh;
     }
+    @media screen and (max-width: 768px) {
+      height: 20vh;
+    }
     &_art {
       position: absolute;
       display: block;
@@ -1647,6 +1674,9 @@ body {
       font-size: 14px;
       cursor: default;
       color: @grey;
+      @media screen and (max-width: 768px) {
+        bottom: 30px;
+      }
     }    
   }
   &_sub_title {
@@ -1669,6 +1699,9 @@ body {
     overflow: hidden;
     @media screen and (max-width: 1440px) {
       height: 25vh;
+    }
+    @media screen and (max-width: 768px) {
+      height: 20vh;
     }
     img {
       position: absolute;
@@ -1711,7 +1744,22 @@ body {
       -o-transform: rotate(180deg);
       transform: rotate(180deg);
     }
-  }  
+  }
+  .childs:nth-child(3) .blog_text_btn {
+    @media screen and (max-width: 768px) {
+      top: auto;
+      bottom: -22.5px;
+      right: 0;
+      left: ~'calc(50% - 22.5px)';
+      img {
+        margin-left: 18px;
+        -webkit-transform: rotate(-90deg);
+        -ms-transform: rotate(-90deg);
+        -o-transform: rotate(-90deg);
+        transform: rotate(-90deg);
+      }
+    }
+  }
 }
 .blog_link_btn {
   width: 190px;
@@ -1768,6 +1816,9 @@ footer {
   .logo {
     text-align: center;
     margin-top: 43px;
+    @media screen and (max-width: 768px) {
+      text-align: right;
+    }
     a {
       display: inline-block;
       text-decoration: none;
@@ -2916,7 +2967,7 @@ footer {
     height: 50vh;
     min-height: 540px;
     background-color: @white;
-    z-index: 1;
+    z-index: 1;    
     // @media screen and (max-width: 1440px) {
     //   height: 60vh;
     // }
@@ -2988,6 +3039,10 @@ footer {
       -webkit-transition: all 0.6s;
       -o-transition: all 0.6s;
       transition: all 0.6s;
+      @media screen and (max-width: 768px) {
+        display: block;
+        float: none;
+      }
       &:hover {
         color: @white;
         background-color: @main-orange;
@@ -3002,6 +3057,9 @@ footer {
       margin: 20px 10px 0 70px;
       @media screen and (max-width: 1200px) {
         margin-left: 20px;
+      }
+      @media screen and (max-width: 768px) {
+        margin-left: 30px;
       }
     }
     &_img {
@@ -3211,6 +3269,11 @@ footer {
       -webkit-transition: all 0.6s;
       -o-transition: all 0.6s;
       transition: all 0.6s;
+      @media screen and (max-width: 768px) {
+        display: block;
+        float: none;
+        margin-top: 70px;
+      }
       &:hover {
         color: @white;
         background-color: @main-orange;
@@ -3225,6 +3288,10 @@ footer {
       margin: 105px 10px 0 70px;
       @media screen and (max-width: 1200px) {
         margin-left: 20px;
+      }
+      @media screen and (max-width: 768px) {
+        margin-left: 30px;
+        margin-top: 20px;
       }
     }
     &_img {
@@ -3248,7 +3315,7 @@ footer {
       margin: 30px 0 0 30px;      
       font-size: 14px;
       color: @light-grey;
-      text-decoration: none;
+      text-decoration: none;      
     }
   }
 }

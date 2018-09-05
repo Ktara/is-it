@@ -924,6 +924,13 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
 }
+@media screen and (max-width: 768px) {
+  .main {
+    background-size: 100%;
+    background-color: #000000;
+    background-position: 20% 50%;
+  }
+}
 .main_header {
   font-family: 'PT Sans', sans-serif;
   font-weight: 700;
@@ -932,6 +939,11 @@ body {
   margin-top: 40vh;
   color: #ffffff;
   text-shadow: 3px 3px 19px #757575;
+}
+@media screen and (max-width: 768px) {
+  .main_header {
+    font-size: 48px;
+  }
 }
 .main_btn {
   width: 220px;
@@ -1182,6 +1194,11 @@ body {
     height: 35vh;
   }
 }
+@media screen and (max-width: 768px) {
+  .program_main_wrapper {
+    height: 30vh;
+  }
+}
 .program_show_wrapper {
   height: auto;
 }
@@ -1200,6 +1217,11 @@ body {
 @media screen and (max-width: 1440px) {
   .program_wrapper {
     height: 35vh;
+  }
+}
+@media screen and (max-width: 768px) {
+  .program_wrapper {
+    height: 30vh;
   }
 }
 .program_wrapper:hover .top_text_block {
@@ -1364,6 +1386,11 @@ body {
   background-position: 100% 0%;
   background-attachment: fixed;
 }
+@media screen and (max-width: 768px) {
+  .hit_foto {
+    background-position: 50%;
+  }
+}
 .hit_foto_title {
   font-size: 36px;
   font-family: 'PT Sans', sans-serif;
@@ -1413,6 +1440,11 @@ body {
   width: 100%;
   padding-top: 400px;
 }
+@media screen and (max-width: 768px) {
+  .about_main_wrapper {
+    padding-top: 0;
+  }
+}
 .about {
   position: relative;
   width: 100%;
@@ -1427,6 +1459,12 @@ body {
   .about {
     height: 50vh;
     min-height: 375px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .about {
+    background-size: 120%;
+    background-position: 50% 100%;
   }
 }
 .about:after {
@@ -1501,6 +1539,11 @@ body {
     height: 25vh;
   }
 }
+@media screen and (max-width: 768px) {
+  .blog_text_block {
+    height: 20vh;
+  }
+}
 .blog_text_block_art {
   position: absolute;
   display: block;
@@ -1511,6 +1554,11 @@ body {
   font-size: 14px;
   cursor: default;
   color: #b1b1b1;
+}
+@media screen and (max-width: 768px) {
+  .blog_text_block_art {
+    bottom: 30px;
+  }
 }
 .blog_sub_title {
   display: block;
@@ -1537,6 +1585,11 @@ body {
 @media screen and (max-width: 1440px) {
   .blog_img_block {
     height: 25vh;
+  }
+}
+@media screen and (max-width: 768px) {
+  .blog_img_block {
+    height: 20vh;
   }
 }
 .blog_img_block img {
@@ -1579,6 +1632,21 @@ body {
   -ms-transform: rotate(180deg);
   -o-transform: rotate(180deg);
   transform: rotate(180deg);
+}
+@media screen and (max-width: 768px) {
+  .blog .childs:nth-child(3) .blog_text_btn {
+    top: auto;
+    bottom: -22.5px;
+    right: 0;
+    left: calc(50% - 22.5px);
+  }
+  .blog .childs:nth-child(3) .blog_text_btn img {
+    margin-left: 18px;
+    -webkit-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    -o-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+  }
 }
 .blog_link_btn {
   width: 190px;
@@ -1624,6 +1692,11 @@ footer .social img {
 footer .logo {
   text-align: center;
   margin-top: 43px;
+}
+@media screen and (max-width: 768px) {
+  footer .logo {
+    text-align: right;
+  }
 }
 footer .logo a {
   display: inline-block;
@@ -2728,6 +2801,12 @@ footer .copy a:hover:after {
   -o-transition: all 0.6s;
   transition: all 0.6s;
 }
+@media screen and (max-width: 768px) {
+  .popup_log_out_registration_btn {
+    display: block;
+    float: none;
+  }
+}
 .popup_log_out_registration_btn:hover {
   color: #ffffff;
   background-color: #ec835b;
@@ -2743,6 +2822,11 @@ footer .copy a:hover:after {
 @media screen and (max-width: 1200px) {
   .popup_log_out_registration_come_in {
     margin-left: 20px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .popup_log_out_registration_come_in {
+    margin-left: 30px;
   }
 }
 .popup_log_out_registration_img {
@@ -2936,6 +3020,13 @@ footer .copy a:hover:after {
   -o-transition: all 0.6s;
   transition: all 0.6s;
 }
+@media screen and (max-width: 768px) {
+  .popup_sign_in_registration_btn {
+    display: block;
+    float: none;
+    margin-top: 70px;
+  }
+}
 .popup_sign_in_registration_btn:hover {
   color: #ffffff;
   background-color: #ec835b;
@@ -2951,6 +3042,12 @@ footer .copy a:hover:after {
 @media screen and (max-width: 1200px) {
   .popup_sign_in_registration_come_in {
     margin-left: 20px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .popup_sign_in_registration_come_in {
+    margin-left: 30px;
+    margin-top: 20px;
   }
 }
 .popup_sign_in_registration_img {
