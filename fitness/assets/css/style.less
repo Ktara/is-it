@@ -189,6 +189,7 @@ body {
     // -o-transition: all 2s;
     // transition: all 2s;
     position: absolute;
+    cursor: pointer;
     &:after {
       content: "";
       display: block;
@@ -1842,6 +1843,9 @@ footer {
       display: flex;
       justify-content: center;
       position: relative;
+      @media screen and (max-width: 768px) {
+        justify-content: space-between;
+      }
       a {
         position: relative;
         overflow: hidden;
@@ -1849,6 +1853,10 @@ footer {
         width: 16%;
         height: 11vh;
         min-height: 120px;
+        @media screen and (max-width: 768px) {
+          width: 30%;
+          min-height: 100px;
+        }
         // @media screen and (max-width: 1440px) {
         //   height: 13vh;
         // }
@@ -2040,6 +2048,9 @@ footer {
   .oferta_header {
     font-size: 30px;
     text-align: center;
+    @media screen and (max-width: 768px) {
+      font-size: 24px;
+    }
   }
   .oferta_sub_header {
     font-size: 18px;
@@ -2085,13 +2096,47 @@ footer {
       }
     }    
   }
+  .oferta_text_open {
+    &:after {
+      bottom: 5px;
+      -webkit-transform: rotate(-90deg);
+      -ms-transform: rotate(-90deg);
+      -o-transform: rotate(-90deg);
+      transform: rotate(-90deg);
+    }    
+  }
   &_title {
-    margin-top: 50px;
+    padding-top: 50px;
     font-size: 30px;
+    display: inline-block;
+    position: relative;
+    @media screen and (max-width: 768px) {
+      padding-top: 35px;
+      cursor: pointer;
+      font-size: 24px;
+    }
+    &:after {
+      @media screen and (max-width: 768px) {
+        content: url(../img/icon/Adown.png);
+        display: inline-block;
+        position: absolute;
+        bottom: 12px;
+        right: -40px;
+        width: 20px;
+        height: 12px;
+        -webkit-transition: all 0.6s;
+        -o-transition: all 0.6s;
+        transition: all 0.6s;
+      }
+    }
   }
   &_wrapper {
+    @media screen and (max-width: 768px) {
+      height: 0;
+      overflow: hidden;
+    }
     p {
-      margin-top: 30px;
+      padding-top: 30px;
       font-size: 18px;
       line-height: 24px;
     }
@@ -2104,6 +2149,7 @@ footer {
   .active_oferta_list {
     text-decoration: underline;
   }
+
 }
 
 
@@ -2145,6 +2191,9 @@ footer {
     height: ~'calc(45vh + 125px)';
     overflow: hidden;
     padding-top: 40px;
+    @media screen and (max-width: 768px) {
+      height: ~'calc(35vh + 125px)';
+    }
     // @media screen and (max-width: 1440px) {
     //   height: 55vh;
     // }
@@ -2156,6 +2205,9 @@ footer {
     position: relative;
     min-height: 500px;
     height: ~'calc(45vh + 125px)';
+    @media screen and (max-width: 768px) {
+      height: ~'calc(35vh + 125px)';
+    }
     // @media screen and (max-width: 1440px) {
     //   height: 55vh;
     // }
@@ -2169,6 +2221,9 @@ footer {
       min-height: 370px;
       overflow: hidden;
       display: block;
+      @media screen and (max-width: 768px) {
+        height: 35vh;
+      }
       // @media screen and (max-width: 1440px) {
       //   height: 40vh;
       // }
@@ -2318,6 +2373,9 @@ footer {
     @media screen and (max-width: 1440px) {
       height: 30vh;
       min-height: 230px;
+    }
+    @media screen and (max-width: 768px) {
+      height: 25vh;
     }
     a {
       text-decoration: none;
@@ -3360,10 +3418,17 @@ footer {
       font-size: 24px;
       margin-top: 50px;
       margin-bottom: 30px;
+      @media screen and (max-width: 768px) {
+        margin-top: 100px;
+      }
     }
     p {
+      display: inline-block;
       font-size: 18px;
       line-height: 24px;
+      @media screen and (max-width: 768px) {
+        margin-right: 45px;
+      }
     }
     &_program {
       margin-top: 50px;
@@ -3383,6 +3448,9 @@ footer {
       -webkit-transition: all 0.5s;
       -o-transition: all 0.5s;
       transition: all 0.5s;
+      @media screen and (max-width: 768px) {
+        display: inline-block;
+      }
       &:hover {
         background-color: @main-orange;
         color: @white;
@@ -3397,6 +3465,11 @@ footer {
     left: ~'calc(21% + 145px)';
     bottom: -45px;
     background-image: url("../img/icon/nextA.png");
+    @media screen and (max-width: 768px) {
+      left: ~'calc(38% + 145px)';
+      bottom: auto;
+      top: 63%;
+    }
   }
   .photo_prew_arrow {
     cursor: pointer;
@@ -3410,6 +3483,11 @@ footer {
     -ms-transform: rotate(180deg);
     -o-transform: rotate(180deg);
     transform: rotate(180deg);
+    @media screen and (max-width: 768px) {
+      left: 38%;
+      bottom: auto;
+      top: 63%;
+    }
   }
 }
 .photo_slider_wrapper .slick-dots li {
@@ -3421,7 +3499,11 @@ footer {
   z-index: 1000;
   left: ~'calc(21% + 65px)';
   bottom: -40px;
-  
+  @media screen and (max-width: 768px) {
+    left: ~'calc(38% + 65px)';
+    bottom: auto;
+    top: 63%;
+  }  
 }
 .photo_slider_wrapper .slick-dots .slick-active {
   display: inline-block;
@@ -3902,6 +3984,10 @@ footer {
     -webkit-transition: all 0.6s;
     -o-transition: all 0.6s;
     transition: all 0.6s;
+    @media screen and (max-width: 768px) {
+      width: 210px;
+      margin: 80px auto 30px auto;
+    }
     &:hover {
       // color: @green;
       background-color: inherit;
@@ -3923,6 +4009,10 @@ footer {
     -webkit-transition: all 0.6s;
     -o-transition: all 0.6s;
     transition: all 0.6s;
+    @media screen and (max-width: 768px) {
+      width: 210px;
+      margin: 0 auto;
+    }
     &:hover {
       color: @green;
       background-color: @white;
@@ -3953,13 +4043,21 @@ footer {
 .gym_man_woman {
   position: relative;
   width: 100%;
-  background-color: @black;  
+  background-color: @black; 
+  &_text_block {
+    @media screen and (max-width: 768px) {
+      padding-bottom: 50px;
+    }
+  } 
   &_sub_title {
     .proxi-reg;
     font-size: 30px;
     color: @white;
     margin-top: 85px;
     text-align: center;
+    @media screen and (max-width: 768px) {
+      margin-top: 30px;
+    }
   }
   p {
     font-size: 18px;
@@ -3998,6 +4096,9 @@ footer {
   border-radius: 0 0 20px 20px;
   background-color: @green;
   padding: 100px 0;
+  @media screen and (max-width: 768px) {
+    padding: 80px 0;
+  }
   &_text {
     font-size: 24px;
     .proxi-reg;
@@ -4023,11 +4124,17 @@ footer {
     color: @green;
     margin-top: 40px;
     margin-bottom: 50px;
+    @media screen and (max-width: 768px) {
+      font-size: 36px;
+    }
   }
   p {
     font-size: 18px;
     line-height: 24px;
     .proxi-reg;
+    @media screen and (max-width: 768px) {
+      font-size: 16px;
+    }
   }
   &_video {
     position: relative;
@@ -4079,6 +4186,9 @@ footer {
     font-size: 48px;
     .proxi-bold;
     color: @green;
+    @media screen and (max-width: 768px) {
+      font-size: 36px;
+    }
   }
   &_image_block {
     position: relative;
@@ -4087,6 +4197,9 @@ footer {
     margin-top: 25px;
     overflow: hidden;
     border-radius: 15px;
+    @media screen and (max-width: 768px) {
+      height: 40vh;
+    }
     img {
       width: 100%;
       height: auto;
@@ -4287,9 +4400,19 @@ footer {
     overflow: hidden;
     border-radius: 15px;
     z-index: 10;
+    @media screen and (max-width: 768px) {
+      height: 340px;      
+    }
     img {
       width: 100%;
       display: block;
+      @media screen and (max-width: 768px) {
+        width: auto;
+        height: 340px;
+        top: 0;
+        left: -60%;
+        position: absolute
+      }
     }
   }
   &_text_block {
@@ -4320,6 +4443,9 @@ footer {
     line-height: 24px;
     .proxi-light-it;
     text-align: center;
+    @media screen and (max-width: 768px) {
+      font-size: 16px;
+    }
   }
   &_line {
     display: block;
@@ -4333,6 +4459,9 @@ footer {
     line-height: 24px;
     .proxi-reg;
     margin-top: 40px;
+    @media screen and (max-width: 768px) {
+      font-size: 16px;
+    }
   }
 }
 
@@ -4354,6 +4483,9 @@ footer {
     min-height: 300px;
     overflow: hidden;
     border-radius: 20px;
+    @media screen and (max-width: 768px) {
+      height: 30vh;      
+    }
     &:after {
       content: '';
       display: block;
@@ -4469,7 +4601,10 @@ footer {
       //justify-content: center;
       align-content: center;
       position: relative;
-      border-radius: 20px 0 0 20px;      
+      border-radius: 20px 0 0 20px;
+      @media screen and (max-width: 768px) {
+        padding-left: 0;
+      }      
     }
     &_text {
       width: 100%;
@@ -4516,6 +4651,9 @@ footer {
         position: absolute;
         left: 7px;
         top: 25%;
+        @media screen and (max-width: 768px) {
+          left: 0;
+        }
       }
     }
     &_price {
@@ -4524,6 +4662,9 @@ footer {
       color: black;
       margin-bottom: 30px;
       text-transform: uppercase;
+      @media screen and (max-width: 768px) {
+        font-size: 30px;
+      }
     }
     &_btn {
       display: block;
@@ -4541,10 +4682,20 @@ footer {
       -webkit-transition: all 0.6s;
       -o-transition: all 0.6s;
       transition: all 0.6s;
+      @media screen and (max-width: 768px) {
+        padding: 0 35px;
+        font-size: 18px;
+        text-transform: uppercase;
+      }
       &:hover {
         color: @green;
         background-color: @white;
       }
+    }
+  }
+  .fix {
+    @media screen and (max-width: 768px) {
+      padding: 0;
     }
   }  
 }

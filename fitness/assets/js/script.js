@@ -271,3 +271,19 @@ $('.gym_advantage_circle_block').click(function(){
 
 
 
+$('.oferta_text_title').click(function(){
+	$('.oferta_text_wrapper').animate({
+		height: 0
+	}, 400);
+	var target = $(this).next();
+	if ($(this).hasClass('oferta_text_open')){
+		$(this).removeClass('oferta_text_open');
+		return;
+	};
+	$('.oferta_text_title').removeClass('oferta_text_open');
+	var childHeight = target.children().height();
+	target.animate({
+		height: childHeight
+	}, 600);
+	$(this).addClass('oferta_text_open');
+});

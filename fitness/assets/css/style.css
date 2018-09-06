@@ -159,6 +159,7 @@ body {
   background-color: #ffffff;
   overflow: hidden;
   position: absolute;
+  cursor: pointer;
 }
 .nav_header_menu_wrapper:after {
   content: "";
@@ -1737,6 +1738,11 @@ footer .footer_blog_articles {
   justify-content: center;
   position: relative;
 }
+@media screen and (max-width: 768px) {
+  footer .footer_blog_articles {
+    justify-content: space-between;
+  }
+}
 footer .footer_blog_articles a {
   position: relative;
   overflow: hidden;
@@ -1744,6 +1750,12 @@ footer .footer_blog_articles a {
   width: 16%;
   height: 11vh;
   min-height: 120px;
+}
+@media screen and (max-width: 768px) {
+  footer .footer_blog_articles a {
+    width: 30%;
+    min-height: 100px;
+  }
 }
 footer .footer_blog_articles img {
   position: absolute;
@@ -1899,6 +1911,11 @@ footer .copy a:hover:after {
   font-size: 30px;
   text-align: center;
 }
+@media screen and (max-width: 768px) {
+  .oferta_text .oferta_header {
+    font-size: 24px;
+  }
+}
 .oferta_text .oferta_sub_header {
   font-size: 18px;
   text-align: center;
@@ -1949,12 +1966,48 @@ footer .copy a:hover:after {
   color: #000000;
   line-height: 20px;
 }
+.oferta_text .oferta_text_open:after {
+  bottom: 5px;
+  -webkit-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  -o-transform: rotate(-90deg);
+  transform: rotate(-90deg);
+}
 .oferta_text_title {
-  margin-top: 50px;
+  padding-top: 50px;
   font-size: 30px;
+  display: inline-block;
+  position: relative;
+}
+@media screen and (max-width: 768px) {
+  .oferta_text_title {
+    padding-top: 35px;
+    cursor: pointer;
+    font-size: 24px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .oferta_text_title:after {
+    content: url(../img/icon/Adown.png);
+    display: inline-block;
+    position: absolute;
+    bottom: 12px;
+    right: -40px;
+    width: 20px;
+    height: 12px;
+    -webkit-transition: all 0.6s;
+    -o-transition: all 0.6s;
+    transition: all 0.6s;
+  }
+}
+@media screen and (max-width: 768px) {
+  .oferta_text_wrapper {
+    height: 0;
+    overflow: hidden;
+  }
 }
 .oferta_text_wrapper p {
-  margin-top: 30px;
+  padding-top: 30px;
   font-size: 18px;
   line-height: 24px;
 }
@@ -1991,10 +2044,20 @@ footer .copy a:hover:after {
   overflow: hidden;
   padding-top: 40px;
 }
+@media screen and (max-width: 768px) {
+  .popular_slider_wrapper {
+    height: calc(35vh + 125px);
+  }
+}
 .popular_slide {
   position: relative;
   min-height: 500px;
   height: calc(45vh + 125px);
+}
+@media screen and (max-width: 768px) {
+  .popular_slide {
+    height: calc(35vh + 125px);
+  }
 }
 .popular_slide_img_block {
   position: relative;
@@ -2003,6 +2066,11 @@ footer .copy a:hover:after {
   min-height: 370px;
   overflow: hidden;
   display: block;
+}
+@media screen and (max-width: 768px) {
+  .popular_slide_img_block {
+    height: 35vh;
+  }
 }
 .popular_slide_img_block img {
   position: absolute;
@@ -2134,6 +2202,11 @@ footer .copy a:hover:after {
   .blog_page_img_block {
     height: 30vh;
     min-height: 230px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .blog_page_img_block {
+    height: 25vh;
   }
 }
 .blog_page_img_block a {
@@ -3116,9 +3189,20 @@ footer .copy a:hover:after {
   margin-top: 50px;
   margin-bottom: 30px;
 }
+@media screen and (max-width: 768px) {
+  .photo_slide_text_name {
+    margin-top: 100px;
+  }
+}
 .photo_slide_text p {
+  display: inline-block;
   font-size: 18px;
   line-height: 24px;
+}
+@media screen and (max-width: 768px) {
+  .photo_slide_text p {
+    margin-right: 45px;
+  }
 }
 .photo_slide_text_program {
   margin-top: 50px;
@@ -3139,6 +3223,11 @@ footer .copy a:hover:after {
   -o-transition: all 0.5s;
   transition: all 0.5s;
 }
+@media screen and (max-width: 768px) {
+  .photo_slide_text_btn {
+    display: inline-block;
+  }
+}
 .photo_slide_text_btn:hover {
   background-color: #ec835b;
   color: #ffffff;
@@ -3151,6 +3240,13 @@ footer .copy a:hover:after {
   left: calc(21% + 145px);
   bottom: -45px;
   background-image: url("../img/icon/nextA.png");
+}
+@media screen and (max-width: 768px) {
+  .photo .photo_next_arrow {
+    left: calc(38% + 145px);
+    bottom: auto;
+    top: 63%;
+  }
 }
 .photo .photo_prew_arrow {
   cursor: pointer;
@@ -3165,6 +3261,13 @@ footer .copy a:hover:after {
   -o-transform: rotate(180deg);
   transform: rotate(180deg);
 }
+@media screen and (max-width: 768px) {
+  .photo .photo_prew_arrow {
+    left: 38%;
+    bottom: auto;
+    top: 63%;
+  }
+}
 .photo_slider_wrapper .slick-dots li {
   display: none;
 }
@@ -3174,6 +3277,13 @@ footer .copy a:hover:after {
   z-index: 1000;
   left: calc(21% + 65px);
   bottom: -40px;
+}
+@media screen and (max-width: 768px) {
+  .photo_slider_wrapper .slick-dots {
+    left: calc(38% + 65px);
+    bottom: auto;
+    top: 63%;
+  }
 }
 .photo_slider_wrapper .slick-dots .slick-active {
   display: inline-block;
@@ -3612,6 +3722,12 @@ footer .copy a:hover:after {
   -o-transition: all 0.6s;
   transition: all 0.6s;
 }
+@media screen and (max-width: 768px) {
+  .gym_main_program_btn {
+    width: 210px;
+    margin: 80px auto 30px auto;
+  }
+}
 .gym_main_program_btn:hover {
   background-color: inherit;
 }
@@ -3632,6 +3748,12 @@ footer .copy a:hover:after {
   -webkit-transition: all 0.6s;
   -o-transition: all 0.6s;
   transition: all 0.6s;
+}
+@media screen and (max-width: 768px) {
+  .gym_main_sub_btn {
+    width: 210px;
+    margin: 0 auto;
+  }
 }
 .gym_main_sub_btn:hover {
   color: #7cd368;
@@ -3654,6 +3776,11 @@ footer .copy a:hover:after {
   width: 100%;
   background-color: #000000;
 }
+@media screen and (max-width: 768px) {
+  .gym_man_woman_text_block {
+    padding-bottom: 50px;
+  }
+}
 .gym_man_woman_sub_title {
   font-family: 'ProximaNova', sans-serif;
   font-weight: 400;
@@ -3661,6 +3788,11 @@ footer .copy a:hover:after {
   color: #ffffff;
   margin-top: 85px;
   text-align: center;
+}
+@media screen and (max-width: 768px) {
+  .gym_man_woman_sub_title {
+    margin-top: 30px;
+  }
 }
 .gym_man_woman p {
   font-size: 18px;
@@ -3689,6 +3821,11 @@ footer .copy a:hover:after {
   background-color: #7cd368;
   padding: 100px 0;
 }
+@media screen and (max-width: 768px) {
+  .gym_motivation {
+    padding: 80px 0;
+  }
+}
 .gym_motivation_text {
   font-size: 24px;
   font-family: 'ProximaNova', sans-serif;
@@ -3710,11 +3847,21 @@ footer .copy a:hover:after {
   margin-top: 40px;
   margin-bottom: 50px;
 }
+@media screen and (max-width: 768px) {
+  .gym_block_header {
+    font-size: 36px;
+  }
+}
 .gym_block p {
   font-size: 18px;
   line-height: 24px;
   font-family: 'ProximaNova', sans-serif;
   font-weight: 400;
+}
+@media screen and (max-width: 768px) {
+  .gym_block p {
+    font-size: 16px;
+  }
 }
 .gym_block_video {
   position: relative;
@@ -3761,6 +3908,11 @@ footer .copy a:hover:after {
   font-weight: 700;
   color: #7cd368;
 }
+@media screen and (max-width: 768px) {
+  .gym_advantage_header {
+    font-size: 36px;
+  }
+}
 .gym_advantage_image_block {
   position: relative;
   width: 100%;
@@ -3768,6 +3920,11 @@ footer .copy a:hover:after {
   margin-top: 25px;
   overflow: hidden;
   border-radius: 15px;
+}
+@media screen and (max-width: 768px) {
+  .gym_advantage_image_block {
+    height: 40vh;
+  }
 }
 .gym_advantage_image_block img {
   width: 100%;
@@ -3937,9 +4094,23 @@ footer .copy a:hover:after {
   border-radius: 15px;
   z-index: 10;
 }
+@media screen and (max-width: 768px) {
+  .gym_trainer_image {
+    height: 340px;
+  }
+}
 .gym_trainer_image img {
   width: 100%;
   display: block;
+}
+@media screen and (max-width: 768px) {
+  .gym_trainer_image img {
+    width: auto;
+    height: 340px;
+    top: 0;
+    left: -60%;
+    position: absolute;
+  }
 }
 .gym_trainer_text_block {
   position: relative;
@@ -3972,6 +4143,11 @@ footer .copy a:hover:after {
   font-style: italic;
   text-align: center;
 }
+@media screen and (max-width: 768px) {
+  .gym_trainer_sub_title {
+    font-size: 16px;
+  }
+}
 .gym_trainer_line {
   display: block;
   width: 160px;
@@ -3986,6 +4162,11 @@ footer .copy a:hover:after {
   font-weight: 400;
   margin-top: 40px;
 }
+@media screen and (max-width: 768px) {
+  .gym_trainer_text {
+    font-size: 16px;
+  }
+}
 /* GYM OTHER SECTION */
 .gym_other {
   position: relative;
@@ -3999,6 +4180,11 @@ footer .copy a:hover:after {
   min-height: 300px;
   overflow: hidden;
   border-radius: 20px;
+}
+@media screen and (max-width: 768px) {
+  .gym_other_image {
+    height: 30vh;
+  }
 }
 .gym_other_image:after {
   content: '';
@@ -4112,6 +4298,11 @@ footer .copy a:hover:after {
   position: relative;
   border-radius: 20px 0 0 20px;
 }
+@media screen and (max-width: 768px) {
+  .gym_price_program_title {
+    padding-left: 0;
+  }
+}
 .gym_price_program_text {
   width: 100%;
   height: 45px;
@@ -4160,6 +4351,11 @@ footer .copy a:hover:after {
   left: 7px;
   top: 25%;
 }
+@media screen and (max-width: 768px) {
+  .gym_price_program_order:before {
+    left: 0;
+  }
+}
 .gym_price_program_price {
   font-family: 'ProximaNova', sans-serif;
   font-weight: 400;
@@ -4167,6 +4363,11 @@ footer .copy a:hover:after {
   color: black;
   margin-bottom: 30px;
   text-transform: uppercase;
+}
+@media screen and (max-width: 768px) {
+  .gym_price_program_price {
+    font-size: 30px;
+  }
 }
 .gym_price_program_btn {
   display: block;
@@ -4186,9 +4387,21 @@ footer .copy a:hover:after {
   -o-transition: all 0.6s;
   transition: all 0.6s;
 }
+@media screen and (max-width: 768px) {
+  .gym_price_program_btn {
+    padding: 0 35px;
+    font-size: 18px;
+    text-transform: uppercase;
+  }
+}
 .gym_price_program_btn:hover {
   color: #7cd368;
   background-color: #ffffff;
+}
+@media screen and (max-width: 768px) {
+  .gym_price .fix {
+    padding: 0;
+  }
 }
 /* CROSSFYT PAGE */
 .crossfyt_main {
