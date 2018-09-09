@@ -62,6 +62,12 @@
   font-size: 36px;
   color: #fffffe;
 }
+@media screen and (max-width: 768px) {
+  .cross_about_header {
+    font-size: 30px;
+    margin-top: 80px;
+  }
+}
 .cross_about_subheader {
   display: block;
   width: 30%;
@@ -71,6 +77,12 @@
   font-size: 18px;
   line-height: 24px;
   color: #fffffe;
+}
+@media screen and (max-width: 768px) {
+  .cross_about_subheader {
+    font-size: 16px;
+    width: 55%;
+  }
 }
 .cross_about_border {
   border-radius: 10px;
@@ -86,6 +98,11 @@
   background-color: #547ef4;
   overflow: hidden;
 }
+@media screen and (max-width: 768px) {
+  .cross_about_block {
+    height: 18vh;
+  }
+}
 .cross_about_text {
   text-align: center;
   display: block;
@@ -95,6 +112,12 @@
   line-height: 24px;
   color: #fffffe;
 }
+@media screen and (max-width: 768px) {
+  .cross_about_text {
+    font-size: 16px;
+    width: 75%;
+  }
+}
 .cross_about_image {
   width: 100%;
   height: 100%;
@@ -102,6 +125,11 @@
 .cross_about_image img {
   min-width: 100%;
   min-height: 100%;
+}
+@media screen and (max-width: 768px) {
+  .cross_about_image img {
+    width: 100%;
+  }
 }
 .cross_steps {
   width: 100%;
@@ -111,9 +139,21 @@
   height: 100%;
   overflow: hidden;
 }
+@media screen and (max-width: 768px) {
+  .cross_steps_image {
+    position: relative;
+  }
+}
 .cross_steps_image img {
   min-width: 100%;
   min-height: 100%;
+}
+@media screen and (max-width: 768px) {
+  .cross_steps_image img {
+    position: absolute;
+    top: 0;
+    left: -25%;
+  }
 }
 .cross_steps_header {
   font-family: ProximaNova;
@@ -124,6 +164,11 @@
   display: block;
   width: 100%;
   padding-bottom: 50px;
+}
+@media screen and (max-width: 768px) {
+  .cross_steps_header {
+    padding-bottom: 30px;
+  }
 }
 .cross_steps_wrapper {
   width: 100%;
@@ -147,10 +192,22 @@
   color: #fffffe;
   font-weight: 400;
 }
+@media screen and (max-width: 768px) {
+  .cross_steps_text {
+    min-height: 20vh;
+    height: auto;
+    margin-top: 20px;
+  }
+}
 .cross_steps_text p {
   width: 85%;
   display: inline-block;
   text-align: center;
+}
+@media screen and (max-width: 768px) {
+  .cross_steps_text p {
+    padding: 10px;
+  }
 }
 .cross_consist {
   width: 100%;
@@ -183,6 +240,12 @@
   align-items: center;
   position: relative;
 }
+@media screen and (max-width: 768px) {
+  .cross_consist_block {
+    height: auto;
+    min-height: 20vh;
+  }
+}
 .cross_consist_block p {
   font-family: ProximaNova;
   font-size: 18px;
@@ -192,6 +255,11 @@
   display: inline-block;
   width: 75%;
   text-align: center;
+}
+@media screen and (max-width: 768px) {
+  .cross_consist_block p {
+    padding: 10px;
+  }
 }
 .cross_consist_block span {
   position: absolute;
@@ -204,6 +272,11 @@
   top: 100%;
   left: -3%;
 }
+@media screen and (max-width: 768px) {
+  .cross_consist_block span {
+    top: 110%;
+  }
+}
 .cross_consist_elem:nth-child(n+2) .cross_consist_block span {
   left: auto;
   right: -6%;
@@ -214,6 +287,23 @@
 .cross_consist_image {
   width: 100%;
 }
+@media screen and (max-width: 768px) {
+  .cross_consist_image {
+    position: relative;
+    height: 100%;
+    overflow: hidden;
+  }
+}
 .cross_consist_image img {
   width: 100%;
+}
+@media screen and (max-width: 768px) {
+  .cross_consist_image img {
+    position: absolute;
+    top: 0;
+    left: -50%;
+    width: auto;
+    min-width: 100%;
+    min-height: 100%;
+  }
 }

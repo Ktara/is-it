@@ -1205,7 +1205,6 @@ body {
 }
 
 
-
 .main_wrapper .cross_page_program {
   margin-top: 120px;
   &_header {
@@ -4729,7 +4728,7 @@ footer {
     font-size: 120px;    
     margin-top: 30vh;
     color: @white;
-    text-indent: -5px;
+    text-indent: -5px;    
   }
   &_sub_header {
     .proxi-reg;
@@ -4754,6 +4753,9 @@ footer {
     -webkit-transition: all 0.6s;
     -o-transition: all 0.6s;
     transition: all 0.6s;
+    @media screen and (max-width: 768px) {
+      margin-top: 80px;
+    }
     &:hover {
       // color: @green;
       background-color: inherit;
@@ -4775,6 +4777,9 @@ footer {
     -webkit-transition: all 0.6s;
     -o-transition: all 0.6s;
     transition: all 0.6s;
+    @media screen and (max-width: 768px) {
+      margin-top: 30px;
+    }
     &:hover {
       color: @blue;
       background-color: @white;
@@ -4803,8 +4808,7 @@ footer {
   position: relative;
   width: 100%;
   margin-top: 200px;
-  border-radius: 5px;
-  
+  border-radius: 5px;  
   .container {
     border: 5px solid @blue;
   }
@@ -4829,6 +4833,9 @@ footer {
       text-transform: uppercase;
       margin-top: 100px;
       color: @white;
+      @media screen and (max-width: 768px) {
+        font-size: 30px;
+      }
     }
     &_text {
       font-size: 18px;
@@ -4836,6 +4843,9 @@ footer {
       .proxi-reg;
       margin-top: 70px;
       color: @white;
+      @media screen and (max-width: 768px) {
+        padding-bottom: 50px;
+      }
     }
   }
 }
@@ -4893,6 +4903,10 @@ footer {
     align-content: center;
     align-items: center;
     position: relative;
+    @media screen and (max-width: 768px) {      
+      height: auto;
+      min-height: 20vh;
+    }
     p {
       .proxi-reg;
       font-size: 18px;
@@ -4901,6 +4915,9 @@ footer {
       display: inline-block;
       width: 75%;
       text-align: center;
+      @media screen and (max-width: 768px) {      
+        padding: 10px;
+      }
     }
     span {
       position: absolute;
@@ -4911,6 +4928,9 @@ footer {
       line-height: 24px;
       top: 100%;
       left: -3%;
+      @media screen and (max-width: 768px) {      
+        top: 110%;
+      }
     }
   }
   &_elem:nth-child(n+2) .cross_motivation_block {
@@ -4927,9 +4947,23 @@ footer {
     width: 100%;
     // height: ~'calc(100% + 8vh)';
     // overflow: hidden;
+    @media screen and (max-width: 768px) {      
+      position: relative;
+      height: 100%;
+      overflow: hidden;
+    }
     img {
       width: 100%;
       // min-height: 100%;
+      @media screen and (max-width: 768px) { 
+        position: absolute; 
+        top: 0;
+        left: -50%;    
+        width: auto;
+        min-width: 100%;
+        min-height: 100%;
+        max-height: 450px;
+      }
     }
   }
 }
@@ -4972,11 +5006,16 @@ footer {
       text-align: center;
       display: flex;
       align-items: center;
-      padding-left: 30px;
-      //justify-content: center;
       align-content: center;
+      padding-left: 30px;
+      //justify-content: center;      
       position: relative;
-      border-radius: 20px 0 0 20px;      
+      border-radius: 20px 0 0 20px;
+      @media screen and (max-width: 768px) {
+        justify-content: flex-start;
+        text-align: left;
+        padding-left: 25%;
+      }      
     }
     &_text {
       width: 100%;
@@ -5023,6 +5062,9 @@ footer {
         position: absolute;
         left: 10%;
         top: 25%;
+        @media screen and (max-width: 768px) {
+          left: 0;
+        }
       }
     }
     &_price {
@@ -5031,6 +5073,9 @@ footer {
       color: black;
       margin-bottom: 30px;
       text-transform: uppercase;
+      @media screen and (max-width: 768px) {
+        font-size: 30px;
+      }
     }
     &_btn {
       display: block;
@@ -5048,10 +5093,20 @@ footer {
       -webkit-transition: all 0.6s;
       -o-transition: all 0.6s;
       transition: all 0.6s;
+      @media screen and (max-width: 768px) {
+        padding: 0 35px;
+        font-size: 18px;
+        text-transform: uppercase;
+      }
       &:hover {
         color: @blue;
         background-color: @white;
       }
+    }
+  }
+  .fix {
+    @media screen and (max-width: 768px) {
+      padding: 0;
     }
   }  
 }

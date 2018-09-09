@@ -4447,6 +4447,11 @@ footer .copy a:hover:after {
   -o-transition: all 0.6s;
   transition: all 0.6s;
 }
+@media screen and (max-width: 768px) {
+  .crossfyt_main_program_btn {
+    margin-top: 80px;
+  }
+}
 .crossfyt_main_program_btn:hover {
   background-color: inherit;
 }
@@ -4467,6 +4472,11 @@ footer .copy a:hover:after {
   -webkit-transition: all 0.6s;
   -o-transition: all 0.6s;
   transition: all 0.6s;
+}
+@media screen and (max-width: 768px) {
+  .crossfyt_main_sub_btn {
+    margin-top: 30px;
+  }
 }
 .crossfyt_main_sub_btn:hover {
   color: #547ef4;
@@ -4513,6 +4523,11 @@ footer .copy a:hover:after {
   margin-top: 100px;
   color: #ffffff;
 }
+@media screen and (max-width: 768px) {
+  .crossfyt_trainer_text_block_name {
+    font-size: 30px;
+  }
+}
 .crossfyt_trainer_text_block_text {
   font-size: 18px;
   line-height: 24px;
@@ -4520,6 +4535,11 @@ footer .copy a:hover:after {
   font-weight: 400;
   margin-top: 70px;
   color: #ffffff;
+}
+@media screen and (max-width: 768px) {
+  .crossfyt_trainer_text_block_text {
+    padding-bottom: 50px;
+  }
 }
 /* CROSSFYT_TEXT SECTION */
 .crossfyt_text {
@@ -4564,6 +4584,12 @@ footer .copy a:hover:after {
   align-items: center;
   position: relative;
 }
+@media screen and (max-width: 768px) {
+  .cross_motivation_block {
+    height: auto;
+    min-height: 20vh;
+  }
+}
 .cross_motivation_block p {
   font-family: 'ProximaNova', sans-serif;
   font-weight: 400;
@@ -4573,6 +4599,11 @@ footer .copy a:hover:after {
   display: inline-block;
   width: 75%;
   text-align: center;
+}
+@media screen and (max-width: 768px) {
+  .cross_motivation_block p {
+    padding: 10px;
+  }
 }
 .cross_motivation_block span {
   position: absolute;
@@ -4585,6 +4616,11 @@ footer .copy a:hover:after {
   top: 100%;
   left: -3%;
 }
+@media screen and (max-width: 768px) {
+  .cross_motivation_block span {
+    top: 110%;
+  }
+}
 .cross_motivation_elem:nth-child(n+2) .cross_motivation_block span {
   left: auto;
   right: -6%;
@@ -4595,8 +4631,26 @@ footer .copy a:hover:after {
 .cross_motivation_image {
   width: 100%;
 }
+@media screen and (max-width: 768px) {
+  .cross_motivation_image {
+    position: relative;
+    height: 100%;
+    overflow: hidden;
+  }
+}
 .cross_motivation_image img {
   width: 100%;
+}
+@media screen and (max-width: 768px) {
+  .cross_motivation_image img {
+    position: absolute;
+    top: 0;
+    left: -50%;
+    width: auto;
+    min-width: 100%;
+    min-height: 100%;
+    max-height: 450px;
+  }
 }
 /* CROSSFYT PRICE SECTION*/
 .crossfyt_price_name {
@@ -4634,10 +4688,17 @@ footer .copy a:hover:after {
   text-align: center;
   display: flex;
   align-items: center;
-  padding-left: 30px;
   align-content: center;
+  padding-left: 30px;
   position: relative;
   border-radius: 20px 0 0 20px;
+}
+@media screen and (max-width: 768px) {
+  .crossfyt_price_program_title {
+    justify-content: flex-start;
+    text-align: left;
+    padding-left: 25%;
+  }
 }
 .crossfyt_price_program_text {
   width: 100%;
@@ -4687,6 +4748,11 @@ footer .copy a:hover:after {
   left: 10%;
   top: 25%;
 }
+@media screen and (max-width: 768px) {
+  .crossfyt_price_program_order:before {
+    left: 0;
+  }
+}
 .crossfyt_price_program_price {
   font-family: 'ProximaNova', sans-serif;
   font-weight: 400;
@@ -4694,6 +4760,11 @@ footer .copy a:hover:after {
   color: black;
   margin-bottom: 30px;
   text-transform: uppercase;
+}
+@media screen and (max-width: 768px) {
+  .crossfyt_price_program_price {
+    font-size: 30px;
+  }
 }
 .crossfyt_price_program_btn {
   display: block;
@@ -4713,9 +4784,21 @@ footer .copy a:hover:after {
   -o-transition: all 0.6s;
   transition: all 0.6s;
 }
+@media screen and (max-width: 768px) {
+  .crossfyt_price_program_btn {
+    padding: 0 35px;
+    font-size: 18px;
+    text-transform: uppercase;
+  }
+}
 .crossfyt_price_program_btn:hover {
   color: #547ef4;
   background-color: #ffffff;
+}
+@media screen and (max-width: 768px) {
+  .crossfyt_price .fix {
+    padding: 0;
+  }
 }
 .show_on_scroll {
   opacity: 0;
