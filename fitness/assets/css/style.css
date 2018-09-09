@@ -3356,6 +3356,11 @@ footer .copy a:hover:after {
   -o-transition: all 0.6s;
   transition: all 0.6s;
 }
+@media screen and (max-width: 768px) {
+  .stretching_main_sub_btn {
+    margin-top: 30px;
+  }
+}
 .stretching_main_sub_btn:hover {
   color: #e690bc;
   background-color: #ffffff;
@@ -3400,6 +3405,13 @@ footer .copy a:hover:after {
     bottom: -35%;
   }
 }
+@media screen and (max-width: 768px) {
+  .stretching_training_first_block .stretching_training_text_image {
+    width: 205px;
+    right: -10%;
+    bottom: -55%;
+  }
+}
 .stretching_training_first_block .stretching_training_text_image img {
   width: 100%;
 }
@@ -3419,6 +3431,12 @@ footer .copy a:hover:after {
     right: -40%;
   }
 }
+@media screen and (max-width: 768px) {
+  .stretching_training_second_block .stretching_training_text_image {
+    width: 170px;
+    right: -15%;
+  }
+}
 .stretching_training_second_block .stretching_training_text_image img {
   width: 100%;
 }
@@ -3434,6 +3452,12 @@ footer .copy a:hover:after {
 @media screen and (max-width: 1024px) {
   .stretching_training_third_block .stretching_training_text_image {
     bottom: -30%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .stretching_training_third_block .stretching_training_text_image {
+    right: 0;
+    bottom: -40%;
   }
 }
 .stretching_training_third_block .stretching_training_text_image img {
@@ -3455,6 +3479,11 @@ footer .copy a:hover:after {
 @media screen and (max-width: 1024px) {
   .stretching_training_number {
     font-size: 250px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .stretching_training_number {
+    font-size: 200px;
   }
 }
 .stretching_training_text {
@@ -3499,6 +3528,11 @@ footer .copy a:hover:after {
   font-family: 'ProximaNova', sans-serif;
   font-weight: 400;
 }
+@media screen and (max-width: 768px) {
+  .stretching_program_text_block p {
+    font-size: 16px;
+  }
+}
 .stretching_program_video_block {
   margin-top: 50px;
 }
@@ -3522,6 +3556,11 @@ footer .copy a:hover:after {
   margin-top: 120px;
   padding-bottom: 80px;
 }
+@media screen and (max-width: 768px) {
+  .stretching_trainer {
+    margin-top: 50px;
+  }
+}
 .stretching_trainer_image {
   padding-top: 80px;
 }
@@ -3534,12 +3573,23 @@ footer .copy a:hover:after {
   font-family: 'ProximaNova', sans-serif;
   font-weight: 400;
 }
+@media screen and (max-width: 768px) {
+  .stretching_trainer_text_block p {
+    font-size: 16px;
+  }
+}
 .stretching_trainer_text_block_illust {
   position: absolute;
   width: 345px;
   height: 215px;
   bottom: 100px;
   right: 20%;
+}
+@media screen and (max-width: 768px) {
+  .stretching_trainer_text_block_illust {
+    width: 245px;
+    bottom: -120px;
+  }
 }
 .stretching_trainer_text_block_illust img {
   width: 100%;
@@ -3588,6 +3638,12 @@ footer .copy a:hover:after {
   align-items: center;
   align-content: center;
   position: relative;
+}
+@media screen and (max-width: 768px) {
+  .stretching_price_program_title {
+    padding-left: 0;
+    text-align: left;
+  }
 }
 .stretching_price_program_title span {
   z-index: 1;
@@ -3648,6 +3704,11 @@ footer .copy a:hover:after {
   left: 7px;
   top: 25%;
 }
+@media screen and (max-width: 768px) {
+  .stretching_price_program_order:before {
+    left: -15%;
+  }
+}
 .stretching_price_program_price {
   font-family: 'ProximaNova', sans-serif;
   font-weight: 400;
@@ -3655,6 +3716,11 @@ footer .copy a:hover:after {
   color: black;
   margin-bottom: 30px;
   text-transform: uppercase;
+}
+@media screen and (max-width: 768px) {
+  .stretching_price_program_price {
+    font-size: 30px;
+  }
 }
 .stretching_price_program_btn {
   display: block;
@@ -3674,9 +3740,21 @@ footer .copy a:hover:after {
   -o-transition: all 0.6s;
   transition: all 0.6s;
 }
+@media screen and (max-width: 768px) {
+  .stretching_price_program_btn {
+    padding: 0 35px;
+    font-size: 18px;
+    text-transform: uppercase;
+  }
+}
 .stretching_price_program_btn:hover {
   color: #e690bc;
   background-color: #ffffff;
+}
+@media screen and (max-width: 768px) {
+  .stretching_price .fix {
+    padding: 0;
+  }
 }
 /* GYM PAGE */
 .gym_main {
