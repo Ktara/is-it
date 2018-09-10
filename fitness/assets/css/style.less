@@ -46,6 +46,12 @@
   font-weight: 300;
   font-style: italic;
 }
+@font-face {
+  font-family: 'ProximaNova';
+  src: url('../fonts/ProximaNova-Semibold.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
 
 
 
@@ -75,6 +81,10 @@
   font-family: 'ProximaNova', sans-serif;
   font-weight: 300;
   font-style: italic;
+}
+.proxi-sbold {
+  font-family: 'ProximaNova', sans-serif;
+  font-weight: 500; 
 }
 
 
@@ -1873,7 +1883,10 @@ footer {
   padding-bottom: 70px;
   @media screen and (max-width: 1024px) {
     padding-bottom: 50px;
-  }  
+  }
+  @media screen and (max-width: 576px) {
+    margin-top: 80px;
+  }
   .social {
     margin-top: 50px;
     @media screen and (max-width: 576px) {
@@ -2230,6 +2243,11 @@ footer {
       padding-top: 35px;
       cursor: pointer;
       font-size: 24px;
+    }
+    @media screen and (max-width: 576px) {
+      font-size: 18px;
+      .proxi-sbold;
+      width: 85%;
     }
     &:after {
       @media screen and (max-width: 768px) {
@@ -3639,10 +3657,13 @@ footer {
   width: 100%;
   margin-top: 30px;
   padding-bottom: 65px;
+  @media screen and (max-width: 576px) {
+    padding-bottom: 0;
+  }
   &_slide_img {
     position: relative;
     img {
-      width: 100%;
+      width: 100%;      
     }
     &_sub_text {
       font-size: 24px;
@@ -3704,10 +3725,15 @@ footer {
     left: ~'calc(21% + 145px)';
     bottom: -45px;
     background-image: url("../img/icon/nextA.png");
+    z-index: 10;
     @media screen and (max-width: 768px) {
       left: ~'calc(38% + 145px)';
       bottom: auto;
       top: 63%;
+    }
+    @media screen and (max-width: 576px) {
+      top: 100vw;
+      left: ~'calc(30% + 145px)';
     }
   }
   .photo_prew_arrow {
@@ -3722,10 +3748,15 @@ footer {
     -ms-transform: rotate(180deg);
     -o-transform: rotate(180deg);
     transform: rotate(180deg);
+    z-index: 10;
     @media screen and (max-width: 768px) {
       left: 38%;
       bottom: auto;
       top: 63%;
+    }
+    @media screen and (max-width: 576px) {
+      top: 100vw;
+      left: 30%;
     }
   }
 }
@@ -3742,7 +3773,11 @@ footer {
     left: ~'calc(38% + 65px)';
     bottom: auto;
     top: 63%;
-  }  
+  }
+  @media screen and (max-width: 576px) {
+    top: 100vw;
+    left: ~'calc(30% + 65px)';
+  }
 }
 .photo_slider_wrapper .slick-dots .slick-active {
   display: inline-block;

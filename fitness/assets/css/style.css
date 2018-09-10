@@ -46,6 +46,12 @@
   font-weight: 300;
   font-style: italic;
 }
+@font-face {
+  font-family: 'ProximaNova';
+  src: url('../fonts/ProximaNova-Semibold.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
 /* Fonts files */
 .opn-reg {
   font-family: 'PT Sans', sans-serif;
@@ -71,6 +77,10 @@
   font-family: 'ProximaNova', sans-serif;
   font-weight: 300;
   font-style: italic;
+}
+.proxi-sbold {
+  font-family: 'ProximaNova', sans-serif;
+  font-weight: 500;
 }
 /* Base colors */
 /* Base setting */
@@ -1870,6 +1880,11 @@ footer {
     padding-bottom: 50px;
   }
 }
+@media screen and (max-width: 576px) {
+  footer {
+    margin-top: 80px;
+  }
+}
 footer .social {
   margin-top: 50px;
 }
@@ -2219,6 +2234,14 @@ footer .copy a:hover:after {
     padding-top: 35px;
     cursor: pointer;
     font-size: 24px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .oferta_text_title {
+    font-size: 18px;
+    font-family: 'ProximaNova', sans-serif;
+    font-weight: 500;
+    width: 85%;
   }
 }
 @media screen and (max-width: 768px) {
@@ -3631,6 +3654,11 @@ footer .copy a:hover:after {
   margin-top: 30px;
   padding-bottom: 65px;
 }
+@media screen and (max-width: 576px) {
+  .photo {
+    padding-bottom: 0;
+  }
+}
 .photo_slide_img {
   position: relative;
 }
@@ -3700,12 +3728,19 @@ footer .copy a:hover:after {
   left: calc(21% + 145px);
   bottom: -45px;
   background-image: url("../img/icon/nextA.png");
+  z-index: 10;
 }
 @media screen and (max-width: 768px) {
   .photo .photo_next_arrow {
     left: calc(38% + 145px);
     bottom: auto;
     top: 63%;
+  }
+}
+@media screen and (max-width: 576px) {
+  .photo .photo_next_arrow {
+    top: 100vw;
+    left: calc(30% + 145px);
   }
 }
 .photo .photo_prew_arrow {
@@ -3720,12 +3755,19 @@ footer .copy a:hover:after {
   -ms-transform: rotate(180deg);
   -o-transform: rotate(180deg);
   transform: rotate(180deg);
+  z-index: 10;
 }
 @media screen and (max-width: 768px) {
   .photo .photo_prew_arrow {
     left: 38%;
     bottom: auto;
     top: 63%;
+  }
+}
+@media screen and (max-width: 576px) {
+  .photo .photo_prew_arrow {
+    top: 100vw;
+    left: 30%;
   }
 }
 .photo_slider_wrapper .slick-dots li {
@@ -3743,6 +3785,12 @@ footer .copy a:hover:after {
     left: calc(38% + 65px);
     bottom: auto;
     top: 63%;
+  }
+}
+@media screen and (max-width: 576px) {
+  .photo_slider_wrapper .slick-dots {
+    top: 100vw;
+    left: calc(30% + 65px);
   }
 }
 .photo_slider_wrapper .slick-dots .slick-active {
