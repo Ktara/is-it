@@ -340,6 +340,9 @@ body {
     }
   }
   &_logo_white {
+    @media screen and (max-width: 576px) {
+      text-align: left;
+    } 
     a {      
       color: @white;
     }
@@ -3850,6 +3853,9 @@ footer {
     font-size: 60px;
     margin-top: 25vh;
     color: @white;
+    @media screen and (max-width: 576px) {
+      text-align: center;
+    }
   }
   &_sub_header {
     .opn-bold;
@@ -3857,6 +3863,12 @@ footer {
     color: @white;
     margin-top: 40px;
     line-height: 60px;
+    @media screen and (max-width: 576px) {
+      text-align: center;
+      font-size: 30px;
+      line-height: 36px;
+      margin-top: 30px;
+    }
   }
   &_program_btn {
     display: block;   
@@ -3875,6 +3887,10 @@ footer {
     -webkit-transition: all 0.6s;
     -o-transition: all 0.6s;
     transition: all 0.6s;
+    @media screen and (max-width: 576px) {
+      width: 290px;
+      margin: 50px auto 0 auto;
+    }
     &:hover {
       color: @pink;
       background-color: inherit;
@@ -3898,6 +3914,10 @@ footer {
     transition: all 0.6s;
     @media screen and (max-width: 768px) {
       margin-top: 30px;
+    }
+    @media screen and (max-width: 576px) {
+      width: 290px;
+      margin: 30px auto 0 auto;
     }
     &:hover {
       color: @pink;
@@ -3935,6 +3955,12 @@ footer {
     .proxi-bold;
     font-size: 35px;
     color: @pink;
+    @media screen and (max-width: 576px) {
+      padding-top: 50px;
+      font-size: 24px;
+      width: 70%;
+      margin-bottom: 30px;
+    }
   }
   &_first_block {
     .stretching_training_text_image {
@@ -3954,8 +3980,22 @@ footer {
         right: -10%;
         bottom: -55%;
       }
+      @media screen and (max-width: 576px) {
+        bottom: auto;
+        right: -15%;
+        top: -5%;
+      }
       img {
         width: 100%;
+      }      
+    }
+    .stretching_training_number {
+      display: none;
+      @media screen and (max-width: 576px) {
+        display: block;
+        position: absolute;
+        bottom: 12px;
+        left: -35px;
       }
     }
   }
@@ -3976,6 +4016,10 @@ footer {
       @media screen and (max-width: 768px) {
         width: 170px;
         right: -15%;
+      }
+      @media screen and (max-width: 576px) {
+        right: -25%;
+        top: -20%;
       }
       img {
         width: 100%;
@@ -3998,16 +4042,55 @@ footer {
         right: 0;
         bottom: -40%;
       }
+      @media screen and (max-width: 576px) {
+        right: -25px;
+        bottom: -30%;
+      }
       img {
         width: 100%;
       }
     }
+    .stretching_training_number {
+      display: none;
+      @media screen and (max-width: 576px) {
+        display: block;
+        position: absolute;
+        bottom: 12px;
+        left: -30px;
+      }
+    }
   }
   &_img {
+    @media screen and (max-width: 576px) {
+      position: relative;
+    }
     img {
       width: 100%;      
       margin-top: 50px;
       margin-bottom: 50px;
+      @media screen and (max-width: 576px) {
+        margin-top: 0;
+      }
+    }
+  }
+  &_img_mob {
+    display: none;
+    @media screen and (max-width: 576px) {
+      display: block;
+      position: relative;
+      img {
+        width: 100%;
+        margin-bottom: 50px;
+      }
+    }
+    .stretching_training_number { 
+      display: block;
+      position: absolute;
+      font-size: 200px;
+      bottom: 12px;
+      right: -45px;
+      color: @white;
+      text-align: center;
     }
   }
   &_number {
@@ -4028,6 +4111,11 @@ footer {
     margin-top: 115px;
     @media screen and (max-width: 1024px) {
       margin-top: 75px;
+    }
+    @media screen and (max-width: 576px) {
+      margin-top: 20px;
+      width: 80%;
+      margin-bottom: 80px;
     }
     p {
       .proxi-light;
@@ -4053,13 +4141,22 @@ footer {
 .stretching_program {
   position: relative;
   margin-top: 120px;
+  @media screen and (max-width: 576px) {
+    margin-top: 80px;
+  }
   &_header {
     font-size: 36px;
     .proxi-bold;
     color: @pink;
+    @media screen and (max-width: 576px) {
+      font-size: 24px;
+    }
   }
   &_text_block {
     margin-top: 50px;
+    @media screen and (max-width: 576px) {
+      margin-top: 30px;
+    }
     p {
       margin-bottom: 20px;
       font-size: 18px;
@@ -4104,8 +4201,15 @@ footer {
   @media screen and (max-width: 768px) {
     margin-top: 50px;
   }
+  @media screen and (max-width: 576px) {
+    margin-top: 20px;
+    padding-bottom: 35px;
+  }
   &_image {
     padding-top: 80px;
+    @media screen and (max-width: 576px) {
+      padding-top: 50px;
+    }
     img {
       width: 100%;
     }
@@ -4129,6 +4233,9 @@ footer {
         width: 245px;
         bottom: -120px;
       }
+      @media screen and (max-width: 576px) {
+       display: none;
+      }
       img {
         width: 100%;
       }
@@ -4139,6 +4246,11 @@ footer {
     .proxi-bold;
     padding-top: 200px;
     margin-bottom: 50px;
+    @media screen and (max-width: 576px) {
+      font-size: 24px;
+      padding-top: 50px;
+      margin-bottom: 30px;
+    }
   }
 }
 
@@ -4160,6 +4272,12 @@ footer {
     .proxi-bold;
     text-transform: uppercase;
     color: @pink;
+    @media screen and (max-width: 576px) { 
+      font-size: 24px;
+      padding-top: 80px;
+      text-transform: inherit;
+      margin-left: 15px;
+    }
     span {
       .proxi-reg;
       font-size: 24px;
@@ -4186,6 +4304,12 @@ footer {
       padding-left: 0;
       text-align: left;
     }
+    @media screen and (max-width: 576px) { 
+      height: 100px;
+      border-radius: 0;      
+      text-align: center;
+      justify-content: center;
+    }
     span {
       z-index: 1;
     }
@@ -4197,6 +4321,9 @@ footer {
       left: -990px;
       height: 100%;
       position: absolute;
+      @media screen and (max-width: 576px) { 
+        left: -15px;
+      }
     }
   }
   &_text {
@@ -4223,6 +4350,10 @@ footer {
       width: ~"calc(100% + 25px)";
       height: 1px;
       background-color: black;
+      @media screen and (max-width: 576px) { 
+        width: 100%;
+        left: 0;
+      }
     }
   }
   &_order {
@@ -4245,6 +4376,9 @@ footer {
       top: 25%;
       @media screen and (max-width: 768px) {
         left: -15%;
+      }
+      @media screen and (max-width: 576px) { 
+        display: none;
       }
     }
   }
@@ -4278,6 +4412,9 @@ footer {
       padding: 0 35px;
       font-size: 18px;
       text-transform: uppercase;
+    }
+    @media screen and (max-width: 576px) { 
+      margin-bottom: 30px;
     }
       &:hover {
         color: @pink;

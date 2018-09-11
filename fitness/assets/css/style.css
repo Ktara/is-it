@@ -330,6 +330,11 @@ body {
     line-height: 86px;
   }
 }
+@media screen and (max-width: 576px) {
+  .nav_header_logo_white {
+    text-align: left;
+  }
+}
 .nav_header_logo_white a {
   color: #ffffff;
 }
@@ -3864,6 +3869,11 @@ footer .copy a:hover:after {
   margin-top: 25vh;
   color: #ffffff;
 }
+@media screen and (max-width: 576px) {
+  .stretching_main_header {
+    text-align: center;
+  }
+}
 .stretching_main_sub_header {
   font-family: 'PT Sans', sans-serif;
   font-weight: 700;
@@ -3871,6 +3881,14 @@ footer .copy a:hover:after {
   color: #ffffff;
   margin-top: 40px;
   line-height: 60px;
+}
+@media screen and (max-width: 576px) {
+  .stretching_main_sub_header {
+    text-align: center;
+    font-size: 30px;
+    line-height: 36px;
+    margin-top: 30px;
+  }
 }
 .stretching_main_program_btn {
   display: block;
@@ -3890,6 +3908,12 @@ footer .copy a:hover:after {
   -webkit-transition: all 0.6s;
   -o-transition: all 0.6s;
   transition: all 0.6s;
+}
+@media screen and (max-width: 576px) {
+  .stretching_main_program_btn {
+    width: 290px;
+    margin: 50px auto 0 auto;
+  }
 }
 .stretching_main_program_btn:hover {
   color: #e690bc;
@@ -3916,6 +3940,12 @@ footer .copy a:hover:after {
 @media screen and (max-width: 768px) {
   .stretching_main_sub_btn {
     margin-top: 30px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .stretching_main_sub_btn {
+    width: 290px;
+    margin: 30px auto 0 auto;
   }
 }
 .stretching_main_sub_btn:hover {
@@ -3947,6 +3977,14 @@ footer .copy a:hover:after {
   font-size: 35px;
   color: #e690bc;
 }
+@media screen and (max-width: 576px) {
+  .stretching_training_header {
+    padding-top: 50px;
+    font-size: 24px;
+    width: 70%;
+    margin-bottom: 30px;
+  }
+}
 .stretching_training_first_block .stretching_training_text_image {
   content: '';
   display: block;
@@ -3969,8 +4007,26 @@ footer .copy a:hover:after {
     bottom: -55%;
   }
 }
+@media screen and (max-width: 576px) {
+  .stretching_training_first_block .stretching_training_text_image {
+    bottom: auto;
+    right: -15%;
+    top: -5%;
+  }
+}
 .stretching_training_first_block .stretching_training_text_image img {
   width: 100%;
+}
+.stretching_training_first_block .stretching_training_number {
+  display: none;
+}
+@media screen and (max-width: 576px) {
+  .stretching_training_first_block .stretching_training_number {
+    display: block;
+    position: absolute;
+    bottom: 12px;
+    left: -35px;
+  }
 }
 .stretching_training_second_block .stretching_training_text_image {
   content: '';
@@ -3992,6 +4048,12 @@ footer .copy a:hover:after {
   .stretching_training_second_block .stretching_training_text_image {
     width: 170px;
     right: -15%;
+  }
+}
+@media screen and (max-width: 576px) {
+  .stretching_training_second_block .stretching_training_text_image {
+    right: -25%;
+    top: -20%;
   }
 }
 .stretching_training_second_block .stretching_training_text_image img {
@@ -4017,13 +4079,62 @@ footer .copy a:hover:after {
     bottom: -40%;
   }
 }
+@media screen and (max-width: 576px) {
+  .stretching_training_third_block .stretching_training_text_image {
+    right: -25px;
+    bottom: -30%;
+  }
+}
 .stretching_training_third_block .stretching_training_text_image img {
   width: 100%;
+}
+.stretching_training_third_block .stretching_training_number {
+  display: none;
+}
+@media screen and (max-width: 576px) {
+  .stretching_training_third_block .stretching_training_number {
+    display: block;
+    position: absolute;
+    bottom: 12px;
+    left: -30px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .stretching_training_img {
+    position: relative;
+  }
 }
 .stretching_training_img img {
   width: 100%;
   margin-top: 50px;
   margin-bottom: 50px;
+}
+@media screen and (max-width: 576px) {
+  .stretching_training_img img {
+    margin-top: 0;
+  }
+}
+.stretching_training_img_mob {
+  display: none;
+}
+@media screen and (max-width: 576px) {
+  .stretching_training_img_mob {
+    display: block;
+    position: relative;
+  }
+  .stretching_training_img_mob img {
+    width: 100%;
+    margin-bottom: 50px;
+  }
+}
+.stretching_training_img_mob .stretching_training_number {
+  display: block;
+  position: absolute;
+  font-size: 200px;
+  bottom: 12px;
+  right: -45px;
+  color: #ffffff;
+  text-align: center;
 }
 .stretching_training_number {
   font-family: 'ProximaNova', sans-serif;
@@ -4052,6 +4163,13 @@ footer .copy a:hover:after {
     margin-top: 75px;
   }
 }
+@media screen and (max-width: 576px) {
+  .stretching_training_text {
+    margin-top: 20px;
+    width: 80%;
+    margin-bottom: 80px;
+  }
+}
 .stretching_training_text p {
   font-family: 'ProximaNova', sans-serif;
   font-weight: 300;
@@ -4069,14 +4187,29 @@ footer .copy a:hover:after {
   position: relative;
   margin-top: 120px;
 }
+@media screen and (max-width: 576px) {
+  .stretching_program {
+    margin-top: 80px;
+  }
+}
 .stretching_program_header {
   font-size: 36px;
   font-family: 'ProximaNova', sans-serif;
   font-weight: 700;
   color: #e690bc;
 }
+@media screen and (max-width: 576px) {
+  .stretching_program_header {
+    font-size: 24px;
+  }
+}
 .stretching_program_text_block {
   margin-top: 50px;
+}
+@media screen and (max-width: 576px) {
+  .stretching_program_text_block {
+    margin-top: 30px;
+  }
 }
 .stretching_program_text_block p {
   margin-bottom: 20px;
@@ -4118,8 +4251,19 @@ footer .copy a:hover:after {
     margin-top: 50px;
   }
 }
+@media screen and (max-width: 576px) {
+  .stretching_trainer {
+    margin-top: 20px;
+    padding-bottom: 35px;
+  }
+}
 .stretching_trainer_image {
   padding-top: 80px;
+}
+@media screen and (max-width: 576px) {
+  .stretching_trainer_image {
+    padding-top: 50px;
+  }
 }
 .stretching_trainer_image img {
   width: 100%;
@@ -4148,6 +4292,11 @@ footer .copy a:hover:after {
     bottom: -120px;
   }
 }
+@media screen and (max-width: 576px) {
+  .stretching_trainer_text_block_illust {
+    display: none;
+  }
+}
 .stretching_trainer_text_block_illust img {
   width: 100%;
 }
@@ -4157,6 +4306,13 @@ footer .copy a:hover:after {
   font-weight: 700;
   padding-top: 200px;
   margin-bottom: 50px;
+}
+@media screen and (max-width: 576px) {
+  .stretching_trainer_name {
+    font-size: 24px;
+    padding-top: 50px;
+    margin-bottom: 30px;
+  }
 }
 /* STRETCHING PRICE SECTION*/
 .stretching_price_name {
@@ -4171,6 +4327,14 @@ footer .copy a:hover:after {
   font-weight: 700;
   text-transform: uppercase;
   color: #e690bc;
+}
+@media screen and (max-width: 576px) {
+  .stretching_price_name {
+    font-size: 24px;
+    padding-top: 80px;
+    text-transform: inherit;
+    margin-left: 15px;
+  }
 }
 .stretching_price_name span {
   font-family: 'ProximaNova', sans-serif;
@@ -4202,6 +4366,14 @@ footer .copy a:hover:after {
     text-align: left;
   }
 }
+@media screen and (max-width: 576px) {
+  .stretching_price_program_title {
+    height: 100px;
+    border-radius: 0;
+    text-align: center;
+    justify-content: center;
+  }
+}
 .stretching_price_program_title span {
   z-index: 1;
 }
@@ -4213,6 +4385,11 @@ footer .copy a:hover:after {
   left: -990px;
   height: 100%;
   position: absolute;
+}
+@media screen and (max-width: 576px) {
+  .stretching_price_program_title:before {
+    left: -15px;
+  }
 }
 .stretching_price_program_text {
   width: 100%;
@@ -4241,6 +4418,12 @@ footer .copy a:hover:after {
   height: 1px;
   background-color: black;
 }
+@media screen and (max-width: 576px) {
+  .stretching_price_program_text:after {
+    width: 100%;
+    left: 0;
+  }
+}
 .stretching_price_program_order {
   display: flex;
   width: 100%;
@@ -4264,6 +4447,11 @@ footer .copy a:hover:after {
 @media screen and (max-width: 768px) {
   .stretching_price_program_order:before {
     left: -15%;
+  }
+}
+@media screen and (max-width: 576px) {
+  .stretching_price_program_order:before {
+    display: none;
   }
 }
 .stretching_price_program_price {
@@ -4302,6 +4490,11 @@ footer .copy a:hover:after {
     padding: 0 35px;
     font-size: 18px;
     text-transform: uppercase;
+  }
+}
+@media screen and (max-width: 576px) {
+  .stretching_price_program_btn {
+    margin-bottom: 30px;
   }
 }
 .stretching_price_program_btn:hover {
