@@ -68,6 +68,13 @@
     margin-top: 80px;
   }
 }
+@media screen and (max-width: 576px) {
+  .cross_about_header {
+    text-align: left;
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+}
 .cross_about_subheader {
   display: block;
   width: 30%;
@@ -82,6 +89,14 @@
   .cross_about_subheader {
     font-size: 16px;
     width: 55%;
+  }
+}
+@media screen and (max-width: 576px) {
+  .cross_about_subheader {
+    display: block;
+    text-align: left;
+    width: 90%;
+    margin: 0 15px 30px 15px;
   }
 }
 .cross_about_border {
@@ -101,6 +116,11 @@
 @media screen and (max-width: 768px) {
   .cross_about_block {
     height: 18vh;
+  }
+}
+@media screen and (max-width: 576px) {
+  .cross_about_block {
+    height: 25vh;
   }
 }
 .cross_about_text {
@@ -155,6 +175,13 @@
     left: -25%;
   }
 }
+@media screen and (max-width: 576px) {
+  .cross_steps_image img {
+    position: relative;
+    width: 100%;
+    left: 0;
+  }
+}
 .cross_steps_header {
   font-family: ProximaNova;
   font-size: 36px;
@@ -168,6 +195,20 @@
 @media screen and (max-width: 768px) {
   .cross_steps_header {
     padding-bottom: 30px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .cross_steps_header {
+    display: none;
+  }
+}
+.cross_steps_header_mob {
+  display: none;
+}
+@media screen and (max-width: 576px) {
+  .cross_steps_header_mob {
+    display: inline-block;
+    font-size: 30px;
   }
 }
 .cross_steps_wrapper {
@@ -221,6 +262,32 @@
   font-weight: 700;
   padding-bottom: 20px;
 }
+@media screen and (max-width: 576px) {
+  .cross_consist_header {
+    font-size: 30px;
+    padding-bottom: 35px;
+  }
+}
+.cross_consist_image_mob {
+  display: none;
+}
+@media screen and (max-width: 576px) {
+  .cross_consist_image_mob {
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 50vh;
+    overflow: hidden;
+  }
+  .cross_consist_image_mob img {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    min-height: 100%;
+  }
+}
 .cross_consist_subheader {
   font-family: ProximaNova;
   font-size: 18px;
@@ -228,6 +295,12 @@
   color: #fffffe;
   font-weight: 400;
   padding-bottom: 50px;
+}
+@media screen and (max-width: 576px) {
+  .cross_consist_subheader {
+    margin-top: 50px;
+    padding-bottom: 0;
+  }
 }
 .cross_consist_block {
   clear: both;
@@ -244,6 +317,12 @@
   .cross_consist_block {
     height: auto;
     min-height: 20vh;
+  }
+}
+@media screen and (max-width: 576px) {
+  .cross_consist_block {
+    min-height: 25vh;
+    margin-top: 30px;
   }
 }
 .cross_consist_block p {
@@ -283,6 +362,11 @@
 }
 .cross_consist_elem:nth-child(2) .cross_consist_block {
   margin-top: 15vh;
+}
+@media screen and (max-width: 576px) {
+  .cross_consist_elem:nth-child(2) .cross_consist_block {
+    margin-top: 30px;
+  }
 }
 .cross_consist_image {
   width: 100%;

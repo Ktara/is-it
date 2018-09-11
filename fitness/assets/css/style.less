@@ -1105,6 +1105,9 @@ body {
 /* PROGRAM */
 .main_wrapper .stretching_page_program {
   margin-top: 120px;
+   @media screen and (max-width: 576px) {
+    margin-top: 80px;
+  }
   &_header {
     font-size: 36px;
     .proxi-bold;
@@ -1158,6 +1161,9 @@ body {
 
 .main_wrapper .home_page_program {
   margin-top: 120px;
+  @media screen and (max-width: 576px) {
+    margin-top: 80px;
+  }
   &_header {
     font-size: 36px;
     .proxi-bold;
@@ -1211,6 +1217,9 @@ body {
 
 .main_wrapper .gym_page_program {
   margin-top: 120px;
+  @media screen and (max-width: 576px) {
+    margin-top: 80px;
+  }
   &_header {
     font-size: 36px;
     .proxi-bold;
@@ -1264,6 +1273,9 @@ body {
 
 .main_wrapper .cross_page_program {
   margin-top: 120px;
+  @media screen and (max-width: 576px) {
+    margin-top: 80px;
+  }
   &_header {
     font-size: 36px;
     .proxi-bold;
@@ -1941,6 +1953,9 @@ footer {
   .footer_blog {
     position: relative;
     margin-top: 50px;
+    @media screen and (max-width: 576px) {
+      display: none;
+    }
     &_header {
       font-size: 30px;
       margin-bottom: 30px;
@@ -1985,6 +2000,29 @@ footer {
       }
     }
     
+  }
+  .link_menu_other_wrapper {
+    display: none;
+    @media screen and (max-width: 576px) { 
+     display: block;
+     position: relative;
+     position: relative;      
+      .link_menu {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin-top: 30px;        
+        a {
+          text-decoration: none;
+          color: @black;
+          display: inline-block;
+          margin-right: 0;
+          padding-bottom: 20px;          
+        }
+      }
+    }
   }
   .link_menu_wrapper {
     position: relative;
@@ -5049,18 +5087,30 @@ footer {
   overflow: hidden;
   background-repeat: no-repeat;
   background-size: cover;
+  @media screen and (max-width: 576px) {
+    background-position: center;
+  }
   &_header {
     .proxi-bold;
     font-size: 120px;    
     margin-top: 30vh;
     color: @white;
-    text-indent: -5px;    
+    text-indent: -5px; 
+    @media screen and (max-width: 576px) {
+      font-size: 60px;
+      text-indent: 0;
+      text-align: center;
+    }   
   }
   &_sub_header {
     .proxi-reg;
     font-size: 24px;
     color: @white;
-    margin-top: 30px;    
+    margin-top: 30px;
+    @media screen and (max-width: 576px) {
+      font-size: 16px;
+      text-align: center;
+    }
   }
   &_program_btn {
     display: block;   
@@ -5134,7 +5184,10 @@ footer {
   position: relative;
   width: 100%;
   margin-top: 200px;
-  border-radius: 5px;  
+  border-radius: 5px;
+  @media screen and (max-width: 576px) {      
+    background-color: @black;
+  }  
   .container {
     border: 5px solid @blue;
   }
@@ -5162,6 +5215,11 @@ footer {
       @media screen and (max-width: 768px) {
         font-size: 30px;
       }
+      @media screen and (max-width: 576px) {      
+        font-size: 24px;
+        margin-top: 50px;
+        text-align: center;
+      } 
     }
     &_text {
       font-size: 18px;
@@ -5171,6 +5229,11 @@ footer {
       color: @white;
       @media screen and (max-width: 768px) {
         padding-bottom: 50px;
+      }
+      @media screen and (max-width: 576px) {      
+        font-size: 16px;
+        margin-top: 30px;
+        text-align: center;        
       }
     }
   }
@@ -5188,6 +5251,9 @@ footer {
   width: 100%;
   margin-top: 120px;
   border-radius: 5px;
+  @media screen and (max-width: 576px) {      
+    margin-top: 80px;
+  }
   .container {
     border: 5px solid @blue;
   }
@@ -5199,6 +5265,11 @@ footer {
     color: @white;
     .proxi-reg;
     text-align: center;
+    @media screen and (max-width: 576px) {      
+      font-size: 24px;  
+      line-height: 30px;
+      padding: 75px 30px 70px 30px;     
+    }
   }
 }
 
@@ -5218,6 +5289,16 @@ footer {
     line-height: 36px;
     color: @white;
     padding-bottom: 20px;
+    @media screen and (max-width: 576px) {      
+      display: none;
+    }
+  }
+  &_header_mob {
+    display: none;
+    @media screen and (max-width: 576px) {      
+      display: inline-block;
+      font-size: 30px;
+    }
   }
   &_block {
     clear: both;
@@ -5232,6 +5313,10 @@ footer {
     @media screen and (max-width: 768px) {      
       height: auto;
       min-height: 20vh;
+    }
+    @media screen and (max-width: 576px) {
+      min-height: 25vh;
+      margin-top: 30px;
     }
     p {
       .proxi-reg;
@@ -5268,6 +5353,9 @@ footer {
   }
   &_elem:nth-child(2) .cross_motivation_block {
     margin-top: 15vh;
+    @media screen and (max-width: 576px) {      
+      margin-top: 30px;
+    }
   }
   &_image {
     width: 100%;
@@ -5277,6 +5365,11 @@ footer {
       position: relative;
       height: 100%;
       overflow: hidden;
+    }
+    @media screen and (max-width: 576px) { 
+      height: 40vh;
+      max-height: 300px;
+      margin-bottom: 20px;
     }
     img {
       width: 100%;
@@ -5289,6 +5382,10 @@ footer {
         min-width: 100%;
         min-height: 100%;
         max-height: 450px;
+      }
+      @media screen and (max-width: 576px) { 
+        left: 0;
+        top: -10%;
       }
     }
   }
@@ -5311,16 +5408,51 @@ footer {
     .proxi-bold;
     text-transform: uppercase;
     color: @white;
+    @media screen and (max-width: 576px) { 
+      font-size: 24px;
+      padding-top: 150px;
+      text-transform: inherit;
+    }
     span {
       .proxi-reg;
       font-size: 24px;
       color: @white;
     }
   }
+  &_mob_btn {
+    display: none;
+    @media screen and (max-width: 576px) { 
+      display: block;
+      width: 290px;
+      height: 45px;
+      line-height: 43px;
+      text-align: center;
+      color: white;
+      border-radius: 15px;
+      border: 1px solid @blue;
+      margin: 30px auto 0 auto;
+      cursor: pointer;
+      -webkit-transition: all 0.6s;
+      -o-transition: all 0.6s;
+      transition: all 0.6s;
+      &:hover {
+        color: @blue;
+        background-color: @white;
+      }
+    }
+  } 
+  .cross_price_wrapper {
+    width: 100%;
+    height: 425px;
+    overflow: hidden;
+  }
   &_program {
     background-color: @back-white;
     border-radius: 20px;
     margin-bottom: 30px;
+    @media screen and (max-width: 576px) {       
+      border-radius: 0;
+    }
       &_title {
       width: 100%;
       height: 100%;
@@ -5341,7 +5473,14 @@ footer {
         justify-content: flex-start;
         text-align: left;
         padding-left: 25%;
-      }      
+      }
+      @media screen and (max-width: 576px) { 
+        height: 100px;
+        border-radius: 0;
+        padding-left: 0;
+        text-align: center;
+        justify-content: center;
+      }
     }
     &_text {
       width: 100%;
@@ -5368,6 +5507,10 @@ footer {
         width: ~"calc(100% + 25px)";
         height: 1px;
         background-color: @black;
+        @media screen and (max-width: 576px) { 
+          width: 90%;
+          left: 0;
+        }
       }
     }
     &_order {
@@ -5391,6 +5534,9 @@ footer {
         @media screen and (max-width: 768px) {
           left: 0;
         }
+        @media screen and (max-width: 576px) { 
+          display: none;
+        }
       }
     }
     &_price {
@@ -5412,7 +5558,7 @@ footer {
       font-size: 24px;
       color: white;
       height: 50px;
-      line-height: 50px;
+      line-height: 48px;
       vertical-align: middle;
       padding: 0 60px;
       cursor: pointer;
@@ -5424,6 +5570,9 @@ footer {
         font-size: 18px;
         text-transform: uppercase;
       }
+      @media screen and (max-width: 576px) { 
+        margin-bottom: 30px;
+      }
       &:hover {
         color: @blue;
         background-color: @white;
@@ -5434,7 +5583,7 @@ footer {
     @media screen and (max-width: 768px) {
       padding: 0;
     }
-  }  
+  }   
 }
 .show_on_scroll {
   opacity: 0;

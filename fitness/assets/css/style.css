@@ -1103,6 +1103,11 @@ body {
 .main_wrapper .stretching_page_program {
   margin-top: 120px;
 }
+@media screen and (max-width: 576px) {
+  .main_wrapper .stretching_page_program {
+    margin-top: 80px;
+  }
+}
 .main_wrapper .stretching_page_program_header {
   font-size: 36px;
   font-family: 'ProximaNova', sans-serif;
@@ -1153,6 +1158,11 @@ body {
 }
 .main_wrapper .home_page_program {
   margin-top: 120px;
+}
+@media screen and (max-width: 576px) {
+  .main_wrapper .home_page_program {
+    margin-top: 80px;
+  }
 }
 .main_wrapper .home_page_program_header {
   font-size: 36px;
@@ -1205,6 +1215,11 @@ body {
 .main_wrapper .gym_page_program {
   margin-top: 120px;
 }
+@media screen and (max-width: 576px) {
+  .main_wrapper .gym_page_program {
+    margin-top: 80px;
+  }
+}
 .main_wrapper .gym_page_program_header {
   font-size: 36px;
   font-family: 'ProximaNova', sans-serif;
@@ -1255,6 +1270,11 @@ body {
 }
 .main_wrapper .cross_page_program {
   margin-top: 120px;
+}
+@media screen and (max-width: 576px) {
+  .main_wrapper .cross_page_program {
+    margin-top: 80px;
+  }
 }
 .main_wrapper .cross_page_program_header {
   font-size: 36px;
@@ -1948,6 +1968,11 @@ footer .footer_blog {
   position: relative;
   margin-top: 50px;
 }
+@media screen and (max-width: 576px) {
+  footer .footer_blog {
+    display: none;
+  }
+}
 footer .footer_blog_header {
   font-size: 30px;
   margin-bottom: 30px;
@@ -1985,6 +2010,30 @@ footer .footer_blog_articles img {
   min-width: 100%;
   min-height: 100%;
   padding: 0 15px;
+}
+footer .link_menu_other_wrapper {
+  display: none;
+}
+@media screen and (max-width: 576px) {
+  footer .link_menu_other_wrapper {
+    display: block;
+    position: relative;
+  }
+  footer .link_menu_other_wrapper .link_menu {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 30px;
+  }
+  footer .link_menu_other_wrapper .link_menu a {
+    text-decoration: none;
+    color: #000000;
+    display: inline-block;
+    margin-right: 0;
+    padding-bottom: 20px;
+  }
 }
 footer .link_menu_wrapper {
   position: relative;
@@ -4999,6 +5048,11 @@ footer .copy a:hover:after {
   background-repeat: no-repeat;
   background-size: cover;
 }
+@media screen and (max-width: 576px) {
+  .crossfyt_main {
+    background-position: center;
+  }
+}
 .crossfyt_main_header {
   font-family: 'ProximaNova', sans-serif;
   font-weight: 700;
@@ -5007,12 +5061,25 @@ footer .copy a:hover:after {
   color: #ffffff;
   text-indent: -5px;
 }
+@media screen and (max-width: 576px) {
+  .crossfyt_main_header {
+    font-size: 60px;
+    text-indent: 0;
+    text-align: center;
+  }
+}
 .crossfyt_main_sub_header {
   font-family: 'ProximaNova', sans-serif;
   font-weight: 400;
   font-size: 24px;
   color: #ffffff;
   margin-top: 30px;
+}
+@media screen and (max-width: 576px) {
+  .crossfyt_main_sub_header {
+    font-size: 16px;
+    text-align: center;
+  }
 }
 .crossfyt_main_program_btn {
   display: block;
@@ -5086,6 +5153,11 @@ footer .copy a:hover:after {
   margin-top: 200px;
   border-radius: 5px;
 }
+@media screen and (max-width: 576px) {
+  .crossfyt_trainer {
+    background-color: #000000;
+  }
+}
 .crossfyt_trainer .container {
   border: 5px solid #547ef4;
 }
@@ -5114,6 +5186,13 @@ footer .copy a:hover:after {
     font-size: 30px;
   }
 }
+@media screen and (max-width: 576px) {
+  .crossfyt_trainer_text_block_name {
+    font-size: 24px;
+    margin-top: 50px;
+    text-align: center;
+  }
+}
 .crossfyt_trainer_text_block_text {
   font-size: 18px;
   line-height: 24px;
@@ -5127,12 +5206,24 @@ footer .copy a:hover:after {
     padding-bottom: 50px;
   }
 }
+@media screen and (max-width: 576px) {
+  .crossfyt_trainer_text_block_text {
+    font-size: 16px;
+    margin-top: 30px;
+    text-align: center;
+  }
+}
 /* CROSSFYT_TEXT SECTION */
 .crossfyt_text {
   position: relative;
   width: 100%;
   margin-top: 120px;
   border-radius: 5px;
+}
+@media screen and (max-width: 576px) {
+  .crossfyt_text {
+    margin-top: 80px;
+  }
 }
 .crossfyt_text .container {
   border: 5px solid #547ef4;
@@ -5146,6 +5237,13 @@ footer .copy a:hover:after {
   font-weight: 400;
   text-align: center;
 }
+@media screen and (max-width: 576px) {
+  .crossfyt_text_block {
+    font-size: 24px;
+    line-height: 30px;
+    padding: 75px 30px 70px 30px;
+  }
+}
 /* CROSSFYT_MOTIVATION SECTION */
 .cross_motivation {
   width: 100%;
@@ -5158,6 +5256,20 @@ footer .copy a:hover:after {
   line-height: 36px;
   color: #ffffff;
   padding-bottom: 20px;
+}
+@media screen and (max-width: 576px) {
+  .cross_motivation_header {
+    display: none;
+  }
+}
+.cross_motivation_header_mob {
+  display: none;
+}
+@media screen and (max-width: 576px) {
+  .cross_motivation_header_mob {
+    display: inline-block;
+    font-size: 30px;
+  }
 }
 .cross_motivation_block {
   clear: both;
@@ -5174,6 +5286,12 @@ footer .copy a:hover:after {
   .cross_motivation_block {
     height: auto;
     min-height: 20vh;
+  }
+}
+@media screen and (max-width: 576px) {
+  .cross_motivation_block {
+    min-height: 25vh;
+    margin-top: 30px;
   }
 }
 .cross_motivation_block p {
@@ -5214,6 +5332,11 @@ footer .copy a:hover:after {
 .cross_motivation_elem:nth-child(2) .cross_motivation_block {
   margin-top: 15vh;
 }
+@media screen and (max-width: 576px) {
+  .cross_motivation_elem:nth-child(2) .cross_motivation_block {
+    margin-top: 30px;
+  }
+}
 .cross_motivation_image {
   width: 100%;
 }
@@ -5222,6 +5345,13 @@ footer .copy a:hover:after {
     position: relative;
     height: 100%;
     overflow: hidden;
+  }
+}
+@media screen and (max-width: 576px) {
+  .cross_motivation_image {
+    height: 40vh;
+    max-height: 300px;
+    margin-bottom: 20px;
   }
 }
 .cross_motivation_image img {
@@ -5238,6 +5368,12 @@ footer .copy a:hover:after {
     max-height: 450px;
   }
 }
+@media screen and (max-width: 576px) {
+  .cross_motivation_image img {
+    left: 0;
+    top: -10%;
+  }
+}
 /* CROSSFYT PRICE SECTION*/
 .crossfyt_price_name {
   width: 100%;
@@ -5251,16 +5387,57 @@ footer .copy a:hover:after {
   text-transform: uppercase;
   color: #ffffff;
 }
+@media screen and (max-width: 576px) {
+  .crossfyt_price_name {
+    font-size: 24px;
+    padding-top: 150px;
+    text-transform: inherit;
+  }
+}
 .crossfyt_price_name span {
   font-family: 'ProximaNova', sans-serif;
   font-weight: 400;
   font-size: 24px;
   color: #ffffff;
 }
+.crossfyt_price_mob_btn {
+  display: none;
+}
+@media screen and (max-width: 576px) {
+  .crossfyt_price_mob_btn {
+    display: block;
+    width: 290px;
+    height: 45px;
+    line-height: 43px;
+    text-align: center;
+    color: white;
+    border-radius: 15px;
+    border: 1px solid #547ef4;
+    margin: 30px auto 0 auto;
+    cursor: pointer;
+    -webkit-transition: all 0.6s;
+    -o-transition: all 0.6s;
+    transition: all 0.6s;
+  }
+  .crossfyt_price_mob_btn:hover {
+    color: #547ef4;
+    background-color: #ffffff;
+  }
+}
+.crossfyt_price .cross_price_wrapper {
+  width: 100%;
+  height: 425px;
+  overflow: hidden;
+}
 .crossfyt_price_program {
   background-color: #f4f4f4;
   border-radius: 20px;
   margin-bottom: 30px;
+}
+@media screen and (max-width: 576px) {
+  .crossfyt_price_program {
+    border-radius: 0;
+  }
 }
 .crossfyt_price_program_title {
   width: 100%;
@@ -5284,6 +5461,15 @@ footer .copy a:hover:after {
     justify-content: flex-start;
     text-align: left;
     padding-left: 25%;
+  }
+}
+@media screen and (max-width: 576px) {
+  .crossfyt_price_program_title {
+    height: 100px;
+    border-radius: 0;
+    padding-left: 0;
+    text-align: center;
+    justify-content: center;
   }
 }
 .crossfyt_price_program_text {
@@ -5314,6 +5500,12 @@ footer .copy a:hover:after {
   height: 1px;
   background-color: #000000;
 }
+@media screen and (max-width: 576px) {
+  .crossfyt_price_program_text:after {
+    width: 90%;
+    left: 0;
+  }
+}
 .crossfyt_price_program_order {
   display: flex;
   width: 100%;
@@ -5339,6 +5531,11 @@ footer .copy a:hover:after {
     left: 0;
   }
 }
+@media screen and (max-width: 576px) {
+  .crossfyt_price_program_order:before {
+    display: none;
+  }
+}
 .crossfyt_price_program_price {
   font-family: 'ProximaNova', sans-serif;
   font-weight: 400;
@@ -5362,7 +5559,7 @@ footer .copy a:hover:after {
   font-size: 24px;
   color: white;
   height: 50px;
-  line-height: 50px;
+  line-height: 48px;
   vertical-align: middle;
   padding: 0 60px;
   cursor: pointer;
@@ -5375,6 +5572,11 @@ footer .copy a:hover:after {
     padding: 0 35px;
     font-size: 18px;
     text-transform: uppercase;
+  }
+}
+@media screen and (max-width: 576px) {
+  .crossfyt_price_program_btn {
+    margin-bottom: 30px;
   }
 }
 .crossfyt_price_program_btn:hover {

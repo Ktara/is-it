@@ -67,6 +67,25 @@ $(document).ready(function () {
     });
 
 
+
+    $(".crossfyt_price_mob_btn").click(function (event) {
+        
+        var newHeight = $('.cross_price_viewer').css('height');
+        $('.cross_price_wrapper').animate({
+        	height : newHeight
+        }, 1000);
+        // $('.program_btn').animate({
+        // 	opacity: 0
+        // }, 500);
+        // setTimeout(function(){
+        	$('.crossfyt_price_mob_btn').css({
+        		visibility: 'hidden'
+        	})
+        // }, 500);
+        // $('.program_main_wrapper').addClass('program_show_wrapper');
+    });
+
+
  //    $('.animate_nav_header').animate({
 	// 	top: 0
 	// }, 800);
