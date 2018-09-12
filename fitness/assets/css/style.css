@@ -4524,6 +4524,12 @@ footer .copy a:hover:after {
   margin-top: 20px;
   color: #ffffff;
 }
+@media screen and (max-width: 576px) {
+  .gym_main_header {
+    font-size: 36px;
+    line-height: 40px;
+  }
+}
 .gym_main_sub_header {
   font-family: 'ProximaNova', sans-serif;
   font-weight: 400;
@@ -4604,9 +4610,33 @@ footer .copy a:hover:after {
   width: 100%;
   background-color: #000000;
 }
+@media screen and (max-width: 576px) {
+  .gym_man_woman .gym_man {
+    position: relative;
+    width: 100%;
+  }
+}
+@media screen and (max-width: 576px) {
+  .gym_man_woman .gym_woman {
+    position: relative;
+    width: 100%;
+  }
+}
 @media screen and (max-width: 768px) {
   .gym_man_woman_text_block {
     padding-bottom: 50px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .gym_man_woman_text_block {
+    padding-bottom: 0;
+    position: absolute;
+    display: inline-block;
+    width: 100%;
+    height: auto;
+    top: 30%;
+    left: 0;
+    z-index: 10;
   }
 }
 .gym_man_woman_sub_title {
@@ -4634,6 +4664,12 @@ footer .copy a:hover:after {
   margin-top: 50px;
   margin-bottom: 45px;
 }
+@media screen and (max-width: 576px) {
+  .gym_man_woman_image img {
+    background-color: #000000;
+    opacity: 0.5;
+  }
+}
 .gym_man_woman .fix {
   padding-right: 0;
 }
@@ -4654,6 +4690,11 @@ footer .copy a:hover:after {
     padding: 80px 0;
   }
 }
+@media screen and (max-width: 576px) {
+  .gym_motivation {
+    padding: 60px 0;
+  }
+}
 .gym_motivation_text {
   font-size: 24px;
   font-family: 'ProximaNova', sans-serif;
@@ -4661,11 +4702,21 @@ footer .copy a:hover:after {
   color: #ffffff;
   text-align: center;
 }
+@media screen and (max-width: 576px) {
+  .gym_motivation_text {
+    font-size: 18px;
+  }
+}
 /* GYM_BLOCK_SECTION */
 .gym_block {
   position: relative;
   width: 100%;
   margin-top: 130px;
+}
+@media screen and (max-width: 576px) {
+  .gym_block {
+    margin-top: 80px;
+  }
 }
 .gym_block_header {
   font-size: 48px;
@@ -4678,6 +4729,12 @@ footer .copy a:hover:after {
 @media screen and (max-width: 768px) {
   .gym_block_header {
     font-size: 36px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .gym_block_header {
+    font-size: 30px;
+    margin-bottom: 30px;
   }
 }
 .gym_block p {
@@ -4695,6 +4752,11 @@ footer .copy a:hover:after {
   position: relative;
   overflow: hidden;
   border-radius: 15px;
+}
+@media screen and (max-width: 768px) {
+  .gym_block_video {
+    margin-top: 50px;
+  }
 }
 .gym_block_video img {
   width: 100%;
@@ -4730,6 +4792,11 @@ footer .copy a:hover:after {
   width: 100%;
   margin-top: 120px;
 }
+@media screen and (max-width: 576px) {
+  .gym_advantage {
+    margin-top: 80px;
+  }
+}
 .gym_advantage_header {
   font-size: 48px;
   font-family: 'ProximaNova', sans-serif;
@@ -4739,6 +4806,11 @@ footer .copy a:hover:after {
 @media screen and (max-width: 768px) {
   .gym_advantage_header {
     font-size: 36px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .gym_advantage_header {
+    font-size: 30px;
   }
 }
 .gym_advantage_image_block {
@@ -4752,6 +4824,11 @@ footer .copy a:hover:after {
 @media screen and (max-width: 768px) {
   .gym_advantage_image_block {
     height: 40vh;
+  }
+}
+@media screen and (max-width: 768px) {
+  .gym_advantage_image_block {
+    height: 100%;
   }
 }
 .gym_advantage_image_block img {
@@ -4914,6 +4991,11 @@ footer .copy a:hover:after {
   width: 100%;
   margin-top: 120px;
 }
+@media screen and (max-width: 576px) {
+  .gym_trainer {
+    margin-top: 80px;
+  }
+}
 .gym_trainer_image {
   position: relative;
   width: 100%;
@@ -4940,9 +5022,19 @@ footer .copy a:hover:after {
     position: absolute;
   }
 }
+@media screen and (max-width: 576px) {
+  .gym_trainer_image img {
+    left: 0;
+  }
+}
 .gym_trainer_text_block {
   position: relative;
   padding-right: 40px;
+}
+@media screen and (max-width: 576px) {
+  .gym_trainer_text_block {
+    padding-right: 0;
+  }
 }
 .gym_trainer_text_block:before {
   content: '';
@@ -4955,6 +5047,11 @@ footer .copy a:hover:after {
   color: #7cd368;
   border: 2px solid #7cd368;
 }
+@media screen and (max-width: 576px) {
+  .gym_trainer_text_block:before {
+    width: 100%;
+  }
+}
 .gym_trainer .name {
   font-size: 48px;
   font-family: 'ProximaNova', sans-serif;
@@ -4962,6 +5059,12 @@ footer .copy a:hover:after {
   margin-top: 85px;
   margin-bottom: 25px;
   text-align: center;
+}
+@media screen and (max-width: 576px) {
+  .gym_trainer .name {
+    margin-top: 30px;
+    font-size: 36px;
+  }
 }
 .gym_trainer_sub_title {
   font-size: 18px;
@@ -4995,11 +5098,21 @@ footer .copy a:hover:after {
     font-size: 16px;
   }
 }
+@media screen and (max-width: 768px) {
+  .gym_trainer_text {
+    padding: 0 15px;
+  }
+}
 /* GYM OTHER SECTION */
 .gym_other {
   position: relative;
   width: 100%;
   margin-top: 170px;
+}
+@media screen and (max-width: 576px) {
+  .gym_other {
+    margin-top: 130px;
+  }
 }
 .gym_other_image {
   position: relative;
@@ -5012,6 +5125,11 @@ footer .copy a:hover:after {
 @media screen and (max-width: 768px) {
   .gym_other_image {
     height: 30vh;
+  }
+}
+@media screen and (max-width: 576px) {
+  .gym_other_image {
+    min-height: 250px;
   }
 }
 .gym_other_image:after {
@@ -5027,6 +5145,11 @@ footer .copy a:hover:after {
 }
 .gym_other_image img {
   width: 100%;
+}
+@media screen and (max-width: 576px) {
+  .gym_other_image img {
+    min-height: 100%;
+  }
 }
 .gym_other_image_text_block {
   position: absolute;
@@ -5046,8 +5169,18 @@ footer .copy a:hover:after {
   color: #ffffff;
   margin-top: 60px;
 }
+@media screen and (max-width: 576px) {
+  .gym_other_image_text_block_header {
+    font-size: 18px;
+  }
+}
 .gym_other_image_text_block_header span {
   font-size: 60px;
+}
+@media screen and (max-width: 576px) {
+  .gym_other_image_text_block_header span {
+    font-size: 36px;
+  }
 }
 .gym_other_image_text_block_btn {
   display: block;
@@ -5072,17 +5205,32 @@ footer .copy a:hover:after {
   padding: 30px;
   border: 2px solid #7cd368;
 }
+@media screen and (max-width: 576px) {
+  .gym_other_text_viewer {
+    margin-top: 80px;
+  }
+}
 .gym_other_text_viewer_sub_header {
   font-size: 24px;
   font-family: 'ProximaNova', sans-serif;
   font-weight: 400;
   margin-bottom: 20px;
 }
+@media screen and (max-width: 576px) {
+  .gym_other_text_viewer_sub_header {
+    font-size: 20px;
+  }
+}
 .gym_other_text_viewer p {
   font-size: 18px;
   line-height: 24px;
   font-family: 'ProximaNova', sans-serif;
   font-weight: 400;
+}
+@media screen and (max-width: 576px) {
+  .gym_other_text_viewer p {
+    font-size: 16px;
+  }
 }
 /* GYM PRICE SECTION*/
 .gym_price_name {
@@ -5097,6 +5245,14 @@ footer .copy a:hover:after {
   font-weight: 700;
   text-transform: uppercase;
   color: #7cd368;
+}
+@media screen and (max-width: 576px) {
+  .gym_price_name {
+    font-size: 24px;
+    padding-top: 80px;
+    text-transform: inherit;
+    margin-left: 15px;
+  }
 }
 .gym_price_name span {
   font-family: 'ProximaNova', sans-serif;
@@ -5131,6 +5287,14 @@ footer .copy a:hover:after {
     padding-left: 0;
   }
 }
+@media screen and (max-width: 576px) {
+  .gym_price_program_title {
+    height: 100px;
+    border-radius: 0;
+    text-align: center;
+    justify-content: center;
+  }
+}
 .gym_price_program_text {
   width: 100%;
   height: 45px;
@@ -5159,6 +5323,12 @@ footer .copy a:hover:after {
   height: 1px;
   background-color: #7cd368;
 }
+@media screen and (max-width: 576px) {
+  .gym_price_program_text:after {
+    width: 100%;
+    left: -15px;
+  }
+}
 .gym_price_program_order {
   display: flex;
   width: 100%;
@@ -5182,6 +5352,11 @@ footer .copy a:hover:after {
 @media screen and (max-width: 768px) {
   .gym_price_program_order:before {
     left: 0;
+  }
+}
+@media screen and (max-width: 576px) {
+  .gym_price_program_order:before {
+    display: none;
   }
 }
 .gym_price_program_price {
@@ -5220,6 +5395,11 @@ footer .copy a:hover:after {
     padding: 0 35px;
     font-size: 18px;
     text-transform: uppercase;
+  }
+}
+@media screen and (max-width: 576px) {
+  .gym_price_program_btn {
+    margin-bottom: 30px;
   }
 }
 .gym_price_program_btn:hover {

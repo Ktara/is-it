@@ -4460,6 +4460,10 @@ footer {
     line-height: 88px;
     margin-top: 20px;
     color: @white;
+    @media screen and (max-width: 576px) {
+      font-size: 36px;
+      line-height: 40px;
+    }
   }
   &_sub_header {
     .proxi-reg;
@@ -4544,9 +4548,31 @@ footer {
   position: relative;
   width: 100%;
   background-color: @black; 
+  .gym_man {
+    @media screen and (max-width: 576px) {
+      position: relative;
+      width: 100%;
+    }
+  }
+  .gym_woman {
+    @media screen and (max-width: 576px) {
+      position: relative;
+      width: 100%;
+    }
+  }
   &_text_block {
     @media screen and (max-width: 768px) {
       padding-bottom: 50px;
+    }
+    @media screen and (max-width: 576px) {
+      padding-bottom: 0;
+      position: absolute;
+      display: inline-block;
+      width: 100%;
+      height: auto;
+      top: 30%;
+      left: 0;
+      z-index: 10;
     }
   } 
   &_sub_title {
@@ -4566,11 +4592,15 @@ footer {
     text-align: center;
     color: @white;
   }
-  &_image {
+  &_image {    
     img {
       width: 100%;
       margin-top: 50px;
       margin-bottom: 45px;
+      @media screen and (max-width: 576px) {
+        background-color: @black;
+        opacity: 0.5;
+      }
     }
   }
   .fix {
@@ -4599,11 +4629,17 @@ footer {
   @media screen and (max-width: 768px) {
     padding: 80px 0;
   }
+  @media screen and (max-width: 576px) {
+    padding: 60px 0;
+  }
   &_text {
     font-size: 24px;
     .proxi-reg;
     color: @white;
     text-align: center;
+    @media screen and (max-width: 576px) {
+      font-size: 18px;
+    }
   }
 }
 
@@ -4618,6 +4654,9 @@ footer {
   position: relative;
   width: 100%;
   margin-top: 130px;
+  @media screen and (max-width: 576px) {
+    margin-top: 80px;
+  }
   &_header {
     font-size: 48px;
     .proxi-bold;
@@ -4626,6 +4665,10 @@ footer {
     margin-bottom: 50px;
     @media screen and (max-width: 768px) {
       font-size: 36px;
+    }
+    @media screen and (max-width: 576px) {
+      font-size: 30px;
+      margin-bottom: 30px;
     }
   }
   p {
@@ -4640,6 +4683,9 @@ footer {
     position: relative;
     overflow: hidden;
     border-radius: 15px;
+     @media screen and (max-width: 768px) {
+      margin-top: 50px;
+    }
     img {
       width: 100%;
     }
@@ -4682,12 +4728,18 @@ footer {
   position: relative;
   width: 100%;
   margin-top: 120px;
+  @media screen and (max-width: 576px) {
+    margin-top: 80px;
+  }
   &_header {
     font-size: 48px;
     .proxi-bold;
     color: @green;
     @media screen and (max-width: 768px) {
       font-size: 36px;
+    }
+    @media screen and (max-width: 576px) {
+      font-size: 30px;
     }
   }
   &_image_block {
@@ -4699,6 +4751,9 @@ footer {
     border-radius: 15px;
     @media screen and (max-width: 768px) {
       height: 40vh;
+    }
+    @media screen and (max-width: 768px) {
+      height: 100%;
     }
     img {
       width: 100%;
@@ -4893,6 +4948,9 @@ footer {
   position: relative;
   width: 100%;
   margin-top: 120px;
+  @media screen and (max-width: 576px) {
+    margin-top: 80px;
+  }
   &_image {
     position: relative;
     width: 100%;
@@ -4913,11 +4971,17 @@ footer {
         left: -60%;
         position: absolute
       }
+      @media screen and (max-width: 576px) {
+        left: 0;
+      }
     }
   }
   &_text_block {
     position: relative;
     padding-right: 40px;
+    @media screen and (max-width: 576px) {
+      padding-right: 0;
+    }
     &:before {
       content: '';
       position: absolute;
@@ -4929,6 +4993,9 @@ footer {
       bottom: -50px;      
       color: @green;
       border: 2px solid @green;
+      @media screen and (max-width: 576px) {
+        width: 100%;
+      }
     }
   }
   .name {
@@ -4936,7 +5003,11 @@ footer {
     .proxi-reg;
     margin-top: 85px;
     margin-bottom: 25px;
-    text-align: center;    
+    text-align: center;
+    @media screen and (max-width: 576px) {
+      margin-top: 30px;
+      font-size: 36px;
+    }
   }
   &_sub_title {
     font-size: 18px;
@@ -4962,6 +5033,9 @@ footer {
     @media screen and (max-width: 768px) {
       font-size: 16px;
     }
+    @media screen and (max-width: 768px) {
+      padding: 0 15px;
+    }
   }
 }
 
@@ -4975,7 +5049,10 @@ footer {
 .gym_other {
   position: relative;
   width: 100%;
-  margin-top: 170px;   
+  margin-top: 170px; 
+  @media screen and (max-width: 576px) {
+    margin-top: 130px;     
+  }  
   &_image {
     position: relative;
     width: 100%;
@@ -4985,6 +5062,9 @@ footer {
     border-radius: 20px;
     @media screen and (max-width: 768px) {
       height: 30vh;      
+    }
+    @media screen and (max-width: 576px) {
+      min-height: 250px;    
     }
     &:after {
       content: '';
@@ -4999,6 +5079,9 @@ footer {
     }   
     img {
       width: 100%;
+      @media screen and (max-width: 576px) {
+        min-height: 100%;     
+      }
     }
     &_text_block {
       position: absolute;
@@ -5015,8 +5098,14 @@ footer {
         text-transform: uppercase;
         color: @white;
         margin-top: 60px;
+        @media screen and (max-width: 576px) {
+          font-size: 18px;  
+        }
         span {
           font-size: 60px;
+          @media screen and (max-width: 576px) {
+            font-size: 36px;  
+          }
         }
       }
       &_btn {
@@ -5042,16 +5131,25 @@ footer {
     position: relative;
     margin: 155px 0 35px 0;
     padding: 30px;
-    border: 2px solid @green;    
+    border: 2px solid @green;
+    @media screen and (max-width: 576px) {
+      margin-top: 80px;
+    }    
     &_sub_header {
       font-size: 24px;
       .proxi-reg;
       margin-bottom: 20px;
+      @media screen and (max-width: 576px) {
+        font-size: 20px;
+      }
     }
     p {
       font-size: 18px;
       line-height: 24px;
       .proxi-reg;
+      @media screen and (max-width: 576px) {
+        font-size: 16px;
+      }
     }
   }
 }
@@ -5076,6 +5174,12 @@ footer {
     .proxi-bold;
     text-transform: uppercase;
     color: @green;
+    @media screen and (max-width: 576px) { 
+      font-size: 24px;
+      padding-top: 80px;
+      text-transform: inherit;
+      margin-left: 15px;
+    }
     span {
       .proxi-reg;
       font-size: 24px;
@@ -5104,7 +5208,13 @@ footer {
       border-radius: 20px 0 0 20px;
       @media screen and (max-width: 768px) {
         padding-left: 0;
-      }      
+      }  
+      @media screen and (max-width: 576px) { 
+        height: 100px;
+        border-radius: 0;      
+        text-align: center;
+        justify-content: center;
+      }    
     }
     &_text {
       width: 100%;
@@ -5131,6 +5241,10 @@ footer {
         width: ~"calc(100% + 25px)";
         height: 1px;
         background-color: @green;
+        @media screen and (max-width: 576px) { 
+          width: 100%;
+          left: -15px;
+        }
       }
     }
     &_order {
@@ -5153,6 +5267,9 @@ footer {
         top: 25%;
         @media screen and (max-width: 768px) {
           left: 0;
+        }
+        @media screen and (max-width: 576px) { 
+          display: none;
         }
       }
     }
@@ -5186,6 +5303,9 @@ footer {
         padding: 0 35px;
         font-size: 18px;
         text-transform: uppercase;
+      }
+      @media screen and (max-width: 576px) { 
+        margin-bottom: 30px;
       }
       &:hover {
         color: @green;
