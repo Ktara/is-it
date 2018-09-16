@@ -304,7 +304,7 @@
 }
 .cross_consist_block {
   clear: both;
-  height: 26vh;
+  height: 23vh;
   border-radius: 5px;
   border: 5px solid rgba(84, 126, 244, 0.5);
   display: flex;
@@ -312,6 +312,7 @@
   align-content: center;
   align-items: center;
   position: relative;
+  margin-top: 30px;
 }
 @media screen and (max-width: 768px) {
   .cross_consist_block {
@@ -359,9 +360,6 @@
 .cross_consist_elem:nth-child(n+2) .cross_consist_block span {
   left: auto;
   right: -6%;
-}
-.cross_consist_elem:nth-child(2) .cross_consist_block {
-  margin-top: 15vh;
 }
 @media screen and (max-width: 576px) {
   .cross_consist_elem:nth-child(2) .cross_consist_block {

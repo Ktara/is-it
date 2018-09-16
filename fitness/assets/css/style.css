@@ -2939,6 +2939,39 @@ footer .copy a:hover:after {
   left: calc(50% - 31px);
   cursor: pointer;
 }
+.article_advice_popup_video {
+  position: fixed;
+  display: block;
+  width: 100%;
+  height: 0;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  overflow: hidden;
+  opacity: 0;
+}
+.article_advice_popup_video_active {
+  height: 100vh;
+}
+.article_advice_popup_video:before {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(45, 57, 71, 0.75);
+}
+.article_advice_popup_video_wrapper {
+  position: relative;
+  width: 90%;
+  margin-left: 5%;
+  height: 70vh;
+  margin-top: 15vh;
+  overflow: hidden;
+  z-index: 1;
+}
 .article_comment {
   position: relative;
   width: 100%;
@@ -4323,11 +4356,14 @@ footer .copy a:hover:after {
 .stretching_training_first_block .stretching_training_text_image img {
   width: 100%;
 }
-.stretching_training_first_block .stretching_training_number {
+.stretching_training_first_block .stretching_training_img img {
+  width: 100%;
+}
+.stretching_training_first_block .stretching_training_img_number {
   display: none;
 }
 @media screen and (max-width: 576px) {
-  .stretching_training_first_block .stretching_training_number {
+  .stretching_training_first_block .stretching_training_img_number {
     display: block;
     position: absolute;
     bottom: 12px;
@@ -4394,15 +4430,18 @@ footer .copy a:hover:after {
 .stretching_training_third_block .stretching_training_text_image img {
   width: 100%;
 }
-.stretching_training_third_block .stretching_training_number {
+.stretching_training_third_block .stretching_training_img img {
+  width: 100%;
+}
+.stretching_training_third_block .stretching_training_img_number {
   display: none;
 }
 @media screen and (max-width: 576px) {
-  .stretching_training_third_block .stretching_training_number {
+  .stretching_training_third_block .stretching_training_img_number {
     display: block;
     position: absolute;
     bottom: 12px;
-    left: -30px;
+    left: -35px;
   }
 }
 @media screen and (max-width: 576px) {
@@ -4433,7 +4472,7 @@ footer .copy a:hover:after {
     margin-bottom: 50px;
   }
 }
-.stretching_training_img_mob .stretching_training_number {
+.stretching_training_img_mob .stretching_training_img_number {
   display: block;
   position: absolute;
   font-size: 200px;
@@ -4543,6 +4582,39 @@ footer .copy a:hover:after {
   top: calc(50% - 31px);
   left: calc(50% - 31px);
   cursor: pointer;
+}
+.stretching_program_popup_video {
+  position: fixed;
+  display: block;
+  width: 100%;
+  height: 0;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  overflow: hidden;
+  opacity: 0;
+}
+.stretching_program_popup_video_active {
+  height: 100vh;
+}
+.stretching_program_popup_video:before {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(45, 57, 71, 0.75);
+}
+.stretching_program_popup_video_wrapper {
+  position: relative;
+  width: 90%;
+  margin-left: 5%;
+  height: 70vh;
+  margin-top: 15vh;
+  overflow: hidden;
+  z-index: 1;
 }
 /* STRETCHING_TRAINER SECTION */
 .stretching_trainer {
@@ -5075,6 +5147,39 @@ footer .copy a:hover:after {
   top: calc(50% - 31px);
   left: calc(50% - 31px);
   cursor: pointer;
+}
+.gym_block_popup_video {
+  position: fixed;
+  display: block;
+  width: 100%;
+  height: 0;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  overflow: hidden;
+  opacity: 0;
+}
+.gym_block_popup_video_active {
+  height: 100vh;
+}
+.gym_block_popup_video:before {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(45, 57, 71, 0.75);
+}
+.gym_block_popup_video_wrapper {
+  position: relative;
+  width: 90%;
+  margin-left: 5%;
+  height: 70vh;
+  margin-top: 15vh;
+  overflow: hidden;
+  z-index: 1;
 }
 @keyframes add_width {
   0% {
@@ -5859,6 +5964,7 @@ footer .copy a:hover:after {
   text-transform: uppercase;
   margin-top: 100px;
   color: #ffffff;
+  position: relative;
 }
 @media screen and (max-width: 768px) {
   .crossfyt_trainer_text_block_name {
@@ -5869,7 +5975,92 @@ footer .copy a:hover:after {
   .crossfyt_trainer_text_block_name {
     font-size: 24px;
     margin-top: 50px;
-    text-align: center;
+  }
+}
+.crossfyt_trainer_text_block_name .crossfyt_trainer_line:nth-child(1) {
+  position: absolute;
+  display: block;
+  content: '';
+  width: 31%;
+  height: 2px;
+  bottom: -10px;
+  left: 3px;
+  background-color: #547ef4;
+  color: #547ef4;
+}
+@media screen and (max-width: 768px) {
+  .crossfyt_trainer_text_block_name .crossfyt_trainer_line:nth-child(1) {
+    width: 49%;
+  }
+}
+@media screen and (max-width: 576px) {
+  .crossfyt_trainer_text_block_name .crossfyt_trainer_line:nth-child(1) {
+    left: 0;
+  }
+}
+.crossfyt_trainer_text_block_name .crossfyt_trainer_line:nth-child(2) {
+  position: absolute;
+  display: block;
+  content: '';
+  width: 9%;
+  height: 2px;
+  bottom: -10px;
+  left: calc(31% + 18px);
+  background-color: #547ef4;
+  color: #547ef4;
+}
+@media screen and (max-width: 768px) {
+  .crossfyt_trainer_text_block_name .crossfyt_trainer_line:nth-child(2) {
+    width: 16%;
+    left: calc(49% + 18px);
+  }
+}
+@media screen and (max-width: 576px) {
+  .crossfyt_trainer_text_block_name .crossfyt_trainer_line:nth-child(2) {
+    left: calc(49% + 15px);
+  }
+}
+.crossfyt_trainer_text_block_name .crossfyt_trainer_line:nth-child(3) {
+  position: absolute;
+  display: block;
+  content: '';
+  width: 3%;
+  height: 2px;
+  bottom: -10px;
+  left: calc(40% + 33px);
+  background-color: #547ef4;
+  color: #547ef4;
+}
+@media screen and (max-width: 768px) {
+  .crossfyt_trainer_text_block_name .crossfyt_trainer_line:nth-child(3) {
+    width: 5%;
+    left: calc(65% + 33px);
+  }
+}
+@media screen and (max-width: 576px) {
+  .crossfyt_trainer_text_block_name .crossfyt_trainer_line:nth-child(3) {
+    left: calc(65% + 30px);
+  }
+}
+.crossfyt_trainer_text_block_name .crossfyt_trainer_line:nth-child(4) {
+  position: absolute;
+  display: block;
+  content: '';
+  width: 2px;
+  height: 2px;
+  bottom: -10px;
+  left: calc(43% + 48px);
+  background-color: #547ef4;
+  color: #547ef4;
+}
+@media screen and (max-width: 768px) {
+  .crossfyt_trainer_text_block_name .crossfyt_trainer_line:nth-child(4) {
+    left: calc(70% + 48px);
+  }
+}
+@media screen and (max-width: 576px) {
+  .crossfyt_trainer_text_block_name .crossfyt_trainer_line:nth-child(4) {
+    left: calc(70% + 45px);
   }
 }
 .crossfyt_trainer_text_block_text {
@@ -5891,6 +6082,39 @@ footer .copy a:hover:after {
     margin-top: 30px;
     text-align: center;
   }
+}
+.crossfyt_trainer_popup_video {
+  position: fixed;
+  display: block;
+  width: 100%;
+  height: 0;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  overflow: hidden;
+  opacity: 0;
+}
+.crossfyt_trainer_popup_video_active {
+  height: 100vh;
+}
+.crossfyt_trainer_popup_video:before {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(45, 57, 71, 0.75);
+}
+.crossfyt_trainer_popup_video_wrapper {
+  position: relative;
+  width: 90%;
+  margin-left: 5%;
+  height: 70vh;
+  margin-top: 15vh;
+  overflow: hidden;
+  z-index: 1;
 }
 /* CROSSFYT_TEXT SECTION */
 .crossfyt_text {
@@ -5960,6 +6184,7 @@ footer .copy a:hover:after {
   align-content: center;
   align-items: center;
   position: relative;
+  margin-top: 30px;
 }
 @media screen and (max-width: 768px) {
   .cross_motivation_block {
@@ -6007,14 +6232,6 @@ footer .copy a:hover:after {
 .cross_motivation_elem:nth-child(n+2) .cross_motivation_block span {
   left: auto;
   right: -6%;
-}
-.cross_motivation_elem:nth-child(2) .cross_motivation_block {
-  margin-top: 15vh;
-}
-@media screen and (max-width: 576px) {
-  .cross_motivation_elem:nth-child(2) .cross_motivation_block {
-    margin-top: 30px;
-  }
 }
 .cross_motivation_image {
   width: 100%;

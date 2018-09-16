@@ -263,6 +263,111 @@ $('.popup_sign_in_mob').click(function(event){
 
 
 
+$('.play_block').click(function(){
+	$('.crossfyt_trainer_popup_video').addClass('crossfyt_trainer_popup_video_active').velocity({
+		opacity: 1
+	}, 600);
+});
+
+$('.crossfyt_trainer_popup_video').click(function(event){	
+	if(event.target === this){		
+		$(this).velocity({
+			opacity: 0
+		}, 600);
+		setTimeout(function(){
+			$('.crossfyt_trainer_popup_video').removeClass('crossfyt_trainer_popup_video_active');
+		}, 600);
+	};
+});
+
+
+
+
+$('.play_block').click(function(){
+	$('.article_advice_popup_video').addClass('article_advice_popup_video_active').velocity({
+		opacity: 1
+	}, 600);
+});
+
+$('.article_advice_popup_video').click(function(event){	
+	if(event.target === this){		
+		$(this).velocity({
+			opacity: 0
+		}, 600);
+		setTimeout(function(){
+			$('.article_advice_popup_video').removeClass('article_advice_popup_video_active');
+		}, 600);
+	};
+});
+
+
+
+
+
+$('.play_block').click(function(){
+	$('.gym_block_popup_video').addClass('gym_block_popup_video_active').velocity({
+		opacity: 1
+	}, 600);
+});
+
+$('.gym_block_popup_video').click(function(event){	
+	if(event.target === this){		
+		$(this).velocity({
+			opacity: 0
+		}, 600);
+		setTimeout(function(){
+			$('.gym_block_popup_video').removeClass('gym_block_popup_video_active');
+		}, 600);
+	};
+});
+
+
+
+
+$('.play_block').click(function(){
+	$('.home_video_popup_video').addClass('home_video_popup_video_active').velocity({
+		opacity: 1
+	}, 600);
+});
+
+$('.home_video_popup_video').click(function(event){	
+	if(event.target === this){		
+		$(this).velocity({
+			opacity: 0
+		}, 600);
+		setTimeout(function(){
+			$('.home_video_popup_video').removeClass('home_video_popup_video_active');
+		}, 600);
+	};
+});
+
+
+
+
+
+$('.play_block').click(function(){
+	$('.stretching_program_popup_video').addClass('stretching_program_popup_video_active').velocity({
+		opacity: 1
+	}, 600);
+});
+
+$('.stretching_program_popup_video').click(function(event){	
+	if(event.target === this){		
+		$(this).velocity({
+			opacity: 0
+		}, 600);
+		setTimeout(function(){
+			$('.stretching_program_popup_video').removeClass('stretching_program_popup_video_active');
+		}, 600);
+	};
+});
+
+
+
+
+
+
+
 var target = $('.oferta_list');
 if(target[0] != undefined){
 
