@@ -224,6 +224,45 @@ $('.popup_sign_in').click(function(event){
 	};
 });
 
+
+
+
+$('.logout_img_block').click(function(){
+	$('.popup_sign_in_mob').addClass('popup_sign_in_mob_active').velocity({
+		opacity: 1
+	}, 600);
+	$('.popup_header_first').addClass('popup_header_active');
+	$('.popup_sign_in_mob_second').fadeOut(400);
+	$('.popup_sign_in_mob_first').fadeIn(400);
+	$('.popup_header_second').click(function(){
+		$('.popup_sign_in_mob_second').fadeIn(400);
+		$('.popup_sign_in_mob_first').fadeOut(400);
+		$('.popup_header_first').removeClass('popup_header_active');
+		$('.popup_header_second').addClass('popup_header_active');
+	});
+	$('.popup_header_first').click(function(){
+		$('.popup_sign_in_mob_second').fadeOut(400);
+		$('.popup_sign_in_mob_first').fadeIn(400);
+		$('.popup_header_first').addClass('popup_header_active');
+		$('.popup_header_second').removeClass('popup_header_active');
+	});	
+	
+});
+
+$('.popup_sign_in_mob').click(function(event){	
+	if(event.target === this){		
+		$(this).velocity({
+			opacity: 0
+		}, 600);
+		setTimeout(function(){
+			$('.popup_sign_in_mob').removeClass('popup_sign_in_mob_active');
+		}, 600);
+	};
+});
+
+
+
+
 var target = $('.oferta_list');
 if(target[0] != undefined){
 
