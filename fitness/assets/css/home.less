@@ -90,7 +90,9 @@
     @media screen and (max-width: 576px) {
       font-size: 36px;
       line-height: 36px;
-      height: 36px;      
+      height: 36px;
+      margin-left: 15px;
+      width: 100%;
     }
     &:after {
       content: '';
@@ -156,7 +158,7 @@
     -webkit-transition: all 0.6s;
     -o-transition: all 0.6s;
     transition: all 0.6s;
-    @media screen and (max-width: 576px) {
+    @media screen and (max-width: 768px) {
       display: block;
       padding: 0;
       width: 290px;
@@ -172,7 +174,7 @@
       -webkit-transition: all 0.6s;
       -o-transition: all 0.6s;
       transition: all 0.6s;
-      @media screen and (max-width: 576px) {
+      @media screen and (max-width: 768px) {
         margin-right: auto;
       }
       &:hover {
@@ -215,17 +217,36 @@
 .home_info {
   display: block;
   width: 100%;
-  height: auto;
+  height: auto;  
   @media screen and (max-width: 576px) {
     margin-top: 50px;
+  }
+  &:nth-child(2) .home_info_text {
+    @media screen and (max-width: 768px) {
+      width: 43vw;
+      margin-left: 45px;
+      margin-right: 0;
+    }
+    @media screen and (max-width: 576px) {
+      width: 100%;
+      margin-left: 15px;
+    }
   }
   &_image {
     width: 100%;
     height: 100%;
     overflow: hidden;
+    @media screen and (max-width: 576px) {
+      height: 250px;
+    }
     img {
       min-width: 100%;
       min-height: 100%;
+      @media screen and (max-width: 576px) {
+        min-width: auto;
+        min-height: auto;
+        width: 100%;
+      }
     }
   }
   &_content {
@@ -244,6 +265,9 @@
       right: 28px;
       background-color: @home_color;
       top: 60px;
+      @media screen and (max-width: 768px) {
+        height: ~"calc(100% - 85px)";
+      }
       @media screen and (max-width: 576px) {
         width: 75%;
         height: 1px;
@@ -259,6 +283,9 @@
       right: 28px;
       background-color: @home_color;
       bottom: 40px;
+      @media screen and (max-width: 768px) {
+        bottom: 25px;
+      }
       @media screen and (max-width: 576px) {
         width: 75%;
         right: 15px;
@@ -272,6 +299,11 @@
     line-height: 24px;
     width: 33vw;
     position: relative;
+    @media screen and (max-width: 768px) {
+      width: 45vw;
+      margin-right: 15px;
+      margin-top: 70px;
+    }
     @media screen and (max-width: 576px) {
       width: 100%;
       margin: 90px 15px 0 15px;
@@ -279,7 +311,7 @@
     h5 {
       font-size: 24px;
       margin-bottom: 50px;
-      @media screen and (max-width: 576px) {
+      @media screen and (max-width: 768px) {
         margin-bottom: 30px;
       }
     }
@@ -290,6 +322,7 @@
       }
     }
   }
+  
   &_ask {
     position: absolute;
     text-transform: uppercase;
@@ -317,6 +350,9 @@
       text-orientation: inherit;
       padding-right: 30px;
       padding-bottom: 0;
+      @media screen and (max-width: 768px) {
+        bottom: 17px;
+      }
       @media screen and (max-width: 576px) {
         bottom: -23px;
         right: auto;
@@ -434,7 +470,7 @@
   height: 90vh;
   margin-top: 120px;
   overflow: hidden;
-  @media screen and (max-width: 576px) { 
+  @media screen and (max-width: 768px) { 
     height: auto;
   }
   &_image {
@@ -460,8 +496,41 @@
     //align-content: center;
     align-items: center;
     //justify-content: center;
+    position: relative;
     @media screen and (max-width: 576px) {
       display: block;
+    }
+    &:after {
+      width: 1px;
+      height: 50%;
+      content: '';
+      position: absolute;
+      right: -40px;
+      background-color: @home_color;
+      bottom: 40px;
+      @media screen and (max-width: 768px) {
+        right: 40px;
+        bottom: 5px;
+      }
+      @media screen and (max-width: 576px) {
+        right: 10px;
+      }
+    }
+    &:before {
+      height: 1px;
+      width: 50%;
+      content: '';
+      position: absolute;
+      right: -40px;
+      background-color: @home_color;
+      bottom: 40px;
+      @media screen and (max-width: 768px) {
+        bottom: 5px;
+        right: 40px;
+      }
+      @media screen and (max-width: 576px) {
+        right: 10px;
+      }
     }
   }
   &_header {
@@ -476,6 +545,9 @@
     text-transform: uppercase;
     letter-spacing: 6px;
     font-family: ProximaNova;
+    @media screen and (max-width: 768px) {
+     top: 10px;
+    }
     @media screen and (max-width: 576px) {
       display: none;
     }
@@ -489,6 +561,10 @@
       left: -125%;
       top: 14px;
       background-color: @home_color;
+      @media screen and (max-width: 768px) {
+       width: 100%;
+       left: -110%;
+      }
     }
   }
   &_header_mob {
@@ -525,6 +601,10 @@
     @media screen and (max-width: 1024px) {
       padding-top: 30%;
     }
+    @media screen and (max-width: 768px) {
+      width: 100%;
+      padding: 60px 80px 0 30px;
+    }
     @media screen and (max-width: 576px) { 
       width: 100%;
       padding: 20px 15px 0 15px;
@@ -546,12 +626,25 @@
     padding-top: 120px;
     margin-bottom: 20px;
     font-family: ProximaNova;
+    font-weight: 600;
     text-transform: uppercase;
+    @media screen and (max-width: 768px) {
+      text-transform: inherit;
+      padding-top: 80px;
+    }
     @media screen and (max-width: 576px) { 
       font-size: 24px;
       padding-top: 80px;
       text-transform: inherit;
       margin-left: 15px;
+    }
+    span {
+      font-family: ProximaNova;
+      font-weight: 400;
+      text-transform: uppercase;
+      @media screen and (max-width: 768px) {
+        text-transform: inherit;
+      }
     }
   }
   &_title {
@@ -641,6 +734,9 @@
       position: absolute;
       left: 7px;
       top: 25%;
+      @media screen and (max-width: 768px) {
+        left: -15%;
+      }
       @media screen and (max-width: 576px) { 
         display: none;
       }
@@ -652,6 +748,9 @@
     color: black;
     margin-bottom: 30px;
     text-transform: uppercase;
+    @media screen and (max-width: 768px) {
+      font-size: 30px;
+    }
   }
   &_btn {
     display: block;
@@ -669,6 +768,11 @@
     -webkit-transition: all 0.6s;
     -o-transition: all 0.6s;
     transition: all 0.6s;
+    @media screen and (max-width: 768px) {
+      padding: 0 35px;
+      font-size: 18px;
+      text-transform: uppercase;
+    }
     @media screen and (max-width: 576px) { 
       margin-bottom: 30px;
     }
