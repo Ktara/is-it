@@ -5077,15 +5077,8 @@ footer .copy a:hover:after {
   background-color: #000000;
 }
 @media screen and (max-width: 576px) {
-  .gym_man_woman .gym_man {
-    position: relative;
-    width: 100%;
-  }
-}
-@media screen and (max-width: 576px) {
-  .gym_man_woman .gym_woman {
-    position: relative;
-    width: 100%;
+  .gym_man_woman {
+    display: none;
   }
 }
 @media screen and (max-width: 768px) {
@@ -5141,6 +5134,58 @@ footer .copy a:hover:after {
 }
 .gym_man_woman .fixed {
   padding-left: 0;
+}
+.gym_man_woman_mob {
+  position: relative;
+  width: 100%;
+  background-color: #000000;
+  display: none;
+}
+@media screen and (max-width: 576px) {
+  .gym_man_woman_mob {
+    display: block;
+  }
+}
+.gym_man_woman_mob_image_block {
+  position: relative;
+}
+.gym_man_woman_mob_image_block:after {
+  position: absolute;
+  display: block;
+  content: '';
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.gym_man_woman_mob_image_block img {
+  width: 100%;
+}
+.gym_man_woman_mob_image_block_text_wrapper {
+  position: absolute;
+  content: '';
+  display: block;
+  width: 100%;
+  top: 155px;
+  left: 0;
+  text-align: center;
+  z-index: 10;
+}
+.gym_man_woman_mob_image_block_sub_title {
+  font-size: 30px;
+  font-family: 'ProximaNova', sans-serif;
+  font-weight: 400;
+  text-align: center;
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+.gym_man_woman_mob_image_block p {
+  font-size: 18px;
+  line-height: 24px;
+  font-family: 'ProximaNova', sans-serif;
+  font-weight: 400;
+  color: #ffffff;
 }
 /* GYM_MOTIVASION SECTION */
 .gym_motivation {

@@ -4960,18 +4960,9 @@ footer {
   position: relative;
   width: 100%;
   background-color: @black; 
-  .gym_man {
-    @media screen and (max-width: 576px) {
-      position: relative;
-      width: 100%;
-    }
-  }
-  .gym_woman {
-    @media screen and (max-width: 576px) {
-      position: relative;
-      width: 100%;
-    }
-  }
+  @media screen and (max-width: 576px) {
+    display: none;
+  }  
   &_text_block {
     @media screen and (max-width: 768px) {
       padding-bottom: 50px;
@@ -5020,6 +5011,58 @@ footer {
   }
   .fixed {
     padding-left: 0;
+  }
+}
+
+
+
+
+.gym_man_woman_mob {
+  position: relative;
+  width: 100%;
+  background-color: @black;
+  display: none;
+  @media screen and (max-width: 576px) {
+    display: block;
+  }  
+  &_image_block {
+    position: relative;
+    &:after {
+      position: absolute;
+      display: block;
+      content: '';
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      background-color: rgba(0, 0, 0, 0.5);    
+    }    
+    img {
+      width: 100%;
+    }
+    &_text_wrapper {
+      position: absolute;
+      content: '';
+      display: block;
+      width: 100%;
+      top: 155px;
+      left: 0;
+      text-align: center;
+      z-index: 10;
+    }
+    &_sub_title {
+      font-size: 30px;
+      .proxi-reg;
+      text-align: center;
+      color: @white;
+      margin-bottom: 20px;
+    }
+    p {
+      font-size: 18px;
+      line-height: 24px;
+      .proxi-reg;
+      color: @white;
+    }
   }
 }
 
