@@ -6110,6 +6110,12 @@ footer .copy a:hover:after {
   background-color: #000000;
   border-top: 5px solid #547ef4;
   border-bottom: 5px solid #547ef4;
+  margin-top: 120px;
+}
+@media screen and (max-width: 576px) {
+  .main_wrapper .cross2_trainer {
+    margin-top: 80px;
+  }
 }
 .crossfyt_trainer {
   position: relative;
@@ -6692,6 +6698,7 @@ footer .copy a:hover:after {
 @media screen and (max-width: 576px) {
   .cross2_advantage_header {
     text-align: left;
+    margin-top: 80px;
   }
 }
 .cross2_advantage_block_wrapper {
@@ -6733,6 +6740,11 @@ footer .copy a:hover:after {
   border-top: 5px solid #547ef4;
   border-bottom: 5px solid #547ef4;
   margin-top: 120px;
+}
+@media screen and (max-width: 576px) {
+  .cross2_about {
+    margin-top: 80px;
+  }
 }
 .cross2_about_image {
   position: absolute;
@@ -6830,6 +6842,11 @@ footer .copy a:hover:after {
   width: 100%;
   display: block;
   padding-top: 120px;
+}
+@media screen and (max-width: 576px) {
+  .cross2_video {
+    padding-top: 80px;
+  }
 }
 .cross2_video_wrapper {
   position: relative;
