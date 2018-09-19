@@ -1332,7 +1332,7 @@ body {
   }
 }
 .main_wrapper .cross_page_program_btn {
-  color: @black;
+  color: @white;
   border: 1px solid @blue;
   border-radius: 5px;
   -webkit-transition: all 0.9s;
@@ -5846,6 +5846,10 @@ footer {
 
 
 /* CROSSFYT PAGE */
+.main_wrapper .crossfyt_main .cross2_main_header {  
+  text-indent: 0;
+  text-align: center;
+}
 .crossfyt_main {
   position: relative;
   width: 100%;
@@ -5854,7 +5858,7 @@ footer {
   overflow: hidden;
   background-repeat: no-repeat;
   background-size: cover;
-  @media screen and (max-width: 576px) {
+  @media screen and (max-width: 768px) {
     background-position: center;
   }
   &_header {
@@ -5862,7 +5866,11 @@ footer {
     font-size: 120px;    
     margin-top: 30vh;
     color: @white;
-    text-indent: -5px; 
+    text-indent: -5px;
+    @media screen and (max-width: 768px) {
+      text-indent: 0;
+      text-align: center;
+    }
     @media screen and (max-width: 576px) {
       font-size: 60px;
       text-indent: 0;
@@ -5874,6 +5882,9 @@ footer {
     font-size: 24px;
     color: @white;
     margin-top: 30px;
+    @media screen and (max-width: 768px) {      
+      text-align: center;
+    }
     @media screen and (max-width: 576px) {
       font-size: 16px;
       text-align: center;
@@ -5947,6 +5958,14 @@ footer {
 
 
 /* CROSSFYT_TRAINER SECTION */
+.main_wrapper .cross2_trainer .cross2_trainer_container {
+  border: 0;
+}
+.main_wrapper .cross2_trainer {
+  background-color: @black;
+  border-top: 5px solid @blue;
+  border-bottom: 5px solid @blue;
+}
 .crossfyt_trainer {
   position: relative;
   width: 100%;
@@ -6317,9 +6336,11 @@ footer {
     }
   } 
   .cross_price_wrapper {
-    width: 100%;
-    height: 425px;
-    overflow: hidden;
+    @media screen and (max-width: 576px) { 
+      width: 100%;
+      height: 425px;
+      overflow: hidden;
+    }    
   }
   &_program {
     background-color: @back-white;
@@ -6464,4 +6485,225 @@ footer {
   opacity: 0;
   position: relative;
   top: 30px;
+}
+
+
+
+
+
+
+
+/* CROSS2 ADVANTAGE SECTION */
+.cross2_advantage {
+  position: relative;
+  width: 100%;
+  &_header {
+    text-align: center;
+    .proxi-reg;
+    font-size: 30px;
+    color: @white;
+    margin-top: 120px;
+    @media screen and (max-width: 576px) { 
+      text-align: left;
+    }
+  }
+  &_block_wrapper {
+    position: relative;
+    width: 100%;
+    min-height: 25vh;
+    margin-top: 40px;
+    border-radius: 5px;
+    border: 5px solid @blue;
+    &_image {
+      display: block;
+      width: 100px;
+      height: 80px;
+      margin: auto;
+      padding-top: 30px;
+      text-align: center;
+      img {      
+        display: inline-block;
+      }
+    }    
+    &_text {
+      width: 70%;
+      margin-left: 15%;
+      font-size: 18px;
+      line-height: 24px;
+      color: @white;
+      .proxi-reg;
+      text-align: center;
+      margin-top: 60px;
+      padding-bottom: 45px;
+    }
+  }
+}
+
+
+
+
+
+
+/* CROSS2 ABOUT SECTION */
+.cross2_about {
+  width: 100%;
+  position: relative;
+  background-color: @black;
+  border-top: 5px solid @blue;
+  border-bottom: 5px solid @blue;
+  margin-top: 120px;
+  &_image {
+    position: absolute;
+    content: '';    
+    display: flex;
+    -ms-align-items: center;
+    align-items: center;
+    width: 46%;
+    height: 100%;    
+    top: 0;
+    left: 0;
+    @media screen and (max-width: 768px) { 
+      width: 100%;
+      left: -40%;
+    }
+    @media screen and (max-width: 576px) { 
+      left: 0;
+      height: 310px;
+    }
+    img {
+      width: 100%;
+      height: 100%;
+      min-height: 480px;
+      @media screen and (max-width: 768px) { 
+        min-height: 350px;
+      }
+      @media screen and (max-width: 576px) { 
+        min-height: 300px;
+      }
+    }
+  }
+  &_text_wrapper {
+    @media screen and (max-width: 576px) { 
+      height: 320px;
+      overflow: hidden;
+      margin-top: 170px;
+    }
+  }
+  &_text_btn {
+    display: none;
+    @media screen and (max-width: 576px) { 
+      display: block;
+      font-size: 16px;
+      .proxi-reg;
+      color: @white;
+      margin-top: 30px;
+      padding-bottom: 20px;
+      cursor: pointer;
+    }
+  }
+  &_text {
+    padding-bottom: 20px;
+    h5 {
+      font-size: 30px;
+      color: @white;
+      .proxi-reg;
+      margin-top: 50px;
+      margin-bottom: 50px;
+      @media screen and (max-width: 576px) { 
+        margin-top: 0;
+      }
+    }
+    p {
+      font-size: 18px;
+      line-height: 24px;
+      color: @white;
+      .proxi-reg;
+      margin-bottom: 25px;
+      @media screen and (max-width: 768px) { 
+        font-size: 16px;
+        margin-bottom: 20px;
+      }
+    }
+  }
+}
+
+
+
+
+
+
+
+/* CROSS2 VIDEO SECTION */
+.cross2_video {
+  position: relative;
+  width: 100%;  
+  display: block;
+  padding-top: 120px;
+  &_wrapper {
+    position: relative;    
+    width: 100%;
+    height: 50vh;
+    overflow: hidden;
+    @media screen and (max-width: 768px) { 
+      height: 30vh;
+    }
+    img {
+      position: absolute;
+      content: '';
+      top: -50%;
+      left: 0;
+      width: 100%;
+      // height: 50%;
+      min-width: 100%;
+      min-height: 100%;
+      @media screen and (max-width: 768px) { 
+        top: -30%;
+      }
+      @media screen and (max-width: 576px) { 
+        top: -20%;
+      }
+    }
+    .play_block {
+      position: absolute;
+      display: block;
+      width: 62px;
+      height: 62px;
+      top: ~'calc(50% - 31px)';
+      left: ~'calc(50% - 31px)';
+      cursor: pointer;
+    }
+  }
+  &_popup_video {    
+    position: fixed;
+    display: block;
+    width: 100%;
+    height: 0;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    overflow: hidden;
+    opacity: 0;  
+    &_active {
+      height: 100vh;
+    }
+    &:before {
+      content: '';
+      position: absolute;
+      display: block;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      background-color: rgba(45, 57, 71, 0.75);
+    }
+    &_wrapper {
+      position: relative;
+      width: 90%;
+      margin-left: 5%;
+      height: 70vh;
+      margin-top: 15vh;
+      overflow: hidden;
+      z-index: 1;      
+    }
+  }
 }
