@@ -1340,7 +1340,7 @@ body {
   transition: all 0.9s;
   @media screen and (max-width: 576px) {
     width: 90%;
-    margin: 60px 15px 0 15px;
+    margin: 30px 15px 0 15px;
   }
   &:hover {
     background-color:@blue;
@@ -6295,6 +6295,11 @@ footer {
 
 
 /* CROSSFYT PRICE SECTION*/
+.main_wrapper .cross2_price .crossfyt_price_name {
+  @media screen and (max-width: 576px) { 
+    padding-top: 80px;  
+  }
+}
 .crossfyt_price {  
   &_name {
     width: 100%;
@@ -6575,8 +6580,8 @@ footer {
       left: -40%;
     }
     @media screen and (max-width: 576px) { 
-      left: 0;
-      height: 310px;
+      left: -60%;
+      height: auto;
     }
     img {
       width: 100%;
@@ -6585,8 +6590,9 @@ footer {
       @media screen and (max-width: 768px) { 
         min-height: 350px;
       }
-      @media screen and (max-width: 576px) { 
-        min-height: 300px;
+      @media screen and (max-width: 576px) {
+        width: 200vw; 
+        min-height: auto;
       }
     }
   }
@@ -6614,7 +6620,7 @@ footer {
     h5 {
       font-size: 30px;
       color: @white;
-      .proxi-reg;
+      .proxi-bold;
       margin-top: 50px;
       margin-bottom: 50px;
       @media screen and (max-width: 576px) { 

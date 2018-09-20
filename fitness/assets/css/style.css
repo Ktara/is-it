@@ -1351,7 +1351,7 @@ body {
 @media screen and (max-width: 576px) {
   .main_wrapper .cross_page_program_btn {
     width: 90%;
-    margin: 60px 15px 0 15px;
+    margin: 30px 15px 0 15px;
   }
 }
 .main_wrapper .cross_page_program_btn:hover {
@@ -6462,6 +6462,11 @@ footer .copy a:hover:after {
   }
 }
 /* CROSSFYT PRICE SECTION*/
+@media screen and (max-width: 576px) {
+  .main_wrapper .cross2_price .crossfyt_price_name {
+    padding-top: 80px;
+  }
+}
 .crossfyt_price_name {
   width: 100%;
   text-align: left;
@@ -6765,8 +6770,8 @@ footer .copy a:hover:after {
 }
 @media screen and (max-width: 576px) {
   .cross2_about_image {
-    left: 0;
-    height: 310px;
+    left: -60%;
+    height: auto;
   }
 }
 .cross2_about_image img {
@@ -6781,7 +6786,8 @@ footer .copy a:hover:after {
 }
 @media screen and (max-width: 576px) {
   .cross2_about_image img {
-    min-height: 300px;
+    width: 200vw;
+    min-height: auto;
   }
 }
 @media screen and (max-width: 576px) {
@@ -6813,7 +6819,7 @@ footer .copy a:hover:after {
   font-size: 30px;
   color: #ffffff;
   font-family: 'ProximaNova', sans-serif;
-  font-weight: 400;
+  font-weight: 700;
   margin-top: 50px;
   margin-bottom: 50px;
 }
