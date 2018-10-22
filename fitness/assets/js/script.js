@@ -455,8 +455,9 @@ $('.gym_advantage_circle_block').click(function(){
 
 
 
-
-$('.oferta_text_title').click(function(){
+console.log(window.innerWidth + '.oferta_list');
+$('.oferta_text_title').click(function(){	
+	if (window.innerWidth > 768) return;
 	$('.oferta_text_wrapper').animate({
 		height: 0
 	}, 400);

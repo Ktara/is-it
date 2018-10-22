@@ -1,0 +1,115 @@
+.cases
+  position: relative
+  width: 100%
+  padding-top: 150px
+
+  &_header
+    @extend .section_header
+
+  &_slider_wrapper
+    position: relative
+    width: 100%
+    height: 50vh
+    margin-top: 100px
+
+    .cases_slide
+      overflow: hidden   
+
+    .cases_slide_header_block
+      position: relative
+      width: 100%
+      height: 46vh
+      border-radius: 10px
+      background-color: #73b4a2
+      background-image: linear-gradient(to bottom, #1cd8d2 0%, #93edc7 100%)
+
+    .cases_slide_dots_block
+      position: absolute
+      width: 285px
+      height: 285px
+      top: 10vh
+      left: -25%
+      img
+        width: 100%
+
+    .cases_slide_header
+      font-size: 100px
+      text-transform: uppercase
+      color: $white
+      float: right
+
+    .cases_slide_circles
+      position: absolute
+      width: 80px
+      height: 80px
+      bottom: 13%
+      right: 18%
+      img
+        width: 80px
+
+    .cases_slide_image
+      height: 30vh
+      margin-top: 8vh
+      img
+        height: 100%
+
+    .cases_slide_text_block
+      p
+        font-size: 18px
+        background-image: linear-gradient(to bottom, #1cd8d2 0%, #93edc7 100%)
+        -webkit-background-clip: text
+        -webkit-text-fill-color: transparent
+        opacity: 0.7
+        margin-top: 20px
+        margin-left: 110px
+        color: #c1c1c1
+
+    .cases_slide_title 
+      font-size: 24px
+      text-transform: uppercase
+      color: $dark-blue
+      margin-top: 10px
+      margin-left: 110px
+
+.cases_next_arrow
+  cursor: pointer
+  position: absolute
+  width: 97px
+  height: 22px 
+  right: 10px
+  bottom: -45px
+  background-image: url("../img/main/nextA.png")
+  z-index: 10  
+
+.cases_prew_arrow
+  cursor: pointer
+  position: absolute
+  width: 97px
+  height: 22px 
+  right: 180px
+  bottom: -45px
+  background-image: url("../img/main/nextA.png")
+  z-index: 10  
+  transform: rotate(180deg)
+
+.cases_slider_wrapper .slick-dots li
+  display: none
+
+
+.cases_slider_wrapper .slick-dots 
+  position: absolute
+  display: inline-block
+  z-index: 10
+  right: 130px
+  bottom: -50px    
+
+.cases_slider_wrapper .slick-dots .slick-active
+  display: inline-block
+  font-size: 36px
+  text-transform: uppercase
+  background-image: linear-gradient(to right, #ee0979 0%, #ff6a00 100%)
+  -webkit-background-clip: text
+  -webkit-text-fill-color: transparent
+  color: #001726
+  
+

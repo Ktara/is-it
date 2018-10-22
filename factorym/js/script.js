@@ -458,3 +458,25 @@ $('#bar_food').slick({
 
 
 $('.slick-arrow').css('z-index' , 100);
+
+
+
+
+
+
+var $slides = $('.master_class_slide');
+
+(function(){
+  $('.master_class_slider_wrapper').slick({
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  arrows: true,
+  prevArrow: '<div class="master_class_prevarrow"></div>',
+  nextArrow: '<div class="master_class_nextarrow"></div>',
+  dots: true,
+  customPaging : function(slider, i) {
+        var length = slider.$slides.length;
+        return i + 1 + '/' + length;
+        }
+  });
+})();

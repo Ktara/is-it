@@ -1,0 +1,68 @@
+.com-reg
+  font-family: 'Comfortaa', sans-serif
+  font-weight: 400
+
+.com-bold
+  font-family: 'Comfortaa', sans-serif
+  font-weight: 700
+
+.com-light
+  font-family: 'Comfortaa', sans-serif
+  font-weight: 300
+
+
+$dark-blue: #001726
+$black: #000000
+$white: #fefefe
+$grey: #808080
+$light-grey: #555555
+$gr-orange: linear-gradient(to right, #ee0979 0%, #ff6a00 100%)
+
+
+
+.main_wrapper
+  @extend .com-reg
+
+.main_line_wrapper
+  position: relative
+  width: 100%
+  height: auto
+  .main_lines
+    position: relative
+    width: 100%
+    height: 100%
+    overflow: hidden
+    &:after
+      content: ''
+      position: absolute
+      display: block
+      width: 1px
+      height: 100%
+      top: 0
+      left: 0
+      background-color: #ffffff
+      background-image: linear-gradient(to bottom, #1cd8d2 0%, #93edc7 100%)
+
+
+.section_header_block
+  width: 100%
+  height: 140px
+  border-radius: 0 10px 10px 0
+  background-color: $dark-blue
+
+.section_header
+  position: relative
+  font-size: 60px
+  line-height: 150px
+  text-transform: uppercase
+  @extend .com-bold
+  color: $white
+  letter-spacing: -5px
+  &:before
+    content: ''
+    position: absolute
+    width: 200%
+    height: 140px
+    top: 0
+    left: -200%
+    background-color: $dark-blue

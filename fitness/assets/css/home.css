@@ -577,6 +577,8 @@
   height: 100%;
   max-height: 100vh;
   overflow: hidden;
+  font-size: 0;
+  line-height: 0;
 }
 @media screen and (max-width: 576px) {
   .home_trainer_image {
@@ -585,6 +587,9 @@
 }
 .home_trainer_image img {
   width: 100%;
+  max-height: 100%;
+  font-size: 0;
+  line-height: 0;
 }
 @media screen and (max-width: 576px) {
   .home_trainer_image img {

@@ -434,57 +434,150 @@ header {
 
 
 
-/* Services section */
-.services {
+
+
+
+
+/* MASTER_CLASS */
+.master_class {
 	position: relative;
 	width: 100%;
 	padding-top: 120px;
 	@media screen and (max-width: 768px) {
 		padding-top: 100px;
 	}
-	.services_anim_wrapper {
+	&_anim_wrapper {
 		width: 100%;
 		text-align: center;
 	}
 	.section_header {
-		width: 95px;
-		height: 35px;				
+		width: 230px;		
 	}
-	&_sub_header {		
-		margin: 40px 270px 0 270px;		
-		text-align: center;
-		@media screen and (max-width: 768px) {
-			margin: 40px 0 0 0;
-		}			
-	}
-	&_block_img {
+	&_slider_wrapper {
+		width: 100%;
+		height: 50vh;
+		margin-top: 40px;
 		position: relative;
-		margin-top: 30px;
+		overflow: hidden;
 		@media screen and (max-width: 768px) {
+			height: auto;
+		}
+		.slick-dots .slick-active {
+			display: inline-block;
+		}
+	}
+	&_slide {
+		width: 100%;
+		// background-image: url(../img/burger.jpg);
+		background-repeat: no-repeat;
+		background-size: 100%;
+		background-position: center right;
+		@media screen and (max-width: 768px) {
+			// background-image: url(../img/burgerLeft.jpg);
+			background-size: auto 100%;
+			background-position: center left;
+		}
+		&_arrows {
+			width: 100%;
+			height: 15vh;
+			margin-top: 35vh;
+			background-color: @white;
+			overflow: hidden;
+			@media screen and (max-width: 768px) {
+				height: auto;
+			}
+		}
+	}
+	&_slide_block {
+		width: 100%;
+		height: 35vh;
+		overflow: hidden;
+		background-color: @white;
+		@media screen and (max-width: 768px) {
+			height: auto;
+			background-color: rgba(255, 255, 255, 0.5);
+			z-index: 1010;
+		}
+		&_header {
+			font-size: 24px;
+			margin-top: 35px;
+			margin-bottom: 30px;
+		}
+		&_btn {
+			display: block;
+			width: 220px;
+			height: 50px;
+			line-height: 48px;
+			margin-top: 50px;
+			cursor: pointer;
+			border-radius: 10px;
+			border: 1px solid rgba(0, 0, 0, 0.5);
+			background-color: @white;
+			color: @main-black;
 			text-align: center;
-		}
-		.cup_img {
-			width: 155px;
-			margin-top: 15px;			
-		}
-		.bottle_img {
-			width: 105px;
 			@media screen and (max-width: 768px) {
-				margin-top: 40px;
+				float: right;
+				margin-bottom: 15px;
+			}
+			&:hover {
+				background-color: @main-black;
+				color: @white;
+				text-decoration: none;
 			}
 		}
-		.dish_img {
-			width: 180px;
-			margin-top: 30px;
-			@media screen and (max-width: 768px) {
-				margin-top: 40px;
-			}
+	}
+	.fixed {
+		padding: 0;
+	}
+	.master_class_prevarrow {
+		position: absolute;
+		background-image: url(../img/next-arrow.svg);
+		background-size: cover;
+		transform: rotate(180deg);
+		width: 22px;
+		height: 40px;
+		right: 40%;
+		bottom: 5vh;
+		z-index: 1000;
+		cursor: pointer;
+		@media screen and (max-width: 768px) {
+			bottom: 20%;
 		}
-		p {
-			margin-top: 20px;
+	}
+	.master_class_nextarrow {	
+		position: absolute;
+		background-image: url(../img/next-arrow.svg);
+		background-size: cover;	
+		width: 22px;
+		height: 40px;
+		right: 8%;
+		bottom: 5vh;
+		z-index: 1000;
+		cursor: pointer;
+		@media screen and (max-width: 768px) {
+			bottom: 20%;
+		}	
+	}
+	.slick-dots {
+		position: absolute;
+		bottom: 5vh;
+		right: 23%;
+		font-size: 30px;
+		@media screen and (max-width: 768px) {
+			bottom: 20%;
+			right: 21%;
 		}
+	}
+	.slick-dots li {
+		display: none;
 	}
 }
+
+
+
+
+
+
 
 
 

@@ -118,73 +118,73 @@ $('.services_slide_mob').slick({
 	nextArrow: '<div class="services_nextarrow"></div>'
 });
 
-var myVivus = new Vivus('box_anim', {
-	start: 'manual',
-});
-myVivus.setFrameProgress(0).stop();
+// var myVivus = new Vivus('box_anim', {
+// 	start: 'manual',
+// });
+// myVivus.setFrameProgress(0).stop();
 
-var myVivus2 = new Vivus('box_anim2', {
-	start: 'manual',
-});
-myVivus2.setFrameProgress(0).stop();
+// var myVivus2 = new Vivus('box_anim2', {
+// 	start: 'manual',
+// });
+// myVivus2.setFrameProgress(0).stop();
 
-var myVivus3 = new Vivus('box_anim3', {
-	start: 'manual',
-});
-myVivus3.setFrameProgress(0).stop();
+// var myVivus3 = new Vivus('box_anim3', {
+// 	start: 'manual',
+// });
+// myVivus3.setFrameProgress(0).stop();
 
-var myVivus4 = new Vivus('box_anim4', {
-	start: 'manual',
-});
-myVivus4.setFrameProgress(0).stop();
+// var myVivus4 = new Vivus('box_anim4', {
+// 	start: 'manual',
+// });
+// myVivus4.setFrameProgress(0).stop();
 
-var myVivus5 = new Vivus('box_anim5', {
-	start: 'manual',
-});
-myVivus5.setFrameProgress(0).stop();
+// var myVivus5 = new Vivus('box_anim5', {
+// 	start: 'manual',
+// });
+// myVivus5.setFrameProgress(0).stop();
 
-var myVivus6 = new Vivus('box_anim6', {
-	start: 'manual',
-});
-myVivus6.setFrameProgress(0).stop();
-
-
-var myVivustooth1 = new Vivus('box_anim7', {
-	start: 'manual',
-});
-myVivustooth1.setFrameProgress(0).stop();
-
-var myVivustooth2 = new Vivus('box_anim8', {
-	start: 'manual',
-});
-myVivustooth2.setFrameProgress(0).stop();
-
-var myVivustooth3 = new Vivus('box_anim9', {
-	start: 'manual',
-});
-myVivustooth3.setFrameProgress(0).stop();
-
-var myVivustooth4 = new Vivus('box_anim10', {
-	start: 'manual',
-});
-myVivustooth4.setFrameProgress(0).stop();
-
-var myVivustooth5 = new Vivus('box_anim11', {
-	start: 'manual',
-});
-myVivustooth5.setFrameProgress(0).stop();
-
-var myVivustooth6 = new Vivus('box_anim12', {
-	start: 'manual',
-});
-myVivustooth6.setFrameProgress(0).stop();
+// var myVivus6 = new Vivus('box_anim6', {
+// 	start: 'manual',
+// });
+// myVivus6.setFrameProgress(0).stop();
 
 
-var myVivusAnton = new Vivus('anton_anim');
-myVivusAnton
-  .stop()
-  .reset()
-  .play(1);
+// var myVivustooth1 = new Vivus('box_anim7', {
+// 	start: 'manual',
+// });
+// myVivustooth1.setFrameProgress(0).stop();
+
+// var myVivustooth2 = new Vivus('box_anim8', {
+// 	start: 'manual',
+// });
+// myVivustooth2.setFrameProgress(0).stop();
+
+// var myVivustooth3 = new Vivus('box_anim9', {
+// 	start: 'manual',
+// });
+// myVivustooth3.setFrameProgress(0).stop();
+
+// var myVivustooth4 = new Vivus('box_anim10', {
+// 	start: 'manual',
+// });
+// myVivustooth4.setFrameProgress(0).stop();
+
+// var myVivustooth5 = new Vivus('box_anim11', {
+// 	start: 'manual',
+// });
+// myVivustooth5.setFrameProgress(0).stop();
+
+// var myVivustooth6 = new Vivus('box_anim12', {
+// 	start: 'manual',
+// });
+// myVivustooth6.setFrameProgress(0).stop();
+
+
+// var myVivusAnton = new Vivus('anton_anim');
+// myVivusAnton
+//   .stop()
+//   .reset()
+//   .play(1);
 
 // var myVivusLines = new Vivus('anim_line');
 // myVivusLines
@@ -244,9 +244,9 @@ if($(".animate_text_5")[0] != undefined) {
 
 
 
-var startanim = $('.advantage').offset().top;
-var $status = false;
-var $status2 = false;
+// var startanim = $('.advantage').offset().top;
+// var $status = false;
+// var $status2 = false;
 
 
 
@@ -254,68 +254,68 @@ var $status2 = false;
 
 
 
-var startanim = $('.advantage').offset().top;
-var $status = false;
-var $status2 = false;
-window.onscroll = function() {
-  var scrolled = window.pageYOffset || document.documentElement.scrollTop;
+// var startanim = $('.advantage').offset().top;
+// var $status = false;
+// var $status2 = false;
+// window.onscroll = function() {
+//   var scrolled = window.pageYOffset || document.documentElement.scrollTop;
 
 
-  $(".main").css("top", -scrolled/2.1);
+//   $(".main").css("top", -scrolled/2.1);
 
 
-  if (scrolled > startanim*0.75 && $status == false) {
-  	$status = true;
+//   if (scrolled > startanim*0.75 && $status == false) {
+//   	$status = true;
 
-myVivustooth1.reset().play(0.7);
+// myVivustooth1.reset().play(0.7);
 
-myVivustooth2.reset().play(0.7);
+// myVivustooth2.reset().play(0.7);
 
-myVivustooth3.reset().play(0.7);
+// myVivustooth3.reset().play(0.7);
 
-myVivustooth4.reset().play(0.7);
+// myVivustooth4.reset().play(0.7);
 
-myVivustooth5.reset().play(0.7);
+// myVivustooth5.reset().play(0.7);
 
-myVivustooth6.reset().play(0.7);
+// myVivustooth6.reset().play(0.7);
 
-  };
-  if (scrolled > startanim*0.9 && $status2 == false) {
-  	$status2 = true;
-  	myVivus.reset().play(1);
+//   };
+//   if (scrolled > startanim*0.9 && $status2 == false) {
+//   	$status2 = true;
+//   	myVivus.reset().play(1);
 
-myVivus2.reset().play(1);
+// myVivus2.reset().play(1);
 
-myVivus3.reset().play(1);
+// myVivus3.reset().play(1);
 
-myVivus4.reset().play(1);
+// myVivus4.reset().play(1);
 
-myVivus5.reset().play(1);
+// myVivus5.reset().play(1);
 
-myVivus6.reset().play(1);
-  }
+// myVivus6.reset().play(1);
+//   }
 
 
-if($(".animate_text_1")[0] != undefined && scrolled > firstStage-$screen && firstStageStatus === false) {
-    firstStageStatus = true;
-    animateText(".animate_text_1", 1000);
-}
-if($(".animate_text_2")[0] != undefined && scrolled > Stage2-$screen && Stage2Status === false) {
-    Stage2Status = true;
-    animateText(".animate_text_2", 1000);
-}
-if($(".animate_text_3")[0] != undefined && scrolled > Stage3-$screen && Stage3Status === false) {
-    Stage3Status = true;
-    animateText(".animate_text_3", 1000);
-}
-if($(".animate_text_4")[0] != undefined && scrolled > Stage4-$screen*3 && Stage4Status === false) {
-    Stage4Status = true;
-    animateText(".animate_text_4", 1000);
-}
-if($(".animate_text_5")[0] != undefined && scrolled > Stage5-$screen*3 && Stage5Status === false) {
-    Stage5Status = true;
-    animateText(".animate_text_5", 1000);
-}
+// if($(".animate_text_1")[0] != undefined && scrolled > firstStage-$screen && firstStageStatus === false) {
+//     firstStageStatus = true;
+//     animateText(".animate_text_1", 1000);
+// }
+// if($(".animate_text_2")[0] != undefined && scrolled > Stage2-$screen && Stage2Status === false) {
+//     Stage2Status = true;
+//     animateText(".animate_text_2", 1000);
+// }
+// if($(".animate_text_3")[0] != undefined && scrolled > Stage3-$screen && Stage3Status === false) {
+//     Stage3Status = true;
+//     animateText(".animate_text_3", 1000);
+// }
+// if($(".animate_text_4")[0] != undefined && scrolled > Stage4-$screen*3 && Stage4Status === false) {
+//     Stage4Status = true;
+//     animateText(".animate_text_4", 1000);
+// }
+// if($(".animate_text_5")[0] != undefined && scrolled > Stage5-$screen*3 && Stage5Status === false) {
+//     Stage5Status = true;
+//     animateText(".animate_text_5", 1000);
+// }
 
 
    
@@ -323,7 +323,7 @@ if($(".animate_text_5")[0] != undefined && scrolled > Stage5-$screen*3 && Stage5
 
 
 
-} ; 
+// } ; 
 
 
 
@@ -362,4 +362,37 @@ $('.certificate_slide').slick({
 	arrows: true,
 	prevArrow: '<div class="certificate_prevarrow"></div>',
 	nextArrow: '<div class="certificate_nextarrow"></div>'
+});
+
+
+
+$('.services_page_gallery_slider_wrapper').slick({  
+  infinite: true,
+  arrows: true,
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  prevArrow: '<div class="services_page_gallery_prevarrow"></div>',
+  nextArrow: '<div class="services_page_gallery_nextarrow"></div>'
+});
+
+
+
+$('.services_mob_slider_wrapper').slick({  
+  infinite: true,
+  arrows: true,
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  prevArrow: '<div class="services_mob_prevarrow"></div>',
+  nextArrow: '<div class="services_mob_nextarrow"></div>'
+});
+
+
+
+$('.services_page_gallery_mob_slider_wrapper').slick({  
+  infinite: true,
+  arrows: true,
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  prevArrow: '<div class="services_page_gallery_prevarrow"></div>',
+  nextArrow: '<div class="services_page_gallery_nextarrow"></div>'
 });

@@ -14,7 +14,7 @@
   font-weight: 300;
   font-style: normal; }
 /*BODY*/
-.font_reg, .wrapper, .main_wrapper, input:focus, .main_advantage .main_advantage_slider_wrapper .main_advantage_slider .main_advantage_slide p, .main_teach .main_teach_text strong, .main_certificates .main_certificates_block .main_certificates_text_block .main_certificates_text, .main_publication .main_publication_text strong, .contacts input:focus, .about_reviews .about_reviews_slider_wrapper .about_reviews_slide .about_reviews_text strong, .about_reviews .about_reviews_tablet_slider_wrapper .about_reviews_slide .about_reviews_text strong, .about_reviews .about_reviews_mob_slider_wrapper .about_reviews_slide .about_reviews_text strong, .teach_publications .teach_publications_text_block span, .blog .blog_text_block .blog_link, .article .article_text_block span, .article_other .article_other_text_block .article_other_text_head, .timetable_popup_wrapper .timetable_popup_form input:focus, .timetable_popup_wrapper .timetable_popup_form option:focus, .timetable_popup_wrapper .timetable_popup_course {
+.font_reg, .wrapper, .main_wrapper, .main_container, input:focus, .main_advantage .main_advantage_slider_wrapper .main_advantage_slider .main_advantage_slide p, .main_teach .main_teach_text strong, .main_certificates .main_certificates_block .main_certificates_text_block .main_certificates_text, .main_publication .main_publication_text strong, .contacts input:focus, .about_reviews .about_reviews_slider_wrapper .about_reviews_slide .about_reviews_text strong, .about_reviews .about_reviews_tablet_slider_wrapper .about_reviews_slide .about_reviews_text strong, .about_reviews .about_reviews_mob_slider_wrapper .about_reviews_slide .about_reviews_text strong, .teach_publications .teach_publications_text_block span, .blog .blog_text_block .blog_link, .article .article_text_block span, .article_other .article_other_text_block .article_other_text_head, .timetable_popup_wrapper .timetable_popup_form input:focus, .timetable_popup_wrapper .timetable_popup_form option:focus, .timetable_popup_wrapper .timetable_popup_course {
   font-family: 'Roboto', sans-serif;
   font-weight: 400; }
 
@@ -26,7 +26,7 @@
   font-family: 'Roboto', sans-serif;
   font-weight: 300; }
 
-.wrapper, .main_wrapper {
+.wrapper, .main_wrapper, .main_container {
   font-size: 16px; }
 
 .header, .main_about .main_about_header, .main_about .main_about, .main_advantage .main_advantage_slider_wrapper .main_advantage_header, .main_advantage_mob .main_advantage_mob_header, .main_teach .main_teach_header, .main_certificates .main_certificates_header, .main_publication .main_publication_header, .contacts .contacts_header, .about_certificates .about_certificates_header, .about_certificates_mob .about_certificates_mob_header, .about_reviews .about_reviews_header, .teach .teach_header, .teach_publications .teach_publications_header, .learners .learners_header, .article_other .article_other_header, .course_base .course_base_header, .course_other .course_other_header, .course_spec .course_spec_header, .timetable .timetable_header, .timetable_popup_wrapper .timetable_popup_header {
@@ -150,7 +150,7 @@ input:focus {
   position: relative;
   max-width: 1360px;
   margin: 0 auto;
-  overflow: hidden; }
+ /* overflow: hidden;*/ }
   .main_container .nav_header {
     max-width: 1360px;
     margin: 0 auto; }
@@ -929,7 +929,7 @@ input:focus {
     .contacts .contacts_social a:hover {
       text-decoration: none; }
     .contacts .contacts_social img {
-      width: 20px;
+      width: 40px;
       margin-right: 10px; }
   @media screen and (max-width: 767px) {
     .contacts .fixed {
