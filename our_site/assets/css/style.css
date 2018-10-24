@@ -25,6 +25,12 @@
   font-family: "Comfortaa", sans-serif;
   font-weight: 300; }
 
+.animate_number {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  z-index: -2; }
+
 .main_line_wrapper {
   position: relative;
   width: 100%;
