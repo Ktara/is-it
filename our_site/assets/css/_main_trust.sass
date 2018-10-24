@@ -3,14 +3,14 @@
     width: 100%
     margin-top: 200px
     .section_header_block
-        border-radius: 10px 0 0 10px
-        
+        &:before
+            left: 0
+            right: auto
+            box-shadow: -15px 10px 15px rgba(0, 0, 0, 0.5)
     &_header
         @extend .section_header
         margin-left: 95px
-        &:before
-            left: auto
-            right: -200%
+
     
     &_block_wrapper
         position: relative
@@ -23,7 +23,6 @@
             display: flex
             justify-content: center
             align-items: center
-            background-color: $white
             background-image: inherit
             text-decoration: none
             transition: background-color 0.6s
