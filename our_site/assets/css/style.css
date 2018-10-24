@@ -25,6 +25,9 @@
   font-family: "Comfortaa", sans-serif;
   font-weight: 300; }
 
+.white_container {
+  background-color: #fefefe; }
+
 .animate_number {
   width: 100vw;
   height: 100vh;
