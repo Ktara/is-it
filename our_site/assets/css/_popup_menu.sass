@@ -1,0 +1,143 @@
+.popup_menu
+  position: fixed
+  width: 100%
+  height: 0
+  top: 0
+  left: 0
+  z-index: 100
+  overflow: hidden
+  background-color: $white
+  opacity: 0
+  &_active
+    height: 100vh
+  .other_menu_lang
+    position: relative
+    width: 30px
+    height: 80px
+    text-align: center
+    cursor: pointer
+    float: right
+    overflow: hidden
+    &:hover
+      overflow: visible
+      li:nth-child(2)
+        opacity: 1
+    li
+      position: relative
+      width: 30px
+      height: 30px
+      margin-top: 25px
+      color: $dark-blue
+      border-radius: 5px
+      border: 2px solid $black
+    a
+      color: $black
+      display: inline-block
+      text-decoration: none
+      @extend .com-bold
+      text-transform: uppercase
+      font-size: 14px
+      margin-top: 8px
+      letter-spacing: 1px
+
+
+  .other_menu_lang li:nth-child(1)
+    z-index: 1
+  .other_menu_lang li:nth-child(2)
+    opacity: 0
+    z-index: 0
+    -webkit-transition: opacity 0.6s
+    -moz-transition: opacity 0.6s
+    -ms-transition: opacity 0.6s
+    -o-transition: opacity 0.6s
+    transition: opacity 0.6s
+
+  &_wrapper
+    margin-top: 30px
+  &_first
+    position: relative
+    width: 445px
+    height: 230px
+    display: flex
+    justify-content: center
+    align-items: center
+    margin-top: 30px
+    border-radius: 10px
+    background-color: $white
+    background-image: linear-gradient(to right, #ee0979 0%, #ff6a00 100%)
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.06)
+    background-repeat: no-repeat
+    background-size: cover
+    text-decoration: none
+    &_title
+      position: absolute
+      display: flex
+      justify-content: center
+      align-items: center
+      width: calc(100% - 20px)
+      height: calc(100% - 20px)
+      top: 10px
+      left: 10px
+      font-size: 48px
+      color: $dark-blue
+      background-color: $white
+      z-index: 5
+      p
+        z-index: 10
+      &:before
+        content: ''
+        position: absolute
+        background-color: $white
+        opacity: 0.6
+        width: 100%
+        height: 100%
+        top: 0
+        left: 0
+        display: block
+  &_second
+    position: relative
+    width: 100%
+    height: 230px
+    display: flex
+    justify-content: center
+    align-items: center
+    margin-top: 30px
+    border-radius: 10px
+    background-color: $white
+    background-repeat: no-repeat
+    background-size: cover
+    text-decoration: none
+    &_title
+      position: absolute
+      display: flex
+      justify-content: center
+      align-items: center
+      width: calc(100% - 20px)
+      height: calc(100% - 20px)
+      top: 10px
+      left: 10px
+      font-size: 48px
+      color: $dark-blue
+      background-color: $white
+      z-index: 5
+      p
+        z-index: 10
+      &:before
+        content: ''
+        position: absolute
+        background-color: $white
+        opacity: 0.6
+        width: 100%
+        height: 100%
+        top: 0
+        left: 0
+        display: block
+  &_contact
+    display: inline-block
+    font-size: 48px
+    margin-top: 85px
+    writing-mode: vertical-rl
+    text-orientation: upright
+    color: $dark-blue
+    float: right
+    text-decoration: none
