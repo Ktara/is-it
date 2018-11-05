@@ -94,11 +94,35 @@
 
 
 
+.smm_about
+  position: relative
+  width: 100%
+  margin-top: 40px
+  &_text
+    position: relative
+    background-color: $white
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.05)
+    padding: 30px 20px
+    font-size: 18px
+    line-height: 24px
+    margin-top: 30px
+
+
+
 .smm_advantage
   position: relative
   width: 100%
   margin-top: 85px
   &_block
+    position: relative
+    width: 100%
+    &_image
+      content: ''
+      position: absolute
+      display: block
+      width: 390px
+      top: 40%
+      right: 0
     &_header
       font-size: 36px
       @extend .com-bold
@@ -137,6 +161,38 @@
       color: $black
 
 
+.main_wrapper .smm_work .smm_work_block_list .smm_work_block_list_red
+  &:before
+    content: url(../img/smm/red-dot.png)
+    position: absolute
+    top: -4px
+    left: -30px
+.smm_work
+  position: relative
+  width: 100%
+  margin-top: 120px
+  &_block
+    &_header
+      font-size: 30px
+      @extend .com-bold
+      color: $dark-blue
+      margin-bottom: 20px
+      letter-spacing: -2px
+    &_list
+      li
+        position: relative
+        margin-top: 10px
+        font-size: 18px
+        line-height: 24px
+        color: $dark-blue
+        text-indent: 32px
+        &:before
+          content: url(../img/in-portfolio/dot.png)
+          position: absolute
+          top: -4px
+          left: -30px
+
+
 
 
 .smm_price
@@ -148,6 +204,7 @@
     line-height: 48px
     @extend .com-bold
     color: $dark-blue
+    letter-spacing: -2px
   &_text
     margin-top: 20px
     p

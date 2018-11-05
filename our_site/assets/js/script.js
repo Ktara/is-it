@@ -72,3 +72,16 @@ $('.popup_menu').click(function(event){
         }, 600);
     };
 });
+
+
+
+
+$('.blog_page_slider_wrapper').slick({
+    slidesToShow: 3,
+    slidesToScroll: 3,
+    dots: false,
+    arrows: true,
+    nextArrow: '<div class="blog_page_next_arrow"></div>',
+    prevArrow: '<div class="blog_page_prew_arrow"></div>',
+    infinite: true
+});

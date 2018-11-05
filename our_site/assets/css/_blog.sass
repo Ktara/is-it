@@ -1,0 +1,640 @@
+.main_blog_wrapper
+  background-color: #f5f5f5
+  z-index: -1
+
+
+.blog_page
+  position: relative
+  width: 100%
+  margin-top: 60px
+  &_slider_wrapper
+    position: relative
+    width: 100%
+    height: calc(100vh - 200px)
+    overflow: hidden
+  &_slide
+    position: relative
+    display: inline-block
+    width: 100%
+    height: calc(100vh - 200px)
+    background-repeat: no-repeat
+    -webkit-background-size: cover
+    background-size: cover
+    z-index: 1
+    text-decoration: none
+    &:before
+      content: ''
+      position: absolute
+      display: block
+      width: 100%
+      height: 100%
+      top: 0
+      left: 0
+      background-color: rgba(85, 85, 85, 0.5)
+    img
+      width: 100%
+      min-height: 100%
+    &_text
+      position: absolute
+      width: calc(100% - 90px)
+      bottom: 100px
+      left: 50px
+      font-size: 24px
+      line-height: 30px
+      @extend .com-bold
+      color: $white
+      z-index: 10
+    &_link
+      position: absolute
+      display: block
+      width: calc(100% - 90px)
+      bottom: 30px
+      left: 50px
+      font-size: 16px
+      color: $white
+      z-index: 10
+      text-decoration: none
+
+  .blog_page_next_arrow
+    cursor: pointer
+    position: absolute
+    width: 70px
+    height: 60px
+    top: calc(50% - 16px)
+    right: 14px
+    background-image: url("../img/blog/arrow-next.png")
+    background-position: center
+    background-repeat: no-repeat
+    background-color: $white
+    z-index: 15
+  .blog_page_prew_arrow
+    cursor: pointer
+    position: absolute
+    width: 70px
+    height: 60px
+    top: calc(50% - 16px)
+    left: 14px
+    background-image: url("../img/blog/arrow-prew.png")
+    background-position: center
+    background-repeat: no-repeat
+    background-color: $white
+    z-index: 15
+
+
+
+
+.blog_beast
+  position: relative
+  width: 100%
+  margin-top: 80px
+  &_header
+    display: inline-block
+    font-size: 30px
+    @extend .com-bold
+    color: $dark-blue
+    margin-right: 50px
+  .active_blog_beast_sorti
+    position: relative
+    &:after
+      content: ''
+      position: absolute
+      display: block
+      width: 100%
+      height: 1px
+      bottom: -2px
+      left: 0
+      background-color: $black
+  &_sorti
+    display: inline-block
+    font-size: 18px
+    line-height: 24px
+    color: $dark-blue
+    text-transform: lowercase
+    margin-right: 30px
+    cursor: pointer
+  &_wrapper
+    position: relative
+    width: 100%
+    margin-top: 30px
+    background-color: $white
+    overflow: hidden
+    img
+      width: 100%
+    .social
+      display: block
+      text-decoration: none
+      color: $light-grey
+      font-size: 16px
+      @extend .com-light
+      margin: 20px auto 0 auto
+
+    .name
+      font-size: 16px
+      @extend .com-light
+      color: $black
+      display: inline-block
+      margin: 15px 0 15px 10px
+      text-decoration: none
+
+    .heart
+      display: flex
+      height: 20px
+      float: right
+      margin: 15px 20px 15px 0
+      img
+        width: 20px
+      span
+        font-size: 14px
+        @extend .com-light
+        color: $black
+        margin: 3px 0 3px 10px
+
+    .comments
+      display: flex
+      float: right
+      margin: 15px 10px 15px 0
+      img
+        width: 20px
+      span
+        font-size: 14px
+        @extend .com-light
+        color: $black
+        margin: 3px 0 3px 10px
+
+  &_title_wrapper
+    position: relative
+    width: calc(100% - 20px)
+    height: 21vh
+    min-height: 225px
+    margin: 0 10px
+    overflow: hidden
+    &:after
+      content: ''
+      position: absolute
+      display: block
+      width: calc(100% + 20px)
+      height: 1px
+      bottom: 0
+      left: -10px
+      background-color: #555555
+      background-image: linear-gradient(to right, #ee0979 0%, #ff6a00 100%)
+    p
+      font-size: 16px
+      line-height: 20px
+      color: $dark-blue
+      margin-top: 20px
+  &_title
+    text-decoration: none
+    color: $dark-blue
+    font-size: 20px
+    line-height: 24px
+    margin-top: 10px
+  &_btn
+    display: block
+    width: 250px
+    height: 60px
+    line-height: 60px
+    font-size: 18px
+    color: $dark-blue
+    text-align: center
+    margin: 50px auto 0 auto
+    cursor: pointer
+    background-color: $white
+
+
+
+
+
+.blog_brif
+  position: relative
+  width: 100%
+  height: 25vh
+  min-height: 265px
+  margin-top: 120px
+  background-repeat: no-repeat
+  -webkit-background-size: cover
+  background-size: cover
+  z-index: 1
+  &:after
+    content: ''
+    display: block
+    position: absolute
+    width: 100%
+    height: 100%
+    top: 0
+    left: 0
+    background-color: $dark-blue
+    opacity: 0.7
+  &_text
+    position: relative
+    display: inline-block
+    width: 70%
+    height: 100%
+    margin-left: 15%
+    text-align: center
+    z-index: 15
+    &_header
+      font-size: 30px
+      line-height: 36px
+      .proxi-reg
+      text-transform: uppercase
+      color: $white
+      margin-top: 50px
+    &_btn
+      display: block
+      width: 370px
+      height: 60px
+      line-height: 60px
+      color: $dark-blue
+      background-color: $white
+      text-align: center
+      cursor: pointer
+      @extend .com-bold
+      font-size: 24px
+      margin: 40px auto 0 auto
+
+
+
+
+
+
+.blog_smm
+  position: relative
+  width: 100%
+  margin-top: 120px
+  &_header
+    display: inline-block
+    font-size: 30px
+    @extend .com-bold
+    color: $dark-blue
+    margin-right: 50px
+  .active_blog_smm_sorti
+    position: relative
+    &:after
+      content: ''
+      position: absolute
+      display: block
+      width: 100%
+      height: 1px
+      bottom: -2px
+      left: 0
+      background-color: $black
+  &_sorti
+    display: inline-block
+    font-size: 18px
+    line-height: 24px
+    color: $dark-blue
+    margin-right: 30px
+    cursor: pointer
+  &_wrapper
+    position: relative
+    width: 100%
+    margin-top: 30px
+    background-color: $white
+    overflow: hidden
+    img
+      width: 100%
+    .social
+      display: block
+      text-decoration: none
+      color: $light-grey
+      font-size: 16px
+      @extend .com-light
+      margin: 20px auto 0 auto
+
+    .name
+      font-size: 16px
+      @extend .com-light
+      color: $black
+      display: inline-block
+      margin: 15px 0 15px 10px
+      text-decoration: none
+
+    .heart
+      display: flex
+      height: 20px
+      float: right
+      margin: 15px 20px 15px 0
+      img
+        width: 20px
+      span
+        font-size: 14px
+        @extend .com-light
+        color: $black
+        margin: 3px 0 3px 10px
+
+    .comments
+      display: flex
+      float: right
+      margin: 15px 10px 15px 0
+      img
+        width: 20px
+      span
+        font-size: 14px
+        @extend .com-light
+        color: $black
+        margin: 3px 0 3px 10px
+
+  &_title_wrapper
+    position: relative
+    width: calc(100% - 20px)
+    height: 21vh
+    min-height: 225px
+    margin: 0 10px
+    overflow: hidden
+    &:after
+      content: ''
+      position: absolute
+      display: block
+      width: calc(100% + 20px)
+      height: 1px
+      bottom: 0
+      left: -10px
+      background-color: #555555
+      background-image: linear-gradient(to right, #ee0979 0%, #ff6a00 100%)
+    p
+      font-size: 16px
+      line-height: 20px
+      color: $dark-blue
+      margin-top: 20px
+  &_title
+    text-decoration: none
+    color: $dark-blue
+    font-size: 20px
+    line-height: 24px
+    margin-top: 10px
+  &_btn
+    display: block
+    width: 250px
+    height: 60px
+    line-height: 60px
+    font-size: 18px
+    color: $dark-blue
+    text-align: center
+    margin: 50px auto 0 auto
+    cursor: pointer
+    background-color: $white
+
+
+
+
+
+.blog_web
+  position: relative
+  width: 100%
+  margin-top: 120px
+  &_header
+    display: inline-block
+    font-size: 30px
+    @extend .com-bold
+    color: $dark-blue
+    margin-right: 50px
+  .active_blog_web_sorti
+    position: relative
+    &:after
+      content: ''
+      position: absolute
+      display: block
+      width: 100%
+      height: 1px
+      bottom: -2px
+      left: 0
+      background-color: $black
+  &_sorti
+    display: inline-block
+    font-size: 18px
+    line-height: 24px
+    color: $dark-blue
+    margin-right: 30px
+    cursor: pointer
+  &_wrapper
+    position: relative
+    width: 100%
+    margin-top: 30px
+    background-color: $white
+    overflow: hidden
+    img
+      width: 100%
+    .social
+      display: block
+      text-decoration: none
+      color: $light-grey
+      font-size: 16px
+      @extend .com-light
+      margin: 20px auto 0 auto
+
+    .name
+      font-size: 16px
+      @extend .com-light
+      color: $black
+      display: inline-block
+      margin: 15px 0 15px 10px
+      text-decoration: none
+
+    .heart
+      display: flex
+      height: 20px
+      float: right
+      margin: 15px 20px 15px 0
+      img
+        width: 20px
+      span
+        font-size: 14px
+        @extend .com-light
+        color: $black
+        margin: 3px 0 3px 10px
+
+    .comments
+      display: flex
+      float: right
+      margin: 15px 10px 15px 0
+      img
+        width: 20px
+      span
+        font-size: 14px
+        @extend .com-light
+        color: $black
+        margin: 3px 0 3px 10px
+
+  &_title_wrapper
+    position: relative
+    width: calc(100% - 20px)
+    height: 21vh
+    min-height: 225px
+    margin: 0 10px
+    overflow: hidden
+    &:after
+      content: ''
+      position: absolute
+      display: block
+      width: calc(100% + 20px)
+      height: 1px
+      bottom: 0
+      left: -10px
+      background-color: #555555
+      background-image: linear-gradient(to right, #ee0979 0%, #ff6a00 100%)
+    p
+      font-size: 16px
+      line-height: 20px
+      color: $dark-blue
+      margin-top: 20px
+  &_title
+    text-decoration: none
+    color: $dark-blue
+    font-size: 20px
+    line-height: 24px
+    margin-top: 10px
+  &_btn
+    display: block
+    width: 250px
+    height: 60px
+    line-height: 60px
+    font-size: 18px
+    color: $dark-blue
+    text-align: center
+    margin: 50px auto 0 auto
+    cursor: pointer
+    background-color: $white
+
+
+
+
+
+.blog_other
+  position: relative
+  width: 100%
+  height: 15vh
+  min-height: 160px
+  margin-top: 120px
+  background-color: $dark-blue
+  &_text
+    position: relative
+    display: flex
+    justify-content: space-between
+    width: 100%
+    height: 100%
+    z-index: 15
+    &_header
+      display: inline-block
+      font-size: 30px
+      line-height: 36px
+      .proxi-reg
+      text-transform: uppercase
+      color: $white
+      margin-top: 50px
+    &_btn
+      display: inline-block
+      width: 270px
+      height: 60px
+      line-height: 60px
+      color: $dark-blue
+      background-color: $white
+      text-align: center
+      cursor: pointer
+      @extend .com-bold
+      font-size: 24px
+      margin-top: 50px
+
+
+
+
+
+
+.blog_read
+  position: relative
+  width: 100%
+  margin-top: 120px
+  &_header
+    display: inline-block
+    font-size: 30px
+    @extend .com-bold
+    color: $dark-blue
+    margin-right: 50px
+  &_wrapper
+    position: relative
+    width: 100%
+    margin-top: 30px
+    background-color: $white
+    overflow: hidden
+    img
+      width: 100%
+    .social
+      display: block
+      text-decoration: none
+      color: $light-grey
+      font-size: 16px
+      @extend .com-light
+      margin: 20px auto 0 auto
+
+    .name
+      font-size: 16px
+      @extend .com-light
+      color: $black
+      display: inline-block
+      margin: 15px 0 15px 10px
+      text-decoration: none
+
+    .heart
+      display: flex
+      height: 20px
+      float: right
+      margin: 15px 20px 15px 0
+      img
+        width: 20px
+      span
+        font-size: 14px
+        @extend .com-light
+        color: $black
+        margin: 3px 0 3px 10px
+
+    .comments
+      display: flex
+      float: right
+      margin: 15px 10px 15px 0
+      img
+        width: 20px
+      span
+        font-size: 14px
+        @extend .com-light
+        color: $black
+        margin: 3px 0 3px 10px
+
+  &_title_wrapper
+    position: relative
+    width: calc(100% - 20px)
+    height: 21vh
+    min-height: 225px
+    margin: 0 10px
+    overflow: hidden
+    &:after
+      content: ''
+      position: absolute
+      display: block
+      width: calc(100% + 20px)
+      height: 1px
+      bottom: 0
+      left: -10px
+      background-color: #555555
+      background-image: linear-gradient(to right, #ee0979 0%, #ff6a00 100%)
+    p
+      font-size: 16px
+      line-height: 20px
+      color: $dark-blue
+      margin-top: 20px
+  &_title
+    text-decoration: none
+    color: $dark-blue
+    font-size: 20px
+    line-height: 24px
+    margin-top: 10px
+  &_btn
+    display: block
+    width: 250px
+    height: 60px
+    line-height: 60px
+    font-size: 18px
+    color: $dark-blue
+    text-align: center
+    margin: 50px auto 0 auto
+    cursor: pointer
+    background-color: $white
