@@ -1,0 +1,300 @@
+.main_blog_wrapper
+  background-color: #f5f5f5
+  z-index: -1
+
+
+.article
+  position: relative
+  width: 100%
+  margin-top: 80px
+  &_header
+    font-size: 48px
+  &_social
+    position: relative
+    height: 20px
+    margin-top: 60px
+    img
+      height: 20px
+      margin-right: 20px
+  &_link
+    position: relative
+    display: inline-block
+    .name
+      font-size: 16px
+      @extend .com-light
+      color: $black
+      display: inline-block
+      margin: 30px 50px 0 0
+      text-decoration: none
+      float: left
+
+    .heart
+      display: flex
+      height: 20px
+      margin: 30px 20px 0 0
+      float: left
+      img
+        width: 20px
+      span
+        font-size: 14px
+        @extend .com-light
+        color: $black
+        margin: 3px 0 3px 10px
+
+    .comments
+      display: flex
+      margin: 30px 20px 0 0
+      float: left
+      img
+        width: 20px
+      span
+        font-size: 14px
+        @extend .com-light
+        color: $black
+        margin: 3px 0 3px 10px
+
+  &_text
+    font-size: 18px
+    line-height: 30px
+    color: $dark-grey
+    margin-top: 60px
+  &_image
+    margin-top: 40px
+    width: 100%
+    img
+      width: 100%
+
+
+
+
+.article_resolution
+  position: relative
+  width: 100%
+  &_block
+    margin-top: 50px
+    &_title
+      font-size: 24px
+      line-height: 30px
+      color: $dark-grey
+      margin-bottom: 10px
+    &_text
+      p
+        font-size: 18px
+        line-height: 30px
+        margin-top: 20px
+
+
+
+
+
+.article_read
+  position: relative
+  width: 100%
+  margin-top: 120px
+  &_header
+    position: relative
+    display: inline-block
+    font-size: 30px
+    color: $dark-grey
+    &:before
+      content: ''
+      position: absolute
+      display: block
+      width: 100%
+      height: 2px
+      bottom: -15px
+      left: 0
+      background-color: #00a651
+      background-image: linear-gradient(to right, #ee0979 0%, #ff6a00 100%)
+  &_line
+    display: block
+    width: 100%
+    height: 1px
+    background-color: #555555
+    background-image: linear-gradient(to right, #ee0979 0%, #ff6a00 100%)
+    margin-top: 15px
+  &_wrapper
+    position: relative
+    width: 100%
+    margin-top: 30px
+    background-color: $white
+    overflow: hidden
+    img
+      width: 100%
+    .social
+      display: block
+      text-decoration: none
+      color: $light-grey
+      font-size: 16px
+      @extend .com-light
+      margin: 20px auto 0 auto
+
+    .name
+      font-size: 16px
+      @extend .com-light
+      color: $black
+      display: inline-block
+      margin: 15px 0 15px 10px
+      text-decoration: none
+
+    .heart
+      display: flex
+      height: 20px
+      float: right
+      margin: 15px 20px 15px 0
+      img
+        width: 20px
+      span
+        font-size: 14px
+        @extend .com-light
+        color: $black
+        margin: 3px 0 3px 10px
+
+    .comments
+      display: flex
+      float: right
+      margin: 15px 10px 15px 0
+      img
+        width: 20px
+      span
+        font-size: 14px
+        @extend .com-light
+        color: $black
+        margin: 3px 0 3px 10px
+
+  &_title_wrapper
+    position: relative
+    width: calc(100% - 20px)
+    height: 21vh
+    min-height: 225px
+    margin: 0 10px
+    overflow: hidden
+    &:after
+      content: ''
+      position: absolute
+      display: block
+      width: calc(100% + 20px)
+      height: 1px
+      bottom: 0
+      left: -10px
+      background-color: #555555
+      background-image: linear-gradient(to right, #ee0979 0%, #ff6a00 100%)
+    p
+      font-size: 16px
+      line-height: 20px
+      color: $dark-blue
+      margin-top: 20px
+  &_title
+    text-decoration: none
+    color: $dark-blue
+    font-size: 20px
+    line-height: 24px
+    margin-top: 10px
+
+
+
+
+
+.article_comments
+  position: relative
+  width: 100%
+  margin-top: 120px
+  &_header
+    position: relative
+    display: inline-block
+    font-size: 30px
+    color: $dark-grey
+    &:before
+      content: ''
+      position: absolute
+      display: block
+      width: 100%
+      height: 2px
+      bottom: -15px
+      left: 0
+      background-color: #00a651
+      background-image: linear-gradient(to right, #ee0979 0%, #ff6a00 100%)
+  &_line
+    display: block
+    width: 100%
+    height: 1px
+    background-color: #555555
+    background-image: linear-gradient(to right, #ee0979 0%, #ff6a00 100%)
+    margin-top: 15px
+  &_form
+    display: inline-block
+    width: 100%
+    margin-top: 20px
+    &_textarea_wrapper
+      display: block
+      width: 100%
+      padding: 0.25px 1px 0.1px 1px
+      border-radius: 10px
+      background-color: #555555
+      background-image: linear-gradient(to right, #ee0979 0%, #ff6a00 100%)
+  &_textarea
+    display: block
+    width: 100%
+    height: auto
+    resize: vertical
+    line-height: 20px
+    overflow: auto
+    outline: none
+    -moz-appearance: none
+    font-size: 14px
+    color: $dark-white
+    @extend .com-reg
+    padding: 13px 0 0 20px
+    border-radius: 10px
+    background-color: $white
+    border: none
+  &_btn
+    display: block
+    width: 160px
+    height: 45px
+    font-size: 16px
+    line-height: 43px
+    background-color: $dark-blue
+    color: $white
+    margin-top: 30px
+    margin-bottom: 25px
+    border-radius: 10px
+    border: 1px solid $dark-blue
+    cursor: pointer
+    @extend .com-reg
+
+  &_text_wrapper
+    position: relative
+    width: 100%
+    height: 350px
+    overflow: hidden
+    &_name
+      font-size: 18px
+      color: $dark-blue
+      margin-top: 20px
+  &_text_block
+    display: block
+    width: 100%
+    padding: 1px
+    border-radius: 10px
+    margin-top: 10px
+    background-color: #555555
+    background-image: linear-gradient(to right, #ee0979 0%, #ff6a00 100%)
+  &_text
+    display: block
+    width: 100%
+    height: auto
+    font-size: 18px
+    line-height: 24px
+    padding: 15px 20px 30px 20px
+    background-color: $white
+    color: $dark-blue
+    border-radius: 10px
+  &_arrow
+    display: block
+    width: 35px
+    height: 20px
+    margin: 30px auto 0 auto
+    cursor: pointer
+    img
+      width: 100%
