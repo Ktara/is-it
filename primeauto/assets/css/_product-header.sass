@@ -1,20 +1,4 @@
-.nav_header_tel
-  position: relative
-  width: 100%
-  &_block
-    position: relative
-    display: flex
-    justify-content: flex-end
-    align-items: center
-    width: 100%
-    height: 35px
-    padding: 0 130px
-    background-color: $brown
-    li
-      display: inline-block
-      margin-left: 15px
-      color: $dark-white
-.nav_header
+.nav_product
   position: fixed
   width: 100%
   height: 85px
@@ -48,14 +32,23 @@
   &_list
     position: relative
     display: flex
-    justify-content: space-between
     margin: 0 25px
     padding-right: 130px
+    li
+      display: inline-block
+      line-height: 85px
+      color: $black
+      margin-left: 20px
     a
       display: inline-block
       text-decoration: none
       font-size: 18px
       line-height: 85px
       color: $black
-      &:hover
-        text-decoration: underline
+      span
+        @extend .lato-bold
+
+
+
+.nav_product_active
+  top: 0
