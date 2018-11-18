@@ -17,7 +17,7 @@
   font-family: "Lato", sans-serif;
   font-weight: 400; }
 
-.lato-bold, .nav_header_logo a p, .nav_product_logo a p, .nav_product_list a span, .main_about_logo p, footer .footer_logo a, .auto_product_main_about_title {
+.lato-bold, .nav_header_logo a p, .nav_product_logo a p, .nav_product_list a span, .main_about_logo p, footer .footer_logo a, .auto_product_main_about_title, .auto_product_block_wrapper_text_title, .auto_product_block_other_wrapper_text_title {
   font-family: "Lato", sans-serif;
   font-weight: 700; }
 
@@ -597,7 +597,7 @@ footer {
   position: absolute;
   display: inline-block;
   z-index: 1000;
-  left: calc(37% + 63px);
+  left: 47.5%;
   bottom: -55px; }
 
 .auto_product_main_slider_wrapper .slick-dots .slick-active {
@@ -764,8 +764,7 @@ footer {
   position: relative;
   width: 100%;
   padding: 0 130px;
-  margin-top: 60px;
-  padding-bottom: 65px; }
+  margin-top: 60px; }
   .auto_pro_video_block {
     position: relative;
     width: 90%; }
@@ -795,28 +794,12 @@ footer {
       bottom: -25px;
       right: 0;
       background-color: #212121; }
-  .auto_pro_video_btn {
-    position: absolute;
-    display: block;
-    width: 255px;
-    height: 35px;
-    right: 130px;
-    bottom: 0;
-    border: 1px solid #000000;
-    background-color: #fff;
-    font-size: 16px;
-    line-height: 33px;
-    text-align: center;
-    color: #000000;
-    cursor: pointer;
-    float: right;
-    text-decoration: none; }
 
 .auto_pro_other {
   position: relative;
   width: 100%;
   padding: 0 130px;
-  margin-top: 120px; }
+  margin-top: 155px; }
   .auto_pro_other_header {
     font-size: 24px;
     color: #212121; }
@@ -887,5 +870,131 @@ footer {
       -ms-transition: all 0.4s;
       -o-transition: all 0.4s;
       transition: all 0.4s; }
+
+.auto_product_block {
+  position: relative;
+  width: 100%;
+  padding: 0 130px;
+  margin-top: 200px; }
+  .auto_product_block_name {
+    font-size: 30px;
+    color: #212121; }
+  .auto_product_block_wrapper {
+    position: relative;
+    width: 100%;
+    display: block;
+    margin-top: 50px; }
+    .auto_product_block_wrapper_image {
+      position: relative;
+      display: block;
+      width: 100%;
+      max-height: 280px;
+      overflow: hidden;
+      margin-top: 50px; }
+      .auto_product_block_wrapper_image img {
+        width: 100%;
+        min-height: 280px; }
+    .auto_product_block_wrapper_text {
+      position: relative;
+      display: block;
+      width: 100%;
+      margin-top: 50px;
+      padding-bottom: 20px; }
+      .auto_product_block_wrapper_text p {
+        display: block;
+        font-size: 18px;
+        line-height: 24px;
+        color: #212121; }
+      .auto_product_block_wrapper_text:after {
+        content: "";
+        position: absolute;
+        display: block;
+        width: 50%;
+        height: 1px;
+        bottom: 0;
+        left: 0;
+        background-color: #212121; }
+      .auto_product_block_wrapper_text_title {
+        font-size: 18px;
+        line-height: 30px; }
+      .auto_product_block_wrapper_text_list li {
+        position: relative;
+        font-size: 18px;
+        line-height: 24px;
+        color: #212121;
+        margin-top: 20px;
+        text-indent: 32px; }
+        .auto_product_block_wrapper_text_list li:before {
+          content: url(../img/photo/circle.png);
+          position: absolute;
+          top: -4px;
+          left: -30px; }
+  .auto_product_block_other_wrapper {
+    position: relative;
+    width: 100%;
+    display: block;
+    margin-top: 50px; }
+    .auto_product_block_other_wrapper_image {
+      position: relative;
+      display: block;
+      width: 100%;
+      max-height: 350px;
+      overflow: hidden;
+      margin-top: 50px; }
+      .auto_product_block_other_wrapper_image img {
+        width: 100%;
+        min-height: 350px; }
+    .auto_product_block_other_wrapper_text {
+      position: relative;
+      display: block;
+      width: 100%;
+      margin-top: 50px;
+      padding-bottom: 20px; }
+      .auto_product_block_other_wrapper_text p {
+        display: block;
+        font-size: 18px;
+        line-height: 24px;
+        color: #212121; }
+      .auto_product_block_other_wrapper_text:after {
+        content: "";
+        position: absolute;
+        display: block;
+        width: 100%;
+        height: 1px;
+        bottom: 0;
+        left: 0;
+        background-color: #212121; }
+      .auto_product_block_other_wrapper_text_title {
+        font-size: 18px;
+        line-height: 30px; }
+      .auto_product_block_other_wrapper_text_list li {
+        position: relative;
+        font-size: 18px;
+        line-height: 24px;
+        color: #212121;
+        margin-top: 20px;
+        text-indent: 32px; }
+        .auto_product_block_other_wrapper_text_list li:before {
+          content: url(../img/photo/circle.png);
+          position: absolute;
+          top: -4px;
+          left: -30px; }
+
+.auto_pro_order_btn {
+  position: relative;
+  display: block;
+  width: 255px;
+  height: 35px;
+  right: 130px;
+  border: 1px solid #000000;
+  background-color: #fff;
+  font-size: 16px;
+  line-height: 33px;
+  text-align: center;
+  color: #000000;
+  cursor: pointer;
+  float: right;
+  text-decoration: none;
+  margin-top: 50px; }
 
 /*# sourceMappingURL=style.css.map */

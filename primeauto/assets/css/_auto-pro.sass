@@ -125,11 +125,15 @@
   position: absolute
   display: inline-block
   z-index: 1000
-  left: calc(37% + 63px)
+  left: 47.5%
   bottom: -55px
 .auto_product_main_slider_wrapper .slick-dots .slick-active
   display: inline-block
   font-size: 24px
+
+
+
+
 
 
 
@@ -174,6 +178,11 @@
       transform: rotate(-180deg)
 
 
+
+
+
+
+
 .auto_product_main_review
   position: relative
   width: 100%
@@ -206,6 +215,9 @@
       -ms-transform: rotate(-180deg)
       -o-transform: rotate(-180deg)
       transform: rotate(-180deg)
+
+
+
 
 
 
@@ -327,7 +339,6 @@
   width: 100%
   padding: 0 130px
   margin-top: 60px
-  padding-bottom: 65px
   &_block
     position: relative
     width: 90%
@@ -357,22 +368,7 @@
       bottom: -25px
       right: 0
       background-color: $dark-grey
-  &_btn
-    position: absolute
-    display: block
-    width: 255px
-    height: 35px
-    right: 130px
-    bottom: 0
-    border: 1px solid $black
-    background-color: #fff
-    font-size: 16px
-    line-height: 33px
-    text-align: center
-    color: $black
-    cursor: pointer
-    float: right
-    text-decoration: none
+
 
 
 
@@ -384,7 +380,7 @@
   position: relative
   width: 100%
   padding: 0 130px
-  margin-top: 120px
+  margin-top: 155px
   &_header
     font-size: 24px
     color: $dark-grey
@@ -457,3 +453,141 @@
       transition: all 0.4s
 
 
+
+
+
+
+
+
+.auto_product_block
+  position: relative
+  width: 100%
+  padding: 0 130px
+  margin-top: 200px
+  &_name
+    font-size: 30px
+    color: $dark-grey
+  &_wrapper
+    position: relative
+    width: 100%
+    display: block
+    margin-top: 50px
+    &_image
+      position: relative
+      display: block
+      width: 100%
+      max-height: 280px
+      overflow: hidden
+      margin-top: 50px
+      img
+        width: 100%
+        min-height: 280px
+    &_text
+      position: relative
+      display: block
+      width: 100%
+      margin-top: 50px
+      padding-bottom: 20px
+      p
+        display: block
+        font-size: 18px
+        line-height: 24px
+        color: $dark-grey
+      &:after
+        content: ''
+        position: absolute
+        display: block
+        width: 50%
+        height: 1px
+        bottom: 0
+        left: 0
+        background-color: $dark-grey
+      &_title
+        font-size: 18px
+        line-height: 30px
+        @extend .lato-bold
+      &_list
+        li
+          position: relative
+          font-size: 18px
+          line-height: 24px
+          color: $dark-grey
+          margin-top: 20px
+          text-indent: 32px
+          &:before
+            content: url(../img/photo/circle.png)
+            position: absolute
+            top: -4px
+            left: -30px
+  &_other_wrapper
+    position: relative
+    width: 100%
+    display: block
+    margin-top: 50px
+    &_image
+      position: relative
+      display: block
+      width: 100%
+      max-height: 350px
+      overflow: hidden
+      margin-top: 50px
+      img
+        width: 100%
+        min-height: 350px
+    &_text
+      position: relative
+      display: block
+      width: 100%
+      margin-top: 50px
+      padding-bottom: 20px
+      p
+        display: block
+        font-size: 18px
+        line-height: 24px
+        color: $dark-grey
+      &:after
+        content: ''
+        position: absolute
+        display: block
+        width: 100%
+        height: 1px
+        bottom: 0
+        left: 0
+        background-color: $dark-grey
+      &_title
+        font-size: 18px
+        line-height: 30px
+        @extend .lato-bold
+      &_list
+        li
+          position: relative
+          font-size: 18px
+          line-height: 24px
+          color: $dark-grey
+          margin-top: 20px
+          text-indent: 32px
+          &:before
+            content: url(../img/photo/circle.png)
+            position: absolute
+            top: -4px
+            left: -30px
+
+
+
+
+.auto_pro_order_btn
+  position: relative
+  display: block
+  width: 255px
+  height: 35px
+  right: 130px
+  border: 1px solid $black
+  background-color: #fff
+  font-size: 16px
+  line-height: 33px
+  text-align: center
+  color: $black
+  cursor: pointer
+  float: right
+  text-decoration: none
+  margin-top: 50px
