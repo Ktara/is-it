@@ -276,6 +276,13 @@
 
 
 
+//@keyframes show_text
+//  100%
+//    max-height: 250px
+//.animate_product_text
+//  max-height: 0
+//  //background-color: transparent
+//  animation: show_text 1s 0.5s forwards
 
 .auto_pro_components
   position: relative
@@ -288,24 +295,50 @@
     display: flex
     justify-content: space-between
     &_wrapper
-      width: 19%
+      width: 20%
       position: relative
-      display: inline-block
-      //&:hover
-      //  .auto_pro_components_list_text
-      //    top: 0
-      //    opacity: 1
-      //    height: auto
+      display: flex
+      flex-direction: column
+      flex: 1 0 10em
+      overflow: hidden
+      margin: 0 5px
+      box-sizing: border-box
+      -webkit-transition: flex-basis 500ms
+      -moz-transition: flex-basis 500ms
+      -ms-transition: flex-basis 500ms
+      -o-transition: flex-basis 500ms
+      transition: flex-basis 500ms
+      &:hover
+        flex-basis: 20em
+        .auto_pro_components_list_text
+          max-height: 250px
+          -webkit-transition: max-height 1.5s
+          -moz-transition: max-height 1.5s
+          -ms-transition: max-height 1.5s
+          -o-transition: max-height 1.5s
+          transition: max-height 1.5s
+          transition-delay: 0s
+        .auto_pro_components_list_text_viewer
+          opacity: 1
     &_image
+      position: relative
+      display: flex
+      justify-content: center
       width: 100%
-      max-height: 250px
+      height: 21vh
+      min-height: 250px
       overflow: hidden
       z-index: 10
       img
-        width: 100%
-        min-height: 250px
+        position: relative
+        width: auto
+        height: 140%
+        top: -20%
+        left: 0
     &_title
       display: block
+      height: 50px
+      overflow: visible
       font-size: 16px
       line-height: 24px
       text-align: center
@@ -318,16 +351,26 @@
       font-size: 16px
       line-height: 24px
       color: $dark-grey
-      margin-top: 30px
-      height: 0
+      max-height: 0
       overflow: hidden
-      //-webkit-transition: all 0.5s
-      //-moz-transition: all 0.5s
-      //-ms-transition: all 0.5s
-      //-o-transition: all 0.5s
-      //transition: all 0.5s
+      -webkit-transition: max-height 1.5s
+      -moz-transition: max-height 1.5s
+      -ms-transition: max-height 1.5s
+      -o-transition: max-height 1.5s
+      transition: max-height 1.5s
+      transition-delay: 1s
       &_viewer
+        width: 25em
         height: auto
+        opacity: 0
+        -webkit-transition: opacity 1.5s
+        -moz-transition: opacity 1.5s
+        -ms-transition: opacity 1.5s
+        -o-transition: opacity 1.5s
+        transition: opacity 1.5s
+
+//.auto_pro_components_list_active
+//  fb
 
 
 

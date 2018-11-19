@@ -94,16 +94,7 @@ $('.auto_product_main_review_title').click(function(){
 
 
 
-$('.auto_pro_components_list_wrapper').mouseover(function(){
-    $('.auto_pro_components_list_text').animate({
-        height: 0
-    }, 400);
-    var target = $(this).next();
-    var childHeight = target.children().height();
-    target.animate({
-        height: childHeight
-    }, 600);
-});
+
 
 
 
