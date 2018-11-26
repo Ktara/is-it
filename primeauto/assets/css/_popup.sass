@@ -1,0 +1,97 @@
+.auto_popup
+  position: fixed
+  display: block
+  width: 100%
+  height: 0
+  top: 0
+  left: 0
+  z-index: 210
+  overflow: hidden
+  opacity: 0
+  &_active
+    height: 100vh
+  &:before
+    content: ''
+    position: absolute
+    display: block
+    width: 100%
+    height: 100%
+    top: 0
+    left: 0
+    background-color: rgba(129, 129, 129, 0.6)
+  &_wrapper
+    position: relative
+    width: 100%
+    height: auto
+    margin-top: 85px
+    overflow: hidden
+    z-index: 1
+    .auto_popup_close
+      position: absolute
+      display: block
+      width: 18px
+      height: 18px
+      top: 20px
+      right: 20px
+      z-index: 220
+      cursor: pointer
+      img
+        width: 100%
+  &_registration
+    position: relative
+    width: 100%
+    height: auto
+    background-color: white
+    z-index: 1
+    padding-left: 20%
+    padding-right: 20%
+    padding-bottom: 120px
+    &_header
+      font-size: 30px
+      color: $dark-grey
+      padding-top: 60px
+      text-align: center
+    &_form
+      position: relative
+      width: 85%
+      margin-top: 60px
+      &_title
+        display: block
+        font-size: 30px
+        color: $dark-grey
+        margin-top: 20px
+      input
+        width: 300px
+        height: 35px
+        margin-top: 20px
+        outline: none
+        border: 1px solid #000000
+        @extend .lato-reg
+        text-indent: 10px
+      input:focus
+        outline: none
+        border: 1px solid #000000
+        color: $dark-grey
+    &_btn
+      display: block
+      width: 300px
+      height: 35px
+      font-size: 16px
+      line-height: 33px
+      margin-top: 30px
+      color: #ffffff
+      background-color: $green
+      border: 1px solid $green
+      text-align: center
+      cursor: pointer
+      -webkit-transition: all 0.6s
+      -o-transition: all 0.6s
+      transition: all 0.6s
+      &:hover
+        color: $dark-grey
+        background-color: #ffffff
+    &_text
+      font-size: 16px
+      line-height: 24px
+      color: $light-black
+      margin-top: 30px

@@ -95,8 +95,51 @@ $('.auto_product_main_review_title').click(function(){
 
 
 
+$('.popup_click').click(function(){
+    $('.auto_popup').addClass('auto_popup_active').velocity({
+        opacity: 1
+    }, 600);
+});
+$('.auto_popup_close').click(function(){
+    $('.auto_popup').removeClass('auto_popup_active').velocity({
+        opacity: 0
+    }, 600);
+});
+
+$('.auto_popup').click(function(event){
+    if(event.target === this){
+        $(this).velocity({
+            opacity: 0
+        }, 600);
+        setTimeout(function(){
+            $('.auto_popup').removeClass('auto_popup_active');
+        }, 600);
+    };
+});
 
 
 
 
 
+$('.nav_header_list_wrapper').click(function(){
+    $('.popup_nav_menu_mob').addClass('popup_nav_menu_mob_active').velocity({
+        opacity: 1
+    }, 600);
+});
+
+$('.popup_nav_menu_mob_close').click(function(){
+    $('.popup_nav_menu_mob').removeClass('popup_nav_menu_mob_active').velocity({
+        opacity: 0
+    }, 600);
+});
+
+$('.popup_nav_menu_mob').click(function(event){
+    if(event.target === this){
+        $(this).velocity({
+            opacity: 0
+        }, 600);
+        setTimeout(function(){
+            $('.popup_nav_menu_mob').removeClass('popup_nav_menu_mob_active');
+        }, 600);
+    };
+});

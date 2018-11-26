@@ -3,6 +3,12 @@ footer
   width: 100%
   padding: 0 130px
   margin-top: 90px
+  @media screen and (max-width: 1024px)
+    padding: 0 60px
+  @media screen and (max-width: 768px)
+    padding: 0 40px
+  @media screen and (max-width: 768px)
+    padding: 0 15px
   .form_wrapper
     position: relative
     display: block
@@ -16,6 +22,12 @@ footer
       right: -30px
       top: 60px
       background-color: $light-black
+      @media screen and (max-width: 750px)
+        width: 40%
+        height: 1px
+        right: 30%
+        top: auto
+        bottom: -30px
   .form_header
     font-size: 24px
     color: $dark-green
@@ -55,6 +67,9 @@ footer
     width: 200px
     height: 115px
     margin: 50px auto 0 auto
+    @media screen and (max-width: 768px)
+      width: 85px
+      height: 55px
     img
       display: inline-block
       width: 100%
@@ -65,11 +80,15 @@ footer
       color: $green
       @extend .lato-bold
       text-decoration: none
+      @media screen and (max-width: 768px)
+        font-size: 72px
   .adress_wrapper
     position: relative
     display: block
     width: 100%
     margin-top: 25px
+    @media screen and (max-width: 750px)
+      margin-top: 60px
     &:after
       content: ''
       position: absolute
@@ -79,6 +98,8 @@ footer
       left: -30px
       top: 35px
       background-color: $light-black
+      @media screen and (max-width: 750px)
+        display: none
   .adress
     p
       font-size: 16px

@@ -12,17 +12,37 @@
   -ms-transition: top 0.2s
   -o-transition: top 0.2s
   transition: top 0.2s
+  @media screen and (max-width: 750px)
+    top: 50px
+    height: auto
+    padding-bottom: 10px
+
   &_logo
     position: relative
     display: inline-block
     padding-left: 130px
+    @media screen and (max-width: 1024px)
+      padding-left: 60px
+    @media screen and (max-width: 768px)
+      padding-left: 40px
+    @media screen and (max-width: 750px)
+      padding-left: 15px
+      width: 100%
     a
       text-decoration: none
       display: inline-block
       width: 80px
       height: 50px
+      @media screen and (max-width: 750px)
+        text-align: center
+        width: 100%
       img
         width: 100%
+        @media screen and (max-width: 750px)
+          display: block
+          margin: 0 auto
+          width: auto
+          height: 100%
       p
         font-size: 48px
         line-height: 85px
@@ -34,17 +54,31 @@
     display: flex
     margin: 0 25px
     padding-right: 130px
+    @media screen and (max-width: 1024px)
+      padding-right: 60px
+      margin-right: 0
+    @media screen and (max-width: 768px)
+      padding-right: 40px
+      margin-right: 0
+    @media screen and (max-width: 750px)
+      padding-right: 15px
+      margin: 0
+      flex-wrap: wrap
     li
       display: inline-block
       line-height: 85px
       color: $black
       margin-left: 20px
+      @media screen and (max-width: 750px)
+        line-height: 40px
     a
       display: inline-block
       text-decoration: none
       font-size: 18px
       line-height: 85px
       color: $black
+      @media screen and (max-width: 750px)
+        line-height: 40px
       span
         @extend .lato-bold
 

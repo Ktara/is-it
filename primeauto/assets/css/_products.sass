@@ -5,9 +5,18 @@
   min-height: 410px
   margin-top: 85px
   overflow: hidden
+  @media screen and (max-width: 1024px)
+    min-height: 200px
+  @media screen and (max-width: 768px)
+    height: auto
+  @media screen and (max-width: 750px)
+    margin-top: 185px
   img
+    position: absolute
+    top: 0
+    left: 0
+    height: 100%
     min-width: 100%
-    min-height: 410px
 
 
 
@@ -19,6 +28,12 @@
   width: 100%
   padding: 0 130px
   margin-top: 50px
+  @media screen and (max-width: 1024px)
+    padding: 0 60px
+  @media screen and (max-width: 768px)
+    padding: 0 40px
+  @media screen and (max-width: 750px)
+    padding: 0 15px
   &_header
     font-size: 24px
     color: $dark-grey
@@ -100,6 +115,12 @@
   margin-top: 120px
   box-shadow: 0 -1px 16px rgba(0, 0, 0, 0.04)
   background-color: #ffffff
+  @media screen and (max-width: 1024px)
+    padding: 50px 60px
+  @media screen and (max-width: 768px)
+    padding: 50px 40px
+  @media screen and (max-width: 750px)
+    display: none
   &_slider_wrapper
     width: 100%
     .products_trust_slide
@@ -112,16 +133,16 @@
   .products_trust_next_arrow
     cursor: pointer
     position: absolute
-    width: 36px
-    height: 60px
-    top: calc(50% - 30px)
+    width: 18px
+    height: 30px
+    top: calc(50% - 15px)
     right: -8%
-    background-image: url("../img/icon/nextA.png")
+    background-image: url("../img/icon/nAr.png")
   .products_trust_prew_arrow
     cursor: pointer
     position: absolute
-    width: 36px
-    height: 60px
-    top: calc(50% - 30px)
+    width: 18px
+    height: 30px
+    top: calc(50% - 15px)
     left: -8%
-    background-image: url("../img/icon/prewA.png")
+    background-image: url("../img/icon/pAr.png")
