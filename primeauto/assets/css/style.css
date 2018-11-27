@@ -273,7 +273,7 @@
   left: 0;
   box-shadow: 0 1px 19px 1px rgba(0, 0, 0, 0.26);
   background-color: #dfdfdf;
-  z-index: 200;
+  z-index: 500;
   -webkit-transition: top 0.2s;
   -moz-transition: top 0.2s;
   -ms-transition: top 0.2s;
@@ -823,13 +823,17 @@ footer {
       padding: 0 40px; } }
   @media screen and (max-width: 750px) {
     .auto_product_main {
-      padding: 0 15px; } }
+      padding: 0 15px;
+      margin-top: 200px; } }
   .auto_product_main_about_wrapper {
     position: relative;
     width: 100%; }
   .auto_product_main_about_title {
     font-size: 24px;
     color: #212121; }
+    @media screen and (max-width: 750px) {
+      .auto_product_main_about_title {
+        margin-top: 80px; } }
   .auto_product_main_about_sub_title {
     font-size: 24px;
     color: #212121;
@@ -936,7 +940,6 @@ footer {
     height: 30px;
     left: 37%;
     bottom: -58px;
-    z-index: 1000;
     cursor: pointer; }
     @media screen and (max-width: 768px) {
       .auto_product_main .auto_product_main_prewarrow {
@@ -949,7 +952,6 @@ footer {
     height: 30px;
     right: 37%;
     bottom: -58px;
-    z-index: 1000;
     cursor: pointer; }
     @media screen and (max-width: 768px) {
       .auto_product_main .auto_product_main_nextarrow {
@@ -961,7 +963,6 @@ footer {
 .auto_product_main_slider_wrapper .slick-dots {
   position: absolute;
   display: inline-block;
-  z-index: 1000;
   left: 47.5%;
   bottom: -55px; }
   @media screen and (max-width: 768px) {
@@ -976,6 +977,9 @@ footer {
   position: relative;
   width: 100%;
   margin-top: 140px; }
+  @media screen and (max-width: 750px) {
+    .auto_product_main_info {
+      margin-top: 70px; } }
   .auto_product_main_info_wrapper {
     height: 0;
     overflow: hidden; }
@@ -1014,6 +1018,9 @@ footer {
   position: relative;
   width: 100%;
   margin-top: 140px; }
+  @media screen and (max-width: 750px) {
+    .auto_product_main_review {
+      margin-top: 50px; } }
   .auto_product_main_review_wrapper {
     height: 0;
     overflow: hidden; }
@@ -1064,12 +1071,21 @@ footer {
     height: 375px;
     margin-top: 50px;
     overflow: hidden; }
+    @media screen and (max-width: 750px) {
+      .auto_pro_about_image {
+        width: 100%;
+        height: 210px; } }
     .auto_pro_about_image img {
       position: absolute;
       top: 0;
       left: -20%;
       height: 100%;
       min-width: 100%; }
+      @media screen and (max-width: 750px) {
+        .auto_pro_about_image img {
+          left: 0;
+          height: auto;
+          width: 100%; } }
   .auto_pro_about_text {
     position: relative;
     display: block;
@@ -1090,6 +1106,9 @@ footer {
       bottom: -25px;
       right: 0;
       background-color: #212121; }
+      @media screen and (max-width: 750px) {
+        .auto_pro_about_text:after {
+          width: 100%; } }
     .auto_pro_about_text_title {
       font-size: 18px;
       line-height: 24px;
@@ -1101,6 +1120,9 @@ footer {
     left: 0; }
   .auto_pro_about_wrapper:nth-child(2n+1) .auto_pro_about_image {
     margin-left: 10%; }
+    @media screen and (max-width: 750px) {
+      .auto_pro_about_wrapper:nth-child(2n+1) .auto_pro_about_image {
+        margin-left: 0; } }
 
 .auto_pro_components {
   position: relative;
@@ -1115,7 +1137,7 @@ footer {
       padding: 0 40px; } }
   @media screen and (max-width: 750px) {
     .auto_pro_components {
-      padding: 0 15px; } }
+      display: none; } }
   .auto_pro_components_list {
     position: relative;
     width: 100%;
@@ -1199,6 +1221,59 @@ footer {
         -o-transition: opacity 1.5s;
         transition: opacity 1.5s; }
 
+.auto_pro_components_mob {
+  display: none; }
+  @media screen and (max-width: 750px) {
+    .auto_pro_components_mob {
+      display: block;
+      position: relative;
+      padding: 0 15px;
+      margin-top: 75px; } }
+  .auto_pro_components_mob_block {
+    margin-top: 40px; }
+  .auto_pro_components_mob_image {
+    width: 100%;
+    display: block;
+    height: 190px;
+    overflow: hidden; }
+    .auto_pro_components_mob_image img {
+      width: 100%; }
+  .auto_pro_components_mob_title {
+    position: relative;
+    width: 90%;
+    font-size: 16px;
+    line-height: 24px;
+    text-transform: uppercase;
+    color: #212121;
+    margin-top: 20px;
+    cursor: pointer; }
+    .auto_pro_components_mob_title:after {
+      content: url(../img/icon/arrow-down.png);
+      display: inline-block;
+      position: absolute;
+      bottom: 12px;
+      right: -20px;
+      width: 20px;
+      height: 13px;
+      -webkit-transition: all 0.6s;
+      -o-transition: all 0.6s;
+      transition: all 0.6s;
+      cursor: pointer; }
+  .auto_pro_components_mob_text {
+    font-size: 16px;
+    line-height: 24px;
+    color: #212121;
+    margin-top: 20px; }
+  .auto_pro_components_mob_wrapper {
+    height: 0;
+    overflow: hidden; }
+  .auto_pro_components_mob .auto_pro_components_mob_open:after {
+    bottom: -2px;
+    -webkit-transform: rotate(-180deg);
+    -ms-transform: rotate(-180deg);
+    -o-transform: rotate(-180deg);
+    transform: rotate(-180deg); }
+
 .auto_pro_video {
   position: relative;
   width: 100%;
@@ -1216,6 +1291,9 @@ footer {
   .auto_pro_video_block {
     position: relative;
     width: 90%; }
+    @media screen and (max-width: 750px) {
+      .auto_pro_video_block {
+        width: 100%; } }
     .auto_pro_video_block img {
       width: 100%; }
     .auto_pro_video_block .play_block {
@@ -1233,6 +1311,9 @@ footer {
     line-height: 24px;
     color: #212121;
     text-transform: uppercase; }
+    @media screen and (max-width: 750px) {
+      .auto_pro_video_header {
+        margin-top: 30px; } }
     .auto_pro_video_header:after {
       content: "";
       display: block;
@@ -1242,6 +1323,9 @@ footer {
       bottom: -25px;
       right: 0;
       background-color: #212121; }
+      @media screen and (max-width: 750px) {
+        .auto_pro_video_header:after {
+          width: 100%; } }
 
 .auto_pro_other {
   position: relative;
@@ -1358,12 +1442,9 @@ footer {
       position: relative;
       display: block;
       width: 100%;
-      max-height: 280px;
-      overflow: hidden;
       margin-top: 50px; }
       .auto_product_block_wrapper_image img {
-        width: 100%;
-        min-height: 280px; }
+        width: 100%; }
     .auto_product_block_wrapper_text {
       position: relative;
       display: block;
@@ -1394,6 +1475,9 @@ footer {
         color: #212121;
         margin-top: 20px;
         text-indent: 32px; }
+        @media screen and (max-width: 750px) {
+          .auto_product_block_wrapper_text_list li {
+            margin-top: 10px; } }
         .auto_product_block_wrapper_text_list li:before {
           content: url(../img/photo/circle.png);
           position: absolute;
@@ -1408,12 +1492,26 @@ footer {
       position: relative;
       display: block;
       width: 100%;
-      max-height: 350px;
+      height: 25vh;
       overflow: hidden;
       margin-top: 50px; }
+      @media screen and (max-width: 750px) {
+        .auto_product_block_other_wrapper_image {
+          min-height: 250px; } }
       .auto_product_block_other_wrapper_image img {
-        width: 100%;
-        min-height: 350px; }
+        position: absolute;
+        top: 0;
+        left: -10%;
+        height: 100%;
+        min-width: 100%; }
+        @media screen and (max-width: 768px) {
+          .auto_product_block_other_wrapper_image img {
+            height: auto;
+            min-height: 100%; } }
+        @media screen and (max-width: 750px) {
+          .auto_product_block_other_wrapper_image img {
+            top: -10%;
+            left: -15%; } }
     .auto_product_block_other_wrapper_text {
       position: relative;
       display: block;
@@ -1474,7 +1572,8 @@ footer {
       right: 40px; } }
   @media screen and (max-width: 750px) {
     .auto_pro_order_btn {
-      right: 15px; } }
+      right: 15px;
+      width: calc(100% - 30px); } }
 
 .auto_popup {
   position: fixed;
@@ -1497,6 +1596,9 @@ footer {
     top: 0;
     left: 0;
     background-color: rgba(129, 129, 129, 0.6); }
+  @media screen and (max-width: 750px) {
+    .auto_popup .container {
+      padding: 0; } }
   .auto_popup_wrapper {
     position: relative;
     width: 100%;
@@ -1504,6 +1606,10 @@ footer {
     margin-top: 85px;
     overflow: hidden;
     z-index: 1; }
+    @media screen and (max-width: 750px) {
+      .auto_popup_wrapper {
+        height: 100vh;
+        margin-top: 0; } }
     .auto_popup_wrapper .auto_popup_close {
       position: absolute;
       display: block;
@@ -1524,6 +1630,11 @@ footer {
     padding-left: 20%;
     padding-right: 20%;
     padding-bottom: 120px; }
+    @media screen and (max-width: 750px) {
+      .auto_popup_registration {
+        padding-left: 0;
+        padding-right: 0;
+        height: 100vh; } }
     .auto_popup_registration_header {
       font-size: 30px;
       color: #212121;
@@ -1533,6 +1644,10 @@ footer {
       position: relative;
       width: 85%;
       margin-top: 60px; }
+      @media screen and (max-width: 750px) {
+        .auto_popup_registration_form {
+          width: 100%;
+          margin-left: 15px; } }
       .auto_popup_registration_form_title {
         display: block;
         font-size: 30px;
@@ -1545,6 +1660,9 @@ footer {
         outline: none;
         border: 1px solid #000000;
         text-indent: 10px; }
+        @media screen and (max-width: 750px) {
+          .auto_popup_registration_form input {
+            width: calc(100% - 30px); } }
       .auto_popup_registration_form input:focus {
         outline: none;
         border: 1px solid #000000;
@@ -1564,6 +1682,9 @@ footer {
       -webkit-transition: all 0.6s;
       -o-transition: all 0.6s;
       transition: all 0.6s; }
+      @media screen and (max-width: 750px) {
+        .auto_popup_registration_btn {
+          width: calc(100% - 30px); } }
       .auto_popup_registration_btn:hover {
         color: #212121;
         background-color: #ffffff; }
@@ -1572,5 +1693,8 @@ footer {
       line-height: 24px;
       color: #818181;
       margin-top: 30px; }
+      @media screen and (max-width: 750px) {
+        .auto_popup_registration_text {
+          margin-left: 15px; } }
 
 /*# sourceMappingURL=style.css.map */

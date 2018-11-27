@@ -19,6 +19,9 @@
     top: 0
     left: 0
     background-color: rgba(129, 129, 129, 0.6)
+  .container
+    @media screen and (max-width: 750px)
+      padding: 0
   &_wrapper
     position: relative
     width: 100%
@@ -26,6 +29,9 @@
     margin-top: 85px
     overflow: hidden
     z-index: 1
+    @media screen and (max-width: 750px)
+      height: 100vh
+      margin-top: 0
     .auto_popup_close
       position: absolute
       display: block
@@ -46,6 +52,10 @@
     padding-left: 20%
     padding-right: 20%
     padding-bottom: 120px
+    @media screen and (max-width: 750px)
+      padding-left: 0
+      padding-right: 0
+      height: 100vh
     &_header
       font-size: 30px
       color: $dark-grey
@@ -55,6 +65,9 @@
       position: relative
       width: 85%
       margin-top: 60px
+      @media screen and (max-width: 750px)
+        width: 100%
+        margin-left: 15px
       &_title
         display: block
         font-size: 30px
@@ -68,6 +81,8 @@
         border: 1px solid #000000
         @extend .lato-reg
         text-indent: 10px
+        @media screen and (max-width: 750px)
+          width: calc(100% - 30px)
       input:focus
         outline: none
         border: 1px solid #000000
@@ -87,6 +102,8 @@
       -webkit-transition: all 0.6s
       -o-transition: all 0.6s
       transition: all 0.6s
+      @media screen and (max-width: 750px)
+        width: calc(100% - 30px)
       &:hover
         color: $dark-grey
         background-color: #ffffff
@@ -95,3 +112,5 @@
       line-height: 24px
       color: $light-black
       margin-top: 30px
+      @media screen and (max-width: 750px)
+        margin-left: 15px

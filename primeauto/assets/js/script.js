@@ -143,3 +143,24 @@ $('.popup_nav_menu_mob').click(function(event){
         }, 600);
     };
 });
+
+
+
+
+
+$('.auto_pro_components_mob_title').click(function(){
+    $('.auto_pro_components_mob_wrapper').animate({
+        height: 0
+    }, 400);
+    var target = $(this).next();
+    if ($(this).hasClass('auto_pro_components_mob_open')){
+        $(this).removeClass('auto_pro_components_mob_open');
+        return;
+    };
+    $('.auto_pro_components_mob_title').removeClass('auto_pro_components_mob_open');
+    var childHeight = target.children().height();
+    target.animate({
+        height: childHeight
+    }, 600);
+    $(this).addClass('auto_pro_components_mob_open');
+});
