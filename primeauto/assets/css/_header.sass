@@ -94,8 +94,9 @@
           line-height: 75px
   &_list_wrapper
     position: relative
-    display: flex
-    flex-direction: row
+    //display: flex
+    //flex-direction: row
+    //justify-content: space-around
     padding-right: 130px
     @media screen and (max-width: 1024px)
       padding-right: 60px
@@ -134,9 +135,10 @@
   &_list
     position: relative
     display: flex
-    justify-content: space-between
+    justify-content: space-around
     margin: 0 15px
     @media screen and (max-width: 768px)
+      flex-wrap: wrap
       justify-content: flex-end
       margin: 0
     @media screen and (max-width: 750px)
@@ -172,17 +174,17 @@
     position: fixed
     display: block
     height: 0
-    top: 50px
+    top: 0
     left: 0
     z-index: 400
     overflow: hidden
     opacity: 0
     &_active
-      height: calc(100vh - 50px)
+      height: 100vh
     &_list
       position: relative
       width: 100%
-      height: calc(100vh - 50px)
+      height: 100vh
       display: flex
       flex-direction: column
       justify-content: center

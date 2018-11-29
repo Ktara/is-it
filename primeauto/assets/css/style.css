@@ -136,8 +136,6 @@
             line-height: 75px; } }
   .nav_header_list_wrapper {
     position: relative;
-    display: flex;
-    flex-direction: row;
     padding-right: 130px; }
     @media screen and (max-width: 1024px) {
       .nav_header_list_wrapper {
@@ -179,10 +177,11 @@
   .nav_header_list {
     position: relative;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     margin: 0 15px; }
     @media screen and (max-width: 768px) {
       .nav_header_list {
+        flex-wrap: wrap;
         justify-content: flex-end;
         margin: 0; } }
     @media screen and (max-width: 750px) {
@@ -218,17 +217,17 @@
       position: fixed;
       display: block;
       height: 0;
-      top: 50px;
+      top: 0;
       left: 0;
       z-index: 400;
       overflow: hidden;
       opacity: 0; }
       .popup_nav_menu_mob_active {
-        height: calc(100vh - 50px); }
+        height: 100vh; }
       .popup_nav_menu_mob_list {
         position: relative;
         width: 100%;
-        height: calc(100vh - 50px);
+        height: 100vh;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -273,7 +272,7 @@
   left: 0;
   box-shadow: 0 1px 19px 1px rgba(0, 0, 0, 0.26);
   background-color: #dfdfdf;
-  z-index: 500;
+  z-index: 350;
   -webkit-transition: top 0.2s;
   -moz-transition: top 0.2s;
   -ms-transition: top 0.2s;
@@ -305,7 +304,7 @@
       height: 50px; }
       @media screen and (max-width: 750px) {
         .nav_product_logo a {
-          text-align: center;
+          text-align: right;
           width: 100%; } }
       .nav_product_logo a img {
         width: 100%; }
@@ -355,6 +354,9 @@
       @media screen and (max-width: 750px) {
         .nav_product_list a {
           line-height: 40px; } }
+  @media screen and (max-width: 750px) {
+    .nav_product .fixes {
+      padding-right: 15px; } }
 
 .nav_product_active {
   top: 0; }
@@ -922,14 +924,16 @@ footer {
     width: 100%; }
     .auto_product_main .slider .slider_img {
       width: 100%;
-      display: inline-block; }
+      display: inline-block;
+      cursor: pointer; }
       .auto_product_main .slider .slider_img img {
         width: 100%; }
   .auto_product_main .slider_nav {
     margin-top: 20px;
     border: none; }
     .auto_product_main .slider_nav .slider_nav_img {
-      outline: none; }
+      outline: none;
+      cursor: pointer; }
       .auto_product_main .slider_nav .slider_nav_img img {
         width: 100%; }
   .auto_product_main .auto_product_main_prewarrow {
@@ -940,7 +944,8 @@ footer {
     height: 30px;
     left: 37%;
     bottom: -58px;
-    cursor: pointer; }
+    cursor: pointer;
+    z-index: 100; }
     @media screen and (max-width: 768px) {
       .auto_product_main .auto_product_main_prewarrow {
         left: 30%; } }
@@ -952,7 +957,8 @@ footer {
     height: 30px;
     right: 37%;
     bottom: -58px;
-    cursor: pointer; }
+    cursor: pointer;
+    z-index: 100; }
     @media screen and (max-width: 768px) {
       .auto_product_main .auto_product_main_nextarrow {
         right: 30%; } }
@@ -964,7 +970,8 @@ footer {
   position: absolute;
   display: inline-block;
   left: 47.5%;
-  bottom: -55px; }
+  bottom: -55px;
+  z-index: 100; }
   @media screen and (max-width: 768px) {
     .auto_product_main_slider_wrapper .slick-dots {
       left: 44.5%; } }
@@ -1442,7 +1449,7 @@ footer {
       position: relative;
       display: block;
       width: 100%;
-      margin-top: 50px; }
+      margin-top: 80px; }
       .auto_product_block_wrapper_image img {
         width: 100%; }
     .auto_product_block_wrapper_text {
@@ -1493,25 +1500,20 @@ footer {
       display: block;
       width: 100%;
       height: 25vh;
+      min-height: 350px;
       overflow: hidden;
       margin-top: 50px; }
-      @media screen and (max-width: 750px) {
+      @media screen and (max-width: 768px) {
         .auto_product_block_other_wrapper_image {
           min-height: 250px; } }
       .auto_product_block_other_wrapper_image img {
         position: absolute;
         top: 0;
-        left: -10%;
-        height: 100%;
-        min-width: 100%; }
+        left: 0;
+        width: 100%; }
         @media screen and (max-width: 768px) {
           .auto_product_block_other_wrapper_image img {
-            height: auto;
-            min-height: 100%; } }
-        @media screen and (max-width: 750px) {
-          .auto_product_block_other_wrapper_image img {
-            top: -10%;
-            left: -15%; } }
+            height: auto; } }
     .auto_product_block_other_wrapper_text {
       position: relative;
       display: block;

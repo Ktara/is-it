@@ -6,7 +6,7 @@
   left: 0
   box-shadow: 0 1px 19px 1px rgba(0, 0, 0, 0.26)
   background-color: $white
-  z-index: 500
+  z-index: 350
   -webkit-transition: top 0.2s
   -moz-transition: top 0.2s
   -ms-transition: top 0.2s
@@ -34,7 +34,7 @@
       width: 80px
       height: 50px
       @media screen and (max-width: 750px)
-        text-align: center
+        text-align: right
         width: 100%
       img
         width: 100%
@@ -81,6 +81,9 @@
         line-height: 40px
       span
         @extend .lato-bold
+  .fixes
+    @media screen and (max-width: 750px)
+      padding-right: 15px
 
 
 

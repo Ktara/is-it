@@ -106,6 +106,7 @@
     .slider_img
       width: 100%
       display: inline-block
+      cursor: pointer
       img
         width: 100%
   .slider_nav
@@ -113,6 +114,7 @@
     border: none
     .slider_nav_img
       outline: none
+      cursor: pointer
       img
         width: 100%
   .auto_product_main_prewarrow
@@ -124,6 +126,7 @@
     left: 37%
     bottom: -58px
     cursor: pointer
+    z-index: 100
     @media screen and (max-width: 768px)
       left: 30%
   .auto_product_main_nextarrow
@@ -135,6 +138,7 @@
     right: 37%
     bottom: -58px
     cursor: pointer
+    z-index: 100
     @media screen and (max-width: 768px)
       right: 30%
 .auto_product_main_slider_wrapper .slick-dots li
@@ -144,6 +148,7 @@
   display: inline-block
   left: 47.5%
   bottom: -55px
+  z-index: 100
   @media screen and (max-width: 768px)
     left: 44.5%
 .auto_product_main_slider_wrapper .slick-dots .slick-active
@@ -653,7 +658,7 @@
       //height: 20vh
       //max-height: 280px
       //overflow: hidden
-      margin-top: 50px
+      margin-top: 80px
       img
         width: 100%
         //position: absolute
@@ -712,23 +717,18 @@
       display: block
       width: 100%
       height: 25vh
-      //min-height: 350px
+      min-height: 350px
       overflow: hidden
       margin-top: 50px
-      @media screen and (max-width: 750px)
+      @media screen and (max-width: 768px)
         min-height: 250px
       img
         position: absolute
         top: 0
-        left: -10%
-        height: 100%
-        min-width: 100%
+        left: 0
+        width: 100%
         @media screen and (max-width: 768px)
           height: auto
-          min-height: 100%
-        @media screen and (max-width: 750px)
-          top: -10%
-          left: -15%
     &_text
       position: relative
       display: block
