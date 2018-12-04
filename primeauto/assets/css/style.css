@@ -760,6 +760,7 @@ footer {
       font-size: 16px;
       line-height: 33px;
       text-align: center;
+      text-decoration: none;
       color: #000000;
       cursor: pointer;
       float: right;
@@ -1077,7 +1078,8 @@ footer {
     width: 90%;
     height: 375px;
     margin-top: 50px;
-    overflow: hidden; }
+    overflow: hidden;
+    cursor: pointer; }
     @media screen and (max-width: 750px) {
       .auto_pro_about_image {
         width: 100%;
@@ -1584,7 +1586,7 @@ footer {
   height: 0;
   top: 0;
   left: 0;
-  z-index: 210;
+  z-index: 410;
   overflow: hidden;
   opacity: 0; }
   .auto_popup_active {
@@ -1698,5 +1700,63 @@ footer {
       @media screen and (max-width: 750px) {
         .auto_popup_registration_text {
           margin-left: 15px; } }
+
+.picture_popup {
+  position: fixed;
+  display: block;
+  width: 100%;
+  height: 0;
+  top: 0;
+  left: 0;
+  z-index: 410;
+  overflow: hidden;
+  opacity: 0; }
+  .picture_popup_active {
+    height: 100vh; }
+  .picture_popup:before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(129, 129, 129, 0.6); }
+  @media screen and (max-width: 750px) {
+    .picture_popup .container {
+      padding: 0; } }
+  .picture_popup_wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 90vw;
+    height: 90vh;
+    margin-top: 5vh;
+    margin-left: 5vw;
+    overflow: hidden;
+    z-index: 1;
+    background-color: white; }
+    @media screen and (max-width: 750px) {
+      .picture_popup_wrapper {
+        height: 100vh;
+        margin-top: 0; } }
+    .picture_popup_wrapper .picture_popup_close {
+      position: absolute;
+      display: block;
+      width: 18px;
+      height: 18px;
+      top: 20px;
+      right: 20px;
+      z-index: 220;
+      cursor: pointer; }
+      .picture_popup_wrapper .picture_popup_close img {
+        width: 100%; }
+  .picture_popup_image {
+    width: 100%; }
+    @media screen and (max-width: 750px) {
+      .picture_popup_image {
+        margin-top: 35%; } }
+    .picture_popup_image img {
+      width: 100%; }
 
 /*# sourceMappingURL=style.css.map */

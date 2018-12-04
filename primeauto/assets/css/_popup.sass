@@ -5,7 +5,7 @@
   height: 0
   top: 0
   left: 0
-  z-index: 210
+  z-index: 410
   overflow: hidden
   opacity: 0
   &_active
@@ -114,3 +114,65 @@
       margin-top: 30px
       @media screen and (max-width: 750px)
         margin-left: 15px
+
+
+
+
+
+
+
+.picture_popup
+  position: fixed
+  display: block
+  width: 100%
+  height: 0
+  top: 0
+  left: 0
+  z-index: 410
+  overflow: hidden
+  opacity: 0
+  &_active
+    height: 100vh
+  &:before
+    content: ''
+    position: absolute
+    display: block
+    width: 100%
+    height: 100%
+    top: 0
+    left: 0
+    background-color: rgba(129, 129, 129, 0.6)
+  .container
+    @media screen and (max-width: 750px)
+      padding: 0
+  &_wrapper
+    position: relative
+    display: flex
+    align-items: center
+    width: 90vw
+    height: 90vh
+    margin-top: 5vh
+    margin-left: 5vw
+    overflow: hidden
+    z-index: 1
+    background-color: white
+    @media screen and (max-width: 750px)
+      height: 100vh
+      margin-top: 0
+    .picture_popup_close
+      position: absolute
+      display: block
+      width: 18px
+      height: 18px
+      top: 20px
+      right: 20px
+      z-index: 220
+      cursor: pointer
+      img
+        width: 100%
+  &_image
+    width: 100%
+    @media screen and (max-width: 750px)
+      margin-top: 35%
+    img
+      width: 100%

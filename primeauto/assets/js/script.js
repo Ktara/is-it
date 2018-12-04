@@ -120,6 +120,31 @@ $('.auto_popup').click(function(event){
 
 
 
+$('.image_in_popup').click(function(){
+    $('.picture_popup').addClass('picture_popup_active').velocity({
+        opacity: 1
+    }, 600);
+});
+$('.picture_popup_close').click(function(){
+    $('.picture_popup').removeClass('picture_popup_active').velocity({
+        opacity: 0
+    }, 600);
+});
+
+$('.picture_popup').click(function(event){
+    if(event.target === this){
+        $(this).velocity({
+            opacity: 0
+        }, 600);
+        setTimeout(function(){
+            $('.picture_popup').removeClass('picture_popup_active');
+        }, 600);
+    };
+});
+
+
+
+
 
 $('.nav_header_list_wrapper').click(function(){
     $('.popup_nav_menu_mob').addClass('popup_nav_menu_mob_active').velocity({
