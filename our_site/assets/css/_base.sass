@@ -70,15 +70,18 @@ $orang: #ff6a00
     right: 0
     border-radius: 10px
     background-color: $dark-blue
-    box-shadow: 15px 10px 15px rgba(0, 0, 0, 0.5)
+    //box-shadow: 15px 10px 15px rgba(0, 0, 0, 0.5)
 .section_header
   position: relative
   font-size: 60px
-  line-height: 150px
+  line-height: 140px
   text-transform: uppercase
   @extend .com-bold
   color: $white
   letter-spacing: -5px
+  @media screen and (max-width: 768px)
+    font-size: 36px
+    letter-spacing: 0
 
 
 .gradient

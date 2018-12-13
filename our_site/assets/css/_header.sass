@@ -156,6 +156,11 @@
 
   .col-fixes
     margin-left: calc(8.333333% - 30px)
+    @media screen and (max-width: 768px)
+      margin-left: 0
   .col-fixec
     max-width: calc(8.333333% + 30px)
     flex: 0 0 calc(8.333333% + 30px)
+    @media screen and (max-width: 768px)
+      max-width: 8.333333%
+      flex: 0 0 8.333333%
