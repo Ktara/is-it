@@ -69,6 +69,8 @@
     background-repeat: no-repeat
     background-size: cover
     text-decoration: none
+    @media screen and (max-width: 768px)
+      width: 270px
     &_title
       position: absolute
       display: flex
@@ -82,6 +84,8 @@
       color: $dark-blue
       background-color: $white
       z-index: 5
+      @media screen and (max-width: 768px)
+        width: 250px
       p
         z-index: 10
       &:before

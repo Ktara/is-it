@@ -6,9 +6,11 @@
 .article
   position: relative
   width: 100%
-  margin-top: 80px
+  margin-top: 160px
   &_header
     font-size: 48px
+    @media screen and (max-width: 768px)
+      font-size: 36px
   &_social
     position: relative
     height: 20px
@@ -27,6 +29,20 @@
       margin: 30px 50px 0 0
       text-decoration: none
       float: left
+    .view
+      display: flex
+      height: 20px
+      margin: 30px 20px 0 0
+      float: left
+      img
+        width: 20px
+        height: 12px
+        margin-top: 4px
+      span
+        font-size: 14px
+        @extend .com-light
+        color: $black
+        margin: 3px 0 3px 10px
 
     .heart
       display: flex
@@ -58,6 +74,10 @@
     line-height: 30px
     color: $dark-grey
     margin-top: 60px
+    @media screen and (max-width: 768px)
+      font-size: 16px
+      line-height: 20px
+      margin-top: 45px
   &_image
     margin-top: 40px
     width: 100%
@@ -82,6 +102,10 @@
         font-size: 18px
         line-height: 30px
         margin-top: 20px
+        @media screen and (max-width: 768px)
+          font-size: 16px
+          line-height: 20px
+          margin-top: 10px
 
 
 
@@ -96,6 +120,8 @@
     display: inline-block
     font-size: 30px
     color: $dark-grey
+    @media screen and (max-width: 768px)
+      font-size: 24px
     &:before
       content: ''
       position: absolute
@@ -136,12 +162,32 @@
       display: inline-block
       margin: 15px 0 15px 10px
       text-decoration: none
+      @media screen and (max-width: 768px)
+        font-size: 14px
+    .view
+      display: flex
+      height: 20px
+      float: right
+      margin: 15px 20px 15px 0
+      @media screen and (max-width: 768px)
+        display: none
+      img
+        width: 20px
+        height: 12px
+        margin-top: 4px
+      span
+        font-size: 14px
+        @extend .com-light
+        color: $black
+        margin: 3px 0 3px 10px
 
     .heart
       display: flex
       height: 20px
       float: right
       margin: 15px 20px 15px 0
+      @media screen and (max-width: 768px)
+        margin-right: 10px
       img
         width: 20px
       span
@@ -169,6 +215,9 @@
     min-height: 225px
     margin: 0 10px
     overflow: hidden
+    @media screen and (max-width: 768px)
+      height: 10vh
+      min-height: 120px
     &:after
       content: ''
       position: absolute
@@ -184,12 +233,17 @@
       line-height: 20px
       color: $dark-blue
       margin-top: 20px
+      @media screen and (max-width: 768px)
+        display: none
   &_title
     text-decoration: none
     color: $dark-blue
     font-size: 20px
     line-height: 24px
     margin-top: 10px
+    @media screen and (max-width: 768px)
+      font-size: 16px
+
 
 
 
@@ -199,6 +253,8 @@
   position: relative
   width: 100%
   margin-top: 120px
+  @media screen and (max-width: 768px)
+    display: none
   &_header
     position: relative
     display: inline-block
@@ -225,15 +281,89 @@
     display: inline-block
     width: 100%
     margin-top: 20px
+    &_foto_wrapper
+      display: inline-block
+      width: 47px
+      padding: 2px 0.5px 0px 1px
+      border-radius: 25px
+      background-color: #555555
+      background-image: linear-gradient(to right, #ee0979 0%, #ff6a00 100%)
+      margin-right: 8px
+    &_foto
+      display: inline-block
+      width: 45px
+      height: 40px
+      //padding: 13px 0 0 20px
+      border-radius: 25px
+      background-color: $white
+      border: none
     &_textarea_wrapper
-      display: block
-      width: 100%
+      display: inline-block
+      width: calc(100% - 60px)
       padding: 0.25px 1px 0.1px 1px
       border-radius: 10px
       background-color: #555555
       background-image: linear-gradient(to right, #ee0979 0%, #ff6a00 100%)
+    &_social
+      position: relative
+      display: inline-flex
+      flex-direction: row
+      width: auto
+      margin-top: 35px
+      &_image
+        position: relative
+        display: flex
+        align-items: center
+        justify-content: center
+        width: 35px
+        height: 35px
+        border-radius: 25px
+        border: 1px solid $dark-blue
+        -moz-border-image: url(../img/article/ellipse2.png) 1 fill
+        -webkit-border-image: url(../img/article/ellipse2.png) 1 fill
+        -o-border-image: url(../img/article/ellipse2.png) 1 fill
+        border-image: url(../img/article/ellipse2.png) 1 fill
+        text-decoration: none
+        margin-right: 20px
+        img
+          max-width: 17px
+          max-height: 17px
+    &_info
+      display: inline-block
+      input
+        display: none
+      input:checked + .article_comments_form_info_square:before
+        content: ''
+        position: absolute
+        display: inline-block
+        width: 10px
+        height: 10px
+        top: 2px
+        left: 2px
+        border-radius: 3px
+        background-color: #d48862
+        background-image: linear-gradient(to right, #ee0979 0%, #ff6a00 100%)
+      &_square
+        position: relative
+        display: inline-block
+        width: 16px
+        height: 16px
+        border: 1px solid $dark-blue
+        border-radius: 3px
+        margin-right: 10px
+        &:before
+          content: ''
+      &_text
+        display: inline-block
+        font-size: 14px
+        color: $light-grey
+        vertical-align: middle
+        padding-bottom: 5px
+        a
+          text-decoration: underline
+          color: $light-grey
   &_textarea
-    display: block
+    display: inline-block
     width: 100%
     height: auto
     resize: vertical
@@ -249,7 +379,7 @@
     background-color: $white
     border: none
   &_btn
-    display: block
+    display: inline-block
     width: 160px
     height: 45px
     font-size: 16px
@@ -258,10 +388,13 @@
     color: $white
     margin-top: 30px
     margin-bottom: 25px
+    margin-right: 25px
     border-radius: 10px
     border: 1px solid $dark-blue
     cursor: pointer
     @extend .com-reg
+    float: left
+
 
   &_text_wrapper
     position: relative
