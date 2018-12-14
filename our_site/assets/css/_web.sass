@@ -69,6 +69,8 @@
     text-transform: uppercase
     opacity: 0.05
     z-index: 15
+    @media screen and (max-width: 768px)
+      font-size: 270px
   &_triangle
     position: absolute
     display: block
@@ -98,11 +100,15 @@
       @extend .com-bold
       letter-spacing: -20px
       z-index: 15
-  &_header
+      @media screen and (max-width: 768px)
+        font-size: 130px
+  &_header_white
     font-size: 41px
     color: $white
     text-align: center
     margin-top: 220px
+    @media screen and (max-width: 768px)
+      font-size: 26px
 
 
 
@@ -112,13 +118,15 @@
   position: relative
   width: 100%
   margin-top: 210px
-  &_header
+  &_header_white
     font-size: 120px
     @extend .com-bold
     color: $white
     text-transform: uppercase
     text-align: center
     margin-top: 50px
+    @media screen and (max-width: 768px)
+      font-size: 71px
   &_wrapper
     position: relative
     width: 100%
@@ -131,7 +139,7 @@
     justify-content: center
     img
       width: 100%
-  &_title
+  &_title_blue
     width: 100%
     min-height: 390px
     display: flex
@@ -145,10 +153,12 @@
     font-size: 24px
     @extend .com-bold
     cursor: default
+    @media screen and (max-width: 768px)
+      font-size: 14px
     p
       display: inline-block
       width: 20px
-  &_text
+  &_text_white
     font-size: 18px
     line-height: 24px
     color: $white
@@ -157,6 +167,9 @@
     align-items: center
     justify-content: center
     flex-direction: column
+    @media screen and (max-width: 768px)
+      font-size: 16px
+      line-height: 20px
     &_list
       li
         position: relative
@@ -165,8 +178,11 @@
         color: $white
         text-indent: 60px
         letter-spacing: -1px
+        @media screen and (max-width: 768px)
+          font-size: 16px
+          line-height: 20px
         &:before
-          content: url(../img/in-portfolio/dot.png)
+          content: url(../img/web/dot-blue.png)
           position: absolute
           top: -4px
           left: -30px
@@ -217,11 +233,16 @@
         font-size: 36px
         color: $white
         @extend .com-bold
+        @media screen and (max-width: 768px)
+          font-size: 24px
       &_text
         font-size: 24px
         line-height: 30px
         color: $white
         margin-top: 30px
+        @media screen and (max-width: 768px)
+          font-size: 16px
+          line-height: 20px
 
 
 
@@ -236,7 +257,7 @@
     height: 70px
     border-radius: 10px
     background-image: linear-gradient(to right, #ee0979 0%, #ff6a00 100%)
-  &_header
+  &_header_white
     position: absolute
     width: calc(100% - 8px)
     height: 62px
@@ -255,8 +276,10 @@
     margin-top: 30px
     img
       width: 100%
-    &_title
+    &_title_white
       font-size: 36px
       @extend .com-bold
       color: $white
       margin-top: 20px
+      @media screen and (max-width: 768px)
+        font-size: 30px

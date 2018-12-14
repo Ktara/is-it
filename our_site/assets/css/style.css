@@ -17,7 +17,7 @@
   font-family: "Comfortaa", sans-serif;
   font-weight: 400; }
 
-.com-bold, .section_header, .services_header, .cases_header, .why_header, .trust_header, .blog_header, .reviews_header, .nav_header_logo_block p, .nav_header .other_menu_lang a, .popup_menu .other_menu_lang a, .main_slide_header p, .main_slide_header span, .main_slide_sub_header, .main_slide_info span, .main_slide_info_text, .main_btn p, .main_menu_lang a, .main_menu_tablet_lang a, .in-portfolio_info_list_header, .in-portfolio_info_link, .content_main h1, .content_main h4, .content_info_text h4, .content_price_header, .content_price_text_title, .content_trust_header, .content_reviews_header, .content_projects_header, .content_projects_slider_wrapper .content_projects_slide_name, .targeted_main h1, .targeted_main h4, .targeted_main_icon_wrapper .targeted_main_icon_text, .targeted_info_text h4, .targeted_list_point_text, .targeted_advantage_block_header, .targeted_social_block_header, .targeted_social_block_sub_header, .targeted_price_header, .targeted_price_text p, .smm_main h1, .smm_main h4, .smm_main_icon_wrapper .smm_main_icon_text, .smm_info_text h4, .smm_advantage_block_header, .smm_work_block_header, .smm_price_header, .blog_page_slide_text, .blog_beast_header, .blog_brif_text_btn, .blog_smm_header, .blog_web_header, .blog_other_text_btn, .blog_read_header, .portfolio-smm_legend_text li p, .portfolio-smm_legend_list_title, .portfolio-smm_result_text p, .reviews_page_header, .reviews_page_block_sub_title, .contact_service_header, .contact_service_form_title, .contact_service_form_btn, .contact_service_form_list label p, .contact_service_price_header, .contact_service_price_block_text, .web_page_main_text_block, .web_page_main_image_text, .web_page_info_header, .web_page_info_title, .web_page_advertising_image_block_title, .web_page_projects_header, .web_page_projects_image_title, .web_page_other_text_header, .web_page_other_text_btn {
+.com-bold, .section_header, .services_header, .cases_header, .why_header, .trust_header, .blog_header, .reviews_header, .nav_header_logo_block p, .nav_header .other_menu_lang a, .popup_menu .other_menu_lang a, .main_slide_header p, .main_slide_header span, .main_slide_sub_header, .main_slide_info span, .main_slide_info_text, .main_btn p, .main_menu_lang a, .main_menu_tablet_lang a, .in-portfolio_info_list_header, .in-portfolio_info_link, .content_main h1, .content_main h4, .content_info_text h4, .content_price_header, .content_price_text_title, .content_trust_header, .content_reviews_header, .content_projects_header, .content_projects_slider_wrapper .content_projects_slide_name, .targeted_main h1, .targeted_main h4, .targeted_main_icon_wrapper .targeted_main_icon_text, .targeted_info_text h4, .targeted_list_point_text, .targeted_advantage_block_header, .targeted_social_block_header, .targeted_social_block_sub_header, .targeted_price_header, .targeted_price_text p, .smm_main h1, .smm_main h4, .smm_main_icon_wrapper .smm_main_icon_text, .smm_info_text h4, .smm_advantage_block_header, .smm_work_block_header, .smm_price_header, .blog_page_slide_text, .blog_beast_header, .blog_brif_text_btn, .blog_smm_header, .blog_web_header, .blog_other_text_btn, .blog_read_header, .portfolio-smm_legend_text li p, .portfolio-smm_legend_list_title, .portfolio-smm_result_text p, .reviews_page_header, .reviews_page_block_sub_title, .contact_service_header, .contact_service_form_title, .contact_service_form_btn, .contact_service_form_list label p, .contact_service_price_header, .contact_service_price_block_text, .web_page_main_text_block, .web_page_main_image_text, .web_page_info_header_white, .web_page_info_title_blue, .web_page_advertising_image_block_title, .web_page_projects_header_white, .web_page_projects_image_title_white, .web_page_info_header, .web_page_info_title, .web_page_projects_header, .web_page_projects_image_title, .web_page_other_text_header, .web_page_other_text_btn {
   font-family: "Comfortaa", sans-serif;
   font-weight: 700; }
 
@@ -84,12 +84,12 @@
       font-size: 36px;
       letter-spacing: 0; } }
 
-.gradient, .portfolio_block_btn {
+.gradient {
   display: block;
   position: relative;
   border-left: 1px solid #ee0979;
   border-right: 1px solid #ff6a00; }
-  .gradient:after, .portfolio_block_btn:after {
+  .gradient:after {
     content: "";
     display: block;
     width: 100%;
@@ -99,7 +99,7 @@
     border-radius: 10px;
     background-color: #ffffff;
     background-image: linear-gradient(to right, #ee0979 0%, #ff6a00 100%); }
-  .gradient:before, .portfolio_block_btn:before {
+  .gradient:before {
     content: "";
     display: block;
     width: 100%;
@@ -130,6 +130,12 @@
     text-transform: none;
     color: #000000;
     margin-left: 5px; }
+  .nav_header_text_white {
+    color: #fefefe !important; }
+    .nav_header_text_white:before {
+      background-color: #fefefe !important; }
+    .nav_header_text_white:after {
+      background-color: #fefefe !important; }
   .nav_header_text {
     position: relative;
     font-size: 30px;
@@ -157,6 +163,8 @@
     position: relative;
     display: flex;
     justify-content: space-around; }
+  .nav_header_btn_white {
+    color: #fefefe !important; }
   .nav_header_btn {
     position: relative;
     display: inline-block;
@@ -1473,6 +1481,9 @@ footer {
   position: relative;
   width: 100%;
   margin-top: 75px; }
+  @media screen and (max-width: 768px) {
+    .portfolio_menu {
+      margin-top: 125px; } }
   .portfolio_menu .active_portfolio_menu {
     background-image: linear-gradient(to right, #ee0979 0%, #ff6a00 100%);
     color: #fefefe; }
@@ -1495,6 +1506,10 @@ footer {
       -ms-transition: all 0.4s;
       -o-transition: all 0.4s;
       transition: all 0.4s; }
+      @media screen and (max-width: 768px) {
+        .portfolio_menu_wrapper li {
+          font-size: 40px;
+          padding: 10px 20px; } }
       .portfolio_menu_wrapper li:hover {
         color: #fefefe;
         background-image: linear-gradient(to right, #ee0979 0%, #ff6a00 100%); }
@@ -1518,6 +1533,11 @@ footer {
     color: #fefefe;
     text-transform: uppercase;
     font-size: 98px; }
+    @media screen and (max-width: 768px) {
+      .portfolio_block_header {
+        font-size: 60px;
+        height: 30vh;
+        max-height: 330px; } }
     .portfolio_block_header:before {
       content: "";
       position: absolute;
@@ -1527,6 +1547,10 @@ footer {
       left: -500%;
       background-color: #73b4a2;
       background-image: linear-gradient(to bottom, #1cd8d2 0%, #93edc7 100%); }
+      @media screen and (max-width: 768px) {
+        .portfolio_block_header:before {
+          height: 30vh;
+          max-height: 330px; } }
   .portfolio_block_viewer {
     padding-top: 60px; }
   .portfolio_block_image {
@@ -1537,6 +1561,10 @@ footer {
     width: 100%;
     height: 52vh;
     text-decoration: none; }
+    @media screen and (max-width: 768px) {
+      .portfolio_block_image {
+        max-height: 250vh;
+        height: 25vh; } }
     .portfolio_block_image img {
       width: 100%;
       display: block;
@@ -1551,19 +1579,63 @@ footer {
       margin-bottom: 15px;
       margin-left: 10%;
       letter-spacing: -1px; }
-  .portfolio_block_btn {
+      @media screen and (max-width: 768px) {
+        .portfolio_block_image_title {
+          font-size: 16px;
+          line-height: 20px;
+          letter-spacing: 0; } }
+      .portfolio_block_image_title p {
+        position: relative;
+        display: inline-block;
+        width: auto;
+        -webkit-transition: all 0.5s;
+        -moz-transition: all 0.5s;
+        -ms-transition: all 0.5s;
+        -o-transition: all 0.5s;
+        transition: all 0.5s; }
+        .portfolio_block_image_title p:hover:before {
+          opacity: 1;
+          left: 0; }
+        .portfolio_block_image_title p:before {
+          content: "";
+          position: absolute;
+          display: block;
+          width: 100%;
+          height: 2px;
+          bottom: -10px;
+          left: -100%;
+          opacity: 0;
+          background-color: #73b4a2;
+          background-image: linear-gradient(to right, #ee0979 0%, #ff6a00 100%); }
+  .portfolio_block_btn_wrapper {
+    position: relative;
     display: block;
     width: 160px;
     height: 45px;
+    margin: 55px auto 0 auto;
+    border-radius: 10px;
+    background-color: #73b4a2;
+    background-image: linear-gradient(to right, #ee0979 0%, #ff6a00 100%); }
+  .portfolio_block_btn {
+    position: absolute;
+    display: block;
+    width: 158px;
+    height: 43px;
+    top: 1px;
+    left: 1px;
     color: #001726;
     font-size: 16px;
     line-height: 43px;
     text-align: center;
     cursor: pointer;
     border-radius: 10px;
-    margin: 55px auto 0 auto; }
+    background-color: #fff; }
   .portfolio_block .fix {
     padding: 0; }
+
+@media screen and (max-width: 768px) {
+  .main_wrapper .hid-tab {
+    display: none; } }
 
 .in-portfolio {
   position: relative;
@@ -2108,6 +2180,10 @@ footer {
     padding-top: 20%;
     margin-left: -12px;
     z-index: 10; }
+    @media screen and (max-width: 768px) {
+      .targeted_main h1 {
+        font-size: 152px;
+        padding-top: 35%; } }
   .targeted_main h4 {
     position: relative;
     font-size: 36px;
@@ -2162,11 +2238,18 @@ footer {
       font-size: 36px;
       color: #001726;
       margin-bottom: 20px; }
+      @media screen and (max-width: 768px) {
+        .targeted_info_text h4 {
+          font-size: 30px; } }
     .targeted_info_text p {
       font-size: 24px;
       line-height: 30px;
       color: #001726;
       margin-top: 10px; }
+      @media screen and (max-width: 768px) {
+        .targeted_info_text p {
+          font-size: 18px;
+          line-height: 24px; } }
 
 .targeted_list {
   position: relative;
@@ -2195,10 +2278,16 @@ footer {
   position: relative;
   width: 100%;
   margin-top: 85px; }
+  @media screen and (max-width: 768px) {
+    .targeted_advantage {
+      margin-top: 25px; } }
   .targeted_advantage_block_header {
     font-size: 30px;
     color: #001726;
     margin-bottom: 30px; }
+    @media screen and (max-width: 768px) {
+      .targeted_advantage_block_header {
+        margin-top: 50px; } }
   .targeted_advantage_block_sub_header {
     font-size: 18px;
     line-height: 24px;
@@ -2210,7 +2299,8 @@ footer {
     line-height: 24px;
     color: #001726;
     margin-bottom: 10px;
-    text-indent: 32px; }
+    text-indent: 32px;
+    margin-left: 30px; }
     .targeted_advantage_block_list li:before {
       content: url(../img/in-portfolio/dot.png);
       position: absolute;
@@ -2261,6 +2351,9 @@ footer {
     .targeted_social_block_header {
       font-size: 36px;
       color: #001726; }
+      @media screen and (max-width: 768px) {
+        .targeted_social_block_header {
+          font-size: 30px; } }
     .targeted_social_block_text {
       margin-top: 20px; }
       .targeted_social_block_text p {
@@ -2285,6 +2378,9 @@ footer {
     font-size: 36px;
     line-height: 48px;
     color: #001726; }
+    @media screen and (max-width: 768px) {
+      .targeted_price_header {
+        font-size: 30px; } }
   .targeted_price_text {
     margin-top: 20px; }
     .targeted_price_text p {
@@ -2292,6 +2388,10 @@ footer {
       line-height: 30px;
       color: #001726;
       margin-top: 10px; }
+      @media screen and (max-width: 768px) {
+        .targeted_price_text p {
+          font-size: 18px;
+          line-height: 24px; } }
     .targeted_price_text span {
       background-color: #fefefe;
       background-image: linear-gradient(to right, #ee0979 0%, #ff6a00 100%);
@@ -2324,6 +2424,9 @@ footer {
     padding-top: 20%;
     margin-left: -12px;
     z-index: 10; }
+    @media screen and (max-width: 768px) {
+      .smm_main h1 {
+        padding-top: 35%; } }
   .smm_main h4 {
     position: relative;
     font-size: 36px;
@@ -2361,6 +2464,10 @@ footer {
       color: #001726;
       text-align: center;
       margin-top: 30px; }
+      @media screen and (max-width: 768px) {
+        .smm_main_icon_wrapper .smm_main_icon_text {
+          font-size: 14px;
+          line-height: 16px; } }
 
 .smm_info {
   position: relative;
@@ -2378,11 +2485,17 @@ footer {
       font-size: 36px;
       color: #001726;
       margin-bottom: 20px; }
+      @media screen and (max-width: 768px) {
+        .smm_info_text h4 {
+          font-size: 30px; } }
     .smm_info_text p {
       font-size: 24px;
       line-height: 30px;
       color: #001726;
       margin-top: 10px; }
+      @media screen and (max-width: 768px) {
+        .smm_info_text p {
+          font-size: 18px; } }
 
 .smm_about {
   position: relative;
@@ -2396,6 +2509,10 @@ footer {
     font-size: 18px;
     line-height: 24px;
     margin-top: 30px; }
+    @media screen and (max-width: 768px) {
+      .smm_about_text {
+        font-size: 16px;
+        line-height: 20px; } }
 
 .smm_advantage {
   position: relative;
@@ -2426,7 +2543,8 @@ footer {
       line-height: 24px;
       color: #001726;
       margin-top: 20px;
-      text-indent: 32px; }
+      text-indent: 32px;
+      margin-left: 30px; }
       .smm_advantage_block_list li:before {
         content: url(../img/in-portfolio/dot.png);
         position: absolute;
@@ -2456,18 +2574,25 @@ footer {
   position: relative;
   width: 100%;
   margin-top: 120px; }
+  @media screen and (max-width: 768px) {
+    .smm_work {
+      margin-top: 70px; } }
   .smm_work_block_header {
     font-size: 30px;
     color: #001726;
     margin-bottom: 20px;
     letter-spacing: -2px; }
+    @media screen and (max-width: 768px) {
+      .smm_work_block_header {
+        margin-top: 50px; } }
   .smm_work_block_list li {
     position: relative;
     margin-top: 10px;
     font-size: 18px;
     line-height: 24px;
     color: #001726;
-    text-indent: 32px; }
+    text-indent: 32px;
+    margin-left: 30px; }
     .smm_work_block_list li:before {
       content: url(../img/in-portfolio/dot.png);
       position: absolute;
@@ -3236,6 +3361,11 @@ footer {
   width: 100%;
   height: calc(100vh - 80px);
   overflow: hidden; }
+  @media screen and (max-width: 768px) {
+    .portfolio-smm {
+      height: calc(50vh - 80px);
+      margin-top: 80px;
+      min-height: 435px; } }
   .portfolio-smm_gradient_block {
     display: inline-block;
     width: 40%;
@@ -3269,6 +3399,11 @@ footer {
     position: relative;
     width: 100%;
     height: calc(100vh - 80px); }
+    @media screen and (max-width: 768px) {
+      .portfolio-smm_text_block {
+        height: calc(50vh - 80px);
+        margin-top: 80px;
+        min-height: 435px; } }
   .portfolio-smm_header {
     position: absolute;
     display: block;
@@ -3279,6 +3414,10 @@ footer {
     color: #fefefe;
     z-index: 10;
     margin-left: -15px; }
+    @media screen and (max-width: 768px) {
+      .portfolio-smm_header {
+        font-size: 94px;
+        top: 8vh; } }
   .portfolio-smm_btn {
     position: absolute;
     display: block;
@@ -3286,11 +3425,15 @@ footer {
     top: calc(30vh + 190px);
     left: 0;
     font-size: 24px;
-    color: #fefefe;
     z-index: 10;
     padding: 20px 50px;
     color: #001726;
     background-color: #fefefe; }
+    @media screen and (max-width: 768px) {
+      .portfolio-smm_btn {
+        font-size: 16px;
+        padding: 10px 20px;
+        top: calc(8vh + 115px); } }
 
 .portfolio-smm_legend {
   position: relative;
@@ -3416,6 +3559,27 @@ footer {
     color: #001726;
     letter-spacing: -1px;
     margin-bottom: 40px; }
+
+.portfolio-smm_cases {
+  position: relative;
+  width: 100%;
+  margin-top: 80px; }
+  .portfolio-smm_cases_title {
+    font-size: 36px;
+    line-height: 48px;
+    color: #001726;
+    letter-spacing: -1px;
+    margin-bottom: 40px; }
+  .portfolio-smm_cases_image_block {
+    display: block;
+    text-decoration: none;
+    position: relative;
+    width: 100%; }
+    .portfolio-smm_cases_image_block_text {
+      font-size: 20px;
+      color: #001726;
+      text-transform: uppercase;
+      margin-top: 25px; }
 
 .main_blog_wrapper {
   background-color: #f5f5f5;
@@ -3848,6 +4012,10 @@ footer {
       color: #001726;
       margin-top: 20px;
       text-transform: uppercase; }
+      @media screen and (max-width: 768px) {
+        .reviews_page_block_title {
+          font-size: 18px;
+          line-height: 24px; } }
     .reviews_page_block_sub_title {
       font-size: 14px;
       margin-top: 10px;
@@ -4129,6 +4297,9 @@ footer {
     text-transform: uppercase;
     opacity: 0.05;
     z-index: 15; }
+    @media screen and (max-width: 768px) {
+      .web_page_main_text_block {
+        font-size: 270px; } }
   .web_page_main_triangle {
     position: absolute;
     display: block;
@@ -4157,22 +4328,31 @@ footer {
       text-transform: uppercase;
       letter-spacing: -20px;
       z-index: 15; }
-  .web_page_main_header {
+      @media screen and (max-width: 768px) {
+        .web_page_main_image_text {
+          font-size: 130px; } }
+  .web_page_main_header_white {
     font-size: 41px;
     color: #fefefe;
     text-align: center;
     margin-top: 220px; }
+    @media screen and (max-width: 768px) {
+      .web_page_main_header_white {
+        font-size: 26px; } }
 
 .web_page_info {
   position: relative;
   width: 100%;
   margin-top: 210px; }
-  .web_page_info_header {
+  .web_page_info_header_white {
     font-size: 120px;
     color: #fefefe;
     text-transform: uppercase;
     text-align: center;
     margin-top: 50px; }
+    @media screen and (max-width: 768px) {
+      .web_page_info_header_white {
+        font-size: 71px; } }
   .web_page_info_wrapper {
     position: relative;
     width: 100%;
@@ -4185,7 +4365,7 @@ footer {
     justify-content: center; }
     .web_page_info_image img {
       width: 100%; }
-  .web_page_info_title {
+  .web_page_info_title_blue {
     width: 100%;
     min-height: 390px;
     display: flex;
@@ -4198,10 +4378,13 @@ footer {
     text-orientation: upright;
     font-size: 24px;
     cursor: default; }
-    .web_page_info_title p {
+    @media screen and (max-width: 768px) {
+      .web_page_info_title_blue {
+        font-size: 14px; } }
+    .web_page_info_title_blue p {
       display: inline-block;
       width: 20px; }
-  .web_page_info_text {
+  .web_page_info_text_white {
     font-size: 18px;
     line-height: 24px;
     color: #fefefe;
@@ -4210,15 +4393,23 @@ footer {
     align-items: center;
     justify-content: center;
     flex-direction: column; }
-    .web_page_info_text_list li {
+    @media screen and (max-width: 768px) {
+      .web_page_info_text_white {
+        font-size: 16px;
+        line-height: 20px; } }
+    .web_page_info_text_white_list li {
       position: relative;
       margin-top: 10px;
       font-size: 18px;
       color: #fefefe;
       text-indent: 60px;
       letter-spacing: -1px; }
-      .web_page_info_text_list li:before {
-        content: url(../img/in-portfolio/dot.png);
+      @media screen and (max-width: 768px) {
+        .web_page_info_text_white_list li {
+          font-size: 16px;
+          line-height: 20px; } }
+      .web_page_info_text_white_list li:before {
+        content: url(../img/web/dot-blue.png);
         position: absolute;
         top: -4px;
         left: -30px; }
@@ -4266,11 +4457,18 @@ footer {
       .web_page_advertising_image_block_title {
         font-size: 36px;
         color: #fefefe; }
+        @media screen and (max-width: 768px) {
+          .web_page_advertising_image_block_title {
+            font-size: 24px; } }
       .web_page_advertising_image_block_text {
         font-size: 24px;
         line-height: 30px;
         color: #fefefe;
         margin-top: 30px; }
+        @media screen and (max-width: 768px) {
+          .web_page_advertising_image_block_text {
+            font-size: 16px;
+            line-height: 20px; } }
 
 .web_page_projects {
   position: relative;
@@ -4282,7 +4480,7 @@ footer {
     height: 70px;
     border-radius: 10px;
     background-image: linear-gradient(to right, #ee0979 0%, #ff6a00 100%); }
-  .web_page_projects_header {
+  .web_page_projects_header_white {
     position: absolute;
     width: calc(100% - 8px);
     height: 62px;
@@ -4300,10 +4498,13 @@ footer {
     margin-top: 30px; }
     .web_page_projects_image img {
       width: 100%; }
-    .web_page_projects_image_title {
+    .web_page_projects_image_title_white {
       font-size: 36px;
       color: #fefefe;
       margin-top: 20px; }
+      @media screen and (max-width: 768px) {
+        .web_page_projects_image_title_white {
+          font-size: 30px; } }
 
 .web_page_main {
   position: relative;
@@ -4321,6 +4522,9 @@ footer {
     opacity: 0.05;
     letter-spacing: -30px;
     z-index: 15; }
+    @media screen and (max-width: 768px) {
+      .web_page_main_text_block {
+        font-size: 170px; } }
   .web_page_main_triangle {
     position: absolute;
     display: block;
@@ -4349,11 +4553,17 @@ footer {
       text-transform: uppercase;
       letter-spacing: -20px;
       z-index: 15; }
+      @media screen and (max-width: 768px) {
+        .web_page_main_image_text {
+          font-size: 130px; } }
   .web_page_main_header {
     font-size: 41px;
     color: #001726;
     text-align: center;
     margin-top: 220px; }
+    @media screen and (max-width: 768px) {
+      .web_page_main_header {
+        font-size: 26px; } }
 
 .web_page_info {
   position: relative;
@@ -4365,6 +4575,9 @@ footer {
     text-transform: uppercase;
     text-align: center;
     margin-top: 50px; }
+    @media screen and (max-width: 768px) {
+      .web_page_info_header {
+        font-size: 71px; } }
   .web_page_info_wrapper {
     position: relative;
     width: 100%;
@@ -4390,6 +4603,9 @@ footer {
     text-orientation: upright;
     font-size: 24px;
     cursor: default; }
+    @media screen and (max-width: 768px) {
+      .web_page_info_title {
+        font-size: 14px; } }
     .web_page_info_title p {
       display: inline-block;
       width: 20px; }
@@ -4402,6 +4618,10 @@ footer {
     align-items: center;
     justify-content: center;
     flex-direction: column; }
+    @media screen and (max-width: 768px) {
+      .web_page_info_text {
+        font-size: 16px;
+        line-height: 20px; } }
     .web_page_info_text_list li {
       position: relative;
       margin-top: 10px;
@@ -4409,6 +4629,10 @@ footer {
       color: #001726;
       text-indent: 60px;
       letter-spacing: -1px; }
+      @media screen and (max-width: 768px) {
+        .web_page_info_text_list li {
+          font-size: 16px;
+          line-height: 20px; } }
       .web_page_info_text_list li:before {
         content: url(../img/in-portfolio/dot.png);
         position: absolute;
@@ -4458,11 +4682,18 @@ footer {
       .web_page_advertising_image_block_title {
         font-size: 36px;
         color: #fefefe; }
+        @media screen and (max-width: 768px) {
+          .web_page_advertising_image_block_title {
+            font-size: 24px; } }
       .web_page_advertising_image_block_text {
         font-size: 24px;
         line-height: 30px;
         color: #fefefe;
         margin-top: 30px; }
+        @media screen and (max-width: 768px) {
+          .web_page_advertising_image_block_text {
+            font-size: 16px;
+            line-height: 20px; } }
 
 .web_page_projects {
   position: relative;
@@ -4496,6 +4727,9 @@ footer {
       font-size: 36px;
       color: #001726;
       margin-top: 20px; }
+      @media screen and (max-width: 768px) {
+        .web_page_projects_image_title {
+          font-size: 30px; } }
 
 .web_page_other {
   position: relative;

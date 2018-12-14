@@ -24,6 +24,9 @@
     padding-top: 20%
     margin-left: -12px
     z-index: 10
+    @media screen and (max-width: 768px)
+      font-size: 152px
+      padding-top: 35%
   h4
     position: relative
     font-size: 36px
@@ -87,11 +90,17 @@
       @extend .com-bold
       color: $dark-blue
       margin-bottom: 20px
+      @media screen and (max-width: 768px)
+        font-size: 30px
     p
       font-size: 24px
       line-height: 30px
       color: $dark-blue
       margin-top: 10px
+      @media screen and (max-width: 768px)
+        font-size: 18px
+        line-height: 24px
+
 
 
 
@@ -127,12 +136,16 @@
   position: relative
   width: 100%
   margin-top: 85px
+  @media screen and (max-width: 768px)
+    margin-top: 25px
   &_block
     &_header
       font-size: 30px
       @extend .com-bold
       color: $dark-blue
       margin-bottom: 30px
+      @media screen and (max-width: 768px)
+        margin-top: 50px
     &_sub_header
       font-size: 18px
       line-height: 24px
@@ -146,6 +159,7 @@
         color: $dark-blue
         margin-bottom: 10px
         text-indent: 32px
+        margin-left: 30px
         &:before
           content: url(../img/in-portfolio/dot.png)
           position: absolute
@@ -200,6 +214,8 @@
       font-size: 36px
       @extend .com-bold
       color: $dark-blue
+      @media screen and (max-width: 768px)
+        font-size: 30px
     &_text
       margin-top: 20px
       p
@@ -228,6 +244,8 @@
     line-height: 48px
     @extend .com-bold
     color: $dark-blue
+    @media screen and (max-width: 768px)
+      font-size: 30px
   &_text
     margin-top: 20px
     p
@@ -236,6 +254,9 @@
       @extend .com-bold
       color: $dark-blue
       margin-top: 10px
+      @media screen and (max-width: 768px)
+        font-size: 18px
+        line-height: 24px
     span
       background-color: $white
       background-image: linear-gradient(to right, #ee0979 0%, #ff6a00 100%)

@@ -24,6 +24,8 @@
     padding-top: 20%
     margin-left: -12px
     z-index: 10
+    @media screen and (max-width: 768px)
+      padding-top: 35%
   h4
     position: relative
     font-size: 36px
@@ -65,6 +67,9 @@
       text-align: center
       margin-top: 30px
       @extend .com-bold
+      @media screen and (max-width: 768px)
+        font-size: 14px
+        line-height: 16px
 
 
 
@@ -86,11 +91,15 @@
       @extend .com-bold
       color: $dark-blue
       margin-bottom: 20px
+      @media screen and (max-width: 768px)
+        font-size: 30px
     p
       font-size: 24px
       line-height: 30px
       color: $dark-blue
       margin-top: 10px
+      @media screen and (max-width: 768px)
+        font-size: 18px
 
 
 
@@ -106,6 +115,9 @@
     font-size: 18px
     line-height: 24px
     margin-top: 30px
+    @media screen and (max-width: 768px)
+      font-size: 16px
+      line-height: 20px
 
 
 
@@ -141,6 +153,7 @@
         color: $dark-blue
         margin-top: 20px
         text-indent: 32px
+        margin-left: 30px
         &:before
           content: url(../img/in-portfolio/dot.png)
           position: absolute
@@ -171,6 +184,8 @@
   position: relative
   width: 100%
   margin-top: 120px
+  @media screen and (max-width: 768px)
+    margin-top: 70px
   &_block
     &_header
       font-size: 30px
@@ -178,6 +193,8 @@
       color: $dark-blue
       margin-bottom: 20px
       letter-spacing: -2px
+      @media screen and (max-width: 768px)
+        margin-top: 50px
     &_list
       li
         position: relative
@@ -186,6 +203,7 @@
         line-height: 24px
         color: $dark-blue
         text-indent: 32px
+        margin-left: 30px
         &:before
           content: url(../img/in-portfolio/dot.png)
           position: absolute

@@ -22,7 +22,12 @@
     @extend .com-reg
     color: $black
     margin-left: 5px
-
+  &_text_white
+    color: $white !important
+    &:before
+      background-color: $white !important
+    &:after
+      background-color: $white !important
   &_text
     position: relative
     font-size: 30px
@@ -52,6 +57,8 @@
     position: relative
     display: flex
     justify-content: space-around
+  &_btn_white
+    color: $white !important
   &_btn
     position: relative
     display: inline-block
