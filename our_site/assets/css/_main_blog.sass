@@ -2,6 +2,8 @@
     position: relative
     width: 100%
     margin-top: 150px
+    @media screen and (max-width: 750px)
+        margin-top: 80px
     &_header
         @extend .section_header
 
@@ -27,6 +29,8 @@
             @media screen and (max-width: 768px)
                 font-size: 11px
                 margin-top: 15px
+            @media screen and (max-width: 750px)
+                font-size: 14px
 
         .blog_title_wrapper
             position: relative
@@ -60,6 +64,8 @@
                 @media screen and (max-width: 768px)
                     font-size: 13px
                     line-height: 18px
+                @media screen and (max-width: 750px)
+                    font-size: 24px
 
         .name
             font-size: 16px
@@ -69,7 +75,10 @@
             margin: 15px 0 15px 10px
             @media screen and (max-width: 768px)
                 font-size: 11px
-                margin: 10px 0 0px 10px
+                margin: 10px 0 0 10px
+            @media screen and (max-width: 750px)
+                font-size: 14px
+                padding-bottom: 10px
 
         .heart
             display: flex
@@ -87,6 +96,8 @@
                 margin: 3px 0 3px 10px
                 @media screen and (max-width: 768px)
                     font-size: 11px
+                @media screen and (max-width: 750px)
+                    font-size: 14px
 
         .comments
             display: flex
@@ -103,6 +114,8 @@
                 margin: 3px 0 3px 10px
                 @media screen and (max-width: 768px)
                     font-size: 11px
+                @media screen and (max-width: 750px)
+                    font-size: 14px
     
     &_btn
         position: relative

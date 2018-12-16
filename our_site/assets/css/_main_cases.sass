@@ -13,6 +13,8 @@
     margin-top: 100px
     @media screen and (max-width: 768px)
       height: 30vh
+    @media screen and (max-width: 750px)
+      height: 300px
 
     .cases_slide
       overflow: hidden   
@@ -26,6 +28,8 @@
       background-image: linear-gradient(to bottom, #1cd8d2 0%, #93edc7 100%)
       @media screen and (max-width: 768px)
         height: 30vh
+      @media screen and (max-width: 750px)
+        height: 300px
 
     .cases_slide_dots_block
       position: absolute
@@ -37,6 +41,11 @@
         width: 190px
         height: 190px
         top: 7px
+      @media screen and (max-width: 750px)
+        left: -370%
+        width: 250px
+        height: 250px
+        top: 25px
       img
         width: 100%
 
@@ -47,6 +56,25 @@
       float: right
       @media screen and (max-width: 768px)
         font-size: 60px
+      @media screen and (max-width: 750px)
+        display: none
+        text-align: right
+        writing-mode: vertical-rl
+        text-orientation: upright
+        font-size: 24px
+    .cases_slide_header_mob
+      display: none
+      @media screen and (max-width: 750px)
+        position: relative
+        display: inline-block
+        width: 70%
+        margin-top: 20px
+        text-align: right
+        writing-mode: vertical-rl
+        text-orientation: upright
+        font-size: 24px
+        text-transform: uppercase
+        color: $white
 
     .cases_slide_circles
       position: absolute
@@ -54,8 +82,13 @@
       height: 80px
       bottom: 13%
       right: 18%
+      @media screen and (max-width: 750px)
+        width: 50px
+        height: 50px
+        bottom: 5px
+        right: 0
       img
-        width: 80px
+        width: 100%
 
     .cases_slide_image
       height: 30vh

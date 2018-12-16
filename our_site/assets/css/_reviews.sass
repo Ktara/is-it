@@ -2,10 +2,14 @@
   position: relative
   width: 100%
   margin-top: 80px
+  @media screen and (max-width: 750px)
+    margin-top: 130px
   &_header
     font-size: 72px
     @extend .com-bold
     color: $dark-blue
+    @media screen and (max-width: 750px)
+      font-size: 48px
   &_block
     position: relative
     width: 100%

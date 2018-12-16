@@ -6,6 +6,10 @@
   -webkit-background-size: cover
   background-size: cover
   z-index: 1
+  @media screen and (max-width: 750px)
+    margin-top: 80px
+    height: 40vh
+    min-height: 250px
   &:after
     content: ''
     position: absolute
@@ -24,6 +28,9 @@
     padding-top: 15%
     margin-left: -12px
     z-index: 10
+    @media screen and (max-width: 750px)
+      font-size: 72px
+      padding-top: 30%
   h4
     position: relative
     font-size: 36px
@@ -31,6 +38,9 @@
     color: $white
     padding-top: 25px
     z-index: 10
+    @media screen and (max-width: 750px)
+      font-size: 16px
+      padding-top: 10px
 
 
 
@@ -40,15 +50,22 @@
   position: relative
   width: 100%
   margin-top: 50px
+  @media screen and (max-width: 750px)
+    margin-top: 0
   .content_main_icon
     position: relative
     width: 100%
+    @media screen and (max-width: 750px)
+      margin-top: 30px
     &_image
       display: flex
       width: 80px
       height: 70px
       margin: auto
       text-align: center
+      @media screen and (max-width: 750px)
+        width: 50px
+        height: 50px
       img
         height: 100%
         display: inline-block
@@ -68,6 +85,10 @@
       @media screen and (max-width: 768px)
         font-size: 16px
         letter-spacing: -1px
+      @media screen and (max-width: 750px)
+        font-size: 14px
+        line-height: 17px
+        margin-top: 20px
 
 
 
@@ -75,6 +96,8 @@
   position: relative
   width: 100%
   margin-top: 120px
+  @media screen and (max-width: 750px)
+    margin-top: 80px
   &_image
     width: 275px
     text-align: center
@@ -105,6 +128,8 @@
   position: relative
   width: 100%
   margin-top: 160px
+  @media screen and (max-width: 750px)
+    margin-top: 80px
   &_header
     width: 100%
     height: 67px
@@ -117,6 +142,10 @@
     @extend .com-bold
     letter-spacing: -2px
     text-align: center
+    @media screen and (max-width: 750px)
+      font-size: 16px
+      height: 45px
+      line-height: 45px
   &_text
     width: 100%
     position: relative
@@ -131,11 +160,15 @@
       color: $dark-blue
       margin-top: 30px
       margin-bottom: 10px
+      @media screen and (max-width: 750px)
+        font-size: 24px
     &_sub_title
       font-size: 24px
       line-height: 30px
       color: $dark-blue
       margin-top: 10px
+      @media screen and (max-width: 750px)
+        font-size: 18px
       a
         text-decoration: none
         background-color: $white
@@ -152,6 +185,8 @@
         color: $dark-blue
         text-indent: 32px
         margin-left: 30px
+        @media screen and (max-width: 750px)
+          font-size: 16px
         &:before
           content: url(../img/in-portfolio/dot.png)
           position: absolute
@@ -166,6 +201,8 @@
   position: relative
   width: 100%
   margin-top: 160px
+  @media screen and (max-width: 750px)
+    margin-top: 80px
   &_header
     width: 100%
     height: 67px
@@ -178,6 +215,10 @@
     @extend .com-bold
     letter-spacing: -2px
     text-align: center
+    @media screen and (max-width: 750px)
+      font-size: 16px
+      height: 45px
+      line-height: 45px
   &_slider_wrapper
     width: 100%
     margin-top: 30px
@@ -196,6 +237,8 @@
     top: calc(50% - 16px)
     right: -8%
     background-image: url("../img/content/nextA.png")
+    @media screen and (max-width: 750px)
+      right: -1%
   .content_trust_prew_arrow
     cursor: pointer
     position: absolute
@@ -204,6 +247,8 @@
     top: calc(50% - 16px)
     left: -8%
     background-image: url("../img/content/prewA.png")
+    @media screen and (max-width: 750px)
+      left: -1%
 
 
 
@@ -213,6 +258,8 @@
   position: relative
   width: 100%
   margin-top: 120px
+  @media screen and (max-width: 750px)
+    margin-top: 80px
   &_header
     width: 100%
     height: 67px
@@ -225,6 +272,10 @@
     @extend .com-bold
     letter-spacing: -2px
     text-align: center
+    @media screen and (max-width: 750px)
+      font-size: 16px
+      height: 45px
+      line-height: 45px
   &_slider_wrapper
     width: 100%
     margin-top: 35px
@@ -243,6 +294,8 @@
     top: calc(50% - 16px)
     right: -8%
     background-image: url("../img/content/nextA.png")
+    @media screen and (max-width: 750px)
+      right: -1%
   .content_reviews_prew_arrow
     cursor: pointer
     position: absolute
@@ -251,7 +304,8 @@
     top: calc(50% - 16px)
     left: -8%
     background-image: url("../img/content/prewA.png")
-
+    @media screen and (max-width: 750px)
+      left: -1px
 
 
 
@@ -261,6 +315,8 @@
   position: relative
   width: 100%
   margin-top: 120px
+  @media screen and (max-width: 750px)
+    margin-top: 80px
   &_header
     width: 100%
     height: 67px
@@ -273,6 +329,10 @@
     @extend .com-bold
     letter-spacing: -2px
     text-align: center
+    @media screen and (max-width: 750px)
+      font-size: 16px
+      height: 45px
+      line-height: 45px
   &_slider_wrapper
     width: 100%
     //height: 330px
@@ -302,6 +362,11 @@
     color: $white
     background-color: $white
     background-image: linear-gradient(to right, #ee0979 0%, #ff6a00 100%)
+    @media screen and (max-width: 750px)
+      width: 100%
+      height: 45px
+      font-size: 16px
+      line-height: 45px
 
   .content_projects_next_arrow
     cursor: pointer
@@ -311,6 +376,8 @@
     top: calc(50% - 16px)
     right: -8%
     background-image: url("../img/content/nextA.png")
+    @media screen and (max-width: 750px)
+      right: -1%
   .content_projects_prew_arrow
     cursor: pointer
     position: absolute
@@ -319,6 +386,8 @@
     top: calc(50% - 16px)
     left: -8%
     background-image: url("../img/content/prewA.png")
+    @media screen and (max-width: 750px)
+      left: -1px
 
 
 

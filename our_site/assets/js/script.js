@@ -32,15 +32,13 @@ $('.content_trust_slider_wrapper').slick({
                 slidesToScroll: 3
             }
         },
-        // {
-        //     breakpoint: 480,
-        //     settings: {
-        //         arrows: false,
-        //         centerMode: true,
-        //         centerPadding: '40px',
-        //         slidesToShow: 1
-        //     }
-        // }
+        {
+            breakpoint: 750,
+            settings: {
+                slidesToShow: 2,
+                slidesToScroll: 2
+            }
+        }
     ]
 });
 
@@ -64,15 +62,13 @@ $('.content_reviews_slider_wrapper').slick({
                 slidesToScroll: 3
             }
         },
-        // {
-        //     breakpoint: 480,
-        //     settings: {
-        //         arrows: false,
-        //         centerMode: true,
-        //         centerPadding: '40px',
-        //         slidesToShow: 1
-        //     }
-        // }
+        {
+            breakpoint: 750,
+            settings: {
+                slidesToShow: 2,
+                slidesToScroll: 2
+            }
+        }
     ]
 });
 
@@ -95,15 +91,13 @@ $('.content_projects_slider_wrapper').slick({
                 slidesToScroll: 3
             }
         },
-        // {
-        //     breakpoint: 480,
-        //     settings: {
-        //         arrows: false,
-        //         centerMode: true,
-        //         centerPadding: '40px',
-        //         slidesToShow: 1
-        //     }
-        // }
+        {
+            breakpoint: 750,
+            settings: {
+                slidesToShow: 2,
+                slidesToScroll: 2
+            }
+        }
     ]
 });
 
@@ -146,15 +140,13 @@ $('.blog_page_slider_wrapper').slick({
                 slidesToScroll: 2
             }
         },
-        // {
-        //     breakpoint: 480,
-        //     settings: {
-        //         arrows: false,
-        //         centerMode: true,
-        //         centerPadding: '40px',
-        //         slidesToShow: 1
-        //     }
-        // }
+        {
+            breakpoint: 750,
+            settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1
+            }
+        }
     ]
 });
 
@@ -176,3 +168,42 @@ $('.contact_service_form_title').click(function(){
     }, 600);
     $(this).addClass('contact_form_open');
 });
+
+
+
+(function () {
+    $('.in-portfolio_info_text_read').click(function (e) {
+        $(e.target).css('display', 'none');
+        var trHeight = $(e.target).prev().children().css('height');
+        $(e.target).prev().animate({
+            'height': trHeight
+        }, 600);
+    });
+})();
+
+
+
+
+(function () {
+    $('.in-portfolio_desctope_text_read').click(function (e) {
+        $(e.target).css('display', 'none');
+        var trHeight = $(e.target).prev().children().css('height');
+        $(e.target).prev().animate({
+            'height': trHeight
+        }, 600);
+    });
+})();
+
+
+
+
+(function () {
+    $('.in-portfolio_tablet_text_read').click(function (e) {
+        $(e.target).css('display', 'none');
+        var trHeight = $(e.target).prev().children().css('height');
+        $(e.target).prev().animate({
+            'height': trHeight
+        }, 600);
+    });
+})();
+

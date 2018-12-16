@@ -7,6 +7,9 @@
     height: calc(50vh - 80px)
     margin-top: 80px
     min-height: 435px
+  @media screen and (max-width: 750px)
+    height: 40vh
+    min-height: 220px
   &_gradient_block
     display: inline-block
     width: 40%
@@ -45,7 +48,10 @@
       height: calc(50vh - 80px)
       margin-top: 80px
       min-height: 435px
-
+    @media screen and (max-width: 750px)
+      height: 40vh
+      min-height: 220px
+      margin-top: 0
   &_header
     position: absolute
     display: block
@@ -59,6 +65,10 @@
     @media screen and (max-width: 768px)
       font-size: 94px
       top: 8vh
+    @media screen and (max-width: 750px)
+      font-size: 48px
+      top: 35%
+      left: 30px
 
   &_btn
     position: absolute
@@ -75,14 +85,20 @@
       font-size: 16px
       padding: 10px 20px
       top: calc(8vh + 115px)
+    @media screen and (max-width: 750px)
+      top: calc(35% + 70px)
 
 .portfolio-smm_legend
   position: relative
   width: 100%
   margin-top: 85px
+  @media screen and (max-width: 750px)
+    margin-top: 30px
   &_text
     li
       margin-bottom: 20px
+      @media screen and (max-width: 750px)
+        margin-bottom: 10px
       p
         display: inline-block
         width: 100px
@@ -91,22 +107,32 @@
         @extend .com-bold
         color: $dark-blue
         margin-right: 20px
+        @media screen and (max-width: 750px)
+          font-size: 18px
+          font-weight: 400
       span
         font-size: 18px
         line-height: 30px
         @extend .com-reg
+        @media screen and (max-width: 750px)
+          font-size: 16px
+          line-height: 20px
   &_list
     &_title
       font-size: 24px
       line-height: 30px
       @extend .com-bold
       color: $dark-blue
+      @media screen and (max-width: 750px)
+        margin-top: 30px
     li
       position: relative
       margin-top: 30px
       font-size: 18px
       color: $dark-blue
       text-indent: 32px
+      @media screen and (max-width: 750px)
+        margin-top: 15px
       &:before
         content: url(../img/in-portfolio/dot.png)
         position: absolute
@@ -121,12 +147,16 @@
   position: relative
   width: 100%
   margin-top: 70px
+  @media screen and (max-width: 750px)
+    margin-top: 30px
   &_sub_title
     font-size: 30px
     line-height: 36px
     color: $dark-blue
     margin-top: 50px
     margin-bottom: 20px
+    @media screen and (max-width: 750px)
+      font-size: 24px
   &_text
     p
       margin-top: 10px
@@ -139,6 +169,9 @@
     color: $dark-blue
     margin-top: 80px
     letter-spacing: -1px
+    @media screen and (max-width: 750px)
+      font-size: 30px
+      line-height: 36px
 
 
 
@@ -166,6 +199,9 @@
     color: $dark-blue
     margin-top: 80px
     letter-spacing: -1px
+    @media screen and (max-width: 750px)
+      font-size: 24px
+      line-height: 30px
   &_image
     position: relative
     width: 100%
@@ -199,6 +235,9 @@
     color: $dark-blue
     letter-spacing: -1px
     margin-bottom: 40px
+    @media screen and (max-width: 750px)
+      font-size: 30px
+      line-height: 36px
   &_image
     position: relative
     width: 100%
@@ -226,6 +265,9 @@
     color: $dark-blue
     letter-spacing: -1px
     margin-bottom: 40px
+    @media screen and (max-width: 750px)
+      font-size: 30px
+      line-height: 36px
 
 
 
@@ -234,6 +276,8 @@
   position: relative
   width: 100%
   margin-top: 80px
+  @media screen and (max-width: 750px)
+    display: none
   &_title
     font-size: 36px
     line-height: 48px

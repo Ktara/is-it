@@ -2,12 +2,16 @@
   position: relative
   width: 100%
   padding-top: 150px
+  @media screen and (max-width: 750px)
+    padding-top: 80px
   &_header
     @extend .section_header    
 
   &_first_block
     margin-top: 100px
-
+  .fixed
+    @media screen and (max-width: 750px)
+      padding: 0 15px !important
   &_card_wrapper
     position: relative
     width: 100%
@@ -17,6 +21,11 @@
     background-image: linear-gradient(to bottom, #1cd8d2 0%, #93edc7 100%)
     @media screen and (max-width: 768px)
       height: 250px
+    @media screen and (max-width: 750px)
+      display: flex
+      justify-content: center
+      align-items: center
+      height: 100px
 
   &_card_wrapper:nth-child(2)
     margin-top: 90px
@@ -28,6 +37,11 @@
     float: right
     @media screen and (max-width: 768px)
       font-size: 26px
+    @media screen and (max-width: 750px)
+      font-size: 32px
+      display: inline-block
+      letter-spacing: -3px
+      float: none
 
   &_card_text
     display: block
@@ -39,12 +53,16 @@
       font-size: 14px
       padding-top: 40px
       line-height: 18px
+    @media screen and (max-width: 750px)
+      display: none
 
   &_card_image
     position: absolute
     width: 100%
     text-align: center
     bottom: 7%
+    @media screen and (max-width: 750px)
+      display: none
     img
       width: 55%
       display: inline-block
@@ -55,8 +73,11 @@
     height: 80px
     bottom: 0
     right: 0
+    @media screen and (max-width: 750px)
+      width: 50px
+      height: 50px
     img
-      width: 80px
+      width: 100%
 
 .card_viewer .col-lg-3:nth-child(1) .services_card_wrapper
   margin-top: 100px
@@ -64,6 +85,9 @@
   @media screen and (max-width: 768px)
     .services_card_wrapper
       margin-top: 50px
+  @media screen and (max-width: 750px)
+    .services_card_wrapper
+      margin-top: 30px
 
 .card_viewer .col-lg-3:nth-child(2) .services_card_wrapper
   margin-top: 610px
@@ -71,6 +95,10 @@
   @media screen and (max-width: 768px)
     .services_card_wrapper
       margin-top: 400px
+.card_viewer .col-lg-3:nth-child(2)
+  @media screen and (max-width: 750px)
+    .services_card_wrapper
+      margin-top: 80px
 
 .card_viewer .col-lg-3:nth-child(3) .services_card_wrapper
   margin-top: 190px
@@ -78,6 +106,10 @@
   @media screen and (max-width: 768px)
     .services_card_wrapper
       margin-top: 100px
+.card_viewer .col-lg-3:nth-child(3)
+  @media screen and (max-width: 750px)
+    .services_card_wrapper
+      margin-top: 0
 
 .card_viewer .col-lg-3:nth-child(4) .services_card_wrapper
   margin-top: 690px
@@ -85,6 +117,10 @@
   @media screen and (max-width: 768px)
     .services_card_wrapper
       margin-top: 450px
+.card_viewer .col-lg-3:nth-child(4)
+  @media screen and (max-width: 750px)
+    .services_card_wrapper
+      margin-top: 50px
 
 .card_viewer .col-lg-3:nth-child(5) .services_card_wrapper
   margin-top: 0
@@ -95,3 +131,7 @@
   @media screen and (max-width: 768px)
     .services_card_wrapper
       margin-top: 100px
+.card_viewer .col-lg-3:nth-child(6)
+  @media screen and (max-width: 750px)
+    .services_card_wrapper
+      margin-top: 50px
