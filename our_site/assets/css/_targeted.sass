@@ -6,6 +6,10 @@
   -webkit-background-size: cover
   background-size: cover
   z-index: 1
+  @media screen and (max-width: 750px)
+    height: 40vh
+    margin-top: 80px
+    min-height: 270px
   &:after
     content: ''
     position: absolute
@@ -27,6 +31,9 @@
     @media screen and (max-width: 768px)
       font-size: 152px
       padding-top: 35%
+    @media screen and (max-width: 750px)
+      font-size: 72px
+      padding-top: 25%
   h4
     position: relative
     font-size: 36px
@@ -34,6 +41,9 @@
     color: $white
     padding-top: 20px
     z-index: 10
+    @media screen and (max-width: 750px)
+      font-size: 16px
+      padding-top: 10px
 
 
 
@@ -41,6 +51,8 @@
   position: relative
   width: 100%
   margin-top: 50px
+  @media screen and (max-width: 750px)
+    margin-top: 0
   .targeted_main_icon
     position: relative
     width: 100%
@@ -51,6 +63,10 @@
       height: 70px
       margin: auto
       text-align: center
+      @media screen and (max-width: 750px)
+        width: 50px
+        height: 50px
+        margin-top: 30px
       img
         height: 100%
         display: inline-block
@@ -77,6 +93,8 @@
   position: relative
   width: 100%
   margin-top: 120px
+  @media screen and (max-width: 750px)
+    margin-top: 80px
   &_image
     width: 275px
     text-align: center
@@ -92,6 +110,8 @@
       margin-bottom: 20px
       @media screen and (max-width: 768px)
         font-size: 30px
+      @media screen and (max-width: 750px)
+        font-size: 24px
     p
       font-size: 24px
       line-height: 30px
@@ -100,6 +120,8 @@
       @media screen and (max-width: 768px)
         font-size: 18px
         line-height: 24px
+      @media screen and (max-width: 750px)
+        font-size: 16px
 
 
 
@@ -114,11 +136,17 @@
     margin-top: 50px
     display: flex
     align-items: center
+    @media screen and (max-width: 750px)
+      flex-direction: column
+      justify-content: center
+      text-align: center
     &_image
       display: inline-block
       width: 130px
       height: 120px
       margin-right: 110px
+      @media screen and (max-width: 750px)
+        margin-right: 0
       img
         width: 100%
     &_text
@@ -128,6 +156,11 @@
       line-height: 30px
       @extend .com-bold
       color: $dark-blue
+      @media screen and (max-width: 750px)
+        font-size: 16px
+        line-height: 20px
+        width: 100%
+        margin-top: 20px
 
 
 
@@ -138,6 +171,8 @@
   margin-top: 85px
   @media screen and (max-width: 768px)
     margin-top: 25px
+  @media screen and (max-width: 750px)
+    margin-top: 30px
   &_block
     &_header
       font-size: 30px
@@ -146,6 +181,8 @@
       margin-bottom: 30px
       @media screen and (max-width: 768px)
         margin-top: 50px
+      @media screen and (max-width: 750px)
+        font-size: 24px
     &_sub_header
       font-size: 18px
       line-height: 24px
@@ -160,6 +197,9 @@
         margin-bottom: 10px
         text-indent: 32px
         margin-left: 30px
+        @media screen and (max-width: 750px)
+          font-size: 16px
+          line-height: 20px
         &:before
           content: url(../img/in-portfolio/dot.png)
           position: absolute
@@ -179,6 +219,8 @@
   position: relative
   width: 100%
   margin-top: 120px
+  @media screen and (max-width: 750px)
+    margin-top: 80px
   &_head
     position: relative
     display: flex
@@ -191,10 +233,17 @@
     background-color: $white
     background-image: linear-gradient(to bottom, #1cd8d2 0%, #93edc7 100%)
     color: $dark-blue
+    @media screen and (max-width: 750px)
+      flex-direction: column
+      line-height: 20px
+      height: auto
     li
       display: inline-block
       width: auto
       cursor: pointer
+      @media screen and (max-width: 750px)
+        margin-top: 15px
+        margin-bottom: 15px
   &_list_active
     position: relative
     &:before
@@ -207,6 +256,9 @@
       left: 0
       border-radius: 1px
       background-image: linear-gradient(to right, #ee0979 0%, #ff6a00 100%)
+      @media screen and (max-width: 750px)
+        bottom: -5px
+        width: 80%
   &_block
     position: relative
     margin-top: 50px
@@ -216,12 +268,17 @@
       color: $dark-blue
       @media screen and (max-width: 768px)
         font-size: 30px
+      @media screen and (max-width: 750px)
+        font-size: 24px
     &_text
       margin-top: 20px
       p
         font-size: 18px
         line-height: 30px
         color: $dark-blue
+        @media screen and (max-width: 750px)
+          font-size: 16px
+          line-height: 20px
     &_sub_header
       font-size: 24px
       line-height: 30px
@@ -239,6 +296,8 @@
   position: relative
   width: 100%
   margin-top: 120px
+  @media screen and (max-width: 750px)
+    margin-top: 80px
   &_header
     font-size: 36px
     line-height: 48px
@@ -246,6 +305,9 @@
     color: $dark-blue
     @media screen and (max-width: 768px)
       font-size: 30px
+    @media screen and (max-width: 750px)
+      font-size: 24px
+      line-height: 30px
   &_text
     margin-top: 20px
     p
@@ -257,6 +319,8 @@
       @media screen and (max-width: 768px)
         font-size: 18px
         line-height: 24px
+      @media screen and (max-width: 750px)
+        font-size: 16px
     span
       background-color: $white
       background-image: linear-gradient(to right, #ee0979 0%, #ff6a00 100%)
