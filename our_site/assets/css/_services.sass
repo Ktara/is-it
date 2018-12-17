@@ -1,0 +1,76 @@
+.services_page
+  position: relative
+  width: 100%
+  padding-top: 160px
+  &_header
+    font-size: 72px
+    color: $dark-blue
+    @extend .com-bold
+    margin-bottom: 35px
+    @media screen and (max-width: 768px)
+      font-size: 60px
+    @media screen and (max-width: 750px)
+      font-size: 48px
+  &_card_wrapper
+    position: relative
+    width: 100%
+    height: 250px
+    border-radius: 10px
+    background-color: $black
+    background-image: linear-gradient(to bottom, #1cd8d2 0%, #93edc7 100%)
+    margin-bottom: 80px
+    @media screen and (max-width: 768px)
+      height: 250px
+    @media screen and (max-width: 750px)
+      height: 300px
+      margin-bottom: 30px
+  &_card_header
+    display: block
+    font-size: 60px
+    color: $white
+    text-transform: uppercase
+    margin-left: 10px
+    @media screen and (max-width: 750px)
+      font-size: 30px
+      letter-spacing: -3px
+  &_card_text
+    display: block
+    width: 80%
+    font-size: 18px
+    color: $white
+    line-height: 24px
+    margin-top: 40px
+    margin-left: 10px
+    @media screen and (max-width: 768px)
+      font-size: 16px
+      margin-top: 35px
+      line-height: 22px
+    @media screen and (max-width: 750px)
+      margin-top: 30px
+  &_card_image
+    position: absolute
+    width: 34%
+    left: 28%
+    bottom: -50px
+    @media screen and (max-width: 750px)
+      bottom: 35%
+      left: 0
+      width: 100%
+      text-align: center
+    img
+      width: 100%
+      display: inline-block
+      @media screen and (max-width: 750px)
+        width: 80px
+
+  &_card_circles
+    position: absolute
+    width: 80px
+    height: 80px
+    bottom: 0
+    right: 0
+    @media screen and (max-width: 750px)
+      width: 50px
+      height: 50px
+    img
+      width: 100%
