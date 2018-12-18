@@ -17,7 +17,7 @@
   font-family: "Comfortaa", sans-serif;
   font-weight: 400; }
 
-.com-bold, .section_header, .services_header, .cases_header, .why_header, .trust_header, .blog_header, .reviews_header, .nav_header_logo_block p, .nav_header .other_menu_lang a, .popup_menu .other_menu_lang a, .main_slide_header p, .main_slide_header span, .main_slide_sub_header, .main_slide_info span, .main_slide_info_text, .main_btn p, .main_menu_lang a, .main_menu_tablet_lang a, .mob_info_slider_block span, .mob_info_slider_block_text, .in-portfolio_info_list_header, .in-portfolio_info_link, .content_main h1, .content_main h4, .content_info_text h4, .content_price_header, .content_price_text_title, .content_trust_header, .content_reviews_header, .content_projects_header, .content_projects_slider_wrapper .content_projects_slide_name, .targeted_main h1, .targeted_main h4, .targeted_main_icon_wrapper .targeted_main_icon_text, .targeted_info_text h4, .targeted_list_point_text, .targeted_advantage_block_header, .targeted_social_block_header, .targeted_social_block_sub_header, .targeted_price_header, .targeted_price_text p, .smm_main h1, .smm_main h4, .smm_main_icon_wrapper .smm_main_icon_text, .smm_info_text h4, .smm_advantage_block_header, .smm_work_block_header, .smm_price_header, .blog_page_slide_text, .blog_beast_header, .blog_brif_text_btn, .blog_smm_header, .blog_web_header, .blog_other_text_btn, .blog_read_header, .portfolio-smm_legend_text li p, .portfolio-smm_legend_list_title, .portfolio-smm_result_text p, .reviews_page_header, .reviews_page_block_sub_title, .contact_service_header, .contact_service_form_title, .contact_service_form_btn, .contact_service_form_list label p, .contact_service_price_header, .contact_service_price_block_text, .web_page_main_text_block, .web_page_main_image_text, .web_page_info_header_white, .web_page_info_title_blue, .web_page_advertising_image_block_title, .web_page_projects_header_white, .web_page_projects_image_title_white, .services_page_header {
+.com-bold, .section_header, .services_header, .cases_header, .why_header, .trust_header, .blog_header, .reviews_header, .nav_header_logo_block p, .nav_header .other_menu_lang a, .popup_menu .other_menu_lang a, .main_slide_header p, .main_slide_header span, .main_slide_sub_header, .main_slide_info span, .main_slide_info_text, .main_btn p, .main_menu_lang a, .main_menu_tablet_lang a, .mob_info_slider_block span, .mob_info_slider_block_text, .in-portfolio_info_list_header, .in-portfolio_info_link, .content_main h1, .content_main h4, .content_info_text h4, .content_price_header, .content_price_text_title, .content_trust_header, .content_reviews_header, .content_projects_header, .content_projects_slider_wrapper .content_projects_slide_name, .targeted_main h1, .targeted_main h4, .targeted_main_icon_wrapper .targeted_main_icon_text, .targeted_info_text h4, .targeted_list_point_text, .targeted_advantage_block_header, .targeted_social_block_header, .targeted_social_block_sub_header, .targeted_price_header, .targeted_price_text p, .smm_main h1, .smm_main h4, .smm_main_icon_wrapper .smm_main_icon_text, .smm_info_text h4, .smm_advantage_block_header, .smm_work_block_header, .smm_price_header, .blog_page_slide_text, .blog_beast_header, .blog_brif_text_btn, .blog_smm_header, .blog_web_header, .blog_other_text_btn, .blog_read_header, .portfolio-smm_legend_text li p, .portfolio-smm_legend_list_title, .portfolio-smm_result_text p, .reviews_page_header, .reviews_page_block_sub_title, .contact_service_header, .contact_service_form_title, .contact_service_form_btn, .contact_service_form_list label p, .contact_service_price_header, .contact_service_price_block_text, .web_page_main_text_block, .web_page_main_image_text, .web_page_info_header_white, .web_page_info_title_blue, .web_page_advertising_image_block_title, .web_page_projects_header_white, .web_page_projects_image_title_white, .web_page_info_header, .web_page_info_title, .web_page_projects_header, .web_page_projects_image_title, .web_page_other_text_header, .web_page_other_text_btn, .services_page_header {
   font-family: "Comfortaa", sans-serif;
   font-weight: 700; }
 
@@ -5485,6 +5485,266 @@ footer {
       @media screen and (max-width: 768px) {
         .web_page_projects_image_title_white {
           font-size: 30px; } }
+
+.web_page_main {
+  position: relative;
+  width: 100%;
+  padding-top: 60px; }
+  .web_page_main_text_block {
+    position: absolute;
+    display: block;
+    width: 100%;
+    top: 60px;
+    left: -15%;
+    font-size: 431px;
+    color: #0064a5;
+    text-transform: uppercase;
+    opacity: 0.05;
+    letter-spacing: -30px;
+    z-index: 15; }
+    @media screen and (max-width: 768px) {
+      .web_page_main_text_block {
+        font-size: 170px; } }
+  .web_page_main_triangle {
+    position: absolute;
+    display: block;
+    width: 50%;
+    top: -140px;
+    left: 0;
+    z-index: 10; }
+    .web_page_main_triangle img {
+      width: 100%; }
+  .web_page_main_image {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 165px;
+    overflow: hidden;
+    margin-top: 85px; }
+    .web_page_main_image img {
+      width: 100%; }
+    .web_page_main_image_text {
+      position: absolute;
+      width: 100%;
+      top: -5px;
+      left: 15%;
+      font-size: 203px;
+      color: #fefefe;
+      text-transform: uppercase;
+      letter-spacing: -20px;
+      z-index: 15; }
+      @media screen and (max-width: 768px) {
+        .web_page_main_image_text {
+          font-size: 130px; } }
+  .web_page_main_header {
+    font-size: 41px;
+    color: #001726;
+    text-align: center;
+    margin-top: 220px; }
+    @media screen and (max-width: 768px) {
+      .web_page_main_header {
+        font-size: 26px; } }
+
+.web_page_info {
+  position: relative;
+  width: 100%;
+  margin-top: 210px; }
+  .web_page_info_header {
+    font-size: 120px;
+    color: #001726;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 50px; }
+    @media screen and (max-width: 768px) {
+      .web_page_info_header {
+        font-size: 71px; } }
+  .web_page_info_wrapper {
+    position: relative;
+    width: 100%;
+    min-height: 390px; }
+  .web_page_info_image {
+    width: 100%;
+    min-height: 390px;
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+    .web_page_info_image img {
+      width: 100%; }
+  .web_page_info_title {
+    width: 100%;
+    min-height: 390px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(to bottom, #ee0979 0%, #ff6a00 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    font-size: 24px;
+    cursor: default; }
+    @media screen and (max-width: 768px) {
+      .web_page_info_title {
+        font-size: 14px; } }
+    .web_page_info_title p {
+      display: inline-block;
+      width: 20px; }
+  .web_page_info_text {
+    font-size: 18px;
+    line-height: 24px;
+    color: #001726;
+    min-height: 390px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column; }
+    @media screen and (max-width: 768px) {
+      .web_page_info_text {
+        font-size: 16px;
+        line-height: 20px; } }
+    .web_page_info_text_list li {
+      position: relative;
+      margin-top: 10px;
+      font-size: 18px;
+      color: #001726;
+      text-indent: 60px;
+      letter-spacing: -1px; }
+      @media screen and (max-width: 768px) {
+        .web_page_info_text_list li {
+          font-size: 16px;
+          line-height: 20px; } }
+      .web_page_info_text_list li:before {
+        content: url(../img/in-portfolio/dot.png);
+        position: absolute;
+        top: -4px;
+        left: -30px; }
+
+.web_page_advertising {
+  position: relative;
+  width: 100%;
+  margin-top: 120px; }
+  .web_page_advertising_image {
+    position: relative;
+    width: 100%;
+    min-height: 330px;
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover; }
+    .web_page_advertising_image:after {
+      content: "";
+      position: absolute;
+      display: block;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      background-color: rgba(0, 0, 0, 0.77);
+      z-index: 1; }
+    .web_page_advertising_image_icon {
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      min-height: 330px;
+      z-index: 5; }
+      .web_page_advertising_image_icon img {
+        width: 280px; }
+    .web_page_advertising_image_block {
+      position: relative;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      width: 100%;
+      min-height: 330px;
+      z-index: 5;
+      letter-spacing: -1px; }
+      .web_page_advertising_image_block_title {
+        font-size: 36px;
+        color: #fefefe; }
+        @media screen and (max-width: 768px) {
+          .web_page_advertising_image_block_title {
+            font-size: 24px; } }
+      .web_page_advertising_image_block_text {
+        font-size: 24px;
+        line-height: 30px;
+        color: #fefefe;
+        margin-top: 30px; }
+        @media screen and (max-width: 768px) {
+          .web_page_advertising_image_block_text {
+            font-size: 16px;
+            line-height: 20px; } }
+
+.web_page_projects {
+  position: relative;
+  width: 100%;
+  margin-top: 120px; }
+  .web_page_projects_header_wrapper {
+    position: relative;
+    width: 100%;
+    height: 70px;
+    border-radius: 10px;
+    background-image: linear-gradient(to right, #ee0979 0%, #ff6a00 100%); }
+  .web_page_projects_header {
+    position: absolute;
+    width: calc(100% - 8px);
+    height: 62px;
+    top: 4px;
+    left: 4px;
+    background-color: #fefefe;
+    color: #001726;
+    font-size: 36px;
+    line-height: 62px;
+    border-radius: 10px;
+    text-align: center; }
+  .web_page_projects_image {
+    position: relative;
+    width: 100%;
+    margin-top: 30px; }
+    .web_page_projects_image img {
+      width: 100%; }
+    .web_page_projects_image_title {
+      font-size: 36px;
+      color: #001726;
+      margin-top: 20px; }
+      @media screen and (max-width: 768px) {
+        .web_page_projects_image_title {
+          font-size: 30px; } }
+
+.web_page_other {
+  position: relative;
+  width: 100%;
+  height: 15vh;
+  min-height: 160px;
+  margin-top: 120px;
+  background-color: #001726; }
+  .web_page_other_text {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+    z-index: 15; }
+    .web_page_other_text_header {
+      display: inline-block;
+      font-size: 30px;
+      line-height: 36px;
+      text-transform: uppercase;
+      color: #fefefe;
+      margin-top: 50px;
+      letter-spacing: -1px;
+      margin-left: 10px; }
+    .web_page_other_text_btn {
+      display: inline-block;
+      width: 270px;
+      height: 60px;
+      line-height: 60px;
+      color: #001726;
+      background-color: #fefefe;
+      text-align: center;
+      cursor: pointer;
+      font-size: 24px;
+      margin-top: 50px; }
 
 .services_page {
   position: relative;
