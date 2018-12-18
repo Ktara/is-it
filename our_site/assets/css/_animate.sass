@@ -31,3 +31,98 @@
       right: 7.5px
       top: 0
       background-image: linear-gradient(to bottom, #1cd8d2 0%, #93edc7 100%)
+
+
+
+
+@keyframes show_block
+  100%
+    opacity: 1
+    top: calc(40vh - 80px)
+
+@keyframes show_content
+  100%
+    opacity: 1
+    top: 0
+
+@keyframes show_name
+  100%
+    opacity: 1
+    right: 0
+@keyframes show_dots
+  100%
+    opacity: 1
+    left: -45px
+@keyframes show_nextAr
+  100%
+    opacity: 1
+    right: 75px
+@keyframes show_prewAr
+  100%
+    opacity: 0.5
+    right: 180px
+@keyframes show_header
+  100%
+    opacity: 1
+    top: 0
+@keyframes show_media
+  100%
+    opacity: 1
+    right: 0
+
+.animate_1
+  opacity: 0
+  top: 40vh
+  animation: show_block 1s 0.5s forwards
+.animate_2
+  opacity: 0
+  top: 20px
+  animation: show_content 1s 1s forwards
+.animate_3
+  position: relative
+  display: block
+  right: 100%
+  opacity: 0
+  animation: show_name 1s 1.5s forwards
+.animate_4
+  position: relative
+  display: block
+  right: 100%
+  opacity: 0
+  animation: show_name 1s 1.7s forwards
+.animate_5
+  position: relative
+  display: block
+  right: 100%
+  opacity: 0
+  animation: show_name 1s 1.9s forwards
+.animate_6
+  opacity: 0
+  top: 20px
+  animation: show_content 1s 2.4s forwards
+.animate_7
+  opacity: 0
+  top: 20px
+  animation: show_content 1s 2.8s forwards
+.animate_prewAr
+  right: 200px
+  opacity: 0
+  animation: show_prewAr 1s 2.8s forwards
+.animate_nextAr
+  right: 100px
+  opacity: 0
+  animation: show_nextAr 1s 2.8s forwards
+.animate_dots
+  left: -60px
+  opacity: 0
+  animation: show_dots 1s 3.2s forwards
+.animate_header
+  position: relative
+  opacity: 0
+  top: -80px
+  animation: show_header 1s 3.2s forwards
+.animate_media
+  position: relative
+  opacity: 0
+  right: -50px
+  animation: show_media 1s 3.2s forwards
