@@ -97,6 +97,7 @@
     position: absolute
     cursor: pointer
     float: right
+    transition: all 0.3ms
     &:after
       content: ""
       display: block
@@ -105,8 +106,9 @@
       height: 22px
       top: 29px
       right: 0
-      border-top: 3px solid $black
       border-bottom: 3px solid $black
+      border-top: 3px solid $black
+      transition: all 0.5s
     &:before
       content: ""
       display: block
@@ -116,6 +118,15 @@
       top: 38px
       right: 0
       background-color: $black
+      transition: all 0.5s
+  &_burger_close
+    &:after
+      transform: rotate(45deg)
+      border-top: none
+      right: -7px
+      top: 22px
+    &:before
+      transform: rotate(-45deg)
 
   .other_menu_lang
     position: relative
