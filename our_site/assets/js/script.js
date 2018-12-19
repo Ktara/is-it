@@ -230,37 +230,105 @@ $('.contact_service_form_title').click(function(){
     });
 })();
 (function(){
-    var cards = $('.services_card_wrapper');
-    var start_postion = $( window ).scrollTop();
-    var current_position = start_postion;
+    var lines = $('.lines_animate');
+    $('.nav_header_btn').mouseover(function(){
+        var fix = 150;
+        lines.each(function(){
+            var rand = Math.random() * (10-1) + 1 ;
+            var time = fix * rand;
+           $(this).animate({
+               left: 100
+           }, time);
+        });
+    });
+    $('.nav_header_btn').mouseout(function(){
+        var fix = 100;
+        lines.each(function(){
+            var rand = Math.random() * (10-1) + 1 ;
+            var time = fix * rand;
+           $(this).animate({
+               left: 0
+           }, time);
+        });
+    })
+    setInterval(function(){
+        var fix = 150;
+        lines.each(function(){
+            var rand = Math.random() * (10-1) + 1 ;
+            var time = fix * rand;
+            $(this).animate({
+                left: 100
+            }, time);
+        });
+        setTimeout(function () {
+            var fix = 100;
+            lines.each(function(){
+                var rand = Math.random() * (10-1) + 1 ;
+                var time = fix * rand;
+                $(this).animate({
+                    left: 0
+                }, time);
+            });
+        }, 1000)
+    }, 5400)
+})();
+(function(){
+    // var cards = $('.services_card_wrapper');
+    var start_postion = $(window).height()/1.5;
+    // var block_position = $('.services').offset().top;
+    console.log($(window).height());
+    var fly_element = $('.fly_element');
+    fly_element.css({
+       opacity: 0,
+       top: 90,
+       position: 'relative'
+    });
+    // var current_position = start_postion + block_position;
+    // console.log(block_position);
     $( window ).scroll(function() {
         var scroll = $( window ).scrollTop();
-        var x = scroll - current_position;
-        console.log(x);
-        var card1 = $(cards[0]);
-        var card2 = $(cards[1]);
-        var card3 = $(cards[2]);
-        var card4 = $(cards[3]);
-        var card5 = $(cards[4]);
-        var card6 = $(cards[5]);
-        var current1 = card1.css('margin-top');
-        var current2 = card2.css('margin-top');
-        var current3 = card3.css('margin-top');
-        var current4 = card4.css('margin-top');
-        var current5 = card5.css('margin-top');
-        var current6 = card6.css('margin-top');
-        var new_pos1 = parseInt(current1, 10) - x * 0.1;
-        var new_pos2 = parseInt(current2, 10) - x * 0.4;
-        var new_pos3 = parseInt(current3, 10) - x * 0.2;
-        var new_pos4 = parseInt(current4, 10) - x * 0.5;
-        var new_pos5 = parseInt(current5, 10) - x * 0.1;
-        var new_pos6 = parseInt(current6, 10) - x * 0.2;
-        card1.animate({ 'margin-top' : new_pos1 }, 1);
-        card2.animate({ 'margin-top' : new_pos2 }, 1);
-        card3.animate({ 'margin-top' : new_pos3 }, 1);
-        card4.animate({ 'margin-top' : new_pos4 }, 1);
-        card5.animate({ 'margin-top' : new_pos5 }, 1);
-        card6.animate({ 'margin-top' : new_pos6 }, 1);
-        current_position = scroll;
+        fly_element.each(function(){
+           var element = $(this);
+           if(element.offset().top < scroll + start_postion) {
+               element.animate({
+                   opacity: 1,
+                   top: 0
+               }, 900)
+           }
+        });
+        // if(scroll > block_position) {
+        // var x = scroll - current_position;
+        //
+        // var card1 = $(cards[0]);
+        // var card2 = $(cards[1]);
+        // var card3 = $(cards[2]);
+        // var card4 = $(cards[3]);
+        // var card5 = $(cards[4]);
+        // var card6 = $(cards[5]);
+        //
+        // var current1 = card1.css('top');
+        // var current2 = card2.css('top');
+        // var current3 = card3.css('top');
+        // var current4 = card4.css('top');
+        // var current5 = card5.css('top');
+        // var current6 = card6.css('top');
+        // console.log(current2);
+        //
+        // var new_pos1 = parseInt(current1, 10) - x * 0.5;
+        // // var new_pos2 = -x * 1.5;
+        // var new_pos3 = parseInt(current3, 10) - x * 0.3;
+        // // var new_pos4 = -x * 0.3;
+        // var new_pos5 = parseInt(current5, 10) - x * 0.9;
+        // var new_pos6 = parseInt(current6, 10) - x * 0.5;
+        //
+        // card1.animate({ 'top' : new_pos1 }, 10);
+        // // card2.animate({ 'top' : new_pos2 }, 10);
+        // card3.animate({ 'top' : new_pos3 }, 10);
+        // // card4.animate({ 'top' : new_pos4 }, 10);
+        // card5.animate({ 'top' : new_pos5 }, 10);
+        // card6.animate({ 'top' : new_pos6 }, 10);
+        //
+        // current_position = scroll;
+        // }
     });
 })();
