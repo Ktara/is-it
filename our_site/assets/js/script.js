@@ -208,6 +208,7 @@ $('.contact_service_form_title').click(function(){
 
 (function(){
     var main_sliders = $('.main_slide');
+    var main_slider_count = $('.main_slider_count');
     if(main_sliders[0] == undefined) return;
     var dots_wrapper = $('.main_slider_dots');
     for(var i = 0; i < main_sliders.length; i++) {
@@ -215,11 +216,14 @@ $('.contact_service_form_title').click(function(){
         dots_wrapper.append(element);
     };
     var dots = $('.main_slider_dots span');
+    var old_index = 0;
     $(dots[0]).addClass('active_dot');
     dots.click(function(){
         dots.removeClass('active_dot');
        $(this).addClass('active_dot');
        var index = dots.index(this);
+       var number = index + 1;
+       main_slider_count.css('opacity', 0.5).text('0' + number);
        main_sliders.css({
            'display' : 'none',
            'opacity' : 0
@@ -227,6 +231,10 @@ $('.contact_service_form_title').click(function(){
         $(main_sliders[index]).css('display' , 'block').animate({
             'opacity' : 1
         }, 600);
+        // setTimeout(function(){
+        //     main_sliders[old_index].css('display', 'none')
+        // }, 300)
+        // old_index = index;
     });
 })();
 (function(){
