@@ -8,7 +8,6 @@
       <change beforePath="$PROJECT_DIR$/../fitness/assets/js/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/../fitness/assets/js/script.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../ielp.rar" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/css/_main.sass" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/_main.sass" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/css/_popup_menu.sass" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/_popup_menu.sass" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/css/style.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/style.css.map" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../primeauto/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../primeauto/.idea/workspace.xml" afterDir="false" />
@@ -146,11 +145,11 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="_main.sass" pinned="false" current-in-tab="false">
+          <file leaf-file-name="_main.sass" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/assets/css/_main.sass">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="285">
-                  <caret line="181" column="20" lean-forward="true" selection-start-line="181" selection-start-column="20" selection-end-line="181" selection-end-column="20" />
+                <state relative-caret-position="440">
+                  <caret line="150" column="16" lean-forward="true" selection-start-line="150" selection-start-column="16" selection-end-line="150" selection-end-column="16" />
                   <folding>
                     <element signature="e#110#2304#0" />
                   </folding>
@@ -158,7 +157,7 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="_popup_menu.sass" pinned="false" current-in-tab="true">
+          <file leaf-file-name="_popup_menu.sass" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/assets/css/_popup_menu.sass">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="330">
@@ -227,8 +226,8 @@
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/assets/css/_main_cases.sass" />
         <option value="$PROJECT_DIR$/assets/css/_base.sass" />
-        <option value="$PROJECT_DIR$/assets/css/_main.sass" />
         <option value="$PROJECT_DIR$/assets/css/_popup_menu.sass" />
+        <option value="$PROJECT_DIR$/assets/css/_main.sass" />
       </list>
     </option>
   </component>
@@ -314,12 +313,12 @@
       <workItem from="1545203214593" duration="12832000" />
       <workItem from="1545218930673" duration="1761000" />
       <workItem from="1545220813239" duration="1147000" />
-      <workItem from="1545223665229" duration="1756000" />
+      <workItem from="1545223665229" duration="2028000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="17496000" />
+    <option name="totallyTimeSpent" value="17768000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1176" extended-state="6" />
@@ -748,20 +747,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/assets/css/_main.sass">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="181" column="20" lean-forward="true" selection-start-line="181" selection-start-column="20" selection-end-line="181" selection-end-column="20" />
-          <folding>
-            <element signature="e#110#2304#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/assets/css/_popup_menu.sass">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="330">
           <caret line="60" column="22" lean-forward="true" selection-start-line="60" selection-start-column="22" selection-end-line="60" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/css/_main.sass">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="440">
+          <caret line="150" column="16" lean-forward="true" selection-start-line="150" selection-start-column="16" selection-end-line="150" selection-end-column="16" />
+          <folding>
+            <element signature="e#110#2304#0" />
+          </folding>
         </state>
       </provider>
     </entry>

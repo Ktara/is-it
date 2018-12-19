@@ -701,7 +701,7 @@
     width: 97px;
     height: 22px;
     right: 75px;
-    bottom: 100px;
+    bottom: 7vh;
     background-image: url("../img/main/nextAr.png");
     z-index: 10; }
   .main_slider_prew_arrow {
@@ -723,7 +723,7 @@
     font-size: 100px;
     opacity: 0.5;
     right: 75px;
-    bottom: 120px;
+    bottom: 8vh;
     transition: all 0.5s; }
     @media screen and (max-width: 750px) {
       .main_slider_count {
