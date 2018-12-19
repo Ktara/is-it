@@ -7,20 +7,6 @@
       <change beforePath="$PROJECT_DIR$/../fitness/assets/css/style.less" beforeDir="false" afterPath="$PROJECT_DIR$/../fitness/assets/css/style.less" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../fitness/assets/js/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/../fitness/assets/js/script.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../ielp.rar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/css/_animate.sass" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/_animate.sass" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/css/_base.sass" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/_base.sass" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/css/_content.sass" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/_content.sass" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/css/_header.sass" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/_header.sass" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/css/_main.sass" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/_main.sass" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/css/_main_cases.sass" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/_main_cases.sass" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/css/_services.sass" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/_services.sass" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/css/_smm.sass" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/_smm.sass" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/css/_targeted.sass" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/_targeted.sass" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/css/style.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/style.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/css/style.sass" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/style.sass" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smm.html" beforeDir="false" afterPath="$PROJECT_DIR$/smm.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../primeauto/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../primeauto/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../primeauto/auto-product.html" beforeDir="false" afterPath="$PROJECT_DIR$/../primeauto/auto-product.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../primeauto/auto-product2.html" beforeDir="false" afterPath="$PROJECT_DIR$/../primeauto/auto-product2.html" afterDir="false" />
@@ -385,12 +371,12 @@
       <workItem from="1545037536783" duration="6171000" />
       <workItem from="1545119249456" duration="552000" />
       <workItem from="1545122279940" duration="12130000" />
-      <workItem from="1545156292586" duration="9096000" />
+      <workItem from="1545156292586" duration="9200000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="285314000" />
+    <option name="totallyTimeSpent" value="285418000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1176" extended-state="6" />
