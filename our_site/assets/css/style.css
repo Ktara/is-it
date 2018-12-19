@@ -33,7 +33,12 @@
   background-color: white; }
 
 .long_container {
-  height: 150vh; }
+  height: 150vh;
+  min-height: 1200px; }
+  @media screen and (max-width: 768px) {
+    .long_container {
+      height: 100vh;
+      min-height: 500px; } }
   @media screen and (max-width: 750px) {
     .long_container {
       height: 75vh;
@@ -1228,16 +1233,19 @@
     position: relative;
     width: 100%;
     height: 46vh;
+    min-height: 450px;
     border-radius: 10px;
     background-color: #73b4a2;
     background-image: linear-gradient(to bottom, #1cd8d2 0%, #93edc7 100%);
     margin-top: 100px; }
     @media screen and (max-width: 768px) {
       .cases_title_block {
-        height: 30vh; } }
+        height: 30vh;
+        min-height: 350px; } }
     @media screen and (max-width: 750px) {
       .cases_title_block {
         height: 300px;
+        min-height: 300px;
         margin-top: 30px; } }
   .cases_title {
     font-size: 100px;
@@ -1286,13 +1294,16 @@
     position: relative;
     width: 100%;
     height: 50vh;
+    min-height: 450px;
     margin-top: 100px; }
     @media screen and (max-width: 768px) {
       .cases_slider_wrapper {
-        height: 30vh; } }
+        height: 30vh;
+        min-height: 350px; } }
     @media screen and (max-width: 750px) {
       .cases_slider_wrapper {
-        height: 300px; } }
+        height: 300px;
+        min-height: 300px; } }
     .cases_slider_wrapper .cases_slide {
       overflow: hidden; }
     .cases_slider_wrapper .cases_slide_image {
