@@ -67,11 +67,28 @@
     margin-top: 30px
     border-radius: 10px
     background-color: $white
-    background-image: linear-gradient(to right, #ee0979 0%, #ff6a00 100%)
+    //background-image: linear-gradient(to right, #ee0979 0%, #ff6a00 100%)
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.06)
     background-repeat: no-repeat
     background-size: cover
     text-decoration: none
+    &:after
+      content: ''
+      display: block
+      position: absolute
+      top: 45%
+      bottom: 0
+      margin: 0 auto
+      width: 10%
+      height: 10%
+      background-image: linear-gradient(to right, #ee0979 0%, #ff6a00 100%)
+      transition: all 0.5s
+      border-radius: 10px
+    &:hover
+      &:after
+        top: 0
+        width: 100%
+        height: 100%
     @media screen and (max-width: 768px)
       width: 270px
     @media screen and (max-width: 750px)
@@ -112,6 +129,7 @@
         top: 0
         left: 0
         display: block
+        border-radius: 10px
   &_second
     position: relative
     width: 100%
@@ -125,6 +143,23 @@
     background-repeat: no-repeat
     background-size: cover
     text-decoration: none
+    &:after
+      content: ''
+      display: block
+      position: absolute
+      top: 45%
+      bottom: 0
+      margin: 0 auto
+      width: 10%
+      height: 10%
+      background-image: linear-gradient(to right, #ee0979 0%, #ff6a00 100%)
+      transition: all 0.5s
+      border-radius: 10px
+    &:hover
+      &:after
+        top: 0
+        width: 100%
+        height: 100%
     @media screen and (max-width: 750px)
       height: 80px
       margin-top: 10px
@@ -142,6 +177,7 @@
       color: $dark-blue
       background-color: $white
       z-index: 5
+      border-radius: 10px
       @media screen and (max-width: 750px)
         height: calc(100% - 10px)
         top: 5px
@@ -159,15 +195,41 @@
         top: 0
         left: 0
         display: block
+        border-radius: 10px
   &_contact
     display: inline-block
     font-size: 48px
-    margin-top: 85px
+    margin-top: 80px
     writing-mode: vertical-rl
     text-orientation: upright
     color: $dark-blue
     float: right
     text-decoration: none
+    line-height: 56px
+    border-radius: 10px
+    padding-top: 5px
+    transition: all 0.5s
+    position: relative
+    &:after
+      content: ''
+      display: block
+      position: absolute
+      top: 0
+      left: 0
+      margin: 0 auto
+      width: 100%
+      height: 100%
+      background-image: linear-gradient(to right, #ee0979 0%, #ff6a00 100%)
+      transition: all 0.5s
+      border-radius: 10px
+      opacity: 0
+    &:hover
+      &:after
+        opacity: 1
+    p
+      position: relative
+      z-index: 1
+
     @media screen and (max-width: 750px)
       display: flex
       justify-content: center
@@ -175,6 +237,7 @@
       width: 100%
       height: 80px
       font-size: 30px
+      line-height: 36px
       margin-top: 10px
       float: none
       -webkit-writing-mode: inherit
