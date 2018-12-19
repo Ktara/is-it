@@ -99,11 +99,25 @@
   @media screen and (max-width: 750px)
     margin-top: 80px
   &_image
-    width: 275px
-    text-align: center
-    margin: 65px auto 0 auto
+    position: relative
+    display: flex
+    justify-content: center
+    align-items: center
+    width: 100%
+    height: 525px
+    border-radius: 10px
+    background-image: linear-gradient(to bottom, #1cd8d2 0%, #93edc7 100%)
+    @media screen and (max-width: 768px)
+      height: 385px
+    @media screen and (max-width: 750px)
+      height: 150px
+      margin-bottom: 10px
     img
-      width: 100%
+      width: 275px
+      @media screen and (max-width: 768px)
+        width: 105px
+      @media screen and (max-width: 750px)
+        width: 120px
   &_text
     width: 100%
     h4
@@ -185,6 +199,7 @@
         color: $dark-blue
         text-indent: 32px
         margin-left: 30px
+        text-shadow: 3px 3px 19px #757575
         @media screen and (max-width: 750px)
           font-size: 16px
         &:before
