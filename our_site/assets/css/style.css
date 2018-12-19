@@ -144,8 +144,16 @@
   left: 0;
   background-color: white;
   z-index: 200; }
-  .nav_header_logo a {
+  .nav_header_logo {
+    position: relative;
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     text-decoration: none; }
+    .nav_header_logo img {
+      width: 100%; }
   .nav_header_logo_block p {
     font-size: 36px;
     text-transform: uppercase;
@@ -710,7 +718,7 @@
     width: 97px;
     height: 22px;
     right: 180px;
-    bottom: 160px;
+    bottom: 10vh;
     background-image: url("../img/main/nextAr.png");
     z-index: 10;
     transform: rotate(180deg);
